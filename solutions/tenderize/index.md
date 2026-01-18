@@ -1,3 +1,8 @@
+---
+title: Tenderize (tLPT)
+description: Historical Livepeer liquid staking on Arbitrum—mechanics, adoption evidence, and failure modes.
+---
+
 # Tenderize — tLPT (Liquid Staking for Livepeer on Arbitrum)
 
 Tenderize built a general-purpose liquid staking system ("Tender Protocol") with a Livepeer integration. The Livepeer derivative is a **rebasing** token (`tLPT`) whose balance tracks a pro‑rata claim on the pool’s underlying staked LPT.

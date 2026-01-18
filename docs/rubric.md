@@ -1,6 +1,17 @@
-# Evaluation Rubric (How We Judge Solutions)
+---
+title: Evaluation Rubric
+description: A consistent scoring framework (0–5) for comparing delegation solutions across growth, retention, sybil resistance, decentralization, and ROI.
+---
+
+# Evaluation Rubric
 
 Score each axis 0–5. “5” means it strongly improves the axis *with credible evidence and realistic assumptions*.
+
+## Quick scoring guidance
+
+- **0–1**: unclear mechanism, unmeasurable, or trivially gameable.
+- **2–3**: plausible but needs stronger measurement, security posture, or realistic adoption plan.
+- **4–5**: evidence-backed, measurable KPIs, and a credible path to ship and sustain.
 
 ## 1) Net-new delegators (count)
 
@@ -42,4 +53,3 @@ Score each axis 0–5. “5” means it strongly improves the axis *with credibl
 - Custody risk (EOA vs contract wallets; key management)
 - Fiat rails / KYC / AML risks (if applicable)
 - Attack surface (smart contracts, incentives gaming)
-

@@ -2,10 +2,70 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Livepeer Delegation Research",
+  "description": "Evidence-based research on Livepeer delegation on Arbitrum: acquisition, retention, cashout behavior, and an evaluation rubric for proposed solutions.",
   "colors": {
     "primary": "#00E7AB"
   },
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg",
+    "href": "/"
+  },
   "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "dark"
+  },
+  "background": {
+    "decoration": "gradient",
+    "color": {
+      "light": "#FFFFFF",
+      "dark": "#0B0F1A"
+    }
+  },
+  "search": {
+    "prompt": "Search research, solutions, and metrics…"
+  },
+  "navbar": {
+    "links": [
+      { "label": "Overview", "href": "/docs/overview" },
+      { "label": "Scoreboard", "href": "/docs/scoreboard" }
+    ],
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/its-DeFine/livepeer-delegation-research"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/its-DeFine/livepeer-delegation-research"
+    },
+    "links": [
+      {
+        "header": "Start",
+        "items": [
+          { "label": "Overview", "href": "/docs/overview" },
+          { "label": "Rubric", "href": "/docs/rubric" },
+          { "label": "Scoreboard", "href": "/docs/scoreboard" }
+        ]
+      },
+      {
+        "header": "Solutions",
+        "items": [
+          { "label": "Lisar", "href": "/solutions/lisar/livepeer-lisar-spe-delegation-analysis" },
+          { "label": "IDOL / Arrakis", "href": "/solutions/ydol/index" },
+          { "label": "Tenderize", "href": "/solutions/tenderize/index" }
+        ]
+      },
+      {
+        "header": "Research",
+        "items": [
+          { "label": "Notes index", "href": "/research/index" },
+          { "label": "Outflows", "href": "/research/livepeer-delegator-outflows-research" },
+          { "label": "Incentives", "href": "/research/livepeer-delegator-incentives" }
+        ]
+      }
+    ]
+  },
   "navigation": {
     "groups": [
       {

@@ -1,8 +1,20 @@
-# Livepeer — IDOL: Improving DEX / Onchain Liquidity
+---
+title: IDOL / Arrakis (DEX Liquidity)
+description: Dossier + tooling for evaluating the IDOL proposal to improve LPT on-chain liquidity on Arbitrum (Uniswap v3 / Arrakis-style vaults).
+---
 
-Working folder for reviewing: `https://forum.livepeer.org/t/pre-proposal-idol-improving-dex-onchain-liquidity/3151`
+# IDOL / Arrakis — Improving DEX / On-chain Liquidity
 
-## Quick start
+Forum thread: https://forum.livepeer.org/t/pre-proposal-idol-improving-dex-onchain-liquidity/3151
+
+## Summary
+
+This dossier evaluates a DEX-liquidity-focused proposal (often discussed alongside Arrakis-style vault management) and keeps the analysis **reproducible**:
+- what the mechanism is (protocol-owned or incentivized liquidity)
+- what it plausibly changes for delegators (conversion friction, slippage, on-chain UX)
+- what can go wrong (custody/admin risk, IL/LVR, wash trading, “looks good in a dashboard” failure modes)
+
+## Quick start (reproduce)
 
 From this directory:
 

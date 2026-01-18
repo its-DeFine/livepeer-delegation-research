@@ -1,4 +1,9 @@
-# The Delegation Problem (What We’re Actually Solving)
+---
+title: Problem Definition
+description: What we are actually solving (and the metrics we require) before we judge any delegation proposal.
+---
+
+# The Delegation Problem
 
 This doc is the shared baseline for all proposal reviews.
 
@@ -17,9 +22,12 @@ This doc is the shared baseline for all proposal reviews.
 
 ## Canonical metrics (must be reported for any solution)
 
-- New delegators (first-time bonders): daily/weekly/monthly
-- Delegated stake change: net bond − unbond − withdraw
-- Retention: % of new delegators still bonded at 30/90/180 days
-- Concentration: top-1/top-5 share of the solution’s bonded stake
-- Sybil risk proxy: funding clustering, common senders, fast-exit cohorts
+- **New delegators (first-time bonders)**: daily/weekly/monthly
+- **Net stake change**: net bond − unbond − withdraw
+- **Retention**: % of new delegators still bonded at 30/90/180 days
+- **Concentration**: top-1/top-5 share of the solution’s bonded stake
+- **Sybil risk proxies**: funding clustering, common senders, fast-exit cohorts
 
+## Common failure mode (call it out explicitly)
+
+If a proposal claims “we will increase small delegators” but its mechanism is “pay more per address for smaller balances”, it is **sybilable by design** unless it has a uniqueness primitive (identity, proof, or a strong economic cost to splitting).

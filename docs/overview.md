@@ -1,14 +1,26 @@
-# Livepeer Delegation Research — Synthesis & Recommendations
+---
+title: Overview
+description: Synthesis and recommendations from on-chain Livepeer delegation research on Arbitrum (acquisition, retention, cashout behavior, and solution evaluation).
+---
 
-Status: **2026-01-18** (Arbitrum era).
+# Synthesis & Recommendations
 
-This is the “single doc” overview that:
-- Summarizes what we’ve learned from **on-chain delegation behavior** on Arbitrum.
-- Summarizes what we’ve learned from **proposed solutions** (Lisar, IDOL/Arrakis, Tenderize).
-- Extracts **cross-protocol patterns** that tend to grow small stake participants.
-- Provides **recommendations** and a measurement plan.
+Updated: **2026-01-18** (Arbitrum era).
 
-If you only read one thing, read this.
+This is the “single doc” overview that ties together:
+- What we measured on-chain (delegation flows, churn, withdrawals, post-withdraw transfers)
+- What we learned from solution proposals (Lisar, IDOL/Arrakis, Tenderize)
+- What tends to work across protocols for growing small participants
+- What we recommend Livepeer should do next (and how to measure it)
+
+<CardGroup cols={2}>
+  <Card title="Deep dive: outflows + retention" href="/research/livepeer-delegator-outflows-research">
+    The core evidence pack behind churn and “cashout” claims.
+  </Card>
+  <Card title="Design space: incentives + tokenomics" href="/research/livepeer-delegator-incentives">
+    Practical mechanism options and sybil constraints.
+  </Card>
+</CardGroup>
 
 ---
 
@@ -226,4 +238,3 @@ If the ecosystem pursues DEX liquidity improvement, use the guardrails from `sol
 1) **Cross-protocol replication study**: pick 2–3 protocols and quantify “small participant growth” around LST launches (to the extent feasible).
 2) **Livepeer LST design space**: audited building blocks, governance model, upgrade posture, and DeFi integration plan on Arbitrum.
 3) **Sybil-resistant uniqueness options** for any “small holder boost” (UX and legal constraints included).
-

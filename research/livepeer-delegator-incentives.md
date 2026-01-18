@@ -1,3 +1,8 @@
+---
+title: Incentives & Tokenomics
+description: Design patterns to grow net-new delegators and stake on Livepeer without enabling easy sybil farming (grounded in Arbitrum on-chain data).
+---
+
 # Livepeer Delegator Growth — Tokenomics Ideas
 
 Goal: bring **net-new delegators + stake** into Livepeer (not just reshuffling existing LPT), while improving **retention** and **stake decentralization**.

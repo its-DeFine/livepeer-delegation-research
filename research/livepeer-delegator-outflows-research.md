@@ -1,4 +1,9 @@
-# Livepeer Arbitrum Delegator Inflows/Outflows — Onchain Research (RPC `eth_getLogs`)
+---
+title: Outflows & Retention (Arbitrum)
+description: On-chain analysis of Livepeer BondingManager flows on Arbitrum via RPC eth_getLogs (churn, dormancy proxies, withdrawals, and post-withdraw transfers).
+---
+
+# Livepeer Delegation Outflows & Retention — On-chain Research (Arbitrum)
 
 This note is meant to ground any “small-delegator incentive” tokenomics proposals in **observed onchain behavior**, and specifically to test the hypothesis:
 

@@ -1,13 +1,18 @@
+---
+title: Lisar (Delegation Program)
+description: Evidence-based review of the Lisar SPE delegation onboarding program on Arbitrum, grounded in dashboard data and on-chain BondingManager events.
+---
+
 # Livepeer — Lisar SPE Delegation Program (Arbitrum) — What Happened
 
 This is an evidence-based review of how the Lisar SPE’s delegation onboarding performed, using:
 - Lisar’s public dashboard API (`/admin/dashboard/summary`, `/admin/dashboard/transactions`)
 - On-chain Livepeer **BondingManager** events on **Arbitrum One** via `eth_getLogs` / `eth_call`
 
-Forum thread (context): `https://forum.livepeer.org/t/lisar-spe-release-notes/3159/3`
-
-Treasury proposal (context): `https://explorer.livepeer.org/treasury/37756926437624644602157853528130337382237946922701155023801139566954226305300`  
-Proposal + ROI memo: `livepeer-lisar-spe-treasury-roi.md`
+Forum context:
+- Thread: https://forum.livepeer.org/t/lisar-spe-release-notes/3159/3
+- Treasury proposal: https://explorer.livepeer.org/treasury/37756926437624644602157853528130337382237946922701155023801139566954226305300
+- ROI memo: `/solutions/lisar/livepeer-lisar-spe-treasury-roi`
 
 ---
 
