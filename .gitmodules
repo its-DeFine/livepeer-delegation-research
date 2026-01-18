@@ -1,0 +1,3 @@
+[submodule "solutions/lisar"]
+	path = solutions/lisar
+	url = https://github.com/its-DeFine/livepeer-lisar-spe-analysis.git

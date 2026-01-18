@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# If we later add reproducible artifacts, keep them explicitly allowlisted.
+artifacts/*
