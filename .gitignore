@@ -2,5 +2,11 @@
 __pycache__/
 *.pyc
 
+node_modules/
+.docusaurus/
+build/
+.vercel/
+.env*
+
 # If we later add reproducible artifacts, keep them explicitly allowlisted.
 artifacts/*

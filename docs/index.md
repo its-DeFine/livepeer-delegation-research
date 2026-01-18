@@ -34,10 +34,10 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Solutions: Lisar" href="/solutions/lisar/livepeer-lisar-spe-delegation-analysis">
     Treasury program outcomes + KPI alignment vs the stated goals.
   </Card>
-  <Card title="Solutions: IDOL / Arrakis" href="/solutions/ydol/index">
+  <Card title="Solutions: IDOL / Arrakis" href="/solutions/ydol">
     DEX liquidity-focused proposal analysis (mechanism, risks, and measurement).
   </Card>
-  <Card title="Solutions: Tenderize (tLPT)" href="/solutions/tenderize/index">
+  <Card title="Solutions: Tenderize (tLPT)" href="/solutions/tenderize">
     Historical Livepeer liquid staking: adoption evidence, mechanics, and failure modes.
   </Card>
 </CardGroup>

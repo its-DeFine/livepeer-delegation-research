@@ -52,14 +52,14 @@
         "header": "Solutions",
         "items": [
           { "label": "Lisar", "href": "/solutions/lisar/livepeer-lisar-spe-delegation-analysis" },
-          { "label": "IDOL / Arrakis", "href": "/solutions/ydol/index" },
-          { "label": "Tenderize", "href": "/solutions/tenderize/index" }
+          { "label": "IDOL / Arrakis", "href": "/solutions/ydol" },
+          { "label": "Tenderize", "href": "/solutions/tenderize" }
         ]
       },
       {
         "header": "Research",
         "items": [
-          { "label": "Notes index", "href": "/research/index" },
+          { "label": "Notes index", "href": "/research" },
           { "label": "Outflows", "href": "/research/livepeer-delegator-outflows-research" },
           { "label": "Incentives", "href": "/research/livepeer-delegator-incentives" }
         ]
