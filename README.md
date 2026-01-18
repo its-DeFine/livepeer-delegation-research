@@ -10,7 +10,7 @@ This repo is the “one place” to frame the **Livepeer delegation problem** an
 - Cross-solution comparison: `docs/scoreboard.md`
 - Deep dives / background notes: `research/`
 
-## Clone (includes Lisar submodule)
+## Clone (includes submodules)
 
 - Clone with submodules:
   - `git clone --recurse-submodules https://github.com/its-DeFine/livepeer-delegation-research.git`
