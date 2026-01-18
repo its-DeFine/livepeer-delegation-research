@@ -1,0 +1,441 @@
+{
+  "deposit": {
+    "depositor_total_deposit_buckets": {
+      "1 - 10": 1201,
+      "10 - 100": 68,
+      "100 - 1000": 20,
+      "1000 - 10000": 6,
+      "<= 1": 1219,
+      "> 10000": 4
+    },
+    "depositor_total_deposit_percentiles": {
+      "p50": 1.0225035037919858,
+      "p75": 1.57,
+      "p90": 3.1833262381701104,
+      "p95": 7.0033087303749575,
+      "p99": 155.980051107684
+    },
+    "depositors_with_unstake": 491,
+    "depositors_with_withdraw": 305,
+    "event_count": 2786,
+    "first_block": 11601021,
+    "first_ts": 1652102277,
+    "last_block": 188520712,
+    "last_ts": 1709952768,
+    "top_depositors": [
+      {
+        "address": "0xdcfae5c899649f05357b84d002e024374ed7b7a9",
+        "deposit_events": 1,
+        "first_block": 22930679,
+        "last_block": 22930679,
+        "total_deposited_lpt": 22971.342555249026
+      },
+      {
+        "address": "0x0f43ad4eb50eecc44531d2e512dd0f4b50ab58fd",
+        "deposit_events": 3,
+        "first_block": 70806541,
+        "last_block": 72716232,
+        "total_deposited_lpt": 20939.468696325894
+      },
+      {
+        "address": "0x07ca020fdde5c57c1c3a783befdb08929cf77fec",
+        "deposit_events": 1,
+        "first_block": 51111415,
+        "last_block": 51111415,
+        "total_deposited_lpt": 15000.0
+      },
+      {
+        "address": "0x79f709b01033dfdbf065cff7a1abe7c72011d3eb",
+        "deposit_events": 5,
+        "first_block": 12495804,
+        "last_block": 48296496,
+        "total_deposited_lpt": 10151.0
+      },
+      {
+        "address": "0x3f717b0f5270311c011a48d46ca7a67f7e37c015",
+        "deposit_events": 3,
+        "first_block": 15271780,
+        "last_block": 23394402,
+        "total_deposited_lpt": 3283.4279088851367
+      },
+      {
+        "address": "0x7fcfc04cc6cc89def9a9f46fab7784131b12699c",
+        "deposit_events": 4,
+        "first_block": 11601021,
+        "last_block": 12801537,
+        "total_deposited_lpt": 2707.0000000000005
+      },
+      {
+        "address": "0x568f4acaf975bdb81d8a26fc1bf3991656a745d7",
+        "deposit_events": 1,
+        "first_block": 145663393,
+        "last_block": 145663393,
+        "total_deposited_lpt": 2202.359084
+      },
+      {
+        "address": "0xbc1796b4d9d112de8cf29849ee3e732ffd27d4d8",
+        "deposit_events": 1,
+        "first_block": 14373433,
+        "last_block": 14373433,
+        "total_deposited_lpt": 1400.0
+      },
+      {
+        "address": "0x5cb2f169ac9a7416db37b8eb0a693fb75b2bcd23",
+        "deposit_events": 3,
+        "first_block": 17516288,
+        "last_block": 21755033,
+        "total_deposited_lpt": 1375.2707361922587
+      },
+      {
+        "address": "0x28cc2f7fa441665f497ffbb1c030e1c5f6e4b70d",
+        "deposit_events": 1,
+        "first_block": 12917276,
+        "last_block": 12917276,
+        "total_deposited_lpt": 1006.0
+      },
+      {
+        "address": "0x073911559c5731dc9fa18fc58cecc6b3b1c0a2fb",
+        "deposit_events": 4,
+        "first_block": 109281640,
+        "last_block": 166160691,
+        "total_deposited_lpt": 981.6363915306732
+      },
+      {
+        "address": "0xba5af4407797f74771dd35684fcfcd65467a2e90",
+        "deposit_events": 1,
+        "first_block": 14515241,
+        "last_block": 14515241,
+        "total_deposited_lpt": 972.5842520725921
+      },
+      {
+        "address": "0x4b7dbefae61dc1e1403e0bad71327a3da80de834",
+        "deposit_events": 2,
+        "first_block": 16369086,
+        "last_block": 63770562,
+        "total_deposited_lpt": 666.1569609727751
+      },
+      {
+        "address": "0x75d488f70bf04ec7c913e75d38e3338d8bdf21ff",
+        "deposit_events": 2,
+        "first_block": 18838910,
+        "last_block": 18839783,
+        "total_deposited_lpt": 584.5751658493039
+      },
+      {
+        "address": "0xe538ab4f6aaf023d9ade8ad3a313553c3764f66b",
+        "deposit_events": 3,
+        "first_block": 126020599,
+        "last_block": 147979292,
+        "total_deposited_lpt": 434.0
+      },
+      {
+        "address": "0xc5286732a4057f1bdfddab4702926aec3b48276e",
+        "deposit_events": 3,
+        "first_block": 151545713,
+        "last_block": 156043842,
+        "total_deposited_lpt": 378.243522593465
+      },
+      {
+        "address": "0x94096ad1a59b2175618fc5705b2038747e7d76e6",
+        "deposit_events": 1,
+        "first_block": 58766025,
+        "last_block": 58766025,
+        "total_deposited_lpt": 328.2118148474639
+      },
+      {
+        "address": "0xf4bd4f965b4231a11e9746cbc0462da21ef3c8f2",
+        "deposit_events": 4,
+        "first_block": 97485265,
+        "last_block": 154315644,
+        "total_deposited_lpt": 309.82536268392187
+      },
+      {
+        "address": "0x19b3b9b74c51f5227eb30de2163bf0fc1f8d4eca",
+        "deposit_events": 1,
+        "first_block": 155344458,
+        "last_block": 155344458,
+        "total_deposited_lpt": 250.0
+      },
+      {
+        "address": "0xe72185a9f4ce3500d6dc7ccdcfc64cf66d823be8",
+        "deposit_events": 11,
+        "first_block": 56504003,
+        "last_block": 165041297,
+        "total_deposited_lpt": 225.95681651330818
+      },
+      {
+        "address": "0xcbe12068cab7a49bb9c9746a734de7a11211a3b1",
+        "deposit_events": 1,
+        "first_block": 20974089,
+        "last_block": 20974089,
+        "total_deposited_lpt": 206.54687752362764
+      },
+      {
+        "address": "0x369cb0db97b742748b7134dbae7e7ab2bd242a6e",
+        "deposit_events": 3,
+        "first_block": 97734541,
+        "last_block": 155029570,
+        "total_deposited_lpt": 200.0
+      },
+      {
+        "address": "0xfb4b690b3cc0d854dec7c3b47b157c58139a4a80",
+        "deposit_events": 2,
+        "first_block": 51946862,
+        "last_block": 93244506,
+        "total_deposited_lpt": 198.04786109999998
+      },
+      {
+        "address": "0xbe6cce2753c0e99bc9e1b1bea946d35921aabd49",
+        "deposit_events": 3,
+        "first_block": 12981175,
+        "last_block": 14374104,
+        "total_deposited_lpt": 193.0
+      },
+      {
+        "address": "0xb714ccc9081a537df2aa930a4172175d9ab758ad",
+        "deposit_events": 2,
+        "first_block": 76289849,
+        "last_block": 76942181,
+        "total_deposited_lpt": 158.856946161434
+      }
+    ],
+    "total_deposited_lpt": 92191.46464876221,
+    "unique_depositors": 2518,
+    "withdraw_minus_deposit_bottom25": [
+      {
+        "address": "0xda10821828e1fb1b241878326dc59e920ad08db2",
+        "lpt": -21.13525920739529
+      },
+      {
+        "address": "0x9e140cd870b19f82b7f36184ce6b7399ff67c848",
+        "lpt": -21.616677233840583
+      },
+      {
+        "address": "0x79438224bc21b0e6b45ecf9f8caadfbdb874dedd",
+        "lpt": -21.658196520135967
+      },
+      {
+        "address": "0x526b7978c6e747dd7c44c7ae33de57bddae19342",
+        "lpt": -22.725571069182244
+      },
+      {
+        "address": "0x9ddae7a058d2d8940d83b90e2538f72cbfbde206",
+        "lpt": -23.0
+      },
+      {
+        "address": "0xac35b645b14d8252d49df77948ef3c215f2ec13f",
+        "lpt": -23.0
+      },
+      {
+        "address": "0x0c9f1e362b2b3c5cf1fcdb239c13ead7e803981b",
+        "lpt": -29.911778550484165
+      },
+      {
+        "address": "0x4250f21a947ba6fed45cfcea4da15c30ad925a90",
+        "lpt": -32.90377179814519
+      },
+      {
+        "address": "0xf137b15451b40ee2758ab8c6417899ff431c2864",
+        "lpt": -40.431514018296845
+      },
+      {
+        "address": "0x364ada6d549588a8b2e0d3819bc3d5479951742d",
+        "lpt": -44.61542809073713
+      },
+      {
+        "address": "0x6cab818daaf4040476e2489a7ed29ca685ad0623",
+        "lpt": -45.0
+      },
+      {
+        "address": "0x1f7d864527c664e8072c0fc0ff90aab7aee28825",
+        "lpt": -50.0
+      },
+      {
+        "address": "0x16c2312b7168f0e268751a4d5d73953176d87768",
+        "lpt": -52.27336578389474
+      },
+      {
+        "address": "0xafd34e068aa3334a1a8868f5eaf8cf485473dac6",
+        "lpt": -85.0
+      },
+      {
+        "address": "0x5481484616fd5bcc97dd5bbb4f58daadf34d099d",
+        "lpt": -88.81706563572607
+      },
+      {
+        "address": "0xe72185a9f4ce3500d6dc7ccdcfc64cf66d823be8",
+        "lpt": -102.41229078167342
+      },
+      {
+        "address": "0xeeb2e36d47ff896b4e766e74723561a28994c5d2",
+        "lpt": -107.04090955
+      },
+      {
+        "address": "0x6a7e4a10fc22b8b8300c990f1bb4fd45ebffc51d",
+        "lpt": -142.0790155776487
+      },
+      {
+        "address": "0xb714ccc9081a537df2aa930a4172175d9ab758ad",
+        "lpt": -158.856946161434
+      },
+      {
+        "address": "0xbe6cce2753c0e99bc9e1b1bea946d35921aabd49",
+        "lpt": -193.0
+      },
+      {
+        "address": "0xfb4b690b3cc0d854dec7c3b47b157c58139a4a80",
+        "lpt": -198.04786109999998
+      },
+      {
+        "address": "0x75d488f70bf04ec7c913e75d38e3338d8bdf21ff",
+        "lpt": -584.5751658493039
+      },
+      {
+        "address": "0x7fcfc04cc6cc89def9a9f46fab7784131b12699c",
+        "lpt": -2707.0000000000005
+      },
+      {
+        "address": "0x3f717b0f5270311c011a48d46ca7a67f7e37c015",
+        "lpt": -3283.4279088851367
+      },
+      {
+        "address": "0xdcfae5c899649f05357b84d002e024374ed7b7a9",
+        "lpt": -22971.342555249026
+      }
+    ],
+    "withdraw_minus_deposit_top25": [
+      {
+        "address": "0x07ca020fdde5c57c1c3a783befdb08929cf77fec",
+        "lpt": 2621.523725218074
+      },
+      {
+        "address": "0xbc1796b4d9d112de8cf29849ee3e732ffd27d4d8",
+        "lpt": 2237.517920282123
+      },
+      {
+        "address": "0x79f709b01033dfdbf065cff7a1abe7c72011d3eb",
+        "lpt": 1347.8472566917571
+      },
+      {
+        "address": "0x5cb2f169ac9a7416db37b8eb0a693fb75b2bcd23",
+        "lpt": 388.29958683720497
+      },
+      {
+        "address": "0xba5af4407797f74771dd35684fcfcd65467a2e90",
+        "lpt": 375.898309702025
+      },
+      {
+        "address": "0x28cc2f7fa441665f497ffbb1c030e1c5f6e4b70d",
+        "lpt": 317.43446237253033
+      },
+      {
+        "address": "0x0f43ad4eb50eecc44531d2e512dd0f4b50ab58fd",
+        "lpt": 309.9165591230012
+      },
+      {
+        "address": "0x4b7dbefae61dc1e1403e0bad71327a3da80de834",
+        "lpt": 221.19395231426802
+      },
+      {
+        "address": "0x369cb0db97b742748b7134dbae7e7ab2bd242a6e",
+        "lpt": 170.0983692629223
+      },
+      {
+        "address": "0xcbe12068cab7a49bb9c9746a734de7a11211a3b1",
+        "lpt": 168.48975097492558
+      },
+      {
+        "address": "0x568f4acaf975bdb81d8a26fc1bf3991656a745d7",
+        "lpt": 127.35451608930771
+      },
+      {
+        "address": "0xf4bd4f965b4231a11e9746cbc0462da21ef3c8f2",
+        "lpt": 123.85710690707168
+      },
+      {
+        "address": "0xbc58bc60873b395b62ab4abc7ea8ec1db003c106",
+        "lpt": 74.7044366317372
+      },
+      {
+        "address": "0xa98fcccf106a73dd74cf5823eff8a4b89ee80bbd",
+        "lpt": 73.20295680276584
+      },
+      {
+        "address": "0x073911559c5731dc9fa18fc58cecc6b3b1c0a2fb",
+        "lpt": 73.09781477493709
+      },
+      {
+        "address": "0x19b3b9b74c51f5227eb30de2163bf0fc1f8d4eca",
+        "lpt": 60.65693545467349
+      },
+      {
+        "address": "0x7b68a28d7ad85451188fa0608fb3ea2d83155bde",
+        "lpt": 59.242638433020176
+      },
+      {
+        "address": "0x0ef502ecff43d47d2d0cf50409aaf5de6c9ce689",
+        "lpt": 52.575710690415434
+      },
+      {
+        "address": "0x9df68225898897bfdf813994fb5148f0ab5e4292",
+        "lpt": 39.06807471955244
+      },
+      {
+        "address": "0x5701068ca0ba0338a5b64e8f59d5ae661e9ecfc0",
+        "lpt": 35.28139445216065
+      },
+      {
+        "address": "0x40c48dda56b4da64abbd49cc91889b4f933a1e64",
+        "lpt": 29.497560857855206
+      },
+      {
+        "address": "0x646dac2a0f0d901f442b8c755a676fde3ee12c4b",
+        "lpt": 27.396846242718752
+      },
+      {
+        "address": "0xc5286732a4057f1bdfddab4702926aec3b48276e",
+        "lpt": 23.26375492438399
+      },
+      {
+        "address": "0xcf2723865a9aed1240e357d10545d70ae49b476e",
+        "lpt": 12.23425230205413
+      },
+      {
+        "address": "0xe538ab4f6aaf023d9ade8ad3a313553c3764f66b",
+        "lpt": 7.7991712836583815
+      }
+    ]
+  },
+  "tenderize_livepeer": {
+    "chain": "arbitrum-one",
+    "contracts": {
+      "lp_token": "0x6cAbc6e78c1D632b6210EaB71c19889b92376931",
+      "lpt": "0x289ba1701C2F088cf0faf8B3705246331cB8A839",
+      "tender_farm": "0x3FE01e8b62a8E17F296Eb3832504C3D3A49f2209",
+      "tender_swap": "0x2429fC7082eb517C14946b392b195B181D0b9781",
+      "tender_token_tlpt": "0xfaC38532829fDD744373fdcd4708Ab90fA0c4078",
+      "tenderizer": "0x339efC059C6D4Aa50a41F8246a017B57Aa477b60"
+    },
+    "deployment_block": 11600821,
+    "deployment_tx": "0x5c38f744c68e188751e275b0a599d0eec3745829a226641430965117295aadea",
+    "rpc_url_default": "https://arb1.arbitrum.io/rpc"
+  },
+  "unstake": {
+    "event_count": 556,
+    "total_unstaked_lpt": 111536.41866869609,
+    "unique_unstakers": 502
+  },
+  "window": {
+    "from_block": 11600821,
+    "to_block": 422744226
+  },
+  "withdraw": {
+    "event_count": 346,
+    "first_block": 58978547,
+    "first_ts": 1675826451,
+    "last_block": 342250429,
+    "last_ts": 1748646214,
+    "total_withdrawn_lpt": 110026.24635647636,
+    "unique_withdrawers": 311
+  }
+}
