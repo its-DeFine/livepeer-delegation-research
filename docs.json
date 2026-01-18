@@ -53,7 +53,8 @@
         "items": [
           { "label": "Lisar", "href": "/solutions/lisar/livepeer-lisar-spe-delegation-analysis" },
           { "label": "IDOL / Arrakis", "href": "/solutions/ydol" },
-          { "label": "Tenderize", "href": "/solutions/tenderize" }
+          { "label": "Tenderize", "href": "/solutions/tenderize" },
+          { "label": "Delegator tiers", "href": "/solutions/delegator-tiers" }
         ]
       },
       {
@@ -61,7 +62,8 @@
         "items": [
           { "label": "Notes index", "href": "/research" },
           { "label": "Outflows", "href": "/research/livepeer-delegator-outflows-research" },
-          { "label": "Incentives", "href": "/research/livepeer-delegator-incentives" }
+          { "label": "Incentives", "href": "/research/livepeer-delegator-incentives" },
+          { "label": "Cross-protocol experiments", "href": "/research/cross-protocol-tokenomics-experiments" }
         ]
       }
     ]
@@ -83,7 +85,8 @@
         "pages": [
           "solutions/lisar/livepeer-lisar-spe-delegation-analysis",
           "solutions/ydol/index",
-          "solutions/tenderize/index"
+          "solutions/tenderize/index",
+          "solutions/delegator-tiers/index"
         ]
       },
       {
@@ -91,7 +94,8 @@
         "pages": [
           "research/index",
           "research/livepeer-delegator-outflows-research",
-          "research/livepeer-delegator-incentives"
+          "research/livepeer-delegator-incentives",
+          "research/cross-protocol-tokenomics-experiments"
         ]
       }
     ]

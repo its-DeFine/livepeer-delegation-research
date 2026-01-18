@@ -151,6 +151,8 @@ Implication: “liquid staking” can attract many small participants, but if Li
 
 This section is “pattern-level” (not yet a full on-chain replication study across protocols). It’s included because these patterns repeatedly show up when “retail participation” increases in staking systems.
 
+For additional precedent notes, see: `/research/cross-protocol-tokenomics-experiments`.
+
 ### Pattern A: Liquid staking + DeFi composability
 
 Across major ecosystems (e.g., Ethereum, Solana, Cosmos), liquid staking protocols (Lido, Rocket Pool, Marinade, Stride, etc.) grew by:
@@ -224,6 +226,8 @@ There is no “0 friction, perfectly unique human” primitive.
 If Livepeer wants aggressive per-person boosts, make it a higher-tier bonus:
 - baseline incentives: sybil-neutral (stake-proportional + retention)
 - additional boost: requires identity proof (Gitcoin Passport / World ID / equivalent), or credible “proof of work/usage” that makes sybil costly
+
+One candidate design for “proof-of-work/usage gating” is a **delegator tiers** ladder: `/solutions/delegator-tiers`.
 
 ### 5.5 Treat DEX liquidity programs (Arrakis-style) as pilots, not forever programs
 

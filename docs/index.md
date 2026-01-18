@@ -40,4 +40,10 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Solutions: Tenderize (tLPT)" href="/solutions/tenderize">
     Historical Livepeer liquid staking: adoption evidence, mechanics, and failure modes.
   </Card>
+  <Card title="Solutions: Delegator tiers (stake + contribution)" href="/solutions/delegator-tiers">
+    A tier ladder that targets small/mid delegators using verifiable usage and contributions (sybil-costly).
+  </Card>
+  <Card title="Cross-protocol experiments" href="/research/cross-protocol-tokenomics-experiments">
+    What worked (and what backfired) in crypto incentives, with takeaways for Livepeer.
+  </Card>
 </CardGroup>

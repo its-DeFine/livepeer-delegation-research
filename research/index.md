@@ -14,9 +14,13 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Incentives + tokenomics" href="/research/livepeer-delegator-incentives">
     Design patterns to grow small delegators without enabling easy sybil farming.
   </Card>
+  <Card title="Cross-protocol experiments" href="/research/cross-protocol-tokenomics-experiments">
+    What worked (and what backfired) in crypto incentive design, with takeaways for Livepeer.
+  </Card>
 </CardGroup>
 
 - `research/livepeer-delegator-incentives.md`: tokenomics/program design ideas + constraints.
 - `research/livepeer-delegator-outflows-research.md`: on-chain outflow + sybil-cashout hypothesis research.
+- `research/cross-protocol-tokenomics-experiments.md`: precedent patterns (worked vs failed) and what to copy/avoid.
 
 These were imported from the main workspace repo and should be edited/maintained here going forward.
