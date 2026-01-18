@@ -1,3 +1,6 @@
 [submodule "solutions/lisar"]
 	path = solutions/lisar
 	url = https://github.com/its-DeFine/livepeer-lisar-spe-analysis.git
+[submodule "solutions/ydol"]
+	path = solutions/ydol
+	url = https://github.com/its-DeFine/livepeer-idol-dex-liquidity.git
