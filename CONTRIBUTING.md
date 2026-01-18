@@ -3,6 +3,7 @@
 ## Ground rules
 
 - Keep shared edits minimal (prefer small diffs) in:
+  - `docs/overview.md`
   - `docs/scoreboard.md`
   - `docs/rubric.md`
 - Put new work in its own place:
@@ -18,3 +19,7 @@
 
 Prefer vendoring the content into `solutions/<name>/` so browsing stays zero-friction.
 If you want to preserve history while still vendoring, use `git subtree` (optional).
+
+## Docs preview (Mintlify)
+
+- `npx mintlify dev`

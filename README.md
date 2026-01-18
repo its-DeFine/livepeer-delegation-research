@@ -4,6 +4,7 @@ This repo is the “one place” to frame the **Livepeer delegation problem** an
 
 ## How to use this repo
 
+- Single overview (read this first): `docs/overview.md`
 - Problem framing + metrics: `docs/problem.md`
 - Evaluation rubric + scoring: `docs/rubric.md`
 - Solution dossiers: `solutions/`
@@ -13,6 +14,12 @@ This repo is the “one place” to frame the **Livepeer delegation problem** an
 ## Clone
 
 `git clone https://github.com/its-DeFine/livepeer-delegation-research.git`
+
+## Docs (Mintlify)
+
+This repo includes a `mint.json` so it can be browsed as a Mintlify docs site.
+
+- Run locally: `npx mintlify dev`
 
 ## Principles
 
