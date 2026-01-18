@@ -13,13 +13,7 @@ This repo is the “one place” to frame the **Livepeer delegation problem** an
 
 ## Clone
 
-This repo includes git submodules (e.g. `solutions/lisar/`). Clone with submodules:
-
-`git clone --recurse-submodules https://github.com/its-DeFine/livepeer-delegation-research.git`
-
-If you already cloned without them:
-
-`git submodule update --init --recursive`
+`git clone https://github.com/its-DeFine/livepeer-delegation-research.git`
 
 ## Docs (Mintlify)
 
