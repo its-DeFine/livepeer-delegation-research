@@ -1,0 +1,276 @@
+{
+  "aggregate": {
+    "volume_usd": 73874.07083914589
+  },
+  "as_of": "2025-12-20T05:13:08.683600+00:00",
+  "counts": {
+    "swap_logs": 161,
+    "unique_recipients": 29,
+    "unique_senders": 20
+  },
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "pool": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+  "prices_usd": {
+    "token0": 3.1,
+    "token1": 2982.04
+  },
+  "rpc_url": "https://arb1.arbitrum.io/rpc",
+  "token0": "0x289ba1701c2f088cf0faf8b3705246331cb8a839",
+  "token1": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "top": {
+    "recipients": [
+      {
+        "address": "0x56c65290a3309247379345c9fd270a308ce8b3ec",
+        "share": 0.26233318853815013,
+        "swaps": 4,
+        "volume_usd": 19379.620553526314
+      },
+      {
+        "address": "0x01989c93890aed05a63d179b03424997075b6acf",
+        "share": 0.23586999546639048,
+        "swaps": 32,
+        "volume_usd": 17424.676753913147
+      },
+      {
+        "address": "0xe40d548eb4fa4d9188fd21723f2fd377456c0876",
+        "share": 0.10869619259104094,
+        "swaps": 43,
+        "volume_usd": 8029.830231416001
+      },
+      {
+        "address": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086",
+        "share": 0.08298985873821237,
+        "swaps": 15,
+        "volume_usd": 6130.79870335741
+      },
+      {
+        "address": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
+        "share": 0.07594274188882243,
+        "swaps": 12,
+        "volume_usd": 5610.199494013839
+      },
+      {
+        "address": "0xfc7dc4f602d2e0f8d97dda3cd2a311136ad1868e",
+        "share": 0.05669597642528197,
+        "swaps": 1,
+        "volume_usd": 4188.362578735825
+      },
+      {
+        "address": "0x3e21153ed7697b645ed1c7147720719487113314",
+        "share": 0.05006444984581128,
+        "swaps": 8,
+        "volume_usd": 3698.4647144323285
+      },
+      {
+        "address": "0xb1f03051cd02ed3aafd7d40627a51d6b49135916",
+        "share": 0.03308062941880831,
+        "swaps": 1,
+        "volume_usd": 2443.800761088578
+      },
+      {
+        "address": "0xa51afafe0263b40edaef0df8781ea9aa03e381a3",
+        "share": 0.01793736699227877,
+        "swaps": 3,
+        "volume_usd": 1325.1063198553588
+      },
+      {
+        "address": "0xde5167c19a5286889752cb0f31a1c7f28a99fefb",
+        "share": 0.01642457701634593,
+        "swaps": 3,
+        "volume_usd": 1213.3503660085464
+      },
+      {
+        "address": "0xa669e7a0d4b3e4fa48af2de86bd4cd7126be4e13",
+        "share": 0.01084565274100845,
+        "swaps": 8,
+        "volume_usd": 801.2125188860349
+      },
+      {
+        "address": "0x368e01160c2244b0363a35b3ff0a971e44a89284",
+        "share": 0.008887414439748555,
+        "swaps": 1,
+        "volume_usd": 656.5494838988327
+      },
+      {
+        "address": "0xdea89e704285caea9390ef484589df086e3c6b4b",
+        "share": 0.008093581655273713,
+        "swaps": 1,
+        "volume_usd": 597.9058245441018
+      },
+      {
+        "address": "0x0a2854fbbd9b3ef66f17d47284e7f899b9509330",
+        "share": 0.005561185380820598,
+        "swaps": 1,
+        "volume_usd": 410.82740277236326
+      },
+      {
+        "address": "0xea2005ad9cef577b3ac9dfc605c8afb0956a4f4c",
+        "share": 0.0053320587960103555,
+        "swaps": 1,
+        "volume_usd": 393.9008892149599
+      },
+      {
+        "address": "0xc6962004f452be9203591991d15f6b388e09e8d0",
+        "share": 0.00418668728463425,
+        "swaps": 1,
+        "volume_usd": 309.2876330464219
+      },
+      {
+        "address": "0x2f5e87c9312fa29aed5c179e456625d79015299c",
+        "share": 0.004158022466478137,
+        "swaps": 2,
+        "volume_usd": 307.17004623936594
+      },
+      {
+        "address": "0x802b65b5d9016621e66003aed0b16615093f328b",
+        "share": 0.0029830266865546657,
+        "swaps": 1,
+        "volume_usd": 220.36832475760198
+      },
+      {
+        "address": "0x6747bcaf9bd5a5f0758cbe08903490e45ddfacb5",
+        "share": 0.002962471479916185,
+        "swaps": 1,
+        "volume_usd": 218.84982796627756
+      },
+      {
+        "address": "0x4bfc22a4da7f31f8a912a79a7e44a822398b4390",
+        "share": 0.00250124816920974,
+        "swaps": 1,
+        "volume_usd": 184.77738443848426
+      }
+    ],
+    "senders": [
+      {
+        "address": "0x56c65290a3309247379345c9fd270a308ce8b3ec",
+        "share": 0.2623331885381501,
+        "swaps": 4,
+        "volume_usd": 19379.620553526314
+      },
+      {
+        "address": "0xee2e7bbb67676292af2e31dffd1fea2276d6c7ba",
+        "share": 0.23586999546639043,
+        "swaps": 32,
+        "volume_usd": 17424.676753913147
+      },
+      {
+        "address": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+        "share": 0.14177682200984898,
+        "swaps": 44,
+        "volume_usd": 10473.630992504563
+      },
+      {
+        "address": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086",
+        "share": 0.08298985873821235,
+        "swaps": 15,
+        "volume_usd": 6130.79870335741
+      },
+      {
+        "address": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
+        "share": 0.07594274188882241,
+        "swaps": 12,
+        "volume_usd": 5610.199494013839
+      },
+      {
+        "address": "0xb2959027d50bcbd7c00dd7c4f49ab8866b30f671",
+        "share": 0.060148245779456905,
+        "swaps": 13,
+        "volume_usd": 4443.395769561957
+      },
+      {
+        "address": "0xfc7dc4f602d2e0f8d97dda3cd2a311136ad1868e",
+        "share": 0.056695976425281965,
+        "swaps": 1,
+        "volume_usd": 4188.362578735825
+      },
+      {
+        "address": "0xea2005ad9cef577b3ac9dfc605c8afb0956a4f4c",
+        "share": 0.02175663581235628,
+        "swaps": 4,
+        "volume_usd": 1607.2512552235062
+      },
+      {
+        "address": "0xa51afafe0263b40edaef0df8781ea9aa03e381a3",
+        "share": 0.017937366992278766,
+        "swaps": 3,
+        "volume_usd": 1325.1063198553588
+      },
+      {
+        "address": "0x6747bcaf9bd5a5f0758cbe08903490e45ddfacb5",
+        "share": 0.012395488545564319,
+        "swaps": 5,
+        "volume_usd": 915.70519890084
+      },
+      {
+        "address": "0x03222a2b261a12091bbe271e763a7e26b64e25e2",
+        "share": 0.010845652741008448,
+        "swaps": 8,
+        "volume_usd": 801.2125188860349
+      },
+      {
+        "address": "0x068550c1b9d5b7b8bfb74585e575d712550009af",
+        "share": 0.008093581655273713,
+        "swaps": 1,
+        "volume_usd": 597.9058245441018
+      },
+      {
+        "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+        "share": 0.005603148683570623,
+        "swaps": 2,
+        "volume_usd": 413.9274027723633
+      },
+      {
+        "address": "0xad3b67bca8935cb510c8d18bd45f0b94f54a968f",
+        "share": 0.004186687284634249,
+        "swaps": 1,
+        "volume_usd": 309.2876330464219
+      },
+      {
+        "address": "0x802b65b5d9016621e66003aed0b16615093f328b",
+        "share": 0.0029830266865546653,
+        "swaps": 1,
+        "volume_usd": 220.36832475760198
+      },
+      {
+        "address": "0x48daab9f7ed6e3184c26d9ddaccc356d52d6237f",
+        "share": 0.0001809091692270137,
+        "swaps": 7,
+        "volume_usd": 13.364496782927443
+      },
+      {
+        "address": "0xd2b37ade14708bf18904047b1e31f8166d39612b",
+        "share": 0.0001364401140503528,
+        "swaps": 1,
+        "volume_usd": 10.079386650656907
+      },
+      {
+        "address": "0x00000000280b79b3aa82ec2a795582d1be1fc159",
+        "share": 6.329708494435036e-05,
+        "swaps": 2,
+        "volume_usd": 4.676013337090373
+      },
+      {
+        "address": "0x877af3fe40bcd805edc64df96b3eaba2448a5ae7",
+        "share": 5.8734852877382884e-05,
+        "swaps": 3,
+        "volume_usd": 4.338982682190595
+      },
+      {
+        "address": "0x11a62cce2f389eda81686fe5b2874161b39588be",
+        "share": 2.2015314961456045e-06,
+        "swaps": 2,
+        "volume_usd": 0.16263609370087123
+      }
+    ]
+  },
+  "window": {
+    "days": 1.0,
+    "end_block": 412518292,
+    "end_ts": 1766207573,
+    "start_block": 412172548,
+    "start_ts": 1766121173
+  }
+}

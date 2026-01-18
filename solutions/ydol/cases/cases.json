@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "id": "livepeer_lpt_weth_arb_v3_0p3",
+      "name": "Livepeer LPT/WETH (Arbitrum, Uniswap v3 0.30%)",
+      "rpc_url": "https://arb1.arbitrum.io/rpc",
+      "pool": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+      "token0_coingecko_id": "livepeer",
+      "token1_coingecko_id": "ethereum"
+    },
+    {
+      "id": "radiant_rdnt_weth_arb_v3_0p3",
+      "name": "Radiant RDNT/WETH (Arbitrum, Uniswap v3 0.30%)",
+      "rpc_url": "https://arb1.arbitrum.io/rpc",
+      "pool": "0x446BF9748B4eA044dd759d9B9311C70491dF8F29",
+      "token0_coingecko_id": "radiant-capital",
+      "token1_coingecko_id": "ethereum"
+    },
+    {
+      "id": "across_acx_weth_eth_v3_1p0",
+      "name": "Across ACX/WETH (Ethereum, Uniswap v3 1.00%)",
+      "rpc_url": "https://ethereum.publicnode.com",
+      "pool": "0x508acdC358be2ed126B1441F0Cff853dEc49d40F",
+      "token0_coingecko_id": "across-protocol",
+      "token1_coingecko_id": "ethereum"
+    },
+    {
+      "id": "compound_comp_weth_eth_v3_0p3",
+      "name": "Compound COMP/WETH (Ethereum, Uniswap v3 0.30%)",
+      "rpc_url": "https://ethereum.publicnode.com",
+      "pool": "0xea4Ba4CE14fdd287f380b55419B1C5b6c3f22ab6",
+      "token0_coingecko_id": "compound-governance-token",
+      "token1_coingecko_id": "ethereum"
+    },
+    {
+      "id": "compound_comp_weth_eth_v3_1p0",
+      "name": "Compound COMP/WETH (Ethereum, Uniswap v3 1.00%)",
+      "rpc_url": "https://ethereum.publicnode.com",
+      "pool": "0x5598931BfBb43EEC686fa4b5b92B5152ebADC2f6",
+      "token0_coingecko_id": "compound-governance-token",
+      "token1_coingecko_id": "ethereum"
+    }
+  ]
+}
+

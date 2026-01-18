@@ -1,0 +1,550 @@
+{
+  "computed": {
+    "bond_additional_total_lpt": 35.24472637,
+    "claim_events_total": 23,
+    "current_total_bonded_lpt": 33.260234086675545,
+    "dashboard_total_lpt_delegated": 30.444726369999994,
+    "dashboard_total_lpt_delegated_delta_vs_bond_additional": 4.800000000000008,
+    "dashboard_total_lpt_delegated_delta_vs_current_bonded": 2.815507716675551,
+    "delegators_active_now": 13,
+    "delegators_ever_bonded": 14,
+    "program_end_utc": "2025-12-04T01:47:37+00:00",
+    "program_start_utc": "2025-11-14T18:44:19+00:00",
+    "unbond_total_lpt": 2.025390147616967,
+    "withdraw_total_lpt": 1.9
+  },
+  "daily": {
+    "2025-11-14": {
+      "bond_additional": "4800000000000000000",
+      "bond_events": 3
+    },
+    "2025-11-15": {
+      "bond_additional": "5932000000000000000",
+      "bond_events": 4
+    },
+    "2025-11-16": {
+      "bond_additional": "3066000000000000000",
+      "bond_events": 3
+    },
+    "2025-11-17": {
+      "bond_additional": "2000000000000000000",
+      "bond_events": 3
+    },
+    "2025-11-18": {
+      "bond_additional": "2466000000000000000",
+      "bond_events": 2
+    },
+    "2025-11-19": {
+      "bond_additional": "1066000000000000000",
+      "bond_events": 2
+    },
+    "2025-11-22": {
+      "bond_additional": "100000000000000000",
+      "bond_events": 1
+    },
+    "2025-11-23": {
+      "bond_additional": "40000000000000000",
+      "bond_events": 2
+    },
+    "2025-11-24": {
+      "bond_additional": "20000000000000000",
+      "bond_events": 1
+    },
+    "2025-11-26": {
+      "unbond_amount": "2025390147616967030",
+      "unbond_events": 3
+    },
+    "2025-11-28": {
+      "bond_additional": "15734726370000000000",
+      "bond_events": 1
+    },
+    "2025-12-04": {
+      "bond_additional": "20000000000000000",
+      "bond_events": 1
+    },
+    "2025-12-18": {
+      "withdraw_amount": "1900000000000000000",
+      "withdraw_events": 1
+    }
+  },
+  "delegators": {
+    "0x29f803bc0dab53a1ead2723236071203831e1cc3": {
+      "address": "0x29f803bc0dab53a1ead2723236071203831e1cc3",
+      "bond_additional_total": 1966000000000000000,
+      "bond_additional_total_lpt": 1.966,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1966000000000000000,
+      "current_bonded_lpt": 1.966,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400539382,
+      "first_bond_ts": 1763216374,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400539382,
+      "last_bond_ts": 1763216374,
+      "last_bonded_amount": 1966000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0x7446d79ea218ba6dbe7e93b9859737805c9c15c3": {
+      "address": "0x7446d79ea218ba6dbe7e93b9859737805c9c15c3",
+      "bond_additional_total": 1966000000000000000,
+      "bond_additional_total_lpt": 1.966,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1966000000000000000,
+      "current_bonded_lpt": 1.966,
+      "current_delegate": "0x0fc80afb7876f579f1fb1c4d1c37cf1339038658",
+      "delegates": {
+        "0x0fc80afb7876f579f1fb1c4d1c37cf1339038658": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400594469,
+      "first_bond_ts": 1763230149,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400594469,
+      "last_bond_ts": 1763230149,
+      "last_bonded_amount": 1966000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0x760be63a8c4602c12248575a3eee7fb443470880": {
+      "address": "0x760be63a8c4602c12248575a3eee7fb443470880",
+      "bond_additional_total": 1900000000000000000,
+      "bond_additional_total_lpt": 1.9,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1900000000000000000,
+      "current_bonded_lpt": 1.9,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400275787,
+      "first_bond_ts": 1763150463,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400275787,
+      "last_bond_ts": 1763150463,
+      "last_bonded_amount": 1900000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0x7f263c723e0aeed0a2de4af3172fbc1d1448db4e": {
+      "address": "0x7f263c723e0aeed0a2de4af3172fbc1d1448db4e",
+      "bond_additional_total": 1900000000000000000,
+      "bond_additional_total_lpt": 1.9,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1900000000000000000,
+      "current_bonded_lpt": 1.9,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400309500,
+      "first_bond_ts": 1763158902,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400309500,
+      "last_bond_ts": 1763158902,
+      "last_bonded_amount": 1900000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0x9c133f09767789387a0b1d3d5deaaf9b9f654a14": {
+      "address": "0x9c133f09767789387a0b1d3d5deaaf9b9f654a14",
+      "bond_additional_total": 480000000000000000,
+      "bond_additional_total_lpt": 0.48,
+      "bond_events": 8,
+      "claim_events": 8,
+      "current_bonded_amount": 388792437315321491,
+      "current_bonded_lpt": 0.3887924373153215,
+      "current_delegate": "0x141e6d4953b933746c770272126db2bd691a9683",
+      "delegates": {
+        "0x141e6d4953b933746c770272126db2bd691a9683": 8
+      },
+      "fees_claimed_total": 60344620873,
+      "first_bond_block": 400858322,
+      "first_bond_ts": 1763296316,
+      "first_unbond_ts": 1764122353,
+      "first_withdraw_ts": null,
+      "last_bond_block": 406929266,
+      "last_bond_ts": 1764812857,
+      "last_bonded_amount": 388792437315321491,
+      "last_unbond_ts": 1764122353,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 8792437315321491,
+      "unbond_events": 1,
+      "unbond_total": 100000000000000000,
+      "unbond_total_lpt": 0.1,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xa09b0919da4b1eb8db231bd7b2d2b4c7e5d8c29a": {
+      "address": "0xa09b0919da4b1eb8db231bd7b2d2b4c7e5d8c29a",
+      "bond_additional_total": 1900000000000000000,
+      "bond_additional_total_lpt": 1.9,
+      "bond_events": 2,
+      "claim_events": 2,
+      "current_bonded_amount": 0,
+      "current_bonded_lpt": 0.0,
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegates": {
+        "0x6cb1ce2516fb7d211038420a8cf9a843c7bd3b08": 2
+      },
+      "fees_claimed_total": 10516999964,
+      "first_bond_block": 401186106,
+      "first_bond_ts": 1763378280,
+      "first_unbond_ts": 1764154786,
+      "first_withdraw_ts": 1766071223,
+      "last_bond_block": 401191058,
+      "last_bond_ts": 1763379517,
+      "last_bonded_amount": 1900000000000000000,
+      "last_unbond_ts": 1764154971,
+      "last_withdraw_ts": 1766071223,
+      "rewards_claimed_total": 25390147616967030,
+      "unbond_events": 2,
+      "unbond_total": 1925390147616967030,
+      "unbond_total_lpt": 1.9253901476169668,
+      "withdraw_events": 1,
+      "withdraw_total": 1900000000000000000,
+      "withdraw_total_lpt": 1.9
+    },
+    "0xa5e89d772c08cd4a5570093813dc87f075dfaad6": {
+      "address": "0xa5e89d772c08cd4a5570093813dc87f075dfaad6",
+      "bond_additional_total": 1000000000000000000,
+      "bond_additional_total_lpt": 1.0,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1000000000000000000,
+      "current_bonded_lpt": 1.0,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400758697,
+      "first_bond_ts": 1763271402,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400758697,
+      "last_bond_ts": 1763271402,
+      "last_bonded_amount": 1000000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xdab5e123e0ab63deb4fe7946f901cd309402e460": {
+      "address": "0xdab5e123e0ab63deb4fe7946f901cd309402e460",
+      "bond_additional_total": 1000000000000000000,
+      "bond_additional_total_lpt": 1.0,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1000000000000000000,
+      "current_bonded_lpt": 1.0,
+      "current_delegate": "0xbc144f1a34f5b858900413d35bfb7cb6b3b0d65b",
+      "delegates": {
+        "0xbc144f1a34f5b858900413d35bfb7cb6b3b0d65b": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400416618,
+      "first_bond_ts": 1763185688,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400416618,
+      "last_bond_ts": 1763185688,
+      "last_bonded_amount": 1000000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xdd7d10b095b18f10e1deb8a6573269328f41d323": {
+      "address": "0xdd7d10b095b18f10e1deb8a6573269328f41d323",
+      "bond_additional_total": 15734726370000000000,
+      "bond_additional_total_lpt": 15.734726369999999,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 15734726370000000000,
+      "current_bonded_lpt": 15.734726369999999,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 404831837,
+      "first_bond_ts": 1764289482,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 404831837,
+      "last_bond_ts": 1764289482,
+      "last_bonded_amount": 15734726370000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xdf40a6a8fe32e9d90cc05741e374ce79febe50f2": {
+      "address": "0xdf40a6a8fe32e9d90cc05741e374ce79febe50f2",
+      "bond_additional_total": 1466000000000000000,
+      "bond_additional_total_lpt": 1.466,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1466000000000000000,
+      "current_bonded_lpt": 1.466,
+      "current_delegate": "0xa03113bab8d4ebe5695591f60011741233e8b82f",
+      "delegates": {
+        "0xa03113bab8d4ebe5695591f60011741233e8b82f": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 401521374,
+      "first_bond_ts": 1763461988,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 401521374,
+      "last_bond_ts": 1763461988,
+      "last_bonded_amount": 1466000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xea22477cd80e973fd96dac11b05b7905bfd498a7": {
+      "address": "0xea22477cd80e973fd96dac11b05b7905bfd498a7",
+      "bond_additional_total": 1966000000000000000,
+      "bond_additional_total_lpt": 1.966,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1966000000000000000,
+      "current_bonded_lpt": 1.966,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400816479,
+      "first_bond_ts": 1763285858,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400816479,
+      "last_bond_ts": 1763285858,
+      "last_bonded_amount": 1966000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xf5bc0a9f43bb69ce8b44a6aee3bd93048507d93e": {
+      "address": "0xf5bc0a9f43bb69ce8b44a6aee3bd93048507d93e",
+      "bond_additional_total": 1000000000000000000,
+      "bond_additional_total_lpt": 1.0,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1000000000000000000,
+      "current_bonded_lpt": 1.0,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 400257371,
+      "first_bond_ts": 1763145859,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 400257371,
+      "last_bond_ts": 1763145859,
+      "last_bonded_amount": 1000000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xf75a9e68e8183842e258867a4f85f55fb04c82bc": {
+      "address": "0xf75a9e68e8183842e258867a4f85f55fb04c82bc",
+      "bond_additional_total": 1966000000000000000,
+      "bond_additional_total_lpt": 1.966,
+      "bond_events": 2,
+      "claim_events": 2,
+      "current_bonded_amount": 1972715279360218647,
+      "current_bonded_lpt": 1.9727152793602187,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 2
+      },
+      "fees_claimed_total": 64032731234,
+      "first_bond_block": 400533041,
+      "first_bond_ts": 1763214789,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 401961857,
+      "last_bond_ts": 1763572063,
+      "last_bonded_amount": 1972715279360218647,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 6715279360218647,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    },
+    "0xf9639ab4b11ff490d333f1f2ace0a93e24d1e92a": {
+      "address": "0xf9639ab4b11ff490d333f1f2ace0a93e24d1e92a",
+      "bond_additional_total": 1000000000000000000,
+      "bond_additional_total_lpt": 1.0,
+      "bond_events": 1,
+      "claim_events": 1,
+      "current_bonded_amount": 1000000000000000000,
+      "current_bonded_lpt": 1.0,
+      "current_delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+      "delegates": {
+        "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60": 1
+      },
+      "fees_claimed_total": 0,
+      "first_bond_block": 401687251,
+      "first_bond_ts": 1763503480,
+      "first_unbond_ts": null,
+      "first_withdraw_ts": null,
+      "last_bond_block": 401687251,
+      "last_bond_ts": 1763503480,
+      "last_bonded_amount": 1000000000000000000,
+      "last_unbond_ts": null,
+      "last_withdraw_ts": null,
+      "rewards_claimed_total": 0,
+      "unbond_events": 0,
+      "unbond_total": 0,
+      "unbond_total_lpt": 0.0,
+      "withdraw_events": 0,
+      "withdraw_total": 0,
+      "withdraw_total_lpt": 0.0
+    }
+  },
+  "generated_at_utc": "2026-01-17T16:33:14.139141+00:00",
+  "inputs": {
+    "bonding_manager_proxy": "0x35Bcf3c30594191d53231E4FF333E8A770453e40",
+    "from_block": 400207371,
+    "lisar_dashboard_summary_url": "https://lisar-api-3-pi90.onrender.com/api/v1/admin/dashboard/summary",
+    "lisar_dashboard_transactions_url": "https://lisar-api-3-pi90.onrender.com/api/v1/admin/dashboard/transactions?limit=5000",
+    "lisar_delegators_count_from_dashboard_tx": 14,
+    "lpt_token": "0x289ba1701C2F088cf0faf8B3705246331cB8A839",
+    "rpc_url": "https://arb1.arbitrum.io/rpc",
+    "to_block": 422364179
+  },
+  "lisar_dashboard_summary": {
+    "lastUpdated": "2026-01-17T16:32:48.595Z",
+    "totalDelegators": 13,
+    "totalLptDelegated": 30.444726369999994,
+    "totalNgNConverted": 0,
+    "totalValidators": 0
+  },
+  "lisar_dashboard_transactions": {
+    "amount_sums_lpt_from_description": {
+      "bond": 35.24472637,
+      "deposit": 47.08070000000001,
+      "unbond": 2.025390147616967,
+      "withdraw": 2.7367
+    },
+    "deposit_only_addresses": [
+      "0x0188a4a21236970b84e493757204d795ce84faa2",
+      "0xdd9e8ac0df6e3298de6edeca7cf7e311a60fb95a",
+      "0xf13374ae95419ca898e2225de5954d5acd6388c7"
+    ],
+    "deposit_transfers": {
+      "recipient_mismatches": [],
+      "transfer_total_lpt_from_input": 45.1807,
+      "unique_recipients": 17,
+      "unique_senders": 3
+    },
+    "event_counts": {
+      "bond": 23,
+      "deposit": 18,
+      "unbond": 3,
+      "withdraw": 4
+    },
+    "rows": 48,
+    "unique_addresses_by_event": {
+      "bond": 14,
+      "deposit": 17,
+      "unbond": 2,
+      "withdraw": 2
+    },
+    "withdraw_transfers": {
+      "transfer_total_lpt_from_input": 2.7367,
+      "tx_types": {
+        "bonding_manager_call": 1,
+        "erc20_transfer": 3
+      },
+      "unique_destinations": 2
+    }
+  }
+}

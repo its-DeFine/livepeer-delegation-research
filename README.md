@@ -6,16 +6,13 @@ This repo is the “one place” to frame the **Livepeer delegation problem** an
 
 - Problem framing + metrics: `docs/problem.md`
 - Evaluation rubric + scoring: `docs/rubric.md`
-- Solution dossiers (submodules or folders): `solutions/`
+- Solution dossiers: `solutions/`
 - Cross-solution comparison: `docs/scoreboard.md`
 - Deep dives / background notes: `research/`
 
-## Clone (includes submodules)
+## Clone
 
-- Clone with submodules:
-  - `git clone --recurse-submodules https://github.com/its-DeFine/livepeer-delegation-research.git`
-- Or after cloning:
-  - `git submodule update --init --recursive`
+`git clone https://github.com/its-DeFine/livepeer-delegation-research.git`
 
 ## Principles
 

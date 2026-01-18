@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "tokens": 2,
+    "vaults": 1
+  },
+  "factory": "0x820FB8127a689327C863de8433278d6181123982",
+  "platform_id": "ethereum",
+  "rows": [
+    {
+      "amount0": "6392.384742",
+      "amount1": "0.772217737829245427",
+      "price0_usd": 0.999968,
+      "price1_usd": 2983.06,
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "tvl_usd": 8695.752030697164,
+      "type": "public",
+      "vault": "0xf790870ccf6ae66ddc69f68e6d05d446f1a6ad83"
+    }
+  ],
+  "rpc_url": "https://ethereum.publicnode.com"
+}

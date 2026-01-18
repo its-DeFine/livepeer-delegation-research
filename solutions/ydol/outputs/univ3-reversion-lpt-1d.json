@@ -1,0 +1,70 @@
+{
+  "as_of": "2025-12-20T05:00:58.446457+00:00",
+  "coingecko_ids": {
+    "token0": "livepeer",
+    "token1": "ethereum"
+  },
+  "counts": {
+    "candidates": 32,
+    "decoded_swaps": 162,
+    "median_revert_seconds": 22,
+    "median_revert_unit": "swaps",
+    "median_revert_value": 4,
+    "revert_rate": 0.46875,
+    "reverted": 15,
+    "swap_logs": 162
+  },
+  "fee": 3000,
+  "params": {
+    "max_usd": 2000.0,
+    "min_usd": 500.0,
+    "revert_ticks": 2,
+    "window_seconds": null,
+    "window_swaps": 10
+  },
+  "pool": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+  "revert_times": [
+    1,
+    4,
+    6,
+    7,
+    8,
+    2,
+    9,
+    7,
+    2,
+    2,
+    2,
+    9,
+    4,
+    5,
+    1
+  ],
+  "revert_times_seconds": [
+    1,
+    69,
+    22,
+    22,
+    28,
+    0,
+    51,
+    49,
+    0,
+    27,
+    0,
+    62,
+    61,
+    2,
+    9
+  ],
+  "rpc_url": "https://arb1.arbitrum.io/rpc",
+  "token0": "0x289ba1701c2f088cf0faf8b3705246331cb8a839",
+  "token1": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "window": {
+    "days": 1.0,
+    "end_block": 412515329,
+    "end_ts": 1766206833,
+    "start_block": 412169587,
+    "start_ts": 1766120433
+  }
+}

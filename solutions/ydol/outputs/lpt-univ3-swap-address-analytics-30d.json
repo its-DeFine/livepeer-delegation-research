@@ -1,0 +1,396 @@
+{
+  "aggregate": {
+    "volume_usd": 1346606.641832615
+  },
+  "as_of": "2025-12-20T05:14:10.905258+00:00",
+  "counts": {
+    "swap_logs": 4572,
+    "unique_recipients": 102,
+    "unique_senders": 51
+  },
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "pool": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+  "prices_usd": {
+    "token0": 3.1,
+    "token1": 2982.04
+  },
+  "rpc_url": "https://arb1.arbitrum.io/rpc",
+  "token0": "0x289ba1701c2f088cf0faf8b3705246331cb8a839",
+  "token1": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "top": {
+    "recipients": [
+      {
+        "address": "0x01989c93890aed05a63d179b03424997075b6acf",
+        "share": 0.4453586026388056,
+        "swaps": 1752,
+        "volume_usd": 599722.8523107077
+      },
+      {
+        "address": "0xe40d548eb4fa4d9188fd21723f2fd377456c0876",
+        "share": 0.11171696248533793,
+        "swaps": 483,
+        "volume_usd": 150438.80368812106
+      },
+      {
+        "address": "0xa51afafe0263b40edaef0df8781ea9aa03e381a3",
+        "share": 0.05262596212946356,
+        "swaps": 103,
+        "volume_usd": 70866.47013636726
+      },
+      {
+        "address": "0x96daa0b8a5499ea9323421ed0cda06b345caab73",
+        "share": 0.050064702462808246,
+        "swaps": 326,
+        "volume_usd": 67417.46085779123
+      },
+      {
+        "address": "0x802b65b5d9016621e66003aed0b16615093f328b",
+        "share": 0.04896216903969722,
+        "swaps": 912,
+        "volume_usd": 65932.78202738747
+      },
+      {
+        "address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+        "share": 0.03566126760076104,
+        "swaps": 16,
+        "volume_usd": 48021.699807355035
+      },
+      {
+        "address": "0x3608c8186ff3dca322deefb8c27162162d581081",
+        "share": 0.029416371597845898,
+        "swaps": 42,
+        "volume_usd": 39612.28137227556
+      },
+      {
+        "address": "0xbbcfe660492ee00b39a552bcab5add0e31312110",
+        "share": 0.026275657602042018,
+        "swaps": 76,
+        "volume_usd": 35382.975045429404
+      },
+      {
+        "address": "0x8ac992eab8b5efc12a1b78eec85979ef5a2137f6",
+        "share": 0.024503226620422276,
+        "swaps": 32,
+        "volume_usd": 32996.20771339036
+      },
+      {
+        "address": "0xa56dce9f402daee3665a5ee9252ddb5a88b305aa",
+        "share": 0.019597002453376658,
+        "swaps": 51,
+        "volume_usd": 26389.453663727047
+      },
+      {
+        "address": "0x56c65290a3309247379345c9fd270a308ce8b3ec",
+        "share": 0.01792089332160705,
+        "swaps": 28,
+        "volume_usd": 24132.393974449795
+      },
+      {
+        "address": "0x8c864d0c8e476bf9eb9d620c10e1296fb0e2f940",
+        "share": 0.015852397815572745,
+        "swaps": 42,
+        "volume_usd": 21346.944187423087
+      },
+      {
+        "address": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
+        "share": 0.014895066868798738,
+        "swaps": 91,
+        "volume_usd": 20057.795976065303
+      },
+      {
+        "address": "0xd2b37ade14708bf18904047b1e31f8166d39612b",
+        "share": 0.013243473586880376,
+        "swaps": 20,
+        "volume_usd": 17833.74949302791
+      },
+      {
+        "address": "0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4",
+        "share": 0.012272403452213348,
+        "swaps": 12,
+        "volume_usd": 16526.1
+      },
+      {
+        "address": "0x3e21153ed7697b645ed1c7147720719487113314",
+        "share": 0.01066800899093486,
+        "swaps": 30,
+        "volume_usd": 14365.61176232293
+      },
+      {
+        "address": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086",
+        "share": 0.008187581305040636,
+        "swaps": 19,
+        "volume_usd": 11025.451365912264
+      },
+      {
+        "address": "0xa669e7a0d4b3e4fa48af2de86bd4cd7126be4e13",
+        "share": 0.006544951031609276,
+        "swaps": 88,
+        "volume_usd": 8813.474529634272
+      },
+      {
+        "address": "0xb1f03051cd02ed3aafd7d40627a51d6b49135916",
+        "share": 0.005056286082586783,
+        "swaps": 11,
+        "volume_usd": 6808.828421817173
+      },
+      {
+        "address": "0xde5167c19a5286889752cb0f31a1c7f28a99fefb",
+        "share": 0.0045985247589293175,
+        "swaps": 16,
+        "volume_usd": 6192.403983005941
+      },
+      {
+        "address": "0x4bfc22a4da7f31f8a912a79a7e44a822398b4390",
+        "share": 0.0036272749874070647,
+        "swaps": 17,
+        "volume_usd": 4884.512589795666
+      },
+      {
+        "address": "0xea2005ad9cef577b3ac9dfc605c8afb0956a4f4c",
+        "share": 0.0034529750123762897,
+        "swaps": 15,
+        "volume_usd": 4649.799085747965
+      },
+      {
+        "address": "0xfc7dc4f602d2e0f8d97dda3cd2a311136ad1868e",
+        "share": 0.0031103088672099735,
+        "swaps": 1,
+        "volume_usd": 4188.362578735825
+      },
+      {
+        "address": "0x616000e384ef1c2b52f5f3a88d57a3b64f23757e",
+        "share": 0.0030065714572229834,
+        "swaps": 5,
+        "volume_usd": 4048.669093440831
+      },
+      {
+        "address": "0x6747bcaf9bd5a5f0758cbe08903490e45ddfacb5",
+        "share": 0.0027770886307976516,
+        "swaps": 12,
+        "volume_usd": 3739.6459951899587
+      },
+      {
+        "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+        "share": 0.002691651110964097,
+        "swaps": 44,
+        "volume_usd": 3624.595263520388
+      },
+      {
+        "address": "0xa73072adc6c34859426fcc29bc6ca2cac07c93c3",
+        "share": 0.0026681157310472557,
+        "swaps": 1,
+        "volume_usd": 3592.902364606316
+      },
+      {
+        "address": "0xdef171fe48cf0115b1d80b88dc8eab59176fee57",
+        "share": 0.0026265566432273073,
+        "swaps": 2,
+        "volume_usd": 3536.9386209194686
+      },
+      {
+        "address": "0x91308bc9ce8ca2db82aa30c65619856cc939d907",
+        "share": 0.002129538572690566,
+        "swaps": 4,
+        "volume_usd": 2867.6507860238617
+      },
+      {
+        "address": "0x5df4251346504023c6123a5a80ee05a386971cdd",
+        "share": 0.002073245135864821,
+        "swaps": 35,
+        "volume_usd": 2791.845670102729
+      }
+    ],
+    "senders": [
+      {
+        "address": "0xee2e7bbb67676292af2e31dffd1fea2276d6c7ba",
+        "share": 0.44535860263880533,
+        "swaps": 1752,
+        "volume_usd": 599722.8523107077
+      },
+      {
+        "address": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+        "share": 0.16795544356762046,
+        "swaps": 571,
+        "volume_usd": 226169.91584010067
+      },
+      {
+        "address": "0xa51afafe0263b40edaef0df8781ea9aa03e381a3",
+        "share": 0.052625962129463535,
+        "swaps": 103,
+        "volume_usd": 70866.47013636726
+      },
+      {
+        "address": "0x96daa0b8a5499ea9323421ed0cda06b345caab73",
+        "share": 0.05006470246280822,
+        "swaps": 326,
+        "volume_usd": 67417.46085779123
+      },
+      {
+        "address": "0x802b65b5d9016621e66003aed0b16615093f328b",
+        "share": 0.04896216903969719,
+        "swaps": 912,
+        "volume_usd": 65932.78202738747
+      },
+      {
+        "address": "0x62126250d1c5c4ed2687e455caf3fbf8ebbee6eb",
+        "share": 0.03516230831156575,
+        "swaps": 112,
+        "volume_usd": 47349.797914520605
+      },
+      {
+        "address": "0x6747bcaf9bd5a5f0758cbe08903490e45ddfacb5",
+        "share": 0.03286146802775658,
+        "swaps": 49,
+        "volume_usd": 44251.471106547135
+      },
+      {
+        "address": "0xa57cf3a4850b7887e49c4e37cee1af74093cbb7b",
+        "share": 0.02450322662042226,
+        "swaps": 32,
+        "volume_usd": 32996.20771339036
+      },
+      {
+        "address": "0xa56dce9f402daee3665a5ee9252ddb5a88b305aa",
+        "share": 0.019782837487079787,
+        "swaps": 54,
+        "volume_usd": 26639.70035439688
+      },
+      {
+        "address": "0x56c65290a3309247379345c9fd270a308ce8b3ec",
+        "share": 0.017929721890460337,
+        "swaps": 30,
+        "volume_usd": 24144.28258390552
+      },
+      {
+        "address": "0x8c864d0c8e476bf9eb9d620c10e1296fb0e2f940",
+        "share": 0.015857221186426178,
+        "swaps": 46,
+        "volume_usd": 21353.43937065035
+      },
+      {
+        "address": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
+        "share": 0.014895066868798731,
+        "swaps": 91,
+        "volume_usd": 20057.795976065303
+      },
+      {
+        "address": "0xd2b37ade14708bf18904047b1e31f8166d39612b",
+        "share": 0.01324387645137186,
+        "swaps": 22,
+        "volume_usd": 17834.29199302791
+      },
+      {
+        "address": "0xb2959027d50bcbd7c00dd7c4f49ab8866b30f671",
+        "share": 0.011221200273368932,
+        "swaps": 35,
+        "volume_usd": 15110.542817452559
+      },
+      {
+        "address": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086",
+        "share": 0.008187581305040631,
+        "swaps": 19,
+        "volume_usd": 11025.451365912264
+      },
+      {
+        "address": "0xea2005ad9cef577b3ac9dfc605c8afb0956a4f4c",
+        "share": 0.008051499771305601,
+        "swaps": 31,
+        "volume_usd": 10842.203068753903
+      },
+      {
+        "address": "0x03222a2b261a12091bbe271e763a7e26b64e25e2",
+        "share": 0.007168904307372643,
+        "swaps": 94,
+        "volume_usd": 9653.694154970444
+      },
+      {
+        "address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+        "share": 0.0033468887828902146,
+        "swaps": 10,
+        "volume_usd": 4506.94266451504
+      },
+      {
+        "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+        "share": 0.0033374688277799194,
+        "swaps": 50,
+        "volume_usd": 4494.2576903977515
+      },
+      {
+        "address": "0x5609df553248c371bd97e309f25ea0659af14ef3",
+        "share": 0.00324174129402807,
+        "swaps": 6,
+        "volume_usd": 4365.350357641255
+      },
+      {
+        "address": "0xfc7dc4f602d2e0f8d97dda3cd2a311136ad1868e",
+        "share": 0.003110308867209972,
+        "swaps": 1,
+        "volume_usd": 4188.362578735825
+      },
+      {
+        "address": "0x616000e384ef1c2b52f5f3a88d57a3b64f23757e",
+        "share": 0.0030065714572229817,
+        "swaps": 5,
+        "volume_usd": 4048.669093440831
+      },
+      {
+        "address": "0x5df4251346504023c6123a5a80ee05a386971cdd",
+        "share": 0.00207324513586482,
+        "swaps": 35,
+        "volume_usd": 2791.845670102729
+      },
+      {
+        "address": "0x068550c1b9d5b7b8bfb74585e575d712550009af",
+        "share": 0.001970129727128852,
+        "swaps": 7,
+        "volume_usd": 2652.9897758235898
+      },
+      {
+        "address": "0x3608c8186ff3dca322deefb8c27162162d581081",
+        "share": 0.001635572183504005,
+        "swaps": 19,
+        "volume_usd": 2202.4723655031657
+      },
+      {
+        "address": "0x90590e4001f4a10b5de2b16385e7be585a9bf528",
+        "share": 0.0011577324935483466,
+        "swaps": 6,
+        "volume_usd": 1559.0102652776386
+      },
+      {
+        "address": "0xa64e24ffc617df966217de7e8258135efe13d931",
+        "share": 0.001154553785738597,
+        "swaps": 4,
+        "volume_usd": 1554.7297962285847
+      },
+      {
+        "address": "0xcea75c03f181c1032daa124ca78d6a3ff35a7ba0",
+        "share": 0.0011459249987206897,
+        "swaps": 5,
+        "volume_usd": 1543.1102143193116
+      },
+      {
+        "address": "0xb100a5b2591dd099040a5ab76efe682a6d8a48a2",
+        "share": 0.0003915504571424319,
+        "swaps": 9,
+        "volume_usd": 527.2644462005954
+      },
+      {
+        "address": "0xad3b67bca8935cb510c8d18bd45f0b94f54a968f",
+        "share": 0.00026433792509928294,
+        "swaps": 6,
+        "volume_usd": 355.95920562694675
+      }
+    ]
+  },
+  "window": {
+    "days": 30.0,
+    "end_block": 412518444,
+    "end_ts": 1766207611,
+    "start_block": 402135992,
+    "start_ts": 1763615611
+  }
+}

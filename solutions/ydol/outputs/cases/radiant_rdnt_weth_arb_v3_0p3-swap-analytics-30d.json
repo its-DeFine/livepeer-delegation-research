@@ -1,0 +1,45 @@
+{
+  "aggregate": {
+    "fees_usd": 888.9532016772556,
+    "swaps": 12461,
+    "token0_fees": 42180.83782054166,
+    "token0_in": 14060279.273513878,
+    "token1_fees": 0.1665477165489813,
+    "token1_in": 55.51590551632693,
+    "volume_usd": 296317.7338924184
+  },
+  "as_of": "2025-12-20T01:45:43.990254+00:00",
+  "coingecko_ids": {
+    "token0": "radiant-capital",
+    "token1": "ethereum"
+  },
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "fee": 3000,
+  "fee_fraction": 0.003,
+  "notional_usd": {
+    "count": 12461,
+    "max": 1341.544360215459,
+    "min": 0.0007293042912931673,
+    "p50": 18.1647123382682,
+    "p90": 45.177234951815834,
+    "p99": 97.51533590040762
+  },
+  "pool": "0x446BF9748B4eA044dd759d9B9311C70491dF8F29",
+  "prices_usd": {
+    "token0": 0.00933118,
+    "token1": 2974.26
+  },
+  "rpc_url": "https://arb1.arbitrum.io/rpc",
+  "token0": "0x3082cc23568ea640225c2467653db90e9250aaa0",
+  "token1": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "window": {
+    "days": 30.0,
+    "end_block": 412468418,
+    "end_ts": 1766195100,
+    "start_block": 402085984,
+    "start_ts": 1763603100
+  }
+}

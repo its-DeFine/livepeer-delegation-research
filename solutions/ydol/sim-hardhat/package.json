@@ -1,0 +1,18 @@
+{
+  "name": "sim-hardhat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "simulate:wash": "npx hardhat run scripts/washTradeSim.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.3",
+    "ethers": "^6.16.0",
+    "hardhat": "^3.1.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "aggregate": {
+    "fees_usd": 497.95003880938583,
+    "swaps": 541,
+    "token0_fees": 4997.207480653696,
+    "token0_in": 499720.74806536967,
+    "token1_fees": 0.08338700938507947,
+    "token1_in": 8.33870093850794,
+    "volume_usd": 49795.003880938544
+  },
+  "as_of": "2025-12-20T01:46:26.775951+00:00",
+  "coingecko_ids": {
+    "token0": "across-protocol",
+    "token1": "ethereum"
+  },
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "fee": 10000,
+  "fee_fraction": 0.01,
+  "notional_usd": {
+    "count": 541,
+    "max": 1053.4411370854425,
+    "min": 0.0885318336,
+    "p50": 38.93509035292226,
+    "p90": 125.49525266140998,
+    "p99": 1051.1061224761972
+  },
+  "pool": "0x508acdC358be2ed126B1441F0Cff853dEc49d40F",
+  "prices_usd": {
+    "token0": 0.050005,
+    "token1": 2974.86
+  },
+  "rpc_url": "https://ethereum.publicnode.com",
+  "token0": "0x44108f0223a3c3028f5fe7aec7f9bb2e66bef82f",
+  "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+  "window": {
+    "days": 30.0,
+    "end_block": 24050609,
+    "end_ts": 1766195165,
+    "start_block": 23837072,
+    "start_ts": 1763603165
+  }
+}

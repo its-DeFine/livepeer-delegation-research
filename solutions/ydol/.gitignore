@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Hardhat sandbox (local-only; install as needed)
+sim-hardhat/node_modules/
+sim-hardhat/cache/
+sim-hardhat/artifacts/

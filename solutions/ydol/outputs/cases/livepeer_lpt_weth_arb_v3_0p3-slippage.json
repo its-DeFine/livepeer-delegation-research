@@ -1,0 +1,53 @@
+{
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "fee": 3000,
+  "pool": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+  "prices_usd": {
+    "token0": "3.13",
+    "token1": "2975.33"
+  },
+  "rows": [
+    {
+      "amount_usd": "1000",
+      "buy_token0_impact_pct": "0.595987",
+      "buy_token0_out": "321.073819848616492067",
+      "sell_token0_impact_pct": "0.589297",
+      "sell_token1_out": "0.330497450974816257"
+    },
+    {
+      "amount_usd": "5000",
+      "buy_token0_impact_pct": "1.776324",
+      "buy_token0_out": "1586.751053199709672535",
+      "sell_token0_impact_pct": "1.729890",
+      "sell_token1_out": "1.633527372780517774"
+    },
+    {
+      "amount_usd": "10000",
+      "buy_token0_impact_pct": "3.251745",
+      "buy_token0_out": "3128.154187100313354286",
+      "sell_token0_impact_pct": "3.123340",
+      "sell_token1_out": "3.220728581903034417"
+    },
+    {
+      "amount_usd": "25000",
+      "buy_token0_impact_pct": "7.673810",
+      "buy_token0_out": "7499.209369149927176584",
+      "sell_token0_impact_pct": "7.138132",
+      "sell_token1_out": "7.718135440699265671"
+    },
+    {
+      "amount_usd": "50000",
+      "buy_token0_impact_pct": "15.037777",
+      "buy_token0_out": "14038.317918120749015178",
+      "sell_token0_impact_pct": "45.256327",
+      "sell_token1_out": "9.099947990645452015"
+    }
+  ],
+  "rpc_url": "https://arb1.arbitrum.io/rpc",
+  "spot_token1_per_token0": "0.0010405891855432586958630799226874314118137607697024736586515891180171948657623064",
+  "token0": "0x289ba1701c2f088cf0faf8b3705246331cb8a839",
+  "token1": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"
+}

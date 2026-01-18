@@ -1,0 +1,69 @@
+{
+  "actions": [
+    {
+      "calldata": "0xa9059cbb0000000000000000000000007b9f63f244066ff5cf9a24b6043a1c75bff8de450000000000000000000000000000000000000000000000f13c27dee3b8480000",
+      "decoded": {
+        "amount": 4450000000000000000000,
+        "to": "0x7b9f63f244066ff5cf9a24b6043a1c75bff8de45",
+        "type": "erc20_transfer"
+      },
+      "signature": "",
+      "target": "0x289ba1701c2f088cf0faf8b3705246331cb8a839",
+      "value_wei": 0
+    }
+  ],
+  "generated_at_utc": "2026-01-18T14:40:34.017568+00:00",
+  "inputs": {
+    "from_block": 350000000,
+    "governor": "0xcFE4E2879B786C3aa075813F0E364bb5acCb6aa0",
+    "lpt_token": "0x289ba1701C2F088cf0faf8B3705246331cB8A839",
+    "proposal_id": "37756926437624644602157853528130337382237946922701155023801139566954226305300",
+    "rpc_url": "https://arb1.arbitrum.io/rpc",
+    "to_block": 422682198,
+    "treasury": "0xf82C1FF415F1fCf582554fDba790E27019c8E8C4"
+  },
+  "proposal": {
+    "calldatas": [
+      "0xa9059cbb0000000000000000000000007b9f63f244066ff5cf9a24b6043a1c75bff8de450000000000000000000000000000000000000000000000f13c27dee3b8480000"
+    ],
+    "description": "# Fiat Delegation for Livepeer Network\n*Author(s): serial winner and the Lisar team*\n\n### **Abstract**\n\nThis proposal introduces **LISAR** \u2014 a fiat delegation gateway that makes it easy for anyone to support the Livepeer network using any **fiat currency** (USD, EUR, GBP etc.) LISAR removes the barriers that have historically limited participation in staking to only crypto-savvy users.\n\nBy abstracting away wallets, gas fees, and tokens, LISAR opens up delegation access to the rest of the world who are not yet active in crypto (~6.8\u20137.6 billion people), helping Livepeer grow stake, decentralisation, and global participation.\n\n### **Mission**\n\nLivepeer depends on token holders to delegate their LPT to orchestrators, helping secure the network and enabling video infrastructure at scale. However, current delegation UX requires:\n\n- A crypto wallet\n- LPT tokens\n- ETH for gas\n- Technical knowledge of delegation flows\n\nThis experience is inaccessible to most people - normal folks like creators, gamers, and everyday users who believe in Livepeer but lack the on-chain literacy to participate.\n\n**LISAR solves this by:**\n\n- Accepting fiat (USD, NGN, GBP, EUR, etc.)\n- Handling token conversions and gas behind the scenes\n- Offering a clean, no-wallet-required UX for delegation\n- Distributing rewards on-chain with full transparency\n\nBy removing these hurdles, LISAR opens the door for a much wider range of people to become part of Livepeer's ecosystem \u2014 growing the community, spreading participation globally, and making the network stronger.\n\n### **Rationale**\n\nLivepeer's delegator growth is fundamentally constrained by accessibility. Current delegation requires users to navigate wallets, acquire LPT tokens, manage gas fees, and understand complex on-chain interactions - barriers that exclude most potential participants.\n\nWith global crypto adoption at only 5-15%, Livepeer is missing 85-95% of people who could strengthen the network through delegation.\n\nLISAR solves this by meeting users where they are. Instead of requiring crypto literacy, users can delegate using familiar payment methods and interfaces. They deposit local currency, select an orchestrator, and start earning rewards - no different from using any mainstream financial app.\n\nInspired by successful platforms like [Bamboo](https://investbamboo.com/) that brought US stock investing using local currency to African markets, LISAR maintains full decentralisation while delivering the simplified experience users expect. All delegation activity remains on-chain, transparent, and auditable, but users never need to interact with these complexities directly.\n\nThis approach doesn't just add convenience - it unlocks entirely new delegator demographics that drive meaningful network growth, improved decentralisation, and stronger security through broader participation.\n\n### **What We're Building**\n\n**A Delegation App With Fiat Support**\n\nA frontend product + backend orchestration layer to:\n\n- Accept local fiat payments\n- Convert to LPT tokens behind the scenes\n- Sponsor gas on behalf of users\n- Delegate to chosen orchestrators from list of active orchestrators\n- Track on-chain rewards and display them in fiat equivalent\n\n**Transparency Dashboard**\n\nPublic dashboard to track:\n\n- Number of delegators onboarded\n- Total fiat converted\n- Total delegations via LISAR\n- Delegations per orchestrator via LISAR\n\n### **Why This Matters**\n\nLivepeer's current delegation process excludes **85-95% of potential participants** who lack crypto literacy. This creates a fundamental bottleneck for network growth.\n\nLISAR directly addresses this by converting interested users into active delegators. When anyone can delegate using their local currency - NGN, USD, EUR - without needing to understand wallets or gas fees, participation becomes accessible to millions of new users.\n\nBeyond just growing numbers. More delegators means more distributed stake across orchestrators, improving decentralisation and strengthening network security. It also creates a truly global delegator base instead of one limited to crypto-native users in developed markets.\n\n### **Who We Are**\n\nWe're a small team of engineers passionate about open-source development and building public goods that benefit everyone. We\u2019re not a startup just a group of builders building tools that strengthen the Livepeer ecosystem.\n\n**Serial Winner** \u2013 Technical Lead and primary person of contact\n\n- Fullstack engineer and long time open-source contributor\n- Former Livepeer grantee and currently serving as an ambassador with [Daydream](https://www.daydream.live/) (Livepeer\u2019s realtime AI video)\n- Active in the community & hosted the first Livepeer delegator workshop in Africa (Nigeria)\n\n**James \u2013 Engineer**\n\n- Engineer at [Interswitch group](https://www.interswitch.com/) (leading payment gateway/fintech infrastructure provider in Africa)\n- Deep expertise in payment processing and financial infrastructure at scale\n\n**Stanley \u2013 Engineer**\n\n- Engineer at [Fairmoney](https://fairmoney.io/) (number 1 most downloaded fintech app in Nigeria. 20+ million downloads)\n- Specialised in designing and building intuitive mobile experiences\n\n**Additional Contributors**\n\n- Additional contributors supporting legal, development, operations, and others needs for the project\n\n### **Milestones & Timeline**\n\nProject Duration: 4 months\n\n**Build the Core Platform**\n\n- Complete the full app flow: users deposit fiat and seamlessly delegate\n- Integrate secure on/offramping handling Fiat > LPT and LPT > Fiat conversions\n- Set up gas sponsorship for users to enable seamless on-chain interactions\n- Implement orchestrator selection interface with relevant key orchestrator stats\n- Display user stakes and reward earnings in fiat equivalents with seamless withdrawals\n\n**Transparency Dashboard**\n\n- Launch comprehensive transparency dashboard so the entire community can follow progress in real time\n- Track and display key metrics in realtime: number of delegators onboarded, total fiat converted, total delegations via LISAR, and delegations per orchestrator via LISAR\n\n**Launch & Scale**\n\n- Launch beta with multi-currency support starting with NGN, USD, KES and expanding support to other fiats\n- Deploy referral system where users earn percentage of their referrals' delegation APY\n- Launch delegator workshops\n- Release native mobile applications for iOS and Android to reach users beyond web\n\n### **Deliverables**\n\n- **Live Product** \u2013 Fully functional app (web and mobile) enabling users to deposit their local currency and seamlessly delegate\n- **Multi-Currency Support** \u2013 Multiple fiat currencies supported (e.g., NGN, KES, ZAR, USD)\n- **Delegator Onboarding** \u2013 between 500 and 1,000 delegators successfully onboarded and actively delegating through LISAR\n- **Transparent Tracking** \u2013 Public, real-time dashboard displaying number of delegators onboarded, total fiat converted, delegations per orchestrator, total LPT delegated, and rewards earned\n\n### **Transparency and Accountability**\n\nWe'll publish a public report regularly covering fund usage, development progress, and key metrics. Reports will be posted on the Livepeer Forum.\n\nThese reports will include:\n\n- Spend breakdown (engineering costs, workshop expenses, infrastructure)\n- Multi-sig wallet transactions for fund usage\n- Progress against milestones and deliverables\n- KPIs like delegators onboarded, total fiat converted, delegations per orchestrator, and reward distributions\n\nWe'll also maintain a live dashboard tracking core metrics like active delegators, total LPT delegated via LISAR, and fiat conversion volumes \u2014 so the community can follow progress in real time.\n\n### **Budget Breakdown**\n\n**Total requested**: **4,450 LPT ( $29,000 @ $6.51 )**\n\n|  |  |  |\n| --- | --- | --- |\n| Engineering | $16,000 | 3 engineers, working ~30 hours/week and other additional contributors |\n| Delegator Workshops | $5,000 | Workshops to educate our initial pool of delegators. Budget spread across as many events covering venue, equipments, travels, and delegation credits to get participants started |\n| Infrastructure | $5,000 | Third party APIs, cloud services, gas sponsorship |\n| Buffer | $3,000 | Buffer against LPT price fluctuations. After all allocations have been utilised, any remaining will be returned to the treasury |\n\n### **Final Note**\n\nLISAR represents a fundamental shift in how people can participate in the Livepeer network. By enabling fiat delegation, we\u2019re opening the door to **billions of potential delegators** who have been excluded from the ecosystem until now.\n\nThis isn\u2019t just about building another product\u2014it\u2019s about unlocking a **new chapter of growth for Livepeer**, ensuring that anyone, anywhere, can contribute to the network\u2019s success.\n\nThank you for considering our proposal and for supporting a more inclusive and resilient Livepeer network.",
+    "end": 3928,
+    "proposal_id": "37756926437624644602157853528130337382237946922701155023801139566954226305300",
+    "proposer": "0x9ecc2da89a4ff10a5e6f3b25bbe2f29371736e30",
+    "signatures": [
+      ""
+    ],
+    "start": 3918,
+    "targets": [
+      "0x289ba1701c2f088cf0faf8b3705246331cb8a839"
+    ],
+    "values": [
+      0
+    ]
+  },
+  "proposal_created": {
+    "block_number": 375998163,
+    "block_timestamp": 1757087859,
+    "tx_hash": "0x0bac746b20f948025c76485bafc3ca4b846607a8b416543c2e0dfb10fbe79679"
+  },
+  "proposal_state": {
+    "id": "37756926437624644602157853528130337382237946922701155023801139566954226305300",
+    "quorum": "7369542907327400146940261",
+    "quota": "500000",
+    "state": "Executed",
+    "totalVoteSupply": "22110839805962796720492833",
+    "votes": {
+      "abstain": "7188118930628505030294147",
+      "against": "1617580302672913900212706",
+      "for": "3024833035504002392077689"
+    }
+  },
+  "treasury_transfer": {
+    "amount": 4450000000000000000000,
+    "block_number": 379703703,
+    "block_timestamp": 1758014062,
+    "from": "0xf82c1ff415f1fcf582554fdba790e27019c8e8c4",
+    "to": "0x7b9f63f244066ff5cf9a24b6043a1c75bff8de45",
+    "tx_hash": "0xa6467a0d8c176c88bac3689ca6232d0e8b26d759d690eb94d385f0453c7f65b6"
+  }
+}

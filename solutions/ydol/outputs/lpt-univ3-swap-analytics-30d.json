@@ -1,0 +1,45 @@
+{
+  "aggregate": {
+    "fees_usd": 4053.180808979888,
+    "swaps": 4572,
+    "token0_fees": 607.1879635892398,
+    "token0_in": 202395.9878630796,
+    "token1_fees": 0.7235104956241992,
+    "token1_in": 241.17016520806717,
+    "volume_usd": 1351060.2696599604
+  },
+  "as_of": "2025-12-20T05:00:15.161536+00:00",
+  "coingecko_ids": {
+    "token0": "livepeer",
+    "token1": "ethereum"
+  },
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "fee": 3000,
+  "fee_fraction": 0.003,
+  "notional_usd": {
+    "count": 4572,
+    "max": 17063.13396856044,
+    "min": 9.389999999999999e-18,
+    "p50": 211.79128262719357,
+    "p90": 505.190343389166,
+    "p99": 3039.23
+  },
+  "pool": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+  "prices_usd": {
+    "token0": 3.13,
+    "token1": 2975.33
+  },
+  "rpc_url": "https://arb1.arbitrum.io/rpc",
+  "token0": "0x289ba1701c2f088cf0faf8b3705246331cb8a839",
+  "token1": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "window": {
+    "days": 30.0,
+    "end_block": 412515095,
+    "end_ts": 1766206775,
+    "start_block": 402132646,
+    "start_ts": 1763614775
+  }
+}

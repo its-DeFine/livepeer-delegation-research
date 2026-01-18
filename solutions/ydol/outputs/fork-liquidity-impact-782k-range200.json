@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "pool": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+    "quoter": "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
+    "positionManager": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+    "token0": "0x289ba1701C2F088cf0faf8B3705246331cB8A839",
+    "token1": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    "fee": 3000,
+    "lptUsd": 3.13,
+    "ethUsd": 2975.33,
+    "totalUsd": 782000,
+    "rangeMult": 200,
+    "tickBefore": -68690,
+    "tickAfter": -68690,
+    "tickSpacing": 60,
+    "spotBefore": 0.001039898153425481,
+    "spotAfter": 0.001039898153425481,
+    "tickLower": -80700,
+    "tickUpper": -56640
+  },
+  "before": [
+    {
+      "usd": 1000,
+      "buyImpactPct": 0.5960849451491779,
+      "sellImpactPct": 0.589201506470749,
+      "buyLptOut": 321.28686642770396,
+      "sellWethOut": 0.3302782932395324
+    },
+    {
+      "usd": 5000,
+      "buyImpactPct": 1.7768138932481747,
+      "sellImpactPct": 1.7294221347708527,
+      "buyLptOut": 1587.7978328552397,
+      "sellWethOut": 1.6324503587556987
+    },
+    {
+      "usd": 10000,
+      "buyImpactPct": 3.252725078371954,
+      "sellImpactPct": 3.1228174739694525,
+      "buyLptOut": 3130.2031866364873,
+      "sellWethOut": 3.218607131561739
+    },
+    {
+      "usd": 25000,
+      "buyImpactPct": 7.6763296070749165,
+      "sellImpactPct": 7.137048951035208,
+      "buyLptOut": 7504.017137485733,
+      "sellWethOut": 7.71309994548397
+    },
+    {
+      "usd": 50000,
+      "buyImpactPct": 15.042780596450523,
+      "sellImpactPct": 45.44764868199612,
+      "buyLptOut": 14047.035693745784,
+      "sellWethOut": 9.06212290744574
+    }
+  ],
+  "after": [
+    {
+      "usd": 1000,
+      "buyImpactPct": 0.38473430359737826,
+      "sellImpactPct": 0.3823040096744723,
+      "buyLptOut": 321.96330578686286,
+      "sellWethOut": 0.3309656808589152
+    },
+    {
+      "usd": 5000,
+      "buyImpactPct": 0.7200606854891989,
+      "sellImpactPct": 0.710165654071182,
+      "buyLptOut": 1604.4569814074034,
+      "sellWethOut": 1.6493820349880717
+    },
+    {
+      "usd": 10000,
+      "buyImpactPct": 1.1392186628540024,
+      "sellImpactPct": 1.11697029355049,
+      "buyLptOut": 3195.615047676113,
+      "sellWethOut": 3.2852485621998024
+    },
+    {
+      "usd": 25000,
+      "buyImpactPct": 2.3966925949483686,
+      "sellImpactPct": 2.3176262250098723,
+      "buyLptOut": 7890.9289176876655,
+      "sellWethOut": 8.113396174986411
+    },
+    {
+      "usd": 50000,
+      "buyImpactPct": 4.492360160044773,
+      "sellImpactPct": 4.261171218101434,
+      "buyLptOut": 15465.341608429151,
+      "sellWethOut": 15.903934706296262
+    }
+  ]
+}

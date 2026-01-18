@@ -1,0 +1,45 @@
+{
+  "aggregate": {
+    "fees_usd": 2.974744156720614,
+    "swaps": 65,
+    "token0_fees": 0.07411573805923814,
+    "token0_in": 24.705246019746042,
+    "token1_fees": 0.00038553061265133426,
+    "token1_in": 0.1285102042171114,
+    "volume_usd": 991.5813855735382
+  },
+  "as_of": "2025-12-20T05:04:27.174140+00:00",
+  "coingecko_ids": {
+    "token0": "compound-governance-token",
+    "token1": "ethereum"
+  },
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "fee": 3000,
+  "fee_fraction": 0.003,
+  "notional_usd": {
+    "count": 65,
+    "max": 90.19811167402551,
+    "min": 0.11933291632223322,
+    "p50": 10.598106033285891,
+    "p90": 27.670598694554702,
+    "p99": 79.40627837942166
+  },
+  "pool": "0xea4Ba4CE14fdd287f380b55419B1C5b6c3f22ab6",
+  "prices_usd": {
+    "token0": 24.62,
+    "token1": 2982.94
+  },
+  "rpc_url": "https://ethereum.publicnode.com",
+  "token0": "0xc00e94cb662c3520282e6f5717214004a7f26888",
+  "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+  "window": {
+    "days": 1.0,
+    "end_block": 24051598,
+    "end_ts": 1766207057,
+    "start_block": 24044436,
+    "start_ts": 1766120657
+  }
+}

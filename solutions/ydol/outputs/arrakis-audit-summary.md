@@ -1,0 +1,156 @@
+# Audit summaries (generated)
+
+As of: 2025-12-20T05:02:20.011758Z
+
+## arrakis-modular-chainscurity.pdf
+- Source: https://cdn.prod.website-files.com/65d35b01a4034b72499019e8/66b4b186bfc8f14e17ea63ae_ChainSecurity_Spacing_Guild_Arrakis_Modular_audit.pdf
+- Cached: `../data/audits/arrakis-modular-chainscurity.pdf`
+- Extracted text: `../data/audits/arrakis-modular-chainscurity.txt`
+- Findings overview:
+  - Critical: 0
+  - High: 0
+  - Medium: 13
+  - Low: 15
+- Notable keyword hits (quick scan; review the PDF for full context):
+  - `beacon`:
+    - Modules are deployed behind beacon proxies, to facilitate deployment and upgrades of multiple
+    - The beacons are critical components of the system, as they provide (and possibly change) the
+    - beacon (using the createModule() function in Module registry), permanently links it to the vault in
+    - beacon. The vault is bound to the timelock and the module, the provided token addresses, as well as
+    - A module registry is in charge of the deployment of module instances (i.e. beacon proxies), and of
+    - keeping a whitelist of allowed beacons. It has an owner (an Arrakis admin), who decides on the whitelist
+    - of beacons.
+    - only notable difference between the two is the concrete set of beacons they will end up whitelisting.
+    - createModule(): deploys a proxy attached to the supplied beacon (provided it's whitelisted), and
+    - whitelistBeacons(): only callable by the owner, whitelists the supplied beacons. As was
+    - mentioned, beacons are critical components of the system, because they provide the address that
+    - mistakes, this function checks that beacons recognize a pre-defined Arrakis address as their
+  - `upgrade`:
+    - Modules are deployed behind beacon proxies, to facilitate deployment and upgrades of multiple
+    - The contract ValantisSOTModule extends PausableUpgradeable and
+    - ReentrancyGuardUpgradeable, which are Initializable. But the function
+    - This modifier is already used in the underlying Pausable or PausableUpgradeable contract, so
+  - `guardian`:
+    - Guardian.sol
+    - IGuardian.sol
+    - Modules can be paused - except for the withdraw() function - by the central "guardian" of the system
+    - (see Guardian for more).
+    - module correctly recognizes the vault it is bound to, and the Guardian that can pause it.
+    - Guardian.
+    - 2.2.9   Guardian
+    - guardian: trusted to pause/unpause the modules, factory, and standard manager in a
+  - `owner`:
+    - contribution: the vault has an owner (the token issuer) who decides on a whitelist of addresses which are
+    - All vaults have an owner (see Public vaults and Private vaults for more details), that can add and remove
+    - The owner of a private vault is arbitrarily assigned at creation time by the deployer, and in typical
+    - scenarios will be an address belonging to the new project / token issuer. Ownership is transferrable, and
+    - of depositors, that is decided upon by the owner.
+    - The owner of a public vault is set at construction time to be a freshly-deployed Arrakis-controlled
+    - Timelock contract: ownership of the vault cannot be transferred or renounced.
+    - by the Arrakis admin. It is pausable by the owner, who can thus freeze deployment of new vaults. The
+    - owner also decides on a whitelist of deployers, who are the only ones who can deploy public vaults.
+    - that will be the owner of the public vault: all the privileges (propose, cancel, execute, admin) on the
+    - deployPrivateVaults(): callable by anyone. Ownership of the vault is assigned to the provided
+    - keeping a whitelist of allowed beacons. It has an owner (an Arrakis admin), who decides on the whitelist
+  - `timelock`:
+    - TimeLock.sol
+    - ITimeLock.sol
+    - Timelock contract: ownership of the vault cannot be transferred or renounced.
+    - deployPublicVault(): only callable by a whitelisted deployer. It creates a new Timelock contract
+    - Timelock are given to a deployer-provided address, which is assumed to be an Arrakis admin.
+    - beacon. The vault is bound to the timelock and the module, the provided token addresses, as well as
+    - Timelock Minimum Delay May Be Too Short
+    - 6.18   Timelock Minimum Delay May Be Too Short
+    - The currently set minimum timelock delay for the public vaults owners is 1 minute. This may be a too
+  - `nft`:
+    - PALMVaultNFT.sol
+    - IPALMVaultNFT.sol
+    - tracked by a dedicated ERC-721 contract called PALMVaultNFT.
+    - arbitrary address, through the PALMVaultNFT.mint() function. As for the public vaults, a
+    - PALMVaultNFT Doesn'T Use the _safeMint Function to Mint
+    - 6.20   PALMVaultNFT Doesn'T Use the _safeMint
+    - NFTs to contracts that are not compatible with the ERC721 standard. The _safeMint function checks if
+    - the recipient of the NFT is a contract and if it supports the ERC721Receiver interface. If the recipient is a
+    - _safeMint is now used instead of _mint in the mint function of the PALMVaultNFT contract.
+  - `approval`:
+    - a rebasing token having the same behavior as USDT on approval (i.e., the allowance must be set to 0
+  - `pause`:
+    - Modules can be paused - except for the withdraw() function - by the central "guardian" of the system
+    - module correctly recognizes the vault it is bound to, and the Guardian that can pause it.
+    - This contract exposes the function pauser(), queried by many contracts in the system to know the
+    - address that (currently) can pause them. This address can be changed using the setPauser()
+    - guardian: trusted to pause/unpause the modules, factory, and standard manager in a
+    - Redundant modifier whenNotPaused in pause() and whenPaused in unpause() functions.
+  - `whitelist`:
+    - contribution: the vault has an owner (the token issuer) who decides on a whitelist of addresses which are
+    - implementation addresses to the proxies; therefore, they need to be whitelisted for proxy use by a central
+    - However, it also has a whitelist of other module instances that it can link to: it is up to the manager
+    - the whitelist.
+    - modules from the whitelist. Adding a module actually deploys a new instance attached to the specified
+    - question, and then adds it to the vault's whitelist. The vault's first active module is deployed and
+    - whitelisted at vault creation time (see Factory for more details).
+    - active module's fund() and withdraw() functions. Funding and withdrawing is restricted to a whitelist
+    - owner also decides on a whitelist of deployers, who are the only ones who can deploy public vaults.
+    - deployPublicVault(): only callable by a whitelisted deployer. It creates a new Timelock contract
+    - keeping a whitelist of allowed beacons. It has an owner (an Arrakis admin), who decides on the whitelist
+    - only notable difference between the two is the concrete set of beacons they will end up whitelisting.
+
+## arrakis-uniswap-v4-module-chainscurity.pdf
+- Source: https://cdn.prod.website-files.com/65d35b01a4034b72499019e8/677d4757ee5ee90cea211e90_ChainSecurity_Arrakis_Finance_Uniswap_V4_Module_audit.pdf
+- Cached: `../data/audits/arrakis-uniswap-v4-module-chainscurity.pdf`
+- Extracted text: `../data/audits/arrakis-uniswap-v4-module-chainscurity.txt`
+- Findings overview:
+  - Critical: 0
+  - High: 0
+  - Medium: 3
+  - Low: 18
+- Notable keyword hits (quick scan; review the PDF for full context):
+  - `guardian`:
+    - allow the standard manager to set its fee. Last, pause() and unpause() allow the guardian to pause all
+    - Guardian: Trusted to pause and unpause responsibly.
+    - The guardian may pause the module with pause(). However, no function besides pause() and
+  - `owner`:
+    - The meta vault's owner can now approve arbitrary addresses with approve(). These contracts
+    - Meta Vault Owner: The owner of the meta vault has received additional privileges in .
+    - Namely, the owner can now drain all funds by approving all tokens with the newly added
+    - Note that the system defines several other roles (e.g. vault owners). See the core audit report for more
+    - Arrakis Finance stated that it is assumed that the owners should choose cooldown values responsibly.
+    - initialization could simplify the deployment process of the module for owners.
+    - In , an approval feature has been added to the modules. Namely, the metavault owner can give
+    - model, the owner is fully trusted. It is thus expected that only trusted address will be approved.
+    - Nevertheless, below is a non-exhaustive list of considerations for owners when approving addresses:
+    - The ArrakisPrivateHook implements a hook contract. Vault owners should be aware that flags are
+    - set as part of the address. The owners should ensure that the flags are set correctly. Otherwise, the hook
+    - from the oracle defined in ArrakisStandardManager.vaultInfo. Owners should ensure that the
+  - `hook`:
+    - hooks/ArrakisPrivateHook.sol
+    - IArrakisPrivateHook.sol
+    - Arrakis Finance offers a dedicated Uniswap v4 Hook that can be used with any Uniswap v4 pool. It allows
+    - Allowance Abuse Through Hooks
+    - Private Hook Unusable
+    - 6.3   Allowance Abuse Through Hooks
+    - When adding liquidity, hooks are called that might modify the deposit deltas. As a consequence,
+    - malicious hooks could be used to drain user approvals.
+    - A malicious executor sees it and sets a malicious pool with a post-add-liquidity hook and
+    - Liquidity is added to the position. The hook specifies an additional delta to receive. Optimally, the
+    - hook computes an amount so that the maximum amount pullable from the user will be taken by the
+    - module. Note that the hook can take the funds instantly.
+  - `approval`:
+    - can then pull the tokens from the module. Note that for ETH, a local approval can be given so that
+    - Note that it is of utmost importance that integrating protocols do not give approval to the respective
+    - malicious hooks could be used to drain user approvals.
+    - approval to be sure that the transaction executes successfully.
+    - Note that in case of maximum approvals, the user's funds could be drained fully.
+    - 8.1   Approval Considerations
+    - In , an approval feature has been added to the modules. Namely, the metavault owner can give
+    - approvals to arbitrary addresses.
+    - approval amounts). Optimally, the approved address is a contract with limited but clearly defined
+    - No asynchronous value exchanges are allowed. Namely, if some approval is used, tokens with an
+    - hand out approvals and perform a "swap" correctly. Once rebalancing has successfully finished, the
+  - `pause`:
+    - allow the standard manager to set its fee. Last, pause() and unpause() allow the guardian to pause all
+    - Guardian: Trusted to pause and unpause responsibly.
+    - The guardian may pause the module with pause(). However, no function besides pause() and
+    - fund() (in UniV4StandardModulePrivate) has the whenNotPaused modifier. Effectively, no
+  - `whitelist`:
+    - Another, arbitrary module is whitelisted on the vault.

@@ -1,0 +1,53 @@
+{
+  "decimals": {
+    "token0": 18,
+    "token1": 18
+  },
+  "fee": 3000,
+  "pool": "0xea4Ba4CE14fdd287f380b55419B1C5b6c3f22ab6",
+  "prices_usd": {
+    "token0": "24.62",
+    "token1": "2982.94"
+  },
+  "rows": [
+    {
+      "amount_usd": "1000",
+      "buy_token0_impact_pct": "8.556048",
+      "buy_token0_out": "37.333057393775736609",
+      "sell_token0_impact_pct": "14.121139",
+      "sell_token1_out": "0.288540068059191232"
+    },
+    {
+      "amount_usd": "5000",
+      "buy_token0_impact_pct": "22.625484",
+      "buy_token0_out": "165.248243375926070544",
+      "sell_token0_impact_pct": "49.785003",
+      "sell_token1_out": "0.843574217185886637"
+    },
+    {
+      "amount_usd": "10000",
+      "buy_token0_impact_pct": "37.098141",
+      "buy_token0_out": "295.607885976384635380",
+      "sell_token0_impact_pct": "68.237481",
+      "sell_token1_out": "1.067172890737929051"
+    },
+    {
+      "amount_usd": "25000",
+      "buy_token0_impact_pct": "69.482316",
+      "buy_token0_out": "597.810033838609152139",
+      "sell_token0_impact_pct": "86.724876",
+      "sell_token1_out": "1.115060539893210471"
+    },
+    {
+      "amount_usd": "50000",
+      "buy_token0_impact_pct": "109.556770",
+      "buy_token0_out": "966.976434313552905232",
+      "sell_token0_impact_pct": "93.330580",
+      "sell_token1_out": "1.120412403519137725"
+    }
+  ],
+  "rpc_url": "https://ethereum.publicnode.com",
+  "spot_token1_per_token0": "0.0082719500014035407099410724775983889462765963759644638390431283716586778516565960",
+  "token0": "0xc00e94cb662c3520282e6f5717214004a7f26888",
+  "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+}
