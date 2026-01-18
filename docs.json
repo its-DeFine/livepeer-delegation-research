@@ -1,0 +1,39 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Livepeer Delegation Research",
+  "colors": {
+    "primary": "#00E7AB"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Start",
+        "pages": [
+          "docs/index",
+          "docs/overview",
+          "docs/problem",
+          "docs/rubric",
+          "docs/scoreboard"
+        ]
+      },
+      {
+        "group": "Solutions",
+        "pages": [
+          "solutions/lisar/livepeer-lisar-spe-delegation-analysis",
+          "solutions/ydol/index",
+          "solutions/tenderize/index"
+        ]
+      },
+      {
+        "group": "Research",
+        "pages": [
+          "research/index",
+          "research/livepeer-delegator-outflows-research",
+          "research/livepeer-delegator-incentives"
+        ]
+      }
+    ]
+  }
+}

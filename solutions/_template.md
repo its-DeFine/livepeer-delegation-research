@@ -1,4 +1,4 @@
-# Solution Dossier — <NAME>
+# Solution Dossier — `<NAME>`
 
 ## Summary
 
@@ -17,4 +17,3 @@
 ## Current evidence (links, artifacts)
 
 ## Open questions
-

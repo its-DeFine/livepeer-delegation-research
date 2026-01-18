@@ -345,7 +345,7 @@ Key results (full window, through `2026-01-17`):
 - `Unbond` events: **24,059**
 - Unique unbonders: **3,290**
 - Total unbonded: **~48.43M LPT**
-- “Exit <30d” (first bond → unbond): **1,548 events**, **~8.56M LPT**
+- “Exit `<30d`” (first bond → unbond): **1,548 events**, **~8.56M LPT**
 
 Prev-tx gap buckets (event-level, amount-weighted):
 - `<=30d`: **21,011 events**, **~34.33M LPT**
@@ -433,10 +433,10 @@ Key results (eligible-only to avoid right-censoring, through `2026-01-17`):
 - Ever unbonded: **2,684**
 - Ever withdrew: **2,322**
 - Overall churn within N days:
-  - <=30d: **10.78%** unbonded, **6.32%** withdrew
-  - <=90d: **17.24%** unbonded, **12.56%** withdrew
-  - <=180d: **23.29%** unbonded, **18.16%** withdrew
-  - <=365d: **32.87%** unbonded, **26.39%** withdrew
+  - `<=30d`: **10.78%** unbonded, **6.32%** withdrew
+  - `<=90d`: **17.24%** unbonded, **12.56%** withdrew
+  - `<=180d`: **23.29%** unbonded, **18.16%** withdrew
+  - `<=365d`: **32.87%** unbonded, **26.39%** withdrew
 
 Interpretation: there is real early churn, but it’s not “everyone instantly farms and leaves”; much of churn happens over months.
 
