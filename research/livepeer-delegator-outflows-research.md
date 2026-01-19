@@ -158,6 +158,44 @@ Interpretation:
 - Some “top outflow” delegates are **whale-driven** (very few unbonders, very large unbond totals).
 - Others are **broad-based** (many unique unbonders, moderate average size).
 
+### Delegate outflow profile “categories” (by unique unbonders)
+
+This is a **behavioral** categorization based on `unique_delegators` in `artifacts/livepeer-delegator-flows/unbond_by_delegate.json` (i.e., how many distinct delegators unbonded from a given delegate over the full window).
+
+Note: the `unbond_by_delegate` sum is ~**48.431M LPT** unbonded, slightly below the full-unbond scan total (~**48.433M LPT**) due to being a separate scan. The category shares below use the `unbond_by_delegate` total.
+
+#### 1) Broad-based outflows (many delegators leave)
+
+Definition: **≥100** unique unbonders (5 delegates total).
+
+These few delegates account for ~**11.166M LPT** unbonded (**~23.1%** of `unbond_by_delegate` total), dominated by a single large delegate:
+- `0x525419ff…`: ~**7.54M LPT** unbonded (**699** unique unbonders)
+- `0xdac81729…`: ~**1.44M LPT** unbonded (**203** unique unbonders)
+- `0x141e6d49…`: ~**1.64M LPT** unbonded (**134** unique unbonders)
+- `0x0d509d8b…`: ~**0.36M LPT** unbonded (**126** unique unbonders)
+- `0xe9e28427…`: ~**0.18M LPT** unbonded (**103** unique unbonders)
+
+Interpretation: this is the closest on-chain proxy to “many delegators churned from this orchestrator” (but it still doesn’t tell you why: performance, commission changes, whales rotating many wallets, etc.).
+
+#### 2) Whale-driven outflows (few delegators leave, huge amounts)
+
+Definition: **≤10** unique unbonders (129 delegates total).
+
+Together these delegates account for ~**12.846M LPT** unbonded (**~26.5%** of `unbond_by_delegate` total). The top cases are extremely whale-concentrated:
+- `0x4416a274…`: ~**4.64M LPT** unbonded (**8** unique unbonders)
+- `0xf5a88945…`: ~**1.39M LPT** unbonded (**4** unique unbonders)
+- `0x731808ad…`: ~**1.11M LPT** unbonded (**3** unique unbonders)
+
+Interpretation: this is best explained as “a few large delegators exited or rotated”, not “retail churn”.
+
+#### 3) Mid-scale outflows (the majority by amount)
+
+Definition: **11–99** unique unbonders (67 delegates total).
+
+This is the largest category by total unbonded amount: ~**24.419M LPT** (**~50.4%** of `unbond_by_delegate` total).
+
+Interpretation: most stake outflow occurs in this “middle” regime: not single-whale exits, but not hundreds of exiting delegators either.
+
 ### How much of delegate outflow is migration-claimer driven?
 
 For some delegates, a large fraction of unbonded stake plausibly traces back to migration claims (claimer stake claimed to that delegate):
