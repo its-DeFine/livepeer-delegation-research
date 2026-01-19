@@ -27,7 +27,7 @@ import pickle
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from decimal import Decimal, getcontext
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, List, Optional
 
 
 getcontext().prec = 50
@@ -147,6 +147,22 @@ def main() -> int:
     total_unbond_lpt = Decimal(0)
 
     new_by_year: Dict[int, Dict[str, int]] = {}
+    threshold_defs = [
+        ("≥10k LPT", Decimal("10000")),
+        ("≥100k LPT", Decimal("100000")),
+    ]
+    by_threshold = {
+        label: {
+            "threshold_lpt": thr,
+            "delegators": 0,
+            "withdrawers": 0,
+            "unbonders": 0,
+            "withdraw_lpt": Decimal(0),
+            "unbond_lpt": Decimal(0),
+        }
+        for label, thr in threshold_defs
+    }
+    new_by_year_thresholds: Dict[int, Dict[str, int]] = {}
 
     # 1) Outflows by band
     for addr, e in delegators.items():
@@ -161,13 +177,23 @@ def main() -> int:
         if not label:
             continue
 
+        fb_year = datetime.fromtimestamp(int(e["first_bond_ts"]), tz=timezone.utc).year
+
         total_delegators += 1
         by_band[label]["delegators"] += 1
 
-        fb_year = datetime.fromtimestamp(int(e["first_bond_ts"]), tz=timezone.utc).year
         if fb_year not in new_by_year:
             new_by_year[fb_year] = {l: 0 for l in labels}
         new_by_year[fb_year][label] += 1
+
+        if fb_year not in new_by_year_thresholds:
+            new_by_year_thresholds[fb_year] = {k: 0 for k in by_threshold.keys()}
+
+        for t_label, thr in threshold_defs:
+            if max_bonded_lpt < thr:
+                continue
+            by_threshold[t_label]["delegators"] += 1
+            new_by_year_thresholds[fb_year][t_label] += 1
 
         if int(e.get("withdraw_events") or 0) > 0:
             total_withdrawers += 1
@@ -175,6 +201,11 @@ def main() -> int:
             w_lpt = _wei_to_lpt(int(e.get("total_withdraw_amount") or 0))
             by_band[label]["withdraw_lpt"] += w_lpt
             total_withdraw_lpt += w_lpt
+            for t_label, thr in threshold_defs:
+                if max_bonded_lpt < thr:
+                    continue
+                by_threshold[t_label]["withdrawers"] += 1
+                by_threshold[t_label]["withdraw_lpt"] += w_lpt
 
         if int(e.get("unbond_events") or 0) > 0:
             total_unbonders += 1
@@ -182,6 +213,11 @@ def main() -> int:
             u_lpt = _wei_to_lpt(int(e.get("total_unbond_amount") or 0))
             by_band[label]["unbond_lpt"] += u_lpt
             total_unbond_lpt += u_lpt
+            for t_label, thr in threshold_defs:
+                if max_bonded_lpt < thr:
+                    continue
+                by_threshold[t_label]["unbonders"] += 1
+                by_threshold[t_label]["unbond_lpt"] += u_lpt
 
     # 2) Compose report payload
     out: Dict[str, Any] = {
@@ -212,7 +248,9 @@ def main() -> int:
             "unbond_total_lpt": str(total_unbond_lpt),
         },
         "bands": {},
+        "thresholds": {},
         "new_delegators_by_year": new_by_year,
+        "new_delegators_by_year_thresholds": new_by_year_thresholds,
     }
 
     for label in labels:
@@ -228,6 +266,19 @@ def main() -> int:
             "share_of_unbonders": (s["unbonders"] / total_unbonders) if total_unbonders else 0,
             "share_of_withdraw_lpt": (float(s["withdraw_lpt"] / total_withdraw_lpt) if total_withdraw_lpt else 0),
             "share_of_unbond_lpt": (float(s["unbond_lpt"] / total_unbond_lpt) if total_unbond_lpt else 0),
+        }
+
+    for t_label, s in by_threshold.items():
+        out["thresholds"][t_label] = {
+            "threshold_lpt": str(s["threshold_lpt"]),
+            "delegators": s["delegators"],
+            "withdrawers": s["withdrawers"],
+            "unbonders": s["unbonders"],
+            "withdraw_lpt": str(s["withdraw_lpt"]),
+            "unbond_lpt": str(s["unbond_lpt"]),
+            "share_of_delegators": (s["delegators"] / total_delegators) if total_delegators else 0,
+            "share_of_withdrawers": (s["withdrawers"] / total_withdrawers) if total_withdrawers else 0,
+            "share_of_withdraw_lpt": (float(s["withdraw_lpt"] / total_withdraw_lpt) if total_withdraw_lpt else 0),
         }
 
     _write_json_atomic(args.out_json, out)
@@ -262,6 +313,27 @@ def main() -> int:
         f.write("- **Withdrawn LPT** is expected to be concentrated in `10k+` (whale-size wallets).\n")
         f.write("- **Withdrawer count** tends to be concentrated in the mid-size retail bands (`10–100`, `100–1k`).\n\n")
 
+        f.write("## High-stake cohorts (by max bonded threshold)\n\n")
+        f.write("| Cohort | Delegators | Withdrawers | % of withdrawers | Withdrawn LPT | % of withdrawn |\n")
+        f.write("|---|---:|---:|---:|---:|---:|\n")
+        for t_label, _thr in threshold_defs:
+            row = out["thresholds"][t_label]
+            f.write(
+                f"| {t_label} | {row['delegators']:,} | {row['withdrawers']:,} | {_format_pct(row['share_of_withdrawers'])} | {_format_lpt(Decimal(row['withdraw_lpt']))} | {_format_pct(row['share_of_withdraw_lpt'])} |\n"
+            )
+
+        f.write("\n### New delegators reaching high-stake thresholds\n\n")
+        years2 = sorted(new_by_year_thresholds.keys())
+        if years2:
+            f.write("| Year | ≥10k | ≥100k |\n")
+            f.write("|---:|---:|---:|\n")
+            for y in years2:
+                row = new_by_year_thresholds[y]
+                f.write(f"| {y} | {row.get('≥10k LPT', 0):,} | {row.get('≥100k LPT', 0):,} |\n")
+        else:
+            f.write("No `first_bond_ts` data found.\n")
+        f.write("\n")
+
         f.write("## New delegators by year (first bond timestamp)\n\n")
         years = sorted(new_by_year.keys())
         if years:
@@ -281,4 +353,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

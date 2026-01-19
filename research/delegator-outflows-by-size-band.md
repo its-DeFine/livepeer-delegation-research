@@ -30,6 +30,23 @@ This report answers:
 - **Withdrawn LPT** is expected to be concentrated in `10k+` (whale-size wallets).
 - **Withdrawer count** tends to be concentrated in the mid-size retail bands (`10–100`, `100–1k`).
 
+## High-stake cohorts (by max bonded threshold)
+
+| Cohort | Delegators | Withdrawers | % of withdrawers | Withdrawn LPT | % of withdrawn |
+|---|---:|---:|---:|---:|---:|
+| ≥10k LPT | 346 | 202 | 8.70% | 21,058,550.212 | 88.45% |
+| ≥100k LPT | 68 | 40 | 1.72% | 14,732,117.009 | 61.88% |
+
+### New delegators reaching high-stake thresholds
+
+| Year | ≥10k | ≥100k |
+|---:|---:|---:|
+| 2022 | 126 | 37 |
+| 2023 | 108 | 8 |
+| 2024 | 59 | 15 |
+| 2025 | 51 | 7 |
+| 2026 | 2 | 1 |
+
 ## New delegators by year (first bond timestamp)
 
 | Year | Total | <1 | 1–10 | 10–100 | 100–1k | 1k–10k | 10k+ |

@@ -80,7 +80,7 @@
       "withdraw": "WithdrawStake events (cashout) aggregated per wallet: total_withdraw_amount"
     }
   },
-  "generated_at_utc": "2026-01-19T00:41:52.236869+00:00",
+  "generated_at_utc": "2026-01-19T00:53:39.939343+00:00",
   "inputs": {
     "addresses_json": "data/arbitrum_delegator_addresses.json",
     "delegators_state_pkl": "../../artifacts/livepeer-bm-scan-arbitrum-v2/delegators_state.pkl",
@@ -132,6 +132,52 @@
       "1k\u201310k LPT": 4,
       "1\u201310 LPT": 0,
       "<1 LPT": 1
+    }
+  },
+  "new_delegators_by_year_thresholds": {
+    "2022": {
+      "\u2265100k LPT": 37,
+      "\u226510k LPT": 126
+    },
+    "2023": {
+      "\u2265100k LPT": 8,
+      "\u226510k LPT": 108
+    },
+    "2024": {
+      "\u2265100k LPT": 15,
+      "\u226510k LPT": 59
+    },
+    "2025": {
+      "\u2265100k LPT": 7,
+      "\u226510k LPT": 51
+    },
+    "2026": {
+      "\u2265100k LPT": 1,
+      "\u226510k LPT": 2
+    }
+  },
+  "thresholds": {
+    "\u2265100k LPT": {
+      "delegators": 68,
+      "share_of_delegators": 0.013914466953140987,
+      "share_of_withdraw_lpt": 0.6187691429020978,
+      "share_of_withdrawers": 0.017226528854435832,
+      "threshold_lpt": "100000",
+      "unbond_lpt": "28208505.309811067967401692",
+      "unbonders": 66,
+      "withdraw_lpt": "14732117.008956169578875968",
+      "withdrawers": 40
+    },
+    "\u226510k LPT": {
+      "delegators": 346,
+      "share_of_delegators": 0.0708000818498056,
+      "share_of_withdraw_lpt": 0.8844880241873699,
+      "share_of_withdrawers": 0.08699397071490095,
+      "threshold_lpt": "10000",
+      "unbond_lpt": "37912075.445378334105509723",
+      "unbonders": 257,
+      "withdraw_lpt": "21058550.211852542933966195",
+      "withdrawers": 202
     }
   },
   "totals": {
