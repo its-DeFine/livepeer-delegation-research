@@ -4,13 +4,13 @@ Delegate outflow profile: top unbonders + claimed earnings vs WithdrawStake cash
 
 Answers:
 - Who are the top unbonders (by LPT) from a given delegate/orchestrator address?
-- For each wallet, how much did they claim in staking rewards/fees and how much did they
+- For each wallet, how much did they claim in staking rewards (LPT) + fees (ETH) and how much did they
   withdraw from BondingManager (cashout into LPT tokens)?
 
 Important notes:
 - `Unbond` is not a clean exit; stake can later be `Rebond`ed.
 - `WithdrawStake` is a cashout of unlocked stake and can include principal + rewards,
-  so `WithdrawStake / (rewards+fees)` ratios are only a coarse indicator.
+  so `WithdrawStake / claimed_rewards` ratios are only a coarse indicator.
 
 Inputs come from the main workspace scan artifacts:
 - `unbond_events.ndjson` (event-level Unbond rows)
@@ -47,6 +47,8 @@ GET_DELEGATOR_SELECTOR = "a64ad595"
 
 LPT_DECIMALS = 18
 LPT_SCALE = Decimal(10) ** LPT_DECIMALS
+ETH_DECIMALS = 18
+ETH_SCALE = Decimal(10) ** ETH_DECIMALS
 
 
 class RpcError(RuntimeError):
@@ -108,6 +110,10 @@ def _wei_to_lpt(amount_wei: int) -> Decimal:
     return Decimal(int(amount_wei)) / LPT_SCALE
 
 
+def _wei_to_eth(amount_wei: int) -> Decimal:
+    return Decimal(int(amount_wei)) / ETH_SCALE
+
+
 def _format_lpt(x: Decimal, *, places: int = 3) -> str:
     q = Decimal(10) ** -places
     return f"{x.quantize(q):,}"
@@ -148,16 +154,12 @@ class WalletRow:
     address: str
     unbond_from_delegate_lpt: Decimal
     rewards_claimed_lpt: Decimal
-    fees_claimed_lpt: Decimal
+    fees_claimed_eth: Decimal
     withdraw_total_lpt: Decimal
     claim_events: int
     withdraw_events: int
     bonded_now_lpt: Optional[Decimal]
     current_delegate: Optional[str]
-
-    @property
-    def claimed_total_lpt(self) -> Decimal:
-        return self.rewards_claimed_lpt + self.fees_claimed_lpt
 
 
 def main() -> int:
@@ -285,7 +287,7 @@ def main() -> int:
         if not isinstance(e, dict):
             continue
         rewards = _wei_to_lpt(int(e.get("total_rewards_claimed") or 0))
-        fees = _wei_to_lpt(int(e.get("total_fees_claimed") or 0))
+        fees = _wei_to_eth(int(e.get("total_fees_claimed") or 0))
         withdraw = _wei_to_lpt(int(e.get("total_withdraw_amount") or 0))
         claim_events = int(e.get("earnings_claim_events") or 0)
         withdraw_events = int(e.get("withdraw_events") or 0)
@@ -301,7 +303,7 @@ def main() -> int:
                 address=addr,
                 unbond_from_delegate_lpt=_wei_to_lpt(unbond_wei),
                 rewards_claimed_lpt=rewards,
-                fees_claimed_lpt=fees,
+                fees_claimed_eth=fees,
                 withdraw_total_lpt=withdraw,
                 claim_events=claim_events,
                 withdraw_events=withdraw_events,
@@ -332,8 +334,7 @@ def main() -> int:
                 "delegator": r.address,
                 "unbond_from_delegate_lpt": str(r.unbond_from_delegate_lpt),
                 "rewards_claimed_lpt": str(r.rewards_claimed_lpt),
-                "fees_claimed_lpt": str(r.fees_claimed_lpt),
-                "claimed_total_lpt": str(r.claimed_total_lpt),
+                "fees_claimed_eth": str(r.fees_claimed_eth),
                 "withdraw_total_lpt": str(r.withdraw_total_lpt),
                 "claim_events": r.claim_events,
                 "withdraw_events": r.withdraw_events,
@@ -361,26 +362,27 @@ def main() -> int:
             f.write(f"- Snapshot block: `{snapshot_meta['snapshot_block']}` (lag `{snapshot_meta['block_lag']}`) — {_iso(int(snapshot_meta['snapshot_block_timestamp']))}\n\n")
 
         f.write("## Top unbonders (by total unbonded from this delegate)\n\n")
-        f.write("| # | Delegator | Unbonded from delegate | Claimed rewards | Claimed fees | Claimed total | WithdrawStake total | Withdraw/claimed | Bonded now | Current delegate |\n")
-        f.write("|---:|---|---:|---:|---:|---:|---:|---:|---:|---|\n")
+        f.write(
+            "| # | Delegator | Unbonded from delegate (LPT) | Claimed rewards (LPT) | Claimed fees (ETH) | WithdrawStake total (LPT) | Withdraw/rewards | Bonded now (LPT) | Current delegate |\n"
+        )
+        f.write("|---:|---|---:|---:|---:|---:|---:|---:|---|\n")
         for i, r in enumerate(rows, start=1):
-            claimed = r.claimed_total_lpt
-            ratio = float(r.withdraw_total_lpt / claimed) if claimed > 0 else math.nan
+            ratio = float(r.withdraw_total_lpt / r.rewards_claimed_lpt) if r.rewards_claimed_lpt > 0 else math.nan
             ratio_fmt = f"{ratio*100:.1f}%" if not math.isnan(ratio) else "n/a"
             bonded_now = r.bonded_now_lpt if r.bonded_now_lpt is not None else Decimal(0)
             current_delegate = r.current_delegate or "n/a"
             f.write(
-                f"| {i} | `{r.address}` | {_format_lpt(r.unbond_from_delegate_lpt)} | {_format_lpt(r.rewards_claimed_lpt)} | {_format_lpt(r.fees_claimed_lpt)} | {_format_lpt(claimed)} | {_format_lpt(r.withdraw_total_lpt)} | {ratio_fmt} | {_format_lpt(bonded_now)} | `{current_delegate}` |\n"
+                f"| {i} | `{r.address}` | {_format_lpt(r.unbond_from_delegate_lpt)} | {_format_lpt(r.rewards_claimed_lpt)} | {_format_lpt(r.fees_claimed_eth)} | {_format_lpt(r.withdraw_total_lpt)} | {ratio_fmt} | {_format_lpt(bonded_now)} | `{current_delegate}` |\n"
             )
 
         f.write("\n## Notes\n\n")
         f.write("- `Unbond` is not a clean exit; stake can later be rebonded.\n")
         f.write("- `WithdrawStake` is a cashout of unlocked stake and can include principal + rewards.\n")
-        f.write("- `Withdraw/claimed` > 100% typically indicates the wallet withdrew principal in addition to any earned stake.\n")
+        f.write("- `Claimed rewards` is denominated in LPT; `Claimed fees` is denominated in ETH.\n")
+        f.write("- `Withdraw/rewards` > 100% typically indicates the wallet withdrew principal in addition to any earned stake.\n")
 
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
