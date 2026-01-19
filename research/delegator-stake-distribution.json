@@ -1,0 +1,64 @@
+{
+  "bands": {
+    "100\u20131k LPT": {
+      "active_delegators": 684,
+      "bonded_lpt": 215895.17127380625,
+      "share_of_active_bonded_lpt": 0.01205631266606621,
+      "share_of_active_delegators": 0.21222463543282655
+    },
+    "10k+ LPT": {
+      "active_delegators": 194,
+      "bonded_lpt": 16521076.076783318,
+      "share_of_active_bonded_lpt": 0.9225924673829532,
+      "share_of_active_delegators": 0.06019236735960285
+    },
+    "10\u2013100 LPT": {
+      "active_delegators": 920,
+      "bonded_lpt": 41569.279939953885,
+      "share_of_active_bonded_lpt": 0.0023213684368313774,
+      "share_of_active_delegators": 0.28544834005584857
+    },
+    "1k\u201310k LPT": {
+      "active_delegators": 279,
+      "bonded_lpt": 1127378.522602977,
+      "share_of_active_bonded_lpt": 0.0629566093642334,
+      "share_of_active_delegators": 0.08656531182128452
+    },
+    "1\u201310 LPT": {
+      "active_delegators": 296,
+      "bonded_lpt": 1239.2617286736318,
+      "share_of_active_bonded_lpt": 6.920454398227544e-05,
+      "share_of_active_delegators": 0.09183990071362085
+    },
+    "<1 LPT": {
+      "active_delegators": 850,
+      "bonded_lpt": 72.30234058261152,
+      "share_of_active_bonded_lpt": 4.037605933515069e-06,
+      "share_of_active_delegators": 0.26372944461681663
+    }
+  },
+  "generated_at_utc": "2026-01-18T23:59:51.076210+00:00",
+  "inputs": {
+    "addresses_json": "data/arbitrum_delegator_addresses.json",
+    "batch_size": 60,
+    "block_lag": 200,
+    "bonding_manager": "0x35Bcf3c30594191d53231E4FF333E8A770453e40",
+    "latest_block_at_start": 422808489,
+    "rpc_url": "https://arb1.arbitrum.io/rpc",
+    "snapshot_block": 422802457,
+    "snapshot_block_timestamp": 1768777382,
+    "target_calls_per_second": 10.0
+  },
+  "small_1_10_lpt": {
+    "active_delegators": 296,
+    "bonded_lpt": 1239.2617286736318,
+    "share_of_active_bonded_lpt": 6.920454398227544e-05,
+    "share_of_active_delegators": 0.09183990071362085
+  },
+  "totals": {
+    "delegators_active_now": 3223,
+    "delegators_in_addresses_list": 4887,
+    "delegators_inactive_now": 1664,
+    "total_active_bonded_lpt": 17907230.61466931
+  }
+}

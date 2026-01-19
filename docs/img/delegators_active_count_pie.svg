@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="520" viewBox="0 0 880 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="40" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="22" font-weight="700">Active Delegators — Count by Stake Band (block 422802457)</text>
+<path d="M 260 260 L 260.000 80.000 A 180 180 0 0 1 439.331 275.508 Z" fill="#2563eb" stroke="white" stroke-width="2"/>
+<rect x="520" y="76" width="14" height="14" fill="#2563eb"/>
+<text x="540" y="88" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="13">&lt;1 LPT — 850 (26.37%)</text>
+<path d="M 260 260 L 439.331 275.508 A 180 180 0 0 1 401.832 370.831 Z" fill="#16a34a" stroke="white" stroke-width="2"/>
+<rect x="520" y="102" width="14" height="14" fill="#16a34a"/>
+<text x="540" y="114" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="13">1–10 LPT — 296 (9.18%)</text>
+<path d="M 260 260 L 401.832 370.831 A 180 180 0 0 1 120.577 373.847 Z" fill="#f59e0b" stroke="white" stroke-width="2"/>
+<rect x="520" y="128" width="14" height="14" fill="#f59e0b"/>
+<text x="540" y="140" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="13">10–100 LPT — 920 (28.54%)</text>
+<path d="M 260 260 L 120.577 373.847 A 180 180 0 0 1 116.562 151.254 Z" fill="#ef4444" stroke="white" stroke-width="2"/>
+<rect x="520" y="154" width="14" height="14" fill="#ef4444"/>
+<text x="540" y="166" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="13">100–1k LPT — 684 (21.22%)</text>
+<path d="M 260 260 L 116.562 151.254 A 180 180 0 0 1 193.535 92.720 Z" fill="#a855f7" stroke="white" stroke-width="2"/>
+<rect x="520" y="180" width="14" height="14" fill="#a855f7"/>
+<text x="540" y="192" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="13">1k–10k LPT — 279 (8.66%)</text>
+<path d="M 260 260 L 193.535 92.720 A 180 180 0 0 1 260.000 80.000 Z" fill="#0ea5e9" stroke="white" stroke-width="2"/>
+<rect x="520" y="206" width="14" height="14" fill="#0ea5e9"/>
+<text x="540" y="218" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="13">10k+ LPT — 194 (6.02%)</text>
+<circle cx="260" cy="260" r="180" fill="none" stroke="#e5e7eb" stroke-width="1"/>
+</svg>
