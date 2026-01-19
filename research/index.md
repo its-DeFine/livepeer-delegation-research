@@ -26,6 +26,7 @@ This folder collects deeper dives and working notes used to ground the solution 
 - `research/livepeer-delegator-outflows-research.md`: on-chain outflow + sybil-cashout hypothesis research.
 - `research/delegator-outflows-by-size-band.md`: outflows segmented by delegator size + new delegators per year by size.
 - `research/delegate-525419ff-top-unbonders.md`: delegate profile — top unbonders + claimed vs `WithdrawStake` cashout.
+- `research/eth-l1-wallet-86abf78a-origin.md`: L1 origin trace — bond deposits, withdraws, and LPT transfer counterparties.
 - `research/cross-protocol-tokenomics-experiments.md`: precedent patterns (worked vs failed) and what to copy/avoid.
 
 These were imported from the main workspace repo and should be edited/maintained here going forward.

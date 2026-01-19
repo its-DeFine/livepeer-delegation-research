@@ -1,0 +1,593 @@
+{
+  "bond_deposit_destinations": {
+    "deposit_destinations": [
+      {
+        "bond_deposit_total_lpt": "396429.414371376356162298",
+        "to": "0x505f8c2ee81f1c6fa0d88e918ef0491222e05818"
+      },
+      {
+        "bond_deposit_total_lpt": "327411.477195829383968136",
+        "to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      }
+    ],
+    "evidence": [
+      {
+        "bond_additional_lpt": "5104.877392007932024342",
+        "bond_block_number": 6205497,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xb386871f3fa3873372294bc9ddbcbac5a6cf272c96ef4b0d5f8ab502c78753a1",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "7734.231017368131594101",
+        "bond_block_number": 6224160,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x3cd1702a8670ed27c17fb2577ac7525080f3175f745d334e25383c27d324b6b6",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2201.038223634642773229",
+        "bond_block_number": 6235081,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xd79b0ec786ceb95739a4b4f5f5b872a7ec38991c0683045335f3157939c7fdf8",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "824.173809233891425673",
+        "bond_block_number": 6235130,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xf74f84cbccc9c764976ceb0c32c3cf0467f0fb77e52f5473a50e11edd9ef0df0",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2951.555736388995311593",
+        "bond_block_number": 6241234,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x2b9759a24be5f2816364351802e3d12fc437879e7a0b45fff5b7dfe5dbe7351e",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2226.675160929257211947",
+        "bond_block_number": 6246874,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x512e7a84e58e25e49e7f6583232f6ee364c509d3d77eecfde0399a4ba0016be5",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "9561.131965053416612593",
+        "bond_block_number": 6270680,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x84b04514c81ad51417f43a9b6bd7636473a6cdb496bf76ed73b0b4313cf974a4",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1665.867047626396657411",
+        "bond_block_number": 6270740,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x67acc39d5f3eee9221bef29d0725a03b7e4ad3ccdd63225fd2a904a9cde41bfa",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2436.365801932436212336",
+        "bond_block_number": 6276532,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x3dbc97a711f70ef37b00230b298aec18a206f1c980ee54789fad8b6eb6fbbe18",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1790.60025703386908654",
+        "bond_block_number": 6283508,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x263b0e9a77253b0fc50354e330ade9c851b513b7d5649e5dcf585381bc9f496a",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "5826.662914054890922309",
+        "bond_block_number": 6306440,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x81363eb361c10f3e30805dc4981087945199fa27f347326fc3f75ca3d63dffc2",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "24608.233762349535691028",
+        "bond_block_number": 6349029,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x1844ea6049820b20ecfe3b30d620392dad88a68bac2a01a0964b927db5923564",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2995.628393614908902164",
+        "bond_block_number": 6350074,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x6d103158d1e48293beef512459fa122438aa854aa4322fc134875b733877a04b",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2117.049294020446395681",
+        "bond_block_number": 6355900,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x9e10e74757e41f0e7f21d360330b5b3a85f87313ab1824de37c0dbc3060ef42f",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "13182.165618247105970397",
+        "bond_block_number": 6397450,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x047600f6ff252115ccb45cb5b09d2c2edb2068d48ed9c34063b805fa4b52c28d",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "16605.669408432332961798",
+        "bond_block_number": 6416008,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x261b6cf2fcaf6a3d8152ab8cd1f8042e01226ed1ae9d8e7c6c43ef8977f4d917",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "9504.279584398801686818",
+        "bond_block_number": 6441132,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xb308b97d0712965ec1d1673dcab4ad2978e72a11ec528cde9c710f79353254d0",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "5371.547194317605284159",
+        "bond_block_number": 6520634,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x2a4cfc54b4021d040a92912a83752a7035574d08b65e7f8c397a95375fbaf3f7",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "3300.268712328767123287",
+        "bond_block_number": 6570414,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xfc201864d896829234f4091b01d99212ef38347ad3bb549daf1e61539202c61c",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "4205.806693049213597159",
+        "bond_block_number": 6630374,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x1908660abcc121803e157b65535d42c25e3e9f1c04cf392b9960e75e5525734c",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "4615.128983257229832572",
+        "bond_block_number": 6697900,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x8b72f48c1f4a518cdc345714c1e8e21c9e40453033c66100635e6c39fc6cfeca",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2508.647332318619989853",
+        "bond_block_number": 6734969,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xf139918c2acf14a2da619810d4a97be4bbe9bd35d3cc22f4dd76fb35374c1132",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "3001.994584474885844749",
+        "bond_block_number": 6778672,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x9aa0e91cf99efc86f8f655d01a55a0f2327c90260b6cf44ca352982eadd0ac69",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "3216.277553526128868595",
+        "bond_block_number": 6825238,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x59aaac2e7636a7909f7f4891a3451096739b54a9e7518f87fd4e290256f58726",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "6815.679959411466260781",
+        "bond_block_number": 6923307,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xc8190925cea00eeff0fb58db1cf63c51fee51e193c92bbe8f1fef942f782a945",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1028.027437848807711822",
+        "bond_block_number": 7078288,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x1aabdf4680d0e5428397534f3816ac159910da1d6202beb11680132eec4563dc",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "5786.214817858954845256",
+        "bond_block_number": 7149629,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x3acbc06367ca0621feff7085eebf167eb489cda618a3d94d263b5025545dafd2",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "6666",
+        "bond_block_number": 7242151,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xc2f520b43f6095fa479eb10f676924afafc495564b6c22fe7ade76dca5938451",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "4591",
+        "bond_block_number": 7275261,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x66d337f25f690800a1ebed0fa67dee91983a5386330c250c857eb23681acf849",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "8394",
+        "bond_block_number": 7394621,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xae4dca7cca49c7cd6d03afaf069c930d81335ed5cf81555339d887e74d09015a",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "7415",
+        "bond_block_number": 7508315,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x1403b32932f67a4f33cb6b40eb090e3633322fa50718272f383be9218e45457a",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "16379",
+        "bond_block_number": 7760475,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x4e2d50da90a44d7c74efd4d3fa262053ce4b5690fafa5e0b7796755da71d5ab9",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "4525",
+        "bond_block_number": 7901545,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xb40d583d0899a96d90db54c8f61e2c5d8624f251d7625dc348ec7dce5f62dd4b",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "13779",
+        "bond_block_number": 8226899,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0xcdf3f139d6fec76fda8922d8807c04ca00b2879685794349da2aa0b9e43255ff",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "5030",
+        "bond_block_number": 8304101,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x75d2d1a84b4b635951af5dba5e5258c4a286071a013c9e62536cf46d8614b002",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "86",
+        "bond_block_number": 8305694,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0xa03d6548e294fbbfeb4d8aeec868a8ef3baa8409639eaed4015a9b5da55d128b",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "15782",
+        "bond_block_number": 8561360,
+        "bond_new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "bond_tx_hash": "0x88eb815c378ddf8391702b3e9671b773a3cbe2a941a2c25ba38558951a52d160",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "67382",
+        "bond_block_number": 8658083,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0xf969d0353aec82b31357b388c2044d4b4a07d728d779efa6747e33f6330a3986",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "12553",
+        "bond_block_number": 8830046,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0x7ebc7a83341858ca8cd1772a122a3e607b5fbd7c96815f5e75d36c15915acf07",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1641",
+        "bond_block_number": 9011784,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0x89b6da842ed5285c2e10bb7797e8359192b062a31dcca799920fb71319b962b6",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1611",
+        "bond_block_number": 9201561,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0xec4e098209330636e841c915195e1f7bf0ff038cc85d00d8e8ef30512cb20fec",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "2335",
+        "bond_block_number": 9381620,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0x570baf21b797269662d98b3c55091f28dcc9c0c9c10ef73b3518aed5e7e74f3f",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1089.983237020400312792",
+        "bond_block_number": 9657835,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0xd17950afe20817faca3beb6eea191f4cb31dd0cf57b6e5a357abdf44ec4583d5",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "100",
+        "bond_block_number": 10027664,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0xd968b87e733f493057f14a198d90bb127766ff25545f10f79810f3c6fee7a7fb",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "3607",
+        "bond_block_number": 10027684,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0xffe6c8c599f6ee1ebf737193bc3ecc3e7e763456bb82440f3b94e3b551872dd2",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1100.564849487538410339",
+        "bond_block_number": 10290052,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0x4dcc7145115b2a591bd2c9eee49f603d156dd29570d16266c0927a863302e6c6",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "856.1445596619277118",
+        "bond_block_number": 10414895,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0x650dd26bbdabe90d215c9733c1b98cc0db82d5188473de784e475a2be034b537",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1302.985894940846735012",
+        "bond_block_number": 10548929,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0x8d25df9a750cd2ab7c7308415764d1150387abd22b117b7b3a0ed0fb97e66645",
+        "transfer_to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "bond_additional_lpt": "1800.80881030713289664",
+        "bond_block_number": 11129060,
+        "bond_new_delegate": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "bond_tx_hash": "0xe117437913a3fdf0b8fe5b260359288d8f0e486f41a9fe86c37852b13eb1969c",
+        "transfer_to": "0x505f8c2ee81f1c6fa0d88e918ef0491222e05818"
+      },
+      {
+        "bond_additional_lpt": "394628.605561069223265658",
+        "bond_block_number": 12770306,
+        "bond_new_delegate": "0xda43d85b8d419a9c51bbf0089c9bd5169c23f2f9",
+        "bond_tx_hash": "0xacf92f125a1cd28be4ef3b0e95c3778daff102296687b8eb9ae29713718a544c",
+        "transfer_to": "0x505f8c2ee81f1c6fa0d88e918ef0491222e05818"
+      }
+    ]
+  },
+  "bond_events_summary": {
+    "biggest_additional": {
+      "additional_lpt": "394628.605561069223265658",
+      "block_number": 12770306,
+      "bonded_lpt": "394628.605561069223265658",
+      "new_delegate": "0xda43d85b8d419a9c51bbf0089c9bd5169c23f2f9",
+      "old_delegate": "0x0000000000000000000000000000000000000000",
+      "timestamp": 1625525933,
+      "tx_hash": "0xacf92f125a1cd28be4ef3b0e95c3778daff102296687b8eb9ae29713718a544c"
+    },
+    "bond_events": 52,
+    "bond_events_with_additional": 50,
+    "first_bond": {
+      "additional_lpt": "5104.877392007932024342",
+      "block_number": 6205497,
+      "bonded_lpt": "24423.806154520038817425",
+      "new_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+      "old_delegate": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+      "timestamp": 1535120051,
+      "tx_hash": "0xb386871f3fa3873372294bc9ddbcbac5a6cf272c96ef4b0d5f8ab502c78753a1"
+    },
+    "max_bonded_lpt": "1020530.087434501759357208",
+    "total_additional_bonded_lpt": "723840.891567205740130434"
+  },
+  "generated_at_utc": "2026-01-19T13:59:16.056522+00:00",
+  "inputs": {
+    "block_lag": 5,
+    "bonding_manager": "0x511bc4556d823ae99630ae8de28b9b80df90ea2e",
+    "from_block": 0,
+    "latest_block_at_start": 24269270,
+    "lpt_token": "0x58b6a8a3302369daec383334672404ee733ab239",
+    "rpc_url": "https://rpc.flashbots.net",
+    "snapshot_block": 24269265,
+    "wallet": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e"
+  },
+  "lifecycle_totals": {
+    "claim_events": 25,
+    "fees_claimed_total_eth": "0.115176653116170062",
+    "rewards_claimed_total_lpt": "378963.985121063582619164",
+    "unbond_events": 18,
+    "unbond_total_lpt": "1313289.079233915947935527",
+    "withdraw_events": 18,
+    "withdraw_total_lpt": "1313289.079233915947935527"
+  },
+  "lpt_transfers": {
+    "in_total_lpt": "2275844.773066192971869144",
+    "inbound_transfers": 6924,
+    "net_lpt": "0",
+    "out_total_lpt": "2275844.773066192971869144",
+    "outbound_transfers": 171,
+    "top_inbound_senders": [
+      {
+        "from": "0x505f8c2ee81f1c6fa0d88e918ef0491222e05818",
+        "lpt": "1211759.079233915947935527"
+      },
+      {
+        "from": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+        "lpt": "501070.896347"
+      },
+      {
+        "from": "0x2e0eeaeb1af7565bd5381aaedeb8eeb0b1082d02",
+        "lpt": "194417.451817351598173515"
+      },
+      {
+        "from": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828",
+        "lpt": "113058.518764121499679505"
+      },
+      {
+        "from": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6",
+        "lpt": "73485.923422107809687174"
+      },
+      {
+        "from": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "lpt": "50070.775153283800992553"
+      },
+      {
+        "from": "0xa5e37e0ba14655e92deff29f32adbc7d09b8a2cf",
+        "lpt": "21621.556893499201315404"
+      },
+      {
+        "from": "0xf89c64db88824c54df24607d64cbafda88ba3268",
+        "lpt": "14901.095806210230589624"
+      },
+      {
+        "from": "0x3e78f6520e7dcc58b5e25b50b445bef4c75ecafd",
+        "lpt": "12199.812721294683606439"
+      },
+      {
+        "from": "0x2d656f02aa73c13e5727a3a2e0a90b0b1e82f1f0",
+        "lpt": "11404.152414152684794049"
+      },
+      {
+        "from": "0xd82e214eb5ba87a779b83d9d2cfe9930e012efef",
+        "lpt": "10905.411184123790282208"
+      },
+      {
+        "from": "0xb6717c83fda01ab2f2942e11f24af179cd8fa5a5",
+        "lpt": "10763.17162042744788041"
+      },
+      {
+        "from": "0x4830116608c1f6aa444149d9cb32a5abf5f1c72a",
+        "lpt": "10579.237914748319019787"
+      },
+      {
+        "from": "0x182ebf4c80b28efc45ad992ecbb9f730e31e8c7f",
+        "lpt": "6128.161696028645851821"
+      },
+      {
+        "from": "0xc6aa54be1f5fcb9657223b32747bb520f3cb574c",
+        "lpt": "5423.562820255658901382"
+      },
+      {
+        "from": "0xbfd0fb15e6c04b396ea12f5bb9ba803e29b282be",
+        "lpt": "5141.622321436850640021"
+      },
+      {
+        "from": "0xb058b034b612e7dd276551b0160b4eeb05fddd17",
+        "lpt": "5084.54093935583745742"
+      },
+      {
+        "from": "0xf0414210448a89313f81184582bd510d4415686c",
+        "lpt": "4731.617221290411224605"
+      },
+      {
+        "from": "0xb3509e30d407bdf59315626419623200c45a9f96",
+        "lpt": "2042.042327259832388219"
+      },
+      {
+        "from": "0xc75bfd2f49734aa66d910f9653bac43785fd2063",
+        "lpt": "1899.300427551163918592"
+      }
+    ],
+    "top_outbound_recipients": [
+      {
+        "lpt": "522059.548010264660096427",
+        "to": "0xf89c64db88824c54df24607d64cbafda88ba3268"
+      },
+      {
+        "lpt": "501070.896347",
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5"
+      },
+      {
+        "lpt": "396429.414371376356162298",
+        "to": "0x505f8c2ee81f1c6fa0d88e918ef0491222e05818"
+      },
+      {
+        "lpt": "354716.054884268154617866",
+        "to": "0x8573f2f5a3bd960eee3d998473e50c75cdbe6828"
+      },
+      {
+        "lpt": "100000",
+        "to": "0x2a7e552ff8255499115a5543328dbc423b170e3b"
+      },
+      {
+        "lpt": "99000",
+        "to": "0x7b66d3060306d6f54da7731dca7ee2994a303ccc"
+      },
+      {
+        "lpt": "54545.45",
+        "to": "0x49c5b31bc6f54ba598322bb7359685d5300536b8"
+      },
+      {
+        "lpt": "50070.775153283800992553",
+        "to": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e"
+      },
+      {
+        "lpt": "50000",
+        "to": "0xb7ddbe0ebcbb7bac36a00d822701ea261c84be35"
+      },
+      {
+        "lpt": "50000",
+        "to": "0xac0c7b17fd3029a15438245b8a433720c13a5d5c"
+      },
+      {
+        "lpt": "23530",
+        "to": "0x918691e4925c122c9686a6c6d5ad4588fab1d054"
+      },
+      {
+        "lpt": "20000",
+        "to": "0x01c357c41c0c41e7b51091f4dab6ff658c0455f4"
+      },
+      {
+        "lpt": "14391.0143",
+        "to": "0x7c9342a4c5a638483f0b7546fccdfc491ddd5c1a"
+      },
+      {
+        "lpt": "10826.62",
+        "to": "0xdc73a35ad351bb71357f0eb3f25c10a0463df5bc"
+      },
+      {
+        "lpt": "8006",
+        "to": "0x2e0eeaeb1af7565bd5381aaedeb8eeb0b1082d02"
+      },
+      {
+        "lpt": "8001",
+        "to": "0x0ce55a6d9f6860aaa7fe9c185eb444acaaea91d6"
+      },
+      {
+        "lpt": "7500",
+        "to": "0xcab80be4745341b3ead41018d41b4add6a5d0ac1"
+      },
+      {
+        "lpt": "4696",
+        "to": "0x50d69f8253685999b4c74a67ccb3d240e2a56ed6"
+      },
+      {
+        "lpt": "1000",
+        "to": "0x2a8d809e984f9c30aad3be8f3221fc1538d0f078"
+      },
+      {
+        "lpt": "2",
+        "to": "0x26d4ebe085cd9fccd66ef7316837d9ac003655a2"
+      }
+    ],
+    "unique_recipients": 24,
+    "unique_senders": 28,
+    "wallet": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e"
+  },
+  "snapshot": {
+    "bonded_now_lpt": "311906.10026626082813003",
+    "delegate_now": "0xda43d85b8d419a9c51bbf0089c9bd5169c23f2f9",
+    "snapshot_block_timestamp": 1768831055
+  },
+  "wallet_meta": {
+    "code_len_hex": 0,
+    "is_contract": false
+  }
+}
