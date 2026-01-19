@@ -1,0 +1,432 @@
+{
+  "bands_net": [
+    {
+      "active_delegators_delta": 149,
+      "active_delegators_from": 705,
+      "active_delegators_to": 854,
+      "band": "<1 LPT",
+      "bonded_lpt_delta": "28.341926907359800863",
+      "bonded_lpt_from": "44.473845875829171659",
+      "bonded_lpt_to": "72.815772783188972522"
+    },
+    {
+      "active_delegators_delta": 1,
+      "active_delegators_from": 296,
+      "active_delegators_to": 297,
+      "band": "1\u201310 LPT",
+      "bonded_lpt_delta": "-101.328322236535665919",
+      "bonded_lpt_from": "1331.155330240923004623",
+      "bonded_lpt_to": "1229.827008004387338704"
+    },
+    {
+      "active_delegators_delta": -179,
+      "active_delegators_from": 1098,
+      "active_delegators_to": 919,
+      "band": "10\u2013100 LPT",
+      "bonded_lpt_delta": "-7856.003960663854323873",
+      "bonded_lpt_from": "49424.994395972090281723",
+      "bonded_lpt_to": "41568.990435308235957850"
+    },
+    {
+      "active_delegators_delta": -138,
+      "active_delegators_from": 819,
+      "active_delegators_to": 681,
+      "band": "100\u20131k LPT",
+      "bonded_lpt_delta": "-30393.777634068020562763",
+      "bonded_lpt_from": "246008.802783495525443463",
+      "bonded_lpt_to": "215615.025149427504880700"
+    },
+    {
+      "active_delegators_delta": 15,
+      "active_delegators_from": 262,
+      "active_delegators_to": 277,
+      "band": "1k\u201310k LPT",
+      "bonded_lpt_delta": "120172.504013079949987725",
+      "bonded_lpt_from": "1004343.420247759566400519",
+      "bonded_lpt_to": "1124515.924260839516388244"
+    },
+    {
+      "active_delegators_delta": 37,
+      "active_delegators_from": 157,
+      "active_delegators_to": 194,
+      "band": "10k+ LPT",
+      "bonded_lpt_delta": "5985086.576184810254403112",
+      "bonded_lpt_from": "10548460.576135358794108958",
+      "bonded_lpt_to": "16533547.152320169048512070"
+    }
+  ],
+  "bands_snapshot_from": {
+    "100\u20131k LPT": {
+      "active_delegators": 819,
+      "bonded_lpt": "246008.802783495525443463",
+      "share_of_active_count": 0.24543002697033264,
+      "share_of_bonded_lpt": 0.02076091379583905
+    },
+    "10k+ LPT": {
+      "active_delegators": 157,
+      "bonded_lpt": "10548460.576135358794108958",
+      "share_of_active_count": 0.047048246928378785,
+      "share_of_bonded_lpt": 0.8901944898804455
+    },
+    "10\u2013100 LPT": {
+      "active_delegators": 1098,
+      "bonded_lpt": "49424.994395972090281723",
+      "share_of_active_count": 0.32903805813605036,
+      "share_of_bonded_lpt": 0.0041710216724140945
+    },
+    "1k\u201310k LPT": {
+      "active_delegators": 262,
+      "bonded_lpt": "1004343.420247759566400519",
+      "share_of_active_count": 0.07851363500149836,
+      "share_of_bonded_lpt": 0.08475748401382313
+    },
+    "1\u201310 LPT": {
+      "active_delegators": 296,
+      "bonded_lpt": "1331.155330240923004623",
+      "share_of_active_count": 0.08870242732993706,
+      "share_of_bonded_lpt": 0.00011233744787711936
+    },
+    "<1 LPT": {
+      "active_delegators": 705,
+      "bonded_lpt": "44.473845875829171659",
+      "share_of_active_count": 0.2112676056338028,
+      "share_of_bonded_lpt": 3.753189601146524e-06
+    }
+  },
+  "bands_snapshot_to": {
+    "100\u20131k LPT": {
+      "active_delegators": 681,
+      "bonded_lpt": "215615.025149427504880700",
+      "share_of_active_count": 0.21135940409683426,
+      "share_of_bonded_lpt": 0.012034405526688365
+    },
+    "10k+ LPT": {
+      "active_delegators": 194,
+      "bonded_lpt": "16533547.152320169048512070",
+      "share_of_active_count": 0.06021104903786468,
+      "share_of_bonded_lpt": 0.9228086543957292
+    },
+    "10\u2013100 LPT": {
+      "active_delegators": 919,
+      "bonded_lpt": "41568.990435308235957850",
+      "share_of_active_count": 0.2852265673494724,
+      "share_of_bonded_lpt": 0.0023201448409582576
+    },
+    "1k\u201310k LPT": {
+      "active_delegators": 277,
+      "bonded_lpt": "1124515.924260839516388244",
+      "share_of_active_count": 0.08597144630664184,
+      "share_of_bonded_lpt": 0.06276408911853448
+    },
+    "1\u201310 LPT": {
+      "active_delegators": 297,
+      "bonded_lpt": "1229.827008004387338704",
+      "share_of_active_count": 0.09217877094972067,
+      "share_of_bonded_lpt": 6.864195540984038e-05
+    },
+    "<1 LPT": {
+      "active_delegators": 854,
+      "bonded_lpt": "72.815772783188972522",
+      "share_of_active_count": 0.26505276225946617,
+      "share_of_bonded_lpt": 4.064162679779834e-06
+    }
+  },
+  "delegate_gain_bleed": {
+    "note": "Computed using union of per-snapshot top-25 delegates; misses tail delegates that never appear in top-25.",
+    "top_bleeders": [
+      {
+        "bonded_from": "309191.963637834565037213",
+        "bonded_to": "0",
+        "delegate": "0x0d509d8b46b072f8fc330942b2e3cc0ac34d6d8d",
+        "delta": "-309191.963637834565037213"
+      },
+      {
+        "bonded_from": "271402.127171296975612457",
+        "bonded_to": "0",
+        "delegate": "0xda43d85b8d419a9c51bbf0089c9bd5169c23f2f9",
+        "delta": "-271402.127171296975612457"
+      },
+      {
+        "bonded_from": "263760.772232856107902731",
+        "bonded_to": "0",
+        "delegate": "0xa8aad06cd07185514a7c394649c80434af47b379",
+        "delta": "-263760.772232856107902731"
+      },
+      {
+        "bonded_from": "151955.088369860376240151",
+        "bonded_to": "0",
+        "delegate": "0xbe8770603daf200b1fa136ad354ba854928e602b",
+        "delta": "-151955.088369860376240151"
+      },
+      {
+        "bonded_from": "129635.827271982763276741",
+        "bonded_to": "0",
+        "delegate": "0x47a907a0bd1627d71cd14430a721d1550d6d6f58",
+        "delta": "-129635.827271982763276741"
+      },
+      {
+        "bonded_from": "102512.037987844948566204",
+        "bonded_to": "0",
+        "delegate": "0x10742714f33f3d804e3fa489618b5c3ca12a6df7",
+        "delta": "-102512.037987844948566204"
+      },
+      {
+        "bonded_from": "280543.538766866722555523",
+        "bonded_to": "250707.400134837260210430",
+        "delegate": "0xdac817294c0c87ca4fa1895ef4b972eade99f2fd",
+        "delta": "-29836.138632029462345093"
+      },
+      {
+        "bonded_from": "275798.426308944939710859",
+        "bonded_to": "252353.124238070909972875",
+        "delegate": "0x9d2b4e5c4b1fd81d06b883b0aca661b771c39ea3",
+        "delta": "-23445.302070874029737984"
+      },
+      {
+        "bonded_from": "402203.331905335991367883",
+        "bonded_to": "400916.016350035831887019",
+        "delegate": "0xf5a88945ce64b5648b895e05eb1edf693dde8905",
+        "delta": "-1287.315555300159480864"
+      },
+      {
+        "bonded_from": "359894.474488675293559844",
+        "bonded_to": "371064.221355574009098147",
+        "delegate": "0x10e0a91e652b05e9c7449ff457cf2e96c3037fb7",
+        "delta": "11169.746866898715538303"
+      },
+      {
+        "bonded_from": "157644.692786597269004741",
+        "bonded_to": "198074.778022256951151469",
+        "delegate": "0x10b21af759129f32c6064adfb85d3ea2a8c0209c",
+        "delta": "40430.085235659682146728"
+      },
+      {
+        "bonded_from": "3013441.460689228396357808",
+        "bonded_to": "3058199.266685869571135949",
+        "delegate": "0x4416a274f86e1db860b513548b672154d43b81b2",
+        "delta": "44757.805996641174778141"
+      },
+      {
+        "bonded_from": "138474.248333124394652987",
+        "bonded_to": "186179.588705692352904645",
+        "delegate": "0x4a43b1d7e6227c8b0512e413f406555647ff7bdb",
+        "delta": "47705.340372567958251658"
+      },
+      {
+        "bonded_from": "188915.385183040604204011",
+        "bonded_to": "248150.496997170658725148",
+        "delegate": "0xbac7744ada4ab1957cbaafef698b3c068beb4fe0",
+        "delta": "59235.111814130054521137"
+      },
+      {
+        "bonded_from": "167205.189682128101553265",
+        "bonded_to": "234430.273519689992757869",
+        "delegate": "0x104a7ca059a35fd4def5ecb16600b2caa1fe1361",
+        "delta": "67225.083837561891204604"
+      }
+    ],
+    "top_gainers": [
+      {
+        "bonded_from": "0",
+        "bonded_to": "2656866.034122918191448127",
+        "delegate": "0xac2e50c8f7ac0f82923a7df9d9903f6ec4741919",
+        "delta": "2656866.034122918191448127"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "550240.921816082413870629",
+        "delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+        "delta": "550240.921816082413870629"
+      },
+      {
+        "bonded_from": "103527.106770530670988454",
+        "bonded_to": "649984.911690672298435192",
+        "delegate": "0x141e6d4953b933746c770272126db2bd691a9683",
+        "delta": "546457.804920141627446738"
+      },
+      {
+        "bonded_from": "1541556.243370621422835318",
+        "bonded_to": "1969960.093709121886357673",
+        "delegate": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+        "delta": "428403.850338500463522355"
+      },
+      {
+        "bonded_from": "167447.994048698956909538",
+        "bonded_to": "438574.070086272519462741",
+        "delegate": "0x6cb1ce2516fb7d211038420a8cf9a843c7bd3b08",
+        "delta": "271126.076037573562553203"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "225542.838645466218122738",
+        "delegate": "0x3b28a7d785356dc67c7970666747e042305bfb79",
+        "delta": "225542.838645466218122738"
+      },
+      {
+        "bonded_from": "322057.520860765173541969",
+        "bonded_to": "507810.375488493016550307",
+        "delegate": "0xa20416801ac2eacf2372e825b4a90ef52490c2bb",
+        "delta": "185752.854627727843008338"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "177756.329863971789948268",
+        "delegate": "0xd00354656922168815fcd1e51cbddb9e359e3c7f",
+        "delta": "177756.329863971789948268"
+      },
+      {
+        "bonded_from": "255527.220255934451087942",
+        "bonded_to": "421031.889810497377603352",
+        "delegate": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+        "delta": "165504.669554562926515410"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "165318.368017945181490022",
+        "delegate": "0xdc28f2842810d1a013ad51de174d02eaba192dc7",
+        "delta": "165318.368017945181490022"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "149730.659308766864646850",
+        "delegate": "0x74a7839094b7f723b2c1c915e88928f49dfdc21f",
+        "delta": "149730.659308766864646850"
+      },
+      {
+        "bonded_from": "109737.126304900620518217",
+        "bonded_to": "239739.422141060881789167",
+        "delegate": "0x9d61ae5875e89036fbf6059f3116d01a22ace3c8",
+        "delta": "130002.295836160261270950"
+      },
+      {
+        "bonded_from": "163248.756379440561977625",
+        "bonded_to": "276810.490512317324752273",
+        "delegate": "0x5bdeedca9c6346b0ce6b17ffa8227a4dace37039",
+        "delta": "113561.734132876762774648"
+      },
+      {
+        "bonded_from": "148106.390578455094496201",
+        "bonded_to": "245427.116942895056180674",
+        "delegate": "0xbd677e96a755207d348578727aa57a512c2022bd",
+        "delta": "97320.726364439961684473"
+      },
+      {
+        "bonded_from": "111350.502640335845570231",
+        "bonded_to": "200900.844808966172146381",
+        "delegate": "0xdb22609515433e664e28067c81704d8266098986",
+        "delta": "89550.342168630326576150"
+      }
+    ]
+  },
+  "generated_at_utc": "2026-01-19T20:24:06.263618+00:00",
+  "inflow_new_delegators_by_year": [
+    {
+      "100\u20131k LPT": 485,
+      "10k+ LPT": 120,
+      "10\u2013100 LPT": 776,
+      "1k\u201310k LPT": 147,
+      "1\u201310 LPT": 214,
+      "<1 LPT": 471,
+      "total": 2213,
+      "year": "2022"
+    },
+    {
+      "100\u20131k LPT": 507,
+      "10k+ LPT": 89,
+      "10\u2013100 LPT": 611,
+      "1k\u201310k LPT": 110,
+      "1\u201310 LPT": 102,
+      "<1 LPT": 73,
+      "total": 1492,
+      "year": "2023"
+    },
+    {
+      "100\u20131k LPT": 215,
+      "10k+ LPT": 59,
+      "10\u2013100 LPT": 176,
+      "1k\u201310k LPT": 128,
+      "1\u201310 LPT": 81,
+      "<1 LPT": 26,
+      "total": 685,
+      "year": "2024"
+    },
+    {
+      "100\u20131k LPT": 106,
+      "10k+ LPT": 49,
+      "10\u2013100 LPT": 98,
+      "1k\u201310k LPT": 100,
+      "1\u201310 LPT": 75,
+      "<1 LPT": 54,
+      "total": 482,
+      "year": "2025"
+    },
+    {
+      "100\u20131k LPT": 6,
+      "10k+ LPT": 2,
+      "10\u2013100 LPT": 2,
+      "1k\u201310k LPT": 4,
+      "1\u201310 LPT": 0,
+      "<1 LPT": 1,
+      "total": 15,
+      "year": "2026"
+    }
+  ],
+  "outflow_by_max_band": [
+    {
+      "band": "<1 LPT",
+      "delegators": 625,
+      "unbond_lpt": "139403.137876737479106450",
+      "unbonders": 99,
+      "withdraw_lpt": "47265.258578257535227699",
+      "withdrawers": 51
+    },
+    {
+      "band": "1\u201310 LPT",
+      "delegators": 472,
+      "unbond_lpt": "378009.017061221825030120",
+      "unbonders": 256,
+      "withdraw_lpt": "229162.144813193840298651",
+      "withdrawers": 222
+    },
+    {
+      "band": "10\u2013100 LPT",
+      "delegators": 1663,
+      "unbond_lpt": "489924.936555020468772327",
+      "unbonders": 864,
+      "withdraw_lpt": "263309.110656396043141866",
+      "withdrawers": 751
+    },
+    {
+      "band": "100\u20131k LPT",
+      "delegators": 1319,
+      "unbond_lpt": "1162987.100098584583481235",
+      "unbonders": 853,
+      "withdraw_lpt": "692608.731178445141396817",
+      "withdrawers": 760
+    },
+    {
+      "band": "1k\u201310k LPT",
+      "delegators": 489,
+      "unbond_lpt": "2272092.626624741452706097",
+      "unbonders": 357,
+      "withdraw_lpt": "1615443.091336590821870959",
+      "withdrawers": 338
+    },
+    {
+      "band": "10k+ LPT",
+      "delegators": 319,
+      "unbond_lpt": "37814432.336111441577856740",
+      "unbonders": 255,
+      "withdraw_lpt": "20960957.102585650406313212",
+      "withdrawers": 200
+    }
+  ],
+  "window": {
+    "from_block": 269733498,
+    "from_label": "2024-10-end",
+    "from_snapshot_iso": "2024-10-31T23:59:59+00:00",
+    "to_block": 423055031,
+    "to_label": "latest",
+    "to_snapshot_iso": "2026-01-19T16:33:41+00:00"
+  }
+}
