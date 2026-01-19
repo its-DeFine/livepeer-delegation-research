@@ -341,6 +341,74 @@ def _band_for_bonded_lpt(bonded_lpt: Decimal) -> Optional[str]:
     return "10k+ LPT"
 
 
+def _gini(values: List[Decimal]) -> float:
+    if not values:
+        return 0.0
+    vals = [v for v in values if v > 0]
+    if not vals:
+        return 0.0
+    vals.sort()
+    n = len(vals)
+    total = sum(vals)
+    if total <= 0:
+        return 0.0
+    cum = Decimal(0)
+    for i, v in enumerate(vals, start=1):
+        cum += Decimal(i) * v
+    g = (Decimal(2) * cum) / (Decimal(n) * total) - (Decimal(n + 1) / Decimal(n))
+    # clamp due to float/rounding artifacts
+    return float(max(Decimal(0), min(Decimal(1), g)))
+
+
+def _hhi(values: List[Decimal]) -> float:
+    if not values:
+        return 0.0
+    vals = [v for v in values if v > 0]
+    if not vals:
+        return 0.0
+    total = sum(vals)
+    if total <= 0:
+        return 0.0
+    h = Decimal(0)
+    for v in vals:
+        s = v / total
+        h += s * s
+    return float(h)
+
+
+def _effective_n(hhi: float) -> float:
+    return (1.0 / hhi) if hhi > 0 else 0.0
+
+
+def _top_shares(values_desc: List[Decimal], top_ns: List[int]) -> Dict[str, float]:
+    vals = [v for v in values_desc if v > 0]
+    if not vals:
+        return {str(n): 0.0 for n in top_ns}
+    total = sum(vals)
+    if total <= 0:
+        return {str(n): 0.0 for n in top_ns}
+    out: Dict[str, float] = {}
+    for n in top_ns:
+        k = max(0, min(int(n), len(vals)))
+        out[str(n)] = float(sum(vals[:k]) / total)
+    return out
+
+
+def _nakamoto(values_desc: List[Decimal], threshold_share: Decimal) -> int:
+    vals = [v for v in values_desc if v > 0]
+    if not vals:
+        return 0
+    total = sum(vals)
+    if total <= 0:
+        return 0
+    cum = Decimal(0)
+    for i, v in enumerate(vals, start=1):
+        cum += v
+        if (cum / total) >= threshold_share:
+            return i
+    return len(vals)
+
+
 def _get_logs_range(
     client: RpcClient,
     *,
@@ -408,6 +476,7 @@ class ScanState:
     snapshot_blocks: List[Dict[str, Any]]  # computed blocks meta + computed distribution
     next_snapshot_idx: int
     bonded_wei_by_address: Dict[str, int]
+    delegate_by_delegator: Dict[str, str]
     updated_at_utc: str
 
 
@@ -482,8 +551,9 @@ def main() -> int:
             )
 
         bonded = {a: 0 for a in addresses}
+        delegate_by_delegator = {a: "" for a in addresses}
         state = ScanState(
-            version=1,
+            version=2,
             rpc_url=str(args.rpc_url),
             bonding_manager=_normalize_address(args.bonding_manager),
             from_block=from_block,
@@ -495,11 +565,18 @@ def main() -> int:
             snapshot_blocks=snapshot_blocks,
             next_snapshot_idx=0,
             bonded_wei_by_address=bonded,
+            delegate_by_delegator=delegate_by_delegator,
             updated_at_utc=datetime.now(tz=timezone.utc).isoformat(),
         )
         os.makedirs(os.path.dirname(args.state_pkl), exist_ok=True)
         with open(args.state_pkl, "wb") as f:
             pickle.dump(state, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+    # Migrate/ensure fields on resumed state.
+    if not isinstance(getattr(state, "delegate_by_delegator", None), dict):
+        state.delegate_by_delegator = {a: "" for a in addresses}
+    if int(getattr(state, "version", 0) or 0) < 2:
+        state.version = 2
 
     # Validate resume settings are consistent enough
     if state.bonding_manager != _normalize_address(args.bonding_manager):
@@ -518,6 +595,11 @@ def main() -> int:
         thr100_count = 0
         thr100_bonded = Decimal(0)
 
+        delegator_stakes: List[Tuple[str, Decimal]] = []
+        delegate_stakes: Dict[str, Decimal] = {}
+        unknown_delegate_wallets = 0
+        unknown_delegate_bonded = Decimal(0)
+
         for a in addresses:
             amt = int(state.bonded_wei_by_address.get(a, 0))
             if amt <= 0:
@@ -527,6 +609,17 @@ def main() -> int:
                 continue
             active += 1
             total_bonded += bonded_lpt
+            delegator_stakes.append((a, bonded_lpt))
+
+            delegate_raw = str(state.delegate_by_delegator.get(a, "") or "").lower()
+            if delegate_raw.startswith("0x") and len(delegate_raw) == 42 and delegate_raw != "0x0000000000000000000000000000000000000000":
+                delegate = delegate_raw
+            else:
+                delegate = "unknown"
+                unknown_delegate_wallets += 1
+                unknown_delegate_bonded += bonded_lpt
+            delegate_stakes[delegate] = delegate_stakes.get(delegate, Decimal(0)) + bonded_lpt
+
             band = _band_for_bonded_lpt(bonded_lpt)
             if band is None:
                 continue
@@ -538,6 +631,48 @@ def main() -> int:
             if bonded_lpt >= 100000:
                 thr100_count += 1
                 thr100_bonded += bonded_lpt
+
+        delegator_values = [s for _a, s in delegator_stakes]
+        delegator_values_desc = sorted(delegator_values, reverse=True)
+        top_ns = [1, 5, 10, 20, 50, 100]
+
+        delegator_hhi = _hhi(delegator_values)
+        delegator_gini = _gini(delegator_values)
+        delegator_top_share = _top_shares(delegator_values_desc, top_ns)
+
+        top_delegators: List[Dict[str, Any]] = []
+        for addr, stake in sorted(delegator_stakes, key=lambda kv: kv[1], reverse=True)[:20]:
+            top_delegators.append(
+                {
+                    "address": addr,
+                    "bonded_lpt": str(stake),
+                    "share_of_bonded_lpt": float(stake / total_bonded) if total_bonded > 0 else 0.0,
+                }
+            )
+
+        delegate_stakes_known = {k: v for k, v in delegate_stakes.items() if k != "unknown"}
+        delegate_values = list(delegate_stakes_known.values())
+        delegate_values_desc = sorted(delegate_values, reverse=True)
+
+        delegate_hhi = _hhi(delegate_values)
+        delegate_gini = _gini(delegate_values)
+        delegate_top_share = _top_shares(delegate_values_desc, top_ns)
+        nakamoto_33 = _nakamoto(delegate_values_desc, Decimal("0.33"))
+        nakamoto_50 = _nakamoto(delegate_values_desc, Decimal("0.50"))
+
+        delegates_ge_10k = sum(1 for v in delegate_values if v >= Decimal("10000"))
+        delegates_ge_100k = sum(1 for v in delegate_values if v >= Decimal("100000"))
+        delegates_ge_1m = sum(1 for v in delegate_values if v >= Decimal("1000000"))
+
+        top_delegates: List[Dict[str, Any]] = []
+        for delegate, stake in sorted(delegate_stakes_known.items(), key=lambda kv: kv[1], reverse=True)[:25]:
+            top_delegates.append(
+                {
+                    "delegate": delegate,
+                    "bonded_lpt": str(stake),
+                    "share_of_bonded_lpt": float(stake / total_bonded) if total_bonded > 0 else 0.0,
+                }
+            )
 
         bands_out: Dict[str, Any] = {}
         for b in band_labels:
@@ -557,6 +692,29 @@ def main() -> int:
             "thresholds": {
                 ">=10k_lpt": {"active_delegators": thr10_count, "bonded_lpt": str(thr10_bonded)},
                 ">=100k_lpt": {"active_delegators": thr100_count, "bonded_lpt": str(thr100_bonded)},
+            },
+            "concentration": {
+                "delegators": {
+                    "gini": delegator_gini,
+                    "hhi": delegator_hhi,
+                    "effective_n": _effective_n(delegator_hhi),
+                    "top_share": delegator_top_share,
+                    "top_delegators": top_delegators,
+                },
+                "delegates": {
+                    "active_delegates": len(delegate_stakes_known),
+                    "unknown_delegate_wallets": unknown_delegate_wallets,
+                    "unknown_delegate_bonded_lpt": str(unknown_delegate_bonded),
+                    "gini": delegate_gini,
+                    "hhi": delegate_hhi,
+                    "effective_n": _effective_n(delegate_hhi),
+                    "top_share": delegate_top_share,
+                    "nakamoto": {"33%": nakamoto_33, "50%": nakamoto_50},
+                    "delegates_ge_10k": delegates_ge_10k,
+                    "delegates_ge_100k": delegates_ge_100k,
+                    "delegates_ge_1m": delegates_ge_1m,
+                    "top_delegates": top_delegates,
+                },
             },
         }
 
@@ -616,12 +774,14 @@ def main() -> int:
             if topic0 == TOPIC0["Bond"]:
                 if len(topics) < 4:
                     continue
+                new_delegate = _topic_to_address(topics[1]).lower()
                 delegator = _topic_to_address(topics[3]).lower()
                 if delegator not in state.bonded_wei_by_address:
                     continue
                 additional, bonded = _decode_words(data_hex, 2)
                 # `bonded` is the post-bond total bondedAmount for this delegator.
                 state.bonded_wei_by_address[delegator] = int(bonded)
+                state.delegate_by_delegator[delegator] = new_delegate
 
             elif topic0 == TOPIC0["Unbond"]:
                 if len(topics) < 3:
@@ -754,6 +914,7 @@ def main() -> int:
     lines.append(f"- Range: `{state.from_block}` → `{state.to_block}` (block_lag `{int(args.block_lag)}`)")
     lines.append(f"- Interval: `{state.interval}`")
     lines.append(f"- Universe: `{len(addresses):,}` addresses (`{args.addresses_json}`)")
+    lines.append("- Delegate mapping: last observed `Bond(newDelegate, oldDelegate, delegator, ...)` per wallet (event replay)")
     lines.append("")
 
     lines.append("## Active delegator counts (by bonded stake band)")
@@ -797,6 +958,79 @@ def main() -> int:
         )
     lines.append(_markdown_table(thr_rows))
     lines.append("")
+
+    def _fmt_pct(x: float) -> str:
+        return f"{x*100:.2f}%"
+
+    def _fmt_float(x: float, *, places: int = 4) -> str:
+        return f"{x:.{places}f}"
+
+    lines.append("## Stake concentration — delegators (wallets)")
+    lines.append("")
+    dconc_rows: List[List[str]] = [
+        ["Snapshot", "Active wallets", "Top10 share", "Top20 share", "Gini", "HHI", "Eff N"],
+    ]
+    for s in snapshots_out:
+        c = (s.get("concentration") or {}).get("delegators") or {}
+        top_share = c.get("top_share") or {}
+        dconc_rows.append(
+            [
+                s["label"],
+                f"{int(s['active_delegators']):,}",
+                _fmt_pct(float(top_share.get("10") or 0.0)),
+                _fmt_pct(float(top_share.get("20") or 0.0)),
+                _fmt_float(float(c.get("gini") or 0.0)),
+                _fmt_float(float(c.get("hhi") or 0.0)),
+                _fmt_float(float(c.get("effective_n") or 0.0), places=2),
+            ]
+        )
+    lines.append(_markdown_table(dconc_rows))
+    lines.append("")
+
+    lines.append("## Stake concentration — delegates (orchestrators / delegate addresses)")
+    lines.append("")
+    oconc_rows: List[List[str]] = [
+        ["Snapshot", "Active delegates", "Nakamoto 33%", "Nakamoto 50%", "Top10 share", "HHI", "Eff N", "≥100k delegates", "≥1m delegates"],
+    ]
+    for s in snapshots_out:
+        c = (s.get("concentration") or {}).get("delegates") or {}
+        top_share = c.get("top_share") or {}
+        nak = c.get("nakamoto") or {}
+        oconc_rows.append(
+            [
+                s["label"],
+                f"{int(c.get('active_delegates') or 0):,}",
+                str(int(nak.get("33%") or 0)),
+                str(int(nak.get("50%") or 0)),
+                _fmt_pct(float(top_share.get("10") or 0.0)),
+                _fmt_float(float(c.get("hhi") or 0.0)),
+                _fmt_float(float(c.get("effective_n") or 0.0), places=2),
+                str(int(c.get("delegates_ge_100k") or 0)),
+                str(int(c.get("delegates_ge_1m") or 0)),
+            ]
+        )
+    lines.append(_markdown_table(oconc_rows))
+    lines.append("")
+
+    latest = snapshots_out[-1] if snapshots_out else None
+    if latest:
+        d = (latest.get("concentration") or {}).get("delegates") or {}
+        top_delegates = d.get("top_delegates") or []
+        if isinstance(top_delegates, list) and top_delegates:
+            lines.append("## Top delegates (latest snapshot)")
+            lines.append("")
+            trows: List[List[str]] = [["Rank", "Delegate", "Bonded LPT", "Share of bonded"]]
+            for i, row in enumerate(top_delegates[:15], start=1):
+                trows.append(
+                    [
+                        str(i),
+                        str(row.get("delegate") or ""),
+                        _format_lpt(Decimal(str(row.get("bonded_lpt") or "0"))),
+                        _fmt_pct(float(row.get("share_of_bonded_lpt") or 0.0)),
+                    ]
+                )
+            lines.append(_markdown_table(trows))
+            lines.append("")
 
     lines.append("## Net changes between snapshots")
     lines.append("")
