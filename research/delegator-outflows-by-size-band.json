@@ -1,0 +1,144 @@
+{
+  "bands": {
+    "100\u20131k LPT": {
+      "delegators": 1319,
+      "share_of_delegators": 0.2698997339881318,
+      "share_of_unbond_lpt": 0.027521860322599963,
+      "share_of_unbonders": 0.31780923994038746,
+      "share_of_withdraw_lpt": 0.029090517723776996,
+      "share_of_withdrawers": 0.3273040482342808,
+      "unbond_lpt": "1162987.100098584583481235",
+      "unbonders": 853,
+      "withdraw_lpt": "692608.731178445141396817",
+      "withdrawers": 760
+    },
+    "10k+ LPT": {
+      "delegators": 319,
+      "share_of_delegators": 0.06527521997135256,
+      "share_of_unbond_lpt": 0.8948710822713735,
+      "share_of_unbonders": 0.09500745156482861,
+      "share_of_withdraw_lpt": 0.8803889795940156,
+      "share_of_withdrawers": 0.08613264427217916,
+      "unbond_lpt": "37814432.336111441577856740",
+      "unbonders": 255,
+      "withdraw_lpt": "20960957.102585650406313212",
+      "withdrawers": 200
+    },
+    "10\u2013100 LPT": {
+      "delegators": 1663,
+      "share_of_delegators": 0.3402905668099038,
+      "share_of_unbond_lpt": 0.011593976985026691,
+      "share_of_unbonders": 0.32190760059612517,
+      "share_of_withdraw_lpt": 0.011059344194736063,
+      "share_of_withdrawers": 0.3234280792420327,
+      "unbond_lpt": "489924.936555020468772327",
+      "unbonders": 864,
+      "withdraw_lpt": "263309.110656396043141866",
+      "withdrawers": 751
+    },
+    "1k\u201310k LPT": {
+      "delegators": 489,
+      "share_of_delegators": 0.10006138735420503,
+      "share_of_unbond_lpt": 0.053768623834842745,
+      "share_of_unbonders": 0.13301043219076006,
+      "share_of_withdraw_lpt": 0.06785082798526336,
+      "share_of_withdrawers": 0.14556416881998277,
+      "unbond_lpt": "2272092.626624741452706097",
+      "unbonders": 357,
+      "withdraw_lpt": "1615443.091336590821870959",
+      "withdrawers": 338
+    },
+    "1\u201310 LPT": {
+      "delegators": 472,
+      "share_of_delegators": 0.09658277061591979,
+      "share_of_unbond_lpt": 0.008945508825816179,
+      "share_of_unbonders": 0.09538002980625931,
+      "share_of_withdraw_lpt": 0.009625124742456371,
+      "share_of_withdrawers": 0.09560723514211886,
+      "unbond_lpt": "378009.017061221825030120",
+      "unbonders": 256,
+      "withdraw_lpt": "229162.144813193840298651",
+      "withdrawers": 222
+    },
+    "<1 LPT": {
+      "delegators": 625,
+      "share_of_delegators": 0.127890321260487,
+      "share_of_unbond_lpt": 0.0032989477603410115,
+      "share_of_unbonders": 0.036885245901639344,
+      "share_of_withdraw_lpt": 0.0019852057597516096,
+      "share_of_withdrawers": 0.021963824289405683,
+      "unbond_lpt": "139403.137876737479106450",
+      "unbonders": 99,
+      "withdraw_lpt": "47265.258578257535227699",
+      "withdrawers": 51
+    }
+  },
+  "definition": {
+    "band_basis": "max_bonded_amount (historical max observed bonded stake per wallet)",
+    "outflow_signal": {
+      "unbond": "Unbond events aggregated per wallet: total_unbond_amount",
+      "withdraw": "WithdrawStake events (cashout) aggregated per wallet: total_withdraw_amount"
+    }
+  },
+  "generated_at_utc": "2026-01-19T00:41:52.236869+00:00",
+  "inputs": {
+    "addresses_json": "data/arbitrum_delegator_addresses.json",
+    "delegators_state_pkl": "../../artifacts/livepeer-bm-scan-arbitrum-v2/delegators_state.pkl",
+    "source_meta": {
+      "bonding_manager": "0x35Bcf3c30594191d53231E4FF333E8A770453e40",
+      "from_block": 5856381,
+      "rpc_url": "https://arb1.arbitrum.io/rpc",
+      "to_block": 422367841,
+      "updated_at_utc": "2026-01-17T17:52:21.074415+00:00"
+    }
+  },
+  "new_delegators_by_year": {
+    "2022": {
+      "100\u20131k LPT": 485,
+      "10k+ LPT": 120,
+      "10\u2013100 LPT": 776,
+      "1k\u201310k LPT": 147,
+      "1\u201310 LPT": 214,
+      "<1 LPT": 471
+    },
+    "2023": {
+      "100\u20131k LPT": 507,
+      "10k+ LPT": 89,
+      "10\u2013100 LPT": 611,
+      "1k\u201310k LPT": 110,
+      "1\u201310 LPT": 102,
+      "<1 LPT": 73
+    },
+    "2024": {
+      "100\u20131k LPT": 215,
+      "10k+ LPT": 59,
+      "10\u2013100 LPT": 176,
+      "1k\u201310k LPT": 128,
+      "1\u201310 LPT": 81,
+      "<1 LPT": 26
+    },
+    "2025": {
+      "100\u20131k LPT": 106,
+      "10k+ LPT": 49,
+      "10\u2013100 LPT": 98,
+      "1k\u201310k LPT": 100,
+      "1\u201310 LPT": 75,
+      "<1 LPT": 54
+    },
+    "2026": {
+      "100\u20131k LPT": 6,
+      "10k+ LPT": 2,
+      "10\u2013100 LPT": 2,
+      "1k\u201310k LPT": 4,
+      "1\u201310 LPT": 0,
+      "<1 LPT": 1
+    }
+  },
+  "totals": {
+    "delegators_in_universe": 4887,
+    "unbond_total_lpt": "42256849.154327747386952969",
+    "unbonders": 2684,
+    "withdraw_total_lpt": "23808745.439148533788249204",
+    "withdrawers": 2322
+  }
+}
