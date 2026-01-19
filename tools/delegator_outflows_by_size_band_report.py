@@ -60,6 +60,11 @@ def _format_pct(x: float) -> str:
     return f"{x*100:.2f}%"
 
 
+def _md_escape(text: str) -> str:
+    # Docusaurus parses Markdown as MDX; raw `<1` can be interpreted as JSX and break builds.
+    return text.replace("<", "&lt;")
+
+
 def _read_addresses(path: str) -> List[str]:
     with open(path, "r", encoding="utf-8") as f:
         payload = json.load(f)
@@ -306,7 +311,7 @@ def main() -> int:
         for label in labels:
             row = out["bands"][label]
             f.write(
-                f"| {label} | {row['delegators']:,} | {row['withdrawers']:,} | {_format_pct(row['share_of_withdrawers'])} | {_format_lpt(Decimal(row['withdraw_lpt']))} | {_format_pct(row['share_of_withdraw_lpt'])} |\n"
+                f"| {_md_escape(label)} | {row['delegators']:,} | {row['withdrawers']:,} | {_format_pct(row['share_of_withdrawers'])} | {_format_lpt(Decimal(row['withdraw_lpt']))} | {_format_pct(row['share_of_withdraw_lpt'])} |\n"
             )
 
         f.write("\n### Interpretation (quick)\n\n")
@@ -337,7 +342,7 @@ def main() -> int:
         f.write("## New delegators by year (first bond timestamp)\n\n")
         years = sorted(new_by_year.keys())
         if years:
-            f.write("| Year | Total | <1 | 1–10 | 10–100 | 100–1k | 1k–10k | 10k+ |\n")
+            f.write("| Year | Total | &lt;1 | 1–10 | 10–100 | 100–1k | 1k–10k | 10k+ |\n")
             f.write("|---:|---:|---:|---:|---:|---:|---:|---:|\n")
             for y in years:
                 row = new_by_year[y]

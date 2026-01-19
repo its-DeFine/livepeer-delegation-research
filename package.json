@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "meeting": "python3 tools/generate_meeting_dashboard_data.py && docusaurus start",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
@@ -18,4 +19,3 @@
     "react-dom": "^18.2.0"
   }
 }
-

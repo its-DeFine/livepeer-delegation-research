@@ -1,0 +1,878 @@
+{
+  "generated_at_utc": "2026-01-19T17:25:25+00:00",
+  "latest": {
+    "active_delegators": 3222,
+    "bands": {
+      "100\u20131k LPT": {
+        "active_delegators": 681,
+        "bonded_lpt": "215615.025149427504880700",
+        "share_of_active_count": 0.21135940409683426,
+        "share_of_bonded_lpt": 0.012034405526688365
+      },
+      "10k+ LPT": {
+        "active_delegators": 194,
+        "bonded_lpt": "16533547.152320169048512070",
+        "share_of_active_count": 0.06021104903786468,
+        "share_of_bonded_lpt": 0.9228086543957292
+      },
+      "10\u2013100 LPT": {
+        "active_delegators": 919,
+        "bonded_lpt": "41568.990435308235957850",
+        "share_of_active_count": 0.2852265673494724,
+        "share_of_bonded_lpt": 0.0023201448409582576
+      },
+      "1k\u201310k LPT": {
+        "active_delegators": 277,
+        "bonded_lpt": "1124515.924260839516388244",
+        "share_of_active_count": 0.08597144630664184,
+        "share_of_bonded_lpt": 0.06276408911853448
+      },
+      "1\u201310 LPT": {
+        "active_delegators": 297,
+        "bonded_lpt": "1229.827008004387338704",
+        "share_of_active_count": 0.09217877094972067,
+        "share_of_bonded_lpt": 6.864195540984038e-05
+      },
+      "<1 LPT": {
+        "active_delegators": 854,
+        "bonded_lpt": "72.815772783188972522",
+        "share_of_active_count": 0.26505276225946617,
+        "share_of_bonded_lpt": 4.064162679779834e-06
+      }
+    },
+    "concentration": {
+      "delegates": {
+        "active_delegates": 197,
+        "delegates_ge_100k": 35,
+        "delegates_ge_10k": 86,
+        "delegates_ge_1m": 3,
+        "effective_n": 13.910714358580263,
+        "gini": 0.8634016374724512,
+        "hhi": 0.07188703428326744,
+        "nakamoto": {
+          "33%": 3,
+          "50%": 6
+        },
+        "top_delegates": [
+          {
+            "bonded_lpt": "3058199.266685869571135949",
+            "delegate": "0x4416a274f86e1db860b513548b672154d43b81b2",
+            "share_of_bonded_lpt": 0.1706913056324009
+          },
+          {
+            "bonded_lpt": "2656866.034122918191448127",
+            "delegate": "0xac2e50c8f7ac0f82923a7df9d9903f6ec4741919",
+            "share_of_bonded_lpt": 0.1482911650640333
+          },
+          {
+            "bonded_lpt": "1969960.093709121886357673",
+            "delegate": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+            "share_of_bonded_lpt": 0.10995197863719718
+          },
+          {
+            "bonded_lpt": "649984.911690672298435192",
+            "delegate": "0x141e6d4953b933746c770272126db2bd691a9683",
+            "share_of_bonded_lpt": 0.03627846439780009
+          },
+          {
+            "bonded_lpt": "550240.921816082413870629",
+            "delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+            "share_of_bonded_lpt": 0.030711321652674466
+          },
+          {
+            "bonded_lpt": "507810.375488493016550307",
+            "delegate": "0xa20416801ac2eacf2372e825b4a90ef52490c2bb",
+            "share_of_bonded_lpt": 0.028343089657379753
+          },
+          {
+            "bonded_lpt": "438574.070086272519462741",
+            "delegate": "0x6cb1ce2516fb7d211038420a8cf9a843c7bd3b08",
+            "share_of_bonded_lpt": 0.024478712507399036
+          },
+          {
+            "bonded_lpt": "421031.889810497377603352",
+            "delegate": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+            "share_of_bonded_lpt": 0.02349960768335142
+          },
+          {
+            "bonded_lpt": "403457.196132567589449409",
+            "delegate": "0x847791cbf03be716a7fe9dc8c9affe17bd49ae5e",
+            "share_of_bonded_lpt": 0.022518688145944616
+          },
+          {
+            "bonded_lpt": "400916.016350035831887019",
+            "delegate": "0xf5a88945ce64b5648b895e05eb1edf693dde8905",
+            "share_of_bonded_lpt": 0.022376853930086905
+          },
+          {
+            "bonded_lpt": "371064.221355574009098147",
+            "delegate": "0x10e0a91e652b05e9c7449ff457cf2e96c3037fb7",
+            "share_of_bonded_lpt": 0.02071069635867485
+          },
+          {
+            "bonded_lpt": "276810.490512317324752273",
+            "delegate": "0x5bdeedca9c6346b0ce6b17ffa8227a4dace37039",
+            "share_of_bonded_lpt": 0.015449988675687585
+          },
+          {
+            "bonded_lpt": "252353.124238070909972875",
+            "delegate": "0x9d2b4e5c4b1fd81d06b883b0aca661b771c39ea3",
+            "share_of_bonded_lpt": 0.014084917462978483
+          },
+          {
+            "bonded_lpt": "250707.400134837260210430",
+            "delegate": "0xdac817294c0c87ca4fa1895ef4b972eade99f2fd",
+            "share_of_bonded_lpt": 0.013993062494941661
+          },
+          {
+            "bonded_lpt": "248150.496997170658725148",
+            "delegate": "0xbac7744ada4ab1957cbaafef698b3c068beb4fe0",
+            "share_of_bonded_lpt": 0.013850350690744265
+          }
+        ],
+        "top_share": {
+          "1": 0.1706913056324009,
+          "10": 0.6171411873082676,
+          "100": 0.9985329358205146,
+          "20": 0.7591956713996849,
+          "5": 0.4959242353841059,
+          "50": 0.9447789623972352
+        },
+        "unknown_delegate_bonded_lpt": "0",
+        "unknown_delegate_wallets": 0
+      },
+      "delegators": {
+        "effective_n": 21.84296448457813,
+        "gini": 0.9637795356684995,
+        "hhi": 0.04578133159105001,
+        "top_delegators": [
+          {
+            "address": "0x1f5fa305abcc49e014d1dbfc4ed68befad403688",
+            "bonded_lpt": "2656856.034122918191448127",
+            "share_of_bonded_lpt": 0.14829060692085574
+          },
+          {
+            "address": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+            "bonded_lpt": "2322141.979053303975212447",
+            "share_of_bonded_lpt": 0.12960877029375398
+          },
+          {
+            "address": "0x5509be53b2dd0cd6fb8473b0eda94e0a3059b73a",
+            "bonded_lpt": "728746.596817506129427134",
+            "share_of_bonded_lpt": 0.04067449411847827
+          },
+          {
+            "address": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+            "bonded_lpt": "592264.60854975228660224",
+            "share_of_bonded_lpt": 0.033056845057312025
+          },
+          {
+            "address": "0x90cdee44f56bd6182f2c6169f74df84afd654fbb",
+            "bonded_lpt": "457632.00729598235694894",
+            "share_of_bonded_lpt": 0.025542418270598354
+          },
+          {
+            "address": "0x054ccd68a2ac152fcfb93a15b6f75eea53dcd9e0",
+            "bonded_lpt": "402993.296744699849897727",
+            "share_of_bonded_lpt": 0.022492795918103284
+          },
+          {
+            "address": "0x1ec36af004a5ecabddc7b991a02bdad2bede344c",
+            "bonded_lpt": "400000.00000000001336124",
+            "share_of_bonded_lpt": 0.02232572710245619
+          },
+          {
+            "address": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+            "bonded_lpt": "283800.278919282656596024",
+            "share_of_bonded_lpt": 0.015840118946882135
+          },
+          {
+            "address": "0x16beb8782c2607fd90ca93f3119cf12c00255c6e",
+            "bonded_lpt": "217115.335912556687394017",
+            "share_of_bonded_lpt": 0.012118144348354615
+          },
+          {
+            "address": "0x0270f0299ca3e2ff17c31a91a3de993f4d2359f1",
+            "bonded_lpt": "211910.290506614876370536",
+            "share_of_bonded_lpt": 0.01182762829013224
+          },
+          {
+            "address": "0xdb7040c40f5ead5ff082fcb28c57bbf7dfd4bee3",
+            "bonded_lpt": "172677.660464958832496324",
+            "share_of_bonded_lpt": 0.009637885810578147
+          },
+          {
+            "address": "0x9427535629358a43e240b03bf2e2df0ecc644720",
+            "bonded_lpt": "159827.456301528342135409",
+            "share_of_bonded_lpt": 0.008920660432169158
+          },
+          {
+            "address": "0x46ca88ccbe7cc9af9b9dd9e9a14c4b81f0ef14e6",
+            "bonded_lpt": "150953.753134189860708984",
+            "share_of_bonded_lpt": 0.008425380743913658
+          },
+          {
+            "address": "0x19b44aead5958af81d4cd5baf0caa8b9b3c64ba2",
+            "bonded_lpt": "149644.227466344252870582",
+            "share_of_bonded_lpt": 0.008352290462178702
+          },
+          {
+            "address": "0x67312d9279e9d4542dd8ae415a38658a4b310966",
+            "bonded_lpt": "147999.948652078772825674",
+            "share_of_bonded_lpt": 0.008260516161959598
+          }
+        ],
+        "top_share": {
+          "1": 0.14829060692085574,
+          "10": 0.4617775492669268,
+          "100": 0.835565898501309,
+          "20": 0.5436748680923273,
+          "5": 0.3771731346609984,
+          "50": 0.708768019541909
+        }
+      }
+    },
+    "label": "latest",
+    "snapshot_block": 423055031,
+    "snapshot_iso": "2026-01-19T16:33:41+00:00",
+    "thresholds": {
+      ">=100k_lpt": {
+        "active_delegators": 33,
+        "bonded_lpt": "11167503.557210551138881781"
+      },
+      ">=10k_lpt": {
+        "active_delegators": 220,
+        "bonded_lpt": "16793547.152320169048512070"
+      }
+    },
+    "total_bonded_lpt": "17916549.734946531882050090"
+  },
+  "series": [
+    {
+      "active_delegators": 377,
+      "delegates_active": 89,
+      "delegates_ge_100k": 21,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.6698255164670578,
+      "delegators_top10_share": 0.6114194577775692,
+      "label": "2022-02-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2022-02-28T23:59:58+00:00",
+      "total_bonded_lpt": "10878074.765760105908039322"
+    },
+    {
+      "active_delegators": 763,
+      "delegates_active": 103,
+      "delegates_ge_100k": 18,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.6604453431538803,
+      "delegators_top10_share": 0.5933219548205656,
+      "label": "2022-03-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2022-03-31T23:59:56+00:00",
+      "total_bonded_lpt": "9359292.410668011631323129"
+    },
+    {
+      "active_delegators": 1057,
+      "delegates_active": 112,
+      "delegates_ge_100k": 18,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.6226471449570076,
+      "delegators_top10_share": 0.5759984298811841,
+      "label": "2022-04-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 7,
+      "snapshot_iso": "2022-04-30T23:59:37+00:00",
+      "total_bonded_lpt": "8606098.937227955078531043"
+    },
+    {
+      "active_delegators": 1270,
+      "delegates_active": 119,
+      "delegates_ge_100k": 10,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.684035594999658,
+      "delegators_top10_share": 0.5336267022590071,
+      "label": "2022-05-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 5,
+      "snapshot_iso": "2022-05-31T23:59:51+00:00",
+      "total_bonded_lpt": "8501750.852288070586972566"
+    },
+    {
+      "active_delegators": 1323,
+      "delegates_active": 123,
+      "delegates_ge_100k": 11,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.6665741498394638,
+      "delegators_top10_share": 0.5291486207649659,
+      "label": "2022-06-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2022-06-30T23:59:28+00:00",
+      "total_bonded_lpt": "8610722.201202381635152149"
+    },
+    {
+      "active_delegators": 1414,
+      "delegates_active": 127,
+      "delegates_ge_100k": 13,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.6419145409152075,
+      "delegators_top10_share": 0.5178132169083679,
+      "label": "2022-07-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2022-07-31T23:59:32+00:00",
+      "total_bonded_lpt": "8816805.481870999348430922"
+    },
+    {
+      "active_delegators": 1560,
+      "delegates_active": 132,
+      "delegates_ge_100k": 13,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.6200384769796493,
+      "delegators_top10_share": 0.5093603940858066,
+      "label": "2022-08-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 7,
+      "snapshot_iso": "2022-08-31T23:59:59+00:00",
+      "total_bonded_lpt": "8968210.710165828922683004"
+    },
+    {
+      "active_delegators": 1710,
+      "delegates_active": 139,
+      "delegates_ge_100k": 13,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.6350618972403453,
+      "delegators_top10_share": 0.48858374358495366,
+      "label": "2022-09-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 7,
+      "snapshot_iso": "2022-09-30T23:59:58+00:00",
+      "total_bonded_lpt": "9372896.914827376254518131"
+    },
+    {
+      "active_delegators": 2057,
+      "delegates_active": 145,
+      "delegates_ge_100k": 12,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.6548064719374246,
+      "delegators_top10_share": 0.4917006371814303,
+      "label": "2022-10-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2022-10-31T23:59:59+00:00",
+      "total_bonded_lpt": "9607994.284104692852431155"
+    },
+    {
+      "active_delegators": 2178,
+      "delegates_active": 149,
+      "delegates_ge_100k": 13,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.6461739842877514,
+      "delegators_top10_share": 0.4940347168412093,
+      "label": "2022-11-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2022-11-30T23:59:59+00:00",
+      "total_bonded_lpt": "9520802.178797200215984476"
+    },
+    {
+      "active_delegators": 2247,
+      "delegates_active": 152,
+      "delegates_ge_100k": 13,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.6126382236014942,
+      "delegators_top10_share": 0.5045627430657608,
+      "label": "2022-12-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 7,
+      "snapshot_iso": "2022-12-31T23:59:59+00:00",
+      "total_bonded_lpt": "9327215.091582748779346057"
+    },
+    {
+      "active_delegators": 2311,
+      "delegates_active": 152,
+      "delegates_ge_100k": 16,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.5735471907354849,
+      "delegators_top10_share": 0.4915633802214768,
+      "label": "2023-01-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2023-01-31T23:59:59+00:00",
+      "total_bonded_lpt": "10071965.873803894866823899"
+    },
+    {
+      "active_delegators": 2382,
+      "delegates_active": 156,
+      "delegates_ge_100k": 16,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.58060642004988,
+      "delegators_top10_share": 0.42157956998035223,
+      "label": "2023-02-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2023-02-28T23:59:59+00:00",
+      "total_bonded_lpt": "9052530.687159852826366825"
+    },
+    {
+      "active_delegators": 2728,
+      "delegates_active": 156,
+      "delegates_ge_100k": 17,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5903648148875855,
+      "delegators_top10_share": 0.41451818004385993,
+      "label": "2023-03-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2023-03-31T23:59:59+00:00",
+      "total_bonded_lpt": "9214845.791114613068731240"
+    },
+    {
+      "active_delegators": 3100,
+      "delegates_active": 162,
+      "delegates_ge_100k": 17,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5658412713805796,
+      "delegators_top10_share": 0.3845359650190953,
+      "label": "2023-04-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2023-04-30T23:59:59+00:00",
+      "total_bonded_lpt": "10174915.481972592421481129"
+    },
+    {
+      "active_delegators": 3132,
+      "delegates_active": 161,
+      "delegates_ge_100k": 17,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5681377657651002,
+      "delegators_top10_share": 0.3903832090961659,
+      "label": "2023-05-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2023-05-31T23:59:59+00:00",
+      "total_bonded_lpt": "10073504.549214091535287141"
+    },
+    {
+      "active_delegators": 3162,
+      "delegates_active": 162,
+      "delegates_ge_100k": 16,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5206630057056649,
+      "delegators_top10_share": 0.40516916032682465,
+      "label": "2023-06-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 10,
+      "snapshot_iso": "2023-06-30T23:59:59+00:00",
+      "total_bonded_lpt": "9343893.944525731438292127"
+    },
+    {
+      "active_delegators": 3174,
+      "delegates_active": 164,
+      "delegates_ge_100k": 15,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5258771798595133,
+      "delegators_top10_share": 0.40519130179583274,
+      "label": "2023-07-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 9,
+      "snapshot_iso": "2023-07-31T23:59:59+00:00",
+      "total_bonded_lpt": "9477781.823322753080577045"
+    },
+    {
+      "active_delegators": 3223,
+      "delegates_active": 164,
+      "delegates_ge_100k": 20,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.48329834984642633,
+      "delegators_top10_share": 0.39645141663187616,
+      "label": "2023-08-end",
+      "nakamoto_33": 5,
+      "nakamoto_50": 11,
+      "snapshot_iso": "2023-08-31T23:59:59+00:00",
+      "total_bonded_lpt": "9716229.462041113287225271"
+    },
+    {
+      "active_delegators": 3251,
+      "delegates_active": 164,
+      "delegates_ge_100k": 20,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.47448162803743693,
+      "delegators_top10_share": 0.3979091753072751,
+      "label": "2023-09-end",
+      "nakamoto_33": 5,
+      "nakamoto_50": 12,
+      "snapshot_iso": "2023-09-30T23:59:59+00:00",
+      "total_bonded_lpt": "9756764.054855066859456789"
+    },
+    {
+      "active_delegators": 3265,
+      "delegates_active": 167,
+      "delegates_ge_100k": 25,
+      "delegates_ge_1m": 0,
+      "delegates_top10_share": 0.4786805200261176,
+      "delegators_top10_share": 0.3945980227748796,
+      "label": "2023-10-end",
+      "nakamoto_33": 5,
+      "nakamoto_50": 11,
+      "snapshot_iso": "2023-10-31T23:59:59+00:00",
+      "total_bonded_lpt": "9912563.797728677628646411"
+    },
+    {
+      "active_delegators": 3261,
+      "delegates_active": 169,
+      "delegates_ge_100k": 22,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.49726567933349247,
+      "delegators_top10_share": 0.40198978307206384,
+      "label": "2023-11-end",
+      "nakamoto_33": 5,
+      "nakamoto_50": 11,
+      "snapshot_iso": "2023-11-30T23:59:59+00:00",
+      "total_bonded_lpt": "9687917.721038902608387406"
+    },
+    {
+      "active_delegators": 3280,
+      "delegates_active": 173,
+      "delegates_ge_100k": 21,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.5736280818172598,
+      "delegators_top10_share": 0.44875965274462853,
+      "label": "2023-12-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 7,
+      "snapshot_iso": "2023-12-31T23:59:59+00:00",
+      "total_bonded_lpt": "9930335.098215867051918539"
+    },
+    {
+      "active_delegators": 3329,
+      "delegates_active": 176,
+      "delegates_ge_100k": 22,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.5626297414941672,
+      "delegators_top10_share": 0.4246814192443773,
+      "label": "2024-01-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2024-01-31T23:59:59+00:00",
+      "total_bonded_lpt": "10214941.126899475877703005"
+    },
+    {
+      "active_delegators": 3328,
+      "delegates_active": 178,
+      "delegates_ge_100k": 23,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.550842652210033,
+      "delegators_top10_share": 0.41585465057471993,
+      "label": "2024-02-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 9,
+      "snapshot_iso": "2024-02-29T23:59:59+00:00",
+      "total_bonded_lpt": "10271062.676429273024903123"
+    },
+    {
+      "active_delegators": 3292,
+      "delegates_active": 178,
+      "delegates_ge_100k": 23,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5218685562382102,
+      "delegators_top10_share": 0.39869232469752763,
+      "label": "2024-03-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 10,
+      "snapshot_iso": "2024-03-31T23:59:59+00:00",
+      "total_bonded_lpt": "9745107.917247716061198146"
+    },
+    {
+      "active_delegators": 3295,
+      "delegates_active": 180,
+      "delegates_ge_100k": 24,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5241845181199987,
+      "delegators_top10_share": 0.40533928082776993,
+      "label": "2024-04-end",
+      "nakamoto_33": 4,
+      "nakamoto_50": 9,
+      "snapshot_iso": "2024-04-30T23:59:59+00:00",
+      "total_bonded_lpt": "9980956.227292039007981264"
+    },
+    {
+      "active_delegators": 3292,
+      "delegates_active": 179,
+      "delegates_ge_100k": 24,
+      "delegates_ge_1m": 1,
+      "delegates_top10_share": 0.5726450981271134,
+      "delegators_top10_share": 0.4099757434408604,
+      "label": "2024-05-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2024-05-31T23:59:59+00:00",
+      "total_bonded_lpt": "10165667.479665419777073129"
+    },
+    {
+      "active_delegators": 3310,
+      "delegates_active": 181,
+      "delegates_ge_100k": 25,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.579732303934167,
+      "delegators_top10_share": 0.3980669806193254,
+      "label": "2024-06-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 8,
+      "snapshot_iso": "2024-06-30T23:59:59+00:00",
+      "total_bonded_lpt": "10453881.459009680900544961"
+    },
+    {
+      "active_delegators": 3310,
+      "delegates_active": 179,
+      "delegates_ge_100k": 25,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.587677949869868,
+      "delegators_top10_share": 0.384357099889183,
+      "label": "2024-07-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 7,
+      "snapshot_iso": "2024-07-31T23:59:59+00:00",
+      "total_bonded_lpt": "10893657.779930169867943918"
+    },
+    {
+      "active_delegators": 3325,
+      "delegates_active": 180,
+      "delegates_ge_100k": 25,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.6132261332027897,
+      "delegators_top10_share": 0.400113830720539,
+      "label": "2024-08-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2024-08-31T23:59:59+00:00",
+      "total_bonded_lpt": "11862456.019038561895943685"
+    },
+    {
+      "active_delegators": 3306,
+      "delegates_active": 181,
+      "delegates_ge_100k": 25,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.6192460018364457,
+      "delegators_top10_share": 0.4183477089846617,
+      "label": "2024-09-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2024-09-30T23:59:59+00:00",
+      "total_bonded_lpt": "12268241.164737290679249501"
+    },
+    {
+      "active_delegators": 3337,
+      "delegates_active": 186,
+      "delegates_ge_100k": 26,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.6076990743893639,
+      "delegators_top10_share": 0.41442157322453993,
+      "label": "2024-10-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2024-10-31T23:59:59+00:00",
+      "total_bonded_lpt": "11849613.422738702728410945"
+    },
+    {
+      "active_delegators": 3260,
+      "delegates_active": 187,
+      "delegates_ge_100k": 27,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.589273038625133,
+      "delegators_top10_share": 0.4128565314424773,
+      "label": "2024-11-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 7,
+      "snapshot_iso": "2024-11-30T23:59:59+00:00",
+      "total_bonded_lpt": "11526023.843541924004857154"
+    },
+    {
+      "active_delegators": 3211,
+      "delegates_active": 187,
+      "delegates_ge_100k": 27,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.5938445842711043,
+      "delegators_top10_share": 0.41844002140513337,
+      "label": "2024-12-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2024-12-31T23:59:59+00:00",
+      "total_bonded_lpt": "11549984.020010983448225198"
+    },
+    {
+      "active_delegators": 3192,
+      "delegates_active": 191,
+      "delegates_ge_100k": 27,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.5962053727139316,
+      "delegators_top10_share": 0.4269876207352796,
+      "label": "2025-01-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2025-01-31T23:59:59+00:00",
+      "total_bonded_lpt": "11923021.688361579004779493"
+    },
+    {
+      "active_delegators": 3217,
+      "delegates_active": 192,
+      "delegates_ge_100k": 28,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.6112136084581897,
+      "delegators_top10_share": 0.417929355485674,
+      "label": "2025-02-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2025-02-28T23:59:59+00:00",
+      "total_bonded_lpt": "12435741.041611489193831960"
+    },
+    {
+      "active_delegators": 3240,
+      "delegates_active": 194,
+      "delegates_ge_100k": 28,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.6171301760427959,
+      "delegators_top10_share": 0.4299350827581621,
+      "label": "2025-03-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 5,
+      "snapshot_iso": "2025-03-31T23:59:59+00:00",
+      "total_bonded_lpt": "13881079.759070606626761922"
+    },
+    {
+      "active_delegators": 3243,
+      "delegates_active": 194,
+      "delegates_ge_100k": 27,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6337426373617944,
+      "delegators_top10_share": 0.42133825429937194,
+      "label": "2025-04-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 5,
+      "snapshot_iso": "2025-04-30T23:59:59+00:00",
+      "total_bonded_lpt": "14523794.168190537109667860"
+    },
+    {
+      "active_delegators": 3206,
+      "delegates_active": 194,
+      "delegates_ge_100k": 26,
+      "delegates_ge_1m": 2,
+      "delegates_top10_share": 0.6181519155420312,
+      "delegators_top10_share": 0.44550005000155024,
+      "label": "2025-05-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 5,
+      "snapshot_iso": "2025-05-31T23:59:59+00:00",
+      "total_bonded_lpt": "13719250.969544569606294853"
+    },
+    {
+      "active_delegators": 3220,
+      "delegates_active": 194,
+      "delegates_ge_100k": 26,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6602119880352388,
+      "delegators_top10_share": 0.47264351532410226,
+      "label": "2025-06-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 4,
+      "snapshot_iso": "2025-06-30T23:59:59+00:00",
+      "total_bonded_lpt": "14928809.219902913791509057"
+    },
+    {
+      "active_delegators": 3246,
+      "delegates_active": 194,
+      "delegates_ge_100k": 27,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6568776312630025,
+      "delegators_top10_share": 0.4637554438035304,
+      "label": "2025-07-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 4,
+      "snapshot_iso": "2025-07-31T23:59:59+00:00",
+      "total_bonded_lpt": "14792666.308323942276720671"
+    },
+    {
+      "active_delegators": 3246,
+      "delegates_active": 195,
+      "delegates_ge_100k": 29,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6457248310162345,
+      "delegators_top10_share": 0.4718205318502706,
+      "label": "2025-08-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 5,
+      "snapshot_iso": "2025-08-31T23:59:59+00:00",
+      "total_bonded_lpt": "15140288.574176932947695811"
+    },
+    {
+      "active_delegators": 3206,
+      "delegates_active": 195,
+      "delegates_ge_100k": 28,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6349029740010442,
+      "delegators_top10_share": 0.46602835093272355,
+      "label": "2025-09-end",
+      "nakamoto_33": 2,
+      "nakamoto_50": 5,
+      "snapshot_iso": "2025-09-30T23:59:59+00:00",
+      "total_bonded_lpt": "15188099.551940666303772921"
+    },
+    {
+      "active_delegators": 3203,
+      "delegates_active": 197,
+      "delegates_ge_100k": 35,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.604320881453725,
+      "delegators_top10_share": 0.4664441314070365,
+      "label": "2025-10-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2025-10-31T23:59:59+00:00",
+      "total_bonded_lpt": "16741668.173762444114509505"
+    },
+    {
+      "active_delegators": 3221,
+      "delegates_active": 197,
+      "delegates_ge_100k": 37,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6094512863816235,
+      "delegators_top10_share": 0.464376291901753,
+      "label": "2025-11-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2025-11-30T23:59:59+00:00",
+      "total_bonded_lpt": "17592292.995444566398308227"
+    },
+    {
+      "active_delegators": 3220,
+      "delegates_active": 197,
+      "delegates_ge_100k": 36,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6006588277405864,
+      "delegators_top10_share": 0.45986870776014865,
+      "label": "2025-12-end",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2025-12-31T23:59:59+00:00",
+      "total_bonded_lpt": "17877110.783985085519509396"
+    },
+    {
+      "active_delegators": 3222,
+      "delegates_active": 197,
+      "delegates_ge_100k": 35,
+      "delegates_ge_1m": 3,
+      "delegates_top10_share": 0.6171411873082676,
+      "delegators_top10_share": 0.4617775492669268,
+      "label": "latest",
+      "nakamoto_33": 3,
+      "nakamoto_50": 6,
+      "snapshot_iso": "2026-01-19T16:33:41+00:00",
+      "total_bonded_lpt": "17916549.734946531882050090"
+    }
+  ],
+  "source_generated_at_utc": "2026-01-19T17:03:29.039561+00:00",
+  "source_path": "research/delegator-band-timeseries.json"
+}

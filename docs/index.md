@@ -8,6 +8,9 @@ description: A single, evidence-based place to understand Livepeer delegation tr
 This is a working research repo: we prioritize **verifiable on-chain evidence** and a consistent rubric for judging solutions.
 
 <CardGroup cols={2}>
+  <Card title="Meeting Dashboard" href="/meeting">
+    One-page, slide-friendly view of the latest metrics + key takeaways.
+  </Card>
   <Card title="Overview (read first)" href="/docs/overview">
     Synthesis of what we measured, what we believe, and what we recommend next.
   </Card>

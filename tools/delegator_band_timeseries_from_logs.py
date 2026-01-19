@@ -316,6 +316,11 @@ def _markdown_table(rows: List[List[str]]) -> str:
     return "\n".join(out)
 
 
+def _md_escape(text: str) -> str:
+    # Docusaurus parses Markdown as MDX; raw `<1` can be interpreted as JSX and break builds.
+    return text.replace("<", "&lt;")
+
+
 def _wei_to_lpt(amount_wei: int) -> Decimal:
     return Decimal(int(amount_wei)) / LPT_SCALE
 
@@ -919,7 +924,8 @@ def main() -> int:
 
     lines.append("## Active delegator counts (by bonded stake band)")
     lines.append("")
-    count_rows: List[List[str]] = [["Snapshot"] + band_labels + ["Active total"]]
+    band_labels_md = [_md_escape(b) for b in band_labels]
+    count_rows: List[List[str]] = [["Snapshot"] + band_labels_md + ["Active total"]]
     for s in snapshots_out:
         row = [s["label"]]
         for b in band_labels:
@@ -931,7 +937,7 @@ def main() -> int:
 
     lines.append("## Bonded LPT (by bonded stake band)")
     lines.append("")
-    stake_rows: List[List[str]] = [["Snapshot"] + band_labels + ["Bonded total"]]
+    stake_rows: List[List[str]] = [["Snapshot"] + band_labels_md + ["Bonded total"]]
     for s in snapshots_out:
         row = [s["label"]]
         for b in band_labels:
