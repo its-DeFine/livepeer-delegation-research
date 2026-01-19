@@ -1,0 +1,157 @@
+{
+  "generated_at_utc": "2026-01-19T12:27:13.405935+00:00",
+  "inputs": {
+    "delegate": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+    "delegators_state_pkl": "../../artifacts/livepeer-bm-scan-arbitrum-v2/delegators_state.pkl",
+    "top_n": 10,
+    "unbond_events_ndjson": "../../artifacts/livepeer-bm-scan-arbitrum-v2/unbond_events.ndjson"
+  },
+  "snapshot": {
+    "block_lag": 200,
+    "bonding_manager": "0x35bcf3c30594191d53231e4ff333e8a770453e40",
+    "latest_block_at_start": 422995753,
+    "rpc_url": "https://arb1.arbitrum.io/rpc",
+    "snapshot_block": 422995553,
+    "snapshot_block_timestamp": 1768825581
+  },
+  "top_unbonders": [
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 2,
+      "claimed_total_lpt": "239353.087550209011989043",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+      "fees_claimed_lpt": "1.371008056316767534",
+      "rewards_claimed_lpt": "239351.716542152695221509",
+      "unbond_from_delegate_lpt": "1051858.716542152695221509",
+      "withdraw_events": 1,
+      "withdraw_total_lpt": "1051858.716542152695221509"
+    },
+    {
+      "bonded_now_lpt": "96780.502898477402529319",
+      "bonded_to_target_now": true,
+      "claim_events": 196,
+      "claimed_total_lpt": "115512.272069963414653060",
+      "current_delegate": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+      "delegator": "0xdfc452da1fa53f5dcd1ebc63a3e5f6c5f9139f76",
+      "fees_claimed_lpt": "2.862985042339282311",
+      "rewards_claimed_lpt": "115509.409084921075370749",
+      "unbond_from_delegate_lpt": "927097.611126084559708228",
+      "withdraw_events": 0,
+      "withdraw_total_lpt": "0"
+    },
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 3,
+      "claimed_total_lpt": "276320.798286321735649235",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0x60b8eb0947d25194afa248b81a087214beec5cfe",
+      "fees_claimed_lpt": "10.586687076349438839",
+      "rewards_claimed_lpt": "276310.211599245386210396",
+      "unbond_from_delegate_lpt": "812523.021599245386210396",
+      "withdraw_events": 1,
+      "withdraw_total_lpt": "812523.021599245386210396"
+    },
+    {
+      "bonded_now_lpt": "283800.278919282656596024",
+      "bonded_to_target_now": true,
+      "claim_events": 11,
+      "claimed_total_lpt": "452077.089033788065065371",
+      "current_delegate": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+      "delegator": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "fees_claimed_lpt": "2.929463071100174494",
+      "rewards_claimed_lpt": "452074.159570716964890877",
+      "unbond_from_delegate_lpt": "450000",
+      "withdraw_events": 9,
+      "withdraw_total_lpt": "501080.896347"
+    },
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 15,
+      "claimed_total_lpt": "75573.083333279654039156",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0x22a709eece6ee82293e5fcdeea7ceefdefd499cd",
+      "fees_claimed_lpt": "0.407821069230761054",
+      "rewards_claimed_lpt": "75572.675512210423278102",
+      "unbond_from_delegate_lpt": "368437.008764522010539981",
+      "withdraw_events": 2,
+      "withdraw_total_lpt": "662616.668380210423278102"
+    },
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 42,
+      "claimed_total_lpt": "34790.749220403848867087",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0x3a63afc862107fc21baf40a5025db7c4062ac2da",
+      "fees_claimed_lpt": "0.252491284161350571",
+      "rewards_claimed_lpt": "34790.496729119687516516",
+      "unbond_from_delegate_lpt": "330526.505231391266466498",
+      "withdraw_events": 18,
+      "withdraw_total_lpt": "303506.505231391266466498"
+    },
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 3,
+      "claimed_total_lpt": "10625.323442611736444617",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0x0b13315bc1638ce38805c827f308cb2f1a2be45b",
+      "fees_claimed_lpt": "0.316380850223517545",
+      "rewards_claimed_lpt": "10625.007061761512927072",
+      "unbond_from_delegate_lpt": "285009.281761761512927072",
+      "withdraw_events": 1,
+      "withdraw_total_lpt": "285009.281761761512927072"
+    },
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 3,
+      "claimed_total_lpt": "20330.421155699661716080",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0xea015c08ba1cd54a45a0c2e70563a247478e3644",
+      "fees_claimed_lpt": "0.718492613906807017",
+      "rewards_claimed_lpt": "20329.702663085754909063",
+      "unbond_from_delegate_lpt": "273061.974840193455408375",
+      "withdraw_events": 1,
+      "withdraw_total_lpt": "273061.974840193455408375"
+    },
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 5,
+      "claimed_total_lpt": "9370.733987283422845771",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0xd03cf9fa773da40475baead68e59c954c5ac77b6",
+      "fees_claimed_lpt": "0.632992145235463013",
+      "rewards_claimed_lpt": "9370.100995138187382758",
+      "unbond_from_delegate_lpt": "252732.272177107700499312",
+      "withdraw_events": 2,
+      "withdraw_total_lpt": "496095.443359077213615866"
+    },
+    {
+      "bonded_now_lpt": "0",
+      "bonded_to_target_now": false,
+      "claim_events": 14,
+      "claimed_total_lpt": "20590.721514542377604124",
+      "current_delegate": "0x0000000000000000000000000000000000000000",
+      "delegator": "0x0a776abbaae0e2161d0e131f57e605efbea4b99b",
+      "fees_claimed_lpt": "0.105993223485478988",
+      "rewards_claimed_lpt": "20590.615521318892125136",
+      "unbond_from_delegate_lpt": "198195.979739158745589129",
+      "withdraw_events": 4,
+      "withdraw_total_lpt": "209061.440314828892125136"
+    }
+  ],
+  "unbond_summary": {
+    "top10_share_of_unbond_amount": 0.6563937974940237,
+    "top1_share_of_unbond_amount": 0.13949723736853264,
+    "top5_share_of_unbond_amount": 0.4787461958126569,
+    "total_unbond_lpt": "7540355.181108609712627522",
+    "unbond_events": 2777,
+    "unique_unbonders": 699
+  }
+}
