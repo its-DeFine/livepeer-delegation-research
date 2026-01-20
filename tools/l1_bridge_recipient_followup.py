@@ -472,7 +472,15 @@ def main() -> int:
 
     # Markdown output
     lines: List[str] = []
-    lines.append("# Livepeer — L1 follow-up for Arbitrum bridge-out recipients (LPT)")
+    lines.append("---")
+    lines.append("title: L1 follow-up (bridge-outs)")
+    lines.append(
+        "description: Where major Arbitrum bridge-out recipients route LPT on Ethereum L1 (contracts vs EOAs vs labeled endpoints)."
+    )
+    lines.append("sidebar_label: L1 follow-up (bridge-outs)")
+    lines.append("---")
+    lines.append("")
+    lines.append("# L1 follow-up for Arbitrum bridge-outs (LPT)")
     lines.append("")
     lines.append(f"- Generated: `{out_json['generated_at_utc']}`")
     lines.append(f"- L1 RPC: `{out_json['eth_rpc']}`")
@@ -535,12 +543,21 @@ def main() -> int:
     lines.append("")
     lines.append("## Recipients (top destinations)")
     lines.append("")
+    lines.append("Tip: expand only the wallets you care about.")
+    lines.append("")
     for r in per_recipient:
-        lines.append(f"### `{r['recipient']}`")
+        recipient = str(r["recipient"])
+        bridged_fmt = _format_lpt(Decimal(r["bridged_lpt"]))
+        outgoing_fmt = _format_lpt(Decimal(r["outgoing_lpt"]))
+        txs = int(r["outgoing_tx_count"])
+        lines.append("<details>")
+        lines.append(
+            f"<summary><code>{recipient}</code> — bridged <b>{bridged_fmt} LPT</b>, outgoing <b>{outgoing_fmt} LPT</b> ({txs:,} txs)</summary>"
+        )
         lines.append("")
-        lines.append(f"- Bridged (decoded on L2): **{_format_lpt(Decimal(r['bridged_lpt']))} LPT**")
+        lines.append(f"- Bridged (decoded on L2): **{bridged_fmt} LPT**")
         lines.append(f"- Current L1 LPT balance: **{_format_lpt(Decimal(r['current_balance_lpt']))} LPT**")
-        lines.append(f"- Outgoing transfers in range: **{_format_lpt(Decimal(r['outgoing_lpt']))} LPT** across **{int(r['outgoing_tx_count']):,}** txs")
+        lines.append(f"- Outgoing transfers in range: **{outgoing_fmt} LPT** across **{txs:,}** txs")
         lines.append("")
         lines.append("| Destination | Label | Category | Outgoing (LPT) | Txs |")
         lines.append("|---|---|---|---:|---:|")
@@ -548,6 +565,8 @@ def main() -> int:
             lines.append(
                 f"| `{drow['to']}` | {drow.get('label','')} | {drow['category']} | {_format_lpt(Decimal(drow['amount_lpt']))} | {int(drow['tx_count']):,} |"
             )
+        lines.append("")
+        lines.append("</details>")
         lines.append("")
 
     os.makedirs(os.path.dirname(args.out_md), exist_ok=True)

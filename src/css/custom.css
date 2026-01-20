@@ -69,3 +69,42 @@
   line-height: 1.35rem;
 }
 
+.theme-doc-markdown details {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 14px;
+  padding: 0.75rem 0.9rem;
+  background: var(--ifm-background-surface-color);
+  margin: 0.75rem 0;
+}
+
+.theme-doc-markdown details > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.theme-doc-markdown details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.theme-doc-markdown details > summary::before {
+  content: '▸';
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.theme-doc-markdown details[open] > summary::before {
+  content: '▾';
+}
+
+.theme-doc-markdown details[open] {
+  border-color: rgba(0, 231, 171, 0.55);
+  background: rgba(0, 231, 171, 0.06);
+}
+
+[data-theme='light'] .theme-doc-markdown details[open] {
+  background: rgba(0, 231, 171, 0.08);
+}

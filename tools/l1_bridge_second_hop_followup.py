@@ -408,7 +408,15 @@ def main() -> int:
 
     # Markdown
     lines: List[str] = []
-    lines.append("# Livepeer — L1 second-hop follow-up (post-bridge)")
+    lines.append("---")
+    lines.append("title: L1 second hop (exchange routing)")
+    lines.append(
+        "description: Follow the biggest post-bridge L1 EOAs one hop further to see routing into labeled exchange endpoints (best-effort)."
+    )
+    lines.append("sidebar_label: L1 second hop (exchange routing)")
+    lines.append("---")
+    lines.append("")
+    lines.append("# L1 second hop (exchange routing)")
     lines.append("")
     lines.append(f"- Generated: `{out_json['generated_at_utc']}`")
     lines.append(f"- Input: `{out_json['inputs']['in_json']}`")
@@ -490,11 +498,20 @@ def main() -> int:
     lines.append("")
     lines.append("## Addresses (top destinations)")
     lines.append("")
+    lines.append("Tip: expand only the wallets you care about.")
+    lines.append("")
     for a in per_address:
-        lines.append(f"### `{a['address']}`")
+        addr = str(a["address"])
+        inbound_fmt = _format_lpt(Decimal(a["inbound_lpt_from_bridge_recipients"]))
+        outgoing_fmt = _format_lpt(Decimal(a["outgoing_lpt"]))
+        txs = int(a["outgoing_tx_count"])
+        lines.append("<details>")
+        lines.append(
+            f"<summary><code>{addr}</code> — inbound <b>{inbound_fmt} LPT</b>, outgoing <b>{outgoing_fmt} LPT</b> ({txs:,} txs)</summary>"
+        )
         lines.append("")
-        lines.append(f"- Inbound from bridge recipients: **{_format_lpt(Decimal(a['inbound_lpt_from_bridge_recipients']))} LPT**")
-        lines.append(f"- Outgoing in range: **{_format_lpt(Decimal(a['outgoing_lpt']))} LPT** across **{int(a['outgoing_tx_count']):,}** txs")
+        lines.append(f"- Inbound from bridge recipients: **{inbound_fmt} LPT**")
+        lines.append(f"- Outgoing in range: **{outgoing_fmt} LPT** across **{txs:,}** txs")
         lines.append(f"- Current L1 balance: **{_format_lpt(Decimal(a['current_balance_lpt']))} LPT**")
         lines.append("")
         lines.append("| Destination | Label | Category | Outgoing (LPT) | Txs |")
@@ -503,6 +520,8 @@ def main() -> int:
             lines.append(
                 f"| `{d['to']}` | {d.get('label','')} | {d['category']} | {_format_lpt(Decimal(d['amount_lpt']))} | {int(d['tx_count']):,} |"
             )
+        lines.append("")
+        lines.append("</details>")
         lines.append("")
 
     os.makedirs(os.path.dirname(args.out_md), exist_ok=True)
