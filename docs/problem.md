@@ -27,7 +27,7 @@ Note: “small delegators” matter for community participation, but current on-
 
 - **New delegators (first-time bonders)**: daily/weekly/monthly
 - **Net stake change**: net bond − unbond − withdraw
-- **Rewards issuance vs withdrawal**: LPT rewards claimed vs withdrawn (upper-bound + conservative proxy)
+- **Rewards issuance vs withdrawal**: LPT rewards claimed (see `/research/rewards-withdraw-timeseries`) vs withdrawn (upper-bound + conservative proxy)
 - **Bracket distribution**: active wallet counts + bonded LPT in `1k–10k` and `10k+` (and how that changes)
 - **Retention**: % of new delegators still bonded at 30/90/180 days
 - **Concentration**:

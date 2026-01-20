@@ -14,6 +14,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Reflexivity + yield extraction" href="/research/reflexivity-and-yield-extraction">
     LPT inflation rewards, reward withdrawals, and how delta-neutral staking can create structural sell pressure.
   </Card>
+  <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
+    Monthly/yearly totals of LPT rewards claimed vs stake withdrawn via `WithdrawStake`.
+  </Card>
   <Card title="Incentives + tokenomics" href="/research/livepeer-delegator-incentives">
     Design patterns to grow small delegators without enabling easy sybil farming.
   </Card>

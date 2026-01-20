@@ -25,6 +25,9 @@ This page is the “metrics jump table” for stakeholders.
   <Card title="Bridge-out decode (Arbitrum → L1 recipients)" href="/research/arbitrum-bridge-out-decode">
     Shows that major “whale exits” often bridge to L1 (and mostly to self), which is not the same as selling.
   </Card>
+  <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
+    Monthly/yearly totals of LPT rewards claimed and LPT withdrawn via `WithdrawStake` (a rough upper bound for liquidity exits).
+  </Card>
   <Card title="Reflexivity + yield extraction (delta-neutral thesis)" href="/research/reflexivity-and-yield-extraction">
     Evidence-backed look at inflation rewards, reward withdrawals, and why delta-neutral staking can create structural sell pressure.
   </Card>

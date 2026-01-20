@@ -1,0 +1,338 @@
+{
+  "bonding_manager": "0x35bcf3c30594191d53231e4ff333e8a770453e40",
+  "by_month": {
+    "2022-02": {
+      "claim_events": 576,
+      "rewards_lpt": "51739.229662883057145637",
+      "withdraw_events": 0,
+      "withdraw_lpt": "0"
+    },
+    "2022-03": {
+      "claim_events": 1196,
+      "rewards_lpt": "71461.910266386889704141",
+      "withdraw_events": 117,
+      "withdraw_lpt": "110161.717871706874369796"
+    },
+    "2022-04": {
+      "claim_events": 770,
+      "rewards_lpt": "53985.156503098789753572",
+      "withdraw_events": 106,
+      "withdraw_lpt": "102246.440570318957104692"
+    },
+    "2022-05": {
+      "claim_events": 674,
+      "rewards_lpt": "122061.601175204571600129",
+      "withdraw_events": 115,
+      "withdraw_lpt": "1289841.455286812794572457"
+    },
+    "2022-06": {
+      "claim_events": 439,
+      "rewards_lpt": "80947.10730306161211694",
+      "withdraw_events": 101,
+      "withdraw_lpt": "149746.208707705780837574"
+    },
+    "2022-07": {
+      "claim_events": 531,
+      "rewards_lpt": "46928.763588450419180716",
+      "withdraw_events": 101,
+      "withdraw_lpt": "454769.319048265580839181"
+    },
+    "2022-08": {
+      "claim_events": 619,
+      "rewards_lpt": "42804.728704271995916634",
+      "withdraw_events": 94,
+      "withdraw_lpt": "52686.738782683671865197"
+    },
+    "2022-09": {
+      "claim_events": 764,
+      "rewards_lpt": "55848.419403670394940886",
+      "withdraw_events": 93,
+      "withdraw_lpt": "131369.298128156382714802"
+    },
+    "2022-10": {
+      "claim_events": 975,
+      "rewards_lpt": "84332.943788320960349267",
+      "withdraw_events": 102,
+      "withdraw_lpt": "36443.084475225424015739"
+    },
+    "2022-11": {
+      "claim_events": 855,
+      "rewards_lpt": "151138.965820163762872027",
+      "withdraw_events": 103,
+      "withdraw_lpt": "113463.444841847475231116"
+    },
+    "2022-12": {
+      "claim_events": 749,
+      "rewards_lpt": "99656.98852624880943326",
+      "withdraw_events": 108,
+      "withdraw_lpt": "1143780.981121161494583008"
+    },
+    "2023-01": {
+      "claim_events": 714,
+      "rewards_lpt": "434027.109282431666328186",
+      "withdraw_events": 101,
+      "withdraw_lpt": "488996.2553716528023091"
+    },
+    "2023-02": {
+      "claim_events": 702,
+      "rewards_lpt": "131111.972878162893436506",
+      "withdraw_events": 111,
+      "withdraw_lpt": "2020619.757645356567276899"
+    },
+    "2023-03": {
+      "claim_events": 1118,
+      "rewards_lpt": "53272.318046711475289821",
+      "withdraw_events": 124,
+      "withdraw_lpt": "82247.60952724372359982"
+    },
+    "2023-04": {
+      "claim_events": 1047,
+      "rewards_lpt": "186328.806141164408423009",
+      "withdraw_events": 139,
+      "withdraw_lpt": "694785.015206763696462774"
+    },
+    "2023-05": {
+      "claim_events": 603,
+      "rewards_lpt": "148228.958975142950840803",
+      "withdraw_events": 94,
+      "withdraw_lpt": "120722.150312601189612954"
+    },
+    "2023-06": {
+      "claim_events": 545,
+      "rewards_lpt": "195621.797640776302266611",
+      "withdraw_events": 108,
+      "withdraw_lpt": "443584.341072913378618958"
+    },
+    "2023-07": {
+      "claim_events": 500,
+      "rewards_lpt": "124711.036333559302088026",
+      "withdraw_events": 128,
+      "withdraw_lpt": "787344.398323182074311684"
+    },
+    "2023-08": {
+      "claim_events": 823,
+      "rewards_lpt": "298961.186373172966098333",
+      "withdraw_events": 202,
+      "withdraw_lpt": "368709.428414256451094566"
+    },
+    "2023-09": {
+      "claim_events": 678,
+      "rewards_lpt": "198194.960120291830770959",
+      "withdraw_events": 191,
+      "withdraw_lpt": "159199.811388803081675356"
+    },
+    "2023-10": {
+      "claim_events": 724,
+      "rewards_lpt": "222066.562364540423410117",
+      "withdraw_events": 187,
+      "withdraw_lpt": "168060.313265158021407077"
+    },
+    "2023-11": {
+      "claim_events": 703,
+      "rewards_lpt": "164756.860826629239026289",
+      "withdraw_events": 214,
+      "withdraw_lpt": "694155.567136062399988425"
+    },
+    "2023-12": {
+      "claim_events": 748,
+      "rewards_lpt": "776056.566374730901456099",
+      "withdraw_events": 224,
+      "withdraw_lpt": "656520.401160603615862586"
+    },
+    "2024-01": {
+      "claim_events": 939,
+      "rewards_lpt": "264132.115851353801330247",
+      "withdraw_events": 214,
+      "withdraw_lpt": "124507.172933743816277447"
+    },
+    "2024-02": {
+      "claim_events": 1078,
+      "rewards_lpt": "188625.3698633310730772",
+      "withdraw_events": 349,
+      "withdraw_lpt": "494546.175230487693357373"
+    },
+    "2024-03": {
+      "claim_events": 1316,
+      "rewards_lpt": "454147.343653271433018535",
+      "withdraw_events": 597,
+      "withdraw_lpt": "1182569.569352161648577106"
+    },
+    "2024-04": {
+      "claim_events": 917,
+      "rewards_lpt": "283688.615781206642665476",
+      "withdraw_events": 373,
+      "withdraw_lpt": "238546.816739392178753568"
+    },
+    "2024-05": {
+      "claim_events": 1166,
+      "rewards_lpt": "362106.059180846728964883",
+      "withdraw_events": 460,
+      "withdraw_lpt": "238780.271209756440475218"
+    },
+    "2024-06": {
+      "claim_events": 1091,
+      "rewards_lpt": "190549.551920622236846376",
+      "withdraw_events": 444,
+      "withdraw_lpt": "322554.286435676109184542"
+    },
+    "2024-07": {
+      "claim_events": 1021,
+      "rewards_lpt": "264774.239796528206449038",
+      "withdraw_events": 352,
+      "withdraw_lpt": "166897.463350752957995193"
+    },
+    "2024-08": {
+      "claim_events": 974,
+      "rewards_lpt": "212517.596237807204912478",
+      "withdraw_events": 320,
+      "withdraw_lpt": "228700.662209819349235486"
+    },
+    "2024-09": {
+      "claim_events": 1071,
+      "rewards_lpt": "637787.527448173672166497",
+      "withdraw_events": 318,
+      "withdraw_lpt": "239727.863659481719396089"
+    },
+    "2024-10": {
+      "claim_events": 1391,
+      "rewards_lpt": "704561.396165892522535962",
+      "withdraw_events": 420,
+      "withdraw_lpt": "774098.395810365276541091"
+    },
+    "2024-11": {
+      "claim_events": 1671,
+      "rewards_lpt": "531611.025406149423954116",
+      "withdraw_events": 609,
+      "withdraw_lpt": "1702146.708790995270347371"
+    },
+    "2024-12": {
+      "claim_events": 1696,
+      "rewards_lpt": "681648.783084476365979959",
+      "withdraw_events": 683,
+      "withdraw_lpt": "2748925.925652410257884266"
+    },
+    "2025-01": {
+      "claim_events": 1501,
+      "rewards_lpt": "495891.357836138123821363",
+      "withdraw_events": 531,
+      "withdraw_lpt": "688637.59588120858702883"
+    },
+    "2025-02": {
+      "claim_events": 1362,
+      "rewards_lpt": "286448.527141627046600857",
+      "withdraw_events": 412,
+      "withdraw_lpt": "574837.026616109550908851"
+    },
+    "2025-03": {
+      "claim_events": 1608,
+      "rewards_lpt": "635424.700695704554002961",
+      "withdraw_events": 500,
+      "withdraw_lpt": "464787.259836004384341452"
+    },
+    "2025-04": {
+      "claim_events": 1463,
+      "rewards_lpt": "426867.392026174779589555",
+      "withdraw_events": 380,
+      "withdraw_lpt": "489790.740079432402465045"
+    },
+    "2025-05": {
+      "claim_events": 1543,
+      "rewards_lpt": "853603.027491874500468359",
+      "withdraw_events": 421,
+      "withdraw_lpt": "499778.736866943717434172"
+    },
+    "2025-06": {
+      "claim_events": 1466,
+      "rewards_lpt": "507883.45975555520726355",
+      "withdraw_events": 538,
+      "withdraw_lpt": "2030303.463823590492827625"
+    },
+    "2025-07": {
+      "claim_events": 1613,
+      "rewards_lpt": "757568.713572892119177052",
+      "withdraw_events": 499,
+      "withdraw_lpt": "525485.302710762476499825"
+    },
+    "2025-08": {
+      "claim_events": 1613,
+      "rewards_lpt": "660949.653740166823868064",
+      "withdraw_events": 479,
+      "withdraw_lpt": "1100468.487329482755646063"
+    },
+    "2025-09": {
+      "claim_events": 1580,
+      "rewards_lpt": "1245256.910818233859253751",
+      "withdraw_events": 578,
+      "withdraw_lpt": "1757421.732547957865607528"
+    },
+    "2025-10": {
+      "claim_events": 1587,
+      "rewards_lpt": "1228271.673690635332878772",
+      "withdraw_events": 498,
+      "withdraw_lpt": "745150.180371595973769171"
+    },
+    "2025-11": {
+      "claim_events": 1539,
+      "rewards_lpt": "674219.121338659294649884",
+      "withdraw_events": 458,
+      "withdraw_lpt": "501724.374209863938747175"
+    },
+    "2025-12": {
+      "claim_events": 1774,
+      "rewards_lpt": "659308.119058122317163065",
+      "withdraw_events": 431,
+      "withdraw_lpt": "811342.586937264336627671"
+    },
+    "2026-01": {
+      "claim_events": 1172,
+      "rewards_lpt": "512197.978172916149761278",
+      "withdraw_events": 292,
+      "withdraw_lpt": "592417.361560563158558036"
+    }
+  },
+  "by_year": {
+    "2022": {
+      "claim_events": 8148,
+      "rewards_lpt": "860905.814741761263013209",
+      "withdraw_events": 1040,
+      "withdraw_lpt": "3584508.688833884436133562"
+    },
+    "2023": {
+      "claim_events": 8905,
+      "rewards_lpt": "2933338.135357314359434759",
+      "withdraw_events": 1823,
+      "withdraw_lpt": "6684945.048824597002220199"
+    },
+    "2024": {
+      "claim_events": 14331,
+      "rewards_lpt": "4776149.624389659311900767",
+      "withdraw_events": 5139,
+      "withdraw_lpt": "8462001.311375042718024750"
+    },
+    "2025": {
+      "claim_events": 18649,
+      "rewards_lpt": "8431692.657165783958737233",
+      "withdraw_events": 5725,
+      "withdraw_lpt": "10189727.487210216481903408"
+    },
+    "2026": {
+      "claim_events": 1172,
+      "rewards_lpt": "512197.978172916149761278",
+      "withdraw_events": 292,
+      "withdraw_lpt": "592417.361560563158558036"
+    }
+  },
+  "generated_at_utc": "2026-01-20T20:23:36.085055+00:00",
+  "range": {
+    "from_block": 5856381,
+    "to_block": 423055031
+  },
+  "rpc_url": "https://arb1.arbitrum.io/rpc",
+  "timeseries_boundaries_json": "research/delegator-band-timeseries.json",
+  "totals": {
+    "claim_events": 51205,
+    "rewards_lpt": "17514284.209827435042847246",
+    "withdraw_events": 14019,
+    "withdraw_lpt": "29513599.897804303796839955"
+  }
+}

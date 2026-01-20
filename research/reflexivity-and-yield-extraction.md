@@ -31,6 +31,10 @@ From `research/outflow-destination-classification-top50` (top-50 wallets by prox
 - To contracts (non-BM): **2,829,702.343 LPT**
 - DEX swap (likely+possible) is **tiny** in this sample (tens of thousands of LPT)
 
+From `research/rewards-withdraw-timeseries` (full-window time series):
+- Total rewards claimed: **17,514,284.210 LPT**
+- Total `WithdrawStake` amount: **29,513,599.898 LPT** (includes principal; not “rewards sold”)
+
 Interpretation: for “cashout-heavy” wallets, on-chain selling on Arbitrum DEX pools does **not** appear to be the dominant path; the dominant paths are **bridge/burn to L1** and **EOA transfers** (which may include CEX deposits or OTC activity we can’t label without better tagging).
 
 ## Why this matters: the delta-neutral math
@@ -46,9 +50,9 @@ When that net is meaningfully positive, you can get:
 
 ## What we should add next (to answer this thesis rigorously)
 
-1) **Quantify yearly/monthly LPT rewards issuance** from `EarningsClaimed` logs (emission time-series), and compare it to:
-   - DEX liquidity depth (slippage curves), and
-   - realized on-chain sell proxies (withdraw → bridge / withdraw → known DEX pools).
+1) **We now have a rewards issuance time series** from `EarningsClaimed` (and a `WithdrawStake` series) in `/research/rewards-withdraw-timeseries`. Next, we should:
+   - separate principal vs “reward component” inside `WithdrawStake` (so we can estimate reward-only extraction over time), and
+   - compare it to realized on-chain sell proxies (withdraw → bridge / withdraw → known DEX pools) and DEX liquidity depth (slippage curves).
 2) **Label destinations better**:
    - trace Arbitrum bridge-outs to L1 recipients and then follow L1 transfers to known CEX / DEX endpoints (sample-based is fine at first).
    - maintain a public `labels.json` for known exchange / bridge / protocol contracts.
@@ -64,4 +68,3 @@ When that net is meaningfully positive, you can get:
 - Whether a bridge-out recipient sold on a CEX (unless we can identify the deposit endpoint).
 
 Still, the current data supports the claim that **a large share of inflation rewards is withdrawn**, and that “cashout-heavy” wallets often route value **off-chain or cross-chain** rather than swapping on Arbitrum DEX directly.
-
