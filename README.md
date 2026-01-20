@@ -1,6 +1,6 @@
-# Livepeer Delegation Research (Private)
+# Livepeer Delegation Research
 
-This repo is the “one place” to frame the **Livepeer delegation problem** and then **evaluate proposed solutions** (tokenomics changes, products, treasury-funded programs, etc.) using **reproducible evidence**.
+This repo is a “one place” to frame the **Livepeer delegation problem** and then **evaluate proposed solutions** (tokenomics changes, products, treasury-funded programs, etc.) using **reproducible evidence**.
 
 ## How to use this repo
 
@@ -28,6 +28,10 @@ This repo also includes a small Docusaurus site so it can be deployed to Vercel.
 
 - Local preview: `npm install` then `npm run start` (Docusaurus dev server)
 - GitHub Actions deploy: `.github/workflows/deploy-vercel.yml` (requires GitHub secrets `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`)
+
+## License
+
+MIT — see `LICENSE`.
 
 ## Principles
 

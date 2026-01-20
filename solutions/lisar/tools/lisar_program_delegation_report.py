@@ -120,12 +120,12 @@ class RpcClient:
         req = Request(
             self.rpc_url,
             data=body,
-            headers={
-                "content-type": "application/json",
-                "user-agent": "embody-livepeer-research/lisar_program_delegation_report",
-            },
-            method="POST",
-        )
+	            headers={
+	                "content-type": "application/json",
+	                "user-agent": "livepeer-delegation-research/lisar_program_delegation_report",
+	            },
+	            method="POST",
+	        )
         try:
             with urlopen(req, timeout=self.timeout_s) as resp:
                 raw = resp.read()
@@ -171,7 +171,7 @@ def _rpc_with_retries(client: RpcClient, method: str, params: list, max_tries: i
 
 
 def _http_get_json(url: str, timeout_s: int = 30) -> Any:
-    req = Request(url, headers={"user-agent": "embody-livepeer-research/lisar_program_delegation_report"})
+    req = Request(url, headers={"user-agent": "livepeer-delegation-research/lisar_program_delegation_report"})
     with urlopen(req, timeout=timeout_s) as resp:
         raw = resp.read()
     return json.loads(raw.decode("utf-8"))

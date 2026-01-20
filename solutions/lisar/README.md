@@ -1,4 +1,4 @@
-# Livepeer — Lisar SPE Delegation Analysis (Private)
+# Livepeer — Lisar SPE Delegation Analysis
 
 This repo contains a reproducible, evidence-based analysis of the Lisar SPE delegation onboarding program on **Arbitrum One**:
 - On-chain: Livepeer **BondingManager** logs (`eth_getLogs`) + current state (`eth_call`)

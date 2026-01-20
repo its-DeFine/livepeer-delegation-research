@@ -178,11 +178,11 @@ Operational guardrails:
 
 ---
 
-## Embody-specific “distribution wedge” ideas (if you want delegators via product)
+## App-layer “distribution wedge” ideas (if you want delegators via a product)
 
-If you can acquire users via `embody.zone`, you can convert a subset into Livepeer delegators by tying delegation to utility:
+If you can acquire users via a product surface, you can convert a subset into Livepeer delegators by tying delegation to utility:
 - **Stake-to-unlock**: discount tiers, higher-quality video, or premium avatars unlocked by delegated LPT (with a lock/retention requirement)
 - **Creator pools**: “delegate to support this avatar/creator” and share a portion of creator revenue back to delegators (off-chain accounting is simplest)
-- **Gasless onboarding**: Embody fronts gas and recoups via retention rules (delegators stick around long enough to justify CAC)
+- **Gasless onboarding**: the app fronts gas and recoups via retention rules (delegators stick around long enough to justify CAC)
 
 These don’t require Livepeer protocol changes; they’re an app-layer growth engine for the network.

@@ -28,7 +28,7 @@ From this directory:
 - Download + summarize relevant Arrakis audit PDFs: `python3 scripts/audit_summaries.py`
 - Run cross-pool case studies (slippage + volume/fees): `python3 scripts/run_case_studies.py`
 
-Outputs land in `outputs/` and cached downloads land in `data/` (both ignored by git).
+Outputs land in `outputs/` and cached downloads land in `data/`.
 
 ## Notes
 
@@ -43,4 +43,4 @@ Toy simulations live in `sim-hardhat/` (ignored by git via `node_modules/` etc).
 - Forked slippage sanity check (adds 50/50 liquidity on an Arbitrum fork and re-quotes):
   - `cd sim-hardhat && SIM_OUT=../outputs/fork.json SIM_TOTAL_USD=782000 SIM_RANGE_MULT=60 npx hardhat run --network hardhat scripts/forkLiquidityImpactSim.js`
 
-
+Outputs and `data/` are committed in this repo for “zero-friction browsing” (stakeholders can read results without rerunning scripts).

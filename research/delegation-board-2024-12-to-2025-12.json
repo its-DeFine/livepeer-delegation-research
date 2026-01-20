@@ -1,0 +1,432 @@
+{
+  "bands_net": [
+    {
+      "active_delegators_delta": 111,
+      "active_delegators_from": 738,
+      "active_delegators_to": 849,
+      "band": "<1 LPT",
+      "bonded_lpt_delta": "26.131363279902704679",
+      "bonded_lpt_from": "46.661338812680562789",
+      "bonded_lpt_to": "72.792702092583267468"
+    },
+    {
+      "active_delegators_delta": 0,
+      "active_delegators_from": 297,
+      "active_delegators_to": 297,
+      "band": "1\u201310 LPT",
+      "bonded_lpt_delta": "-12.949003008843558859",
+      "bonded_lpt_from": "1271.533340805607805475",
+      "bonded_lpt_to": "1258.584337796764246616"
+    },
+    {
+      "active_delegators_delta": -104,
+      "active_delegators_from": 1027,
+      "active_delegators_to": 923,
+      "band": "10\u2013100 LPT",
+      "bonded_lpt_delta": "-4824.052504693412583792",
+      "bonded_lpt_from": "46429.945619503880801492",
+      "bonded_lpt_to": "41605.893114810468217700"
+    },
+    {
+      "active_delegators_delta": -68,
+      "active_delegators_from": 751,
+      "active_delegators_to": 683,
+      "band": "100\u20131k LPT",
+      "bonded_lpt_delta": "-11243.265621243655873823",
+      "bonded_lpt_from": "224791.141583526011881581",
+      "bonded_lpt_to": "213547.875962282356007758"
+    },
+    {
+      "active_delegators_delta": 31,
+      "active_delegators_from": 242,
+      "active_delegators_to": 273,
+      "band": "1k\u201310k LPT",
+      "bonded_lpt_delta": "137023.515855893269971619",
+      "bonded_lpt_from": "952655.692678782443202225",
+      "bonded_lpt_to": "1089679.208534675713173844"
+    },
+    {
+      "active_delegators_delta": 39,
+      "active_delegators_from": 156,
+      "active_delegators_to": 195,
+      "band": "10k+ LPT",
+      "bonded_lpt_delta": "6206157.383883874810624374",
+      "bonded_lpt_from": "10324789.045449552823971636",
+      "bonded_lpt_to": "16530946.429333427634596010"
+    }
+  ],
+  "bands_snapshot_from": {
+    "100\u20131k LPT": {
+      "active_delegators": 751,
+      "bonded_lpt": "224791.141583526011881581",
+      "share_of_active_count": 0.2338835253815011,
+      "share_of_bonded_lpt": 0.019462463428006737
+    },
+    "10k+ LPT": {
+      "active_delegators": 156,
+      "bonded_lpt": "10324789.045449552823971636",
+      "share_of_active_count": 0.048582995951417005,
+      "share_of_bonded_lpt": 0.893922366261398
+    },
+    "10\u2013100 LPT": {
+      "active_delegators": 1027,
+      "bonded_lpt": "46429.945619503880801492",
+      "share_of_active_count": 0.31983805668016196,
+      "share_of_bonded_lpt": 0.004019914273393058
+    },
+    "1k\u201310k LPT": {
+      "active_delegators": 242,
+      "bonded_lpt": "952655.692678782443202225",
+      "share_of_active_count": 0.07536592961694176,
+      "share_of_bonded_lpt": 0.08248112646980757
+    },
+    "1\u201310 LPT": {
+      "active_delegators": 297,
+      "bonded_lpt": "1271.533340805607805475",
+      "share_of_active_count": 0.09249454998442852,
+      "share_of_bonded_lpt": 0.00011008961905078018
+    },
+    "<1 LPT": {
+      "active_delegators": 738,
+      "bonded_lpt": "46.661338812680562789",
+      "share_of_active_count": 0.22983494238554966,
+      "share_of_bonded_lpt": 4.039948343810452e-06
+    }
+  },
+  "bands_snapshot_to": {
+    "100\u20131k LPT": {
+      "active_delegators": 683,
+      "bonded_lpt": "213547.875962282356007758",
+      "share_of_active_count": 0.21211180124223603,
+      "share_of_bonded_lpt": 0.011945323746250187
+    },
+    "10k+ LPT": {
+      "active_delegators": 195,
+      "bonded_lpt": "16530946.429333427634596010",
+      "share_of_active_count": 0.06055900621118013,
+      "share_of_bonded_lpt": 0.9246989980138403
+    },
+    "10\u2013100 LPT": {
+      "active_delegators": 923,
+      "bonded_lpt": "41605.893114810468217700",
+      "share_of_active_count": 0.28664596273291926,
+      "share_of_bonded_lpt": 0.0023273275876369475
+    },
+    "1k\u201310k LPT": {
+      "active_delegators": 273,
+      "bonded_lpt": "1089679.208534675713173844",
+      "share_of_active_count": 0.08478260869565217,
+      "share_of_bonded_lpt": 0.06095387681497431
+    },
+    "1\u201310 LPT": {
+      "active_delegators": 297,
+      "bonded_lpt": "1258.584337796764246616",
+      "share_of_active_count": 0.0922360248447205,
+      "share_of_bonded_lpt": 7.040199912640504e-05
+    },
+    "<1 LPT": {
+      "active_delegators": 849,
+      "bonded_lpt": "72.792702092583267468",
+      "share_of_active_count": 0.2636645962732919,
+      "share_of_bonded_lpt": 4.071838171847847e-06
+    }
+  },
+  "delegate_gain_bleed": {
+    "note": "Computed using union of per-snapshot top-25 delegates; misses tail delegates that never appear in top-25.",
+    "top_bleeders": [
+      {
+        "bonded_from": "257121.991812662469173903",
+        "bonded_to": "0",
+        "delegate": "0xa8aad06cd07185514a7c394649c80434af47b379",
+        "delta": "-257121.991812662469173903"
+      },
+      {
+        "bonded_from": "172479.365335772475838119",
+        "bonded_to": "0",
+        "delegate": "0xbe8770603daf200b1fa136ad354ba854928e602b",
+        "delta": "-172479.365335772475838119"
+      },
+      {
+        "bonded_from": "136542.668294665879085126",
+        "bonded_to": "0",
+        "delegate": "0x0d509d8b46b072f8fc330942b2e3cc0ac34d6d8d",
+        "delta": "-136542.668294665879085126"
+      },
+      {
+        "bonded_from": "111664.021665233128644032",
+        "bonded_to": "0",
+        "delegate": "0xd603d6bf88aa061fcab8fa552026694a7fd005ce",
+        "delta": "-111664.021665233128644032"
+      },
+      {
+        "bonded_from": "3086389.899875270062192128",
+        "bonded_to": "3051104.122970839389870995",
+        "delegate": "0x4416a274f86e1db860b513548b672154d43b81b2",
+        "delta": "-35285.776904430672321133"
+      },
+      {
+        "bonded_from": "269982.789083246346293499",
+        "bonded_to": "252353.124238070909972875",
+        "delegate": "0x9d2b4e5c4b1fd81d06b883b0aca661b771c39ea3",
+        "delta": "-17629.664845175436320624"
+      },
+      {
+        "bonded_from": "374030.655035946142644359",
+        "bonded_to": "371981.770432713889960986",
+        "delegate": "0x10e0a91e652b05e9c7449ff457cf2e96c3037fb7",
+        "delta": "-2048.884603232252683373"
+      },
+      {
+        "bonded_from": "271289.725863308920151692",
+        "bonded_to": "270407.049949542601123022",
+        "delegate": "0xda43d85b8d419a9c51bbf0089c9bd5169c23f2f9",
+        "delta": "-882.675913766319028670"
+      },
+      {
+        "bonded_from": "197080.013018248585447159",
+        "bonded_to": "211475.743778957237498395",
+        "delegate": "0x5bdeedca9c6346b0ce6b17ffa8227a4dace37039",
+        "delta": "14395.730760708652051236"
+      },
+      {
+        "bonded_from": "232657.563599936829186725",
+        "bonded_to": "249746.780202807550771990",
+        "delegate": "0xdac817294c0c87ca4fa1895ef4b972eade99f2fd",
+        "delta": "17089.216602870721585265"
+      },
+      {
+        "bonded_from": "156398.370970328841589347",
+        "bonded_to": "198240.657163148644007844",
+        "delegate": "0x10b21af759129f32c6064adfb85d3ea2a8c0209c",
+        "delta": "41842.286192819802418497"
+      },
+      {
+        "bonded_from": "138634.143007207353731967",
+        "bonded_to": "186179.588705692352910231",
+        "delegate": "0x4a43b1d7e6227c8b0512e413f406555647ff7bdb",
+        "delta": "47545.445698484999178264"
+      },
+      {
+        "bonded_from": "352203.171121094498942156",
+        "bonded_to": "400916.016350035831887019",
+        "delegate": "0xf5a88945ce64b5648b895e05eb1edf693dde8905",
+        "delta": "48712.845228941332944863"
+      },
+      {
+        "bonded_from": "170251.478402887886856744",
+        "bonded_to": "233712.964656205704910601",
+        "delegate": "0x104a7ca059a35fd4def5ecb16600b2caa1fe1361",
+        "delta": "63461.486253317818053857"
+      },
+      {
+        "bonded_from": "137189.066603352516780853",
+        "bonded_to": "201654.918197242541276970",
+        "delegate": "0x47a907a0bd1627d71cd14430a721d1550d6d6f58",
+        "delta": "64465.851593890024496117"
+      }
+    ],
+    "top_gainers": [
+      {
+        "bonded_from": "0",
+        "bonded_to": "2609986.193640508655169583",
+        "delegate": "0xac2e50c8f7ac0f82923a7df9d9903f6ec4741919",
+        "delta": "2609986.193640508655169583"
+      },
+      {
+        "bonded_from": "1236222.479805800185521471",
+        "bonded_to": "1889935.908852763981431793",
+        "delegate": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+        "delta": "653713.429046963795910322"
+      },
+      {
+        "bonded_from": "141592.310883262732019686",
+        "bonded_to": "567632.635192898155028478",
+        "delegate": "0x141e6d4953b933746c770272126db2bd691a9683",
+        "delta": "426040.324309635423008792"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "351075.480051240625317737",
+        "delegate": "0x5d98f8d269c94b746a5c3c2946634dcfc75e5e60",
+        "delta": "351075.480051240625317737"
+      },
+      {
+        "bonded_from": "273071.516271415827254869",
+        "bonded_to": "541457.829693497366553449",
+        "delegate": "0x6cb1ce2516fb7d211038420a8cf9a843c7bd3b08",
+        "delta": "268386.313422081539298580"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "226024.596554842710549482",
+        "delegate": "0x3b28a7d785356dc67c7970666747e042305bfb79",
+        "delta": "226024.596554842710549482"
+      },
+      {
+        "bonded_from": "0",
+        "bonded_to": "177756.329863971789948268",
+        "delegate": "0xd00354656922168815fcd1e51cbddb9e359e3c7f",
+        "delta": "177756.329863971789948268"
+      },
+      {
+        "bonded_from": "255689.482681090142566616",
+        "bonded_to": "419631.889810497377603352",
+        "delegate": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+        "delta": "163942.407129407235036736"
+      },
+      {
+        "bonded_from": "129538.070037012194854737",
+        "bonded_to": "238727.523225690960078738",
+        "delegate": "0x9d61ae5875e89036fbf6059f3116d01a22ace3c8",
+        "delta": "109189.453188678765224001"
+      },
+      {
+        "bonded_from": "148093.537328845363076766",
+        "bonded_to": "250964.623439483704059068",
+        "delegate": "0xbd677e96a755207d348578727aa57a512c2022bd",
+        "delta": "102871.086110638340982302"
+      },
+      {
+        "bonded_from": "183435.275896618059644370",
+        "bonded_to": "283285.467466973819798241",
+        "delegate": "0xbac7744ada4ab1957cbaafef698b3c068beb4fe0",
+        "delta": "99850.191570355760153871"
+      },
+      {
+        "bonded_from": "384884.567270308260852091",
+        "bonded_to": "483253.131458068598084603",
+        "delegate": "0xa20416801ac2eacf2372e825b4a90ef52490c2bb",
+        "delta": "98368.564187760337232512"
+      },
+      {
+        "bonded_from": "110865.338228293687925265",
+        "bonded_to": "204197.942966449761386098",
+        "delegate": "0xdb22609515433e664e28067c81704d8266098986",
+        "delta": "93332.604738156073460833"
+      },
+      {
+        "bonded_from": "318936.809909404131360726",
+        "bonded_to": "402144.908495254949726594",
+        "delegate": "0x847791cbf03be716a7fe9dc8c9affe17bd49ae5e",
+        "delta": "83208.098585850818365868"
+      },
+      {
+        "bonded_from": "137189.066603352516780853",
+        "bonded_to": "201654.918197242541276970",
+        "delegate": "0x47a907a0bd1627d71cd14430a721d1550d6d6f58",
+        "delta": "64465.851593890024496117"
+      }
+    ]
+  },
+  "generated_at_utc": "2026-01-20T16:06:55.581019+00:00",
+  "inflow_new_delegators_by_year": [
+    {
+      "100\u20131k LPT": 485,
+      "10k+ LPT": 120,
+      "10\u2013100 LPT": 776,
+      "1k\u201310k LPT": 147,
+      "1\u201310 LPT": 214,
+      "<1 LPT": 471,
+      "total": 2213,
+      "year": "2022"
+    },
+    {
+      "100\u20131k LPT": 507,
+      "10k+ LPT": 89,
+      "10\u2013100 LPT": 611,
+      "1k\u201310k LPT": 110,
+      "1\u201310 LPT": 102,
+      "<1 LPT": 73,
+      "total": 1492,
+      "year": "2023"
+    },
+    {
+      "100\u20131k LPT": 215,
+      "10k+ LPT": 59,
+      "10\u2013100 LPT": 176,
+      "1k\u201310k LPT": 128,
+      "1\u201310 LPT": 81,
+      "<1 LPT": 26,
+      "total": 685,
+      "year": "2024"
+    },
+    {
+      "100\u20131k LPT": 106,
+      "10k+ LPT": 49,
+      "10\u2013100 LPT": 98,
+      "1k\u201310k LPT": 100,
+      "1\u201310 LPT": 75,
+      "<1 LPT": 54,
+      "total": 482,
+      "year": "2025"
+    },
+    {
+      "100\u20131k LPT": 6,
+      "10k+ LPT": 2,
+      "10\u2013100 LPT": 2,
+      "1k\u201310k LPT": 4,
+      "1\u201310 LPT": 0,
+      "<1 LPT": 1,
+      "total": 15,
+      "year": "2026"
+    }
+  ],
+  "outflow_by_max_band": [
+    {
+      "band": "<1 LPT",
+      "delegators": 625,
+      "unbond_lpt": "139403.137876737479106450",
+      "unbonders": 99,
+      "withdraw_lpt": "47265.258578257535227699",
+      "withdrawers": 51
+    },
+    {
+      "band": "1\u201310 LPT",
+      "delegators": 472,
+      "unbond_lpt": "378009.017061221825030120",
+      "unbonders": 256,
+      "withdraw_lpt": "229162.144813193840298651",
+      "withdrawers": 222
+    },
+    {
+      "band": "10\u2013100 LPT",
+      "delegators": 1663,
+      "unbond_lpt": "489924.936555020468772327",
+      "unbonders": 864,
+      "withdraw_lpt": "263309.110656396043141866",
+      "withdrawers": 751
+    },
+    {
+      "band": "100\u20131k LPT",
+      "delegators": 1319,
+      "unbond_lpt": "1162987.100098584583481235",
+      "unbonders": 853,
+      "withdraw_lpt": "692608.731178445141396817",
+      "withdrawers": 760
+    },
+    {
+      "band": "1k\u201310k LPT",
+      "delegators": 489,
+      "unbond_lpt": "2272092.626624741452706097",
+      "unbonders": 357,
+      "withdraw_lpt": "1615443.091336590821870959",
+      "withdrawers": 338
+    },
+    {
+      "band": "10k+ LPT",
+      "delegators": 319,
+      "unbond_lpt": "37814432.336111441577856740",
+      "unbonders": 255,
+      "withdraw_lpt": "20960957.102585650406313212",
+      "withdrawers": 200
+    }
+  ],
+  "window": {
+    "from_block": 290687173,
+    "from_label": "2024-12-end",
+    "from_snapshot_iso": "2024-12-31T23:59:59+00:00",
+    "to_block": 416593973,
+    "to_label": "2025-12-end",
+    "to_snapshot_iso": "2025-12-31T23:59:59+00:00"
+  }
+}
