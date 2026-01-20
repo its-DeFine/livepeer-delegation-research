@@ -17,6 +17,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="L1 follow-up for bridge-outs" href="/research/l1-bridge-recipient-followup">
     Tracks where the Arbitrum bridge-out recipients route LPT on Ethereum L1 (contracts vs EOAs vs known DEX routers).
   </Card>
+  <Card title="L1 second hop (exchange routing)" href="/research/l1-bridge-recipient-second-hop">
+    Follows the biggest L1 EOA destinations one hop further; surfaces labeled exchange endpoints (best-effort).
+  </Card>
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed vs stake withdrawn via `WithdrawStake`.
   </Card>

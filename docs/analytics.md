@@ -28,6 +28,9 @@ This page is the “metrics jump table” for stakeholders.
   <Card title="L1 follow-up (post-bridge destinations)" href="/research/l1-bridge-recipient-followup">
     After bridge-outs land on Ethereum L1, this tracks where the L1 recipients send LPT next (DEX vs contracts vs EOAs).
   </Card>
+  <Card title="L1 second hop (exchange routing)" href="/research/l1-bridge-recipient-second-hop">
+    Follows the biggest L1 EOA destinations one hop further; surfaces labeled exchange endpoints (best-effort, label-set based).
+  </Card>
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed and LPT withdrawn via `WithdrawStake` (a rough upper bound for liquidity exits).
   </Card>

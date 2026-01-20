@@ -1,0 +1,265 @@
+{
+  "addresses": [
+    {
+      "address": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+      "category_totals_lpt": {
+        "exchange": "1990712.703428244695996"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "1879662.54",
+      "outgoing_lpt": "1990712.703428244695996",
+      "outgoing_tx_count": 65,
+      "rank": 1,
+      "top_destinations": [
+        {
+          "amount_lpt": "1990712.703428244695996",
+          "category": "exchange",
+          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+          "tx_count": 65
+        }
+      ]
+    },
+    {
+      "address": "0xde346728906a36bfd06f28e9ee35005e2fde51ae",
+      "category_totals_lpt": {
+        "unknown_eoa": "1758041.089627615274485149"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "1758041.089627615274485149",
+      "outgoing_lpt": "1758041.089627615274485149",
+      "outgoing_tx_count": 2,
+      "rank": 2,
+      "top_destinations": [
+        {
+          "amount_lpt": "1758031.089627615274485149",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xe4ae0de30267a66e8d8327452d535ab671786ab7",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "10",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xac9a3d8fe8d4812a714eca33b885720e1e731530",
+          "tx_count": 1
+        }
+      ]
+    },
+    {
+      "address": "0xd8b9f62de8b8217ab997df060a47c020c81f9997",
+      "category_totals_lpt": {
+        "unknown_eoa": "1864367.7"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "1051858.7",
+      "outgoing_lpt": "1864367.7",
+      "outgoing_tx_count": 7,
+      "rank": 3,
+      "top_destinations": [
+        {
+          "amount_lpt": "1051859.7",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xabac151fab95b3414d8f6cca2397d479cecd76aa",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "812508",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x3941d59d68a6e0ac6fbac6d85bfec7b83753d60d",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xabac66e8d30bf82a199ed69577c6c0d4247ac6aa",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xabac3299044de9a2129fa71c6be2fe7e273076aa",
+          "tx_count": 2
+        }
+      ]
+    },
+    {
+      "address": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+      "category_totals_lpt": {
+        "exchange": "1625016"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "812508",
+      "outgoing_lpt": "1625016",
+      "outgoing_tx_count": 3,
+      "rank": 4,
+      "top_destinations": [
+        {
+          "amount_lpt": "1625016",
+          "category": "exchange",
+          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+          "tx_count": 3
+        }
+      ]
+    },
+    {
+      "address": "0x6c78ae1d2a5ffdf7917d65e8586015d0933fc7ea",
+      "category_totals_lpt": {
+        "livepeer_contract": "100",
+        "unknown_eoa": "1230606.104434856314598531"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "621439.059193238227204479",
+      "outgoing_lpt": "1230706.104434856314598531",
+      "outgoing_tx_count": 6,
+      "rank": 5,
+      "top_destinations": [
+        {
+          "amount_lpt": "805076.104434856314598531",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x275f6dd19822cae02c9a5d1fc1bfa3591dbe02f2",
+          "tx_count": 3
+        },
+        {
+          "amount_lpt": "425530",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x0b54420ee63aa04da4cc87064142c6e64b70bb94",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "100",
+          "category": "livepeer_contract",
+          "label": "Livepeer: L1 Escrow",
+          "to": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+          "tx_count": 1
+        }
+      ]
+    },
+    {
+      "address": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+      "category_totals_lpt": {
+        "exchange": "526141.28910206425421109"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "501070.896347",
+      "outgoing_lpt": "526141.28910206425421109",
+      "outgoing_tx_count": 19,
+      "rank": 6,
+      "top_destinations": [
+        {
+          "amount_lpt": "526141.28910206425421109",
+          "category": "exchange",
+          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+          "tx_count": 19
+        }
+      ]
+    },
+    {
+      "address": "0xc60a78732f4f2275fb40d12021b6407f92626116",
+      "category_totals_lpt": {
+        "exchange": "667914.346781"
+      },
+      "current_balance_lpt": "4.55122617385E-7",
+      "inbound_lpt_from_bridge_recipients": "455737.252741112597248574",
+      "outgoing_lpt": "667914.346781",
+      "outgoing_tx_count": 1,
+      "rank": 7,
+      "top_destinations": [
+        {
+          "amount_lpt": "667914.346781",
+          "category": "exchange",
+          "label": "Binance 14 (public label; best-effort)",
+          "to": "0x28c6c06298d514db089934071355e5743bf21d60",
+          "tx_count": 1
+        }
+      ]
+    },
+    {
+      "address": "0x964feae75fd7a02ef728038741dd376eab020754",
+      "category_totals_lpt": {
+        "unknown_eoa": "441048.903440638593884135"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "441048.903440638593884135",
+      "outgoing_lpt": "441048.903440638593884135",
+      "outgoing_tx_count": 2,
+      "rank": 8,
+      "top_destinations": [
+        {
+          "amount_lpt": "341048.903440638593884135",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x5ba44cd09abe5d39673dc9b87547602ce8298138",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "100000",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xac9a3d8fe8d4812a714eca33b885720e1e731530",
+          "tx_count": 1
+        }
+      ]
+    },
+    {
+      "address": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+      "category_totals_lpt": {
+        "exchange": "699785.971513614695995978"
+      },
+      "current_balance_lpt": "0",
+      "inbound_lpt_from_bridge_recipients": "182024.857658072573990669",
+      "outgoing_lpt": "699785.971513614695995978",
+      "outgoing_tx_count": 16,
+      "rank": 9,
+      "top_destinations": [
+        {
+          "amount_lpt": "699785.971513614695995978",
+          "category": "exchange",
+          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+          "tx_count": 16
+        }
+      ]
+    }
+  ],
+  "category_totals": {
+    "exchange": "5509570.310824923646203068",
+    "livepeer_contract": "100",
+    "unknown_eoa": "5294063.797503110182967815"
+  },
+  "eth_rpc": "https://rpc.flashbots.net",
+  "generated_at_utc": "2026-01-20T21:45:48.029620+00:00",
+  "inputs": {
+    "in_json": "research/l1-bridge-recipient-followup.json",
+    "labels_json": "data/labels.json"
+  },
+  "lpt_token_l1": "0x58b6a8a3302369daec383334672404ee733ab239",
+  "range": {
+    "from_block": 14600000,
+    "to_block": 24278701
+  },
+  "selection": {
+    "max_addresses": 20,
+    "min_inbound_lpt": 100000.0
+  },
+  "totals": {
+    "inbound_lpt": "7703391.299007677266813006",
+    "outgoing_lpt": "10803734.108328033829170883"
+  }
+}

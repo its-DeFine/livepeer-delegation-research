@@ -31,6 +31,14 @@
     "category": "exchange",
     "name": "Binance (public label; best-effort)"
   },
+  "0x28c6c06298d514db089934071355e5743bf21d60": {
+    "category": "exchange",
+    "name": "Binance 14 (public label; best-effort)"
+  },
+  "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea": {
+    "category": "exchange",
+    "name": "Coinbase Prime 2 (public label; best-effort)"
+  },
   "0x6a23f4940bd5ba117da261f98aae51a8bffa210a": {
     "category": "livepeer_contract",
     "name": "Livepeer: L1 Escrow"
