@@ -27,7 +27,7 @@ This repo includes a `docs.json` so it can be browsed as a Mintlify docs site.
 This repo also includes a small Docusaurus site so it can be deployed to Vercel.
 
 - Local preview: `npm install` then `npm run start` (Docusaurus dev server)
-- GitHub Actions deploy: `.github/workflows/deploy-vercel.yml` (requires GitHub secrets `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`)
+- Deploys automatically via Vercel Git integration on pushes to `main`
 
 ## License
 
