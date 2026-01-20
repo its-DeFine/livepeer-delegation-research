@@ -7,21 +7,26 @@ description: A single, evidence-based place to understand Livepeer delegation tr
 
 This is a working research repo: we prioritize **verifiable on-chain evidence** and a consistent rubric for judging solutions.
 
+## Recommended reading order (stakeholder flow)
+
 <CardGroup cols={2}>
-  <Card title="Meeting Dashboard" href="/meeting">
+  <Card title="1) Executive statement" href="/docs/statement">
+    The current thesis: security-relevant growth is bracket growth (1k–10k, 10k+), driven by token utility.
+  </Card>
+  <Card title="2) Analytics" href="/docs/analytics">
+    The key dashboards and evidence links (board, time series, outflows, bridge-outs).
+  </Card>
+  <Card title="3) Solution dossiers (3)" href="/solutions/ydol">
+    Lisar (onboarding), IDOL/Arrakis (liquidity), Tenderize (liquid staking).
+  </Card>
+  <Card title="4) General directions" href="/docs/directions">
+    Proposed next-step directions that are sybil-aware and measurable.
+  </Card>
+  <Card title="Meeting dashboard" href="/meeting">
     One-page, slide-friendly view of the latest metrics + key takeaways.
   </Card>
-  <Card title="Overview (read first)" href="/docs/overview">
-    Synthesis of what we measured, what we believe, and what we recommend next.
-  </Card>
-  <Card title="Scoreboard" href="/docs/scoreboard">
-    Cross-solution comparison in one table: KPIs, sybil posture, and notes.
-  </Card>
-  <Card title="Problem Definition" href="/docs/problem">
-    The exact problem statement and canonical metrics every solution must report.
-  </Card>
-  <Card title="Evaluation Rubric" href="/docs/rubric">
-    How we score solutions (0–5) across growth, retention, sybil resistance, and ROI.
+  <Card title="Scoreboard + rubric" href="/docs/scoreboard">
+    Cross-solution comparison + scoring framework.
   </Card>
 </CardGroup>
 
@@ -34,7 +39,7 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Incentives + tokenomics notes" href="/research/livepeer-delegator-incentives">
     Design space for small-delegator growth (and what is sybilable vs sybil-neutral).
   </Card>
-  <Card title="Solutions: Lisar" href="/solutions/lisar/livepeer-lisar-spe-delegation-analysis">
+  <Card title="Solutions: Lisar" href="/solutions/lisar">
     Treasury program outcomes + KPI alignment vs the stated goals.
   </Card>
   <Card title="Solutions: IDOL / Arrakis" href="/solutions/ydol">

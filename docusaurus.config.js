@@ -72,9 +72,10 @@ const config = {
         srcDark: 'img/logo-dark.svg'
       },
       items: [
-        { to: '/docs/overview', label: 'Overview', position: 'left' },
-        { to: '/docs/scoreboard', label: 'Scoreboard', position: 'left' },
-        { to: '/solutions/ydol', label: 'Solutions', position: 'left' },
+        { to: '/docs/statement', label: 'Statement', position: 'left' },
+        { to: '/docs/analytics', label: 'Analytics', position: 'left' },
+        { to: '/docs/directions', label: 'Directions', position: 'left' },
+        { to: '/solutions', label: 'Solutions', position: 'left' },
         { to: '/research', label: 'Research', position: 'left' },
         {
           href: 'https://github.com/its-DeFine/livepeer-delegation-research',
@@ -89,6 +90,9 @@ const config = {
         {
           title: 'Start',
           items: [
+            { label: 'Statement', to: '/docs/statement' },
+            { label: 'Analytics', to: '/docs/analytics' },
+            { label: 'Directions', to: '/docs/directions' },
             { label: 'Overview', to: '/docs/overview' },
             { label: 'Rubric', to: '/docs/rubric' },
             { label: 'Scoreboard', to: '/docs/scoreboard' }
@@ -97,10 +101,7 @@ const config = {
         {
           title: 'Solutions',
           items: [
-            {
-              label: 'Lisar',
-              to: '/solutions/lisar/livepeer-lisar-spe-delegation-analysis'
-            },
+            { label: 'Lisar', to: '/solutions/lisar' },
             { label: 'IDOL / Arrakis', to: '/solutions/ydol' },
             { label: 'Tenderize', to: '/solutions/tenderize' }
           ]
@@ -109,6 +110,7 @@ const config = {
           title: 'Research',
           items: [
             { label: 'Notes index', to: '/research' },
+            { label: 'Delegation board', to: '/research/delegation-board' },
             {
               label: 'Outflows',
               to: '/research/livepeer-delegator-outflows-research'

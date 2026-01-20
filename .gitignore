@@ -10,3 +10,5 @@ build/
 
 # If we later add reproducible artifacts, keep them explicitly allowlisted.
 artifacts/*
+.vercel
+.env*.local

@@ -5,7 +5,7 @@ description: Synthesis and recommendations from on-chain Livepeer delegation res
 
 # Synthesis & Recommendations
 
-Updated: **2026-01-18** (Arbitrum era).
+Updated: **2026-01-20** (Arbitrum era).
 
 This is the “single doc” overview that ties together:
 - What we measured on-chain (delegation flows, churn, withdrawals, post-withdraw transfers)
@@ -26,12 +26,12 @@ This is the “single doc” overview that ties together:
 
 ## TL;DR (what we believe is true from evidence)
 
-1) **Delegator acquisition is trending down** on Arbitrum (first-time bonders drop year-over-year).
-2) **Retention is not “instantly everyone farms and exits”**, but early churn exists and increases over months.
-3) **Rewards + “cashout” behavior are highly concentrated**; a large fraction of rewards is withdrawn and then moved out (often via bridge/burn-to-zero patterns).
-4) The “mass sybil cashout wave” hypothesis is **not supported** by daily unique-unbonder counts (peaks are ~O(100), not thousands), though small trickle sybil behavior is still possible.
-5) The biggest unlock for small delegator growth is still: **liquidity + UX** (liquid staking / LST), paired with **time-boxed, retention-gated** incentives.
-6) Any “give smaller addresses higher APR” mechanic is **sybilable** unless tied to a uniqueness primitive (identity / proof) or made economically expensive to split.
+1) **New delegator inflows are trending down** on Arbitrum (first-time bonders drop year-over-year).
+2) **Bonded stake is extremely concentrated**: small wallets dominate *count* but hold negligible stake; security-relevant growth is bracket growth (`1k–10k`, `10k+`).
+3) **Recent growth is mostly in larger brackets** (e.g. `10k+` stake grew materially in 2025 while mid-retail bands shrank).
+4) **Retention is not “instantly everyone farms and exits”**, but early churn exists and increases over months.
+5) The “mass sybil cashout wave” hypothesis is **not supported** by daily unique-unbonder counts (peaks are ~O(100), not thousands), though small trickle sybil behavior is still possible.
+6) Any “give smaller addresses higher APR” mechanic is **sybilable** unless tied to a uniqueness primitive (identity / proof) or made economically expensive to split; prefer **utility + liquidity + retention gating**.
 
 ---
 
@@ -47,6 +47,8 @@ This is the “single doc” overview that ties together:
 Primary sources in this repo:
 - Delegation flows + sybil/churn research: `research/livepeer-delegator-outflows-research.md`
 - Tokenomics/program ideas grounded in the data: `research/livepeer-delegator-incentives.md`
+- Board view (brackets + inflow/outflow + delegate gain/bleed): `research/delegation-board.md`
+- Bracket time series + concentration: `research/delegator-band-timeseries.md`
 
 Primary artifacts (raw-ish outputs) referenced by those notes:
 - `artifacts/livepeer-bm-scan-arbitrum-v2/retention_report.md`

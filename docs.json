@@ -27,8 +27,9 @@
   },
   "navbar": {
     "links": [
-      { "label": "Overview", "href": "/docs/overview" },
-      { "label": "Scoreboard", "href": "/docs/scoreboard" }
+      { "label": "Statement", "href": "/docs/statement" },
+      { "label": "Analytics", "href": "/docs/analytics" },
+      { "label": "Directions", "href": "/docs/directions" }
     ],
     "primary": {
       "type": "github",
@@ -43,6 +44,9 @@
       {
         "header": "Start",
         "items": [
+          { "label": "Statement", "href": "/docs/statement" },
+          { "label": "Analytics", "href": "/docs/analytics" },
+          { "label": "Directions", "href": "/docs/directions" },
           { "label": "Overview", "href": "/docs/overview" },
           { "label": "Rubric", "href": "/docs/rubric" },
           { "label": "Scoreboard", "href": "/docs/scoreboard" }
@@ -51,17 +55,19 @@
       {
         "header": "Solutions",
         "items": [
-          { "label": "Lisar", "href": "/solutions/lisar/livepeer-lisar-spe-delegation-analysis" },
+          { "label": "Lisar", "href": "/solutions/lisar" },
           { "label": "IDOL / Arrakis", "href": "/solutions/ydol" },
-          { "label": "Tenderize", "href": "/solutions/tenderize" },
-          { "label": "Delegator tiers", "href": "/solutions/delegator-tiers" }
+          { "label": "Tenderize", "href": "/solutions/tenderize" }
         ]
       },
       {
         "header": "Research",
         "items": [
           { "label": "Notes index", "href": "/research" },
+          { "label": "Delegation board", "href": "/research/delegation-board" },
+          { "label": "Bracket time series", "href": "/research/delegator-band-timeseries" },
           { "label": "Outflows", "href": "/research/livepeer-delegator-outflows-research" },
+          { "label": "Bridge-out decode", "href": "/research/arbitrum-bridge-out-decode" },
           { "label": "Incentives", "href": "/research/livepeer-delegator-incentives" },
           { "label": "Cross-protocol experiments", "href": "/research/cross-protocol-tokenomics-experiments" }
         ]
@@ -74,6 +80,9 @@
         "group": "Start",
         "pages": [
           "docs/index",
+          "docs/statement",
+          "docs/analytics",
+          "docs/directions",
           "docs/overview",
           "docs/problem",
           "docs/rubric",
@@ -83,16 +92,21 @@
       {
         "group": "Solutions",
         "pages": [
-          "solutions/lisar/livepeer-lisar-spe-delegation-analysis",
+          "solutions/index",
+          "solutions/lisar/index",
           "solutions/ydol/index",
-          "solutions/tenderize/index",
-          "solutions/delegator-tiers/index"
+          "solutions/tenderize/index"
         ]
       },
       {
         "group": "Research",
         "pages": [
           "research/index",
+          "research/delegation-board",
+          "research/delegator-band-timeseries",
+          "research/delegator-outflows-by-size-band",
+          "research/delegator-stake-distribution",
+          "research/arbitrum-bridge-out-decode",
           "research/livepeer-delegator-outflows-research",
           "research/livepeer-delegator-incentives",
           "research/cross-protocol-tokenomics-experiments"

@@ -9,10 +9,12 @@ This doc is the shared baseline for all proposal reviews.
 
 ## Goals (primary)
 
-1) Increase **net-new delegators** (especially small delegators).
-2) Increase **net-new delegated stake** (not just reshuffling existing LPT).
+1) Increase **net-new delegated stake** (not just reshuffling existing LPT).
+2) Increase the number of **independent stake decision-makers** in meaningful stake brackets — especially **`1k–10k`** and **`10k+`**.
 3) Improve **retention** (reduce fast churn/unbond/withdraw patterns).
-4) Improve **decentralization** (avoid concentrating new stake to a small set of orchestrators).
+4) Improve **decentralization** (avoid concentrating new stake to a small set of orchestrators/delegates).
+
+Note: “small delegators” matter for community participation, but current on-chain distributions show they are **economically negligible by stake**, so a strategy that only optimizes for “more small addresses” will not move security metrics.
 
 ## Constraints / realities
 
@@ -24,8 +26,11 @@ This doc is the shared baseline for all proposal reviews.
 
 - **New delegators (first-time bonders)**: daily/weekly/monthly
 - **Net stake change**: net bond − unbond − withdraw
+- **Bracket distribution**: active wallet counts + bonded LPT in `1k–10k` and `10k+` (and how that changes)
 - **Retention**: % of new delegators still bonded at 30/90/180 days
-- **Concentration**: top-1/top-5 share of the solution’s bonded stake
+- **Concentration**:
+  - delegators (top-N share of bonded stake)
+  - delegates/orchestrators (top-N share, Nakamoto 33/50)
 - **Sybil risk proxies**: funding clustering, common senders, fast-exit cohorts
 
 ## Common failure mode (call it out explicitly)
