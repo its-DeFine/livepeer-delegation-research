@@ -1,10 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <rect x="0" y="0" width="48" height="48" rx="12" fill="#FFFFFF"/>
   <path d="M18 14v20h14v4H14V14h4z" fill="#00E7AB"/>
   <path d="M34 14h4v24h-4V14z" fill="#0B0F1A" opacity="0.9"/>
-  <path d="M62.8 17.5h10.1c3.4 0 5.9 1.9 5.9 5.2 0 3.4-2.5 5.3-5.9 5.3h-6.1v8h-4V17.5zm4 3.3v4.3h5.7c1.7 0 2.6-.8 2.6-2.1 0-1.4-.9-2.2-2.6-2.2h-5.7z" fill="#0B0F1A"/>
-  <path d="M83.1 17.5h4v18.5h-4V17.5z" fill="#0B0F1A"/>
-  <path d="M100.1 17.5h4.4l7.2 18.5h-4.3l-1.4-3.7h-7.4l-1.4 3.7h-4.1l7-18.5zm-0.2 11.6h4.9l-2.4-6.7-2.5 6.7z" fill="#0B0F1A"/>
-  <path d="M115.8 17.5h4v15.2h9.3v3.3h-13.3V17.5z" fill="#0B0F1A"/>
 </svg>
-
