@@ -5,7 +5,7 @@
     "unknown_eoa": "7720639.863307677266813006"
   },
   "eth_rpc": "https://rpc.flashbots.net",
-  "generated_at_utc": "2026-01-20T21:33:22.071726+00:00",
+  "generated_at_utc": "2026-01-20T23:35:04.404731+00:00",
   "inputs": {
     "bridged_recipients": 10,
     "max_recipients": 0
@@ -14,7 +14,7 @@
   "lpt_token_l1": "0x58b6a8a3302369daec383334672404ee733ab239",
   "range": {
     "from_block": 14600000,
-    "to_block": 24278701
+    "to_block": 24279306
   },
   "recipients": [
     {

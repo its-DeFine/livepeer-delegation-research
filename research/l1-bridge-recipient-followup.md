@@ -1,10 +1,16 @@
-# Livepeer — L1 follow-up for Arbitrum bridge-out recipients (LPT)
+---
+title: L1 follow-up (bridge-outs)
+description: Where major Arbitrum bridge-out recipients route LPT on Ethereum L1 (contracts vs EOAs vs labeled endpoints).
+sidebar_label: L1 follow-up (bridge-outs)
+---
 
-- Generated: `2026-01-20T21:33:22.071726+00:00`
+# L1 follow-up for Arbitrum bridge-outs (LPT)
+
+- Generated: `2026-01-20T23:35:04.404731+00:00`
 - L1 RPC: `https://rpc.flashbots.net`
 - L1 LPT token: `0x58b6a8a3302369daec383334672404ee733ab239`
 - Inputs: `research/arbitrum-bridge-out-decode.json` + `data/labels.json`
-- L1 block range: `14600000` → `24278701`
+- L1 block range: `14600000` → `24279306`
 - Unique recipients analyzed: **10**
 - Total bridged (decoded on L2): **7,747,306.224 LPT**
 - Total outgoing on L1 (transfers from recipients): **9,133,234.864 LPT**
@@ -43,7 +49,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 
 ## Recipients (top destinations)
 
-### `0x3d6182c59dbbbbc648570762da316ac8404816ae`
+Tip: expand only the wallets you care about.
+
+<details>
+<summary><code>0x3d6182c59dbbbbc648570762da316ac8404816ae</code> — bridged <b>1,728,346.916 LPT</b>, outgoing <b>1,728,459.008 LPT</b> (39 txs)</summary>
 
 - Bridged (decoded on L2): **1,728,346.916 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -59,7 +68,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 | `0x582c390093e9d401504a03c4b2e0247052df29c4` |  | unknown_eoa | 0.000 | 1 |
 | `0x440fef576863b530fc4735d0ea0b7b682d25b69a` |  | unknown_eoa | 0.000 | 3 |
 
-### `0xc5519fd1129d6d22744e0ac491401fff45d26528`
+</details>
+
+<details>
+<summary><code>0xc5519fd1129d6d22744e0ac491401fff45d26528</code> — bridged <b>1,159,397.506 LPT</b>, outgoing <b>1,118,331.056 LPT</b> (107 txs)</summary>
 
 - Bridged (decoded on L2): **1,159,397.506 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -77,7 +89,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 | `0x440f4d5747334c36576c186a455f3bd19d5ab69a` |  | unknown_eoa | 0.000 | 22 |
 | `0x44088af6295472c4fb4fd15126905f95ce78b69a` |  | unknown_eoa | 0.000 | 7 |
 
-### `0x962b029508b1054e2af4184bbaeb5d0c796f7526`
+</details>
+
+<details>
+<summary><code>0x962b029508b1054e2af4184bbaeb5d0c796f7526</code> — bridged <b>1,051,858.717 LPT</b>, outgoing <b>1,864,375.700 LPT</b> (10 txs)</summary>
 
 - Bridged (decoded on L2): **1,051,858.717 LPT**
 - Current L1 LPT balance: **0.017 LPT**
@@ -91,7 +106,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 | `0xd8b9860df113459cecf6a4d55e37aa0fb33d9997` |  | unknown_eoa | 0.000 | 3 |
 | `0xd8b9b50defd126e98322fc0e679382021f469997` |  | unknown_eoa | 0.000 | 3 |
 
-### `0xe806c101a71522753ea6ea496bafe7b8d61e3baa`
+</details>
+
+<details>
+<summary><code>0xe806c101a71522753ea6ea496bafe7b8d61e3baa</code> — bridged <b>812,508.000 LPT</b>, outgoing <b>812,508.000 LPT</b> (2 txs)</summary>
 
 - Bridged (decoded on L2): **812,508.000 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -101,7 +119,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 |---|---|---|---:|---:|
 | `0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d` |  | unknown_eoa | 812,508.000 | 2 |
 
-### `0xef83273cbd014c4ae7998467c422275a8b37827e`
+</details>
+
+<details>
+<summary><code>0xef83273cbd014c4ae7998467c422275a8b37827e</code> — bridged <b>621,439.059 LPT</b>, outgoing <b>621,439.059 LPT</b> (3 txs)</summary>
 
 - Bridged (decoded on L2): **621,439.059 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -112,7 +133,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 | `0x6c78ae1d2a5ffdf7917d65e8586015d0933fc7ea` |  | unknown_eoa | 621,439.059 | 2 |
 | `0x6c709951b72320aef8fd431270edf159170fc7ea` |  | unknown_eoa | 0.000 | 1 |
 
-### `0x543df23b9a881fbdbdec7ab3e90f3ff7b905068b`
+</details>
+
+<details>
+<summary><code>0x543df23b9a881fbdbdec7ab3e90f3ff7b905068b</code> — bridged <b>588,040.990 LPT</b>, outgoing <b>588,040.990 LPT</b> (1 txs)</summary>
 
 - Bridged (decoded on L2): **588,040.990 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -122,7 +146,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 |---|---|---|---:|---:|
 | `0xde346728906a36bfd06f28e9ee35005e2fde51ae` |  | unknown_eoa | 588,040.990 | 1 |
 
-### `0x86abf78ac7ef44423873dabff35fe3e462b1ff6e`
+</details>
+
+<details>
+<summary><code>0x86abf78ac7ef44423873dabff35fe3e462b1ff6e</code> — bridged <b>501,070.896 LPT</b>, outgoing <b>515,461.911 LPT</b> (69 txs)</summary>
 
 - Bridged (decoded on L2): **501,070.896 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -137,7 +164,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 | `0xa87e8a6e61eab27819fadc3abb5fb33190122ac5` |  | unknown_eoa | 0.000 | 24 |
 | `0xa87ed76868a18527e580c52bcd9c98887157fac5` |  | unknown_eoa | 0.000 | 23 |
 
-### `0x8d37a11a65b4f2c541af1312bc44f74a078160c7`
+</details>
+
+<details>
+<summary><code>0x8d37a11a65b4f2c541af1312bc44f74a078160c7</code> — bridged <b>455,737.253 LPT</b>, outgoing <b>455,737.253 LPT</b> (1 txs)</summary>
 
 - Bridged (decoded on L2): **455,737.253 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -147,7 +177,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 |---|---|---|---:|---:|
 | `0xc60a78732f4f2275fb40d12021b6407f92626116` |  | unknown_eoa | 455,737.253 | 1 |
 
-### `0xadc6e5cbde4fbac7baf58a336edeab8590625baf`
+</details>
+
+<details>
+<summary><code>0xadc6e5cbde4fbac7baf58a336edeab8590625baf</code> — bridged <b>441,048.903 LPT</b>, outgoing <b>441,048.903 LPT</b> (2 txs)</summary>
 
 - Bridged (decoded on L2): **441,048.903 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -157,7 +190,10 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 |---|---|---|---:|---:|
 | `0x964feae75fd7a02ef728038741dd376eab020754` |  | unknown_eoa | 441,048.903 | 2 |
 
-### `0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092`
+</details>
+
+<details>
+<summary><code>0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092</code> — bridged <b>387,857.984 LPT</b>, outgoing <b>987,832.984 LPT</b> (74 txs)</summary>
 
 - Bridged (decoded on L2): **387,857.984 LPT**
 - Current L1 LPT balance: **0.000 LPT**
@@ -173,3 +209,5 @@ Interpretation: in this sample, we do not observe whales routing bridged LPT to 
 | `0x440f2e9422df3b52627e281b7e9179a28851069a` |  | unknown_eoa | 0.000 | 1 |
 | `0x440f4d5747334c36576c186a455f3bd19d5ab69a` |  | unknown_eoa | 0.000 | 4 |
 | `0x440f69ce84c54a967ecd7211923f4d88a657b69a` |  | unknown_eoa | 0.000 | 4 |
+
+</details>

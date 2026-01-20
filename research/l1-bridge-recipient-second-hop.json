@@ -244,7 +244,7 @@
     "unknown_eoa": "5294063.797503110182967815"
   },
   "eth_rpc": "https://rpc.flashbots.net",
-  "generated_at_utc": "2026-01-20T21:45:48.029620+00:00",
+  "generated_at_utc": "2026-01-20T23:35:24.169614+00:00",
   "inputs": {
     "in_json": "research/l1-bridge-recipient-followup.json",
     "labels_json": "data/labels.json"
@@ -252,7 +252,7 @@
   "lpt_token_l1": "0x58b6a8a3302369daec383334672404ee733ab239",
   "range": {
     "from_block": 14600000,
-    "to_block": 24278701
+    "to_block": 24279306
   },
   "selection": {
     "max_addresses": 20,

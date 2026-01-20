@@ -36,8 +36,14 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Outflows + retention research" href="/research/livepeer-delegator-outflows-research">
     Who exits, when they exit, and what happens after withdraw (including “cashout” bounds).
   </Card>
+  <Card title="Cashout routing (bridge-outs → exchanges)" href="/research/l1-bridge-recipient-second-hop">
+    Follows Arbitrum bridge-outs to L1 recipients and one hop further to labeled exchange endpoints (best-effort).
+  </Card>
   <Card title="Incentives + tokenomics notes" href="/research/livepeer-delegator-incentives">
     Design space for small-delegator growth (and what is sybilable vs sybil-neutral).
+  </Card>
+  <Card title="Rewards vs withdrawals (time series)" href="/research/rewards-withdraw-timeseries">
+    Monthly/yearly LPT rewards claimed vs `WithdrawStake` (sell-pressure proxy; includes principal).
   </Card>
   <Card title="Solutions: Lisar" href="/solutions/lisar">
     Treasury program outcomes + KPI alignment vs the stated goals.
