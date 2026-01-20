@@ -11,6 +11,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Outflows + retention" href="/research/livepeer-delegator-outflows-research">
     Delegation exits, dormancy proxies, retention curves, and post-withdraw destination classification.
   </Card>
+  <Card title="Reflexivity + yield extraction" href="/research/reflexivity-and-yield-extraction">
+    LPT inflation rewards, reward withdrawals, and how delta-neutral staking can create structural sell pressure.
+  </Card>
   <Card title="Incentives + tokenomics" href="/research/livepeer-delegator-incentives">
     Design patterns to grow small delegators without enabling easy sybil farming.
   </Card>

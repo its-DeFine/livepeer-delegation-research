@@ -25,6 +25,9 @@ This page is the “metrics jump table” for stakeholders.
   <Card title="Bridge-out decode (Arbitrum → L1 recipients)" href="/research/arbitrum-bridge-out-decode">
     Shows that major “whale exits” often bridge to L1 (and mostly to self), which is not the same as selling.
   </Card>
+  <Card title="Reflexivity + yield extraction (delta-neutral thesis)" href="/research/reflexivity-and-yield-extraction">
+    Evidence-backed look at inflation rewards, reward withdrawals, and why delta-neutral staking can create structural sell pressure.
+  </Card>
   <Card title="Deep dive: outflows + retention evidence pack" href="/research/livepeer-delegator-outflows-research">
     The longer-form research notes, methodology, and artifacts behind churn/cashout claims.
   </Card>
@@ -43,4 +46,3 @@ This page is the “metrics jump table” for stakeholders.
     Evidence of many small stake participants, and why it doesn’t increase protocol delegator count directly.
   </Card>
 </CardGroup>
-

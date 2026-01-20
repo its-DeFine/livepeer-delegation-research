@@ -21,11 +21,13 @@ Note: “small delegators” matter for community participation, but current on-
 - Arbitrum environment: low fees help, but sybil is still cheap.
 - Delegation incentives are **sybil-sensitive** when rewards scale by “# of accounts”.
 - Many proposals increase “delegation count” while decreasing security if they over-concentrate stake or can be farmed.
+- A material share of LPT rewards appears to be **withdrawn and bridged/transferred out** (see `/research/reflexivity-and-yield-extraction`), so “more LPT incentives” can translate into **more structural sell pressure** unless retention-gated or tied to real fee growth.
 
 ## Canonical metrics (must be reported for any solution)
 
 - **New delegators (first-time bonders)**: daily/weekly/monthly
 - **Net stake change**: net bond − unbond − withdraw
+- **Rewards issuance vs withdrawal**: LPT rewards claimed vs withdrawn (upper-bound + conservative proxy)
 - **Bracket distribution**: active wallet counts + bonded LPT in `1k–10k` and `10k+` (and how that changes)
 - **Retention**: % of new delegators still bonded at 30/90/180 days
 - **Concentration**:

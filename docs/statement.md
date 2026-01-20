@@ -13,6 +13,7 @@ This is the short version of what the on-chain data implies Livepeer should opti
 2) **Small delegators are plentiful by count but negligible by stake**, so “more small accounts” is not a meaningful security lever by itself.
 3) **Security-relevant growth is bracket growth**: attracting and retaining more independent participants in the **`1k–10k`** and **`10k+`** bands (and improving delegate/orchestrator decentralization).
 4) Therefore, the core strategy is **LPT utility + liquidity + UX**, not pure “reward boosts” that can be sybil’d.
+5) A meaningful share of LPT inflation rewards appears to be **withdrawn and routed off-chain/cross-chain**, so inflation-heavy programs can create **structural sell pressure** unless retention-gated or paired with real fee growth.
 
 ## The numbers that drive this conclusion
 
@@ -34,6 +35,10 @@ If the goal is **bonded stake + decentralization**, then:
 - pair any incentives with **retention hooks** (time/vesting/forfeit),
 - avoid “pay more per small address” designs unless there’s a credible **uniqueness primitive** (or a real cost to splitting).
 
+If the goal is also “long-term investor confidence”, then:
+- measure and publish **rewards claimed vs rewards withdrawn** (upper bound + conservative proxy),
+- treat “delta-neutral yield extraction” as a plausible market behavior and design around it (see `/research/reflexivity-and-yield-extraction`).
+
 ## Read next
 
 <CardGroup cols={2}>
@@ -44,4 +49,3 @@ If the goal is **bonded stake + decentralization**, then:
     A stakeholder-friendly set of next-step directions, with what to measure.
   </Card>
 </CardGroup>
-
