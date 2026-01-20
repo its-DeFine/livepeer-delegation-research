@@ -14,6 +14,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Reflexivity + yield extraction" href="/research/reflexivity-and-yield-extraction">
     LPT inflation rewards, reward withdrawals, and how delta-neutral staking can create structural sell pressure.
   </Card>
+  <Card title="L1 follow-up for bridge-outs" href="/research/l1-bridge-recipient-followup">
+    Tracks where the Arbitrum bridge-out recipients route LPT on Ethereum L1 (contracts vs EOAs vs known DEX routers).
+  </Card>
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed vs stake withdrawn via `WithdrawStake`.
   </Card>

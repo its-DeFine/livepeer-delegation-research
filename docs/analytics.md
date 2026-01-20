@@ -25,6 +25,9 @@ This page is the “metrics jump table” for stakeholders.
   <Card title="Bridge-out decode (Arbitrum → L1 recipients)" href="/research/arbitrum-bridge-out-decode">
     Shows that major “whale exits” often bridge to L1 (and mostly to self), which is not the same as selling.
   </Card>
+  <Card title="L1 follow-up (post-bridge destinations)" href="/research/l1-bridge-recipient-followup">
+    After bridge-outs land on Ethereum L1, this tracks where the L1 recipients send LPT next (DEX vs contracts vs EOAs).
+  </Card>
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed and LPT withdrawn via `WithdrawStake` (a rough upper bound for liquidity exits).
   </Card>

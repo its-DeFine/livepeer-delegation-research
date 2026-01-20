@@ -1,0 +1,651 @@
+{
+  "bridge_decode_json": "research/arbitrum-bridge-out-decode.json",
+  "category_totals": {
+    "livepeer_contract": "1412595.0003146299999999",
+    "unknown_eoa": "7720639.863307677266813006"
+  },
+  "eth_rpc": "https://rpc.flashbots.net",
+  "generated_at_utc": "2026-01-20T21:33:22.071726+00:00",
+  "inputs": {
+    "bridged_recipients": 10,
+    "max_recipients": 0
+  },
+  "labels_json": "data/labels.json",
+  "lpt_token_l1": "0x58b6a8a3302369daec383334672404ee733ab239",
+  "range": {
+    "from_block": 14600000,
+    "to_block": 24278701
+  },
+  "recipients": [
+    {
+      "bridged_lpt": "1728346.916258072573990669",
+      "category_totals_lpt": {
+        "livepeer_contract": "111.9999999999999999",
+        "unknown_eoa": "1728347.007658072573990669"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "1728459.007658072573990569",
+      "outgoing_tx_count": 39,
+      "rank": 1,
+      "recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "top_destinations": [
+        {
+          "amount_lpt": "1170000.1",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xde346728906a36bfd06f28e9ee35005e2fde51ae",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "383837.37",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+          "tx_count": 18
+        },
+        {
+          "amount_lpt": "171661.987658072573990669",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+          "tx_count": 11
+        },
+        {
+          "amount_lpt": "2847.55",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x582c45936c34c699360f85147777ce7760b629c4",
+          "tx_count": 3
+        },
+        {
+          "amount_lpt": "111.9999999999999999",
+          "category": "livepeer_contract",
+          "label": "Livepeer: L1 Escrow",
+          "to": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x582c390093e9d401504a03c4b2e0247052df29c4",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440fef576863b530fc4735d0ea0b7b682d25b69a",
+          "tx_count": 3
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "1159397.5059",
+      "category_totals_lpt": {
+        "livepeer_contract": "1",
+        "unknown_eoa": "1118330.0559"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "1118331.0559",
+      "outgoing_tx_count": 107,
+      "rank": 2,
+      "recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "top_destinations": [
+        {
+          "amount_lpt": "1118330.0559",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+          "tx_count": 26
+        },
+        {
+          "amount_lpt": "1",
+          "category": "livepeer_contract",
+          "label": "Livepeer: L1 Escrow",
+          "to": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f64f3e87e4de248da2a3fcfe0c217963eb69a",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f2e9422df3b52627e281b7e9179a28851069a",
+          "tx_count": 10
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f69ce84c54a967ecd7211923f4d88a657b69a",
+          "tx_count": 29
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f6723f73e0d1004374109c9dfcd921d21b69a",
+          "tx_count": 9
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x4404a9cd59f4f0916c0e62a98fc890b17f6fb69a",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f4d5747334c36576c186a455f3bd19d5ab69a",
+          "tx_count": 22
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x44088af6295472c4fb4fd15126905f95ce78b69a",
+          "tx_count": 7
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "1051858.716542152695221509",
+      "category_totals_lpt": {
+        "livepeer_contract": "812507",
+        "unknown_eoa": "1051868.7"
+      },
+      "current_balance_lpt": "0.016542152695221509",
+      "outgoing_lpt": "1864375.7",
+      "outgoing_tx_count": 10,
+      "rank": 3,
+      "recipient": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+      "top_destinations": [
+        {
+          "amount_lpt": "1051858.7",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xd8b9f62de8b8217ab997df060a47c020c81f9997",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "812507",
+          "category": "livepeer_contract",
+          "label": "Livepeer: L1 Escrow",
+          "to": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "10",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xd8b9860df113459cecf6a4d55e37aa0fb33d9997",
+          "tx_count": 3
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xd8b9b50defd126e98322fc0e679382021f469997",
+          "tx_count": 3
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "812508",
+      "category_totals_lpt": {
+        "unknown_eoa": "812508"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "812508",
+      "outgoing_tx_count": 2,
+      "rank": 4,
+      "recipient": "0xe806c101a71522753ea6ea496bafe7b8d61e3baa",
+      "top_destinations": [
+        {
+          "amount_lpt": "812508",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+          "tx_count": 2
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "621439.059193238227204479",
+      "category_totals_lpt": {
+        "unknown_eoa": "621439.059193238227204479"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "621439.059193238227204479",
+      "outgoing_tx_count": 3,
+      "rank": 5,
+      "recipient": "0xef83273cbd014c4ae7998467c422275a8b37827e",
+      "top_destinations": [
+        {
+          "amount_lpt": "621439.059193238227204479",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x6c78ae1d2a5ffdf7917d65e8586015d0933fc7ea",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x6c709951b72320aef8fd431270edf159170fc7ea",
+          "tx_count": 1
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "588040.989627615274485149",
+      "category_totals_lpt": {
+        "unknown_eoa": "588040.989627615274485149"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "588040.989627615274485149",
+      "outgoing_tx_count": 1,
+      "rank": 6,
+      "recipient": "0x543df23b9a881fbdbdec7ab3e90f3ff7b905068b",
+      "top_destinations": [
+        {
+          "amount_lpt": "588040.989627615274485149",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xde346728906a36bfd06f28e9ee35005e2fde51ae",
+          "tx_count": 1
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "501070.896347",
+      "category_totals_lpt": {
+        "unknown_eoa": "515461.910647"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "515461.910647",
+      "outgoing_tx_count": 69,
+      "rank": 7,
+      "recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "top_destinations": [
+        {
+          "amount_lpt": "501070.896347",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+          "tx_count": 18
+        },
+        {
+          "amount_lpt": "14391.0143",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x7c9342a4c5a638483f0b7546fccdfc491ddd5c1a",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xa874c016eae586fcb6ed5b39adf2d22e4807fac5",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xa87e963c5d2eec7a9d4a11a4a461b1cfeb67fac5",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xa87e8a6e61eab27819fadc3abb5fb33190122ac5",
+          "tx_count": 24
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xa87ed76868a18527e580c52bcd9c98887157fac5",
+          "tx_count": 23
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "455737.252741112597248574",
+      "category_totals_lpt": {
+        "unknown_eoa": "455737.252741112597248574"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "455737.252741112597248574",
+      "outgoing_tx_count": 1,
+      "rank": 8,
+      "recipient": "0x8d37a11a65b4f2c541af1312bc44f74a078160c7",
+      "top_destinations": [
+        {
+          "amount_lpt": "455737.252741112597248574",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0xc60a78732f4f2275fb40d12021b6407f92626116",
+          "tx_count": 1
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "441048.903440638593884135",
+      "category_totals_lpt": {
+        "unknown_eoa": "441048.903440638593884135"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "441048.903440638593884135",
+      "outgoing_tx_count": 2,
+      "rank": 9,
+      "recipient": "0xadc6e5cbde4fbac7baf58a336edeab8590625baf",
+      "top_destinations": [
+        {
+          "amount_lpt": "441048.903440638593884135",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x964feae75fd7a02ef728038741dd376eab020754",
+          "tx_count": 2
+        }
+      ]
+    },
+    {
+      "bridged_lpt": "387857.9841",
+      "category_totals_lpt": {
+        "livepeer_contract": "599975.00031463",
+        "unknown_eoa": "387857.9841"
+      },
+      "current_balance_lpt": "0",
+      "outgoing_lpt": "987832.98441463",
+      "outgoing_tx_count": 74,
+      "rank": 10,
+      "recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "top_destinations": [
+        {
+          "amount_lpt": "599975.00031463",
+          "category": "livepeer_contract",
+          "label": "Livepeer: L1 Escrow",
+          "to": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "377495.1141",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+          "tx_count": 52
+        },
+        {
+          "amount_lpt": "10362.87",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+          "tx_count": 2
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440fef576863b530fc4735d0ea0b7b682d25b69a",
+          "tx_count": 4
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f64f3e87e4de248da2a3fcfe0c217963eb69a",
+          "tx_count": 6
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f2e9422df3b52627e281b7e9179a28851069a",
+          "tx_count": 1
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f4d5747334c36576c186a455f3bd19d5ab69a",
+          "tx_count": 4
+        },
+        {
+          "amount_lpt": "0",
+          "category": "unknown_eoa",
+          "label": "",
+          "to": "0x440f69ce84c54a967ecd7211923f4d88a657b69a",
+          "tx_count": 4
+        }
+      ]
+    }
+  ],
+  "top_destinations": [
+    {
+      "amount_lpt": "1879662.54",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+      "tx_count": 96
+    },
+    {
+      "amount_lpt": "1758041.089627615274485149",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xde346728906a36bfd06f28e9ee35005e2fde51ae",
+      "tx_count": 3
+    },
+    {
+      "amount_lpt": "1412595.0003146299999999",
+      "category": "livepeer_contract",
+      "label": "Livepeer: L1 Escrow",
+      "to": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+      "tx_count": 4
+    },
+    {
+      "amount_lpt": "1051858.7",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xd8b9f62de8b8217ab997df060a47c020c81f9997",
+      "tx_count": 2
+    },
+    {
+      "amount_lpt": "812508",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+      "tx_count": 2
+    },
+    {
+      "amount_lpt": "621439.059193238227204479",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x6c78ae1d2a5ffdf7917d65e8586015d0933fc7ea",
+      "tx_count": 2
+    },
+    {
+      "amount_lpt": "501070.896347",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+      "tx_count": 18
+    },
+    {
+      "amount_lpt": "455737.252741112597248574",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xc60a78732f4f2275fb40d12021b6407f92626116",
+      "tx_count": 1
+    },
+    {
+      "amount_lpt": "441048.903440638593884135",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x964feae75fd7a02ef728038741dd376eab020754",
+      "tx_count": 2
+    },
+    {
+      "amount_lpt": "182024.857658072573990669",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+      "tx_count": 13
+    },
+    {
+      "amount_lpt": "14391.0143",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x7c9342a4c5a638483f0b7546fccdfc491ddd5c1a",
+      "tx_count": 2
+    },
+    {
+      "amount_lpt": "2847.55",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x582c45936c34c699360f85147777ce7760b629c4",
+      "tx_count": 3
+    },
+    {
+      "amount_lpt": "10",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+      "tx_count": 1
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x582c390093e9d401504a03c4b2e0247052df29c4",
+      "tx_count": 1
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x440fef576863b530fc4735d0ea0b7b682d25b69a",
+      "tx_count": 7
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x440f64f3e87e4de248da2a3fcfe0c217963eb69a",
+      "tx_count": 8
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x440f2e9422df3b52627e281b7e9179a28851069a",
+      "tx_count": 11
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x440f69ce84c54a967ecd7211923f4d88a657b69a",
+      "tx_count": 33
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x440f6723f73e0d1004374109c9dfcd921d21b69a",
+      "tx_count": 9
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x4404a9cd59f4f0916c0e62a98fc890b17f6fb69a",
+      "tx_count": 1
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x440f4d5747334c36576c186a455f3bd19d5ab69a",
+      "tx_count": 26
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x44088af6295472c4fb4fd15126905f95ce78b69a",
+      "tx_count": 7
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xd8b9860df113459cecf6a4d55e37aa0fb33d9997",
+      "tx_count": 3
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xd8b9b50defd126e98322fc0e679382021f469997",
+      "tx_count": 3
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0x6c709951b72320aef8fd431270edf159170fc7ea",
+      "tx_count": 1
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xa874c016eae586fcb6ed5b39adf2d22e4807fac5",
+      "tx_count": 1
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xa87e963c5d2eec7a9d4a11a4a461b1cfeb67fac5",
+      "tx_count": 1
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xa87e8a6e61eab27819fadc3abb5fb33190122ac5",
+      "tx_count": 24
+    },
+    {
+      "amount_lpt": "0",
+      "category": "unknown_eoa",
+      "label": "",
+      "to": "0xa87ed76868a18527e580c52bcd9c98887157fac5",
+      "tx_count": 23
+    }
+  ],
+  "totals": {
+    "bridged_lpt": "7747306.224149829962034515",
+    "outgoing_lpt": "9133234.863622307266812906"
+  }
+}

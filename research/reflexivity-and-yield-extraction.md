@@ -55,7 +55,7 @@ When that net is meaningfully positive, you can get:
    - compare it to realized on-chain sell proxies (withdraw → bridge / withdraw → known DEX pools) and DEX liquidity depth (slippage curves).
 2) **Label destinations better**:
    - trace Arbitrum bridge-outs to L1 recipients and then follow L1 transfers to known CEX / DEX endpoints (sample-based is fine at first).
-   - maintain a public `labels.json` for known exchange / bridge / protocol contracts.
+   - initial implementation: `/research/l1-bridge-recipient-followup` + `data/labels.json` (shows dominant L1 routing is to EOAs + Livepeer `L1 Escrow`, not labeled DEX routers).
 3) **Assess borrow/short feasibility**:
    - if LPT is lendable on major DeFi markets (Arbitrum or mainnet), analyze borrow rates and top borrower concentration,
    - otherwise treat it as primarily a CEX-derivatives phenomenon and incorporate off-chain data (funding/borrow rates, OI).

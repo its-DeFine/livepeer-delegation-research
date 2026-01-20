@@ -1,0 +1,38 @@
+{
+  "0x0000000000000000000000000000000000000000": {
+    "category": "burn",
+    "name": "Zero address"
+  },
+  "0x58b6a8a3302369daec383334672404ee733ab239": {
+    "category": "token",
+    "name": "LPT (Ethereum L1)"
+  },
+  "0x7a250d5630b4cf539739df2c5dacb4c659f2488d": {
+    "category": "dex_router",
+    "name": "Uniswap V2 Router"
+  },
+  "0xe592427a0aece92de3edee1f18e0157c05861564": {
+    "category": "dex_router",
+    "name": "Uniswap V3 SwapRouter"
+  },
+  "0xdef1c0ded9bec7f1a1670819833240f027b25eff": {
+    "category": "dex_router",
+    "name": "0x Exchange Proxy"
+  },
+  "0x1111111254eeb25477b68fb85ed929f73a960582": {
+    "category": "dex_router",
+    "name": "1inch Aggregation Router"
+  },
+  "0x9008d19f58aabd9ed0d60971565aa8510560ab41": {
+    "category": "dex_router",
+    "name": "CoW Protocol Settlement"
+  },
+  "0xf977814e90da44bfa03b6295a0616a897441acec": {
+    "category": "exchange",
+    "name": "Binance (public label; best-effort)"
+  },
+  "0x6a23f4940bd5ba117da261f98aae51a8bffa210a": {
+    "category": "livepeer_contract",
+    "name": "Livepeer: L1 Escrow"
+  }
+}
