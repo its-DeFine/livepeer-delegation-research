@@ -37,6 +37,9 @@ This page is the “metrics jump table” for stakeholders.
   <Card title="Reflexivity + yield extraction (delta-neutral thesis)" href="/research/reflexivity-and-yield-extraction">
     Evidence-backed look at inflation rewards, reward withdrawals, and why delta-neutral staking can create structural sell pressure.
   </Card>
+  <Card title="Extraction fingerprints (on-chain proxies)" href="/research/extraction-fingerprints">
+    A proxy dashboard for systematic extraction: top withdrawers, claim cadence proxies, post-withdraw routing, and “still bonded” cases.
+  </Card>
   <Card title="Deep dive: outflows + retention evidence pack" href="/research/livepeer-delegator-outflows-research">
     The longer-form research notes, methodology, and artifacts behind churn/cashout claims.
   </Card>

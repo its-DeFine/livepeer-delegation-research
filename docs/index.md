@@ -48,6 +48,9 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Reflexivity + yield extraction (mitigations)" href="/research/reflexivity-and-yield-extraction">
     Delta-neutral extraction thesis + mitigation primitives (escrow/vesting, reward-only exit locks/penalties).
   </Card>
+  <Card title="Extraction fingerprints (on-chain proxies)" href="/research/extraction-fingerprints">
+    Top-50 “cashout-heavy” wallets: rewards claimed vs withdrawn, post-withdraw routing, and which wallets remain bonded.
+  </Card>
   <Card title="Solutions: Lisar" href="/solutions/lisar">
     Treasury program outcomes + KPI alignment vs the stated goals.
   </Card>

@@ -23,6 +23,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed vs stake withdrawn via `WithdrawStake`.
   </Card>
+  <Card title="Extraction fingerprints (on-chain proxies)" href="/research/extraction-fingerprints">
+    Top-50 “cashout-heavy” wallets: rewards claimed vs withdrawn, post-withdraw routing, and whether they remain bonded.
+  </Card>
   <Card title="Incentives + tokenomics" href="/research/livepeer-delegator-incentives">
     Design patterns to grow small delegators without enabling easy sybil farming.
   </Card>

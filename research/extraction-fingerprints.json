@@ -1,0 +1,1280 @@
+{
+  "generated_from": {
+    "bonded_cache_json": "artifacts/delegator-bonded-amounts-cache.json",
+    "bridge_decode_json": "research/arbitrum-bridge-out-decode.json",
+    "earnings_json": "research/earnings-report.json",
+    "outflow_json": "research/outflow-destination-classification-top50.json"
+  },
+  "notes": [
+    "This is a proxy/fingerprint report. It does not prove delta-neutral hedging, which is often off-chain.",
+    "Claim cadence is estimated from first/last claim day and claim event count (not exact per-claim timing).",
+    "Post-withdraw routing is based on the outflow classification artifact for the same top50 cohort."
+  ],
+  "totals": {
+    "archetypes": {
+      "exiter": 28,
+      "mixed": 10,
+      "still bonded (large)": 4,
+      "still bonded (mid)": 8
+    },
+    "proxy_rewards_withdrawn_lpt_total_top50": "5329277.600117",
+    "still_bonded_counts": {
+      "ge_100k": 4,
+      "ge_10k": 12,
+      "ge_1m": 0
+    },
+    "wallets": 50
+  },
+  "wallets": [
+    {
+      "address": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "34.4",
+      "bridge_out_decoded": {
+        "burn_total_lpt": "1728346.9162580725",
+        "self_recipient_share": "1.0"
+      },
+      "claim_events": 31,
+      "claim_span_days": 1032,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "1712730.446258",
+        "bridge_or_burn_share": "0.597813462191072138609052222091855307561411715662574424748282",
+        "contract_interaction_lpt": "62874.900000",
+        "contract_interaction_share": "0.0219459295162523150432961943607749559047151234314522711843537",
+        "direct_transfer_lpt": "1089386.084314",
+        "direct_transfer_share": "0.380240608292675546347651583547369736533873160905973304067364",
+        "total_out_lpt": "2864991.430572"
+      },
+      "proxy_rewards_withdrawn_lpt": "912011.798820",
+      "rank": 1,
+      "rewards_claimed_lpt": "912011.798820",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "2798314.074314"
+    },
+    {
+      "address": "0x1d97640e2e54a2b28201da4e5ec8cf3785efd871",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "94.8181818181818181818181818181818181818181818181818181818182",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 12,
+      "claim_span_days": 1043,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "31879.740000",
+        "bridge_or_burn_share": "0.0257298760386864578056319847900445389775946733045875625383953",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "1207136.722888",
+        "direct_transfer_share": "0.974270123961313542194368015209955461022405326695412437461605",
+        "total_out_lpt": "1239016.462888"
+      },
+      "proxy_rewards_withdrawn_lpt": "634144.154622",
+      "rank": 2,
+      "rewards_claimed_lpt": "634144.154622",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "1239016.448888"
+    },
+    {
+      "address": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "0.919334186939820742637644046094750320102432778489116517285531",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 782,
+      "claim_span_days": 718,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "310889.981689",
+        "contract_interaction_share": "0.747529383675997365868830138796673811598966467548330056691605",
+        "direct_transfer_lpt": "105000.000000",
+        "direct_transfer_share": "0.252470616324002634131169861203326188401033532451669943308395",
+        "total_out_lpt": "415889.981689"
+      },
+      "proxy_rewards_withdrawn_lpt": "293837.167098",
+      "rank": 3,
+      "rewards_claimed_lpt": "293837.167098",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "421890.981689"
+    },
+    {
+      "address": "0x60b8eb0947d25194afa248b81a087214beec5cfe",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "329",
+      "bridge_out_decoded": {
+        "burn_total_lpt": "812508.0",
+        "self_recipient_share": "0"
+      },
+      "claim_events": 3,
+      "claim_span_days": 658,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "812508.000000",
+        "bridge_or_burn_share": "0.999981538984127218552582511510443396679232464804073238542170",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "15.000000",
+        "direct_transfer_share": "0.0000184610158727814474174884895566033207675351959267614578295014",
+        "total_out_lpt": "812523.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "276310.211599",
+      "rank": 4,
+      "rewards_claimed_lpt": "276310.211599",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "812523.021599"
+    },
+    {
+      "address": "0xf977814e90da44bfa03b6295a0616a897441acec",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "57.8823529411764705882352941176470588235294117647058823529412",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 18,
+      "claim_span_days": 984,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "128987.000000",
+        "bridge_or_burn_share": "0.0488774941208400061861793556398303827242226093961125945340323",
+        "contract_interaction_lpt": "200000.000000",
+        "contract_interaction_share": "0.0757866980716506410509266137515104355077994052053502981448244",
+        "direct_transfer_lpt": "2309998.535574",
+        "direct_transfer_share": "0.875335807807509352762894030608659181767977985398537107321143",
+        "total_out_lpt": "2638985.535574"
+      },
+      "proxy_rewards_withdrawn_lpt": "259777.499723",
+      "rank": 5,
+      "rewards_claimed_lpt": "259777.499723",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "741381.035574"
+    },
+    {
+      "address": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "181",
+      "bridge_out_decoded": {
+        "burn_total_lpt": "1051858.7165421527",
+        "self_recipient_share": "1.0"
+      },
+      "claim_events": 2,
+      "claim_span_days": 181,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "1051858.716542",
+        "bridge_or_burn_share": "1",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "1051858.716542"
+      },
+      "proxy_rewards_withdrawn_lpt": "239351.716542",
+      "rank": 6,
+      "rewards_claimed_lpt": "239351.716542",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "1051858.716542"
+    },
+    {
+      "address": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "archetype": "still bonded (large)",
+      "avg_claim_interval_days": "129.8",
+      "bridge_out_decoded": {
+        "burn_total_lpt": "501070.896347",
+        "self_recipient_share": "1.0"
+      },
+      "claim_events": 11,
+      "claim_span_days": 1298,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "501070.896347",
+        "bridge_or_burn_share": "0.999980043142588547278245814612833897242306036063525769471675",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "10.000000",
+        "direct_transfer_share": "0.0000199568574114527217541853871661027576939639364742305283245961",
+        "total_out_lpt": "501080.896347"
+      },
+      "proxy_rewards_withdrawn_lpt": "170686.386051",
+      "rank": 7,
+      "rewards_claimed_lpt": "452074.159571",
+      "still_bonded_lpt": "283800.278919282656596024",
+      "withdraw_total_lpt": "501080.896347"
+    },
+    {
+      "address": "0x9c10672cee058fd658103d90872fe431bb6c0afa",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "20.2857142857142857142857142857142857142857142857142857142857",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 15,
+      "claim_span_days": 284,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "229729.220537",
+        "direct_transfer_share": "1",
+        "total_out_lpt": "229729.220537"
+      },
+      "proxy_rewards_withdrawn_lpt": "162765.181238",
+      "rank": 8,
+      "rewards_claimed_lpt": "162765.181238",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "229729.220537"
+    },
+    {
+      "address": "0x4416a274f86e1db860b513548b672154d43b81b2",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "33.8888888888888888888888888888888888888888888888888888888889",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 10,
+      "claim_span_days": 305,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "114237.000000",
+        "direct_transfer_share": "1",
+        "total_out_lpt": "114237.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "114236.000000",
+      "rank": 9,
+      "rewards_claimed_lpt": "114236.875452",
+      "still_bonded_lpt": "0.875452312246607878",
+      "withdraw_total_lpt": "114237.000000"
+    },
+    {
+      "address": "0xd044e4e2499c7a3ab92e284e18851b3462f9c6ad",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "197",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 7,
+      "claim_span_days": 1182,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "118185.000000",
+        "contract_interaction_share": "0.588673324533658755261126192314397429830896819664782208054193",
+        "direct_transfer_lpt": "82580.000000",
+        "direct_transfer_share": "0.411326675466341244738873807685602570169103180335217791945807",
+        "total_out_lpt": "200765.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "111445.647830",
+      "rank": 10,
+      "rewards_claimed_lpt": "111445.647830",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "200765.000000"
+    },
+    {
+      "address": "0xa20416801ac2eacf2372e825b4a90ef52490c2bb",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "35.1",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 31,
+      "claim_span_days": 1053,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "77478.000000",
+        "bridge_or_burn_share": "0.666585671973452232058756895228033844261269064893919640304842",
+        "contract_interaction_lpt": "23223.121156",
+        "contract_interaction_share": "0.199801231589524184938681157084992232800896858622400192242021",
+        "direct_transfer_lpt": "15530.000000",
+        "direct_transfer_share": "0.133613096437023583002561947686973922937834076483680167453138",
+        "total_out_lpt": "116231.121156"
+      },
+      "proxy_rewards_withdrawn_lpt": "104779.061799",
+      "rank": 11,
+      "rewards_claimed_lpt": "154779.760287",
+      "still_bonded_lpt": "50000.698487850659601367",
+      "withdraw_total_lpt": "134494.000000"
+    },
+    {
+      "address": "0x4b0e5e54df6d5eccc7b2f838982411dc93253daf",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "4.66013071895424836601307189542483660130718954248366013071895",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 154,
+      "claim_span_days": 713,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "305928.591544",
+        "contract_interaction_share": "0.983809504863248259428612535405375565365810322106951063443683",
+        "direct_transfer_lpt": "5034.648831",
+        "direct_transfer_share": "0.0161904951367517405713874645946244346341896778930489365563166",
+        "total_out_lpt": "310963.240375"
+      },
+      "proxy_rewards_withdrawn_lpt": "97249.502008",
+      "rank": 12,
+      "rewards_claimed_lpt": "102402.241389",
+      "still_bonded_lpt": "3422.442320506050674992",
+      "withdraw_total_lpt": "206830.250470"
+    },
+    {
+      "address": "0x2f6c263c2b89001980c05261d878a243fc155e07",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "414",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 4,
+      "claim_span_days": 1242,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "5139.000000",
+        "contract_interaction_share": "0.0571",
+        "direct_transfer_lpt": "84861.000000",
+        "direct_transfer_share": "0.9429",
+        "total_out_lpt": "90000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "90000.000000",
+      "rank": 13,
+      "rewards_claimed_lpt": "94883.033219",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "90000.000000"
+    },
+    {
+      "address": "0xe6e1a485fce7e69d4e382240a1bb476b2ebda803",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "206.833333333333333333333333333333333333333333333333333333333",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 7,
+      "claim_span_days": 1241,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "43855.000000",
+        "contract_interaction_share": "0.487277777777777777777777777777777777777777777777777777777778",
+        "direct_transfer_lpt": "46145.000000",
+        "direct_transfer_share": "0.512722222222222222222222222222222222222222222222222222222222",
+        "total_out_lpt": "90000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "90000.000000",
+      "rank": 14,
+      "rewards_claimed_lpt": "130910.794789",
+      "still_bonded_lpt": "57175.704035704028941345",
+      "withdraw_total_lpt": "90000.000000"
+    },
+    {
+      "address": "0xe6a9a8db8871eef779019a27e57203a65e736aaf",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "312.666666666666666666666666666666666666666666666666666666667",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 4,
+      "claim_span_days": 938,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "159425.000000",
+        "contract_interaction_share": "0.777682926829268292682926829268292682926829268292682926829268",
+        "direct_transfer_lpt": "45575.000000",
+        "direct_transfer_share": "0.222317073170731707317073170731707317073170731707317073170732",
+        "total_out_lpt": "205000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "83126.355842",
+      "rank": 15,
+      "rewards_claimed_lpt": "83126.355842",
+      "still_bonded_lpt": "33268.063789281468213053",
+      "withdraw_total_lpt": "205000.000000"
+    },
+    {
+      "address": "0x543df23b9a881fbdbdec7ab3e90f3ff7b905068b",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "171",
+      "bridge_out_decoded": {
+        "burn_total_lpt": "588040.9896276153",
+        "self_recipient_share": "1.0"
+      },
+      "claim_events": 3,
+      "claim_span_days": 342,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "588040.989628",
+        "bridge_or_burn_share": "1",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "588040.989628"
+      },
+      "proxy_rewards_withdrawn_lpt": "76908.371523",
+      "rank": 16,
+      "rewards_claimed_lpt": "76908.371523",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "588040.989628"
+    },
+    {
+      "address": "0x7f1d38b35e1004b8ee2c4fe7be0dfee30367d195",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "135.666666666666666666666666666666666666666666666666666666667",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 7,
+      "claim_span_days": 814,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "184086.762340",
+        "bridge_or_burn_share": "0.569936312048282998106479582506435272499919111614746261558213",
+        "contract_interaction_lpt": "138908.559152",
+        "contract_interaction_share": "0.430063687951717001893520417493564727500080888385253738441787",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "322995.321492"
+      },
+      "proxy_rewards_withdrawn_lpt": "76512.146460",
+      "rank": 17,
+      "rewards_claimed_lpt": "76512.146460",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "322995.321492"
+    },
+    {
+      "address": "0x3f0591aa42627a43fe940b1863691b98df84a90b",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "120",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 8,
+      "claim_span_days": 840,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "185744.430626",
+        "bridge_or_burn_share": "0.566099031340825974589709064766338041349574751785793112448115",
+        "contract_interaction_lpt": "142368.532553",
+        "contract_interaction_share": "0.433900968659174025410290935233661958650425248214206887551885",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "328112.963179"
+      },
+      "proxy_rewards_withdrawn_lpt": "76389.813086",
+      "rank": 18,
+      "rewards_claimed_lpt": "76389.813086",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "328112.963179"
+    },
+    {
+      "address": "0x22a709eece6ee82293e5fcdeea7ceefdefd499cd",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "23.2142857142857142857142857142857142857142857142857142857143",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 15,
+      "claim_span_days": 325,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "368437.008765",
+        "bridge_or_burn_share": "0.400261066341358222355605381814753601582959146091633973545604",
+        "contract_interaction_lpt": "257875.080000",
+        "contract_interaction_share": "0.280149257669981069819875444954502004853702651721754481546676",
+        "direct_transfer_lpt": "294179.659616",
+        "direct_transfer_share": "0.319589675989747083668474242754406297788261765971269227424859",
+        "total_out_lpt": "920491.748380"
+      },
+      "proxy_rewards_withdrawn_lpt": "75572.675512",
+      "rank": 19,
+      "rewards_claimed_lpt": "75572.675512",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "662616.668380"
+    },
+    {
+      "address": "0x84edef77bcb20dbf0a373673b550c3eff10dbb5d",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "14.3085106382978723404255319148936170212765957446808510638298",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 95,
+      "claim_span_days": 1345,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "26000.000000",
+        "bridge_or_burn_share": "0.206349206349206349206349206349206349206349206349206349206349",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "100000.000000",
+        "direct_transfer_share": "0.793650793650793650793650793650793650793650793650793650793651",
+        "total_out_lpt": "126000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "70038.790423",
+      "rank": 20,
+      "rewards_claimed_lpt": "70038.790423",
+      "still_bonded_lpt": "90321.82602756921970788",
+      "withdraw_total_lpt": "126000.000000"
+    },
+    {
+      "address": "0x8f042230c52b4180b0a9c7da284b1ef8b83680f9",
+      "archetype": "still bonded (large)",
+      "avg_claim_interval_days": "249.6",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 6,
+      "claim_span_days": 1248,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "70000.000000",
+        "contract_interaction_share": "1",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "70000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "70000.000000",
+      "rank": 21,
+      "rewards_claimed_lpt": "122962.812432",
+      "still_bonded_lpt": "109136.230414611553141514",
+      "withdraw_total_lpt": "70000.000000"
+    },
+    {
+      "address": "0xc71a8b4fdc83e37647b08566e7bd128ee06e87dc",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "155.714285714285714285714285714285714285714285714285714285714",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 8,
+      "claim_span_days": 1090,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "70000.000000",
+        "contract_interaction_share": "1",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "70000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "70000.000000",
+      "rank": 22,
+      "rewards_claimed_lpt": "82795.755558",
+      "still_bonded_lpt": "99795.755557779686977265",
+      "withdraw_total_lpt": "70000.000000"
+    },
+    {
+      "address": "0xfa9acd0be4de121748c0b79b189ad8f143e72591",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "133.333333333333333333333333333333333333333333333333333333333",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 7,
+      "claim_span_days": 800,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "75000.000000",
+        "contract_interaction_share": "0.789473684210526315789473684210526315789473684210526315789474",
+        "direct_transfer_lpt": "20000.000000",
+        "direct_transfer_share": "0.210526315789473684210526315789473684210526315789473684210526",
+        "total_out_lpt": "95000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "58416.625246",
+      "rank": 23,
+      "rewards_claimed_lpt": "58416.625246",
+      "still_bonded_lpt": "18416.62524607469997181",
+      "withdraw_total_lpt": "95000.000000"
+    },
+    {
+      "address": "0x40f18cc812e483615984bc471d8b2d16dee02d57",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "225",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 3,
+      "claim_span_days": 450,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "963.000000",
+        "contract_interaction_share": "0.00745505896398537843410061684811218942267640666645928736383342",
+        "direct_transfer_lpt": "128211.028623",
+        "direct_transfer_share": "0.992544941036014621565899383151887810577323593333540712636167",
+        "total_out_lpt": "129174.028623"
+      },
+      "proxy_rewards_withdrawn_lpt": "53637.678296",
+      "rank": 24,
+      "rewards_claimed_lpt": "53637.678296",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "129174.028623"
+    },
+    {
+      "address": "0xadc6e5cbde4fbac7baf58a336edeab8590625baf",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "157.5",
+      "bridge_out_decoded": {
+        "burn_total_lpt": "441048.9034406386",
+        "self_recipient_share": "1.0"
+      },
+      "claim_events": 3,
+      "claim_span_days": 315,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "441048.903441",
+        "bridge_or_burn_share": "1",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "441048.903441"
+      },
+      "proxy_rewards_withdrawn_lpt": "52082.353629",
+      "rank": 25,
+      "rewards_claimed_lpt": "52082.353629",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "441047.903441"
+    },
+    {
+      "address": "0x5e27a64bb2743e7b7ebdd03923cbae07605c4dd7",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "116",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 8,
+      "claim_span_days": 812,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "125868.745343",
+        "bridge_or_burn_share": "0.569373519190562323866548614750018901035887127655454695768584",
+        "contract_interaction_lpt": "95196.585412",
+        "contract_interaction_share": "0.430626480809437676133451385249981098964112872344545304231416",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "221065.330755"
+      },
+      "proxy_rewards_withdrawn_lpt": "50868.745343",
+      "rank": 26,
+      "rewards_claimed_lpt": "50868.745343",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "221065.330755"
+    },
+    {
+      "address": "0x111702c2746c36fd0b942bb87c33de1f03452a20",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "135.333333333333333333333333333333333333333333333333333333333",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 7,
+      "claim_span_days": 812,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "125325.641821",
+        "bridge_or_burn_share": "0.565892586645554081044374195701990290707244246730278948854385",
+        "contract_interaction_lpt": "96139.782499",
+        "contract_interaction_share": "0.434107413354445918955625804298009709292755753269721051145615",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "221465.424320"
+      },
+      "proxy_rewards_withdrawn_lpt": "50325.641821",
+      "rank": 27,
+      "rewards_claimed_lpt": "50325.641821",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "221465.424320"
+    },
+    {
+      "address": "0xe4a3a2ba2e6645ad5da7d04773316c5857638d8e",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "336",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 3,
+      "claim_span_days": 672,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "509346.443856",
+        "bridge_or_burn_share": "0.999980367382958195976305308548502361601582761306202140888382",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "10.000000",
+        "direct_transfer_share": "0.0000196326170418040236946914514976383984172386937978591116182908",
+        "total_out_lpt": "509356.443856"
+      },
+      "proxy_rewards_withdrawn_lpt": "49018.393765",
+      "rank": 28,
+      "rewards_claimed_lpt": "49018.393765",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "182598.032264"
+    },
+    {
+      "address": "0xe0a4a877cd0a07da7c08dffebc2546a4713147f2",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "20.3333333333333333333333333333333333333333333333333333333333",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 4,
+      "claim_span_days": 61,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "125959.609365",
+        "direct_transfer_share": "1",
+        "total_out_lpt": "125959.609365"
+      },
+      "proxy_rewards_withdrawn_lpt": "49011.492131",
+      "rank": 29,
+      "rewards_claimed_lpt": "49011.492131",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "125959.609365"
+    },
+    {
+      "address": "0xf4e8ef0763bcb2b1af693f5970a00050a6ac7e1b",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "13.7941176470588235294117647058823529411764705882352941176471",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 69,
+      "claim_span_days": 938,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "8500.000000",
+        "bridge_or_burn_share": "0.184162062615101289134438305709023941068139963167587476979742",
+        "contract_interaction_lpt": "11505.000000",
+        "contract_interaction_share": "0.249268768280792980175495612609684757881052973675658108547286",
+        "direct_transfer_lpt": "26150.000000",
+        "direct_transfer_share": "0.566569169104105730690066081681291301050807063156754414472972",
+        "total_out_lpt": "46155.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "48638.062640",
+      "rank": 30,
+      "rewards_claimed_lpt": "51254.062640",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "63254.059302"
+    },
+    {
+      "address": "0xac2e50c8f7ac0f82923a7df9d9903f6ec4741919",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "0.898876404494382022471910112359550561797752808988764044943820",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 179,
+      "claim_span_days": 160,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "16564.141220",
+        "direct_transfer_share": "1",
+        "total_out_lpt": "16564.141220"
+      },
+      "proxy_rewards_withdrawn_lpt": "47140.360457",
+      "rank": 31,
+      "rewards_claimed_lpt": "49493.495601",
+      "still_bonded_lpt": "10",
+      "withdraw_total_lpt": "47150.360457"
+    },
+    {
+      "address": "0x21d1130dc36958db75fbb0e5a9e3e5f5680238ff",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "22.4666666666666666666666666666666666666666666666666666666667",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 46,
+      "claim_span_days": 1011,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "48801.019995",
+        "bridge_or_burn_share": "0.856142925149071273211345277085510511661502768868127514987287",
+        "contract_interaction_lpt": "8200.000000",
+        "contract_interaction_share": "0.143857074850928726788654722914489488338497231131872485012713",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "57001.019995"
+      },
+      "proxy_rewards_withdrawn_lpt": "46782.739553",
+      "rank": 32,
+      "rewards_claimed_lpt": "47115.213395",
+      "still_bonded_lpt": "332.473842115495306753",
+      "withdraw_total_lpt": "60625.000000"
+    },
+    {
+      "address": "0xef83273cbd014c4ae7998467c422275a8b37827e",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "191",
+      "bridge_out_decoded": {
+        "burn_total_lpt": "621439.0591932383",
+        "self_recipient_share": "1.0"
+      },
+      "claim_events": 2,
+      "claim_span_days": 191,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "621439.059193",
+        "bridge_or_burn_share": "1",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "621439.059193"
+      },
+      "proxy_rewards_withdrawn_lpt": "46402.051974",
+      "rank": 33,
+      "rewards_claimed_lpt": "46402.051974",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "621439.059193"
+    },
+    {
+      "address": "0xd0aa1b9d0cd06cafa6af5c1af272be88c38aa831",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "206.6",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 6,
+      "claim_span_days": 1033,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "78980.000000",
+        "bridge_or_burn_share": "0.999746835443037974683544303797468354430379746835443037974684",
+        "contract_interaction_lpt": "20.000000",
+        "contract_interaction_share": "0.000253164556962025316455696202531645569620253164556962025316456",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "79000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "45264.367232",
+      "rank": 34,
+      "rewards_claimed_lpt": "45470.144605",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "79000.000000"
+    },
+    {
+      "address": "0x9d61ae5875e89036fbf6059f3116d01a22ace3c8",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "9.04026845637583892617449664429530201342281879194630872483221",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 150,
+      "claim_span_days": 1347,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "22465.135452",
+        "direct_transfer_share": "1",
+        "total_out_lpt": "22465.135452"
+      },
+      "proxy_rewards_withdrawn_lpt": "40979.253412",
+      "rank": 35,
+      "rewards_claimed_lpt": "42571.516665",
+      "still_bonded_lpt": "2380.253253468139790987",
+      "withdraw_total_lpt": "41195.690000"
+    },
+    {
+      "address": "0x10b21af759129f32c6064adfb85d3ea2a8c0209c",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "6.08695652173913043478260869565217391304347826086956521739130",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 231,
+      "claim_span_days": 1400,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "1145.000000",
+        "contract_interaction_share": "0.0658992805755395683453237410071942446043165467625899280575540",
+        "direct_transfer_lpt": "16230.000000",
+        "direct_transfer_share": "0.934100719424460431654676258992805755395683453237410071942446",
+        "total_out_lpt": "17375.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "40541.883064",
+      "rank": 36,
+      "rewards_claimed_lpt": "40840.129717",
+      "still_bonded_lpt": "8.246652592294362308",
+      "withdraw_total_lpt": "47790.000000"
+    },
+    {
+      "address": "0xdac817294c0c87ca4fa1895ef4b972eade99f2fd",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "23.0862068965517241379310344827586206896551724137931034482759",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 59,
+      "claim_span_days": 1339,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "1975.000000",
+        "bridge_or_burn_share": "0.0325683510937269721660208922215774927310746664823824585147337",
+        "contract_interaction_lpt": "15952.694580",
+        "contract_interaction_share": "0.263064788846802704239337897473378950552407204844967246296236",
+        "direct_transfer_lpt": "42714.000000",
+        "direct_transfer_share": "0.704366860059470323594641210305043556716518128672650295189030",
+        "total_out_lpt": "60641.694580"
+      },
+      "proxy_rewards_withdrawn_lpt": "40442.668774",
+      "rank": 37,
+      "rewards_claimed_lpt": "120888.953753",
+      "still_bonded_lpt": "20.821554506298881962",
+      "withdraw_total_lpt": "79932.945085"
+    },
+    {
+      "address": "0x19b44aead5958af81d4cd5baf0caa8b9b3c64ba2",
+      "archetype": "still bonded (large)",
+      "avg_claim_interval_days": "214.166666666666666666666666666666666666666666666666666666667",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 7,
+      "claim_span_days": 1285,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "40000.000000",
+        "contract_interaction_share": "1",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "40000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "40000.000000",
+      "rank": 38,
+      "rewards_claimed_lpt": "102786.004873",
+      "still_bonded_lpt": "149644.227466344252870582",
+      "withdraw_total_lpt": "40000.000000"
+    },
+    {
+      "address": "0xd00354656922168815fcd1e51cbddb9e359e3c7f",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "4.51027397260273972602739726027397260273972602739726027397260",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 293,
+      "claim_span_days": 1317,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "16409.458000",
+        "bridge_or_burn_share": "0.677196477405527971119195551501688425021721763502633642597982",
+        "contract_interaction_lpt": "3800.000000",
+        "contract_interaction_share": "0.156820939127971581404635247288875477488808143529786775521308",
+        "direct_transfer_lpt": "4022.000000",
+        "direct_transfer_share": "0.165982583466500447476169201209436097489470092967579581880711",
+        "total_out_lpt": "24231.458000"
+      },
+      "proxy_rewards_withdrawn_lpt": "38879.144462",
+      "rank": 39,
+      "rewards_claimed_lpt": "41711.354874",
+      "still_bonded_lpt": "1",
+      "withdraw_total_lpt": "38983.000000"
+    },
+    {
+      "address": "0x59df6a78a7ac617f00a0175c45949004ae900114",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "2.448",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 126,
+      "claim_span_days": 306,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "63064.918251",
+        "contract_interaction_share": "0.270071017107019054729388951398966792482074959044712977888228",
+        "direct_transfer_lpt": "170447.433154",
+        "direct_transfer_share": "0.729928982892980945270611048601033207517925040955287022111772",
+        "total_out_lpt": "233512.351405"
+      },
+      "proxy_rewards_withdrawn_lpt": "38047.433154",
+      "rank": 40,
+      "rewards_claimed_lpt": "38047.433154",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "226134.427369"
+    },
+    {
+      "address": "0x65bb13ffa703f6278f2f33cae2f35da0da1874cb",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "14.2285714285714285714285714285714285714285714285714285714286",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 36,
+      "claim_span_days": 498,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "89517.000000",
+        "bridge_or_burn_share": "0.354406838490453278244445952235659283201678406579975446591768",
+        "contract_interaction_lpt": "65065.597958",
+        "contract_interaction_share": "0.257601269778764621506934195455900870134956156186453346084559",
+        "direct_transfer_lpt": "98000.000000",
+        "direct_transfer_share": "0.387991891730782100248619852308439846663365437233571207323673",
+        "total_out_lpt": "252582.597958"
+      },
+      "proxy_rewards_withdrawn_lpt": "36393.694260",
+      "rank": 41,
+      "rewards_claimed_lpt": "36393.694260",
+      "still_bonded_lpt": "0.81657978205760804",
+      "withdraw_total_lpt": "228534.000000"
+    },
+    {
+      "address": "0x1e2a215628612cf770d6bf159249af536750eef9",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "396.333333333333333333333333333333333333333333333333333333333",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 4,
+      "claim_span_days": 1189,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "79459.000000",
+        "direct_transfer_share": "1",
+        "total_out_lpt": "79459.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "35756.966068",
+      "rank": 42,
+      "rewards_claimed_lpt": "45660.900004",
+      "still_bonded_lpt": "10000.142161198556866716",
+      "withdraw_total_lpt": "79459.000000"
+    },
+    {
+      "address": "0x3bbe84023c11c4874f493d70b370d26390e3c580",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "46.8571428571428571428571428571428571428571428571428571428571",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 29,
+      "claim_span_days": 1312,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "14000.000000",
+        "bridge_or_burn_share": "0.416479833912335458197342067157564085122262744628536482493129",
+        "contract_interaction_lpt": "19615.072952",
+        "contract_interaction_share": "0.583520166087664541802657932842435914877737255371463517506871",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "33615.072952"
+      },
+      "proxy_rewards_withdrawn_lpt": "35117.509929",
+      "rank": 43,
+      "rewards_claimed_lpt": "40053.665291",
+      "still_bonded_lpt": "4936.155362484235227153",
+      "withdraw_total_lpt": "35615.000000"
+    },
+    {
+      "address": "0x46ca88ccbe7cc9af9b9dd9e9a14c4b81f0ef14e6",
+      "archetype": "still bonded (large)",
+      "avg_claim_interval_days": "261.4",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 6,
+      "claim_span_days": 1307,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "90000.000000",
+        "contract_interaction_share": "1",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "90000.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "35000.000000",
+      "rank": 44,
+      "rewards_claimed_lpt": "93128.879325",
+      "still_bonded_lpt": "150953.753134189860708984",
+      "withdraw_total_lpt": "90000.000000"
+    },
+    {
+      "address": "0x3a63afc862107fc21baf40a5025db7c4062ac2da",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "22.9024390243902439024390243902439024390243902439024390243902",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 42,
+      "claim_span_days": 939,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "252606.395831",
+        "contract_interaction_share": "0.495373524368893490678904579835315170761810797870728325055000",
+        "direct_transfer_lpt": "257324.764000",
+        "direct_transfer_share": "0.504626475631106509321095420164684829238189202129271674945000",
+        "total_out_lpt": "509931.159831"
+      },
+      "proxy_rewards_withdrawn_lpt": "34790.496729",
+      "rank": 45,
+      "rewards_claimed_lpt": "34790.496729",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "303506.505231"
+    },
+    {
+      "address": "0x22b544d19ffe43c6083327271d9f39020da30c65",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "71.5833333333333333333333333333333333333333333333333333333333",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 13,
+      "claim_span_days": 859,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "107293.000000",
+        "bridge_or_burn_share": "0.787407989079780714951453460638040231614328384497398375177050",
+        "contract_interaction_lpt": "28968.000000",
+        "contract_interaction_share": "0.212592010920219285048546539361959768385671615502601624822950",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "136261.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "33286.812343",
+      "rank": 46,
+      "rewards_claimed_lpt": "104184.152605",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "110293.000000"
+    },
+    {
+      "address": "0xa5d8da258a75312f117324d8e14387c31584c41d",
+      "archetype": "exiter",
+      "avg_claim_interval_days": "406",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 2,
+      "claim_span_days": 406,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "179818.843093",
+        "direct_transfer_share": "1",
+        "total_out_lpt": "179818.843093"
+      },
+      "proxy_rewards_withdrawn_lpt": "32726.367146",
+      "rank": 47,
+      "rewards_claimed_lpt": "32726.367146",
+      "still_bonded_lpt": "0",
+      "withdraw_total_lpt": "179818.843093"
+    },
+    {
+      "address": "0x9d2b4e5c4b1fd81d06b883b0aca661b771c39ea3",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "201.5",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 5,
+      "claim_span_days": 806,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "33243.000000",
+        "bridge_or_burn_share": "0.999969919383948983275177475634700998676452893755264107808928",
+        "contract_interaction_lpt": "0.000000",
+        "contract_interaction_share": "0",
+        "direct_transfer_lpt": "1.000000",
+        "direct_transfer_share": "0.0000300806160510167248225243652990013235471062447358921910720732",
+        "total_out_lpt": "33244.000000"
+      },
+      "proxy_rewards_withdrawn_lpt": "32163.894735",
+      "rank": 48,
+      "rewards_claimed_lpt": "45272.045621",
+      "still_bonded_lpt": "108.150886632562025799",
+      "withdraw_total_lpt": "33244.000000"
+    },
+    {
+      "address": "0xa6a9eb29e786b5233bd99c0ba28be882fe954a0e",
+      "archetype": "still bonded (mid)",
+      "avg_claim_interval_days": "60.4285714285714285714285714285714285714285714285714285714286",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 15,
+      "claim_span_days": 846,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "44382.370000",
+        "contract_interaction_share": "0.604438806222200431991327488103895820906092276180281475307583",
+        "direct_transfer_lpt": "29045.030000",
+        "direct_transfer_share": "0.395561193777799568008672511896104179093907723819718524692417",
+        "total_out_lpt": "73427.400000"
+      },
+      "proxy_rewards_withdrawn_lpt": "31323.376872",
+      "rank": 49,
+      "rewards_claimed_lpt": "68743.334078",
+      "still_bonded_lpt": "37419.957206236507800213",
+      "withdraw_total_lpt": "55927.400000"
+    },
+    {
+      "address": "0xb5164d6b780786338c52f4787abba0e4a371af4d",
+      "archetype": "mixed",
+      "avg_claim_interval_days": "3.08441558441558441558441558441558441558441558441558441558442",
+      "bridge_out_decoded": {
+        "burn_total_lpt": null,
+        "self_recipient_share": null
+      },
+      "claim_events": 463,
+      "claim_span_days": 1425,
+      "post_withdraw": {
+        "bridge_or_burn_lpt": "0.000000",
+        "bridge_or_burn_share": "0",
+        "contract_interaction_lpt": "9405.159340",
+        "contract_interaction_share": "1",
+        "direct_transfer_lpt": "0.000000",
+        "direct_transfer_share": "0",
+        "total_out_lpt": "9405.159340"
+      },
+      "proxy_rewards_withdrawn_lpt": "31097.106906",
+      "rank": 50,
+      "rewards_claimed_lpt": "34878.560830",
+      "still_bonded_lpt": "3400.003923969173317868",
+      "withdraw_total_lpt": "31159.200848"
+    }
+  ]
+}
