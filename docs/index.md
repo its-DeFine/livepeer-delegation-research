@@ -45,6 +45,9 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Rewards vs withdrawals (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly LPT rewards claimed vs `WithdrawStake` (sell-pressure proxy; includes principal).
   </Card>
+  <Card title="Reflexivity + yield extraction (mitigations)" href="/research/reflexivity-and-yield-extraction">
+    Delta-neutral extraction thesis + mitigation primitives (escrow/vesting, reward-only exit locks/penalties).
+  </Card>
   <Card title="Solutions: Lisar" href="/solutions/lisar">
     Treasury program outcomes + KPI alignment vs the stated goals.
   </Card>
