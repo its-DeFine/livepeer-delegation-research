@@ -64,6 +64,49 @@ When that net is meaningfully positive, you can get:
 4) **Evaluate proposals against dilution**:
    - any proposal that increases issuance should report “net issuance captured by long-term holders” vs “likely sold” (withdraw/bridge proxies).
 
+## Potential mitigation direction: make inflation rewards less extractable
+
+If the delta-neutral thesis is directionally correct, then the most direct way to reduce sell-pressure is to reduce how “instantly liquid” inflation rewards are.
+
+The cleanest on-chain primitive (no identity assumptions) is: **separate “principal” from “reward component”, and make only the reward component time-gated or forfeitable on early exit**.
+
+### Mechanism options
+
+- **Reward escrow / vesting**
+  - Rewards accrue into an escrow bucket (`locked_rewards`) that vests over time (e.g., linear over 90–365 days).
+  - Early unbond/withdraw can forfeit unvested rewards (burn or redistribute to remaining stakers) or reset vesting.
+- **Reward-only exit lock / fee**
+  - Keep principal liquid on the normal schedule, but apply an additional lock/fee/forfeit only to the reward portion that is being withdrawn.
+  - This targets short-horizon farming while keeping principal liquidity closer to the status quo.
+- **“Recent rewards” penalty**
+  - On exit, apply a penalty only to rewards earned in the last `N` rounds/days (a rolling window).
+  - This reduces the ROI of “in-and-out” strategies without permanently locking long-term participants.
+
+### Why this can work against extraction
+
+- Delta-neutral strategies pay carry (borrow/funding + execution costs). Time-gating rewards forces the hedge to stay open longer, making carry bite.
+- Reward-only penalties make it unprofitable to churn purely to harvest inflation, while keeping honest principal exits less impacted.
+
+### Tradeoffs and risks (must be explicit)
+
+- **Complexity and upgrade risk**: implementing principal vs rewards accounting touches core staking flows; likely requires a contract upgrade + audit.
+- **Unlock overhang**: escrowed rewards create future unlock supply; if unlock schedules are too “cliffy”, they can concentrate sell pressure at unlock times.
+- **User UX**: less liquidity can reduce participation unless paired with good UX and/or a liquid-staking path.
+
+### Examples of “reward escrow / long-horizon alignment” tokenomics
+
+These are examples of the *pattern* (not endorsements). Each has benefits and recurring failure modes worth copying/avoiding.
+
+- **Synthetix (SNX)**: historically used reward escrow/vesting for staking rewards, pushing stakers toward longer horizons (but created escrow overhang and significant complexity).
+- **GMX (GMX / esGMX)**: distributes escrowed rewards (esGMX) with vesting mechanics that generally require continued staking to unlock, increasing stake stickiness and reducing immediate sell-through.
+- **Curve (veCRV)**: long lock-ups for boosted rewards and fee share; extremely effective for retention, but can centralize power via lockers/aggregators.
+
+### What to measure on Livepeer if we adopt this
+
+- Change in the **reward-only** component of exits over time (requires principal-vs-reward separation in accounting).
+- Movement in our **bridge-out → exchange routing** evidence pack after the policy change.
+- Retention curves for `1k–10k` and `10k+` cohorts (did we reduce churn while still growing brackets?).
+
 ## Limits (what we cannot prove with current on-chain-only tooling)
 
 - Whether a given whale is “delta-neutral” (perp shorts / CEX borrowing are off-chain).

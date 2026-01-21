@@ -55,14 +55,29 @@ How to measure:
 - # of delegates ≥ `100k` and ≥ `1m` bonded stake
 - Nakamoto coefficients over time (33% / 50%)
 
+## Direction 5 — Reduce inflation extractability (so yield doesn’t become structural sell pressure)
+
+Why: if large actors can run delta-neutral staking, inflation rewards can get routinely withdrawn and routed off-chain, creating reflexive price pressure.
+
+What it could include:
+- Protocol-level: separate principal vs rewards and make the **reward component** time-gated (vesting) and/or penalized on early exit.
+- Program-level (if protocol change is too heavy): bonuses in an escrow contract with vest/forfeit; this helps program incentives but does **not** fix base-inflation extractability by itself.
+
+How to measure:
+- Reward-only exits over time (requires principal-vs-reward separation in staking accounting)
+- Bridge-out → exchange routing changes (see `/research/l1-bridge-recipient-second-hop`)
+- Retention curves for `1k–10k` and `10k+` cohorts
+
 ## Where the evidence lives
 
 <CardGroup cols={2}>
   <Card title="Executive statement" href="/docs/statement">
     The bracket thesis and why it matters.
   </Card>
+  <Card title="Reflexivity + yield extraction" href="/research/reflexivity-and-yield-extraction">
+    The delta-neutral thesis and mitigation primitives (escrow/vesting, reward-only penalties, and measurement).
+  </Card>
   <Card title="Analytics jump table" href="/docs/analytics">
     Links to the board, time series, outflow research, and bridge-out decode.
   </Card>
 </CardGroup>
-
