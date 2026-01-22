@@ -5,18 +5,24 @@ const { themes } = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
+const organizationName = 'its-DeFine';
+const projectName = 'livepeer-delegation-research';
+const isGitHubPages = process.env.DEPLOY_TARGET === 'github-pages';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Livepeer Delegation Research',
   tagline:
     'Evidence-based research on Livepeer delegation on Arbitrum: acquisition, retention, cashout behavior, and solution evaluation.',
-  url: 'https://livepeer-delegation-research.vercel.app',
-  baseUrl: '/',
+  url: isGitHubPages
+    ? 'https://its-define.github.io'
+    : 'https://livepeer-delegation-research.vercel.app',
+  baseUrl: isGitHubPages ? `/${projectName}/` : '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.svg',
-  organizationName: 'its-DeFine',
-  projectName: 'livepeer-delegation-research',
+  organizationName,
+  projectName,
   trailingSlash: false,
 
   presets: [
