@@ -31,6 +31,9 @@ This page is the “metrics jump table” for stakeholders.
   <Card title="L1 second hop (exchange routing)" href="/research/l1-bridge-recipient-second-hop">
     Follows the biggest L1 EOA destinations one hop further; surfaces labeled exchange endpoints (best-effort, label-set based).
   </Card>
+  <Card title="Timing traces (withdraw → bridge → L1 → exchange)" href="/research/extraction-timing-traces">
+    Repeatable timing windows: `WithdrawStake` → L2 bridge-out → L1 escrow receipt → labeled exchange deposits (often via one EOA hop).
+  </Card>
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed and LPT withdrawn via `WithdrawStake` (a rough upper bound for liquidity exits).
   </Card>

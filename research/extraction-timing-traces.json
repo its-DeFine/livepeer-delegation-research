@@ -1,0 +1,4350 @@
+{
+  "cycles": [
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": {
+        "amount_lpt": "1169999.1",
+        "block": 16643165,
+        "iso": "2023-02-16T18:45:11+00:00",
+        "receipt_to_firsthop_hours": 0.13333333333333333,
+        "to": "0xde346728906a36bfd06f28e9ee35005e2fde51ae",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1676573111,
+        "tx_hash": "0x5831f651dea2359a7c0c20c5ea884c4857065151193392a01567c537e9849ac6"
+      },
+      "l1_receipt": {
+        "amount_lpt": "1170000.1",
+        "block": 16643125,
+        "burn_to_receipt_days": 7.040590277777778,
+        "iso": "2023-02-16T18:37:11+00:00",
+        "ts": 1676572631,
+        "tx_hash": "0x2c01cd334b918712144111de0e9f5e4879df19b6f714b9f80ebdad1083bc7233"
+      },
+      "l2_burn": {
+        "amount_lpt": "1170000.1",
+        "block": 59462078,
+        "iso": "2023-02-09T17:38:44+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1675964324,
+        "tx_hash": "0x9f2e4bff8bdd8f6e9ea8b71b7dc3d690e953117f9616ce1f70d7bb32ae62596b"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "1170000",
+        "block": 59461556,
+        "iso": "2023-02-09T17:36:07+00:00",
+        "ts": 1675964167,
+        "tx_hash": "0xd595dda5a7e0afc856006e015301db10936d035bfbde62f4723ef0fde4026a84",
+        "withdraw_to_burn_hours": 0.043611111111111114
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "79999.357658072573990669",
+        "block": 20191377,
+        "from": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+        "iso": "2024-06-28T16:28:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1719592091,
+        "tx_hash": "0x6c504c9a3f97d8d78ae22677d0b3eba7c4040b0f7e553cadbb84d2f38abace4a"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "79999.357658072573990669",
+        "block": 20191371,
+        "iso": "2024-06-28T16:26:47+00:00",
+        "receipt_to_firsthop_hours": 0.08666666666666667,
+        "to": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1719592007,
+        "tx_hash": "0x632d20a61fcb4276f001c9d1d1eeb63ca9aecd51cd3ae00f792b5226f7e76c0b"
+      },
+      "l1_receipt": {
+        "amount_lpt": "80000.266258072573990669",
+        "block": 20191346,
+        "burn_to_receipt_days": 8.078888888888889,
+        "iso": "2024-06-28T16:21:35+00:00",
+        "ts": 1719591695,
+        "tx_hash": "0x4b5d01d60810067bad9829b2142f18f3ce67ca7b4f89a0f3744aacb72f2ad69c"
+      },
+      "l2_burn": {
+        "amount_lpt": "80000.266258072573990669",
+        "block": 223865896,
+        "iso": "2024-06-20T14:27:59+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1718893679,
+        "tx_hash": "0xec775ac8ef61eae9f0b69bf9b52997b5de83d707aa495e52f09653247ddcbb10"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "80000",
+        "block": 223865079,
+        "iso": "2024-06-20T14:24:39+00:00",
+        "ts": 1718893479,
+        "tx_hash": "0x216dff2bda34f8c65b1893d22fe296e74c832f23bfe70933a78384eab2ca9bc5",
+        "withdraw_to_burn_hours": 0.05555555555555555
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "72999",
+        "block": 20528172,
+        "from": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+        "iso": "2024-08-14T16:50:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1723654211,
+        "tx_hash": "0x10128275f3c3205be87ed5798ab090d009644a3578ff3aa7bca261ae9a1d3c67"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "72999",
+        "block": 20528165,
+        "iso": "2024-08-14T16:48:47+00:00",
+        "receipt_to_firsthop_hours": 0.17,
+        "to": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1723654127,
+        "tx_hash": "0x6f9a1a147b2757c1b81065018449f7bea84755a2341806d53f6859cd9a709001"
+      },
+      "l1_receipt": {
+        "amount_lpt": "73000",
+        "block": 20528114,
+        "burn_to_receipt_days": 7.897650462962963,
+        "iso": "2024-08-14T16:38:35+00:00",
+        "ts": 1723653515,
+        "tx_hash": "0x88c1206d842061f87e81b1fcd3badd3674c19ace5b0a56575ab3365a3c327da2"
+      },
+      "l2_burn": {
+        "amount_lpt": "73000",
+        "block": 240125247,
+        "iso": "2024-08-06T19:05:58+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1722971158,
+        "tx_hash": "0x24a3c46f0c7b2ae595aba2586f12cbb122faccef514a57257269b2a1bf6c6d3a"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "73000",
+        "block": 240124966,
+        "iso": "2024-08-06T19:04:47+00:00",
+        "ts": 1722971087,
+        "tx_hash": "0xf24c6cf5da4f391bd2e01a679c89dfacbfe6662c3c8c99ceb2d68c9adebc3b34",
+        "withdraw_to_burn_hours": 0.01972222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "17749.37",
+        "block": 20922947,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-10-08T19:27:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1728415631,
+        "tx_hash": "0x039b146bc04d3a84c25f4288c20f38533e6a58a3400908ebcfb0f4fb82599411"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "17748.37",
+        "block": 20922941,
+        "iso": "2024-10-08T19:25:59+00:00",
+        "receipt_to_firsthop_hours": 0.24666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1728415559,
+        "tx_hash": "0x8cc75282de9f624fef581056068f178b2e0b2fa6441f4ca57a9c51a111e6bb2d"
+      },
+      "l1_receipt": {
+        "amount_lpt": "17749.37",
+        "block": 20922868,
+        "burn_to_receipt_days": 8.077511574074075,
+        "iso": "2024-10-08T19:11:11+00:00",
+        "ts": 1728414671,
+        "tx_hash": "0x74a63538ee63584cfb6fa1b5454f998f2eac8775590607ce56939683b66a5fb2"
+      },
+      "l2_burn": {
+        "amount_lpt": "17749.37",
+        "block": 258990151,
+        "iso": "2024-09-30T17:19:34+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1727716774,
+        "tx_hash": "0xfefd1c834b8d704d72a18bac980955bbba73122d34f6486c124fe6360c83b64e"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "17749.37",
+        "block": 258989012,
+        "iso": "2024-09-30T17:14:49+00:00",
+        "ts": 1727716489,
+        "tx_hash": "0x80743178f62641f2288c38b05604c34a720a3e7498d294685bccc2fca3390f2f",
+        "withdraw_to_burn_hours": 0.07916666666666666
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "15616.47",
+        "block": 20972998,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-10-15T19:17:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1729019855,
+        "tx_hash": "0xec53c0324bce7cc12c64873e21e745a1d9aec14e388869a4b08ed5680a9328c7"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "15616.47",
+        "block": 20972990,
+        "iso": "2024-10-15T19:15:59+00:00",
+        "receipt_to_firsthop_hours": 0.16333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1729019759,
+        "tx_hash": "0xb5f80fca80af013620ec795c9bf96d0ae35eee64d0760fe6aa51873e42da170e"
+      },
+      "l1_receipt": {
+        "amount_lpt": "15616.47",
+        "block": 20972941,
+        "burn_to_receipt_days": 8.08232638888889,
+        "iso": "2024-10-15T19:06:11+00:00",
+        "ts": 1729019171,
+        "tx_hash": "0x5410902eda1ea2960cc8820518d35c6d55159ce7e777842e94690f2947bb3574"
+      },
+      "l2_burn": {
+        "amount_lpt": "15616.47",
+        "block": 261385134,
+        "iso": "2024-10-07T17:07:38+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1728320858,
+        "tx_hash": "0xca63aa7d5e971b1d097160d147a3705be4f11d3db690cf3be3000dd5b69946cb"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "15616.47",
+        "block": 261384475,
+        "iso": "2024-10-07T17:04:52+00:00",
+        "ts": 1728320692,
+        "tx_hash": "0x869280baeaf9290a5c1fa9cb77cb71d612882d7a37b6f29e0472528841a5a32d",
+        "withdraw_to_burn_hours": 0.04611111111111111
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "95001.38",
+        "block": 21023150,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-10-22T19:16:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1729624595,
+        "tx_hash": "0xfafb2c927088a308734033968eb0478674f4c12c6fbabc8cca0fbcfb1ff85f2d"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "95001.38",
+        "block": 21023138,
+        "iso": "2024-10-22T19:14:11+00:00",
+        "receipt_to_firsthop_hours": 0.08666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1729624451,
+        "tx_hash": "0x7edc99bf9fc8ed98a6ff25b9ce9b5b071f83733afb1856dd295ba35222279807"
+      },
+      "l1_receipt": {
+        "amount_lpt": "102581.71",
+        "block": 21023112,
+        "burn_to_receipt_days": 8.08505787037037,
+        "iso": "2024-10-22T19:08:59+00:00",
+        "ts": 1729624139,
+        "tx_hash": "0x15a6a4cc2eb57d909e092882c73ec39c4a1238e2ca3343005a315041856f7364"
+      },
+      "l2_burn": {
+        "amount_lpt": "102581.71",
+        "block": 263789323,
+        "iso": "2024-10-14T17:06:30+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1728925590,
+        "tx_hash": "0x1ea808a361eb12010e49315b56307bd2785d00e50d23d92578b71498a1023b93"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "102581.71",
+        "block": 263788498,
+        "iso": "2024-10-14T17:03:04+00:00",
+        "ts": 1728925384,
+        "tx_hash": "0x33cb30aa0cdf55e07f4d5323dfa73b549be27b778c302add654d5b99836ff173",
+        "withdraw_to_burn_hours": 0.05722222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "20522.04",
+        "block": 21073281,
+        "burn_to_receipt_days": 8.063645833333334,
+        "iso": "2024-10-29T19:07:35+00:00",
+        "ts": 1730228855,
+        "tx_hash": "0xf50f4c8cc3c5b67e6b1c7dd23d1515fe64a04b9bca08765bfbbf57f3dd7553ef"
+      },
+      "l2_burn": {
+        "amount_lpt": "20522.04",
+        "block": 266203309,
+        "iso": "2024-10-21T17:35:56+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1729532156,
+        "tx_hash": "0x701b590920697e1157fcbde821fb7b31686f8d2648b44481b6ba7884d52f6b26"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "20522.04",
+        "block": 266202731,
+        "iso": "2024-10-21T17:33:31+00:00",
+        "ts": 1729532011,
+        "tx_hash": "0x99ec73cccdd50f878c9ae0edf49598cdb0df903a231d3481f73fc9b177d738b8",
+        "withdraw_to_burn_hours": 0.04027777777777778
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "20580.55",
+        "block": 21123723,
+        "burn_to_receipt_days": 8.125636574074074,
+        "iso": "2024-11-05T20:05:47+00:00",
+        "ts": 1730837147,
+        "tx_hash": "0x8c7b9b6a1d5889f3190a10270c63555783c4b29c3e42c1a61f61329e5feeb924"
+      },
+      "l2_burn": {
+        "amount_lpt": "20580.55",
+        "block": 268602181,
+        "iso": "2024-10-28T17:04:52+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1730135092,
+        "tx_hash": "0x347f49794ac3851ddcd82a3107c13eb88a3ccee13ef92c896c5f145350ae6202"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "20580.55",
+        "block": 268601834,
+        "iso": "2024-10-28T17:03:24+00:00",
+        "ts": 1730135004,
+        "tx_hash": "0x37236133100ef041074417d92e007dce24c2e164fae43dd28e80375651bcb862",
+        "withdraw_to_burn_hours": 0.024444444444444446
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "76679.45",
+        "block": 21186750,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-11-14T15:12:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1731597155,
+        "tx_hash": "0x6ab867c32b38a9f8cc39d6d961ed9d255b2e6cd22401837d19140b458cdec5ef"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "76679.45",
+        "block": 21186739,
+        "iso": "2024-11-14T15:10:23+00:00",
+        "receipt_to_firsthop_hours": 43.05,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1731597023,
+        "tx_hash": "0x9dcd5c8edb02bbb8477cf241efa313a3696f7a2419331ec51145f6afad038eda"
+      },
+      "l1_receipt": {
+        "amount_lpt": "21463.16",
+        "block": 21173886,
+        "burn_to_receipt_days": 8.084247685185185,
+        "iso": "2024-11-12T20:07:23+00:00",
+        "ts": 1731442043,
+        "tx_hash": "0xa00700b850ae727cfed4967e38e644feace221d307f068b9c30f94069bab3365"
+      },
+      "l2_burn": {
+        "amount_lpt": "21463.16",
+        "block": 271024658,
+        "iso": "2024-11-04T18:06:04+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1730743564,
+        "tx_hash": "0x1c793caa3de635d16c35d588c2c27cf9947673de411a18c1533461a088c751e5"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "21463.16",
+        "block": 271023896,
+        "iso": "2024-11-04T18:02:54+00:00",
+        "ts": 1730743374,
+        "tx_hash": "0x713b0f61fbd416857b3d560e3719036b227671f1b356eaa061d3a5400810360f",
+        "withdraw_to_burn_hours": 0.05277777777777778
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "76679.45",
+        "block": 21186750,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-11-14T15:12:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1731597155,
+        "tx_hash": "0x6ab867c32b38a9f8cc39d6d961ed9d255b2e6cd22401837d19140b458cdec5ef"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "76679.45",
+        "block": 21186739,
+        "iso": "2024-11-14T15:10:23+00:00",
+        "receipt_to_firsthop_hours": 0.09,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1731597023,
+        "tx_hash": "0x9dcd5c8edb02bbb8477cf241efa313a3696f7a2419331ec51145f6afad038eda"
+      },
+      "l1_receipt": {
+        "amount_lpt": "76679.45",
+        "block": 21186712,
+        "burn_to_receipt_days": 6.952569444444444,
+        "iso": "2024-11-14T15:04:59+00:00",
+        "ts": 1731596699,
+        "tx_hash": "0x20c5d9362068443f2c0333e9676f32833a1bbdf6a581f60a7dc4c36ff05f479c"
+      },
+      "l2_burn": {
+        "amount_lpt": "76679.45",
+        "block": 272028169,
+        "iso": "2024-11-07T16:13:17+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1730995997,
+        "tx_hash": "0x91f70f245ee41ba61d7c99d552cb68dc07bbade8719d13db0b2cd3ae69c88356"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "76679.45",
+        "block": 272027846,
+        "iso": "2024-11-07T16:11:55+00:00",
+        "ts": 1730995915,
+        "tx_hash": "0x250273d040000cc853be836711faab9b6adc10f734e00c69933c17a38e8d54de",
+        "withdraw_to_burn_hours": 0.02277777777777778
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "21483.51",
+        "block": 21224057,
+        "burn_to_receipt_days": 8.081944444444444,
+        "iso": "2024-11-19T20:05:23+00:00",
+        "ts": 1732046723,
+        "tx_hash": "0x642f06d561a303f82d7b8b37db80be59b2dd2d616eb6b5c18f5c1819a3cf62fd"
+      },
+      "l2_burn": {
+        "amount_lpt": "21483.51",
+        "block": 273429251,
+        "iso": "2024-11-11T18:07:23+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1731348443,
+        "tx_hash": "0xb96e12136f64c55910576a4cb0df4addfa968b534780b1d032236116e85f851b"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "21483.51",
+        "block": 273429059,
+        "iso": "2024-11-11T18:06:35+00:00",
+        "ts": 1731348395,
+        "tx_hash": "0x5742f526581f6c93850fbada8598c8e8012fd848cd5560525f652befcea55247",
+        "withdraw_to_burn_hours": 0.013333333333333334
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "21464.87",
+        "block": 21266602,
+        "burn_to_receipt_days": 7.017245370370371,
+        "iso": "2024-11-25T18:37:11+00:00",
+        "ts": 1732559831,
+        "tx_hash": "0xe3076b245e15be73f0d8be866a979c9e041836d51e5e978fdfce70dbb6c28b18"
+      },
+      "l2_burn": {
+        "amount_lpt": "21464.87",
+        "block": 275836057,
+        "iso": "2024-11-18T18:12:21+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1731953541,
+        "tx_hash": "0x618af5b010ab04baa5b2a7b271cda8b4e1be064e879e58a9054e665cfeadffe0"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "21464.87",
+        "block": 275835334,
+        "iso": "2024-11-18T18:09:22+00:00",
+        "ts": 1731953362,
+        "tx_hash": "0xeeb4aa4c0844a0c9acba85467d6f755ee80f2e60e3a3604afe3907fa7115e437",
+        "withdraw_to_burn_hours": 0.04972222222222222
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "22051.78",
+        "block": 21337068,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-12-05T15:03:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1733411027,
+        "tx_hash": "0x1b988cc181a3f686ead92b59499f70158b474a2ee50fb17579d8b4bd52bba65b"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "22050.78",
+        "block": 21337052,
+        "iso": "2024-12-05T15:00:35+00:00",
+        "receipt_to_firsthop_hours": 0.14333333333333334,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1733410835,
+        "tx_hash": "0x648196a63d8adc09fbff308b2d1307d67b924c15b25698d8c0bb3e323f8df0a3"
+      },
+      "l1_receipt": {
+        "amount_lpt": "22051.78",
+        "block": 21337009,
+        "burn_to_receipt_days": 9.851215277777778,
+        "iso": "2024-12-05T14:51:59+00:00",
+        "ts": 1733410319,
+        "tx_hash": "0xb97495535579e4b013e2988a95532768d8200a9b8909f923f24c82083308e966"
+      },
+      "l2_burn": {
+        "amount_lpt": "22051.78",
+        "block": 278245299,
+        "iso": "2024-11-25T18:26:14+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1732559174,
+        "tx_hash": "0xaa22101ceb9a3b9e94fbfde06f1825090a0f22fa28df3d16c27bff3a13cc4afe"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "22051.78",
+        "block": 278244914,
+        "iso": "2024-11-25T18:24:37+00:00",
+        "ts": 1732559077,
+        "tx_hash": "0x3a5e4ab45f2a09f85b2d07469d27d9d82a1005098bc574f236cca8019ade7503",
+        "withdraw_to_burn_hours": 0.026944444444444444
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "19579.95",
+        "block": 21372919,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-12-10T15:12:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1733843567,
+        "tx_hash": "0xd979f768daba9aeaff7acf7766d72d6de7dff6dbec4bab03301e6997e650c9d6"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "19578.95",
+        "block": 21372897,
+        "iso": "2024-12-10T15:08:23+00:00",
+        "receipt_to_firsthop_hours": 0.41,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1733843303,
+        "tx_hash": "0x17c4e1c9694db786509b01e815daccf14b7d3dde7ee1192163536796728e45b6"
+      },
+      "l1_receipt": {
+        "amount_lpt": "19579.95",
+        "block": 21372775,
+        "burn_to_receipt_days": 7.960543981481481,
+        "iso": "2024-12-10T14:43:47+00:00",
+        "ts": 1733841827,
+        "tx_hash": "0x1af4e18c65435bb1674df6f35734a1c3266575e432454ae0fb403f3ff077eaf8"
+      },
+      "l2_burn": {
+        "amount_lpt": "19579.95",
+        "block": 280609666,
+        "iso": "2024-12-02T15:40:36+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1733154036,
+        "tx_hash": "0xadc5acc89af1c04bbfaf22c28430628082cfe37ed3d35366d3067067e12879ca"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "156.95",
+        "block": 280609346,
+        "iso": "2024-12-02T15:39:15+00:00",
+        "ts": 1733153955,
+        "tx_hash": "0xc47f9ae2c8122fc14a77c569cf8d2caa7d01da0a264263a727537a1e325c6581",
+        "withdraw_to_burn_hours": 0.0225
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "22495.05",
+        "block": 21425376,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-12-17T22:55:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1734476111,
+        "tx_hash": "0x2a563c6c0458e8b3b4b897df57dfbb58ddcf8cc5d3a27101d7faa7ac0e0b56b0"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "22494.05",
+        "block": 21425356,
+        "iso": "2024-12-17T22:51:11+00:00",
+        "receipt_to_firsthop_hours": 0.13333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1734475871,
+        "tx_hash": "0x82508ccdcd4081816f85c02aeb737612e29286503ca37fe7058c5776dfa45266"
+      },
+      "l1_receipt": {
+        "amount_lpt": "22495.05",
+        "block": 21425316,
+        "burn_to_receipt_days": 7.329317129629629,
+        "iso": "2024-12-17T22:43:11+00:00",
+        "ts": 1734475391,
+        "tx_hash": "0xce2344a97f48ff5e490da6451da5bca4eb69eefc49b5391e982c3bcf18eafaaa"
+      },
+      "l2_burn": {
+        "amount_lpt": "22495.05",
+        "block": 283350437,
+        "iso": "2024-12-10T14:48:58+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1733842138,
+        "tx_hash": "0x56f18f4a8cb6e391fa02687301f3bd6b7f5b595dfe56b968664b721453baa76a"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "22495.05",
+        "block": 283348598,
+        "iso": "2024-12-10T14:41:16+00:00",
+        "ts": 1733841676,
+        "tx_hash": "0xe4fe87b801eae811425ada45bc1aa293d51a194ff85b0b50d11f3da1a79ad07f",
+        "withdraw_to_burn_hours": 0.12833333333333333
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "23098.64",
+        "block": 21588885,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-01-09T19:03:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1736449427,
+        "tx_hash": "0x8d279f745586b913eb01c7c3ccb0c6f58424c00bc27528eefefa5a82d674e467"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "23077.64",
+        "block": 21588882,
+        "iso": "2025-01-09T19:03:11+00:00",
+        "receipt_to_firsthop_hours": 0.13666666666666666,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1736449391,
+        "tx_hash": "0xe4061899010f3cc970c3263b95581f8362d7e44db4c35a0d0cd6c540fb0ba96d"
+      },
+      "l1_receipt": {
+        "amount_lpt": "23078.64",
+        "block": 21588841,
+        "burn_to_receipt_days": 16.921979166666667,
+        "iso": "2025-01-09T18:54:59+00:00",
+        "ts": 1736448899,
+        "tx_hash": "0x2f47da5e4f08d585c279797642ce9d1963f81ebb310a22cd74d0282223bc0941"
+      },
+      "l2_burn": {
+        "amount_lpt": "23078.64",
+        "block": 287886666,
+        "iso": "2024-12-23T20:47:20+00:00",
+        "l1_recipient": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+        "ts": 1734986840,
+        "tx_hash": "0x0205845ed9e539cc63c9ca681f4a6536cfd1b5152ae7fcc169b610c594bd577d"
+      },
+      "l2_sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "23078.64",
+        "block": 287886212,
+        "iso": "2024-12-23T20:45:24+00:00",
+        "ts": 1734986724,
+        "tx_hash": "0xf9f6fc3b04dcf9276e66b7c8dc866e42387bb6877008a4d1b00edbfa0c1c4dff",
+        "withdraw_to_burn_hours": 0.03222222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "57769.58",
+        "block": 21939952,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-02-27T20:05:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1740686747,
+        "tx_hash": "0xe29d33478dd6dd2bdef8d6c9132acfb6aba0407ece43d270632e1b2b11b5b6a5"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "57768.2006896551724137",
+        "block": 21939950,
+        "iso": "2025-02-27T20:05:23+00:00",
+        "receipt_to_firsthop_hours": 41.03,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1740686723,
+        "tx_hash": "0xadb5683002331a1975f7d921bcdad8efc5c111a3b36f4cd2c2c22e33a7aeffb6"
+      },
+      "l1_receipt": {
+        "amount_lpt": "57769.58",
+        "block": 21927694,
+        "burn_to_receipt_days": 7.3359375,
+        "iso": "2025-02-26T03:03:35+00:00",
+        "ts": 1740539015,
+        "tx_hash": "0xf737a33bb4eef556a6fee43b21e07b852d96d277135f403a3921216ece3a930c"
+      },
+      "l2_burn": {
+        "amount_lpt": "57769.58",
+        "block": 307438369,
+        "iso": "2025-02-18T18:59:50+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1739905190,
+        "tx_hash": "0x59e9b3b23df08a95f4b0e371c080fa23d1423cf10adfd3c28fe3ae5be02c8a32"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "46352.9659",
+        "block": 22119662,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-03-24T22:10:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1742854259,
+        "tx_hash": "0x5c787daea2b3dd4b0fc7bd34e9edf8fd108abc364dd6b2694f9c225ae4d14f42"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "46352.9659",
+        "block": 22119658,
+        "iso": "2025-03-24T22:10:11+00:00",
+        "receipt_to_firsthop_hours": 2.3366666666666664,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1742854211,
+        "tx_hash": "0x27935ef888db83cc59ace72c9a734d6b61e5e15f67bb32e71f1a93705475cca7"
+      },
+      "l1_receipt": {
+        "amount_lpt": "46352.9659",
+        "block": 22118961,
+        "burn_to_receipt_days": 11.977951388888888,
+        "iso": "2025-03-24T19:49:59+00:00",
+        "ts": 1742845799,
+        "tx_hash": "0x8a59640f286c23c7b2319d8394001d570799337f90edcab747d78514ebe15668"
+      },
+      "l2_burn": {
+        "amount_lpt": "46352.9659",
+        "block": 315024163,
+        "iso": "2025-03-12T20:21:44+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1741810904,
+        "tx_hash": "0x81d49d2bbd476cbae0cf22e65cdf2856ec0a0deb456572a3cfd60068e05b0894"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "46350.58",
+        "block": 314235503,
+        "iso": "2025-03-10T13:30:19+00:00",
+        "ts": 1741613419,
+        "tx_hash": "0x7ae880cbf155aad9c816d9db4899f90ca4dc6a59de6adcf2152801908386747d",
+        "withdraw_to_burn_hours": 54.856944444444444
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "93363.58",
+        "block": 22340668,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-04-24T18:31:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1745519471,
+        "tx_hash": "0x6a2f4f0f907978b0b1bb7fdd31b0b950dc28766a749684383b488744b9587b36"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "93362.58",
+        "block": 22340665,
+        "iso": "2025-04-24T18:30:35+00:00",
+        "receipt_to_firsthop_hours": 0.4066666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1745519435,
+        "tx_hash": "0x412752579dd261e8c7277c8fb6bc94b0fcf43e964887154423eb6723cdec48f4"
+      },
+      "l1_receipt": {
+        "amount_lpt": "93363.58",
+        "block": 22340544,
+        "burn_to_receipt_days": 8.203587962962963,
+        "iso": "2025-04-24T18:06:11+00:00",
+        "ts": 1745517971,
+        "tx_hash": "0x8f2f9ca078fe66b40c98ee6eca2ba5d93747e43134342fbd6afb0d2623317df9"
+      },
+      "l2_burn": {
+        "amount_lpt": "93363.58",
+        "block": 326976997,
+        "iso": "2025-04-16T13:13:01+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1744809181,
+        "tx_hash": "0xbe129dc8da57af95af6b856da8d34fdfef35cd5f8867e72bcf70b4fc31369151"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "33421.58",
+        "block": 326745827,
+        "iso": "2025-04-15T21:03:16+00:00",
+        "ts": 1744750996,
+        "tx_hash": "0xbdfee6d37bf36be3f4a8f53586f1ec1cf5694dd6fb1def1b225dff1e9fa46dfa",
+        "withdraw_to_burn_hours": 16.1625
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "52131.79",
+        "block": 22426828,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-05-06T19:44:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1746560651,
+        "tx_hash": "0x33d6068664d316585eb90204c4c49c9795b5f2da8da6359ba598c37bd1734d3f"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "52130.79",
+        "block": 22426819,
+        "iso": "2025-05-06T19:42:23+00:00",
+        "receipt_to_firsthop_hours": 0.39666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1746560543,
+        "tx_hash": "0x02648d57b5c40926ecc8e0be673173f7449bb03838c706cf9e18c3da3c4c45d5"
+      },
+      "l1_receipt": {
+        "amount_lpt": "52131.79",
+        "block": 22426701,
+        "burn_to_receipt_days": 7.003113425925926,
+        "iso": "2025-05-06T19:18:35+00:00",
+        "ts": 1746559115,
+        "tx_hash": "0x1dd859279e308965ae7ed170c10dd9394e23920b9cf3ce7dd292cbfc5663a404"
+      },
+      "l2_burn": {
+        "amount_lpt": "52131.79",
+        "block": 331536261,
+        "iso": "2025-04-29T19:14:06+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1745954046,
+        "tx_hash": "0xb42b6f8905d70432b4a18efaedb70be946603e6537107f34be41e7d35834b3e8"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "52131.79",
+        "block": 331470969,
+        "iso": "2025-04-29T14:41:29+00:00",
+        "ts": 1745937689,
+        "tx_hash": "0xfbb8ea7e7b8799d0f621e10b65441b16e07036621bf5668c5d1f21552b2317ce",
+        "withdraw_to_burn_hours": 4.543611111111111
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "91823.09",
+        "block": 22526708,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-05-20T21:08:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1747775339,
+        "tx_hash": "0x1af0b7e83e4b692ff1eacbb874df745aac645ee5e5534f92e7407567ba718375"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "91822.09",
+        "block": 22526688,
+        "iso": "2025-05-20T21:04:59+00:00",
+        "receipt_to_firsthop_hours": 2.5933333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1747775099,
+        "tx_hash": "0x76614056ceb8aeeb62d4d59c719655a17c39a7b17620f08d2adee718b6f201d8"
+      },
+      "l1_receipt": {
+        "amount_lpt": "91823.09",
+        "block": 22525916,
+        "burn_to_receipt_days": 6.919085648148148,
+        "iso": "2025-05-20T18:29:23+00:00",
+        "ts": 1747765763,
+        "tx_hash": "0xa428291dbc09fd407e0c12fbf239dec2247c97329c9f920c7b541fa3961e25d3"
+      },
+      "l2_burn": {
+        "amount_lpt": "91823.09",
+        "block": 336366000,
+        "iso": "2025-05-13T20:25:54+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1747167954,
+        "tx_hash": "0x55e3540fe8bfbf2dcac6cd43f6d84dbfd752797bdce35e3f2808f52ca5cd6f1c"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "91823.09",
+        "block": 336361842,
+        "iso": "2025-05-13T20:08:22+00:00",
+        "ts": 1747166902,
+        "tx_hash": "0x6fd08c27adf94a6f1e370af5c471c077c0f15d8b6ecc9555e4ec4fc429bb72cd",
+        "withdraw_to_burn_hours": 0.2922222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "45927.45",
+        "block": 22595459,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-05-30T12:09:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1748606987,
+        "tx_hash": "0x62c2e5b62dda3d35e3d41f6d03c2f6f106e74d7e97ff78d0b5750f44e40e5582"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "45926.45",
+        "block": 22595456,
+        "iso": "2025-05-30T12:09:11+00:00",
+        "receipt_to_firsthop_hours": 21.31,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1748606951,
+        "tx_hash": "0xaa698771dbbb75c39705254dfe58a6c18be0719afd7277e7e5a531a433dbf138"
+      },
+      "l1_receipt": {
+        "amount_lpt": "45927.45",
+        "block": 22589108,
+        "burn_to_receipt_days": 7.795648148148148,
+        "iso": "2025-05-29T14:50:35+00:00",
+        "ts": 1748530235,
+        "tx_hash": "0x490d1941ffd265e93d429829e16f234a76017fe2534cb850fad1eece754dc27f"
+      },
+      "l2_burn": {
+        "amount_lpt": "45927.45",
+        "block": 339103701,
+        "iso": "2025-05-21T19:44:51+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1747856691,
+        "tx_hash": "0x053363aa1512414d8450c17cf5f792db73fda29cf1713fd794ae074c78b7f7bf"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "45927.45",
+        "block": 338769060,
+        "iso": "2025-05-20T20:27:56+00:00",
+        "ts": 1747772876,
+        "tx_hash": "0xbc74d500a2beab79d073ea8bbd56dc6bacdefccc3b8c52f8045e88d8e6d20175",
+        "withdraw_to_burn_hours": 23.281944444444445
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "56075.55",
+        "block": 22696293,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-06-13T14:40:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1749825611,
+        "tx_hash": "0x771aae0bcde6c770609917239c660182016c328b2f845c3598e245f85ee12e8c"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "56074.55",
+        "block": 22696274,
+        "iso": "2025-06-13T14:36:23+00:00",
+        "receipt_to_firsthop_hours": 0.3333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1749825383,
+        "tx_hash": "0xcf487ff5be85d2478132d3314372d8c7bc04b4f50d34e496ccdc704f0a0e2025"
+      },
+      "l1_receipt": {
+        "amount_lpt": "56075.55",
+        "block": 22696176,
+        "burn_to_receipt_days": 7.620185185185186,
+        "iso": "2025-06-13T14:16:23+00:00",
+        "ts": 1749824183,
+        "tx_hash": "0x29db11e9c1ae1def666d16ef76c1f5f2b5582639a37b4197907ada89d28cac48"
+      },
+      "l2_burn": {
+        "amount_lpt": "56075.55",
+        "block": 344319817,
+        "iso": "2025-06-05T23:23:19+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1749165799,
+        "tx_hash": "0xa3a1ce9dfa902ecab54429573b73ec0fdae94d8388b903b11e626c20a4c0213c"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "56075.55",
+        "block": 343907510,
+        "iso": "2025-06-04T18:37:34+00:00",
+        "ts": 1749062254,
+        "tx_hash": "0xd8f0fea07baeb5189889b979d32d63e8305ef87b2335d145b49a719d968f5ea5",
+        "withdraw_to_burn_hours": 28.7625
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "94750.49",
+        "block": 22784007,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-06-25T21:02:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1750885331,
+        "tx_hash": "0x01df5ba17eb45ef83d937114fbdcf8789d08afa46518809cf332198e981cb048"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "94749.49",
+        "block": 22783989,
+        "iso": "2025-06-25T20:58:35+00:00",
+        "receipt_to_firsthop_hours": 0.29333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1750885115,
+        "tx_hash": "0x2e0ab4acbc41233138b55ab843bf0e3f241b27f637b61d442c42af8e242f8711"
+      },
+      "l1_receipt": {
+        "amount_lpt": "94750.49",
+        "block": 22783902,
+        "burn_to_receipt_days": 6.868854166666667,
+        "iso": "2025-06-25T20:40:59+00:00",
+        "ts": 1750884059,
+        "tx_hash": "0x0c34f21005531efa77f301a03c16c200eea504050081bbfd99c594a509765a8d"
+      },
+      "l2_burn": {
+        "amount_lpt": "94750.49",
+        "block": 348801764,
+        "iso": "2025-06-18T23:49:50+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1750290590,
+        "tx_hash": "0xec105c168747a51fcd272aceb631e2dca830bcd82d9441908e2b66aa746f0266"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "26812.91",
+        "block": 348736250,
+        "iso": "2025-06-18T19:11:50+00:00",
+        "ts": 1750273910,
+        "tx_hash": "0x48cf94f2b32782e9cd07734d651be9d56dc0f762e7809ee67089b638d2d40570",
+        "withdraw_to_burn_hours": 4.633333333333334
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "46335.77",
+        "block": 22976667,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-07-22T19:01:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1753210883,
+        "tx_hash": "0x3eddfc8f3bce044525c3889e77be56f4e603ce9d9a6cc2ef694a379e9147ea53"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "46334.77",
+        "block": 22976665,
+        "iso": "2025-07-22T19:00:59+00:00",
+        "receipt_to_firsthop_hours": 3.026666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1753210859,
+        "tx_hash": "0x5522ad668e120d26a503f33c5a8ea7d034c6c8b9540e5320025d96f61b681f85"
+      },
+      "l1_receipt": {
+        "amount_lpt": "46335.77",
+        "block": 22975766,
+        "burn_to_receipt_days": 12.887974537037037,
+        "iso": "2025-07-22T15:59:23+00:00",
+        "ts": 1753199963,
+        "tx_hash": "0x325553565e002ba9697349149aba3bb866d8bd664291ec129b92623e91563105"
+      },
+      "l2_burn": {
+        "amount_lpt": "46335.77",
+        "block": 355969048,
+        "iso": "2025-07-09T18:40:42+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1752086442,
+        "tx_hash": "0x8eb495572b0d414a2f0d981bddc4e93974babccd78a19c70ccc3e3dd25659284"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "46335.77",
+        "block": 355632945,
+        "iso": "2025-07-08T19:16:38+00:00",
+        "ts": 1752002198,
+        "tx_hash": "0xe10e1bc055a4249c3343ac58de9aac52db3dcd38543957b7e3788ce426592a39",
+        "withdraw_to_burn_hours": 23.40111111111111
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "88783.42",
+        "block": 23077308,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-08-05T20:39:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1754426375,
+        "tx_hash": "0x9d7dbd0a28a0e1c94d14c5c82c3167138027c948e809ddfaa02c5655b3a90537"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "88783.42",
+        "block": 23077287,
+        "iso": "2025-08-05T20:35:23+00:00",
+        "receipt_to_firsthop_hours": 1.6,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1754426123,
+        "tx_hash": "0x84060bc6171fad8d75a0418e5aa804057b039ca00d93f2982df237d75cba667f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "88783.42",
+        "block": 23076809,
+        "burn_to_receipt_days": 6.956747685185185,
+        "iso": "2025-08-05T18:59:23+00:00",
+        "ts": 1754420363,
+        "tx_hash": "0x223c2eecd9b2a32bfbabcf3c64c6ff08e6c6fa77147d81f393558b08e7d08fa2"
+      },
+      "l2_burn": {
+        "amount_lpt": "88783.42",
+        "block": 362908773,
+        "iso": "2025-07-29T20:01:40+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1753819300,
+        "tx_hash": "0x9485443c01b56a884efd4e15f7a8f103a7565d2ed4cb405315bed61b4132e20a"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "88783.42",
+        "block": 362886283,
+        "iso": "2025-07-29T18:28:01+00:00",
+        "ts": 1753813681,
+        "tx_hash": "0xdcbc1775075210e4b6ba557ca35863afe0bab5d0cd9956d487f0f25a509e7629",
+        "withdraw_to_burn_hours": 1.5608333333333333
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "69456.71",
+        "block": 23284604,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-09-03T19:14:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1756926863,
+        "tx_hash": "0x87d4fb9c3e406259abbb4c7efa925880331a74b1feaf6607169381e9dec20ad5"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "69456.71",
+        "block": 23284602,
+        "iso": "2025-09-03T19:13:59+00:00",
+        "receipt_to_firsthop_hours": 22.03,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1756926839,
+        "tx_hash": "0xc35d8a80792ea902e0e1ad5f915ea910ca289d092c52b9a36cb3f7de2ab1decc"
+      },
+      "l1_receipt": {
+        "amount_lpt": "69456.71",
+        "block": 23278024,
+        "burn_to_receipt_days": 7.212395833333333,
+        "iso": "2025-09-02T21:12:11+00:00",
+        "ts": 1756847531,
+        "tx_hash": "0x4545c7ada52ad6d03ea1a1a078edd15fdf4df1ce73028760177385ef36833307"
+      },
+      "l2_burn": {
+        "amount_lpt": "69456.71",
+        "block": 372539811,
+        "iso": "2025-08-26T16:06:20+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1756224380,
+        "tx_hash": "0x90015ce282b7d621dbf5cae3c11c081060a061a4fb55f07c541db9917c0cf7bf"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "66255.08",
+        "block": 23397308,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-09-19T13:04:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1758287087,
+        "tx_hash": "0x40d113cb2250bbdcdc4195388c3e6de56040e656abf6f1bfc787ea40a73a3746"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "66255.08",
+        "block": 23397295,
+        "iso": "2025-09-19T13:02:11+00:00",
+        "receipt_to_firsthop_hours": 23.613333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1758286931,
+        "tx_hash": "0xf6c3da6da00a2f876340438837ad20780ec9e8fc8107a66af9bcafdb0187a64e"
+      },
+      "l1_receipt": {
+        "amount_lpt": "66255.08",
+        "block": 23390246,
+        "burn_to_receipt_days": 6.772395833333333,
+        "iso": "2025-09-18T13:25:23+00:00",
+        "ts": 1758201923,
+        "tx_hash": "0xaeb4eba3dc0ce0b9c42d329e2b33ef57837b3c57b843756d6ef17d0a8644ad85"
+      },
+      "l2_burn": {
+        "amount_lpt": "66255.08",
+        "block": 378115366,
+        "iso": "2025-09-11T18:53:08+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1757616788,
+        "tx_hash": "0x4eb9d276f596fe1e07cefe58c02ff4b8dceeb008ece9c6be73948420cc5fa7ce"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "66255.08",
+        "block": 378047622,
+        "iso": "2025-09-11T14:11:07+00:00",
+        "ts": 1757599867,
+        "tx_hash": "0x758729bb013e035b8f3ad13c39ffe38820022659e3f82e9d6582f53f177f8fe2",
+        "withdraw_to_burn_hours": 4.700277777777778
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "46919.53",
+        "block": 23586388,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-10-15T23:32:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1760571143,
+        "tx_hash": "0xdccc883cbf0d3558ed2188ec6ac6bbcaddd702eff34e060c3e196baf7971285c"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "46919.53",
+        "block": 23586368,
+        "iso": "2025-10-15T23:28:23+00:00",
+        "receipt_to_firsthop_hours": 1.7066666666666668,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1760570903,
+        "tx_hash": "0xcadd70dac3bc06582cc39d7e0faf8a9bf3e07e5487c07aa66dd55dd6b02b0177"
+      },
+      "l1_receipt": {
+        "amount_lpt": "46919.53",
+        "block": 23585860,
+        "burn_to_receipt_days": 7.041458333333333,
+        "iso": "2025-10-15T21:45:59+00:00",
+        "ts": 1760564759,
+        "tx_hash": "0x0bbfa181ce04b31f6e5ea6a33046fa5b6733a2703d427f1592e73160f68e1612"
+      },
+      "l2_burn": {
+        "amount_lpt": "46919.53",
+        "block": 387483783,
+        "iso": "2025-10-08T20:46:17+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1759956377,
+        "tx_hash": "0x5787ec7e9b7da0b2750be56810daffb560a6f13f8463f27c338be60c490e58c0"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "46919.53",
+        "block": 387104971,
+        "iso": "2025-10-07T18:31:24+00:00",
+        "ts": 1759861884,
+        "tx_hash": "0x8e2dc02004694f6c2adeed000fcc1fde1b25868abf5af0e509608cc8d1f0ea84",
+        "withdraw_to_burn_hours": 26.248055555555556
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "82443.52",
+        "block": 23690789,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-10-30T14:26:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1761834371,
+        "tx_hash": "0xec70e17f3ca24c2a806a11a50906631223e95adcf58b523eac851c606b98c8e9"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "82443.52",
+        "block": 23690782,
+        "iso": "2025-10-30T14:24:47+00:00",
+        "receipt_to_firsthop_hours": 41.47666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1761834287,
+        "tx_hash": "0x52c30e8eebd6d1faab14a877225e19c5492e466490970b0ee6cd3a9d2bf0fa17"
+      },
+      "l1_receipt": {
+        "amount_lpt": "82443.52",
+        "block": 23678431,
+        "burn_to_receipt_days": 6.826226851851852,
+        "iso": "2025-10-28T20:56:11+00:00",
+        "ts": 1761684971,
+        "tx_hash": "0xcde41ecf862721a257a997908948a234b52507568a10a85e623931bed3503b7a"
+      },
+      "l2_burn": {
+        "amount_lpt": "82443.52",
+        "block": 392043638,
+        "iso": "2025-10-22T01:06:25+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1761095185,
+        "tx_hash": "0x40734010e026c4d3c50fbf2018e7d7b7557a6a95ac090bbb294b33d271ddb211"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "82443.52",
+        "block": 391988225,
+        "iso": "2025-10-21T21:15:34+00:00",
+        "ts": 1761081334,
+        "tx_hash": "0x47085eb8c8cb4904f5ac1e27ad15d10e117fecd7f4901322095ec40f172393df",
+        "withdraw_to_burn_hours": 3.8475
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "63164.14",
+        "block": 23785235,
+        "burn_to_receipt_days": 7.970162037037037,
+        "iso": "2025-11-12T19:29:11+00:00",
+        "ts": 1762975751,
+        "tx_hash": "0xc246dc7b1853685b4820a40121968c379f98838363b09d2e6ad7aaab4efaf08d"
+      },
+      "l2_burn": {
+        "amount_lpt": "63164.14",
+        "block": 396817964,
+        "iso": "2025-11-04T20:12:09+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1762287129,
+        "tx_hash": "0xa885cab2dd0011f4d1073a43ccb573b8da674aa1de5a355e7bd991cd9a53c518"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "63164.14",
+        "block": 396800868,
+        "iso": "2025-11-04T19:01:06+00:00",
+        "ts": 1762282866,
+        "tx_hash": "0x996e824b542a59889587d92d791912ef49ab7994a9f63c18b2f7a4a6e591b4b0",
+        "withdraw_to_burn_hours": 1.1841666666666666
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "46389.07",
+        "block": 23935392,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-12-03T20:48:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1764794891,
+        "tx_hash": "0xd8980e7b778c459afe228d2cb65d860e4d6c47abe972117268fd36117d0013fe"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "46389.07",
+        "block": 23935379,
+        "iso": "2025-12-03T20:45:35+00:00",
+        "receipt_to_firsthop_hours": 3.2066666666666666,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1764794735,
+        "tx_hash": "0x1836032bfa99c128b89d71f8e55ecaf3c661cbc40c5a85b6a74c6a4e163af71f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "46389.07",
+        "block": 23934424,
+        "burn_to_receipt_days": 12.98505787037037,
+        "iso": "2025-12-03T17:33:11+00:00",
+        "ts": 1764783191,
+        "tx_hash": "0xe437a8e8265451b8a042fb8344fbd30974ebebf6f0b8425e25c4ef18b3e15748"
+      },
+      "l2_burn": {
+        "amount_lpt": "46389.07",
+        "block": 402318973,
+        "iso": "2025-11-20T17:54:42+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1763661282,
+        "tx_hash": "0x0380af8bba34396944941722c57f73e420a0d757c749669f2c28c8c5c4b3f91e"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "46389.07",
+        "block": 402028190,
+        "iso": "2025-11-19T21:43:51+00:00",
+        "ts": 1763588631,
+        "tx_hash": "0x2ff6ae9518fcb0361214110d3ca9c76460bed80079ec91b70c63fa373772c6d5",
+        "withdraw_to_burn_hours": 20.180833333333332
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "70388.32",
+        "block": 24034668,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-12-17T20:17:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1766002679,
+        "tx_hash": "0x55aae9775d43485483ba32682e3ee5f44966eda02fc878fe7c6cdee28bcdf450"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "70387.32",
+        "block": 24034659,
+        "iso": "2025-12-17T20:16:11+00:00",
+        "receipt_to_firsthop_hours": 4.126666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1766002571,
+        "tx_hash": "0xc92c66f560ef666c47fc473458e8531149c16acdcd9f7c1a7ce5cc8ef75569e5"
+      },
+      "l1_receipt": {
+        "amount_lpt": "70388.32",
+        "block": 24033427,
+        "burn_to_receipt_days": 7.748252314814815,
+        "iso": "2025-12-17T16:08:35+00:00",
+        "ts": 1765987715,
+        "tx_hash": "0x228b5433174f6bc3f7b0189860bd4736deb0e86479d6626ad9c8ed8077380827"
+      },
+      "l2_burn": {
+        "amount_lpt": "70388.32",
+        "block": 408955952,
+        "iso": "2025-12-09T22:11:06+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1765318266,
+        "tx_hash": "0x7cae380fc7d534211ddabb80a03b01ecd4709bf32503a58b34f8d6b97c32549e"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "70388.32",
+        "block": 408943070,
+        "iso": "2025-12-09T21:17:29+00:00",
+        "ts": 1765315049,
+        "tx_hash": "0xf58e0897e6e7d813dbeb8e68385a49b6fd38531c5cbfb3e47ea1a7b491878301",
+        "withdraw_to_burn_hours": 0.8936111111111111
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": null,
+      "l2_burn": {
+        "amount_lpt": "41067.45",
+        "block": 421320904,
+        "iso": "2026-01-14T16:05:33+00:00",
+        "l1_recipient": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+        "ts": 1768406733,
+        "tx_hash": "0x1268a7e1665deec3f70e7a8c2f9d6cbf1824281ffc7f06ebcb2656c0c33fbbd4"
+      },
+      "l2_sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "l2_sender_bonded_now_lpt": "2322141.979053303975212447",
+      "l2_withdraw": {
+        "amount_lpt": "41067.45",
+        "block": 421309048,
+        "iso": "2026-01-14T15:16:17+00:00",
+        "ts": 1768403777,
+        "tx_hash": "0xf9ccc4189e538ca74ac71379108baf21ee2e6e0e7e745f045e022c7ec10c5088",
+        "withdraw_to_burn_hours": 0.8211111111111111
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": {
+        "amount_lpt": "1051758.7",
+        "block": 23463965,
+        "iso": "2025-09-28T20:45:59+00:00",
+        "receipt_to_firsthop_hours": 0.1,
+        "to": "0xd8b9f62de8b8217ab997df060a47c020c81f9997",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1759092359,
+        "tx_hash": "0x90eae4e7f03c316a28d66f582c005fd3e614b396c984c090be9fd4dc5346bc23"
+      },
+      "l1_receipt": {
+        "amount_lpt": "1051858.716542152695221509",
+        "block": 23463935,
+        "burn_to_receipt_days": 11.236805555555556,
+        "iso": "2025-09-28T20:39:59+00:00",
+        "ts": 1759091999,
+        "tx_hash": "0x182cdcdadfa5ba9cc933328c09d06680f85fe72a0787a6e219c1a1a445be662d"
+      },
+      "l2_burn": {
+        "amount_lpt": "1051858.716542152695221509",
+        "block": 380131965,
+        "iso": "2025-09-17T14:58:59+00:00",
+        "l1_recipient": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+        "ts": 1758121139,
+        "tx_hash": "0x9dbf9afe5d01d3df8c566b71e5dd4fe3f66acd423839915502f125c98e0c5f6c"
+      },
+      "l2_sender": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "1051858.716542152695221509",
+        "block": 380130536,
+        "iso": "2025-09-17T14:53:02+00:00",
+        "ts": 1758120782,
+        "tx_hash": "0xd38e30787ead96a951075e6c1170d99514dfa93a4b00811d24d4f8d77c6b465d",
+        "withdraw_to_burn_hours": 0.09916666666666667
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10",
+        "block": 19526217,
+        "from": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+        "iso": "2024-03-27T14:23:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1711549391,
+        "tx_hash": "0x17060d58bf09f803885670fc96c47fd44925ce2f1e7a1f898d7c42d74c155510"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10",
+        "block": 19526210,
+        "iso": "2024-03-27T14:21:47+00:00",
+        "receipt_to_firsthop_hours": 0.10666666666666667,
+        "to": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1711549307,
+        "tx_hash": "0xc3754acc42a6fba351fe0829ad103e7094a010ed4a68d058096778ab95e87474"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10",
+        "block": 19526178,
+        "burn_to_receipt_days": 7.037118055555555,
+        "iso": "2024-03-27T14:15:23+00:00",
+        "ts": 1711548923,
+        "tx_hash": "0xbe7efd191108dc566e100630223eec28b0961d1f02531d5a701024284be07645"
+      },
+      "l2_burn": {
+        "amount_lpt": "10",
+        "block": 192347893,
+        "iso": "2024-03-20T13:21:56+00:00",
+        "l1_recipient": "0xe806c101a71522753ea6ea496bafe7b8d61e3baa",
+        "ts": 1710940916,
+        "tx_hash": "0x0d4cda848e672266e1622682a71a15fdd61cc133c375da73684a0a2631d1a299"
+      },
+      "l2_sender": "0x60b8eb0947d25194afa248b81a087214beec5cfe",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "812498",
+        "block": 19526242,
+        "from": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+        "iso": "2024-03-27T14:28:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1711549691,
+        "tx_hash": "0x73ac4eea51f208b8578b1ccd7756be7fd036b5801f05fcf15b848e5bfc7a85f6"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "812498",
+        "block": 19526239,
+        "iso": "2024-03-27T14:27:35+00:00",
+        "receipt_to_firsthop_hours": 0.21666666666666667,
+        "to": "0x3941e792c7ab398f0d5fd244a84e2fc2004ed60d",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1711549655,
+        "tx_hash": "0x3d21e5dea84b67b79f5092957cc1b31f39d4cc26a7e5b119062209f8f091cf9f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "812498",
+        "block": 19526174,
+        "burn_to_receipt_days": 6.991539351851852,
+        "iso": "2024-03-27T14:14:35+00:00",
+        "ts": 1711548875,
+        "tx_hash": "0x2bb3e6a02f0babd68977abfde3a904d4ad4c29736ce3a1e4f7594d340d6f3f1c"
+      },
+      "l2_burn": {
+        "amount_lpt": "812498",
+        "block": 192363453,
+        "iso": "2024-03-20T14:26:46+00:00",
+        "l1_recipient": "0xe806c101a71522753ea6ea496bafe7b8d61e3baa",
+        "ts": 1710944806,
+        "tx_hash": "0x0f100cfe422349daad217a54d92a6e226a88db915c461f3522677f21e8b69f9c"
+      },
+      "l2_sender": "0x60b8eb0947d25194afa248b81a087214beec5cfe",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": {
+        "amount_lpt": "621438.059193238227204479",
+        "block": 16199639,
+        "iso": "2022-12-16T20:27:59+00:00",
+        "receipt_to_firsthop_hours": 0.10666666666666667,
+        "to": "0x6c78ae1d2a5ffdf7917d65e8586015d0933fc7ea",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1671222479,
+        "tx_hash": "0x2a0f35a1a1a6bfc6c599875a26f349c076e1d977bbfda907ee9db876a903361f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "621439.059193238227204479",
+        "block": 16199609,
+        "burn_to_receipt_days": 9.059606481481481,
+        "iso": "2022-12-16T20:21:35+00:00",
+        "ts": 1671222095,
+        "tx_hash": "0x3271cfa6ebe99909503d2e337ab7e9063a8969c418523273816b1a770abe889e"
+      },
+      "l2_burn": {
+        "amount_lpt": "621439.059193238227204479",
+        "block": 44421232,
+        "iso": "2022-12-07T18:55:45+00:00",
+        "l1_recipient": "0xef83273cbd014c4ae7998467c422275a8b37827e",
+        "ts": 1670439345,
+        "tx_hash": "0x147b13ec4dadf6433783958a94978d80a8014376d0966648e355c964804564ca"
+      },
+      "l2_sender": "0xef83273cbd014c4ae7998467c422275a8b37827e",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "621439.059193238227204479",
+        "block": 44420220,
+        "iso": "2022-12-07T18:49:42+00:00",
+        "ts": 1670438982,
+        "tx_hash": "0x84e4858ba204dd6c8e8e107352c3fb991608e8ef94a63635bc22e26351f143f3",
+        "withdraw_to_burn_hours": 0.10083333333333333
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": {
+        "amount_lpt": "588040.989627615274485149",
+        "block": 16643174,
+        "iso": "2023-02-16T18:46:59+00:00",
+        "receipt_to_firsthop_hours": 0.05,
+        "to": "0xde346728906a36bfd06f28e9ee35005e2fde51ae",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1676573219,
+        "tx_hash": "0x5d72dda7a45746f469c5183843c382df34a049c7a5e3c006c9e844a2c88b771f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "588040.989627615274485149",
+        "block": 16643159,
+        "burn_to_receipt_days": 7.048587962962963,
+        "iso": "2023-02-16T18:43:59+00:00",
+        "ts": 1676573039,
+        "tx_hash": "0x4f9c46066d7a43ae2094258bdec9eaa4a4905fb753ba83fa3674642c82406cb5"
+      },
+      "l2_burn": {
+        "amount_lpt": "588040.989627615274485149",
+        "block": 59461114,
+        "iso": "2023-02-09T17:34:01+00:00",
+        "l1_recipient": "0x543df23b9a881fbdbdec7ab3e90f3ff7b905068b",
+        "ts": 1675964041,
+        "tx_hash": "0xc263b4a8630ff59ca61c97cdd8353d3a00d0705250decafdd38365dffeabca41"
+      },
+      "l2_sender": "0x543df23b9a881fbdbdec7ab3e90f3ff7b905068b",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "588040.889627615274485149",
+        "block": 59460644,
+        "iso": "2023-02-09T17:31:40+00:00",
+        "ts": 1675963900,
+        "tx_hash": "0xcfd6941a6b8e7e2c14a9310904e37317794c47e1917b2ff9684134dc5fce1d0c",
+        "withdraw_to_burn_hours": 0.03916666666666667
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "10",
+        "block": 14998341,
+        "burn_to_receipt_days": 11.136157407407408,
+        "iso": "2022-06-20T19:46:17+00:00",
+        "ts": 1655754377,
+        "tx_hash": "0x0f446743794502d6daf3329e1f26b85911739a7d33be844499e737dccbf0c158"
+      },
+      "l2_burn": {
+        "amount_lpt": "10",
+        "block": 14169281,
+        "iso": "2022-06-09T16:30:13+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1654792213,
+        "tx_hash": "0xe68898b3524c6c01ba4800e2e58d2d8aef8e1039d7472961d898aa409ed5fc8f"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "5000",
+        "block": 14159982,
+        "iso": "2022-06-09T14:18:25+00:00",
+        "ts": 1654784305,
+        "tx_hash": "0xb09bb85e0754360ec5c5ba7ebcf195493a5c270b6c31bf8920674b57b44b35f6",
+        "withdraw_to_burn_hours": 2.1966666666666668
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11060.896347",
+        "block": 15046058,
+        "from": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "iso": "2022-06-29T17:18:09+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1656523089,
+        "tx_hash": "0x2fe53b443341f7e335533ca1f48abc61c2a2d89b545551cdf4eff3072841602d"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11060.896347",
+        "block": 15046050,
+        "iso": "2022-06-29T17:17:08+00:00",
+        "receipt_to_firsthop_hours": 0.07083333333333333,
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1656523028,
+        "tx_hash": "0x013bda22c1c8d76accf81a05c322771beefe126af8459dbcb7a62667217fe24f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11050.896347",
+        "block": 15046034,
+        "burn_to_receipt_days": 8.89005787037037,
+        "iso": "2022-06-29T17:12:53+00:00",
+        "ts": 1656522773,
+        "tx_hash": "0x83903acf2a9798355da86ac4c77030d0d747bb93bd7d8027095f0a402c9c9124"
+      },
+      "l2_burn": {
+        "amount_lpt": "11050.896347",
+        "block": 15193259,
+        "iso": "2022-06-20T19:51:12+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1655754672,
+        "tx_hash": "0x29b3e6c1629c89911f7c8cff4de0439855ea544bb29ef4671af9d4ab9dd5d2be"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "10",
+        "block": 16029664,
+        "burn_to_receipt_days": 8.2278125,
+        "iso": "2022-11-23T02:17:59+00:00",
+        "ts": 1669169879,
+        "tx_hash": "0xe0a6b2fcf03c8750b45bd87130b443119bc7a586592accf62dd51bc643e10efd"
+      },
+      "l2_burn": {
+        "amount_lpt": "10",
+        "block": 38118337,
+        "iso": "2022-11-14T20:49:56+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1668458996,
+        "tx_hash": "0xddb1bd0a0855abbd011082c046884105ded3c1e7b620f725497b88dc3d95b204"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "10",
+        "block": 38116974,
+        "iso": "2022-11-14T20:41:35+00:00",
+        "ts": 1668458495,
+        "tx_hash": "0x447fba566db4cd645aca4653ceb3379e7c68c5073c40132b14e6056ed7237a6b",
+        "withdraw_to_burn_hours": 0.13916666666666666
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "40000",
+        "block": 16114678,
+        "from": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "iso": "2022-12-04T23:19:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1670195963,
+        "tx_hash": "0x3700ce6400f4d439093dda14f88cd99d4b1b2d442de17226b05947e551c2113b"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "40000",
+        "block": 16114673,
+        "iso": "2022-12-04T23:18:23+00:00",
+        "receipt_to_firsthop_hours": 0.29,
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1670195903,
+        "tx_hash": "0x87bf5723aefff9a566d2b55f2baf148996d2f778dd9e588c70d3a1b38395f7bd"
+      },
+      "l1_receipt": {
+        "amount_lpt": "40000",
+        "block": 16114586,
+        "burn_to_receipt_days": 11.8596875,
+        "iso": "2022-12-04T23:00:59+00:00",
+        "ts": 1670194859,
+        "tx_hash": "0x9a8292752e05632a55bcc0ca0bebde409bbc3c01c09921bacce7ecef35c07967"
+      },
+      "l2_burn": {
+        "amount_lpt": "40000",
+        "block": 40416579,
+        "iso": "2022-11-23T02:23:02+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1669170182,
+        "tx_hash": "0xffda203105dbef2c8aeb270ebeba2998b86e8bceb9113bc6349947bc55bbd1e2"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "40000",
+        "block": 40416201,
+        "iso": "2022-11-23T02:21:12+00:00",
+        "ts": 1669170072,
+        "tx_hash": "0xb61ec617531e4d1820286555b9b15eb73c254fa7db3bf7c53eb0f99f58e56b6e",
+        "withdraw_to_burn_hours": 0.030555555555555555
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "19990",
+        "block": 19377747,
+        "from": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "iso": "2024-03-06T17:53:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1709747603,
+        "tx_hash": "0x5f1a937fe9220aa3c55d18081dbaa9f7e916b9408c7f25503a6d78a8f05800d0"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "19990",
+        "block": 19377741,
+        "iso": "2024-03-06T17:52:11+00:00",
+        "receipt_to_firsthop_hours": 0.24666666666666667,
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1709747531,
+        "tx_hash": "0x575952e60e31947c0e9e3550eac3e63dddab9a807869e48f61b03fbb434e399d"
+      },
+      "l1_receipt": {
+        "amount_lpt": "20000",
+        "block": 19377667,
+        "burn_to_receipt_days": 7.0312268518518515,
+        "iso": "2024-03-06T17:37:23+00:00",
+        "ts": 1709746643,
+        "tx_hash": "0x197fa3563f085044d3b4a9be5ac91d19c67ae150b65cb4df4a862feb5419b349"
+      },
+      "l2_burn": {
+        "amount_lpt": "20000",
+        "block": 185398537,
+        "iso": "2024-02-28T16:52:25+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1709139145,
+        "tx_hash": "0x4816f06b6532026cf084a3084c9fde166f1870927953e30147a9caabf92d0ceb"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "100000",
+        "block": 185391112,
+        "iso": "2024-02-28T16:21:14+00:00",
+        "ts": 1709137274,
+        "tx_hash": "0x8a18b1e42a14a1a43f82fc750253c6e061909829007897bf5d2be5ea02ad96fb",
+        "withdraw_to_burn_hours": 0.5197222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "40000",
+        "block": 19427123,
+        "from": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "iso": "2024-03-13T15:45:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1710344711,
+        "tx_hash": "0x85fa14abf13a2895d75a9a18c0cfec8bbd5950a1ac1b2931b131efd2bba2cff8"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "40000",
+        "block": 19427119,
+        "iso": "2024-03-13T15:44:23+00:00",
+        "receipt_to_firsthop_hours": 0.08,
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1710344663,
+        "tx_hash": "0x9db73f8292cec3f4ccef806c8710ed0ff21f7bc8dce038287f52f6d95dceeaea"
+      },
+      "l1_receipt": {
+        "amount_lpt": "40000",
+        "block": 19427096,
+        "burn_to_receipt_days": 6.891736111111111,
+        "iso": "2024-03-13T15:39:35+00:00",
+        "ts": 1710344375,
+        "tx_hash": "0x9e0a4f70746df8ea45de5cbf164032bc0687de2349c969204b87b6f729502a08"
+      },
+      "l2_burn": {
+        "amount_lpt": "40000",
+        "block": 187750786,
+        "iso": "2024-03-06T18:15:29+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1709748929,
+        "tx_hash": "0x4670881b7fe3933d3eb5eae3eb66fd21890b823de259645f3fb358904af8f8fa"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "40000",
+        "block": 19529050,
+        "burn_to_receipt_days": 14.318368055555556,
+        "iso": "2024-03-28T00:26:47+00:00",
+        "ts": 1711585607,
+        "tx_hash": "0x42e18159d45e8e0fd68bdf81f6df0f0fb64760ca02b3afc9b4409c556d6111e9"
+      },
+      "l2_burn": {
+        "amount_lpt": "40000",
+        "block": 190012714,
+        "iso": "2024-03-13T16:48:20+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1710348500,
+        "tx_hash": "0xbe268698c4bab8d9a9d9c7a7850f43d6a7d47492e1994e72ea31377a5d55fec9"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "10000",
+        "block": 21444250,
+        "burn_to_receipt_days": 6.655775462962963,
+        "iso": "2024-12-20T14:12:47+00:00",
+        "ts": 1734703967,
+        "tx_hash": "0xfe988d3b188de91c38cb5718ca45363d9bbc040100324d88c9140e5047c58180"
+      },
+      "l2_burn": {
+        "amount_lpt": "10000",
+        "block": 284466010,
+        "iso": "2024-12-13T22:28:28+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1734128908,
+        "tx_hash": "0x700762fd7fffda821be793aed06a758292688d27f3d2a7a4027bfbaa2915ceef"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "100000",
+        "block": 284379791,
+        "iso": "2024-12-13T16:28:24+00:00",
+        "ts": 1734107304,
+        "tx_hash": "0x60dc7d29b6b2ae55f93b692b61f047db143af5621f4633249a06c4de4c12cbef",
+        "withdraw_to_burn_hours": 6.001111111111111
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "90000",
+        "block": 21495084,
+        "from": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "iso": "2024-12-27T16:47:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1735318031,
+        "tx_hash": "0x048fae9a459a0d30c900260aad06e797456cfa380775bf03c4bb80a356124860"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "89900",
+        "block": 21495075,
+        "iso": "2024-12-27T16:45:23+00:00",
+        "receipt_to_firsthop_hours": 0.15,
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1735317923,
+        "tx_hash": "0x796401d167a5ca057bf9be27c5afd200b24dd57f18585285e54d3715d59ce6b3"
+      },
+      "l1_receipt": {
+        "amount_lpt": "90000",
+        "block": 21495031,
+        "burn_to_receipt_days": 7.0974305555555555,
+        "iso": "2024-12-27T16:36:23+00:00",
+        "ts": 1735317383,
+        "tx_hash": "0x829f6f0bfbe594da66ebba4e7d6c9edcb3372875eeb188854d67cd8f62281523"
+      },
+      "l2_burn": {
+        "amount_lpt": "90000",
+        "block": 286759707,
+        "iso": "2024-12-20T14:16:05+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1734704165,
+        "tx_hash": "0xd2a1f7611462585148ef257b7f1dc2898d63a831e189a3cb9bd0efa976bf823d"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "50000",
+        "block": 22717741,
+        "from": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "iso": "2025-06-16T14:41:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1750084883,
+        "tx_hash": "0x2e17a126d6adf5aec1eb0461d141168c5179efecdd58731497548844530b17ba"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "49990",
+        "block": 22717719,
+        "iso": "2025-06-16T14:36:47+00:00",
+        "receipt_to_firsthop_hours": 0.23666666666666666,
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1750084607,
+        "tx_hash": "0x4adfd9df4f42e9523e449b0e91efe463e8e453c3ea4e40f2f0646fc09a2c7585"
+      },
+      "l1_receipt": {
+        "amount_lpt": "50000",
+        "block": 22717648,
+        "burn_to_receipt_days": 6.814363425925926,
+        "iso": "2025-06-16T14:22:35+00:00",
+        "ts": 1750083755,
+        "tx_hash": "0xd926659a4cecce64cddb0cc17c97b73524d1aea324ba44514225c9ca863a861d"
+      },
+      "l2_burn": {
+        "amount_lpt": "50000",
+        "block": 345630042,
+        "iso": "2025-06-09T18:49:54+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1749494994,
+        "tx_hash": "0x51f87d8e02634fe5c24f6c79010ffa0016f4108391b4de690aad480cfb3da584"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "50000",
+        "block": 345621275,
+        "iso": "2025-06-09T18:11:28+00:00",
+        "ts": 1749492688,
+        "tx_hash": "0xea9b063bce4d498c89fe5751a366f6a80353267edf0e35f3d2597ef639e315ee",
+        "withdraw_to_burn_hours": 0.6405555555555555
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "99990",
+        "block": 23248867,
+        "from": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "iso": "2025-08-29T19:27:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1756495631,
+        "tx_hash": "0x598b8f3f7e1e9f627a85003bcd93692350b3a78eb576ddd25f0b9d10072d9948"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "99990",
+        "block": 23248844,
+        "iso": "2025-08-29T19:22:35+00:00",
+        "receipt_to_firsthop_hours": 36.81333333333333,
+        "to": "0xa87e90dfa587e7a499ee2f889816c1e4e317fac5",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1756495355,
+        "tx_hash": "0x39b2d234954311e43d3ca9671b79ca030ba5be3725a21b6f0036e62790a5a100"
+      },
+      "l1_receipt": {
+        "amount_lpt": "100000",
+        "block": 23237852,
+        "burn_to_receipt_days": 6.666805555555555,
+        "iso": "2025-08-28T06:33:47+00:00",
+        "ts": 1756362827,
+        "tx_hash": "0x93e9b6f2154d9e5dac7e2115117f092f12d4591c5096f9773c5d3315e8e10ea4"
+      },
+      "l2_burn": {
+        "amount_lpt": "100000",
+        "block": 370786996,
+        "iso": "2025-08-21T14:33:35+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1755786815,
+        "tx_hash": "0x436055509e1283fff610c86667540cf2fbe93a00ea5d14738e251ec2775c2b12"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "100000",
+        "block": 370785820,
+        "iso": "2025-08-21T14:28:41+00:00",
+        "ts": 1755786521,
+        "tx_hash": "0x90e9d1da5af5c12630e61b68b561826722705498efa33a7ca413ae1a089b8338",
+        "withdraw_to_burn_hours": 0.08166666666666667
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "100000",
+        "block": 23547512,
+        "burn_to_receipt_days": 6.8684722222222225,
+        "iso": "2025-10-10T13:04:23+00:00",
+        "ts": 1760101463,
+        "tx_hash": "0xce4b270d721c585cb7cb2b410bc4be19e57f0422573be3984abaef79141d9238"
+      },
+      "l2_burn": {
+        "amount_lpt": "100000",
+        "block": 385687425,
+        "iso": "2025-10-03T16:13:47+00:00",
+        "l1_recipient": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+        "ts": 1759508027,
+        "tx_hash": "0x001ba172852a3e4791baa62488889e0a15f2b88a9435e906a083a74061888145"
+      },
+      "l2_sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "l2_sender_bonded_now_lpt": "283800.278919282656596024",
+      "l2_withdraw": {
+        "amount_lpt": "100000",
+        "block": 385088720,
+        "iso": "2025-10-01T22:41:45+00:00",
+        "ts": 1759358505,
+        "tx_hash": "0x5b174ba19d8032b5db5195219c369a64d6672b548b54c9fa7a29700957729ab5",
+        "withdraw_to_burn_hours": 41.53388888888889
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "667914.346781",
+        "block": 14919090,
+        "from": "0xc60a78732f4f2275fb40d12021b6407f92626116",
+        "iso": "2022-06-07T05:29:54+00:00",
+        "to": "0x28c6c06298d514db089934071355e5743bf21d60",
+        "to_category": "exchange",
+        "to_label": "Binance 14",
+        "ts": 1654579794,
+        "tx_hash": "0x06156ec2eea05cc492da199378da0ffd3a1eaa2493f9a855eb487b97a9cc7cac"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "455737.252741112597248574",
+        "block": 14919089,
+        "iso": "2022-06-07T05:29:19+00:00",
+        "receipt_to_firsthop_hours": 0.3786111111111111,
+        "to": "0xc60a78732f4f2275fb40d12021b6407f92626116",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1654579759,
+        "tx_hash": "0x9c6d1e7c36c3251a83dfbb55ae84e4185fd30cc165aab577abaaca8e8f7fb8e2"
+      },
+      "l1_receipt": {
+        "amount_lpt": "455737.252741112597248574",
+        "block": 14918999,
+        "burn_to_receipt_days": 10.679618055555556,
+        "iso": "2022-06-07T05:06:36+00:00",
+        "ts": 1654578396,
+        "tx_hash": "0x3f815c2b6d8b89c6a3853b0a111a01ba2e9978bb01b7f1759e31eef048d90887"
+      },
+      "l2_burn": {
+        "amount_lpt": "455737.252741112597248574",
+        "block": 13062646,
+        "iso": "2022-05-27T12:47:57+00:00",
+        "l1_recipient": "0x8d37a11a65b4f2c541af1312bc44f74a078160c7",
+        "ts": 1653655677,
+        "tx_hash": "0xdb8fe9a7a84c6425c474f27803ee06096714834634ec2b2f1337e6b17e8f217c"
+      },
+      "l2_sender": "0x8d37a11a65b4f2c541af1312bc44f74a078160c7",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "455737.252741112597248574",
+        "block": 13062512,
+        "iso": "2022-05-27T12:46:20+00:00",
+        "ts": 1653655580,
+        "tx_hash": "0x64dec1f58691105d8521989168d91232151fe9f766f85df0dda7a9de518eebfd",
+        "withdraw_to_burn_hours": 0.026944444444444444
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": null,
+      "l1_receipt": {
+        "amount_lpt": "10",
+        "block": 16536323,
+        "burn_to_receipt_days": 20.047314814814815,
+        "iso": "2023-02-01T20:22:35+00:00",
+        "ts": 1675282955,
+        "tx_hash": "0x6e9f50a486e31782c5595fe52252e7b31251a6932df4882c715953f507525b3f"
+      },
+      "l2_burn": {
+        "amount_lpt": "10",
+        "block": 52622457,
+        "iso": "2023-01-12T19:14:27+00:00",
+        "l1_recipient": "0xadc6e5cbde4fbac7baf58a336edeab8590625baf",
+        "ts": 1673550867,
+        "tx_hash": "0x214f239be8c32b4d76bb97308c814527cdb48e80fd303b882ff3b302832c67ed"
+      },
+      "l2_sender": "0xadc6e5cbde4fbac7baf58a336edeab8590625baf",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "441047.803440638593884027",
+        "block": 52616120,
+        "iso": "2023-01-12T18:35:17+00:00",
+        "ts": 1673548517,
+        "tx_hash": "0xae686e6eddb137e2523a91255ae8f13dc229e3baf72cd9b50802822814492144",
+        "withdraw_to_burn_hours": 0.6527777777777778
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": null,
+      "l1_firsthop": {
+        "amount_lpt": "441047.903440638593884135",
+        "block": 16592817,
+        "iso": "2023-02-09T17:54:47+00:00",
+        "receipt_to_firsthop_hours": 0.48,
+        "to": "0x964feae75fd7a02ef728038741dd376eab020754",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1675965287,
+        "tx_hash": "0xd79cfabc194ed52e250992d5a5a916533b8a3b561584ca87efef56db2e21b944"
+      },
+      "l1_receipt": {
+        "amount_lpt": "441038.903440638593884135",
+        "block": 16592674,
+        "burn_to_receipt_days": 7.874131944444445,
+        "iso": "2023-02-09T17:25:59+00:00",
+        "ts": 1675963559,
+        "tx_hash": "0xba587b9fc456c0f521818b32dd6127be60a268189ebe57983f565e89c556e2d1"
+      },
+      "l2_burn": {
+        "amount_lpt": "441038.903440638593884135",
+        "block": 57244579,
+        "iso": "2023-02-01T20:27:14+00:00",
+        "l1_recipient": "0xadc6e5cbde4fbac7baf58a336edeab8590625baf",
+        "ts": 1675283234,
+        "tx_hash": "0x16d46847e0982cc30c073e84b773d4d86b43a13e45e33f5c1e935be41c5e8b00"
+      },
+      "l2_sender": "0xadc6e5cbde4fbac7baf58a336edeab8590625baf",
+      "l2_sender_bonded_now_lpt": "0",
+      "l2_withdraw": {
+        "amount_lpt": "0.1",
+        "block": 56730166,
+        "iso": "2023-01-30T20:56:51+00:00",
+        "ts": 1675112211,
+        "tx_hash": "0xc8536d2ef46f5340de4861eff38ad8d4cd1233feee48ad2456d4e0742540237b",
+        "withdraw_to_burn_hours": 47.506388888888885
+      },
+      "routing": {
+        "exchange_via": "none"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "14042",
+        "block": 20871192,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-10-01T14:18:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1727792291,
+        "tx_hash": "0xd1680affecc746ac512f5f8ebed88bb1aac824aae922486a8df78f5564c8bd29"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "14031",
+        "block": 20871187,
+        "iso": "2024-10-01T14:17:11+00:00",
+        "receipt_to_firsthop_hours": 0.07666666666666666,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1727792231,
+        "tx_hash": "0x207983eaf399f026b52c8f8fed7264ec7625687e4c3f13422fd58c8312b8090f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "14042",
+        "block": 20871164,
+        "burn_to_receipt_days": 6.895509259259259,
+        "iso": "2024-10-01T14:12:35+00:00",
+        "ts": 1727791955,
+        "tx_hash": "0x38b6f3cf708f3353cd6a2d87586ec38536b3effe49f1988b6bdf0db60360c146"
+      },
+      "l2_burn": {
+        "amount_lpt": "14042",
+        "block": 256919662,
+        "iso": "2024-09-24T16:43:03+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1727196183,
+        "tx_hash": "0x783ba6a5df80e83516ee1629f49361d0d974cf6abf8e8e158879cbe61725bbd5"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11939.2",
+        "block": 256918743,
+        "iso": "2024-09-24T16:39:13+00:00",
+        "ts": 1727195953,
+        "tx_hash": "0x3f99174b7357c1b20bba6bc3f1225a5db720f90d98d2469e8f6d16a2ceda9efb",
+        "withdraw_to_burn_hours": 0.06388888888888888
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "7706.16",
+        "block": 20921879,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-10-08T15:52:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1728402767,
+        "tx_hash": "0x958126bd5613981f1a8ee86600c92a67b054c7c5ec13429d2a546fe57d339ba5"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "7705.16",
+        "block": 20921856,
+        "iso": "2024-10-08T15:48:11+00:00",
+        "receipt_to_firsthop_hours": 0.22333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1728402491,
+        "tx_hash": "0x88b3cd7f5d6c16e78ce95fae16ac9baf26c2f165a62fcbac6aba994efc073329"
+      },
+      "l1_receipt": {
+        "amount_lpt": "7706.16",
+        "block": 20921789,
+        "burn_to_receipt_days": 7.039872685185185,
+        "iso": "2024-10-08T15:34:47+00:00",
+        "ts": 1728401687,
+        "tx_hash": "0xc33205996c2c6708220973c2996a97f9d7ec7fa8595e29290051f62249a6d308"
+      },
+      "l2_burn": {
+        "amount_lpt": "7706.16",
+        "block": 259295158,
+        "iso": "2024-10-01T14:37:22+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1727793442,
+        "tx_hash": "0x41dd7814ad14336c51d646e235ae92e224de2bb419effd1511ab1f85c31ab80f"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "7705.74",
+        "block": 259291088,
+        "iso": "2024-10-01T14:20:20+00:00",
+        "ts": 1727792420,
+        "tx_hash": "0xb0eb2592ded00499eb8cf0ba0298820f32308eca84e07c5a0ea5820618a0221f",
+        "withdraw_to_burn_hours": 0.2838888888888889
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "8280.23",
+        "block": 20973255,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-10-15T20:09:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1729022951,
+        "tx_hash": "0x779adf3cd45a1525ceff50ba36980cc9f27ed1a0b6b473c52d8d0f3b683240df"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "8279.23",
+        "block": 20973249,
+        "iso": "2024-10-15T20:07:59+00:00",
+        "receipt_to_firsthop_hours": 0.1,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1729022879,
+        "tx_hash": "0xbc33b5da8d8efe8a6331d139bb5cf01c7b8b0b26300ee2818c3bbebb83c72d9e"
+      },
+      "l1_receipt": {
+        "amount_lpt": "8280.23",
+        "block": 20973219,
+        "burn_to_receipt_days": 7.168020833333333,
+        "iso": "2024-10-15T20:01:59+00:00",
+        "ts": 1729022519,
+        "tx_hash": "0x281cec1f6a3b0a6a76f094e6145b666815847241b5429436a0fa9bb5ab0d98ee"
+      },
+      "l2_burn": {
+        "amount_lpt": "8280.23",
+        "block": 261712451,
+        "iso": "2024-10-08T16:00:02+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1728403202,
+        "tx_hash": "0xc4741cabafe76cfebcee899e2709812c8deb7041154d4966787486d8efe076ff"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "8280.23",
+        "block": 261710905,
+        "iso": "2024-10-08T15:53:34+00:00",
+        "ts": 1728402814,
+        "tx_hash": "0xbe79a379592b8fb7c914c0a9ed609e4af7e0a3543e3ffaed7cf4f955b2a607d0",
+        "withdraw_to_burn_hours": 0.10777777777777778
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "8949.36",
+        "block": 21086290,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-10-31T14:42:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1730385779,
+        "tx_hash": "0xb078ec7494c8de2369efc933f6d72ee82bc3d6ce863e3e394b2a313e6561131d"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "8948.36",
+        "block": 21086267,
+        "iso": "2024-10-31T14:38:23+00:00",
+        "receipt_to_firsthop_hours": 0.08333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1730385503,
+        "tx_hash": "0x3273c53d4c737b51f82bc5b4ad515debb2e777d53929365597629a7af2aade00"
+      },
+      "l1_receipt": {
+        "amount_lpt": "8949.36",
+        "block": 21086242,
+        "burn_to_receipt_days": 6.8212268518518515,
+        "iso": "2024-10-31T14:33:23+00:00",
+        "ts": 1730385203,
+        "tx_hash": "0x16ade90c6590e481ee559f59d4622d1f6038b5bba785b044361bfedc806131b2"
+      },
+      "l2_burn": {
+        "amount_lpt": "8949.36",
+        "block": 267252978,
+        "iso": "2024-10-24T18:50:49+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1729795849,
+        "tx_hash": "0xe14b8faaea1be792d80b9d3fe66b5646714cbca60b02ddb330d721a7b51aa189"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "8949.36",
+        "block": 267252727,
+        "iso": "2024-10-24T18:49:46+00:00",
+        "ts": 1729795786,
+        "tx_hash": "0x427292026cc6e1d3465ea667045b48d5cae66b2f1fece159d6fbf1b677e79768",
+        "withdraw_to_burn_hours": 0.0175
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "9194.79",
+        "block": 21223821,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-11-19T19:18:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1732043891,
+        "tx_hash": "0xdc55c68f086b37a11700d8f5d1c1412fc4c4b5fdcfb231cf6a116a061b2b9d1a"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "9192.79",
+        "block": 21223796,
+        "iso": "2024-11-19T19:13:11+00:00",
+        "receipt_to_firsthop_hours": 0.10666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1732043591,
+        "tx_hash": "0xaa8d9de5618b1d729ef03d470d35eb14e095b1f06c270dba884657e82b4d488d"
+      },
+      "l1_receipt": {
+        "amount_lpt": "9194.79",
+        "block": 21223764,
+        "burn_to_receipt_days": 6.9284375,
+        "iso": "2024-11-19T19:06:47+00:00",
+        "ts": 1732043207,
+        "tx_hash": "0x5f989fdd0524a65733169bced62cfec43f3fed5bde2125badc0cc4f541dcf334"
+      },
+      "l2_burn": {
+        "amount_lpt": "9194.79",
+        "block": 273811165,
+        "iso": "2024-11-12T20:49:50+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1731444590,
+        "tx_hash": "0x2e7b2a958f109ea611febf7cd9e7e185ca86b6342f4cc82666a7d123575e89fb"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "9194.79",
+        "block": 273810759,
+        "iso": "2024-11-12T20:48:10+00:00",
+        "ts": 1731444490,
+        "tx_hash": "0xa6b90ae29eeacc93c7f62a47b2465fe7b13fc5270318b755ea80d502f6e3dfac",
+        "withdraw_to_burn_hours": 0.027777777777777776
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "9131.88",
+        "block": 21322699,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-12-03T14:53:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1733237603,
+        "tx_hash": "0x2390e355edd4a0e88b4167ea121df76f309dbbfe118078ec119c3a10b3e974c1"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "9129.88",
+        "block": 21322675,
+        "iso": "2024-12-03T14:48:23+00:00",
+        "receipt_to_firsthop_hours": 0.10333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1733237303,
+        "tx_hash": "0xbe318e1f0d47f769518f264c502e0e2676f6675cf70b70144b27ef79d39a66df"
+      },
+      "l1_receipt": {
+        "amount_lpt": "9131.88",
+        "block": 21322644,
+        "burn_to_receipt_days": 12.966875,
+        "iso": "2024-12-03T14:42:11+00:00",
+        "ts": 1733236931,
+        "tx_hash": "0x2a088d0acdbd90c511e432890888c55a4a2659bc203b5df8522e6a0026776823"
+      },
+      "l2_burn": {
+        "amount_lpt": "9131.88",
+        "block": 276485175,
+        "iso": "2024-11-20T15:29:53+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1732116593,
+        "tx_hash": "0x8568e0302d3af49a9fceeeedebe87e5f71b512f842219ce9b0207270943c8697"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "9131.88",
+        "block": 276197004,
+        "iso": "2024-11-19T19:22:38+00:00",
+        "ts": 1732044158,
+        "tx_hash": "0x0fcaf6edcbcce14fdbab0d18e6ab8a90fae64c2181d8718a36b1ec7584c743b4",
+        "withdraw_to_burn_hours": 20.120833333333334
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10197.83",
+        "block": 21372613,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2024-12-10T14:11:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1733839871,
+        "tx_hash": "0x31a7d7b7323ee30f7f081592a8faff00fa62ca07c12488aacc9d8bfb282a3eb0"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10197.83",
+        "block": 21372589,
+        "iso": "2024-12-10T14:06:23+00:00",
+        "receipt_to_firsthop_hours": 0.21,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1733839583,
+        "tx_hash": "0xcfcba06f151f08a49bdea6821337ec9114c7990f4569d7b18dded99952288af9"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10197.83",
+        "block": 21372527,
+        "burn_to_receipt_days": 6.9546875,
+        "iso": "2024-12-10T13:53:47+00:00",
+        "ts": 1733838827,
+        "tx_hash": "0x8096a3bd12d09f451ccf7466599a5adfd8de226767e41aaedebab191bd6802f6"
+      },
+      "l2_burn": {
+        "amount_lpt": "10197.83",
+        "block": 280942810,
+        "iso": "2024-12-03T14:59:02+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1733237942,
+        "tx_hash": "0x429e5c3e72aa1fe41822a4b71aca4dbd1899cead9e3da71ebd0a532248455883"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10197.83",
+        "block": 280941962,
+        "iso": "2024-12-03T14:55:29+00:00",
+        "ts": 1733237729,
+        "tx_hash": "0xfffe4abef71c4344aa541fc7366f4282473fd6257f0d3026a3a2654aa2dff7f5",
+        "withdraw_to_burn_hours": 0.059166666666666666
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10362.87",
+        "block": 21524374,
+        "from": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+        "iso": "2024-12-31T18:55:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1735671323,
+        "tx_hash": "0x448226cc9139bd10933058ef52f92f54b2fdb0ed3b29719725d95ea82b6e0e43"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10361.87",
+        "block": 21524362,
+        "iso": "2024-12-31T18:52:47+00:00",
+        "receipt_to_firsthop_hours": 0.07666666666666666,
+        "to": "0x582c19f83a0383181c1ff15b6768de1005f629c4",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1735671167,
+        "tx_hash": "0x5c5cd9356becfef08a69da2c1cdb28ee9c0f24d793c66195d35616bfa847f255"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10382.87",
+        "block": 21524339,
+        "burn_to_receipt_days": 7.9778009259259255,
+        "iso": "2024-12-31T18:48:11+00:00",
+        "ts": 1735670891,
+        "tx_hash": "0x0bdc95c8c483c1bbf5ae2bad4bad27f6a79fa7764c79b0c344e26be112d3b2a9"
+      },
+      "l2_burn": {
+        "amount_lpt": "10382.87",
+        "block": 287865851,
+        "iso": "2024-12-23T19:20:09+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1734981609,
+        "tx_hash": "0x955e0b11ab1efbcfa6e5eca4e0354cdd03dbef3f82aad83f66007d3a05216992"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10382.87",
+        "block": 287865245,
+        "iso": "2024-12-23T19:17:37+00:00",
+        "ts": 1734981457,
+        "tx_hash": "0xdf19268a298008c47b0da7d58603feac18e178803210b18825f6a48a14fe93a4",
+        "withdraw_to_burn_hours": 0.042222222222222223
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10459.4",
+        "block": 21624770,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-01-14T19:18:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1736882339,
+        "tx_hash": "0x346dc8dda7ec854ae18df8cb3e51892bef9c414856eb959f39f3489d8fd79898"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10458.4",
+        "block": 21624756,
+        "iso": "2025-01-14T19:16:11+00:00",
+        "receipt_to_firsthop_hours": 0.08666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1736882171,
+        "tx_hash": "0x22b37dde14d10504da577d2dabdfab664a5efb4640bdc1bef2129bc577afa6b3"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10459.4",
+        "block": 21624730,
+        "burn_to_receipt_days": 11.011331018518518,
+        "iso": "2025-01-14T19:10:59+00:00",
+        "ts": 1736881859,
+        "tx_hash": "0xeed865a3a0d6c961609a7525d86489dd57ea9703d3073a492b5d1324b5a82b91"
+      },
+      "l2_burn": {
+        "amount_lpt": "10459.4",
+        "block": 291643911,
+        "iso": "2025-01-03T18:54:40+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1735930480,
+        "tx_hash": "0xbd49aab4159f4d014c86146c1908b4fe4f99a5d594c866873efbfce26a8e1054"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10459.4",
+        "block": 291643343,
+        "iso": "2025-01-03T18:52:19+00:00",
+        "ts": 1735930339,
+        "tx_hash": "0xa3040c53e5af50bb1902a7f477ed897d93ba568439165fd53acce74cf79dbf63",
+        "withdraw_to_burn_hours": 0.03916666666666667
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "20421.63",
+        "block": 21726137,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-01-28T22:54:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1738104851,
+        "tx_hash": "0x7b62fd08918a3a751e077425c2149e70b4a167c3c01e20def7a50b2ef1a49e43"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "20420.63",
+        "block": 21725571,
+        "iso": "2025-01-28T21:00:59+00:00",
+        "receipt_to_firsthop_hours": 1.5033333333333334,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1738098059,
+        "tx_hash": "0x12935bb964cebaed294bd1825bab25c31b163cb7833068f11f5060ffad198cf8"
+      },
+      "l1_receipt": {
+        "amount_lpt": "20421.63",
+        "block": 21725124,
+        "burn_to_receipt_days": 6.989340277777778,
+        "iso": "2025-01-28T19:30:47+00:00",
+        "ts": 1738092647,
+        "tx_hash": "0x54c1fdf3e824804c790ca5c57e6a7df184f2435fa29429a2c1f624783b873ac3"
+      },
+      "l2_burn": {
+        "amount_lpt": "20421.63",
+        "block": 297848628,
+        "iso": "2025-01-21T19:46:08+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1737488768,
+        "tx_hash": "0xd23bc0e046cf394f8702680582b7c7ec0337d4f7597c2f325180b5cb01947622"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10058.76",
+        "block": 297846736,
+        "iso": "2025-01-21T19:38:14+00:00",
+        "ts": 1737488294,
+        "tx_hash": "0xa569fde0ad180057ebcd3b8b8dd2c8aae1ba2a6c9e11cb61bc85110d4e1bfc7f",
+        "withdraw_to_burn_hours": 0.13166666666666665
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10984.17",
+        "block": 21925933,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-02-25T21:08:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1740517739,
+        "tx_hash": "0x976c2f8372eb78d2f9fc832ac4d2488ed199b37df8e73474736408b80f125813"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10983.17",
+        "block": 21925932,
+        "iso": "2025-02-25T21:08:47+00:00",
+        "receipt_to_firsthop_hours": 0.08333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1740517727,
+        "tx_hash": "0xc8317574871328316c0ec1c047b3b70c0917aaeacc939dd0be9575c1df8ebd07"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10984.17",
+        "block": 21925907,
+        "burn_to_receipt_days": 20.030300925925925,
+        "iso": "2025-02-25T21:03:47+00:00",
+        "ts": 1740517427,
+        "tx_hash": "0xa0aa5a9466914c6340a82f4f1050cf27a88e616992364a15927eb25a5e0ee4ee"
+      },
+      "l2_burn": {
+        "amount_lpt": "10984.17",
+        "block": 303001686,
+        "iso": "2025-02-05T20:20:09+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1738786809,
+        "tx_hash": "0xb7f295683fbee840093561c97ed590987efd0416f3f492507e786f0b149c5864"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10984.17",
+        "block": 303001156,
+        "iso": "2025-02-05T20:17:54+00:00",
+        "ts": 1738786674,
+        "tx_hash": "0xf5d79376f01146001107aea23302f3f4acc43718ca77220a6732c2e047c80fd6",
+        "withdraw_to_burn_hours": 0.0375
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10228.93",
+        "block": 21989658,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-03-06T18:32:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1741285955,
+        "tx_hash": "0x34258f715c8b19484f0466ee82e32d36f6daece58769146e2e6f7dbaa8976039"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10227.93",
+        "block": 21989639,
+        "iso": "2025-03-06T18:28:47+00:00",
+        "receipt_to_firsthop_hours": 0.17,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1741285727,
+        "tx_hash": "0xca2f7335dc178f048f78a5ad0208bb30bcd4a9f9354b5a1de895fd05dff42ba1"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10228.93",
+        "block": 21989588,
+        "burn_to_receipt_days": 6.932928240740741,
+        "iso": "2025-03-06T18:18:35+00:00",
+        "ts": 1741285115,
+        "tx_hash": "0x528da21330783b3ac1e9644631e18397cdb1cacb391155d501a94a0bcddda14d"
+      },
+      "l2_burn": {
+        "amount_lpt": "10228.93",
+        "block": 310545148,
+        "iso": "2025-02-27T19:55:10+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1740686110,
+        "tx_hash": "0xc500e18aa463c1a8f8e727783bfebea2347d304630217632ac77ae13428827a9"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10228.93",
+        "block": 310543045,
+        "iso": "2025-02-27T19:46:24+00:00",
+        "ts": 1740685584,
+        "tx_hash": "0xf4dddc0d1cff3255a347e8ae5896dbe1fe5a22e0bc25cdfe9b07b45eb970d36a",
+        "withdraw_to_burn_hours": 0.1461111111111111
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11487.2841",
+        "block": 22074230,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-03-18T14:02:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1742306555,
+        "tx_hash": "0x19108510142ab7b18a1c083ba9e2206d29a65f6c2f3d4999c5a5ed6fee08d90c"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11486.2841",
+        "block": 22074218,
+        "iso": "2025-03-18T14:00:11+00:00",
+        "receipt_to_firsthop_hours": 0.37,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1742306411,
+        "tx_hash": "0x18647411be5fdb9bf29c78fa1db1242a0cc49ec416bd8b9cf6c1a8766619b57a"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11487.2841",
+        "block": 22074108,
+        "burn_to_receipt_days": 6.805150462962963,
+        "iso": "2025-03-18T13:37:59+00:00",
+        "ts": 1742305079,
+        "tx_hash": "0xbeeb148b8b0cef515adf3aed577a46cbebab2ef36fb65dd6aaba4d2469ad20e5"
+      },
+      "l2_burn": {
+        "amount_lpt": "11487.2841",
+        "block": 314649894,
+        "iso": "2025-03-11T18:18:34+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1741717114,
+        "tx_hash": "0x6ae314e66b8cbcc5e65fac8665edde5a173b486bcaa2bbc93e4bb2e1a88ed7a3"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11489.67",
+        "block": 314643188,
+        "iso": "2025-03-11T17:50:31+00:00",
+        "ts": 1741715431,
+        "tx_hash": "0x86fcfdfa409950c0f420325ee2ed9348080865b5d989d13f46d4b73bf50fbdde",
+        "withdraw_to_burn_hours": 0.4675
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10874.04",
+        "block": 22125811,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-03-25T18:50:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1742928623,
+        "tx_hash": "0x880de951612c554d9018b89a8cc3f8557c789915dd462a235d36001f19be582a"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10873.04",
+        "block": 22125803,
+        "iso": "2025-03-25T18:48:47+00:00",
+        "receipt_to_firsthop_hours": 0.17333333333333334,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1742928527,
+        "tx_hash": "0xb89f36c1434255ed3fbe9ea1bd9960a3dabd24eb1ceecfd4ac085d77bfb3bebb"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10874.04",
+        "block": 22125753,
+        "burn_to_receipt_days": 7.1858912037037035,
+        "iso": "2025-03-25T18:38:23+00:00",
+        "ts": 1742927903,
+        "tx_hash": "0x3c9ec7056e43fb90e6550edd7b96c3bc1fe9fecdda43dc6d273f220968b56213"
+      },
+      "l2_burn": {
+        "amount_lpt": "10874.04",
+        "block": 317001081,
+        "iso": "2025-03-18T14:10:42+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1742307042,
+        "tx_hash": "0xf505983a8deb197b03038343afecaa0893be8cf38ef5970d8ec5507e9349553d"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10874.04",
+        "block": 316999756,
+        "iso": "2025-03-18T14:05:12+00:00",
+        "ts": 1742306712,
+        "tx_hash": "0x0e849d6c5fafdc3eae88a16f2ce6bfc3fc7868655bc8a862c6a3d71114947e8f",
+        "withdraw_to_burn_hours": 0.09166666666666666
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11457.63",
+        "block": 22181743,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-04-02T14:11:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1743603119,
+        "tx_hash": "0xc3030bd38fe7313ecb430012625bd138c12e66c4cc93beeecfd0b4dc49892562"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11456.63",
+        "block": 22181723,
+        "iso": "2025-04-02T14:07:47+00:00",
+        "receipt_to_firsthop_hours": 0.16333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1743602867,
+        "tx_hash": "0x8422077684824c919052e15f2fdaecf5226d6c1115cfcb4c9e3595ca91193ccc"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11457.63",
+        "block": 22181675,
+        "burn_to_receipt_days": 7.801377314814815,
+        "iso": "2025-04-02T13:57:59+00:00",
+        "ts": 1743602279,
+        "tx_hash": "0x88c37f0c8fdb4af667092ba85895cfd96ef01171ce91e09ce25c8f331effee58"
+      },
+      "l2_burn": {
+        "amount_lpt": "11457.63",
+        "block": 319476538,
+        "iso": "2025-03-25T18:44:00+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1742928240,
+        "tx_hash": "0x9ac7fa106039b687cf9bda874dc86c69d655f04e63c1842a2d42d6f7ff79d0cf"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11457.63",
+        "block": 319475729,
+        "iso": "2025-03-25T18:40:38+00:00",
+        "ts": 1742928038,
+        "tx_hash": "0x40e78da32941c3df8e6c33ea0f851cbf269f73689a47a2ee1ad56749dc0c4604",
+        "withdraw_to_burn_hours": 0.05611111111111111
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "9669.42",
+        "block": 22325721,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-04-22T16:24:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1745339063,
+        "tx_hash": "0xd83ace13c62f4f814262213ceb52f6213432e10274693d21809374cf8b566f33"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "9668.42",
+        "block": 22325712,
+        "iso": "2025-04-22T16:22:35+00:00",
+        "receipt_to_firsthop_hours": 0.59,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1745338955,
+        "tx_hash": "0x7f9eb8db8e624398d71908b81d4f7816fa5ce88897ea179a5de5bb8f0700dd10"
+      },
+      "l1_receipt": {
+        "amount_lpt": "9669.42",
+        "block": 22325535,
+        "burn_to_receipt_days": 6.903125,
+        "iso": "2025-04-22T15:47:11+00:00",
+        "ts": 1745336831,
+        "tx_hash": "0xbf3396fe952f71d379be17e1a92ff0d5639084b7e5cda87a49125370291fcddb"
+      },
+      "l2_burn": {
+        "amount_lpt": "9669.42",
+        "block": 326703732,
+        "iso": "2025-04-15T18:06:41+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1744740401,
+        "tx_hash": "0x08d1c46fcb74091e21a5000fd70e56e7e7f66416212ad901cd55c69da48d89f2"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "9669.42",
+        "block": 326703393,
+        "iso": "2025-04-15T18:05:15+00:00",
+        "ts": 1744740315,
+        "tx_hash": "0x3214516527cc86d1a07926669ddfdf1caf528902aabe501ccb8c1292909698f5",
+        "withdraw_to_burn_hours": 0.02388888888888889
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11062.74",
+        "block": 22390835,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-05-01T18:38:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1746124691,
+        "tx_hash": "0xca86fe3cfbc21501261796ef766428370fa9a9c9cd631e2a41c6f46c76460d86"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11061.74",
+        "block": 22390814,
+        "iso": "2025-05-01T18:33:59+00:00",
+        "receipt_to_firsthop_hours": 0.13333333333333333,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1746124439,
+        "tx_hash": "0x8e76c61a1fba2b6f596a10a31aa030ac2f89f20a7df68b3046dede65f85234da"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11062.74",
+        "block": 22390775,
+        "burn_to_receipt_days": 9.107592592592592,
+        "iso": "2025-05-01T18:25:59+00:00",
+        "ts": 1746123959,
+        "tx_hash": "0x9023a21607ab23d92295389ce086ef51a1901abd37f054fcb5538bc99df3a5dc"
+      },
+      "l2_burn": {
+        "amount_lpt": "11062.74",
+        "block": 329078452,
+        "iso": "2025-04-22T15:51:03+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1745337063,
+        "tx_hash": "0xa016985f4743e34fdda009906f00b9bf88e75129390ab148fda921582d9b73aa"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11062.74",
+        "block": 329077691,
+        "iso": "2025-04-22T15:47:54+00:00",
+        "ts": 1745336874,
+        "tx_hash": "0x5df9cedab1ebe7fefbfb7abd3cfa42800d61a9400b56d57f3eb02aa01661c313",
+        "withdraw_to_burn_hours": 0.0525
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "23287.84",
+        "block": 22575720,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-05-27T17:49:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1748368199,
+        "tx_hash": "0x33591b2f024165f3c65504bbc5d406e08c6591c4807b93b098ee8e02b72659d5"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "23286.84",
+        "block": 22575716,
+        "iso": "2025-05-27T17:49:11+00:00",
+        "receipt_to_firsthop_hours": 0.22666666666666666,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1748368151,
+        "tx_hash": "0xad9172fe91a931f1df0a3c180d9b212570f7b09ab39ce32645bf6b58cc43e658"
+      },
+      "l1_receipt": {
+        "amount_lpt": "23287.84",
+        "block": 22575648,
+        "burn_to_receipt_days": 7.119490740740741,
+        "iso": "2025-05-27T17:35:35+00:00",
+        "ts": 1748367335,
+        "tx_hash": "0x78ae2073d42f0bc8c932f71791db167a90125578864c51785894ee5e37c23a99"
+      },
+      "l2_burn": {
+        "amount_lpt": "23287.84",
+        "block": 338687032,
+        "iso": "2025-05-20T14:43:31+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1747752211,
+        "tx_hash": "0x60a7961d4d427d41633682e83b0eac6e8f6d0642367af186aa407747ecaa98f3"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11331.01",
+        "block": 338685736,
+        "iso": "2025-05-20T14:37:53+00:00",
+        "ts": 1747751873,
+        "tx_hash": "0x4efe4903a199ccd0043662ec637a6374f5b955ec719304f4bc4d7763d42b5e08",
+        "withdraw_to_burn_hours": 0.09388888888888888
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10560.47",
+        "block": 22683354,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-06-11T19:17:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1749669455,
+        "tx_hash": "0x9bdc3481b418dab0b39cf2b99f64e668fc74296d518633096fe09127f756c9c3"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10559.47",
+        "block": 22683352,
+        "iso": "2025-06-11T19:17:11+00:00",
+        "receipt_to_firsthop_hours": 0.10666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1749669431,
+        "tx_hash": "0x450788a99db28c8b6500477b51ed5959fda816053054cfa497e40fb9da783ab3"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10560.47",
+        "block": 22683320,
+        "burn_to_receipt_days": 6.987442129629629,
+        "iso": "2025-06-11T19:10:47+00:00",
+        "ts": 1749669047,
+        "tx_hash": "0xdc7694a70ed61efe0bdbd22e0f5fe72229aecc7a5c20e00db3cf7cd03be63cce"
+      },
+      "l2_burn": {
+        "amount_lpt": "10560.47",
+        "block": 343919736,
+        "iso": "2025-06-04T19:28:52+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1749065332,
+        "tx_hash": "0x1515ba01e06ba9d84e71b9ac04864b70a4d3b3ce4ca732ef8f19653c4af285f4"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "10560.47",
+        "block": 343918920,
+        "iso": "2025-06-04T19:25:26+00:00",
+        "ts": 1749065126,
+        "tx_hash": "0xca1b71adb4a928b9ccb54061704e6c4131042d29429254280baa538c4f328219",
+        "withdraw_to_burn_hours": 0.05722222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "13034.75",
+        "block": 22789968,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-06-26T17:00:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1750957235,
+        "tx_hash": "0x6a75955b3eab3ed6bebb122719272206f904a93e0c91967d0f21220ca548b762"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "13033.75",
+        "block": 22789964,
+        "iso": "2025-06-26T16:59:47+00:00",
+        "receipt_to_firsthop_hours": 0.11666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1750957187,
+        "tx_hash": "0xfd44150cfb3dc9b0db9fb334d8d138a6c430485ffbe62801055d9e64bbb21056"
+      },
+      "l1_receipt": {
+        "amount_lpt": "13034.75",
+        "block": 22789930,
+        "burn_to_receipt_days": 8.931793981481482,
+        "iso": "2025-06-26T16:52:47+00:00",
+        "ts": 1750956767,
+        "tx_hash": "0x9ff824dd4f8e1593834618157c3c082a43db0a011678ac0d947d7dc82851bbf3"
+      },
+      "l2_burn": {
+        "amount_lpt": "13034.75",
+        "block": 348382951,
+        "iso": "2025-06-17T18:31:00+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1750185060,
+        "tx_hash": "0xe1367f0d23406f15839e6f5566cc3f3898d3acde3171fda3ae00b32bb8551f57"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "13034.75",
+        "block": 348382701,
+        "iso": "2025-06-17T18:29:57+00:00",
+        "ts": 1750184997,
+        "tx_hash": "0x12173ee6d03d2cdaccf60be06b6f675176928dcf3d7f65ae936e4be0ac1712e0",
+        "withdraw_to_burn_hours": 0.0175
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11774.36",
+        "block": 22940305,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-07-17T17:05:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1752771947,
+        "tx_hash": "0xce6d4b8eec924d2dad1816b6a530f801cb460f2cf7d0a10c0ee30c12a62c0e0c"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11773.36",
+        "block": 22940297,
+        "iso": "2025-07-17T17:04:11+00:00",
+        "receipt_to_firsthop_hours": 0.24666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1752771851,
+        "tx_hash": "0x65d9b5e3523ef9ffb5024d998a984cb47de2745f5250144b853c7ba0617b1e5f"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11774.36",
+        "block": 22940223,
+        "burn_to_receipt_days": 6.931516203703704,
+        "iso": "2025-07-17T16:49:23+00:00",
+        "ts": 1752770963,
+        "tx_hash": "0xc2c2daf971bc8a5a08a17df8c2c37076e270aeb36e2e987ca707969ae0b67bc6"
+      },
+      "l2_burn": {
+        "amount_lpt": "11774.36",
+        "block": 356311909,
+        "iso": "2025-07-10T18:28:00+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1752172080,
+        "tx_hash": "0x4eaa638a38164c49cab365f46e2a83ee1e407e8b43db3ec295b17e5cdb3ae6b0"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11774.36",
+        "block": 356310155,
+        "iso": "2025-07-10T18:20:42+00:00",
+        "ts": 1752171642,
+        "tx_hash": "0xe4a59e038409193d27b99c17e66f9042704748b7ba4bbd679867b367950d8716",
+        "withdraw_to_burn_hours": 0.12166666666666667
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10847.19",
+        "block": 23026399,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-07-29T17:52:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1753811531,
+        "tx_hash": "0xe0707cd2d9d4626b933083e3db1ef6fb2a0fa9f2b880dc99837f948f434027a4"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10847.19",
+        "block": 23026379,
+        "iso": "2025-07-29T17:48:11+00:00",
+        "receipt_to_firsthop_hours": 0.13,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1753811291,
+        "tx_hash": "0x2cfc543173a387b5ea75364be13a8bd9b1bc05f426d259dbff7f1e0f2b38ac70"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10847.19",
+        "block": 23026340,
+        "burn_to_receipt_days": 6.9522106481481485,
+        "iso": "2025-07-29T17:40:23+00:00",
+        "ts": 1753810823,
+        "tx_hash": "0x5542ef6291949d435c849b194ac19ccbda569ea8386e70b28c25f779e4354197"
+      },
+      "l2_burn": {
+        "amount_lpt": "10847.19",
+        "block": 360468961,
+        "iso": "2025-07-22T18:49:12+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1753210152,
+        "tx_hash": "0xb5ed3464b0a4c22091e60f7e1444018940c11f206a816fe008f26c46c631ee8a"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11580.68",
+        "block": 23076189,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-08-05T16:54:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1754412899,
+        "tx_hash": "0xb800011fecd390b0bb27861c3584016368e04afa2be439957b2cc6481cd0b5eb"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11580.68",
+        "block": 23076182,
+        "iso": "2025-08-05T16:53:35+00:00",
+        "receipt_to_firsthop_hours": 0.043333333333333335,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1754412815,
+        "tx_hash": "0x942c18424b4c26f5743a6cf3d07d1f283a6a54193bbbca114a0dafcd5737cd10"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11580.68",
+        "block": 23076169,
+        "burn_to_receipt_days": 6.9675,
+        "iso": "2025-08-05T16:50:59+00:00",
+        "ts": 1754412659,
+        "tx_hash": "0x5ee286291e0e59cbe1e58845b1f6845fd51d4201cb887ab338c5e56963705cd9"
+      },
+      "l2_burn": {
+        "amount_lpt": "11580.68",
+        "block": 362874218,
+        "iso": "2025-07-29T17:37:47+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1753810667,
+        "tx_hash": "0x85e1457b9a734d323cab16d8b37abcf4fd03b121023735c114a3fe3f3bdad00f"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11580.68",
+        "block": 362873173,
+        "iso": "2025-07-29T17:33:27+00:00",
+        "ts": 1753810407,
+        "tx_hash": "0x191605d8655407e6fb20e1c51af988d0881762fa812012482740aaed079d3adb",
+        "withdraw_to_burn_hours": 0.07222222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "17643.98",
+        "block": 23233099,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-08-27T14:37:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1756305479,
+        "tx_hash": "0x561cf14a8704c8f37df0e01c336f5e04bdfd404c2b85626992eabb29e48f7f0a"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "17643.98",
+        "block": 23233079,
+        "iso": "2025-08-27T14:33:47+00:00",
+        "receipt_to_firsthop_hours": 0.03666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1756305227,
+        "tx_hash": "0x994d10a8f349a2d5ac2f21f8d09a75db18d8097ee72d3640b54aa7a11882094a"
+      },
+      "l1_receipt": {
+        "amount_lpt": "17643.98",
+        "block": 23233068,
+        "burn_to_receipt_days": 7.875208333333333,
+        "iso": "2025-08-27T14:31:35+00:00",
+        "ts": 1756305095,
+        "tx_hash": "0x0ca7ecc25c1138811adcc13c9f94bbf7b5215fe13c50571f56c720d3e48dcb85"
+      },
+      "l2_burn": {
+        "amount_lpt": "17643.98",
+        "block": 370137429,
+        "iso": "2025-08-19T17:31:17+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1755624677,
+        "tx_hash": "0x4d078105dab8917f708f94d23da89543dcdc57fc89f3834be8b8744e6f4fc061"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "17643.98",
+        "block": 370136602,
+        "iso": "2025-08-19T17:27:50+00:00",
+        "ts": 1755624470,
+        "tx_hash": "0x0d658b839de262f7c614072d9c33f3f1f5df6214ff11d121e1c18d2b78e35856",
+        "withdraw_to_burn_hours": 0.0575
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "16856.99",
+        "block": 23427426,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-09-23T18:08:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1758650927,
+        "tx_hash": "0x5ba510c875bcd728f0a5d825cef9271361df9cc4c6f9f21c538c52bf796ab7d8"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "16856.99",
+        "block": 23427413,
+        "iso": "2025-09-23T18:06:11+00:00",
+        "receipt_to_firsthop_hours": 0.05333333333333334,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1758650771,
+        "tx_hash": "0x97bfbcfbae6189f37989f1dacb21e20e570adcf42d28ae3b7d0f2b284ca01f27"
+      },
+      "l1_receipt": {
+        "amount_lpt": "16856.99",
+        "block": 23427397,
+        "burn_to_receipt_days": 8.112916666666667,
+        "iso": "2025-09-23T18:02:59+00:00",
+        "ts": 1758650579,
+        "tx_hash": "0x75c0976fa8d41dc8ea675ea6bbafa0cd015bc193eefe19e722abf637fabf91ac"
+      },
+      "l2_burn": {
+        "amount_lpt": "16856.99",
+        "block": 379446090,
+        "iso": "2025-09-15T15:20:23+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1757949623,
+        "tx_hash": "0xf6598699d6127b353cf5a1eb7194f1f5ccccf5efa5ede069bc7a8eabdacbc91f"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "16856.99",
+        "block": 379445734,
+        "iso": "2025-09-15T15:18:56+00:00",
+        "ts": 1757949536,
+        "tx_hash": "0x22d8009e6cb4cddadbb0cdcd6a430d63901550fc42ce1e22fa301098085ad7e1",
+        "withdraw_to_burn_hours": 0.024166666666666666
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11937.56",
+        "block": 23577548,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-10-14T17:52:35+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1760464355,
+        "tx_hash": "0x9f1811538812f1961ab496b6f081fd5bbce34dfe312eb1531d728f2c38ca8e26"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11937.56",
+        "block": 23577540,
+        "iso": "2025-10-14T17:50:59+00:00",
+        "receipt_to_firsthop_hours": 0.2866666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1760464259,
+        "tx_hash": "0x34a2d3f3253b8287869846bf7df60b7558ff0e0434b7d7890157efe4e18f865c"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11937.56",
+        "block": 23577455,
+        "burn_to_receipt_days": 6.963796296296296,
+        "iso": "2025-10-14T17:33:47+00:00",
+        "ts": 1760463227,
+        "tx_hash": "0x6c3900355d3be453d361fee320f547e44e749aa448264df5341f17e076a95b2f"
+      },
+      "l2_burn": {
+        "amount_lpt": "11937.56",
+        "block": 387103652,
+        "iso": "2025-10-07T18:25:55+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1759861555,
+        "tx_hash": "0xf4c0d731cf1ce4270ad5ff97187117f4bad432f550468820ea79db030ecad1b7"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11937.56",
+        "block": 387103015,
+        "iso": "2025-10-07T18:23:17+00:00",
+        "ts": 1759861397,
+        "tx_hash": "0x06eeeb77e3fe0c9ddeef22539ef6b9bf1cb8878e73c30ac7d734f53adf019a44",
+        "withdraw_to_burn_hours": 0.04388888888888889
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "20975.67",
+        "block": 23677525,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-10-28T17:52:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1761673979,
+        "tx_hash": "0x5d6bc15da234cb8fc703c9e84482cd645e3f924e574ec718e4fa5ff0042e3625"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "20965.67",
+        "block": 23677503,
+        "iso": "2025-10-28T17:48:23+00:00",
+        "receipt_to_firsthop_hours": 0.15,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1761673703,
+        "tx_hash": "0x056d69c3b45a7cee1b85ca31d1414a2ca682ea1ae8effa909615267c59ae4a76"
+      },
+      "l1_receipt": {
+        "amount_lpt": "20975.67",
+        "block": 23677459,
+        "burn_to_receipt_days": 6.962337962962963,
+        "iso": "2025-10-28T17:39:23+00:00",
+        "ts": 1761673163,
+        "tx_hash": "0xf2ac3a90bb136b8dbd048d9adb409b4ac6152b7787f402586f9570bc26355c29"
+      },
+      "l2_burn": {
+        "amount_lpt": "20975.67",
+        "block": 391949385,
+        "iso": "2025-10-21T18:33:37+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1761071617,
+        "tx_hash": "0x294463a2fd029715882ee61c63465f6bf006357d8cbefe56ccfd3238ecee2382"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "20975.67",
+        "block": 391948925,
+        "iso": "2025-10-21T18:31:41+00:00",
+        "ts": 1761071501,
+        "tx_hash": "0x6e7109490746785900d88f170a1ada8972996dc00119ac76b096a5963856d6b1",
+        "withdraw_to_burn_hours": 0.03222222222222222
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "16020.61",
+        "block": 23784877,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-11-12T18:16:47+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1762971407,
+        "tx_hash": "0x7e6775f2acfc35c04c3178d8e580573f65a3062ebfb880a9ddb16055ccc3398a"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "16020.61",
+        "block": 23784866,
+        "iso": "2025-11-12T18:14:35+00:00",
+        "receipt_to_firsthop_hours": 0.13,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1762971275,
+        "tx_hash": "0xc5a1e84770add1aa90e219152267081e464e9ae935efff7f3bda752638ed0298"
+      },
+      "l1_receipt": {
+        "amount_lpt": "16070.61",
+        "block": 23784827,
+        "burn_to_receipt_days": 7.978541666666667,
+        "iso": "2025-11-12T18:06:47+00:00",
+        "ts": 1762970807,
+        "tx_hash": "0x9c184aa55de5aacb007b2f1f9966c8c4fdf3d51a59b53a3bf12d43db4758bf91"
+      },
+      "l2_burn": {
+        "amount_lpt": "16070.61",
+        "block": 396795245,
+        "iso": "2025-11-04T18:37:41+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1762281461,
+        "tx_hash": "0xd3931d0660d0a162743605ab35ac4d0d64a55f501c9d85abbaf5e86c940965f3"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "16070.61",
+        "block": 396792935,
+        "iso": "2025-11-04T18:28:05+00:00",
+        "ts": 1762280885,
+        "tx_hash": "0x243d9f7d48456a2fa41e44872c99aef8d79b558bd24b3ff4f30578a4967c2012",
+        "withdraw_to_burn_hours": 0.16
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "11048.65",
+        "block": 23934187,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-12-03T16:44:59+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1764780299,
+        "tx_hash": "0x43b83b94b625fdd297a1e851b012dd0ec269834070bc8eaf3940808552df3e60"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "11048.65",
+        "block": 23934176,
+        "iso": "2025-12-03T16:42:47+00:00",
+        "receipt_to_firsthop_hours": 0.02666666666666667,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1764780167,
+        "tx_hash": "0x2c64f50f8973bb1ae85bd8f495361cad4256731e38b8825ed016ca2dcc3dc1a8"
+      },
+      "l1_receipt": {
+        "amount_lpt": "11048.65",
+        "block": 23934169,
+        "burn_to_receipt_days": 13.039409722222222,
+        "iso": "2025-12-03T16:41:11+00:00",
+        "ts": 1764780071,
+        "tx_hash": "0xd6781db69bea06c482f58b38a6e5b3c4bcc6fd0fac3b3239787bdd9396b05be6"
+      },
+      "l2_burn": {
+        "amount_lpt": "11048.65",
+        "block": 402287599,
+        "iso": "2025-11-20T15:44:26+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1763653466,
+        "tx_hash": "0xe37c072d3efbc3f374adcea7982eb2bd15b8a3c46a0c438a80b84fde47984550"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "11048.65",
+        "block": 402287166,
+        "iso": "2025-11-20T15:42:38+00:00",
+        "ts": 1763653358,
+        "tx_hash": "0xec249fe92a4f1bbd9e211d0ec4775c10862536546f2f0e1efc24358c08edfa7e",
+        "withdraw_to_burn_hours": 0.03
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "17236.27",
+        "block": 24027155,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2025-12-16T19:07:23+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1765912043,
+        "tx_hash": "0x985b916c5bc20853df6d7ef2973b00a6a178d44e4ab3b5f015805fd63e1ab83b"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "17236.27",
+        "block": 24027152,
+        "iso": "2025-12-16T19:06:47+00:00",
+        "receipt_to_firsthop_hours": 0.05333333333333334,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1765912007,
+        "tx_hash": "0xf3852d3be41cd600b16f8009c4835b24f032e8f71ecc52db48ce07a8247a7e49"
+      },
+      "l1_receipt": {
+        "amount_lpt": "17236.27",
+        "block": 24027136,
+        "burn_to_receipt_days": 7.0156018518518515,
+        "iso": "2025-12-16T19:03:35+00:00",
+        "ts": 1765911815,
+        "tx_hash": "0x1604f64eaf9a8115b352fbd20765f1866eee82fbb62537c5380f54a9f2fbfeba"
+      },
+      "l2_burn": {
+        "amount_lpt": "17236.27",
+        "block": 408905455,
+        "iso": "2025-12-09T18:41:07+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1765305667,
+        "tx_hash": "0x62c97765fbe146e749a834459460a80e406890542adb2920ba292a279fd8af06"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": {
+        "amount_lpt": "17236.27",
+        "block": 408905124,
+        "iso": "2025-12-09T18:39:44+00:00",
+        "ts": 1765305584,
+        "tx_hash": "0x4ee55c892033437c55fb06a86ca0428dafc1c4f83a7aeafefc8b9a395f26bd1b",
+        "withdraw_to_burn_hours": 0.023055555555555555
+      },
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    },
+    {
+      "l1_exchange_deposit": {
+        "amount_lpt": "10472.6",
+        "block": 24235058,
+        "from": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "iso": "2026-01-14T19:33:11+00:00",
+        "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+        "to_category": "exchange",
+        "to_label": "Coinbase Prime",
+        "ts": 1768419191,
+        "tx_hash": "0xecb3ebe1620d4bc5512cb988023f867ee4f829ac35843e5d0ed0c5d0b2b7d62c"
+      },
+      "l1_firsthop": {
+        "amount_lpt": "10472.6",
+        "block": 24235047,
+        "iso": "2026-01-14T19:30:59+00:00",
+        "receipt_to_firsthop_hours": 0.12,
+        "to": "0x440f103a920a7228d4b6cd5caa13e5f6b9aeb69a",
+        "to_category": "unknown",
+        "to_label": "",
+        "ts": 1768419059,
+        "tx_hash": "0x05ece0a6b87e4c33d4fcffc64375300e83a8c63d06f72a569dbf36c59741f119"
+      },
+      "l1_receipt": {
+        "amount_lpt": "10472.6",
+        "block": 24235011,
+        "burn_to_receipt_days": 8.030034722222222,
+        "iso": "2026-01-14T19:23:47+00:00",
+        "ts": 1768418627,
+        "tx_hash": "0x46b496fe145037fb00c43517fd3b8fb36fd0bdc759ec9330f7b3d4f1610eddcd"
+      },
+      "l2_burn": {
+        "amount_lpt": "10472.6",
+        "block": 418592283,
+        "iso": "2026-01-06T18:40:32+00:00",
+        "l1_recipient": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+        "ts": 1767724832,
+        "tx_hash": "0xe9f2164fc4782c761bf4f83c5c1ce68379172d601fe4e7b49eb6a4046982c02c"
+      },
+      "l2_sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "l2_sender_bonded_now_lpt": "592264.60854975228660224",
+      "l2_withdraw": null,
+      "routing": {
+        "exchange_via": "second_hop"
+      }
+    }
+  ],
+  "generated_at_utc": "2026-01-22T00:46:05.137369+00:00",
+  "inputs": {
+    "bonded_cache_json": "artifacts/delegator-bonded-amounts-cache.json",
+    "bridge_decode_json": "research/arbitrum-bridge-out-decode.json",
+    "labels_json": "data/labels.json"
+  },
+  "labels": {
+    "exchange_addresses": [
+      "0x0a869d79a7052c7f1b55a8ebabbea3420f0d1e13",
+      "0x0d0707963952f2fba59dd06f2b425ace40b492fe",
+      "0x21a31ee1afc51d94c2efccaa2092ad1028285549",
+      "0x236f9f97e0e62388479bf9e5ba4889e46b0273c3",
+      "0x267be1c1d684f78cb4f6a176c4911b741e4ffdc0",
+      "0x28c6c06298d514db089934071355e5743bf21d60",
+      "0x2910543af39aba0cd09dbb2d50200b3e800a63d2",
+      "0x3f5ce5fbfe3e9af3971dd833d26ba9b5c936f0be",
+      "0x5401dbf7da53e1c9dbf9a70db8d9b5b3c6d06c77",
+      "0x56eddb7aa87536c09ccc2793473599fd21a8b17f",
+      "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+      "0x6cc5f688a315f3dc28a7781717a9a798a59fda7b",
+      "0x71660c4005ba85c37ccec55d0c4493e66fe775d3",
+      "0xa090e606e30bd747d4e6245a1517ebe430f0057e",
+      "0xa7efae728d2936e78bda97dc267687568dd593f3",
+      "0xab5c66752a9e8167967685f1450532fb96d5d24f",
+      "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+      "0xd24400ae8bfebb18ca49be86258a3c749cf46853",
+      "0xd6216fc19db775df9774a6e33526131da7d19a2c",
+      "0xdfd5293d8e347dfe59e90efd55b2956a1343963d",
+      "0xe853c56864a2ebe4576a807d26fdc4a0ada51919",
+      "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+      "0xf977814e90da44bfa03b6295a0616a897441acec"
+    ]
+  },
+  "params": {
+    "arb_rpc": "https://arb1.arbitrum.io/rpc",
+    "burn_to_receipt_max_days": 60.0,
+    "eth_rpc": "https://rpc.flashbots.net",
+    "firsthop_to_exchange_hours": 72.0,
+    "l1_escrow": "0x6a23f4940bd5ba117da261f98aae51a8bffa210a",
+    "l1_from_block": 14600000,
+    "l1_to_block": 24286807,
+    "l1_token": "0x58b6a8a3302369daec383334672404ee733ab239",
+    "l2_from_block": 5856381,
+    "l2_to_block": 423863641,
+    "min_receipt_forward_ratio": 0.9,
+    "receipt_to_firsthop_hours": 72.0,
+    "withdraw_to_burn_hours": 72.0
+  },
+  "senders": [
+    {
+      "bonded_now_lpt": "0",
+      "burn_count": 16,
+      "burn_total_lpt": "1728346.916258072573990669",
+      "matched_burn_to_receipt_count": 16,
+      "matched_receipt_to_exchange_count": 11,
+      "matched_withdraw_to_burn_count": 16,
+      "median_burn_to_receipt_days": 8.078200231481482,
+      "median_firsthop_to_exchange_hours": 0.03666666666666667,
+      "median_receipt_to_exchange_hours": 0.19333333333333333,
+      "median_receipt_to_firsthop_hours": 0.14,
+      "median_withdraw_to_burn_hours": 0.04194444444444445,
+      "sender": "0x3d6182c59dbbbbc648570762da316ac8404816ae",
+      "withdraw_count": 19
+    },
+    {
+      "bonded_now_lpt": "2322141.979053303975212447",
+      "burn_count": 18,
+      "burn_total_lpt": "1159397.5059",
+      "matched_burn_to_receipt_count": 17,
+      "matched_receipt_to_exchange_count": 16,
+      "matched_withdraw_to_burn_count": 16,
+      "median_burn_to_receipt_days": 7.3359375,
+      "median_firsthop_to_exchange_hours": 0.03,
+      "median_receipt_to_exchange_hours": 2.8466666666666667,
+      "median_receipt_to_firsthop_hours": 2.81,
+      "median_withdraw_to_burn_hours": 4.666805555555555,
+      "sender": "0xc5519fd1129d6d22744e0ac491401fff45d26528",
+      "withdraw_count": 19
+    },
+    {
+      "bonded_now_lpt": "0",
+      "burn_count": 1,
+      "burn_total_lpt": "1051858.716542152695221509",
+      "matched_burn_to_receipt_count": 1,
+      "matched_receipt_to_exchange_count": 0,
+      "matched_withdraw_to_burn_count": 1,
+      "median_burn_to_receipt_days": 11.236805555555556,
+      "median_firsthop_to_exchange_hours": null,
+      "median_receipt_to_exchange_hours": null,
+      "median_receipt_to_firsthop_hours": 0.1,
+      "median_withdraw_to_burn_hours": 0.09916666666666667,
+      "sender": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+      "withdraw_count": 1
+    },
+    {
+      "bonded_now_lpt": "0",
+      "burn_count": 2,
+      "burn_total_lpt": "812508",
+      "matched_burn_to_receipt_count": 2,
+      "matched_receipt_to_exchange_count": 2,
+      "matched_withdraw_to_burn_count": 0,
+      "median_burn_to_receipt_days": 7.014328703703704,
+      "median_firsthop_to_exchange_hours": 0.016666666666666666,
+      "median_receipt_to_exchange_hours": 0.17833333333333334,
+      "median_receipt_to_firsthop_hours": 0.16166666666666668,
+      "median_withdraw_to_burn_hours": null,
+      "sender": "0x60b8eb0947d25194afa248b81a087214beec5cfe",
+      "withdraw_count": 1
+    },
+    {
+      "bonded_now_lpt": "0",
+      "burn_count": 1,
+      "burn_total_lpt": "621439.059193238227204479",
+      "matched_burn_to_receipt_count": 1,
+      "matched_receipt_to_exchange_count": 0,
+      "matched_withdraw_to_burn_count": 1,
+      "median_burn_to_receipt_days": 9.059606481481481,
+      "median_firsthop_to_exchange_hours": null,
+      "median_receipt_to_exchange_hours": null,
+      "median_receipt_to_firsthop_hours": 0.10666666666666667,
+      "median_withdraw_to_burn_hours": 0.10083333333333333,
+      "sender": "0xef83273cbd014c4ae7998467c422275a8b37827e",
+      "withdraw_count": 1
+    },
+    {
+      "bonded_now_lpt": "0",
+      "burn_count": 1,
+      "burn_total_lpt": "588040.989627615274485149",
+      "matched_burn_to_receipt_count": 1,
+      "matched_receipt_to_exchange_count": 0,
+      "matched_withdraw_to_burn_count": 1,
+      "median_burn_to_receipt_days": 7.048587962962963,
+      "median_firsthop_to_exchange_hours": null,
+      "median_receipt_to_exchange_hours": null,
+      "median_receipt_to_firsthop_hours": 0.05,
+      "median_withdraw_to_burn_hours": 0.03916666666666667,
+      "sender": "0x543df23b9a881fbdbdec7ab3e90f3ff7b905068b",
+      "withdraw_count": 2
+    },
+    {
+      "bonded_now_lpt": "283800.278919282656596024",
+      "burn_count": 12,
+      "burn_total_lpt": "501070.896347",
+      "matched_burn_to_receipt_count": 12,
+      "matched_receipt_to_exchange_count": 7,
+      "matched_withdraw_to_burn_count": 8,
+      "median_burn_to_receipt_days": 7.064328703703703,
+      "median_firsthop_to_exchange_hours": 0.02,
+      "median_receipt_to_exchange_hours": 0.26666666666666666,
+      "median_receipt_to_firsthop_hours": 0.23666666666666666,
+      "median_withdraw_to_burn_hours": 0.5801388888888889,
+      "sender": "0x86abf78ac7ef44423873dabff35fe3e462b1ff6e",
+      "withdraw_count": 9
+    },
+    {
+      "bonded_now_lpt": "0",
+      "burn_count": 1,
+      "burn_total_lpt": "455737.252741112597248574",
+      "matched_burn_to_receipt_count": 1,
+      "matched_receipt_to_exchange_count": 1,
+      "matched_withdraw_to_burn_count": 1,
+      "median_burn_to_receipt_days": 10.679618055555556,
+      "median_firsthop_to_exchange_hours": 0.009722222222222222,
+      "median_receipt_to_exchange_hours": 0.3883333333333333,
+      "median_receipt_to_firsthop_hours": 0.3786111111111111,
+      "median_withdraw_to_burn_hours": 0.026944444444444444,
+      "sender": "0x8d37a11a65b4f2c541af1312bc44f74a078160c7",
+      "withdraw_count": 1
+    },
+    {
+      "bonded_now_lpt": "0",
+      "burn_count": 2,
+      "burn_total_lpt": "441048.903440638593884135",
+      "matched_burn_to_receipt_count": 2,
+      "matched_receipt_to_exchange_count": 0,
+      "matched_withdraw_to_burn_count": 2,
+      "median_burn_to_receipt_days": 13.96072337962963,
+      "median_firsthop_to_exchange_hours": null,
+      "median_receipt_to_exchange_hours": null,
+      "median_receipt_to_firsthop_hours": 0.48,
+      "median_withdraw_to_burn_hours": 24.079583333333332,
+      "sender": "0xadc6e5cbde4fbac7baf58a336edeab8590625baf",
+      "withdraw_count": 2
+    },
+    {
+      "bonded_now_lpt": "592264.60854975228660224",
+      "burn_count": 31,
+      "burn_total_lpt": "387857.9841",
+      "matched_burn_to_receipt_count": 31,
+      "matched_receipt_to_exchange_count": 31,
+      "matched_withdraw_to_burn_count": 29,
+      "median_burn_to_receipt_days": 7.039872685185185,
+      "median_firsthop_to_exchange_hours": 0.04,
+      "median_receipt_to_exchange_hours": 0.18666666666666668,
+      "median_receipt_to_firsthop_hours": 0.12,
+      "median_withdraw_to_burn_hours": 0.05722222222222222,
+      "sender": "0xa3bd517dcbdc063c4c24f0d9837bbc5ce869d092",
+      "withdraw_count": 34
+    }
+  ],
+  "totals": {
+    "burn_events": 85,
+    "matched_burn_to_receipt": 84,
+    "matched_receipt_to_exchange": 68,
+    "matched_withdraw_to_burn": 75,
+    "senders": 10,
+    "withdraw_events": 89
+  }
+}
