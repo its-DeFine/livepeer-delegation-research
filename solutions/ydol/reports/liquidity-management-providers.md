@@ -135,3 +135,14 @@ To turn marketing into decision-grade diligence, request a short memo answering:
 4) **Operational model**: how often rebalances happen; do they swap inventory; what guardrails exist.
 5) **Security posture**: audits, upgradeability + timelocks, admin keys/multisigs, incident history, disclosures.
 6) **Reporting**: cadence + dashboards + onchain addresses, and how the community can independently verify.
+
+## Livepeer lens: is an Arrakis premium justified (based on proposal text only)?
+
+Based on the Livepeer proposal post alone, Arrakis is not clearly “premium” on *commitments* — it mostly promises active management + reporting, but does not publish hard KPI targets, guarantees, or a fee structure that shares downside risk.
+
+In contrast, Gamma’s quoted model (20% of earned fees, no AUM fee, permissionless entry/exit, constrained rebalance authority) is the same product category (active liquidity management) at materially lower ongoing “rent”.
+
+For Arrakis to justify higher take rates, the DAO should require at least one of:
+- **Hard KPI commitments** (e.g., max price impact at $25k/$50k swaps both directions) with timeboxes + stop conditions.
+- **Evidence of outperformance vs cheaper ALMs** on comparable volatile-token/WETH pairs at similar capital.
+- **Extra value beyond “just” ALM** (e.g., verifiable orderflow advantages, MEV/LVR mitigation with realistic deployment timing, or explicit risk-sharing terms).
