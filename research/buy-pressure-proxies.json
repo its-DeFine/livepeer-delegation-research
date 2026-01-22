@@ -1,0 +1,5107 @@
+{
+  "arb_window": {
+    "from_block": 0,
+    "to_block": 423885844
+  },
+  "arbitrum_rpc": "https://arb1.arbitrum.io/rpc",
+  "ethereum_rpc": "https://rpc.flashbots.net",
+  "exchange_outflows_lpt_by_exchange": {
+    "binance": "80282989.96674484",
+    "coinbase": "27789530.955724910291184166",
+    "gateio": "7120167.858715140628063847",
+    "huobi": "2.070381570064867358",
+    "kucoin": "942457.176108438603690493",
+    "okx": "11047617.71404073"
+  },
+  "exchange_wallets_scanned": [
+    {
+      "address": "0x0a869d79a7052c7f1b55a8ebabbea3420f0d1e13",
+      "exchange": "kraken",
+      "name": "Kraken 2"
+    },
+    {
+      "address": "0x0d0707963952f2fba59dd06f2b425ace40b492fe",
+      "exchange": "gateio",
+      "name": "Gate.io 1"
+    },
+    {
+      "address": "0x21a31ee1afc51d94c2efccaa2092ad1028285549",
+      "exchange": "binance",
+      "name": "Binance 15"
+    },
+    {
+      "address": "0x236f9f97e0e62388479bf9e5ba4889e46b0273c3",
+      "exchange": "okx",
+      "name": "OKX 2"
+    },
+    {
+      "address": "0x267be1c1d684f78cb4f6a176c4911b741e4ffdc0",
+      "exchange": "kraken",
+      "name": "Kraken 4"
+    },
+    {
+      "address": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "exchange": "binance",
+      "name": "Binance 14"
+    },
+    {
+      "address": "0x2910543af39aba0cd09dbb2d50200b3e800a63d2",
+      "exchange": "kraken",
+      "name": "Kraken 1"
+    },
+    {
+      "address": "0x3f5ce5fbfe3e9af3971dd833d26ba9b5c936f0be",
+      "exchange": "binance",
+      "name": "Binance (old)"
+    },
+    {
+      "address": "0x5401dbf7da53e1c9dbf9a70db8d9b5b3c6d06c77",
+      "exchange": "huobi",
+      "name": "Huobi 1"
+    },
+    {
+      "address": "0x56eddb7aa87536c09ccc2793473599fd21a8b17f",
+      "exchange": "binance",
+      "name": "Binance 17"
+    },
+    {
+      "address": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+      "exchange": "binance",
+      "name": "Binance"
+    },
+    {
+      "address": "0x6cc5f688a315f3dc28a7781717a9a798a59fda7b",
+      "exchange": "okx",
+      "name": "OKX 1"
+    },
+    {
+      "address": "0x71660c4005ba85c37ccec55d0c4493e66fe775d3",
+      "exchange": "coinbase",
+      "name": "Coinbase 1"
+    },
+    {
+      "address": "0xa090e606e30bd747d4e6245a1517ebe430f0057e",
+      "exchange": "coinbase",
+      "name": "Coinbase Commerce"
+    },
+    {
+      "address": "0xa7efae728d2936e78bda97dc267687568dd593f3",
+      "exchange": "okx",
+      "name": "OKX 3"
+    },
+    {
+      "address": "0xab5c66752a9e8167967685f1450532fb96d5d24f",
+      "exchange": "huobi",
+      "name": "Huobi 2"
+    },
+    {
+      "address": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
+      "exchange": "coinbase",
+      "name": "Coinbase Prime"
+    },
+    {
+      "address": "0xd24400ae8bfebb18ca49be86258a3c749cf46853",
+      "exchange": "gemini",
+      "name": "Gemini 1"
+    },
+    {
+      "address": "0xd6216fc19db775df9774a6e33526131da7d19a2c",
+      "exchange": "kucoin",
+      "name": "KuCoin 1"
+    },
+    {
+      "address": "0xdfd5293d8e347dfe59e90efd55b2956a1343963d",
+      "exchange": "binance",
+      "name": "Binance 16"
+    },
+    {
+      "address": "0xe853c56864a2ebe4576a807d26fdc4a0ada51919",
+      "exchange": "kraken",
+      "name": "Kraken 3"
+    },
+    {
+      "address": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+      "exchange": "kucoin",
+      "name": "KuCoin 2"
+    },
+    {
+      "address": "0xf977814e90da44bfa03b6295a0616a897441acec",
+      "exchange": "binance",
+      "name": "Binance 8"
+    }
+  ],
+  "generated_at": "2026-01-22T02:19:47.491403+00:00",
+  "l1_window": {
+    "from_block": 14600000,
+    "to_block": 24287265
+  },
+  "labeled_destination_outflows_lpt_by_category": {
+    "exchange": "125226422.2032249",
+    "livepeer_contract": "100000"
+  },
+  "labels": {
+    "bridge_addresses": 2,
+    "exchange_wallets": 23,
+    "livepeer_contract_addresses": 1
+  },
+  "parameters": {
+    "bond_window_days": 30,
+    "max_recipients": 200,
+    "min_inbound_lpt": "10000",
+    "recipient_outflow_top_n": 100
+  },
+  "recipients": [
+    {
+      "address": "0x2110e5ed88b0489797f6a1d997815d2b360fe43b",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "5144219.624",
+      "first_inbound_block": 14755727,
+      "first_inbound_time": "2022-05-11T15:48:21+00:00",
+      "inbound_txs": 66,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23669845,
+      "last_inbound_time": "2025-10-27T16:03:23+00:00",
+      "rank": 1,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "5144219.624"
+        }
+      ]
+    },
+    {
+      "address": "0x2d6ee5c8a3b2370cbc0de309bf5d1a4aa09c3918",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "3569484.01",
+      "first_inbound_block": 15361453,
+      "first_inbound_time": "2022-08-17T22:58:22+00:00",
+      "inbound_txs": 854,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 20167531,
+      "last_inbound_time": "2024-06-25T08:34:11+00:00",
+      "rank": 2,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "3569484.01"
+        }
+      ]
+    },
+    {
+      "address": "0xe3792a9c235d434b702023b33f03c48c41631090",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "3244302.70516649",
+      "first_inbound_block": 15017623,
+      "first_inbound_time": "2022-06-24T09:26:53+00:00",
+      "inbound_txs": 670,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23850830,
+      "last_inbound_time": "2025-11-22T00:06:59+00:00",
+      "rank": 3,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "2539272.08416649"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "705030.621"
+        }
+      ]
+    },
+    {
+      "address": "0x9c3b2c8fa50fa171ba438433b4908bde8922935c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "2878402.250066",
+      "first_inbound_block": 14607015,
+      "first_inbound_time": "2022-04-18T04:21:54+00:00",
+      "inbound_txs": 542,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21763663,
+      "last_inbound_time": "2025-02-03T04:41:59+00:00",
+      "rank": 4,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "2878402.250066"
+        }
+      ]
+    },
+    {
+      "address": "0x0084dfd7202e5f5c0c8be83503a492837ca3e95e",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "2706594.05411231",
+      "first_inbound_block": 14965607,
+      "first_inbound_time": "2022-06-15T04:28:58+00:00",
+      "inbound_txs": 687,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24265139,
+      "last_inbound_time": "2026-01-19T00:09:35+00:00",
+      "rank": 5,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "2011308.09211231"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "695285.962"
+        }
+      ]
+    },
+    {
+      "address": "0xc1c4a5c41b62989acdbb9a11bbab668158f5d481",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "2159847.637706",
+      "first_inbound_block": 19248092,
+      "first_inbound_time": "2024-02-17T14:11:59+00:00",
+      "inbound_txs": 1965,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24285149,
+      "last_inbound_time": "2026-01-21T19:06:47+00:00",
+      "rank": 6,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "2159847.637706"
+        }
+      ]
+    },
+    {
+      "address": "0xab782bc7d4a2b306825de5a7730034f8f63ee1bc",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1810165.214",
+      "first_inbound_block": 18970663,
+      "first_inbound_time": "2024-01-09T16:41:59+00:00",
+      "inbound_txs": 658,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22781453,
+      "last_inbound_time": "2025-06-25T12:28:47+00:00",
+      "rank": 7,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1810165.214"
+        }
+      ]
+    },
+    {
+      "address": "0x41fbba5cb38d22b2d80606406944cedd7c97f6f9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1671120.39",
+      "first_inbound_block": 17349175,
+      "first_inbound_time": "2023-05-27T08:22:11+00:00",
+      "inbound_txs": 234,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "7462417.87270962",
+      "l1_outflow_to_exchanges_txs": 1018,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21928700,
+      "last_inbound_time": "2025-02-26T06:25:23+00:00",
+      "rank": 8,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "1671120.39"
+        }
+      ]
+    },
+    {
+      "address": "0x7e6af92df2aecd6113325c0b58f821ab1dce37f6",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1452755.06319815",
+      "first_inbound_block": 18314667,
+      "first_inbound_time": "2023-10-09T18:21:11+00:00",
+      "inbound_txs": 891,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24286846,
+      "last_inbound_time": "2026-01-22T00:47:59+00:00",
+      "rank": 9,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1452755.06319815"
+        }
+      ]
+    },
+    {
+      "address": "0x8048498c795c15f6471161ae029f6c888f43cb54",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1358889.02778384",
+      "first_inbound_block": 20733952,
+      "first_inbound_time": "2024-09-12T10:31:35+00:00",
+      "inbound_txs": 1068,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23068420,
+      "last_inbound_time": "2025-08-04T14:52:47+00:00",
+      "rank": 10,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1358889.02778384"
+        }
+      ]
+    },
+    {
+      "address": "0x3c5883c650d600bd543a9b5c8d9a3a6f5d16b8f4",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1270899.99091965",
+      "first_inbound_block": 14626727,
+      "first_inbound_time": "2022-04-21T06:30:23+00:00",
+      "inbound_txs": 264,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "2742517.17526332",
+      "l1_outflow_to_exchanges_txs": 515,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21568559,
+      "last_inbound_time": "2025-01-06T22:58:47+00:00",
+      "rank": 11,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1270899.99091965"
+        }
+      ]
+    },
+    {
+      "address": "0x21debfa81fc74415383cfbc597f77ccf6b61334b",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1257224.3128",
+      "first_inbound_block": 21027637,
+      "first_inbound_time": "2024-10-23T10:17:47+00:00",
+      "inbound_txs": 245,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23136036,
+      "last_inbound_time": "2025-08-14T01:33:35+00:00",
+      "rank": 12,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1257224.3128"
+        }
+      ]
+    },
+    {
+      "address": "0x3acedc6f89c65a288f25e80d9080898c3ca66776",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1229446.04231181",
+      "first_inbound_block": 15025074,
+      "first_inbound_time": "2022-06-25T18:55:17+00:00",
+      "inbound_txs": 1358,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24284652,
+      "last_inbound_time": "2026-01-21T17:26:59+00:00",
+      "rank": 13,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1229446.04231181"
+        }
+      ]
+    },
+    {
+      "address": "0xd8d6ffe342210057bf4dcc31da28d006f253cef0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1212171.91911338",
+      "first_inbound_block": 15365401,
+      "first_inbound_time": "2022-08-18T14:00:02+00:00",
+      "inbound_txs": 678,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17625672,
+      "last_inbound_time": "2023-07-05T05:41:59+00:00",
+      "rank": 14,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "565623.00257523"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "488709.78815277"
+        },
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "106847.39789543"
+        }
+      ]
+    },
+    {
+      "address": "0x22e0b8dd688f34a0cc21709ee64f52fe4de4d599",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1077861.815079",
+      "first_inbound_block": 15173284,
+      "first_inbound_time": "2022-07-19T13:16:21+00:00",
+      "inbound_txs": 251,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18071881,
+      "last_inbound_time": "2023-09-05T17:52:35+00:00",
+      "rank": 15,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1077861.815079"
+        }
+      ]
+    },
+    {
+      "address": "0x95b564f3b3bae3f206aa418667ba000afafacc8a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "1001446.7",
+      "first_inbound_block": 14626323,
+      "first_inbound_time": "2022-04-21T04:56:47+00:00",
+      "inbound_txs": 265,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18961314,
+      "last_inbound_time": "2024-01-08T09:08:11+00:00",
+      "rank": 16,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "1001446.7"
+        }
+      ]
+    },
+    {
+      "address": "0x91d40e4818f4d4c57b4578d9eca6afc92ac8debe",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "911758.37765711",
+      "first_inbound_block": 22079513,
+      "first_inbound_time": "2025-03-19T07:45:35+00:00",
+      "inbound_txs": 2,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22080664,
+      "last_inbound_time": "2025-03-19T11:37:23+00:00",
+      "rank": 17,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "911758.37765711"
+        }
+      ]
+    },
+    {
+      "address": "0x002e1798bff1ea5bcd703133eb61706070080c19",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "876234.9072",
+      "first_inbound_block": 14904772,
+      "first_inbound_time": "2022-06-04T18:49:33+00:00",
+      "inbound_txs": 258,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18125987,
+      "last_inbound_time": "2023-09-13T07:46:23+00:00",
+      "rank": 18,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "876234.9072"
+        }
+      ]
+    },
+    {
+      "address": "0xfee86db2b983a5c4418c314c9bc1d724c0abf929",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "872562.8806",
+      "first_inbound_block": 18073182,
+      "first_inbound_time": "2023-09-05T22:15:35+00:00",
+      "inbound_txs": 213,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23382187,
+      "last_inbound_time": "2025-09-17T10:24:59+00:00",
+      "rank": 19,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "872562.8806"
+        }
+      ]
+    },
+    {
+      "address": "0x5d0492749595406812001ee163b00f1a0506e4a0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "857619.42436347",
+      "first_inbound_block": 16104798,
+      "first_inbound_time": "2022-12-03T14:10:59+00:00",
+      "inbound_txs": 266,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24266830,
+      "last_inbound_time": "2026-01-19T05:49:11+00:00",
+      "rank": 20,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "857619.42436347"
+        }
+      ]
+    },
+    {
+      "address": "0x8389f4f008c3a3d72662d2b77f6bee3ca6cc6174",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "827689.14",
+      "first_inbound_block": 17975596,
+      "first_inbound_time": "2023-08-23T06:23:47+00:00",
+      "inbound_txs": 234,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23338081,
+      "last_inbound_time": "2025-09-11T06:38:35+00:00",
+      "rank": 21,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "827689.14"
+        }
+      ]
+    },
+    {
+      "address": "0xf217f7facf4e53b334217d3dcb3e86d32974c7c4",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "814654.90790141",
+      "first_inbound_block": 17663634,
+      "first_inbound_time": "2023-07-10T13:43:47+00:00",
+      "inbound_txs": 103,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "1474227.014432056040993491",
+      "l1_outflow_to_exchanges_txs": 174,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21919946,
+      "last_inbound_time": "2025-02-25T01:05:23+00:00",
+      "rank": 22,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "689440.65290141"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "107205.455"
+        },
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "18008.8"
+        }
+      ]
+    },
+    {
+      "address": "0xd8b9f62de8b8217ab997df060a47c020c81f9997",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "812509",
+      "first_inbound_block": 20544171,
+      "first_inbound_time": "2024-08-16T22:28:11+00:00",
+      "inbound_txs": 2,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22027080,
+      "last_inbound_time": "2025-03-12T00:03:11+00:00",
+      "rank": 23,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "812509"
+        }
+      ]
+    },
+    {
+      "address": "0x962b029508b1054e2af4184bbaeb5d0c796f7526",
+      "bond_after_inflow_days": "0.285821759259259259259259259259259259259259259259259259259259",
+      "bonded_before_inflow": false,
+      "bonded_now_lpt": "0",
+      "bonded_within_window": true,
+      "cashout_archetype": "exiter",
+      "cashout_fingerprint_rank": 6,
+      "exchange_inbound_lpt": "812507",
+      "first_bond_after_inflow_block": 315064725,
+      "first_bond_after_inflow_time": "2025-03-12T23:12:10+00:00",
+      "first_bond_block": 315064725,
+      "first_bond_time": "2025-03-12T23:12:10+00:00",
+      "first_inbound_block": 22031944,
+      "first_inbound_time": "2025-03-12T16:20:35+00:00",
+      "inbound_txs": 2,
+      "is_arbitrum_delegator": true,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "812507",
+      "l1_outflow_to_livepeer_contracts_txs": 1,
+      "last_inbound_block": 22033904,
+      "last_inbound_time": "2025-03-12T22:55:11+00:00",
+      "rank": 24,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "812507"
+        }
+      ]
+    },
+    {
+      "address": "0xbdc7b3526f593f6ccbf620efb0c972bea707a941",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "812434.8301",
+      "first_inbound_block": 16221368,
+      "first_inbound_time": "2022-12-19T21:16:23+00:00",
+      "inbound_txs": 4,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 16634541,
+      "last_inbound_time": "2023-02-15T13:48:59+00:00",
+      "rank": 25,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "812434.8301"
+        }
+      ]
+    },
+    {
+      "address": "0x1c2a393e3e7d14f4b8b9e9819217c2e8dfdb10d6",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "808664.32068793",
+      "first_inbound_block": 16240663,
+      "first_inbound_time": "2022-12-22T13:52:47+00:00",
+      "inbound_txs": 209,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22624601,
+      "last_inbound_time": "2025-06-03T14:03:47+00:00",
+      "rank": 26,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "808664.32068793"
+        }
+      ]
+    },
+    {
+      "address": "0x39e274cb173999eca1cc3daf0c3e938d2cd69a50",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "780857.135",
+      "first_inbound_block": 18825791,
+      "first_inbound_time": "2023-12-20T07:59:59+00:00",
+      "inbound_txs": 409,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24279083,
+      "last_inbound_time": "2026-01-20T22:49:23+00:00",
+      "rank": 27,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "681863.18"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "98993.955"
+        }
+      ]
+    },
+    {
+      "address": "0x20a3a4ae2aacb8bbcfd89dc71280dd18cd9a0cb4",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "768612.11321252",
+      "first_inbound_block": 18881719,
+      "first_inbound_time": "2023-12-28T04:25:11+00:00",
+      "inbound_txs": 801,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "496038.053151",
+      "l1_outflow_to_exchanges_txs": 814,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21471239,
+      "last_inbound_time": "2024-12-24T08:48:35+00:00",
+      "rank": 28,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "768612.11321252"
+        }
+      ]
+    },
+    {
+      "address": "0x47513e36b088a366e6fe7aab2c67b37957c35005",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "756700.16",
+      "first_inbound_block": 17975498,
+      "first_inbound_time": "2023-08-23T06:03:59+00:00",
+      "inbound_txs": 8,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18026364,
+      "last_inbound_time": "2023-08-30T08:55:47+00:00",
+      "rank": 29,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "756700.16"
+        }
+      ]
+    },
+    {
+      "address": "0x989a69a3e608483ae3f6fb21e2874f5c8fb98697",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "751628.206",
+      "first_inbound_block": 14629923,
+      "first_inbound_time": "2022-04-21T18:33:56+00:00",
+      "inbound_txs": 343,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "841761.5777",
+      "l1_outflow_to_exchanges_txs": 143,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 19950030,
+      "last_inbound_time": "2024-05-25T22:59:35+00:00",
+      "rank": 30,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "535019.046"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "187920.63"
+        },
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "28688.53"
+        }
+      ]
+    },
+    {
+      "address": "0x9dc54226c0f86245707396255d4fcd87eb55b676",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "689837.5276658947593561",
+      "first_inbound_block": 17133148,
+      "first_inbound_time": "2023-04-26T21:44:11+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17133148,
+      "last_inbound_time": "2023-04-26T21:44:11+00:00",
+      "rank": 31,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "689837.5276658947593561"
+        }
+      ]
+    },
+    {
+      "address": "0x8fef490d614fce8b93bd6f28835dd35a8b3229a9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "682311.08968902",
+      "first_inbound_block": 17591103,
+      "first_inbound_time": "2023-06-30T09:08:11+00:00",
+      "inbound_txs": 187,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23157051,
+      "last_inbound_time": "2025-08-17T00:00:59+00:00",
+      "rank": 32,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "637189.95496995"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "45121.13471907"
+        }
+      ]
+    },
+    {
+      "address": "0x0bec9f000860c03383757265c952969fa6f9a090",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "678508.502",
+      "first_inbound_block": 18018415,
+      "first_inbound_time": "2023-08-29T06:11:59+00:00",
+      "inbound_txs": 113,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "1058495.4487068652",
+      "l1_outflow_to_exchanges_txs": 168,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21320365,
+      "last_inbound_time": "2024-12-03T07:04:11+00:00",
+      "rank": 33,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "589154.11"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "89354.392"
+        }
+      ]
+    },
+    {
+      "address": "0xd1305fbda97c035f86fdaa7785fb568c203174e1",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "646306.34480021",
+      "first_inbound_block": 14650701,
+      "first_inbound_time": "2022-04-25T00:40:50+00:00",
+      "inbound_txs": 348,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "753081.57199016",
+      "l1_outflow_to_exchanges_txs": 375,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21340847,
+      "last_inbound_time": "2024-12-06T03:43:47+00:00",
+      "rank": 34,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "617141.57380021"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "29164.771"
+        }
+      ]
+    },
+    {
+      "address": "0xe66baa0b612003af308d78f066bbdb9a5e00ff6c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "634583.35003301",
+      "first_inbound_block": 21032743,
+      "first_inbound_time": "2024-10-24T03:22:59+00:00",
+      "inbound_txs": 259,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24280354,
+      "last_inbound_time": "2026-01-21T03:04:35+00:00",
+      "rank": 35,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "634583.35003301"
+        }
+      ]
+    },
+    {
+      "address": "0x22a709eece6ee82293e5fcdeea7ceefdefd499cd",
+      "bond_after_inflow_days": "0.0726620370370370370370370370370370370370370370370370370370370",
+      "bonded_before_inflow": false,
+      "bonded_now_lpt": "0",
+      "bonded_within_window": true,
+      "cashout_archetype": "exiter",
+      "cashout_fingerprint_rank": 19,
+      "exchange_inbound_lpt": "587043.992868",
+      "first_bond_after_inflow_block": 230320455,
+      "first_bond_after_inflow_time": "2024-07-09T07:26:49+00:00",
+      "first_bond_block": 230320455,
+      "first_bond_time": "2024-07-09T07:26:49+00:00",
+      "first_inbound_block": 20266920,
+      "first_inbound_time": "2024-07-09T05:42:11+00:00",
+      "inbound_txs": 11,
+      "is_arbitrum_delegator": true,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "587043.992868",
+      "l1_outflow_to_livepeer_contracts_txs": 9,
+      "last_inbound_block": 22058688,
+      "last_inbound_time": "2025-03-16T09:56:35+00:00",
+      "rank": 36,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "587043.992868"
+        }
+      ]
+    },
+    {
+      "address": "0x771713755f5a887ef7a455220cb493e0aca73120",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "582124.79678863",
+      "first_inbound_block": 17881179,
+      "first_inbound_time": "2023-08-10T01:21:35+00:00",
+      "inbound_txs": 43,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "80000",
+      "l1_outflow_to_livepeer_contracts_txs": 1,
+      "last_inbound_block": 22244741,
+      "last_inbound_time": "2025-04-11T09:15:47+00:00",
+      "rank": 37,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "431252.24476414"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "82995.75342496"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "59878.384"
+        }
+      ]
+    },
+    {
+      "address": "0x3aff86656a65f3d81b3e0b4c4f8d4199f3b3fbde",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "579822.85999987",
+      "first_inbound_block": 17876882,
+      "first_inbound_time": "2023-08-09T10:54:47+00:00",
+      "inbound_txs": 666,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 20182526,
+      "last_inbound_time": "2024-06-27T10:47:59+00:00",
+      "rank": 38,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "579822.85999987"
+        }
+      ]
+    },
+    {
+      "address": "0xa7a5c7602bd8a0b156980b9c41efa781e1af208f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "572560.03",
+      "first_inbound_block": 23170187,
+      "first_inbound_time": "2025-08-18T19:59:11+00:00",
+      "inbound_txs": 109,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24285371,
+      "last_inbound_time": "2026-01-21T19:51:35+00:00",
+      "rank": 39,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "572560.03"
+        }
+      ]
+    },
+    {
+      "address": "0xf733c29e2918271490d8318846f617b16e613be0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "567555.49",
+      "first_inbound_block": 23222894,
+      "first_inbound_time": "2025-08-26T04:26:59+00:00",
+      "inbound_txs": 91,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24280942,
+      "last_inbound_time": "2026-01-21T05:02:35+00:00",
+      "rank": 40,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "567555.49"
+        }
+      ]
+    },
+    {
+      "address": "0x5fa485b644fba4335fdabc820752038c0dcb8cdb",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "557895.649",
+      "first_inbound_block": 16283620,
+      "first_inbound_time": "2022-12-28T13:42:35+00:00",
+      "inbound_txs": 2,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 16286180,
+      "last_inbound_time": "2022-12-28T22:16:47+00:00",
+      "rank": 41,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "557895.649"
+        }
+      ]
+    },
+    {
+      "address": "0x478271c960137418c9d90082dddbf68aa72e4367",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "535011.42736805",
+      "first_inbound_block": 14777497,
+      "first_inbound_time": "2022-05-15T03:01:18+00:00",
+      "inbound_txs": 236,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "535011.42736805",
+      "l1_outflow_to_exchanges_txs": 159,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23731100,
+      "last_inbound_time": "2025-11-05T05:45:47+00:00",
+      "rank": 42,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "535011.42736805"
+        }
+      ]
+    },
+    {
+      "address": "0x5d550635f87e21337462b582dff589f552e609ae",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "521269.5614",
+      "first_inbound_block": 15880760,
+      "first_inbound_time": "2022-11-02T07:10:59+00:00",
+      "inbound_txs": 549,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23879225,
+      "last_inbound_time": "2025-11-26T00:01:11+00:00",
+      "rank": 43,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "521269.5614"
+        }
+      ]
+    },
+    {
+      "address": "0xe129188380d48fa09a6a89ac91adc761afdc1612",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "511923.44700287",
+      "first_inbound_block": 19518647,
+      "first_inbound_time": "2024-03-26T12:34:59+00:00",
+      "inbound_txs": 762,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24286517,
+      "last_inbound_time": "2026-01-21T23:41:59+00:00",
+      "rank": 44,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "511923.44700287"
+        }
+      ]
+    },
+    {
+      "address": "0xfc9161b99a3b0691477e12737163d007600ac262",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "503262.66260464",
+      "first_inbound_block": 22598122,
+      "first_inbound_time": "2025-05-30T21:05:59+00:00",
+      "inbound_txs": 147,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24237174,
+      "last_inbound_time": "2026-01-15T02:38:11+00:00",
+      "rank": 45,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "503262.66260464"
+        }
+      ]
+    },
+    {
+      "address": "0x37ec907ec1f200fa6b86522d27ba2af478652aa0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "502385.81",
+      "first_inbound_block": 18060738,
+      "first_inbound_time": "2023-09-04T04:29:59+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18060782,
+      "last_inbound_time": "2023-09-04T04:38:47+00:00",
+      "rank": 46,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "502385.81"
+        }
+      ]
+    },
+    {
+      "address": "0xecda6cec1fcf38429138ca06a7bcbbc4415f9586",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "500000",
+      "first_inbound_block": 19865387,
+      "first_inbound_time": "2024-05-14T02:51:59+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 19865387,
+      "last_inbound_time": "2024-05-14T02:51:59+00:00",
+      "rank": 47,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "500000"
+        }
+      ]
+    },
+    {
+      "address": "0x5770815b0c2a09a43c9e5aecb7e2f3886075b605",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "485452.56758397",
+      "first_inbound_block": 16033923,
+      "first_inbound_time": "2022-11-23T16:34:47+00:00",
+      "inbound_txs": 838,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22565345,
+      "last_inbound_time": "2025-05-26T07:00:59+00:00",
+      "rank": 48,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "485452.56758397"
+        }
+      ]
+    },
+    {
+      "address": "0x07a48c5a537d9c7ac079aefe875b209dc8360704",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "484061.09",
+      "first_inbound_block": 14699658,
+      "first_inbound_time": "2022-05-02T17:31:53+00:00",
+      "inbound_txs": 200,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24267518,
+      "last_inbound_time": "2026-01-19T08:07:23+00:00",
+      "rank": 49,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "484061.09"
+        }
+      ]
+    },
+    {
+      "address": "0xe5bd360c2336066482324a0298235850eb39da9c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "470397.30031314",
+      "first_inbound_block": 17022111,
+      "first_inbound_time": "2023-04-11T03:08:47+00:00",
+      "inbound_txs": 68,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23817365,
+      "last_inbound_time": "2025-11-17T07:19:59+00:00",
+      "rank": 50,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "470397.30031314"
+        }
+      ]
+    },
+    {
+      "address": "0x68ce7f40f9a8f6ab636deb1e897d34204113e21a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "461080.0021618115831278",
+      "first_inbound_block": 21974887,
+      "first_inbound_time": "2025-03-04T17:02:11+00:00",
+      "inbound_txs": 31,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "461080.0021618115831278",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22018793,
+      "last_inbound_time": "2025-03-10T20:15:47+00:00",
+      "rank": 51,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "461080.0021618115831278"
+        }
+      ]
+    },
+    {
+      "address": "0x8000a0b9c99932c3893a8b76c9e58a2e79dad339",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "461080.0021618115831278",
+      "first_inbound_block": 22018659,
+      "first_inbound_time": "2025-03-10T19:48:59+00:00",
+      "inbound_txs": 29,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "461080.0021618115831278",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22018797,
+      "last_inbound_time": "2025-03-10T20:16:35+00:00",
+      "rank": 52,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "461080.0021618115831278"
+        }
+      ]
+    },
+    {
+      "address": "0x5c81875af23eecb1e42a13600b887d4e9d5f1a5a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "448300.102",
+      "first_inbound_block": 22609913,
+      "first_inbound_time": "2025-06-01T12:40:59+00:00",
+      "inbound_txs": 130,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24207631,
+      "last_inbound_time": "2026-01-10T23:37:47+00:00",
+      "rank": 53,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "327644.48"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "120655.622"
+        }
+      ]
+    },
+    {
+      "address": "0xcd2c729245b68c06213087b453e2c0236f3d929a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "437148.77983684",
+      "first_inbound_block": 17882754,
+      "first_inbound_time": "2023-08-10T06:38:11+00:00",
+      "inbound_txs": 116,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 19790398,
+      "last_inbound_time": "2024-05-03T15:11:47+00:00",
+      "rank": 54,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "415284.1751"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "21864.60473684"
+        }
+      ]
+    },
+    {
+      "address": "0x125f660239707c9de3462d3fa633f2723ad0b884",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "433522.74466503",
+      "first_inbound_block": 14610287,
+      "first_inbound_time": "2022-04-18T16:39:48+00:00",
+      "inbound_txs": 233,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "1899813.12497486",
+      "l1_outflow_to_exchanges_txs": 736,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21346054,
+      "last_inbound_time": "2024-12-06T21:10:11+00:00",
+      "rank": 55,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "389120.80566503"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "44401.939"
+        }
+      ]
+    },
+    {
+      "address": "0x082553ae42f674f4ce834ce59870ffc999da222e",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "428641.87",
+      "first_inbound_block": 18792439,
+      "first_inbound_time": "2023-12-15T15:34:23+00:00",
+      "inbound_txs": 290,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24200581,
+      "last_inbound_time": "2026-01-10T00:01:59+00:00",
+      "rank": 56,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "428641.87"
+        }
+      ]
+    },
+    {
+      "address": "0x0a367f918340d47d36b21c93e9a2b6853cc9d6f0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "418326",
+      "first_inbound_block": 15234599,
+      "first_inbound_time": "2022-07-29T02:02:13+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "418326",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 15234599,
+      "last_inbound_time": "2022-07-29T02:02:13+00:00",
+      "rank": 57,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "418326"
+        }
+      ]
+    },
+    {
+      "address": "0x23d6bf06a756bcdc520085bfcca174009a40c55d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "417519.05",
+      "first_inbound_block": 14700049,
+      "first_inbound_time": "2022-05-02T19:08:54+00:00",
+      "inbound_txs": 204,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23950439,
+      "last_inbound_time": "2025-12-06T01:00:11+00:00",
+      "rank": 58,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "266548.489"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "79975.517"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "70995.044"
+        }
+      ]
+    },
+    {
+      "address": "0xf27cde6672492b386e683ccad0ec0eae5f6e553f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "413799.9",
+      "first_inbound_block": 21601309,
+      "first_inbound_time": "2025-01-11T12:41:59+00:00",
+      "inbound_txs": 175,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24207536,
+      "last_inbound_time": "2026-01-10T23:18:35+00:00",
+      "rank": 59,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "249787.92"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "150261.98"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "13750"
+        }
+      ]
+    },
+    {
+      "address": "0x0060116f4bed13f212e23546b6b409ff82c985cb",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "405827.175",
+      "first_inbound_block": 17355500,
+      "first_inbound_time": "2023-05-28T05:39:59+00:00",
+      "inbound_txs": 6,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18784654,
+      "last_inbound_time": "2023-12-14T13:23:59+00:00",
+      "rank": 60,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "405827.175"
+        }
+      ]
+    },
+    {
+      "address": "0x766a389e054e7fd4115e8ba3eb87dc27c8ce9d31",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "405016.422",
+      "first_inbound_block": 22609858,
+      "first_inbound_time": "2025-06-01T12:29:47+00:00",
+      "inbound_txs": 112,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24268011,
+      "last_inbound_time": "2026-01-19T09:46:35+00:00",
+      "rank": 61,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "317944.82"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "87071.602"
+        }
+      ]
+    },
+    {
+      "address": "0x548f27e2c1eb0c90c9c0ef3a4a61a6ae60038f02",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "402083.10827972",
+      "first_inbound_block": 22594639,
+      "first_inbound_time": "2025-05-30T09:24:35+00:00",
+      "inbound_txs": 286,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23872018,
+      "last_inbound_time": "2025-11-24T23:39:11+00:00",
+      "rank": 62,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "402083.10827972"
+        }
+      ]
+    },
+    {
+      "address": "0x6f8bbb60583f1fe11bff0f2866dd25bd725a53a3",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "396139.8145942594981267",
+      "first_inbound_block": 16806568,
+      "first_inbound_time": "2023-03-11T18:18:11+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "396139.8145942594981267",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 16806580,
+      "last_inbound_time": "2023-03-11T18:20:35+00:00",
+      "rank": 63,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "396139.8145942594981267"
+        }
+      ]
+    },
+    {
+      "address": "0x5198d3e67918a21cd0c806214cc5d0bce8680c22",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "396139.8145942594981267",
+      "first_inbound_block": 16806573,
+      "first_inbound_time": "2023-03-11T18:19:11+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "396139.8145942594981267",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 16806579,
+      "last_inbound_time": "2023-03-11T18:20:23+00:00",
+      "rank": 64,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "396139.8145942594981267"
+        }
+      ]
+    },
+    {
+      "address": "0x9f237bc6c23e7ff9c2ed604f837dcaa5a442be78",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "388882.73150591",
+      "first_inbound_block": 21340320,
+      "first_inbound_time": "2024-12-06T01:57:47+00:00",
+      "inbound_txs": 56,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "441850.95064685",
+      "l1_outflow_to_exchanges_txs": 65,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 22121713,
+      "last_inbound_time": "2025-03-25T05:04:35+00:00",
+      "rank": 65,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "345611.03850591"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "43271.693"
+        }
+      ]
+    },
+    {
+      "address": "0x58edf78281334335effa23101bbe3371b6a36a51",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "386649.991085388603690493",
+      "first_inbound_block": 18375886,
+      "first_inbound_time": "2023-10-18T07:54:35+00:00",
+      "inbound_txs": 15,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "316913.815340399550485479",
+      "l1_outflow_to_exchanges_txs": 52,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23948088,
+      "last_inbound_time": "2025-12-05T17:00:23+00:00",
+      "rank": 66,
+      "top_sources": [
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "386649.991085388603690493"
+        }
+      ]
+    },
+    {
+      "address": "0x3e9ef44d0418c037f1b2b66662d3ad25b36dedb8",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "380830.41906135",
+      "first_inbound_block": 17860236,
+      "first_inbound_time": "2023-08-07T03:00:11+00:00",
+      "inbound_txs": 175,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23886253,
+      "last_inbound_time": "2025-11-26T23:41:59+00:00",
+      "rank": 67,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "363716.74606003"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "17113.67300132"
+        }
+      ]
+    },
+    {
+      "address": "0xbb26df665c594c723b746f68010d4dedbd441c8c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "365727.19311653",
+      "first_inbound_block": 22518039,
+      "first_inbound_time": "2025-05-19T15:56:35+00:00",
+      "inbound_txs": 388,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24265249,
+      "last_inbound_time": "2026-01-19T00:31:35+00:00",
+      "rank": 68,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "365727.19311653"
+        }
+      ]
+    },
+    {
+      "address": "0xb4650d0ef5e6eb4bb2242ea861d47b12e54556c4",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "360185.454",
+      "first_inbound_block": 17454302,
+      "first_inbound_time": "2023-06-11T03:46:59+00:00",
+      "inbound_txs": 216,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24267535,
+      "last_inbound_time": "2026-01-19T08:10:47+00:00",
+      "rank": 69,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "291909.31"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "45219.244"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "22462.99"
+        }
+      ]
+    },
+    {
+      "address": "0x7d8c97b8dd57793bb8366bd41049ffc2256ea72c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "353696.54",
+      "first_inbound_block": 18688510,
+      "first_inbound_time": "2023-12-01T02:13:23+00:00",
+      "inbound_txs": 211,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21486358,
+      "last_inbound_time": "2024-12-26T11:31:47+00:00",
+      "rank": 70,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "301002.837"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "42082.905"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "10610.798"
+        }
+      ]
+    },
+    {
+      "address": "0x98adef6f2ac8572ec48965509d69a8dd5e8bba9d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "327546.61768916",
+      "first_inbound_block": 18111821,
+      "first_inbound_time": "2023-09-11T08:08:23+00:00",
+      "inbound_txs": 60,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24159735,
+      "last_inbound_time": "2026-01-04T07:14:35+00:00",
+      "rank": 71,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "327546.61768916"
+        }
+      ]
+    },
+    {
+      "address": "0xfa4d81487ece32e95ae2bee5fc860f189fe163d8",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "324528.546",
+      "first_inbound_block": 14797332,
+      "first_inbound_time": "2022-05-18T06:42:08+00:00",
+      "inbound_txs": 165,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23285045,
+      "last_inbound_time": "2025-09-03T20:42:47+00:00",
+      "rank": 72,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "194254.68"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "71507.703"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "58766.163"
+        }
+      ]
+    },
+    {
+      "address": "0xc2d29bfd23fcd41aaf34c9d4a6386eb824147b7e",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "324500.13911398",
+      "first_inbound_block": 16645470,
+      "first_inbound_time": "2023-02-17T02:28:35+00:00",
+      "inbound_txs": 263,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24286923,
+      "last_inbound_time": "2026-01-22T01:03:23+00:00",
+      "rank": 73,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "266572.55038605"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "50601.53472793"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "7326.054"
+        }
+      ]
+    },
+    {
+      "address": "0xf9aa415e50e5119737ad5f987486bf9648a92503",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "316944.7647725329527755",
+      "first_inbound_block": 17032912,
+      "first_inbound_time": "2023-04-12T15:48:47+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "316944.7647725329527755",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17081208,
+      "last_inbound_time": "2023-04-19T14:22:11+00:00",
+      "rank": 74,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "316944.7647725329527755"
+        }
+      ]
+    },
+    {
+      "address": "0x4a3e950c35c6d9c2d8f5f0a6cc03af9942134840",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "314296.95405",
+      "first_inbound_block": 15068936,
+      "first_inbound_time": "2022-07-03T10:05:48+00:00",
+      "inbound_txs": 8,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "314296.95405",
+      "l1_outflow_to_livepeer_contracts_txs": 8,
+      "last_inbound_block": 16392014,
+      "last_inbound_time": "2023-01-12T16:48:47+00:00",
+      "rank": 75,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "314296.95405"
+        }
+      ]
+    },
+    {
+      "address": "0x28cc933fecf280e720299b1258e8680355d8841f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "310885.2963354",
+      "first_inbound_block": 22568189,
+      "first_inbound_time": "2025-05-26T16:35:35+00:00",
+      "inbound_txs": 358,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24284049,
+      "last_inbound_time": "2026-01-21T15:25:47+00:00",
+      "rank": 76,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "310885.2963354"
+        }
+      ]
+    },
+    {
+      "address": "0x429d8fbbfc38917de207698051b4563a08662d26",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "307329.1759",
+      "first_inbound_block": 22594149,
+      "first_inbound_time": "2025-05-30T07:46:11+00:00",
+      "inbound_txs": 41,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23880178,
+      "last_inbound_time": "2025-11-26T03:14:35+00:00",
+      "rank": 77,
+      "top_sources": [
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "269732.9759"
+        },
+        {
+          "exchange": "binance",
+          "inbound_lpt": "37596.2"
+        }
+      ]
+    },
+    {
+      "address": "0x1d8651b6d941d7d3a3bb193a5a070112b0a71736",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "305997.779208523489282076",
+      "first_inbound_block": 16743961,
+      "first_inbound_time": "2023-03-02T22:53:59+00:00",
+      "inbound_txs": 8,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "305997.779208523489282076",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 16752004,
+      "last_inbound_time": "2023-03-04T02:05:11+00:00",
+      "rank": 78,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "305997.779208523489282076"
+        }
+      ]
+    },
+    {
+      "address": "0xafa4be2a5cf0652b079f225684b42ae3046aa55d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "303825.0896332915066386",
+      "first_inbound_block": 18728456,
+      "first_inbound_time": "2023-12-06T16:25:35+00:00",
+      "inbound_txs": 14,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "303825.0896332915066386",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18728480,
+      "last_inbound_time": "2023-12-06T16:30:23+00:00",
+      "rank": 79,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "303825.0896332915066386"
+        }
+      ]
+    },
+    {
+      "address": "0x35189f45a9d4b2bbd22d1b1f75d46e1f7b443923",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "300181.1070951364854893",
+      "first_inbound_block": 17019610,
+      "first_inbound_time": "2023-04-10T18:40:11+00:00",
+      "inbound_txs": 4,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "300181.1070951364854893",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17032914,
+      "last_inbound_time": "2023-04-12T15:49:11+00:00",
+      "rank": 80,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "300181.1070951364854893"
+        }
+      ]
+    },
+    {
+      "address": "0xb05402ea019a508036624bbcfae37e2733a7a86d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "300000",
+      "first_inbound_block": 19769233,
+      "first_inbound_time": "2024-04-30T16:11:23+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 19769233,
+      "last_inbound_time": "2024-04-30T16:11:23+00:00",
+      "rank": 81,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "300000"
+        }
+      ]
+    },
+    {
+      "address": "0x664d8c695eafcacea31337e1e26bdda959f7b9e9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "293141.9332730550266215",
+      "first_inbound_block": 18728478,
+      "first_inbound_time": "2023-12-06T16:29:59+00:00",
+      "inbound_txs": 15,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "293141.9332730550266215",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18742799,
+      "last_inbound_time": "2023-12-08T16:41:35+00:00",
+      "rank": 82,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "293141.9332730550266215"
+        }
+      ]
+    },
+    {
+      "address": "0xbe0562201362d5adea1b0c678406d70432d33d8d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "289061.92995755",
+      "first_inbound_block": 23174388,
+      "first_inbound_time": "2025-08-19T10:01:35+00:00",
+      "inbound_txs": 392,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24284364,
+      "last_inbound_time": "2026-01-21T16:28:47+00:00",
+      "rank": 83,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "289061.92995755"
+        }
+      ]
+    },
+    {
+      "address": "0x837cf4b41b98495a7610326681c0a06e6bf695a9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "288304.039232401771763495",
+      "first_inbound_block": 23237807,
+      "first_inbound_time": "2025-08-28T06:24:47+00:00",
+      "inbound_txs": 27,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "288304.039232401771763495",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23284919,
+      "last_inbound_time": "2025-09-03T20:17:35+00:00",
+      "rank": 84,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "288304.039232401771763495"
+        }
+      ]
+    },
+    {
+      "address": "0xedc874c27bbb27c660046edee7cb35c718d4bee9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "285810.77413369",
+      "first_inbound_block": 18060002,
+      "first_inbound_time": "2023-09-04T02:01:35+00:00",
+      "inbound_txs": 58,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23881635,
+      "last_inbound_time": "2025-11-26T08:09:11+00:00",
+      "rank": 85,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "237715.730271"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "48095.04386269"
+        }
+      ]
+    },
+    {
+      "address": "0xda0c439909489360aeda04247c8de61516c11876",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "283194.8703919451745739",
+      "first_inbound_block": 16806583,
+      "first_inbound_time": "2023-03-11T18:21:11+00:00",
+      "inbound_txs": 6,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "283194.8703919451745739",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17019604,
+      "last_inbound_time": "2023-04-10T18:38:59+00:00",
+      "rank": 86,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "283194.8703919451745739"
+        }
+      ]
+    },
+    {
+      "address": "0x37d950a794a10b002b3e57e9356347d0294e0a87",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "283194.8703919451745739",
+      "first_inbound_block": 17019581,
+      "first_inbound_time": "2023-04-10T18:34:11+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "283194.8703919451745739",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17019596,
+      "last_inbound_time": "2023-04-10T18:37:11+00:00",
+      "rank": 87,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "283194.8703919451745739"
+        }
+      ]
+    },
+    {
+      "address": "0x0a4bc704f338a88e250157e5bb6d482e2a8f611b",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "283194.8703919451745739",
+      "first_inbound_block": 17019586,
+      "first_inbound_time": "2023-04-10T18:35:11+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "283194.8703919451745739",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17019615,
+      "last_inbound_time": "2023-04-10T18:41:11+00:00",
+      "rank": 88,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "283194.8703919451745739"
+        }
+      ]
+    },
+    {
+      "address": "0x3e0f265f917774ffbe46287671c53bc7a97c0d21",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "280282.75684808",
+      "first_inbound_block": 22143413,
+      "first_inbound_time": "2025-03-28T05:46:23+00:00",
+      "inbound_txs": 34,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23516900,
+      "last_inbound_time": "2025-10-06T06:20:11+00:00",
+      "rank": 89,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "238998.43084808"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "41284.326"
+        }
+      ]
+    },
+    {
+      "address": "0x2bfb4dfdefcc4a72f03b0a3464eb2eafa2633583",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "276833.984",
+      "first_inbound_block": 15327263,
+      "first_inbound_time": "2022-08-12T13:33:30+00:00",
+      "inbound_txs": 52,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17596266,
+      "last_inbound_time": "2023-07-01T02:32:47+00:00",
+      "rank": 90,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "204678.474"
+        },
+        {
+          "exchange": "binance",
+          "inbound_lpt": "54460.71"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "13890.66"
+        }
+      ]
+    },
+    {
+      "address": "0x0b13315bc1638ce38805c827f308cb2f1a2be45b",
+      "bond_after_inflow_days": "66.3769212962962962962962962962962962962962962962962962962963",
+      "bonded_before_inflow": false,
+      "bonded_now_lpt": "0",
+      "bonded_within_window": false,
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "274384.2747",
+      "first_bond_after_inflow_block": 84866108,
+      "first_bond_after_inflow_time": "2023-04-27T15:00:21+00:00",
+      "first_bond_block": 84866108,
+      "first_bond_time": "2023-04-27T15:00:21+00:00",
+      "first_inbound_block": 16667828,
+      "first_inbound_time": "2023-02-20T05:57:35+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": true,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "274384.2747",
+      "l1_outflow_to_livepeer_contracts_txs": 2,
+      "last_inbound_block": 16674186,
+      "last_inbound_time": "2023-02-21T03:23:47+00:00",
+      "rank": 91,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "274384.2747"
+        }
+      ]
+    },
+    {
+      "address": "0x0fe0b0f433e6f15b44af7eb1c7a3fc6280cc4b96",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "268450.012838332005403695",
+      "first_inbound_block": 23318820,
+      "first_inbound_time": "2025-09-08T13:57:59+00:00",
+      "inbound_txs": 22,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "268450.012838332005403695",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23318823,
+      "last_inbound_time": "2025-09-08T13:58:35+00:00",
+      "rank": 92,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "268450.012838332005403695"
+        }
+      ]
+    },
+    {
+      "address": "0x3f5e2ba8082730c42612534f38c2fd3a28b8f3ef",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "265782.88255737",
+      "first_inbound_block": 23710881,
+      "first_inbound_time": "2025-11-02T09:55:11+00:00",
+      "inbound_txs": 60,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24277639,
+      "last_inbound_time": "2026-01-20T17:59:23+00:00",
+      "rank": 93,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "265782.88255737"
+        }
+      ]
+    },
+    {
+      "address": "0x4fc563b11133cac6c348bdbbc6ff562ba2dbc82a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "262454.266909893717550756",
+      "first_inbound_block": 17081213,
+      "first_inbound_time": "2023-04-19T14:23:11+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "262454.266909893717550756",
+      "l1_outflow_to_exchanges_txs": 1,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17088611,
+      "last_inbound_time": "2023-04-20T15:33:11+00:00",
+      "rank": 94,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "262454.266909893717550756"
+        }
+      ]
+    },
+    {
+      "address": "0xd4c68828ba392beca6d3f33fdba37a23674d7788",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "258360.991",
+      "first_inbound_block": 14617342,
+      "first_inbound_time": "2022-04-19T19:02:57+00:00",
+      "inbound_txs": 83,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "1169452.2985328",
+      "l1_outflow_to_exchanges_txs": 229,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 17085018,
+      "last_inbound_time": "2023-04-20T03:17:35+00:00",
+      "rank": 95,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "258360.991"
+        }
+      ]
+    },
+    {
+      "address": "0xbc772a2f76d2f76c25ff6cb6be8276663fc1410c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "252625.59",
+      "first_inbound_block": 22596612,
+      "first_inbound_time": "2025-05-30T16:01:59+00:00",
+      "inbound_txs": 121,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 23262440,
+      "last_inbound_time": "2025-08-31T16:51:35+00:00",
+      "rank": 96,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "252625.59"
+        }
+      ]
+    },
+    {
+      "address": "0xc882b111a75c0c657fc507c04fbfcd2cc984f071",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "248366.711375565794063847",
+      "first_inbound_block": 15494202,
+      "first_inbound_time": "2022-09-08T03:16:48+00:00",
+      "inbound_txs": 4,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "248366.711375565794063847",
+      "l1_outflow_to_exchanges_txs": 5,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 21348223,
+      "last_inbound_time": "2024-12-07T04:26:47+00:00",
+      "rank": 97,
+      "top_sources": [
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "248366.711375565794063847"
+        }
+      ]
+    },
+    {
+      "address": "0x5ee93b98090832ec39016e423c8b04dd3cf589d2",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "247880.55676513",
+      "first_inbound_block": 17454343,
+      "first_inbound_time": "2023-06-11T03:55:11+00:00",
+      "inbound_txs": 184,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 24265165,
+      "last_inbound_time": "2026-01-19T00:14:47+00:00",
+      "rank": 98,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "208733.45776513"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "25425.749"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "13269.18"
+        }
+      ]
+    },
+    {
+      "address": "0xdae380229d63d9a4497d2a4cf191b366200d48dc",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "245392.5",
+      "first_inbound_block": 17895166,
+      "first_inbound_time": "2023-08-12T00:19:23+00:00",
+      "inbound_txs": 83,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18782452,
+      "last_inbound_time": "2023-12-14T05:58:59+00:00",
+      "rank": 99,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "245392.5"
+        }
+      ]
+    },
+    {
+      "address": "0x1f97505874067e5c926b4e40d0524d4fe0fdbc62",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "244512.76",
+      "first_inbound_block": 14631594,
+      "first_inbound_time": "2022-04-22T00:49:47+00:00",
+      "inbound_txs": 79,
+      "is_arbitrum_delegator": false,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "461114.479",
+      "l1_outflow_to_exchanges_txs": 100,
+      "l1_outflow_to_livepeer_contracts_lpt": "0",
+      "l1_outflow_to_livepeer_contracts_txs": 0,
+      "last_inbound_block": 18768827,
+      "last_inbound_time": "2023-12-12T08:10:47+00:00",
+      "rank": 100,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "122484.74"
+        },
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "80204.89"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "41823.13"
+        }
+      ]
+    },
+    {
+      "address": "0x8cee98d8a7b193df071f2ab53c3dce1f6a0594da",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "244066.42875637",
+      "first_inbound_block": 16487868,
+      "first_inbound_time": "2023-01-26T02:00:11+00:00",
+      "inbound_txs": 86,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23711465,
+      "last_inbound_time": "2025-11-02T11:52:35+00:00",
+      "rank": 101,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "173340.849131"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "66420.36889737"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "3397.410728"
+        }
+      ]
+    },
+    {
+      "address": "0x07ad96016897000e9cdb568ad58a28d307508926",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "241951.7146624276940208",
+      "first_inbound_block": 21029289,
+      "first_inbound_time": "2024-10-23T15:49:11+00:00",
+      "inbound_txs": 31,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21099936,
+      "last_inbound_time": "2024-11-02T12:24:11+00:00",
+      "rank": 102,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "241951.7146624276940208"
+        }
+      ]
+    },
+    {
+      "address": "0xe21dc7b941e403d160bb99c48ceddf5f86c5289f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "238515.60805911795602992",
+      "first_inbound_block": 22433080,
+      "first_inbound_time": "2025-05-07T17:00:47+00:00",
+      "inbound_txs": 16,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22527011,
+      "last_inbound_time": "2025-05-20T22:09:47+00:00",
+      "rank": 103,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "238515.60805911795602992"
+        }
+      ]
+    },
+    {
+      "address": "0x002d91c86d026319ba0d159c84ffea03bc00adf9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "237019.35697432",
+      "first_inbound_block": 15138963,
+      "first_inbound_time": "2022-07-14T06:04:11+00:00",
+      "inbound_txs": 71,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23115468,
+      "last_inbound_time": "2025-08-11T04:36:59+00:00",
+      "rank": 104,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "237019.35697432"
+        }
+      ]
+    },
+    {
+      "address": "0x11a730322f97e791b03cb967ba23aa1af11d150c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "236545.88",
+      "first_inbound_block": 17983709,
+      "first_inbound_time": "2023-08-24T09:36:47+00:00",
+      "inbound_txs": 61,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23711580,
+      "last_inbound_time": "2025-11-02T12:15:47+00:00",
+      "rank": 105,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "236545.88"
+        }
+      ]
+    },
+    {
+      "address": "0x237e421ad6bd414731732f007b3c7343bc51e60c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "233050.42906393",
+      "first_inbound_block": 17926394,
+      "first_inbound_time": "2023-08-16T09:07:35+00:00",
+      "inbound_txs": 38,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22860657,
+      "last_inbound_time": "2025-07-06T14:08:23+00:00",
+      "rank": 106,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "108533.72353012"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "91489.04753381"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "33027.658"
+        }
+      ]
+    },
+    {
+      "address": "0x593a93930fc2523547a6132eb40876d740d4a8dd",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "231748.8510025",
+      "first_inbound_block": 15888808,
+      "first_inbound_time": "2022-11-03T10:09:11+00:00",
+      "inbound_txs": 84,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879268,
+      "last_inbound_time": "2025-11-26T00:09:59+00:00",
+      "rank": 107,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "228252.172278"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "3496.6787245"
+        }
+      ]
+    },
+    {
+      "address": "0xa81d7ceb5d20fe286709cbde3d9c129cd7f1f3d4",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "231117.3887450440993918",
+      "first_inbound_block": 21158616,
+      "first_inbound_time": "2024-11-10T16:58:11+00:00",
+      "inbound_txs": 33,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21187091,
+      "last_inbound_time": "2024-11-14T16:21:11+00:00",
+      "rank": 108,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "231117.3887450440993918"
+        }
+      ]
+    },
+    {
+      "address": "0xa68b437b38bfa3dad21915fd6513e5d8fda77574",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "230569.76",
+      "first_inbound_block": 14651091,
+      "first_inbound_time": "2022-04-25T02:10:38+00:00",
+      "inbound_txs": 50,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 17424787,
+      "last_inbound_time": "2023-06-06T23:54:35+00:00",
+      "rank": 109,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "230569.76"
+        }
+      ]
+    },
+    {
+      "address": "0x25f21b02142ae8152859ca537e203b6edb31476e",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "229868.4032697663057569",
+      "first_inbound_block": 20821907,
+      "first_inbound_time": "2024-09-24T17:20:11+00:00",
+      "inbound_txs": 43,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21087050,
+      "last_inbound_time": "2024-10-31T17:15:11+00:00",
+      "rank": 110,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "229868.4032697663057569"
+        }
+      ]
+    },
+    {
+      "address": "0xe97d7556ef33e75f72655d37d111f098010bcf5a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "225532.3629829383894973",
+      "first_inbound_block": 22683569,
+      "first_inbound_time": "2025-06-11T20:01:23+00:00",
+      "inbound_txs": 20,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22790276,
+      "last_inbound_time": "2025-06-26T18:02:23+00:00",
+      "rank": 111,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "225532.3629829383894973"
+        }
+      ]
+    },
+    {
+      "address": "0x370f63792806dbfb0f6bbbe093745535649f8c62",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "225201.669",
+      "first_inbound_block": 23608969,
+      "first_inbound_time": "2025-10-19T03:22:47+00:00",
+      "inbound_txs": 56,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24267042,
+      "last_inbound_time": "2026-01-19T06:31:47+00:00",
+      "rank": 112,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "169795.04"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "55406.629"
+        }
+      ]
+    },
+    {
+      "address": "0x5c01a4e38ad7149e5e78af9578a3576f4bd158ce",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "224345.88583918",
+      "first_inbound_block": 18069346,
+      "first_inbound_time": "2023-09-05T09:20:59+00:00",
+      "inbound_txs": 27,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24102697,
+      "last_inbound_time": "2025-12-27T08:13:47+00:00",
+      "rank": 113,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "177242.62883918"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "47103.257"
+        }
+      ]
+    },
+    {
+      "address": "0x8d711bfe3f228d6e37228ab66e8fa963d28d797a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "223438.852857852361426202",
+      "first_inbound_block": 21099865,
+      "first_inbound_time": "2024-11-02T12:09:59+00:00",
+      "inbound_txs": 27,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21131887,
+      "last_inbound_time": "2024-11-06T23:27:11+00:00",
+      "rank": 114,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "223438.852857852361426202"
+        }
+      ]
+    },
+    {
+      "address": "0x01a6b81e3b967f3568e1bf621341ee7677715206",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "220785.338702170285617876",
+      "first_inbound_block": 16657621,
+      "first_inbound_time": "2023-02-18T19:34:35+00:00",
+      "inbound_txs": 15,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 16662286,
+      "last_inbound_time": "2023-02-19T11:18:11+00:00",
+      "rank": 115,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "220785.338702170285617876"
+        }
+      ]
+    },
+    {
+      "address": "0xf2b2028573d89bd63f41e90293a476b483a1eb51",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "219328.7727834584401973",
+      "first_inbound_block": 16649715,
+      "first_inbound_time": "2023-02-17T16:49:59+00:00",
+      "inbound_txs": 15,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 16657649,
+      "last_inbound_time": "2023-02-18T19:40:11+00:00",
+      "rank": 116,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "219328.7727834584401973"
+        }
+      ]
+    },
+    {
+      "address": "0xd2c4470ea92cab643aba9c6834895066d4a871cb",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "217990.85",
+      "first_inbound_block": 23177529,
+      "first_inbound_time": "2025-08-19T20:32:35+00:00",
+      "inbound_txs": 26,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24217984,
+      "last_inbound_time": "2026-01-12T10:17:59+00:00",
+      "rank": 117,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "217990.85"
+        }
+      ]
+    },
+    {
+      "address": "0xb2a8e711d9510fa73cfac4cd2f44a506fe389242",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "217858.95",
+      "first_inbound_block": 22593856,
+      "first_inbound_time": "2025-05-30T06:46:59+00:00",
+      "inbound_txs": 84,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879234,
+      "last_inbound_time": "2025-11-26T00:02:59+00:00",
+      "rank": 118,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "217858.95"
+        }
+      ]
+    },
+    {
+      "address": "0xf42043c09ec04b46e289e65d651e8c8c19053672",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "217403.70973244",
+      "first_inbound_block": 22592853,
+      "first_inbound_time": "2025-05-30T03:24:59+00:00",
+      "inbound_txs": 46,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879228,
+      "last_inbound_time": "2025-11-26T00:01:47+00:00",
+      "rank": 119,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "194751.49573244"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "22652.214"
+        }
+      ]
+    },
+    {
+      "address": "0x3dd18abb413ab7ef606986268b163dec109c3682",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "217048.008476516280524795",
+      "first_inbound_block": 23323867,
+      "first_inbound_time": "2025-09-09T06:52:59+00:00",
+      "inbound_txs": 18,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23323869,
+      "last_inbound_time": "2025-09-09T06:53:23+00:00",
+      "rank": 120,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "217048.008476516280524795"
+        }
+      ]
+    },
+    {
+      "address": "0xc69381073814920d1ce2bb009ac9982a74679814",
+      "bond_after_inflow_days": "0.0169444444444444444444444444444444444444444444444444444444444",
+      "bonded_before_inflow": true,
+      "bonded_now_lpt": "0",
+      "bonded_within_window": true,
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "214959.92",
+      "first_bond_after_inflow_block": 322793683,
+      "first_bond_after_inflow_time": "2025-04-04T09:26:35+00:00",
+      "first_bond_block": 322778312,
+      "first_bond_time": "2025-04-04T08:22:24+00:00",
+      "first_inbound_block": 22194530,
+      "first_inbound_time": "2025-04-04T09:02:11+00:00",
+      "inbound_txs": 2,
+      "is_arbitrum_delegator": true,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "214959.92",
+      "l1_outflow_to_livepeer_contracts_txs": 2,
+      "last_inbound_block": 22213553,
+      "last_inbound_time": "2025-04-07T00:49:47+00:00",
+      "rank": 121,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "214959.92"
+        }
+      ]
+    },
+    {
+      "address": "0x30bdce36a7a158ee736536ac9c324ca6c1556b35",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "214392.37746379",
+      "first_inbound_block": 20323477,
+      "first_inbound_time": "2024-07-17T03:12:11+00:00",
+      "inbound_txs": 26,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23788489,
+      "last_inbound_time": "2025-11-13T06:27:11+00:00",
+      "rank": 122,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "182029.32097529"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "32363.0564885"
+        }
+      ]
+    },
+    {
+      "address": "0xccc74eab17ff99a21b6e308fdd7b8d2d06fd35bc",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "212331.14013576",
+      "first_inbound_block": 17860623,
+      "first_inbound_time": "2023-08-07T04:17:47+00:00",
+      "inbound_txs": 14,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22595897,
+      "last_inbound_time": "2025-05-30T13:38:35+00:00",
+      "rank": 123,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "205146.34"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "7184.80013576"
+        }
+      ]
+    },
+    {
+      "address": "0xf7b59d5f99def52b1c56440663fbd53b31eb7324",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "211902.53",
+      "first_inbound_block": 16589880,
+      "first_inbound_time": "2023-02-09T08:02:47+00:00",
+      "inbound_txs": 76,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 18631170,
+      "last_inbound_time": "2023-11-23T01:31:23+00:00",
+      "rank": 124,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "211902.53"
+        }
+      ]
+    },
+    {
+      "address": "0x7adbf25f1cc8a069727d60eddd7953abf5de6eb4",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "211861.845107538947436195",
+      "first_inbound_block": 23343571,
+      "first_inbound_time": "2025-09-12T01:02:59+00:00",
+      "inbound_txs": 22,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23586683,
+      "last_inbound_time": "2025-10-16T00:32:47+00:00",
+      "rank": 125,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "211861.845107538947436195"
+        }
+      ]
+    },
+    {
+      "address": "0xf3b09b53e907c7f0a1ee03919145ceabfeb8d3a6",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "211568.570467737131929102",
+      "first_inbound_block": 22018672,
+      "first_inbound_time": "2025-03-10T19:51:35+00:00",
+      "inbound_txs": 18,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22126185,
+      "last_inbound_time": "2025-03-25T20:05:47+00:00",
+      "rank": 126,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "211568.570467737131929102"
+        }
+      ]
+    },
+    {
+      "address": "0xe48d7662c081d8324c24be49ee8401bf63b19fd7",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "211535.91151615989053432",
+      "first_inbound_block": 22285265,
+      "first_inbound_time": "2025-04-17T00:53:47+00:00",
+      "inbound_txs": 18,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22427119,
+      "last_inbound_time": "2025-05-06T20:43:23+00:00",
+      "rank": 127,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "211535.91151615989053432"
+        }
+      ]
+    },
+    {
+      "address": "0x15f46551f5d736c9b8861c1d1358e29183f7a6c7",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "210815.97166901",
+      "first_inbound_block": 23932183,
+      "first_inbound_time": "2025-12-03T09:59:59+00:00",
+      "inbound_txs": 131,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24275501,
+      "last_inbound_time": "2026-01-20T10:50:47+00:00",
+      "rank": 128,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "210815.97166901"
+        }
+      ]
+    },
+    {
+      "address": "0x143a123eabe0bf14593dd1ff57a786caf5c07fc1",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "208681",
+      "first_inbound_block": 18464946,
+      "first_inbound_time": "2023-10-30T19:05:47+00:00",
+      "inbound_txs": 5,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22782336,
+      "last_inbound_time": "2025-06-25T15:26:23+00:00",
+      "rank": 129,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "208681"
+        }
+      ]
+    },
+    {
+      "address": "0xf5f0ab539c2dc7535f2b7ffd43489a73b3a50b35",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "200018.05",
+      "first_inbound_block": 22599711,
+      "first_inbound_time": "2025-05-31T02:24:59+00:00",
+      "inbound_txs": 30,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879225,
+      "last_inbound_time": "2025-11-26T00:01:11+00:00",
+      "rank": 130,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "200018.05"
+        }
+      ]
+    },
+    {
+      "address": "0x4b9b0c4e3128ff347cfa365794e8b0946f880d8f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "199737.55357570601864352",
+      "first_inbound_block": 22536841,
+      "first_inbound_time": "2025-05-22T07:11:59+00:00",
+      "inbound_txs": 14,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22576125,
+      "last_inbound_time": "2025-05-27T19:11:11+00:00",
+      "rank": 131,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "199737.55357570601864352"
+        }
+      ]
+    },
+    {
+      "address": "0x33bde7bae5fbf1faec241e39a64aed42ea6022c1",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "197928.578069104611806897",
+      "first_inbound_block": 16187122,
+      "first_inbound_time": "2022-12-15T02:30:11+00:00",
+      "inbound_txs": 10,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 16193934,
+      "last_inbound_time": "2022-12-16T01:20:11+00:00",
+      "rank": 132,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "197928.578069104611806897"
+        }
+      ]
+    },
+    {
+      "address": "0xeaded94475d1fbb42312dd5864bf0916b2b6c002",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "196355.957842697605041495",
+      "first_inbound_block": 23033997,
+      "first_inbound_time": "2025-07-30T19:22:23+00:00",
+      "inbound_txs": 18,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23108152,
+      "last_inbound_time": "2025-08-10T04:03:59+00:00",
+      "rank": 133,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "196355.957842697605041495"
+        }
+      ]
+    },
+    {
+      "address": "0xfd67d8dba6e66eca0d1da13091e3ffb260b24dc0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "194968.564241311569269602",
+      "first_inbound_block": 22152441,
+      "first_inbound_time": "2025-03-29T12:04:11+00:00",
+      "inbound_txs": 15,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22189013,
+      "last_inbound_time": "2025-04-03T14:34:59+00:00",
+      "rank": 134,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "194968.564241311569269602"
+        }
+      ]
+    },
+    {
+      "address": "0x97dbadeba0f388ea6acbb5dde64e791a55f180a0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "194614.044218505704630202",
+      "first_inbound_block": 21919181,
+      "first_inbound_time": "2025-02-24T22:31:47+00:00",
+      "inbound_txs": 18,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21941954,
+      "last_inbound_time": "2025-02-28T02:47:59+00:00",
+      "rank": 135,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "194614.044218505704630202"
+        }
+      ]
+    },
+    {
+      "address": "0x843aac4f0def550b3e24f0997662c08b6d94b09c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "193222.45",
+      "first_inbound_block": 18071136,
+      "first_inbound_time": "2023-09-05T15:21:11+00:00",
+      "inbound_txs": 60,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 18268783,
+      "last_inbound_time": "2023-10-03T08:20:59+00:00",
+      "rank": 136,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "193222.45"
+        }
+      ]
+    },
+    {
+      "address": "0x9d576b32d16291685b6e7a512f9ef8552a6059e4",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "192830.313373891772743902",
+      "first_inbound_block": 21187081,
+      "first_inbound_time": "2024-11-14T16:19:11+00:00",
+      "inbound_txs": 31,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21274208,
+      "last_inbound_time": "2024-11-26T20:07:11+00:00",
+      "rank": 137,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "192830.313373891772743902"
+        }
+      ]
+    },
+    {
+      "address": "0x5b6ec8d7baea094058b49126a03f2a4ff18a64d5",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "191357.9121",
+      "first_inbound_block": 23916085,
+      "first_inbound_time": "2025-12-01T03:54:47+00:00",
+      "inbound_txs": 26,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24204220,
+      "last_inbound_time": "2026-01-10T12:12:47+00:00",
+      "rank": 138,
+      "top_sources": [
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "145712.7621"
+        },
+        {
+          "exchange": "binance",
+          "inbound_lpt": "45645.15"
+        }
+      ]
+    },
+    {
+      "address": "0xd1de3a02579067aa7d9faf07e205794729217014",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "191292.328397053789650302",
+      "first_inbound_block": 21603426,
+      "first_inbound_time": "2025-01-11T19:47:47+00:00",
+      "inbound_txs": 34,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21745675,
+      "last_inbound_time": "2025-01-31T16:23:23+00:00",
+      "rank": 139,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "191292.328397053789650302"
+        }
+      ]
+    },
+    {
+      "address": "0x16bdd427ad60df9780fb1a451371d50676cfc95d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "190059.4682292976836463",
+      "first_inbound_block": 21472112,
+      "first_inbound_time": "2024-12-24T11:44:35+00:00",
+      "inbound_txs": 41,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21625075,
+      "last_inbound_time": "2025-01-14T20:20:11+00:00",
+      "rank": 140,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "190059.4682292976836463"
+        }
+      ]
+    },
+    {
+      "address": "0x98c3d3183c4b8a650614ad179a1a98be0a8d6b8e",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "188523.07",
+      "first_inbound_block": 19838210,
+      "first_inbound_time": "2024-05-10T07:41:35+00:00",
+      "inbound_txs": 368,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23230983,
+      "last_inbound_time": "2025-08-27T07:31:59+00:00",
+      "rank": 141,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "188523.07"
+        }
+      ]
+    },
+    {
+      "address": "0xbf123a673c8cfee6a31f3a7ad24259489c4261f0",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "187857.13319504",
+      "first_inbound_block": 19284550,
+      "first_inbound_time": "2024-02-22T17:12:11+00:00",
+      "inbound_txs": 214,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21763125,
+      "last_inbound_time": "2025-02-03T02:53:35+00:00",
+      "rank": 142,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "187857.13319504"
+        }
+      ]
+    },
+    {
+      "address": "0x40f90d114aded313e06129fddcd2a96e6456775e",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "187699.335215998535430395",
+      "first_inbound_block": 23669858,
+      "first_inbound_time": "2025-10-27T16:05:59+00:00",
+      "inbound_txs": 15,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23706155,
+      "last_inbound_time": "2025-11-01T18:03:47+00:00",
+      "rank": 143,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "187699.335215998535430395"
+        }
+      ]
+    },
+    {
+      "address": "0x212152fd020de0956c66f49329b049583075aee2",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "187405.542",
+      "first_inbound_block": 18988621,
+      "first_inbound_time": "2024-01-12T05:05:59+00:00",
+      "inbound_txs": 97,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 19929968,
+      "last_inbound_time": "2024-05-23T03:42:35+00:00",
+      "rank": 144,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "149190.27"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "38215.272"
+        }
+      ]
+    },
+    {
+      "address": "0x73248b9ee747991bc73f57e02db9a0ee7ac1c663",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "185577.6935017612106028",
+      "first_inbound_block": 21437241,
+      "first_inbound_time": "2024-12-19T14:43:59+00:00",
+      "inbound_txs": 34,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21589212,
+      "last_inbound_time": "2025-01-09T20:09:11+00:00",
+      "rank": 145,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "185577.6935017612106028"
+        }
+      ]
+    },
+    {
+      "address": "0x6f90c61226be072b452c9a1971d1e3eb04f4104c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "184351.466762",
+      "first_inbound_block": 21000846,
+      "first_inbound_time": "2024-10-19T16:35:47+00:00",
+      "inbound_txs": 108,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23123292,
+      "last_inbound_time": "2025-08-12T06:51:47+00:00",
+      "rank": 146,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "184351.466762"
+        }
+      ]
+    },
+    {
+      "address": "0x8173333c9d841dd0aa0a550b75bc7a1ed07bc0ff",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "182381.048721063283828823",
+      "first_inbound_block": 22588885,
+      "first_inbound_time": "2025-05-29T14:05:11+00:00",
+      "inbound_txs": 17,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22595760,
+      "last_inbound_time": "2025-05-30T13:10:59+00:00",
+      "rank": 147,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "182381.048721063283828823"
+        }
+      ]
+    },
+    {
+      "address": "0xfed2399b20011af1fc985d5354f12cbc57ed48f9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "180260.59646917",
+      "first_inbound_block": 23734270,
+      "first_inbound_time": "2025-11-05T16:25:11+00:00",
+      "inbound_txs": 210,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24275707,
+      "last_inbound_time": "2026-01-20T11:32:11+00:00",
+      "rank": 148,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "180260.59646917"
+        }
+      ]
+    },
+    {
+      "address": "0x6941627cba3518385e75de75d25a189185672bfe",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "180000.04",
+      "first_inbound_block": 14661262,
+      "first_inbound_time": "2022-04-26T16:45:44+00:00",
+      "inbound_txs": 7,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 20029862,
+      "last_inbound_time": "2024-06-06T02:39:23+00:00",
+      "rank": 149,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "100000.04"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "80000"
+        }
+      ]
+    },
+    {
+      "address": "0x1769ee85b6fa5140b058a86ad7865a47da946523",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "180000",
+      "first_inbound_block": 22596276,
+      "first_inbound_time": "2025-05-30T14:54:35+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22596276,
+      "last_inbound_time": "2025-05-30T14:54:35+00:00",
+      "rank": 150,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "180000"
+        }
+      ]
+    },
+    {
+      "address": "0xb0da6794da4e6f7244b96256adb8973d07428a20",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "179891.039",
+      "first_inbound_block": 14840863,
+      "first_inbound_time": "2022-05-25T08:35:25+00:00",
+      "inbound_txs": 73,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 20087320,
+      "last_inbound_time": "2024-06-14T03:19:59+00:00",
+      "rank": 151,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "148522.71"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "24979.219"
+        },
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "6389.11"
+        }
+      ]
+    },
+    {
+      "address": "0x0a776abbaae0e2161d0e131f57e605efbea4b99b",
+      "bond_after_inflow_days": "0.0144328703703703703703703703703703703703703703703703703703704",
+      "bonded_before_inflow": false,
+      "bonded_now_lpt": "0",
+      "bonded_within_window": true,
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "178470.832",
+      "first_bond_after_inflow_block": 226640212,
+      "first_bond_after_inflow_time": "2024-06-28T15:12:46+00:00",
+      "first_bond_block": 226640212,
+      "first_bond_time": "2024-06-28T15:12:46+00:00",
+      "first_inbound_block": 20190901,
+      "first_inbound_time": "2024-06-28T14:51:59+00:00",
+      "inbound_txs": 9,
+      "is_arbitrum_delegator": true,
+      "l1_outflow_to_bridges_lpt": "0",
+      "l1_outflow_to_bridges_txs": 0,
+      "l1_outflow_to_exchanges_lpt": "0",
+      "l1_outflow_to_exchanges_txs": 0,
+      "l1_outflow_to_livepeer_contracts_lpt": "178470.832",
+      "l1_outflow_to_livepeer_contracts_txs": 9,
+      "last_inbound_block": 20871000,
+      "last_inbound_time": "2024-10-01T13:39:35+00:00",
+      "rank": 152,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "178470.832"
+        }
+      ]
+    },
+    {
+      "address": "0x2a8188d63b8a66197b940feb2853af34004f026d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "178460.421",
+      "first_inbound_block": 22314122,
+      "first_inbound_time": "2025-04-21T01:35:11+00:00",
+      "inbound_txs": 63,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24267545,
+      "last_inbound_time": "2026-01-19T08:12:47+00:00",
+      "rank": 153,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "110367.28"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "68093.141"
+        }
+      ]
+    },
+    {
+      "address": "0xf41e6a06360d3cdb835f02ebcbf144f309367322",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "178225.0346",
+      "first_inbound_block": 19792541,
+      "first_inbound_time": "2024-05-03T22:23:11+00:00",
+      "inbound_txs": 65,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23242699,
+      "last_inbound_time": "2025-08-28T22:48:47+00:00",
+      "rank": 154,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "178224.6666"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "0.368"
+        }
+      ]
+    },
+    {
+      "address": "0x43fed72b921af413aad831cebd221697b18da54f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "176675.7190336",
+      "first_inbound_block": 14945758,
+      "first_inbound_time": "2022-06-11T18:32:42+00:00",
+      "inbound_txs": 12,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 20003071,
+      "last_inbound_time": "2024-06-02T08:53:59+00:00",
+      "rank": 155,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "176675.7190336"
+        }
+      ]
+    },
+    {
+      "address": "0x8ff1bbf86c066e26a19574e571e094e68a41b196",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "174218.8641591905574773",
+      "first_inbound_block": 20191681,
+      "first_inbound_time": "2024-06-28T17:29:11+00:00",
+      "inbound_txs": 5,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 20528481,
+      "last_inbound_time": "2024-08-14T17:52:11+00:00",
+      "rank": 156,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "174218.8641591905574773"
+        }
+      ]
+    },
+    {
+      "address": "0xe09cf8f1cc9416869604b588a2c33fb62b90f67e",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "174095.9529",
+      "first_inbound_block": 22594155,
+      "first_inbound_time": "2025-05-30T07:47:23+00:00",
+      "inbound_txs": 7,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22595682,
+      "last_inbound_time": "2025-05-30T12:55:11+00:00",
+      "rank": 157,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "174095.9529"
+        }
+      ]
+    },
+    {
+      "address": "0x5e8304b5600cccba6d6292c6687ac9ead0ec6288",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "174048.548",
+      "first_inbound_block": 14757383,
+      "first_inbound_time": "2022-05-11T22:00:09+00:00",
+      "inbound_txs": 81,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 19944095,
+      "last_inbound_time": "2024-05-25T03:05:23+00:00",
+      "rank": 158,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "88297.898"
+        },
+        {
+          "exchange": "binance",
+          "inbound_lpt": "74763.93"
+        },
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "10986.72"
+        }
+      ]
+    },
+    {
+      "address": "0xdd9129dab356ccb6cdea8b2fc2b27a9d14304dd9",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "173833.30177666",
+      "first_inbound_block": 15327271,
+      "first_inbound_time": "2022-08-12T13:37:06+00:00",
+      "inbound_txs": 124,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879225,
+      "last_inbound_time": "2025-11-26T00:01:11+00:00",
+      "rank": 159,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "173554.42877666"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "278.873"
+        }
+      ]
+    },
+    {
+      "address": "0xb65c94738a3183009e7443c99f8ec5bb75465333",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "167814.30722",
+      "first_inbound_block": 19840549,
+      "first_inbound_time": "2024-05-10T15:31:35+00:00",
+      "inbound_txs": 13,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 20067900,
+      "last_inbound_time": "2024-06-11T10:10:35+00:00",
+      "rank": 160,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "167814.30722"
+        }
+      ]
+    },
+    {
+      "address": "0x3a99e175763dead504f3338a29d48920e480f359",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "165948.3556579066068398",
+      "first_inbound_block": 20821846,
+      "first_inbound_time": "2024-09-24T17:07:47+00:00",
+      "inbound_txs": 32,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 20923259,
+      "last_inbound_time": "2024-10-08T20:29:59+00:00",
+      "rank": 161,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "165948.3556579066068398"
+        }
+      ]
+    },
+    {
+      "address": "0x756547711dcaab38734b3b95fb989d4acb3d1060",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "165828.51",
+      "first_inbound_block": 22593956,
+      "first_inbound_time": "2025-05-30T07:07:11+00:00",
+      "inbound_txs": 37,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879238,
+      "last_inbound_time": "2025-11-26T00:03:47+00:00",
+      "rank": 162,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "165828.51"
+        }
+      ]
+    },
+    {
+      "address": "0xd1f6a06e614eb10b880584684fe132caa6d4d95b",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "165759.44969998",
+      "first_inbound_block": 22622809,
+      "first_inbound_time": "2025-06-03T08:01:47+00:00",
+      "inbound_txs": 27,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22926291,
+      "last_inbound_time": "2025-07-15T18:11:59+00:00",
+      "rank": 163,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "165759.44969998"
+        }
+      ]
+    },
+    {
+      "address": "0xc37362927fe05aba72c533e23f97781ebb0877b7",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "164802.1386447",
+      "first_inbound_block": 20531866,
+      "first_inbound_time": "2024-08-15T05:13:11+00:00",
+      "inbound_txs": 18,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23753883,
+      "last_inbound_time": "2025-11-08T10:16:11+00:00",
+      "rank": 164,
+      "top_sources": [
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "146394.6751647"
+        },
+        {
+          "exchange": "binance",
+          "inbound_lpt": "18407.46348"
+        }
+      ]
+    },
+    {
+      "address": "0x89fe97ade45e67da4b45f4f025fa7c7ee246b29d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "164057.280054992239959795",
+      "first_inbound_block": 23341794,
+      "first_inbound_time": "2025-09-11T19:04:59+00:00",
+      "inbound_txs": 14,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23341795,
+      "last_inbound_time": "2025-09-11T19:05:11+00:00",
+      "rank": 165,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "164057.280054992239959795"
+        }
+      ]
+    },
+    {
+      "address": "0x74fbf7874337c503471e258b86f12d01b62b2d76",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "163719.755663716733698695",
+      "first_inbound_block": 23799063,
+      "first_inbound_time": "2025-11-14T17:56:47+00:00",
+      "inbound_txs": 2,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23836179,
+      "last_inbound_time": "2025-11-19T22:46:23+00:00",
+      "rank": 166,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "163719.755663716733698695"
+        }
+      ]
+    },
+    {
+      "address": "0x6d7f81fd14dca44fe0fe97ba80fb0ef5cfc0e9f8",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "161636.77",
+      "first_inbound_block": 21430638,
+      "first_inbound_time": "2024-12-18T16:34:47+00:00",
+      "inbound_txs": 52,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24247950,
+      "last_inbound_time": "2026-01-16T14:40:47+00:00",
+      "rank": 167,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "158453.77"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "3183"
+        }
+      ]
+    },
+    {
+      "address": "0x957bdda04b67cdc57c8f9ffb6bcc60ef8ec28108",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "160928.288125276967915595",
+      "first_inbound_block": 23130274,
+      "first_inbound_time": "2025-08-13T06:15:59+00:00",
+      "inbound_txs": 15,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23233397,
+      "last_inbound_time": "2025-08-27T15:37:47+00:00",
+      "rank": 168,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "160928.288125276967915595"
+        }
+      ]
+    },
+    {
+      "address": "0xf30ca446b32d4c7f40d1d44ce3d66d626425005b",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "160316.192",
+      "first_inbound_block": 23644136,
+      "first_inbound_time": "2025-10-24T01:44:23+00:00",
+      "inbound_txs": 40,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24267999,
+      "last_inbound_time": "2026-01-19T09:44:11+00:00",
+      "rank": 169,
+      "top_sources": [
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "160316.192"
+        }
+      ]
+    },
+    {
+      "address": "0xd5f5475502120ad0e3dbaa25ecedffd19d6569fa",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "159024.152",
+      "first_inbound_block": 21501544,
+      "first_inbound_time": "2024-12-28T14:25:23+00:00",
+      "inbound_txs": 49,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23617254,
+      "last_inbound_time": "2025-10-20T07:12:47+00:00",
+      "rank": 170,
+      "top_sources": [
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "143319.152"
+        },
+        {
+          "exchange": "okx",
+          "inbound_lpt": "15705"
+        }
+      ]
+    },
+    {
+      "address": "0xdf64f209522ee3a528b6fd52eb721c276d10f5c1",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "158864.8077591324909466",
+      "first_inbound_block": 21366611,
+      "first_inbound_time": "2024-12-09T18:02:59+00:00",
+      "inbound_txs": 33,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21425681,
+      "last_inbound_time": "2024-12-17T23:56:23+00:00",
+      "rank": 171,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "158864.8077591324909466"
+        }
+      ]
+    },
+    {
+      "address": "0x44fa9ed3d2c105d0f566fdf225b98fff8e9c9eac",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "158722.418",
+      "first_inbound_block": 23226232,
+      "first_inbound_time": "2025-08-26T15:38:11+00:00",
+      "inbound_txs": 64,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24206479,
+      "last_inbound_time": "2026-01-10T19:46:35+00:00",
+      "rank": 172,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "152158.777"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "6563.641"
+        }
+      ]
+    },
+    {
+      "address": "0x6d4beb94f60ec025e64a375a7df00980afc34bde",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "156744.23654711",
+      "first_inbound_block": 15327304,
+      "first_inbound_time": "2022-08-12T13:43:14+00:00",
+      "inbound_txs": 115,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21927844,
+      "last_inbound_time": "2025-02-26T03:33:35+00:00",
+      "rank": 173,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "156744.23654711"
+        }
+      ]
+    },
+    {
+      "address": "0x30d240590b56603f8fb8a0ec26edbacb34a0909a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "156715.410260376574638895",
+      "first_inbound_block": 22790714,
+      "first_inbound_time": "2025-06-26T19:30:35+00:00",
+      "inbound_txs": 17,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23026779,
+      "last_inbound_time": "2025-07-29T19:08:23+00:00",
+      "rank": 174,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "156715.410260376574638895"
+        }
+      ]
+    },
+    {
+      "address": "0xa5f97fc3d01f42c09c62780c37d7bfa20e353d2c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "156021.912663701398389395",
+      "first_inbound_block": 23728812,
+      "first_inbound_time": "2025-11-04T22:04:11+00:00",
+      "inbound_txs": 6,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23750470,
+      "last_inbound_time": "2025-11-07T22:47:59+00:00",
+      "rank": 175,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "156021.912663701398389395"
+        }
+      ]
+    },
+    {
+      "address": "0xffb98dea5202d0a8fec93820a396acc014b4ec70",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "155516.0665283620769424",
+      "first_inbound_block": 19526663,
+      "first_inbound_time": "2024-03-27T15:55:35+00:00",
+      "inbound_txs": 21,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 19769281,
+      "last_inbound_time": "2024-04-30T16:20:59+00:00",
+      "rank": 176,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "155516.0665283620769424"
+        }
+      ]
+    },
+    {
+      "address": "0xd52486595edf1806b6440374a29e6163855aa21f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "153039.58889",
+      "first_inbound_block": 17907454,
+      "first_inbound_time": "2023-08-13T17:33:23+00:00",
+      "inbound_txs": 145,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23424567,
+      "last_inbound_time": "2025-09-23T08:34:47+00:00",
+      "rank": 177,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "153039.58889"
+        }
+      ]
+    },
+    {
+      "address": "0xaade1f57c2107586480d7cd296eb1177752703e3",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "152913.47",
+      "first_inbound_block": 22598995,
+      "first_inbound_time": "2025-05-31T00:01:23+00:00",
+      "inbound_txs": 56,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879234,
+      "last_inbound_time": "2025-11-26T00:02:59+00:00",
+      "rank": 178,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "152913.47"
+        }
+      ]
+    },
+    {
+      "address": "0x634507cc8532fa2a47d1264a1320011877103d3b",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "152439.569",
+      "first_inbound_block": 22327856,
+      "first_inbound_time": "2025-04-22T23:33:23+00:00",
+      "inbound_txs": 20,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24117580,
+      "last_inbound_time": "2025-12-29T10:03:11+00:00",
+      "rank": 179,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "101729.34"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "50710.229"
+        }
+      ]
+    },
+    {
+      "address": "0x53bd11f845679a40931498a5cfe2907c9f3b7a3a",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "150000",
+      "first_inbound_block": 22790713,
+      "first_inbound_time": "2025-06-26T19:30:23+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 22790713,
+      "last_inbound_time": "2025-06-26T19:30:23+00:00",
+      "rank": 180,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "150000"
+        }
+      ]
+    },
+    {
+      "address": "0x00d86a49f0fefb58b2e1381431d2af962dcc7a3d",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "149990",
+      "first_inbound_block": 16184594,
+      "first_inbound_time": "2022-12-14T18:01:59+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 16197741,
+      "last_inbound_time": "2022-12-16T14:05:11+00:00",
+      "rank": 181,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "149990"
+        }
+      ]
+    },
+    {
+      "address": "0xaa62f868504bea10b649367f48f637bd37f2af48",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "149883.9809376133342476",
+      "first_inbound_block": 21339096,
+      "first_inbound_time": "2024-12-05T21:51:47+00:00",
+      "inbound_txs": 35,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21373215,
+      "last_inbound_time": "2024-12-10T16:12:11+00:00",
+      "rank": 182,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "149883.9809376133342476"
+        }
+      ]
+    },
+    {
+      "address": "0x251e8d46a5b5ca639af22a1a8a38fb15f088592f",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "149790.81366328",
+      "first_inbound_block": 22594336,
+      "first_inbound_time": "2025-05-30T08:23:35+00:00",
+      "inbound_txs": 52,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23879228,
+      "last_inbound_time": "2025-11-26T00:01:47+00:00",
+      "rank": 183,
+      "top_sources": [
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "101369.93366328"
+        },
+        {
+          "exchange": "binance",
+          "inbound_lpt": "48420.88"
+        }
+      ]
+    },
+    {
+      "address": "0x04bd05ca25d6d092f71f4cc65890e2f9eee9133c",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "148815.71071",
+      "first_inbound_block": 18060632,
+      "first_inbound_time": "2023-09-04T04:08:47+00:00",
+      "inbound_txs": 47,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23708056,
+      "last_inbound_time": "2025-11-02T00:27:23+00:00",
+      "rank": 184,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "105512.40871"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "43303.302"
+        }
+      ]
+    },
+    {
+      "address": "0xc4cf8ac05f63e2e0fd9a65c29662df09599bf165",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "148797.64519871",
+      "first_inbound_block": 16694929,
+      "first_inbound_time": "2023-02-24T01:24:23+00:00",
+      "inbound_txs": 118,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24101448,
+      "last_inbound_time": "2025-12-27T04:01:47+00:00",
+      "rank": 185,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "146287.83039871"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "2509.8148"
+        }
+      ]
+    },
+    {
+      "address": "0xdb1906b2a92b65f9e01d4fb642790e0ccbdd6bf8",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "147632.139322002301005502",
+      "first_inbound_block": 21380358,
+      "first_inbound_time": "2024-12-11T16:08:35+00:00",
+      "inbound_txs": 28,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21429570,
+      "last_inbound_time": "2024-12-18T12:59:11+00:00",
+      "rank": 186,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "147632.139322002301005502"
+        }
+      ]
+    },
+    {
+      "address": "0x96ce8da07e911b4d97b915e0906355e365722e59",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "145492.329651242315182095",
+      "first_inbound_block": 23595972,
+      "first_inbound_time": "2025-10-17T07:45:11+00:00",
+      "inbound_txs": 9,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23595972,
+      "last_inbound_time": "2025-10-17T07:45:11+00:00",
+      "rank": 187,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "145492.329651242315182095"
+        }
+      ]
+    },
+    {
+      "address": "0xd08b7792720fe164e8ac3b091fa3a4230eda89a8",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "143263.20167",
+      "first_inbound_block": 18792759,
+      "first_inbound_time": "2023-12-15T16:39:11+00:00",
+      "inbound_txs": 4,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 19035421,
+      "last_inbound_time": "2024-01-18T18:05:35+00:00",
+      "rank": 188,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "143263.20167"
+        }
+      ]
+    },
+    {
+      "address": "0xc1921072db5266d950acc8e721507f7542445ba5",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "141417.5754",
+      "first_inbound_block": 15051090,
+      "first_inbound_time": "2022-06-30T15:32:23+00:00",
+      "inbound_txs": 92,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 19837407,
+      "last_inbound_time": "2024-05-10T04:59:59+00:00",
+      "rank": 189,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "106153.14"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "34922.9161"
+        },
+        {
+          "exchange": "kucoin",
+          "inbound_lpt": "341.5193"
+        }
+      ]
+    },
+    {
+      "address": "0x7ef8fc82e927ed2b2a7b3e59e5f98d1c14046a82",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "141211.003114482618112695",
+      "first_inbound_block": 23767824,
+      "first_inbound_time": "2025-11-10T08:59:35+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23785254,
+      "last_inbound_time": "2025-11-12T19:32:59+00:00",
+      "rank": 190,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "141211.003114482618112695"
+        }
+      ]
+    },
+    {
+      "address": "0xc9c24d98e1c1ed5c1361e5e999d2fb295637ef96",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "141047.97",
+      "first_inbound_block": 22325493,
+      "first_inbound_time": "2025-04-22T15:38:35+00:00",
+      "inbound_txs": 58,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23569155,
+      "last_inbound_time": "2025-10-13T13:41:59+00:00",
+      "rank": 191,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "83950.49"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "57097.48"
+        }
+      ]
+    },
+    {
+      "address": "0x9a4be294e13a0bd588c14ed827caab14487aca35",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "139315.04961351",
+      "first_inbound_block": 17983757,
+      "first_inbound_time": "2023-08-24T09:46:23+00:00",
+      "inbound_txs": 32,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23708183,
+      "last_inbound_time": "2025-11-02T00:52:59+00:00",
+      "rank": 192,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "139315.04961351"
+        }
+      ]
+    },
+    {
+      "address": "0xdaeda9617cd20863085fe88f5ee0848a393a6569",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "139061.83",
+      "first_inbound_block": 23921936,
+      "first_inbound_time": "2025-12-01T23:33:35+00:00",
+      "inbound_txs": 26,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24257776,
+      "last_inbound_time": "2026-01-17T23:33:11+00:00",
+      "rank": 193,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "139061.83"
+        }
+      ]
+    },
+    {
+      "address": "0x005b0ac28d62c11293c10e12e7487c25e95df4bd",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "135185.6573920210350637",
+      "first_inbound_block": 21285004,
+      "first_inbound_time": "2024-11-28T08:28:11+00:00",
+      "inbound_txs": 32,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21339197,
+      "last_inbound_time": "2024-12-05T22:12:11+00:00",
+      "rank": 194,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "135185.6573920210350637"
+        }
+      ]
+    },
+    {
+      "address": "0x8672a3a1c258d3a6601be83d9505365ef715afd6",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "134568.71176835",
+      "first_inbound_block": 22645526,
+      "first_inbound_time": "2025-06-06T12:23:47+00:00",
+      "inbound_txs": 197,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 24285389,
+      "last_inbound_time": "2026-01-21T19:55:11+00:00",
+      "rank": 195,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "134568.71176835"
+        }
+      ]
+    },
+    {
+      "address": "0xe3e287d5d65aea1a5905aacb774516ff5c524b18",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "134209.754726164092787776",
+      "first_inbound_block": 16699753,
+      "first_inbound_time": "2023-02-24T17:44:23+00:00",
+      "inbound_txs": 4,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 16699769,
+      "last_inbound_time": "2023-02-24T17:47:35+00:00",
+      "rank": 196,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "134209.754726164092787776"
+        }
+      ]
+    },
+    {
+      "address": "0x27fdf9fa10c61b0eb1d738c1b236d7d5ffccb239",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "133721.859317659059111295",
+      "first_inbound_block": 23836506,
+      "first_inbound_time": "2025-11-19T23:52:23+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23836506,
+      "last_inbound_time": "2025-11-19T23:52:23+00:00",
+      "rank": 197,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "133721.859317659059111295"
+        }
+      ]
+    },
+    {
+      "address": "0x43684d03d81d3a4c70da68febdd61029d426f042",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "132684.53369634",
+      "first_inbound_block": 21040094,
+      "first_inbound_time": "2024-10-25T03:59:35+00:00",
+      "inbound_txs": 3,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 23575165,
+      "last_inbound_time": "2025-10-14T09:51:47+00:00",
+      "rank": 198,
+      "top_sources": [
+        {
+          "exchange": "binance",
+          "inbound_lpt": "132684.53369634"
+        }
+      ]
+    },
+    {
+      "address": "0x6c711ff9738c10d1a7d06c9a820fccf708059bac",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "132371.37050212",
+      "first_inbound_block": 19400811,
+      "first_inbound_time": "2024-03-09T23:25:35+00:00",
+      "inbound_txs": 1,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 19400811,
+      "last_inbound_time": "2024-03-09T23:25:35+00:00",
+      "rank": 199,
+      "top_sources": [
+        {
+          "exchange": "coinbase",
+          "inbound_lpt": "132371.37050212"
+        }
+      ]
+    },
+    {
+      "address": "0xfcdb9a8dbde4fe8c9515b54b0b1904fdcc67c8b1",
+      "bonded_now_lpt": "0",
+      "cashout_archetype": "",
+      "cashout_fingerprint_rank": 0,
+      "exchange_inbound_lpt": "132116.937",
+      "first_inbound_block": 15050905,
+      "first_inbound_time": "2022-06-30T14:48:16+00:00",
+      "inbound_txs": 86,
+      "is_arbitrum_delegator": false,
+      "last_inbound_block": 21581317,
+      "last_inbound_time": "2025-01-08T17:41:35+00:00",
+      "rank": 200,
+      "top_sources": [
+        {
+          "exchange": "okx",
+          "inbound_lpt": "119199.475"
+        },
+        {
+          "exchange": "gateio",
+          "inbound_lpt": "12917.462"
+        }
+      ]
+    }
+  ],
+  "scan_totals": {
+    "total_unlabeled_recipient_inbound_lpt": "127182765.741715629587805864",
+    "transfer_logs_matched": 59558,
+    "unique_unlabeled_recipients": 11637
+  },
+  "selection_totals": {
+    "bonded_within_window": 4,
+    "bonded_within_window_inbound_lpt": "1792981.744868",
+    "selected_delegators": 5,
+    "selected_delegators_inbound_lpt": "2067366.019568",
+    "selected_inbound_lpt": "90746628.914773043768841948",
+    "selected_recipients": 200
+  }
+}

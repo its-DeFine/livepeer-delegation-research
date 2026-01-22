@@ -23,6 +23,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Extraction timing traces (L2→L1→exchange)" href="/research/extraction-timing-traces">
     Links `WithdrawStake` → L2 bridge-out → L1 escrow receipt → tight-window exchange routing (best-effort; 1 intermediate hop).
   </Card>
+  <Card title="Buy pressure proxies (exchange outflows → bonders)" href="/research/buy-pressure-proxies">
+    Buy-side proxy: labeled CEX outflows on L1 and whether recipients bridge + bond on Arbitrum (best-effort).
+  </Card>
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed vs stake withdrawn via `WithdrawStake`.
   </Card>
