@@ -190,7 +190,18 @@ Arrakis Vault V1 holds **one Uniswap v3 position** (`lowerTick/upperTick`). On-c
 - `rebalance(...)` (Gelato executor reinvests/compounds fees *without* changing the range),
 both emitting `Rebalance(int24,int24,uint128,uint128)` when used.
 
-On Arbitrum, the sampled public community vaults below appear to be **effectively unmanaged** (no `Rebalance` events) and currently sit **out of range** (not providing liquidity).
+On Arbitrum, Arrakis Vault V1 deployments can be enumerated on-chain via the vault proxy’s `proxyAdmin()` (factory), then `getDeployers()` / `getPools(deployer)` on the factory. Using that method, the factory below reports a single deployer and **three** deployed vaults total:
+
+- Factory (Arbitrum): `0xd68b055fb444d136e3ac4df023f4c42334f06395`
+- Deployer/manager (Arbitrum): `0x77bada8fc2a478f1bc1e1e4980916666187d0df7`
+
+| Vault | Name | Pool | fee | Current tick vs range | `Rebalance(...)` events |
+|---|---|---|---:|---|---:|
+| `0xbc73933c8ca2b32ef3fb6b6ac8a53070eb05f9fd` | Arrakis Vault V1 WETH/DAI | `0x31fa55e03bad93c7f8affdd2ec616ebfde246001` | 500 | in-range at spot check (`tick=79855`, `range=[61820,84980]`) | 0 |
+| `0xd2e386214b1cf1e5790de69d8a957cf874a835a4` | Arrakis Vault V1 WETH/ARB | `0x92fd143a8fa0c84e016c2765648b9733b0aa519e` | 10000 | out-of-range at spot check (`tick=97159`, `range=[52000,92000]`) | 0 |
+| `0xb1121975f0080ed05253a825cb98af20357c17cb` | Arrakis Vault V1 WETH/ARB | `0x92c63d0e701caae670c9415d91c474f686298f00` | 3000 | out-of-range at spot check (`tick=97163`, `range=[57000,84780]`) | 0 |
+
+The sampled public community vaults below appear to be **effectively unmanaged** (no `Rebalance` events) and two currently sit **out of range** (not providing liquidity).
 
 - **WETH/ARB (fee=10000)** (same pool as Gamma example above)
   - Vault: `0xd2e386214b1cf1e5790de69d8a957cf874a835a4`
