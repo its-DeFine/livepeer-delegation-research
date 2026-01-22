@@ -224,6 +224,10 @@ The Arbitrum examples above are “community vault” deployments; they should n
     - block `75000000–75050000` (≈2023-02-17): **22**
     - block `80000000–80050000` (≈2023-03-11): **16**
     - block `108000000–108050000` (≈2023-08-09): **65**
+  - Other Optimism vaults referenced by Arrakis also show frequent `Rebalance(...)` events in the same early-2023 windows, e.g.:
+    - WETH/USDC: `0x38b26d26e575b70ae37f7390a22711500773a00e` — block `75000000–75050000`: **24**
+    - WETH/DAI: `0x96fecbdc4ff071779cd82da7ba23da76b0e37acb` — block `75000000–75050000`: **16**
+    - DAI/USDC: `0x632336474f5bf11aebecd63b84a0a2800b99a490` — block `75000000–75050000`: **18**
 
 This still does **not** give an on-chain view into the specific Arrakis **Pro** deployments cited in recent case studies (e.g., Morpho on Uniswap v4), because those posts do not publicly disclose vault/pool addresses. To benchmark Arrakis Pro vs other ALMs, the DAO should request those addresses as part of diligence.
 
