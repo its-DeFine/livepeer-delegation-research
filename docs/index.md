@@ -42,6 +42,9 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Timing traces (withdraw → bridge → L1 → exchange)" href="/research/extraction-timing-traces">
     Harder-to-explain fingerprint: `WithdrawStake` → bridge-out → L1 escrow receipt → tight-window exchange routing (best-effort).
   </Card>
+  <Card title="Buy-side proxies (exchange outflows → bonders)" href="/research/buy-pressure-proxies">
+    On-chain buy-pressure proxies: labeled CEX outflows on L1, and whether recipients bridge + bond on Arbitrum.
+  </Card>
   <Card title="Incentives + tokenomics notes" href="/research/livepeer-delegator-incentives">
     Design space for small-delegator growth (and what is sybilable vs sybil-neutral).
   </Card>

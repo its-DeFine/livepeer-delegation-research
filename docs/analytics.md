@@ -31,6 +31,9 @@ This page is the “metrics jump table” for stakeholders.
   <Card title="L1 second hop (exchange routing)" href="/research/l1-bridge-recipient-second-hop">
     Follows the biggest L1 EOA destinations one hop further; surfaces labeled exchange endpoints (best-effort, label-set based).
   </Card>
+  <Card title="Buy-side proxies (exchange outflows → bonders)" href="/research/buy-pressure-proxies">
+    On-chain proxy for buy pressure: labeled exchange outflows on L1 and whether recipients bridge + bond on Arbitrum.
+  </Card>
   <Card title="Timing traces (withdraw → bridge → L1 → exchange)" href="/research/extraction-timing-traces">
     Repeatable timing windows: `WithdrawStake` → L2 bridge-out → L1 escrow receipt → labeled exchange deposits (often via one EOA hop).
   </Card>
