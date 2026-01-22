@@ -22,12 +22,12 @@ This repo includes a `docs.json` so it can be browsed as a Mintlify docs site.
 - Run locally: `npx mintlify dev --no-open`
 - Open: `http://localhost:3000/docs` (or `http://localhost:3000/` → redirects)
 
-## Hosted docs (Vercel)
+## Hosted docs
 
-This repo also includes a small Docusaurus site so it can be deployed to Vercel.
+This repo includes a small Docusaurus site for browsing the research in a meeting-friendly format.
 
 - Local preview: `npm install` then `npm run start` (Docusaurus dev server)
-- Deploys automatically via Vercel Git integration on pushes to `main`
+- GitHub Pages (public): `https://its-define.github.io/livepeer-delegation-research/` (meeting view: `/livepeer-delegation-research/meeting`)
 
 ## License
 
