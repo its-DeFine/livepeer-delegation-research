@@ -1,0 +1,37 @@
+{
+  "filecoin": {
+    "actors": {
+      "burnt_funds": "f099",
+      "market": "f05",
+      "power": "f04",
+      "reward": "f02"
+    },
+    "burn_vs_pledge_ratio": "0.41466826463228705970498403742766759831658262953951431804405210291461908177168969",
+    "burnt_funds_fil": "41583628.45677694009848542",
+    "daily_reward_estimate_fil": "69487.588167053712621120",
+    "head_height": 5692919,
+    "market_total_client_locked_collateral_fil": "0",
+    "market_total_client_storage_fee_fil": "10.933038444991274781",
+    "market_total_provider_locked_collateral_fil": "547085.057935852584796452",
+    "power_this_epoch_pledge_collateral_fil": "100281675.747845835141102987",
+    "power_total_pledge_collateral_fil": "100281675.747845835141102987",
+    "reward_this_epoch_reward_fil": "24.127634780226983549",
+    "reward_total_storage_power_reward_fil": "393271272.96235545104064805",
+    "rpc": "https://api.node.glif.io"
+  },
+  "generated_at_utc": "2026-01-22T14:59:53.088960+00:00",
+  "livepeer_contrast": {
+    "extraction_fingerprints_json": "research/extraction-fingerprints.json",
+    "extraction_timing_traces_json": "research/extraction-timing-traces.json",
+    "rewards_claimed_lpt_total": "17514284.209827435042847246",
+    "rewards_withdraw_timeseries_json": "research/rewards-withdraw-timeseries.json",
+    "timing_traces_matched_receipt_to_labeled_exchange": 68,
+    "timing_traces_senders": 10,
+    "top50_proxy_rewards_withdrawn_lpt_total": "5329277.600117",
+    "withdraw_stake_lpt_total": "29513599.897804303796839955"
+  },
+  "notes": [
+    "FIL reward vesting and many other supply mechanics are protocol rules; this report focuses on on-chain balances and locked-fund aggregates surfaced by builtin actors.",
+    "The Livepeer section is a contrast using existing on-chain evidence packs; it is not a claim that the same phenomena are directly comparable across chains."
+  ]
+}

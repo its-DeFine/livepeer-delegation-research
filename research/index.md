@@ -32,6 +32,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Extraction fingerprints (on-chain proxies)" href="/research/extraction-fingerprints">
     Top-50 “cashout-heavy” wallets: rewards claimed vs withdrawn, post-withdraw routing, and whether they remain bonded.
   </Card>
+  <Card title="DePIN benchmark: Filecoin vs Livepeer" href="/research/filecoin-lock-burn-metrics">
+    Filecoin’s lock/burn primitives (on-chain) contrasted with Livepeer’s extraction proxies.
+  </Card>
   <Card title="Incentives + tokenomics" href="/research/livepeer-delegator-incentives">
     Design patterns to grow small delegators without enabling easy sybil farming.
   </Card>

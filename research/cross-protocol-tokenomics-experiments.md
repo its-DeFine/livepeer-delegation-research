@@ -73,6 +73,20 @@ It is not exhaustive and should be treated as a “first pass” until we run a 
 
 ---
 
+## DePIN example: locked capital + burn sinks (Filecoin)
+
+Many DePIN networks have “real-world cost” participants (operators/miners), which changes the incentive dynamics vs pure DeFi farming.
+
+**Filecoin (FIL)** is a useful benchmark because it has strong protocol-level primitives that reduce instant reward extraction:
+- large **pledge collateral** is locked on-chain (miner collateral),
+- a **burn sink** accumulates fees/penalties (burnt funds actor),
+- and rewards are designed to be less instantly liquid via protocol rules (vesting).
+
+We added an RPC-only evidence pack that snapshots these primitives and contrasts them with Livepeer’s cashout routing proxies:
+- `/research/filecoin-lock-burn-metrics`
+
+---
+
 ## What works for growth, but often fails for retention (mercenary patterns)
 
 ### 6) Liquidity mining (emissions for LPs/users)
@@ -128,4 +142,3 @@ It is not exhaustive and should be treated as a “first pass” until we run a 
    - identity (optional/high-tier), or
    - proofs that are costly to replicate (paid usage, adoption attestations, revenue)
 3) “Tiered delegator classes” can work best as a **contributor/utility program** (credits, access, support), not as a protocol-level APR rewrite.
-

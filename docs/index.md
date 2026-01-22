@@ -72,4 +72,7 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Cross-protocol experiments" href="/research/cross-protocol-tokenomics-experiments">
     What worked (and what backfired) in crypto incentives, with takeaways for Livepeer.
   </Card>
+  <Card title="DePIN benchmark: Filecoin vs Livepeer" href="/research/filecoin-lock-burn-metrics">
+    Filecoin’s lock/burn primitives (on-chain) contrasted with Livepeer’s extraction proxies.
+  </Card>
 </CardGroup>
