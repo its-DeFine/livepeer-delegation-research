@@ -39,6 +39,9 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
   <Card title="Cashout routing (bridge-outs → exchanges)" href="/research/l1-bridge-recipient-second-hop">
     Follows Arbitrum bridge-outs to L1 recipients and one hop further to labeled exchange endpoints (best-effort).
   </Card>
+  <Card title="Timing traces (withdraw → bridge → L1 → exchange)" href="/research/extraction-timing-traces">
+    Harder-to-explain fingerprint: `WithdrawStake` → bridge-out → L1 escrow receipt → tight-window exchange routing (best-effort).
+  </Card>
   <Card title="Incentives + tokenomics notes" href="/research/livepeer-delegator-incentives">
     Design space for small-delegator growth (and what is sybilable vs sybil-neutral).
   </Card>
