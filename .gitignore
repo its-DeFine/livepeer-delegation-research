@@ -12,3 +12,11 @@ build/
 artifacts/*
 .vercel
 .env*.local
+
+# Local analysis caches (do not commit)
+data/*.pkl
+data/claim_frequency_stats.json
+data/persistence_scores.json
+data/liquidation_timing.json
+data/delta_neutral_scores.json
+data/cex_deposit_flows.json
