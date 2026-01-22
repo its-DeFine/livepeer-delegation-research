@@ -209,6 +209,24 @@ On Arbitrum, the sampled public community vaults below appear to be **effectivel
     - `Minted` events from block `300000000` → `latest`: **0**
     - `Burned` events from block `300000000` → `latest`: **9** (last at block **409171076**)
 
+### Arrakis: named partner vault examples do exist (Ethereum + Optimism)
+
+The Arbitrum examples above are “community vault” deployments; they should not be treated as representative of Arrakis Pro’s bespoke, actively managed customer setups. However, Arrakis does publish some partner/program vault links publicly (via their site content/search index), which makes it possible to inspect *some* Arrakis-managed vaults on-chain:
+
+- **Lido (wstETH/USDC, Ethereum)** — vault address: `0x98a8e81bd4f79f1827711cbbb1e9f31de2945cae`
+  - Public post (contains vault link): `https://arrakis.finance/blog/lido-x-arrakis-finance`
+  - Spot check notes: vault is Arrakis Vault V1 (`version=1.0.0`) with `lowerTick=-219280`, `upperTick=-191150`; current pool tick was in-range at the time of checking.
+  - Observed `Rebalance(int24,int24,uint128,uint128)` events were **0** in the last ~600k Ethereum blocks (public RPC log windowing), consistent with a “conservative, not incentivized” setup that may not rebalance frequently.
+
+- **Optimism liquidity mining (example: OP/USDC, Optimism)** — vault address: `0xa969a1bc401d27eccd1cf60bc53b78c27183e214`
+  - Public post listing vaults: `https://arrakis.finance/blog/fremen-bi-weekly-6`
+  - `Rebalance(...)` events are observable on Optimism during some historical windows (sampled due to public RPC log-range limits), e.g.:
+    - block `75000000–75050000` (≈2023-02-17): **22**
+    - block `80000000–80050000` (≈2023-03-11): **16**
+    - block `108000000–108050000` (≈2023-08-09): **65**
+
+This still does **not** give an on-chain view into the specific Arrakis **Pro** deployments cited in recent case studies (e.g., Morpho on Uniswap v4), because those posts do not publicly disclose vault/pool addresses. To benchmark Arrakis Pro vs other ALMs, the DAO should request those addresses as part of diligence.
+
 ### Implication for Livepeer
 
 These spot checks illustrate a key diligence point for the Livepeer DAO: the “brand name” of an ALM provider does not guarantee that *a given vault* is being actively managed on-chain. If Livepeer pays premium fees for “active management”, it should require:
