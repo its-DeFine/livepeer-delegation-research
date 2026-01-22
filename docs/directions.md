@@ -60,7 +60,7 @@ How to measure:
 Why: if large actors can run delta-neutral staking, inflation rewards can get routinely withdrawn and routed off-chain, creating reflexive price pressure.
 
 What it could include:
-- Protocol-level: separate principal vs rewards and make the **reward component** time-gated (vesting) and/or penalized on early exit.
+- Protocol-level: separate principal vs rewards and make the **reward component** time-gated (vesting) and/or penalized on early exit (avoid flat “principal exit taxes”).
 - Program-level (if protocol change is too heavy): bonuses in an escrow contract with vest/forfeit; this helps program incentives but does **not** fix base-inflation extractability by itself.
 
 How to measure:
