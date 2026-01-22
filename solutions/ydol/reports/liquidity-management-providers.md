@@ -70,6 +70,20 @@ Arrakis publishes the most “token issuer style” case studies (depth vs CEX, 
 - DefiLlama reports ~**$6.6M** TVL for Gamma (note: DefiLlama’s classification may not capture all partner-deployed “Gamma-powered” vault liquidity).
   - Source: `https://api.llama.fi/protocol/gamma`
 
+### Reported terms (from support; verify in a term sheet)
+- As reported by Gamma support (via ticket), the proposed economics and operating constraints were:
+  - **No launch fees**
+  - **80/20 fee model**: 20% of earned fees taken by Gamma; 80% reinvested into the LP position
+  - **No deposit/withdrawal fees**
+  - **Suggested range** for LPT/WETH: ~**-40% to +66%** (log-symmetric), with rebalance triggers about halfway through the range on either side
+  - **Permissionless deposits/withdrawals** (Gamma cannot stop or gate entry/exit)
+  - Gamma controls **rebalances only**, with guardrails (cannot rebalance too far from prior range / cannot exceed certain range-width limits)
+  - Can list on Gamma frontend; supports **Merkl** incentives
+- Before any DAO decision, ask for a written term sheet confirming:
+  - Whether the 20% is the *only* fee and whether it is **inclusive of keeper gas costs**
+  - The exact DEX/pool engine (Uniswap v3 vs other) + the **exact pool address** they would manage
+  - Upgradeability / admin controls / multisig / timelock model for the vault + manager
+
 ### Public “proof of operation” signals
 - Gamma publishes protocol-level stats:
   - **Volumes Generated (to date): $94.40B**
@@ -121,4 +135,3 @@ To turn marketing into decision-grade diligence, request a short memo answering:
 4) **Operational model**: how often rebalances happen; do they swap inventory; what guardrails exist.
 5) **Security posture**: audits, upgradeability + timelocks, admin keys/multisigs, incident history, disclosures.
 6) **Reporting**: cadence + dashboards + onchain addresses, and how the community can independently verify.
-
