@@ -136,6 +136,50 @@ To turn marketing into decision-grade diligence, request a short memo answering:
 5) **Security posture**: audits, upgradeability + timelocks, admin keys/multisigs, incident history, disclosures.
 6) **Reporting**: cadence + dashboards + onchain addresses, and how the community can independently verify.
 
+### Copy/paste diligence questionnaire (send to providers)
+
+Ask the provider to answer in writing and include an explorer link for **every** on-chain address.
+
+1) **Exact deployment details (where will Livepeer liquidity sit?)**
+   - Chain(s) + DEX (Uniswap v3/v4, etc) + fee tier.
+   - The underlying pool identifier:
+     - v3: pool contract address.
+     - v4: `PoolManager` address + `PoolKey` (tokens/fee/tickSpacing/hook) and/or `poolId`.
+   - The exact addresses the DAO will interact with: vault, share token (if any), manager/rebalancer, fee collector(s), timelock, multisig(s), proxy admin(s), and any keeper/executor addresses.
+
+2) **Custody + permissions (what can you do vs what can we do?)**
+   - Who can withdraw principal and at what cadence (instant vs timelocked)?
+   - Can you block deposits/withdrawals? (yes/no)
+   - Can you move funds anywhere besides the target pool(s)? (yes/no; if yes, where and why)
+   - Can your system perform swaps (inventory rebalancing) and on which venues? What are the on-chain bounds/guards that prevent abusive swaps?
+   - List all privileged roles and the exact functions they can call (rebalance, range width, emergency actions, upgrades).
+
+3) **Economics (all-in cost)**
+   - List **all** fees (AUM, performance, withdrawal, deposit, launch/setup, keepers/gas, dashboard, etc) and where they are collected on-chain.
+   - Provide an “all-in expected cost” table for 3 scenarios (low/medium/high volume) over 12 months, with clear assumptions.
+
+4) **KPIs you will commit to (objective, measurable, time-boxed)**
+   - Propose 2–4 concrete KPIs (e.g., depth at 0.5/1/2%, price impact at $10k/$25k/$50k both directions, in-range uptime).
+   - Provide the exact measurement method (Dune query / subgraph endpoints / code) so the DAO can reproduce numbers.
+   - Include explicit stop/renegotiation conditions if KPIs are missed.
+
+5) **Comparable evidence we can verify independently**
+   - Provide ≥2 comparable deployments (volatile token/WETH is ideal) with:
+     - vault/manager addresses,
+     - underlying pool identifiers,
+     - capital size range, and
+     - a suggested block window/time window to evaluate.
+   - If you cannot share addresses, treat this as a diligence fail (the DAO cannot evaluate execution quality).
+
+6) **Risk + security posture (what could go wrong?)**
+   - Audit reports + links; incident history; how upgrades work (timelock duration, upgrade authority, emergency controls).
+   - Any off-chain dependencies (quoters/solvers/keepers/oracles): what happens if they fail or are compromised?
+
+7) **Operational/contractual safeguards**
+   - Withdrawal process and expected time-to-exit in normal vs emergency cases.
+   - Clear termination rights: can Livepeer replace the manager, pause active management, or unwind without provider approval?
+   - Reporting cadence + what data you will publish publicly (addresses, range updates/rebalances, fee accounting).
+
 ## Livepeer lens: is an Arrakis premium justified (based on proposal text only)?
 
 Based on the Livepeer proposal post alone, Arrakis is not clearly “premium” on *commitments* — it mostly promises active management + reporting, but does not publish hard KPI targets, guarantees, or a fee structure that shares downside risk.
