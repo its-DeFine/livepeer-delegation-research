@@ -146,3 +146,72 @@ For Arrakis to justify higher take rates, the DAO should require at least one of
 - **Hard KPI commitments** (e.g., max price impact at $25k/$50k swaps both directions) with timeboxes + stop conditions.
 - **Evidence of outperformance vs cheaper ALMs** on comparable volatile-token/WETH pairs at similar capital.
 - **Extra value beyond “just” ALM** (e.g., verifiable orderflow advantages, MEV/LVR mitigation with realistic deployment timing, or explicit risk-sharing terms).
+
+## On-chain spot checks (Arbitrum) — how “active” are the vaults?
+
+Below are on-chain spot checks using `cast` against Arbitrum to understand the *actual* state of some public Gamma (Uniswap v3 hypervisors) and Arrakis (Arrakis Vault V1 / “G-UNI”) deployments. This is not decision-grade benchmarking, but it does help confirm how these systems work in practice.
+
+### Gamma: Uniswap v3 hypervisors (base+limit ranges)
+
+Gamma hypervisors hold **two Uniswap v3 positions** (“base” + “limit”), expose the live ticks onchain, and emit a `Rebalance` event when the manager updates ranges/compounds.
+
+- **WETH/USDC (fee=3000)**
+  - Hypervisor: `0x20b520adc4d068974105104ed955a4dbadfa4ea6`
+  - Pool: `0x17c14d2c404d167802b16c450d3c99f88f2c4f4d`
+  - Current ranges (as of spot check):
+    - Base: `baseLower=-204480`, `baseUpper=-187380`
+    - Limit: `limitLower=-195900`, `limitUpper=-187380`
+    - Current pool tick: `-196266` (inside base range)
+  - Access control signals:
+    - `owner=0xce1ebe29e7218726ec07875dc711953d35512070` (can call `rebalance(...)`)
+    - `directDeposit=false` and `whitelistedAddress=0x82fceb07a4d01051519663f6c1c919af21c27845` (deposits are routed/gated)
+  - Rebalance cadence (log count):
+    - `Rebalance` events from block `300000000` → `latest`: **8**
+    - Last `Rebalance` event at block: **396839825**
+
+- **WETH/ARB (fee=10000)**
+  - Hypervisor: `0x6b7635b7d2e85188db41c3c05b1efa87b143fce8`
+  - Pool: `0x92fd143a8fa0c84e016c2765648b9733b0aa519e`
+  - Current ranges (as of spot check):
+    - Base: `baseLower=91000`, `baseUpper=100400`
+    - Limit: `limitLower=91000`, `limitUpper=95800`
+    - Current pool tick: `97159` (inside base range)
+  - Access control signals:
+    - `owner=0xce1ebe29e7218726ec07875dc711953d35512070`
+    - `directDeposit=false` and `whitelistedAddress=0x82fceb07a4d01051519663f6c1c919af21c27845`
+  - Rebalance cadence (log count):
+    - `Rebalance` events from block `300000000` → `latest`: **8**
+    - Last `Rebalance` event at block: **406030013**
+
+### Arrakis: Vault V1 / “G-UNI” (single range + optional Gelato compounding)
+
+Arrakis Vault V1 holds **one Uniswap v3 position** (`lowerTick/upperTick`). On-chain, there are two “active management” pathways:
+- `executiveRebalance(...)` (manager changes the range), and
+- `rebalance(...)` (Gelato executor reinvests/compounds fees *without* changing the range),
+both emitting `Rebalance(int24,int24,uint128,uint128)` when used.
+
+On Arbitrum, the sampled public community vaults below appear to be **effectively unmanaged** (no `Rebalance` events) and currently sit **out of range** (not providing liquidity).
+
+- **WETH/ARB (fee=10000)** (same pool as Gamma example above)
+  - Vault: `0xd2e386214b1cf1e5790de69d8a957cf874a835a4`
+  - Pool: `0x92fd143a8fa0c84e016c2765648b9733b0aa519e`
+  - Range: `lowerTick=52000`, `upperTick=92000`
+  - Current pool tick: `97159` (**above upperTick**, so the position is out-of-range)
+  - `Rebalance` events (lifetime): **0**
+
+- **WETH/ARB (fee=3000)**
+  - Vault: `0xb1121975f0080ed05253a825cb98af20357c17cb`
+  - Pool: `0x92c63d0e701caae670c9415d91c474f686298f00`
+  - Range: `lowerTick=57000`, `upperTick=84780`
+  - Current pool tick: `97198` (**above upperTick**, so the position is out-of-range)
+  - `Rebalance` events (lifetime): **0**
+  - Recent activity is mostly exits:
+    - `Minted` events from block `300000000` → `latest`: **0**
+    - `Burned` events from block `300000000` → `latest`: **9** (last at block **409171076**)
+
+### Implication for Livepeer
+
+These spot checks illustrate a key diligence point for the Livepeer DAO: the “brand name” of an ALM provider does not guarantee that *a given vault* is being actively managed on-chain. If Livepeer pays premium fees for “active management”, it should require:
+- the exact **vault + pool addresses** up front,
+- explicit commitments on **in-range / depth / slippage** outcomes, and
+- a monitoring plan (e.g., periodic verification of `Rebalance` activity + range placement vs current tick).
