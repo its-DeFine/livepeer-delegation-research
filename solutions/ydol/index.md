@@ -30,6 +30,10 @@ From this directory:
 
 Outputs land in `outputs/` and cached downloads land in `data/`.
 
+## Provider landscape (public evidence)
+
+- `reports/liquidity-management-providers.md`: public evidence review of Arrakis vs Gamma vs Steer vs ICHI (case studies, partner docs, incident reports) + what to request for decision-grade diligence.
+
 ## Notes
 
 - The proposal text references “Uniswap v4”, but the existing LPT/WETH pool used in practice is Uniswap v3 on Arbitrum.
