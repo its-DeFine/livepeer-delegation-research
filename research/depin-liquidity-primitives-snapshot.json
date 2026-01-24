@@ -1,0 +1,74 @@
+{
+  "akash": {
+    "bond_denom": "uakt",
+    "historical_entries": 10000,
+    "max_entries": 7,
+    "max_validators": 100,
+    "min_commission_rate": "0.050000000000000000",
+    "rest": "https://rest.cosmos.directory/akash/cosmos/staking/v1beta1/params",
+    "unbonding_time": "1814400s",
+    "unbonding_time_seconds": 1814400
+  },
+  "filecoin": {
+    "actors": {
+      "burnt_funds": "f099",
+      "market": "f05",
+      "power": "f04",
+      "reward": "f02"
+    },
+    "burnt_funds_fil": "41587585.664998148612972591",
+    "daily_reward_estimate_fil": "69722.158748701913616960",
+    "head_height": 5697007,
+    "market_total_provider_locked_collateral_fil": "544424.76172782562731046",
+    "power_total_pledge_collateral_fil": "100160062.667519394294404341",
+    "reward_this_epoch_reward_fil": "24.209082898854831117",
+    "reward_total_storage_power_reward_fil": "393366641.968540914626018369",
+    "rpc": "https://api.node.glif.io",
+    "sample_miner": "f01729333",
+    "sample_miner_initial_pledge_fil": "5069.828174671268889515",
+    "sample_miner_locked_funds_fil": "242.282357893959167",
+    "sample_miner_vesting_head": {
+      "amount_fil": "1.298286637165421416",
+      "epoch": 5697290
+    },
+    "sample_miner_vesting_tail_cid": "bafy2bzacec5t3f7srz5nliywlcn3itvin7dnnhtlhsgltyb5umiokvf2hsyse"
+  },
+  "generated_at_utc": "2026-01-24T01:03:38.048671+00:00",
+  "livepeer": {
+    "bonding_manager": "0x35Bcf3c30594191d53231E4FF333E8A770453e40",
+    "chain": "arbitrum",
+    "rpc": "https://arb1.arbitrum.io/rpc",
+    "unbonding_period_rounds": 7
+  },
+  "notes": [
+    "This snapshot focuses on simple on-chain primitives (unbond/thaw parameters, locked-funds actors, miner vesting table head).",
+    "Estimates (e.g., days from blocks) use approximate block times; treat them as directional.",
+    "Presence of an unbond/thaw period is not the same as protocol-level linear reward vesting; they act on different buckets (principal vs rewards)."
+  ],
+  "pocket": {
+    "block_latest_endpoint": "/cosmos/base/tendermint/v1beta1/blocks/latest",
+    "block_time_estimate": {
+      "avg_block_time_seconds": 61.030939738,
+      "blocks_delta": 1000,
+      "latest_height": 615357,
+      "older_height": 614357,
+      "seconds_delta": 61030.939738
+    },
+    "num_blocks_per_session": 60,
+    "rest": "https://shannon-grove-api.mainnet.poktroll.com",
+    "session_seconds_estimate": 3661.85638428,
+    "shared_params_endpoint": "/pokt-network/poktroll/shared/params",
+    "supplier_unbonding_period_blocks": 30240,
+    "supplier_unbonding_period_sessions": 504,
+    "supplier_unbonding_seconds_estimate": 1845575.61767712
+  },
+  "thegraph": {
+    "block_number": 24301243,
+    "block_time_seconds_estimate": 12.0,
+    "chain": "ethereum",
+    "rpc": "https://ethereum.publicnode.com",
+    "staking_contract": "0xF55041E37E12cD407ad00CE2910B8269B01263b9",
+    "thawing_period_blocks": 201600,
+    "thawing_period_days_estimate": 28.0
+  }
+}

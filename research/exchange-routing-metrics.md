@@ -1,0 +1,56 @@
+---
+title: "Exchange routing metrics (best-effort, on-chain)"
+description: "Standardized, lower-bound exchange-routing shares across Livepeer and comparable protocols."
+sidebar_label: "Exchange routing metrics"
+---
+
+# Exchange routing metrics (best-effort, on-chain)
+
+- Generated: `2026-01-24T02:03:04.508300+00:00`
+- Exchange label set size (EVM): **37** (`data/labels.json`)
+
+These metrics formalize the “X% goes to exchanges” claim as:
+- **numerator**: amount routed to a curated set of labeled exchange endpoints,
+- **denominator**: a clearly-defined post-exit flow basis (varies by report),
+- treated as a **LOWER BOUND** (labels + hop/window limits miss many paths).
+
+## Summary
+
+| Protocol | Flow basis | Window / range | Hops | Routed to exchanges (lower bound) | Total basis | Share |
+|---|---|---|---:|---:|---:|---:|
+| Livepeer (LPT) | selected L1 EOA outgoing (2nd hop) | blocks 14600000→24279306 | 1 | 5509570.311 LPT | 10803734.108 LPT | 51.00% |
+| Livepeer (LPT) | L1 receipts from traced bridge-outs | ≤72.0h→≤72.0h | ≤2 | 3796367.041 LPT | 7706238.774 LPT | 49.26% |
+| The Graph (GRT) | withdrawals (top delegators) | 30d window | ≤3 | 1278394.414 GRT | 10491820.509 GRT | 12.18% |
+
+## Notes (how to interpret)
+
+- These shares are **not directly comparable** unless you account for the denominator differences (selection rules, hop limits, and windows).
+- Best use: track *directionally* whether “post-exit flows” are consistent with eventual exchange deposits.
+
+## Context (exit friction + lock/burn primitives)
+
+Exit friction (principal liquidity delays; not reward vesting):
+
+| Protocol | Primitive | Delay (estimate) |
+|---|---|---:|
+| Livepeer | `unbondingPeriod()` | 7 rounds |
+| The Graph | `thawingPeriod()` | ~28.0 days |
+| Pocket | supplier unbonding | ~21.4 days |
+| Akash | `unbonding_time` | ~21.0 days |
+| Theta | `ReturnLockingPeriod` | ~2.3 days |
+
+Filecoin lock/burn intensity (on-chain friction; not exchange routing):
+
+- Burnt funds: **41583628.457 FIL** (~598 days of rewards @ 69487.588 FIL/day)
+- Pledge collateral locked: **100281675.748 FIL** (~1443 days of rewards)
+
+## Sources
+
+- Livepeer L1 second hop JSON: `research/l1-bridge-recipient-second-hop.json`
+- Livepeer timing traces JSON: `research/extraction-timing-traces.json`
+- The Graph withdrawal routing JSON: `research/thegraph-delegation-withdrawal-routing.json`
+- Filecoin lock/burn JSON: `research/filecoin-lock-burn-metrics.json`
+- DePIN exit-friction snapshot JSON: `research/depin-liquidity-primitives-snapshot.json`
+- Theta liquidity primitives JSON: `research/theta-liquidity-primitives.json`
+
+Raw output: see `research/exchange-routing-metrics.json`.

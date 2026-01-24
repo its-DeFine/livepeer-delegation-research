@@ -1,0 +1,42 @@
+{
+  "generated_at_utc": "2026-01-24T01:10:04.496237+00:00",
+  "notes": [
+    "Unstaking delays are sourced from official Theta docs pages and extracted from the rendered HTML embedded in their SSR props.",
+    "Theta staking operations are native to the Theta chain; they are not directly introspected via standard EVM methods in this report."
+  ],
+  "theta": {
+    "block_time_estimate": {
+      "avg_block_time_seconds": 6.8526,
+      "blocks_delta": 5000,
+      "latest_block": 32903011,
+      "older_block": 32898011,
+      "seconds_delta": 34263,
+      "timestamp_latest": 1769216985,
+      "timestamp_older": 1769182722
+    },
+    "chain_id": 361,
+    "chain_id_hex": "0x169",
+    "docs": {
+      "guardian_stake_withdrawal": {
+        "body_text_excerpt_pattern": "[^.]*48\\s*hours[^.]*\\.",
+        "excerpt": "Withdrawn stakes will be returned to your wallet address in approximately 48 hours.",
+        "reqUrl": "/docs/withdrawing-your-stake-from-the-guardian-node",
+        "title": "Guardian Stake Withdrawal Process",
+        "url": "https://docs.thetatoken.org/docs/withdrawing-your-stake-from-the-guardian-node"
+      },
+      "tfuel_staking_unstake": {
+        "body_text_excerpt_pattern": "[^.]*60\\s*hour[^.]*\\.",
+        "excerpt": "Upon withdrawal of your TFuel, there is a ~60 hour unstaking period before your staked tokens will appear back in your Theta Wallet.",
+        "reqUrl": "/docs/elite-edge-node-staking-process",
+        "title": "Elite Edge Node Staking Process",
+        "url": "https://docs.thetatoken.org/docs/elite-edge-node-staking-process"
+      }
+    },
+    "eth_rpc": "https://eth-rpc-api.thetatoken.org/rpc",
+    "protocol": {
+      "return_locking_period_blocks": 28800,
+      "source_line": "ReturnLockingPeriod uint64 = 28800      // number of blocks, approximately 2 days with 6 second block time",
+      "source_url": "https://raw.githubusercontent.com/thetatoken/theta-protocol-ledger/master/core/stake.go"
+    }
+  }
+}
