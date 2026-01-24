@@ -14,6 +14,8 @@ These metrics formalize the “X% goes to exchanges” claim as:
 - **denominator**: a clearly-defined post-exit flow basis (varies by report),
 - treated as a **LOWER BOUND** (labels + hop/window limits miss many paths).
 
+<ExchangeRoutingInfographic />
+
 ## Summary
 
 | Protocol | Flow basis | Window / range | Hops | Routed to exchanges (lower bound) | Total basis | Share |
