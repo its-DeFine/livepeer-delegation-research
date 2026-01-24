@@ -155,6 +155,30 @@ def _thegraph_withdrawal_routing_metrics(path: str) -> dict[str, Any]:
     top_n = int((analysis or {}).get("top_n_delegators") or 0)
     exchange_labels = int((analysis or {}).get("labels_exchange_count") or 0)
 
+    first_hop_destinations: dict[str, Any] | None = None
+    fh = (res or {}).get("first_hop_breakdown") if isinstance(res, dict) else None
+    if isinstance(fh, dict):
+        cat_counts = fh.get("category_counts") or {}
+        cat_withdrawn = fh.get("category_withdrawn_grt") or {}
+        cat_first_hop = fh.get("category_first_hop_grt") or {}
+
+        shares: dict[str, str] = {}
+        if isinstance(cat_withdrawn, dict):
+            for k, v in cat_withdrawn.items():
+                shares[str(k)] = str(_pct(_d(v), withdrawn))
+
+        first_hop_destinations = {
+            "method": fh.get("method"),
+            "category_counts": cat_counts if isinstance(cat_counts, dict) else {},
+            "category_withdrawn_grt": cat_withdrawn if isinstance(cat_withdrawn, dict) else {},
+            "category_first_hop_grt": cat_first_hop if isinstance(cat_first_hop, dict) else {},
+            "category_withdrawn_share_percent": shares,
+            "notes": [
+                "Categories are based on the FIRST outgoing transfer after withdrawal that meets the evidence pack’s threshold (amount and window constraints).",
+                "Unknown categories are resolved via (a) label set membership and (b) eth_getCode for EOA vs contract when enabled.",
+            ],
+        }
+
     return {
         "source_json": path,
         "chain": "ethereum",
@@ -182,6 +206,7 @@ def _thegraph_withdrawal_routing_metrics(path: str) -> dict[str, Any]:
         },
         "selection": {"window_days": window_days, "top_n_delegators": top_n},
         "labels": {"exchange_label_count": exchange_labels},
+        "first_hop_destinations": first_hop_destinations,
         "notes": [
             "This is a LOWER BOUND: it counts only transfers to a small curated set of labeled exchange hot wallets.",
             "Routing is checked within a fixed post-withdrawal window and limited hops; more complex paths will be missed.",
@@ -476,6 +501,28 @@ def main() -> int:
         f"| The Graph (GRT) | withdrawals (top delegators) | {gr_win}d window | ≤{gr_hops} | {gr_ex:.3f} GRT | {gr_total:.3f} GRT | {_fmt_pct(gr_pct)} |"
     )
     lines.append("")
+    lines.append("## First hop destinations (where available)")
+    lines.append("")
+    lines.append("These breakdowns answer a different question than “eventual exchange deposit”:")
+    lines.append("- **Where does the *first* large post-exit transfer go?**")
+    lines.append("")
+    lines.append("They are useful to quantify “self-custody / unknown EOA” vs known endpoints, but they are **not apples-to-apples** across reports.")
+    lines.append("")
+    lines.append("| Protocol | Basis | Unknown EOA | Unknown contract | No first hop meeting threshold |")
+    lines.append("|---|---|---:|---:|---:|")
+
+    lp_unknown = _d(livepeer.get("share_to_unknown_eoas_percent"))
+    lines.append(f"| Livepeer (LPT) | 2nd hop from selected L1 EOAs | {_fmt_pct(lp_unknown)} |  |  |")
+
+    gr_fh = (thegraph.get("first_hop_destinations") or {}) if isinstance(thegraph, dict) else {}
+    gr_fh_shares = (gr_fh.get("category_withdrawn_share_percent") or {}) if isinstance(gr_fh, dict) else {}
+    gr_unk_eoa = _d(gr_fh_shares.get("unknown_eoa"))
+    gr_unk_contract = _d(gr_fh_shares.get("unknown_contract"))
+    gr_no_first = _d(gr_fh_shares.get("no_first_hop_meeting_threshold"))
+    lines.append(
+        f"| The Graph (GRT) | 1st hop after withdrawal (thresholded) | {_fmt_pct(gr_unk_eoa)} | {_fmt_pct(gr_unk_contract)} | {_fmt_pct(gr_no_first)} |"
+    )
+
     lines.append("## Notes (how to interpret)")
     lines.append("")
     lines.append("- These shares are **not directly comparable** unless you account for the denominator differences (selection rules, hop limits, and windows).")

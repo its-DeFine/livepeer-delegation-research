@@ -6,7 +6,7 @@ sidebar_label: "Exchange routing metrics"
 
 # Exchange routing metrics (best-effort, on-chain)
 
-- Generated: `2026-01-24T02:03:04.508300+00:00`
+- Generated: `2026-01-24T21:30:51.757499+00:00`
 - Exchange label set size (EVM): **37** (`data/labels.json`)
 
 These metrics formalize the “X% goes to exchanges” claim as:
@@ -22,6 +22,17 @@ These metrics formalize the “X% goes to exchanges” claim as:
 | Livepeer (LPT) | L1 receipts from traced bridge-outs | ≤72.0h→≤72.0h | ≤2 | 3796367.041 LPT | 7706238.774 LPT | 49.26% |
 | The Graph (GRT) | withdrawals (top delegators) | 30d window | ≤3 | 1278394.414 GRT | 10491820.509 GRT | 12.18% |
 
+## First hop destinations (where available)
+
+These breakdowns answer a different question than “eventual exchange deposit”:
+- **Where does the *first* large post-exit transfer go?**
+
+They are useful to quantify “self-custody / unknown EOA” vs known endpoints, but they are **not apples-to-apples** across reports.
+
+| Protocol | Basis | Unknown EOA | Unknown contract | No first hop meeting threshold |
+|---|---|---:|---:|---:|
+| Livepeer (LPT) | 2nd hop from selected L1 EOAs | 49.00% |  |  |
+| The Graph (GRT) | 1st hop after withdrawal (thresholded) | 92.68% | 1.86% | 5.46% |
 ## Notes (how to interpret)
 
 - These shares are **not directly comparable** unless you account for the denominator differences (selection rules, hop limits, and windows).

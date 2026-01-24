@@ -140,6 +140,8 @@ def _rpc_with_retries(client: RpcClient, method: str, params: list, *, max_tries
                     "bad gateway",
                     "gateway timeout",
                     "connection reset",
+                    "remote end closed",
+                    "remote disconnected",
                     "internal error",
                 )
             )
@@ -428,7 +430,9 @@ def main() -> int:
     parser.add_argument("--blocks-per-day", type=int, default=7200)
     parser.add_argument("--window-days", type=int, default=7, help="Post-withdraw routing window (days, approx).")
     parser.add_argument("--top-n", type=int, default=50, help="Analyze exchange routing for top-N delegators by withdrawn GRT.")
-    parser.add_argument("--log-chunk-size", type=int, default=120_000, help="Block chunk size for eth_getLogs scans.")
+    # Public RPCs commonly cap eth_getLogs ranges (e.g., 50k). Keep the default conservative
+    # to avoid pathological recursive splitting and frequent disconnects.
+    parser.add_argument("--log-chunk-size", type=int, default=50_000, help="Block chunk size for eth_getLogs scans.")
     parser.add_argument(
         "--include-second-hop",
         action="store_true",
@@ -446,6 +450,11 @@ def main() -> int:
         "--classify-intermediates",
         action="store_true",
         help="Second hop: call eth_getCode for intermediates in matched traces (EOA vs contract).",
+    )
+    parser.add_argument(
+        "--classify-first-hop-dests",
+        action="store_true",
+        help="First-hop breakdown: call eth_getCode for first-hop destinations (EOA vs contract).",
     )
     parser.add_argument(
         "--include-third-hop",
@@ -467,6 +476,7 @@ def main() -> int:
 
     include_third_hop = bool(args.include_third_hop)
     include_second_hop = bool(args.include_second_hop) or include_third_hop
+    classify_first_hop_dests = bool(args.classify_first_hop_dests)
 
     eth = RpcClient(str(args.eth_rpc), user_agent="livepeer-delegation-research/thegraph-withdraw-routing")
 
@@ -583,6 +593,10 @@ def main() -> int:
     matched_direct_events: List[Dict[str, Any]] = []
     matched_second_hop_events: List[Dict[str, Any]] = []
     matched_third_hop_events: List[Dict[str, Any]] = []
+    first_hop_category_by_withdraw_wei: Dict[str, int] = defaultdict(int)
+    first_hop_category_by_firsthop_wei: Dict[str, int] = defaultdict(int)
+    first_hop_category_by_events: Counter[str] = Counter()
+    first_hop_category_examples: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
     unmatched_events: int = 0
     matched_direct_tokens_wei = 0
     matched_second_hop_tokens_wei = 0
@@ -605,12 +619,87 @@ def main() -> int:
     }
     banned_intermediates.update(labeled_non_exchange_addrs)
 
+    def _classify_first_hop_dest(to_addr: str) -> tuple[str, str | None, bool | None]:
+        """Return (category, label, is_contract?) for a first-hop destination."""
+
+        to_norm = _normalize_address(to_addr)
+        if to_norm in exchange_labels:
+            return "exchange", exchange_labels.get(to_norm, {}).get("name"), None
+        if to_norm in labeled_non_exchange_addrs:
+            # We keep this bucket coarse; specific label categories vary by protocol.
+            cat = str(labels.get(to_norm, {}).get("category") or "labeled_non_exchange") if isinstance(labels, dict) else "labeled_non_exchange"
+            name = str(labels.get(to_norm, {}).get("name") or "") if isinstance(labels, dict) else ""
+            return f"labeled:{cat}", (name or None), None
+        if classify_first_hop_dests:
+            is_contract = _is_contract_address(eth, to_norm, intermediate_code_cache)
+            return ("unknown_contract" if is_contract else "unknown_eoa"), None, bool(is_contract)
+        return "unknown_unclassified", None, None
+
+    def _record_first_hop(category: str, *, withdraw_wei: int, firsthop_wei: int | None, example: Dict[str, Any]) -> None:
+        first_hop_category_by_events[category] += 1
+        first_hop_category_by_withdraw_wei[category] += int(withdraw_wei)
+        if firsthop_wei is not None:
+            first_hop_category_by_firsthop_wei[category] += int(firsthop_wei)
+        if len(first_hop_category_examples[category]) < 10:
+            first_hop_category_examples[category].append(example)
+
     # Process chronologically so second-hop cache tends to extend forward only.
     for e in withdrawals:
         if e.delegator not in top_delegator_set:
             continue
 
         end_block = int(e.block_number + window_blocks)
+
+        # First-hop breakdown: pick the earliest "meaningful" outgoing transfer (by amount threshold)
+        # and classify its destination. This is a proxy for "where the withdrawal goes" under limited
+        # on-chain observability (mixing with existing balances is possible).
+        firsthop_category = "no_first_hop_meeting_threshold"
+        firsthop_to: str | None = None
+        firsthop_label: str | None = None
+        firsthop_is_contract: bool | None = None
+        firsthop_block: int | None = None
+        firsthop_tx: str | None = None
+        firsthop_amount_wei: int | None = None
+
+        if include_second_hop:
+            outgoing_all = outgoing_transfers_by_delegator.get(e.delegator) or []
+            withdraw_grt = _wei_to_grt(e.tokens_wei)
+            firsthop_threshold_grt = max(Decimal(args.min_first_hop_grt), Decimal(args.min_first_hop_fraction) * withdraw_grt)
+            threshold_wei = int((firsthop_threshold_grt * GRT_SCALE).to_integral_value(rounding="ROUND_FLOOR"))
+            for t in outgoing_all:
+                if t.block_number <= e.block_number:
+                    continue
+                if t.block_number > end_block:
+                    break
+                to_norm = _normalize_address(t.to_addr)
+                if to_norm in banned_intermediates:
+                    continue
+                if int(t.amount_wei) < threshold_wei:
+                    continue
+                firsthop_to = str(t.to_addr)
+                firsthop_block = int(t.block_number)
+                firsthop_tx = str(t.tx_hash)
+                firsthop_amount_wei = int(t.amount_wei)
+                firsthop_category, firsthop_label, firsthop_is_contract = _classify_first_hop_dest(firsthop_to)
+                break
+
+        _record_first_hop(
+            firsthop_category,
+            withdraw_wei=int(e.tokens_wei),
+            firsthop_wei=firsthop_amount_wei,
+            example={
+                "withdraw_block": int(e.block_number),
+                "withdraw_tx": str(e.tx_hash),
+                "delegator": str(e.delegator),
+                "withdraw_tokens_grt": str(_wei_to_grt(e.tokens_wei)),
+                "first_hop_to": firsthop_to,
+                "first_hop_label": firsthop_label,
+                "first_hop_is_contract": firsthop_is_contract,
+                "first_hop_block": firsthop_block,
+                "first_hop_tx": firsthop_tx,
+                "first_hop_amount_grt": str(_wei_to_grt(firsthop_amount_wei)) if firsthop_amount_wei is not None else None,
+            },
+        )
 
         # Direct: delegator -> labeled exchange
         transfers = transfer_to_exchange_by_delegator.get(e.delegator) or []
@@ -992,6 +1081,7 @@ def main() -> int:
             "second_hop_min_first_hop_grt": str(Decimal(args.min_first_hop_grt)),
             "second_hop_min_first_hop_fraction": str(Decimal(args.min_first_hop_fraction)),
             "second_hop_classify_intermediates": bool(args.classify_intermediates),
+            "first_hop_classify_destinations": bool(classify_first_hop_dests),
             "include_third_hop": bool(include_third_hop),
             "third_hop_max_second_hops_per_first_hop": int(args.max_second_hops_per_first_hop),
             "third_hop_min_second_hop_grt": str(Decimal(args.min_second_hop_grt)),
@@ -1014,6 +1104,13 @@ def main() -> int:
         "routing_results_top_delegators": {
             "withdraw_events_considered": len(top_delegator_withdrawals),
             "withdrawn_grt_considered": str(_wei_to_grt(top_delegator_withdraw_wei)),
+            "first_hop_breakdown": {
+                "method": "Earliest outgoing transfer >= max(min_first_hop_grt, min_first_hop_fraction*withdraw) within window; destination classified via labels and (optionally) eth_getCode.",
+                "category_counts": dict(first_hop_category_by_events),
+                "category_withdrawn_grt": {k: str(_wei_to_grt(v)) for k, v in first_hop_category_by_withdraw_wei.items()},
+                "category_first_hop_grt": {k: str(_wei_to_grt(v)) for k, v in first_hop_category_by_firsthop_wei.items()},
+                "examples": dict(first_hop_category_examples),
+            },
             "matched_direct_to_exchange_within_window_events": len(matched_direct_events),
             "matched_direct_to_exchange_within_window_grt": str(_wei_to_grt(matched_direct_tokens_wei)),
             "matched_second_hop_to_exchange_within_window_events": len(matched_second_hop_events),
@@ -1094,7 +1191,23 @@ def main() -> int:
         lines.append(
             f"- Total matched (events): **{len(matched_direct_events) + len(matched_second_hop_events) + len(matched_third_hop_events):,}**"
         )
-        lines.append(f"- Total matched amount (lower bound): **{_format_grt(_wei_to_grt(matched_total_tokens_wei))} GRT**")
+    lines.append(f"- Total matched amount (lower bound): **{_format_grt(_wei_to_grt(matched_total_tokens_wei))} GRT**")
+    lines.append("")
+    lines.append("## First hop destinations (top delegators; within window)")
+    lines.append("")
+    lines.append(
+        "This categorizes the *first meaningful* outgoing GRT transfer after each withdrawal (>= max(min_first_hop_grt, min_first_hop_fraction*withdraw)) "
+        "as a proxy for where the withdrawal goes. It can miss split flows or transfers below threshold."
+    )
+    lines.append("")
+    fh = (out_json.get("routing_results_top_delegators") or {}).get("first_hop_breakdown") or {}
+    fh_counts = fh.get("category_counts") or {}
+    fh_withdrawn = fh.get("category_withdrawn_grt") or {}
+    # Stable ordering for readability.
+    for cat in sorted(fh_counts.keys()):
+        cnt = fh_counts.get(cat)
+        amt = fh_withdrawn.get(cat)
+        lines.append(f"- {cat}: **{cnt:,}** events; **{_format_grt(Decimal(str(amt or '0')))} GRT** withdrawn")
     lines.append("")
     lines.append("Top exchange endpoints (by matched count):")
     lines.append("")

@@ -53,7 +53,7 @@
       "token": "FIL"
     }
   },
-  "generated_at_utc": "2026-01-24T02:03:04.508300+00:00",
+  "generated_at_utc": "2026-01-24T21:30:51.757499+00:00",
   "labels": {
     "exchange_label_count": 37,
     "labels_json": "data/labels.json",
@@ -170,6 +170,32 @@
         "amount_grt": "10491820.509466795252696279",
         "basis": "withdrawn GRT (top delegators considered)",
         "events": 60
+      },
+      "first_hop_destinations": {
+        "category_counts": {
+          "no_first_hop_meeting_threshold": 12,
+          "unknown_contract": 8,
+          "unknown_eoa": 40
+        },
+        "category_first_hop_grt": {
+          "unknown_contract": "194600.529692379349622785",
+          "unknown_eoa": "8266256.736765243922751815"
+        },
+        "category_withdrawn_grt": {
+          "no_first_hop_meeting_threshold": "572586.950920231174046328",
+          "unknown_contract": "194905.833570877451496899",
+          "unknown_eoa": "9724327.724975686627153052"
+        },
+        "category_withdrawn_share_percent": {
+          "no_first_hop_meeting_threshold": "5.4574604131245342096624304600203742756873697529792225101283954831509330205943585",
+          "unknown_contract": "1.8576931753170333229235414957208871391035184756742554051191423539374097936780632",
+          "unknown_eoa": "92.684846411558432467414028044258738585209111771346522084752462162911657185727578"
+        },
+        "method": "Earliest outgoing transfer >= max(min_first_hop_grt, min_first_hop_fraction*withdraw) within window; destination classified via labels and (optionally) eth_getCode.",
+        "notes": [
+          "Categories are based on the FIRST outgoing transfer after withdrawal that meets the evidence pack\u2019s threshold (amount and window constraints).",
+          "Unknown categories are resolved via (a) label set membership and (b) eth_getCode for EOA vs contract when enabled."
+        ]
       },
       "flow": "delegation withdrawal \u2192 exchange routing (0\u20133 hops within window)",
       "labels": {
