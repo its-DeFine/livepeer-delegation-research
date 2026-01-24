@@ -53,7 +53,7 @@
       "token": "FIL"
     }
   },
-  "generated_at_utc": "2026-01-24T21:30:51.757499+00:00",
+  "generated_at_utc": "2026-01-24T22:57:22.741619+00:00",
   "labels": {
     "exchange_label_count": 37,
     "labels_json": "data/labels.json",
@@ -62,6 +62,213 @@
     ]
   },
   "metrics": {
+    "aave_stkaave_redeem_exit_routing": {
+      "breakdown": {
+        "direct": {
+          "amount": "0",
+          "events": 0,
+          "share_percent": "0E+18"
+        },
+        "second_hop": {
+          "amount": "22268.405045647303924773",
+          "events": 9,
+          "share_percent": "4.6976864093964937759782497903665121514368031473517802863021330117897070476627195"
+        },
+        "third_hop": {
+          "amount": "0",
+          "events": 0,
+          "share_percent": "0E+18"
+        }
+      },
+      "chain": "ethereum",
+      "denominator": {
+        "amount": "474029.194479758805721102",
+        "basis": "exited AAVE (top recipients considered)",
+        "events": 79
+      },
+      "first_hop_destinations": {
+        "category_counts": {
+          "no_first_hop_meeting_threshold": 17,
+          "unknown_contract": 25,
+          "unknown_eoa": 37
+        },
+        "category_exit_amount": {
+          "no_first_hop_meeting_threshold": "295875.898612762306577404",
+          "unknown_contract": "118921.23806053719555765",
+          "unknown_eoa": "59232.057806459303586048"
+        },
+        "category_exit_share_percent": {
+          "no_first_hop_meeting_threshold": "62.417231271479482604435503479457295379361329990620729675651419358962199364494921",
+          "unknown_contract": "25.087323617494021134692544043084796585778863615269483613454454617290836644657337",
+          "unknown_eoa": "12.495445111026496260871952477457908034859806394109786710894126023746963990847743"
+        },
+        "category_first_hop_amount": {
+          "unknown_contract": "92954.097941339619016398",
+          "unknown_eoa": "51064.672831089170409208"
+        },
+        "method": "Earliest outgoing transfer >= max(min_first_hop_token, min_first_hop_fraction*exit) within window; destination classified via labels and (optionally) eth_getCode."
+      },
+      "flow": "exit event \u2192 exchange routing (0\u20133 hops within window)",
+      "labels": {
+        "exchange_label_count": 37
+      },
+      "notes": [
+        "This is a LOWER BOUND: it counts only transfers to a small curated set of labeled exchange hot wallets.",
+        "Routing is checked within a fixed post-exit window and limited hops; more complex paths will be missed."
+      ],
+      "numerator": {
+        "amount": "22268.405045647303924773",
+        "basis": "exited AAVE that reaches labeled exchange endpoints within window (any hop)",
+        "events": 9
+      },
+      "protocol": "Aave (stkAAVE Redeem)",
+      "selection": {
+        "top_n_recipients": 50,
+        "window_days": 30
+      },
+      "share_events_matched_percent": "11.392405063291139240506329113924050632911392405063291139240506329113924050632911",
+      "share_to_exchanges_lower_bound_percent": "4.6976864093964937759782497903665121514368031473517802863021330117897070476627195",
+      "source_json": "research/aave-stkaave-redeem-exit-routing.json",
+      "token": "AAVE"
+    },
+    "curve_vecrv_exit_routing": {
+      "breakdown": {
+        "direct": {
+          "amount": "0",
+          "events": 0,
+          "share_percent": "0E+18"
+        },
+        "second_hop": {
+          "amount": "475975.996086322765833673",
+          "events": 4,
+          "share_percent": "5.2121511194951341093494287235524863264754310007474751241667266325100807827380424"
+        },
+        "third_hop": {
+          "amount": "0",
+          "events": 0,
+          "share_percent": "0E+18"
+        }
+      },
+      "chain": "ethereum",
+      "denominator": {
+        "amount": "9132045.199265583595810206",
+        "basis": "exited CRV (top recipients considered)",
+        "events": 50
+      },
+      "first_hop_destinations": {
+        "category_counts": {
+          "no_first_hop_meeting_threshold": 21,
+          "unknown_contract": 17,
+          "unknown_eoa": 12
+        },
+        "category_exit_amount": {
+          "no_first_hop_meeting_threshold": "4262270.499390519753175303",
+          "unknown_contract": "1102670.672071172576658837",
+          "unknown_eoa": "3767104.027803891265976066"
+        },
+        "category_exit_share_percent": {
+          "no_first_hop_meeting_threshold": "46.673777958669101144603283928382162538125879733807853431365046699749198147056299",
+          "unknown_contract": "12.074739535453147391018119810969102967902960159263785657763931257224731214642240",
+          "unknown_eoa": "41.251482505877751464378596260648734493971160106928360910871022043026070638301461"
+        },
+        "category_first_hop_amount": {
+          "unknown_contract": "1032686.495811591607875293",
+          "unknown_eoa": "1454769.768625360166158511"
+        },
+        "method": "Earliest outgoing transfer >= max(min_first_hop_token, min_first_hop_fraction*exit) within window; destination classified via labels and (optionally) eth_getCode."
+      },
+      "flow": "exit event \u2192 exchange routing (0\u20133 hops within window)",
+      "labels": {
+        "exchange_label_count": 37
+      },
+      "notes": [
+        "This is a LOWER BOUND: it counts only transfers to a small curated set of labeled exchange hot wallets.",
+        "Routing is checked within a fixed post-exit window and limited hops; more complex paths will be missed."
+      ],
+      "numerator": {
+        "amount": "475975.996086322765833673",
+        "basis": "exited CRV that reaches labeled exchange endpoints within window (any hop)",
+        "events": 4
+      },
+      "protocol": "Curve (veCRV)",
+      "selection": {
+        "top_n_recipients": 50,
+        "window_days": 30
+      },
+      "share_events_matched_percent": "8.00",
+      "share_to_exchanges_lower_bound_percent": "5.2121511194951341093494287235524863264754310007474751241667266325100807827380424",
+      "source_json": "research/curve-vecrv-exit-routing.json",
+      "token": "CRV"
+    },
+    "frax_vefxs_exit_routing": {
+      "breakdown": {
+        "direct": {
+          "amount": "0",
+          "events": 0,
+          "share_percent": "0E+18"
+        },
+        "second_hop": {
+          "amount": "75711.590913529309187615",
+          "events": 4,
+          "share_percent": "7.0533624343784694066542584246337358813605334463678109562638774965568985177492749"
+        },
+        "third_hop": {
+          "amount": "0",
+          "events": 0,
+          "share_percent": "0E+18"
+        }
+      },
+      "chain": "ethereum",
+      "denominator": {
+        "amount": "1073411.321450134568944271",
+        "basis": "exited FXS (top recipients considered)",
+        "events": 51
+      },
+      "first_hop_destinations": {
+        "category_counts": {
+          "no_first_hop_meeting_threshold": 17,
+          "unknown_contract": 26,
+          "unknown_eoa": 8
+        },
+        "category_exit_amount": {
+          "no_first_hop_meeting_threshold": "181888.178766101128327771",
+          "unknown_contract": "702485.551770504131428885",
+          "unknown_eoa": "189037.590913529309187615"
+        },
+        "category_exit_share_percent": {
+          "no_first_hop_meeting_threshold": "16.944872401790739077160666196653819226718823293135670109485483785058502009396749",
+          "unknown_contract": "65.444209291688392956194366701650722869150973054319571950031781404466974097063175",
+          "unknown_eoa": "17.610918306520867966644967101695457904130203652544757940482734810474523893540076"
+        },
+        "category_first_hop_amount": {
+          "unknown_contract": "345859.035183667990477951",
+          "unknown_eoa": "173809.925151842530326241"
+        },
+        "method": "Earliest outgoing transfer >= max(min_first_hop_token, min_first_hop_fraction*exit) within window; destination classified via labels and (optionally) eth_getCode."
+      },
+      "flow": "exit event \u2192 exchange routing (0\u20133 hops within window)",
+      "labels": {
+        "exchange_label_count": 37
+      },
+      "notes": [
+        "This is a LOWER BOUND: it counts only transfers to a small curated set of labeled exchange hot wallets.",
+        "Routing is checked within a fixed post-exit window and limited hops; more complex paths will be missed."
+      ],
+      "numerator": {
+        "amount": "75711.590913529309187615",
+        "basis": "exited FXS that reaches labeled exchange endpoints within window (any hop)",
+        "events": 4
+      },
+      "protocol": "Frax (veFXS)",
+      "selection": {
+        "top_n_recipients": 50,
+        "window_days": 30
+      },
+      "share_events_matched_percent": "7.8431372549019607843137254901960784313725490196078431372549019607843137254901961",
+      "share_to_exchanges_lower_bound_percent": "7.0533624343784694066542584246337358813605334463678109562638774965568985177492749",
+      "source_json": "research/frax-vefxs-exit-routing.json",
+      "token": "FXS"
+    },
     "livepeer_extraction_timing_traces": {
       "alternate_denominators": {
         "l2_withdraw_total": {

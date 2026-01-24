@@ -53,6 +53,15 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="The Graph: withdrawals → exchange routing" href="/research/thegraph-delegation-withdrawal-routing">
     Delegation withdrawal events and whether withdrawing delegators route GRT to labeled exchanges within a tight window (best-effort).
   </Card>
+  <Card title="Curve: veCRV withdraws → exchange routing" href="/research/curve-vecrv-exit-routing">
+    veCRV withdraw events and whether recipients route CRV to labeled exchanges within a tight window (best-effort).
+  </Card>
+  <Card title="Frax: veFXS withdraws → exchange routing" href="/research/frax-vefxs-exit-routing">
+    veFXS withdraw events and whether recipients route FXS to labeled exchanges within a tight window (best-effort).
+  </Card>
+  <Card title="Aave: stkAAVE redeem → exchange routing" href="/research/aave-stkaave-redeem-exit-routing">
+    stkAAVE redeem events and whether recipients route AAVE to labeled exchanges within a tight window (best-effort).
+  </Card>
   <Card title="Label sources" href="/research/address-label-sources">
     Where `data/labels.json` comes from and how to interpret “exchange routing” (lower bound).
   </Card>
@@ -79,6 +88,9 @@ This folder collects deeper dives and working notes used to ground the solution 
 - `research/pocket-liquidity-primitives.md`: Pocket Shannon (poktroll) unbonding + mint allocation snapshot.
 - `research/theta-liquidity-primitives.md`: Theta staking withdrawal delay excerpts (Guardian stake + TFUEL staking).
 - `research/thegraph-delegation-withdrawal-routing.md`: Graph delegation withdrawals and tight-window routing to labeled exchanges (best-effort).
+- `research/curve-vecrv-exit-routing.md`: Curve veCRV withdraw events and tight-window routing to labeled exchanges (best-effort).
+- `research/frax-vefxs-exit-routing.md`: Frax veFXS withdraw events and tight-window routing to labeled exchanges (best-effort).
+- `research/aave-stkaave-redeem-exit-routing.md`: Aave stkAAVE redeem events and tight-window routing to labeled exchanges (best-effort).
 - `research/address-label-sources.md`: where exchange/router labels come from + how to interpret “exchange routing” results.
 
 These were imported from the main workspace repo and should be edited/maintained here going forward.

@@ -18,6 +18,10 @@ Currently supported sources:
 - Livepeer (Ethereum L1): `research/l1-bridge-recipient-second-hop.json`
 - Livepeer (Arbitrum→Ethereum): `research/extraction-timing-traces.json`
 - The Graph (Ethereum): `research/thegraph-delegation-withdrawal-routing.json`
+- Generic ERC20 exit routing packs (Ethereum):
+  - Curve (veCRV): `research/curve-vecrv-exit-routing.json`
+  - Frax (veFXS): `research/frax-vefxs-exit-routing.json`
+  - Aave (stkAAVE Redeem): `research/aave-stkaave-redeem-exit-routing.json`
 Context sources (non exchange-routing; used for interpretation):
 - Filecoin lock/burn primitives: `research/filecoin-lock-burn-metrics.json`
 - DePIN exit-friction snapshot: `research/depin-liquidity-primitives-snapshot.json`
@@ -214,6 +218,85 @@ def _thegraph_withdrawal_routing_metrics(path: str) -> dict[str, Any]:
     }
 
 
+def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
+    data = _read_json(path)
+    analysis = data.get("analysis") if isinstance(data, dict) else {}
+    proto = data.get("protocol") if isinstance(data, dict) else {}
+    tok = data.get("token") if isinstance(data, dict) else {}
+    res = data.get("routing_results_top_recipients") if isinstance(data, dict) else {}
+
+    protocol_name = str((proto or {}).get("name") or "unknown")
+    chain = str((proto or {}).get("chain") or "ethereum")
+    token_symbol = str((tok or {}).get("symbol") or "token")
+
+    exit_events = int((res or {}).get("exit_events_considered") or 0)
+    exited = _d((res or {}).get("exit_amount_considered"))
+
+    matched_total_events = int((res or {}).get("matched_total_to_exchange_within_window_events") or 0)
+    matched_total = _d((res or {}).get("matched_total_to_exchange_within_window_amount"))
+
+    matched_direct_events = int((res or {}).get("matched_direct_to_exchange_within_window_events") or 0)
+    matched_direct = _d((res or {}).get("matched_direct_to_exchange_within_window_amount"))
+
+    matched_2hop_events = int((res or {}).get("matched_second_hop_to_exchange_within_window_events") or 0)
+    matched_2hop = _d((res or {}).get("matched_second_hop_to_exchange_within_window_amount"))
+
+    matched_3hop_events = int((res or {}).get("matched_third_hop_to_exchange_within_window_events") or 0)
+    matched_3hop = _d((res or {}).get("matched_third_hop_to_exchange_within_window_amount"))
+
+    window_days = int((analysis or {}).get("window_days") or 0)
+    top_n = int((analysis or {}).get("top_n") or 0)
+    exchange_labels = int((analysis or {}).get("labels_exchange_count") or 0)
+
+    first_hop_destinations: dict[str, Any] | None = None
+    fh = (res or {}).get("first_hop_breakdown") if isinstance(res, dict) else None
+    if isinstance(fh, dict):
+        cat_counts = fh.get("category_counts") or {}
+        cat_exited = fh.get("category_exit_amount") or {}
+        cat_first_hop = fh.get("category_first_hop_amount") or {}
+
+        shares: dict[str, str] = {}
+        if isinstance(cat_exited, dict):
+            for k, v in cat_exited.items():
+                shares[str(k)] = str(_pct(_d(v), exited))
+
+        first_hop_destinations = {
+            "method": fh.get("method"),
+            "category_counts": cat_counts if isinstance(cat_counts, dict) else {},
+            "category_exit_amount": cat_exited if isinstance(cat_exited, dict) else {},
+            "category_first_hop_amount": cat_first_hop if isinstance(cat_first_hop, dict) else {},
+            "category_exit_share_percent": shares,
+        }
+
+    return {
+        "source_json": path,
+        "chain": chain,
+        "token": token_symbol,
+        "protocol": protocol_name,
+        "flow": "exit event → exchange routing (0–3 hops within window)",
+        "denominator": {"basis": f"exited {token_symbol} (top recipients considered)", "amount": str(exited), "events": exit_events},
+        "numerator": {
+            "basis": f"exited {token_symbol} that reaches labeled exchange endpoints within window (any hop)",
+            "amount": str(matched_total),
+            "events": matched_total_events,
+        },
+        "share_to_exchanges_lower_bound_percent": str(_pct(matched_total, exited)),
+        "share_events_matched_percent": str(_pct(Decimal(matched_total_events), Decimal(exit_events))),
+        "breakdown": {
+            "direct": {"events": matched_direct_events, "amount": str(matched_direct), "share_percent": str(_pct(matched_direct, exited))},
+            "second_hop": {"events": matched_2hop_events, "amount": str(matched_2hop), "share_percent": str(_pct(matched_2hop, exited))},
+            "third_hop": {"events": matched_3hop_events, "amount": str(matched_3hop), "share_percent": str(_pct(matched_3hop, exited))},
+        },
+        "selection": {"window_days": window_days, "top_n_recipients": top_n},
+        "labels": {"exchange_label_count": exchange_labels},
+        "first_hop_destinations": first_hop_destinations,
+        "notes": [
+            "This is a LOWER BOUND: it counts only transfers to a small curated set of labeled exchange hot wallets.",
+            "Routing is checked within a fixed post-exit window and limited hops; more complex paths will be missed.",
+        ],
+    }
+
+
 def _livepeer_extraction_timing_traces_metrics(
     path: str, *, exchange_label_count: int | None = None
 ) -> dict[str, Any]:
@@ -390,6 +473,9 @@ def main() -> int:
     parser.add_argument("--livepeer-l1-second-hop-json", default="research/l1-bridge-recipient-second-hop.json")
     parser.add_argument("--livepeer-extraction-timing-traces-json", default="research/extraction-timing-traces.json")
     parser.add_argument("--thegraph-withdrawal-routing-json", default="research/thegraph-delegation-withdrawal-routing.json")
+    parser.add_argument("--curve-vecrv-exit-routing-json", default="research/curve-vecrv-exit-routing.json")
+    parser.add_argument("--frax-vefxs-exit-routing-json", default="research/frax-vefxs-exit-routing.json")
+    parser.add_argument("--aave-stkaave-redeem-exit-routing-json", default="research/aave-stkaave-redeem-exit-routing.json")
     parser.add_argument("--filecoin-lock-burn-metrics-json", default="research/filecoin-lock-burn-metrics.json")
     parser.add_argument("--depin-liquidity-primitives-snapshot-json", default="research/depin-liquidity-primitives-snapshot.json")
     parser.add_argument("--theta-liquidity-primitives-json", default="research/theta-liquidity-primitives.json")
@@ -407,6 +493,9 @@ def main() -> int:
         str(args.livepeer_extraction_timing_traces_json), exchange_label_count=exchange_label_count
     )
     thegraph = _thegraph_withdrawal_routing_metrics(str(args.thegraph_withdrawal_routing_json))
+    curve = _erc20_exit_routing_metrics(str(args.curve_vecrv_exit_routing_json))
+    frax = _erc20_exit_routing_metrics(str(args.frax_vefxs_exit_routing_json))
+    aave = _erc20_exit_routing_metrics(str(args.aave_stkaave_redeem_exit_routing_json))
     filecoin = _filecoin_lock_burn_intensity_metrics(str(args.filecoin_lock_burn_metrics_json))
     exit_friction = _exit_friction_context(
         str(args.depin_liquidity_primitives_snapshot_json), str(args.theta_liquidity_primitives_json)
@@ -423,6 +512,9 @@ def main() -> int:
             "livepeer_l1_second_hop": livepeer,
             "livepeer_extraction_timing_traces": livepeer_tight,
             "thegraph_delegation_withdrawal_routing": thegraph,
+            "curve_vecrv_exit_routing": curve,
+            "frax_vefxs_exit_routing": frax,
+            "aave_stkaave_redeem_exit_routing": aave,
         },
         "context": {"filecoin_lock_burn_intensity": filecoin, "exit_friction_snapshot": exit_friction},
         "notes": [
@@ -445,6 +537,18 @@ def main() -> int:
     gr_ex = _d(thegraph["numerator"]["amount_grt"])
     gr_total = _d(thegraph["denominator"]["amount_grt"])
     gr_pct = _pct(gr_ex, gr_total)
+
+    cv_ex = _d(curve["numerator"]["amount"])
+    cv_total = _d(curve["denominator"]["amount"])
+    cv_pct = _pct(cv_ex, cv_total)
+
+    fx_ex = _d(frax["numerator"]["amount"])
+    fx_total = _d(frax["denominator"]["amount"])
+    fx_pct = _pct(fx_ex, fx_total)
+
+    av_ex = _d(aave["numerator"]["amount"])
+    av_total = _d(aave["denominator"]["amount"])
+    av_pct = _pct(av_ex, av_total)
 
     ef = (exit_friction.get("protocols") or {}) if isinstance(exit_friction, dict) else {}
     lp_rounds = (ef.get("livepeer") or {}).get("unbonding_period_rounds")
@@ -500,6 +604,21 @@ def main() -> int:
     lines.append(
         f"| The Graph (GRT) | withdrawals (top delegators) | {gr_win}d window | ≤{gr_hops} | {gr_ex:.3f} GRT | {gr_total:.3f} GRT | {_fmt_pct(gr_pct)} |"
     )
+    # Curve row
+    cv_win = curve["selection"]["window_days"]
+    lines.append(
+        f"| Curve (CRV) | veCRV withdraws (top recipients) | {cv_win}d window | ≤3 | {cv_ex:.3f} CRV | {cv_total:.3f} CRV | {_fmt_pct(cv_pct)} |"
+    )
+    # Frax row
+    fx_win = frax["selection"]["window_days"]
+    lines.append(
+        f"| Frax (FXS) | veFXS withdraws (top recipients) | {fx_win}d window | ≤3 | {fx_ex:.3f} FXS | {fx_total:.3f} FXS | {_fmt_pct(fx_pct)} |"
+    )
+    # Aave row
+    av_win = aave["selection"]["window_days"]
+    lines.append(
+        f"| Aave (AAVE) | stkAAVE redeem (top recipients) | {av_win}d window | ≤3 | {av_ex:.3f} AAVE | {av_total:.3f} AAVE | {_fmt_pct(av_pct)} |"
+    )
     lines.append("")
     lines.append("## First hop destinations (where available)")
     lines.append("")
@@ -523,6 +642,28 @@ def main() -> int:
         f"| The Graph (GRT) | 1st hop after withdrawal (thresholded) | {_fmt_pct(gr_unk_eoa)} | {_fmt_pct(gr_unk_contract)} | {_fmt_pct(gr_no_first)} |"
     )
 
+    cv_fh = (curve.get("first_hop_destinations") or {}) if isinstance(curve, dict) else {}
+    cv_fh_shares = (cv_fh.get("category_exit_share_percent") or {}) if isinstance(cv_fh, dict) else {}
+    cv_unk_eoa = _d(cv_fh_shares.get("unknown_eoa"))
+    cv_unk_contract = _d(cv_fh_shares.get("unknown_contract"))
+    cv_no_first = _d(cv_fh_shares.get("no_first_hop_meeting_threshold"))
+    lines.append(f"| Curve (CRV) | 1st hop after veCRV withdraw (thresholded) | {_fmt_pct(cv_unk_eoa)} | {_fmt_pct(cv_unk_contract)} | {_fmt_pct(cv_no_first)} |")
+
+    fx_fh = (frax.get("first_hop_destinations") or {}) if isinstance(frax, dict) else {}
+    fx_fh_shares = (fx_fh.get("category_exit_share_percent") or {}) if isinstance(fx_fh, dict) else {}
+    fx_unk_eoa = _d(fx_fh_shares.get("unknown_eoa"))
+    fx_unk_contract = _d(fx_fh_shares.get("unknown_contract"))
+    fx_no_first = _d(fx_fh_shares.get("no_first_hop_meeting_threshold"))
+    lines.append(f"| Frax (FXS) | 1st hop after veFXS withdraw (thresholded) | {_fmt_pct(fx_unk_eoa)} | {_fmt_pct(fx_unk_contract)} | {_fmt_pct(fx_no_first)} |")
+
+    av_fh = (aave.get("first_hop_destinations") or {}) if isinstance(aave, dict) else {}
+    av_fh_shares = (av_fh.get("category_exit_share_percent") or {}) if isinstance(av_fh, dict) else {}
+    av_unk_eoa = _d(av_fh_shares.get("unknown_eoa"))
+    av_unk_contract = _d(av_fh_shares.get("unknown_contract"))
+    av_no_first = _d(av_fh_shares.get("no_first_hop_meeting_threshold"))
+    lines.append(f"| Aave (AAVE) | 1st hop after stkAAVE redeem (thresholded) | {_fmt_pct(av_unk_eoa)} | {_fmt_pct(av_unk_contract)} | {_fmt_pct(av_no_first)} |")
+
+    lines.append("")
     lines.append("## Notes (how to interpret)")
     lines.append("")
     lines.append("- These shares are **not directly comparable** unless you account for the denominator differences (selection rules, hop limits, and windows).")
@@ -568,6 +709,9 @@ def main() -> int:
     lines.append(f"- Livepeer L1 second hop JSON: `{args.livepeer_l1_second_hop_json}`")
     lines.append(f"- Livepeer timing traces JSON: `{args.livepeer_extraction_timing_traces_json}`")
     lines.append(f"- The Graph withdrawal routing JSON: `{args.thegraph_withdrawal_routing_json}`")
+    lines.append(f"- Curve veCRV exit routing JSON: `{args.curve_vecrv_exit_routing_json}`")
+    lines.append(f"- Frax veFXS exit routing JSON: `{args.frax_vefxs_exit_routing_json}`")
+    lines.append(f"- Aave stkAAVE redeem exit routing JSON: `{args.aave_stkaave_redeem_exit_routing_json}`")
     lines.append(f"- Filecoin lock/burn JSON: `{args.filecoin_lock_burn_metrics_json}`")
     lines.append(f"- DePIN exit-friction snapshot JSON: `{args.depin_liquidity_primitives_snapshot_json}`")
     lines.append(f"- Theta liquidity primitives JSON: `{args.theta_liquidity_primitives_json}`")
