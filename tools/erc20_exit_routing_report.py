@@ -37,10 +37,23 @@ from urllib.request import Request, urlopen
 getcontext().prec = 60
 
 ETHEREUM_RPC_DEFAULT = "https://ethereum.publicnode.com"
+ARBITRUM_RPC_DEFAULT = "https://arb1.arbitrum.io/rpc"
+
+# Arbitrum (L1) gateway router supports calculating the L2 token address for any L1 ERC20.
+ARBITRUM_L1_GATEWAY_ROUTER_DEFAULT = "0x72Ce9c846789fdB6fC1f34aC4AD25Dd9ef7031ef"
 
 # ERC20 Transfer(address,address,uint256)
 TOPIC0_TRANSFER = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
 
+# Arbitrum L1 gateway router deposit selector (also used in existing Arbitrum bridge-out tooling).
+# cast sig "outboundTransfer(address,address,uint256,bytes)" -> 0x7b3a3c8b
+SELECTOR_OUTBOUND_TRANSFER = "0x7b3a3c8b"
+
+# cast sig "getGateway(address)" -> 0xbda009fe
+SEL_GET_GATEWAY = "0xbda009fe"
+
+# cast sig "calculateL2TokenAddress(address)" -> 0xa7e28d48
+SEL_CALCULATE_L2_TOKEN_ADDRESS = "0xa7e28d48"
 
 class RpcError(RuntimeError):
     def __init__(self, message: str, *, status_code: int | None = None, retry_after_s: int | None = None) -> None:
@@ -266,6 +279,176 @@ def _eth_block_number(client: RpcClient) -> int:
     return _hex_to_int(_rpc_with_retries(client, "eth_blockNumber", []))
 
 
+def _eth_get_block(client: RpcClient, block_number: int) -> Dict[str, Any]:
+    blk = _rpc_with_retries(client, "eth_getBlockByNumber", [hex(int(block_number)), False])
+    if not isinstance(blk, dict):
+        raise RpcError(f"unexpected eth_getBlockByNumber result: {type(blk)}")
+    return blk
+
+
+def _eth_block_timestamp(client: RpcClient, block_number: int, cache: Dict[int, int]) -> int:
+    bn = int(block_number)
+    if bn in cache:
+        return int(cache[bn])
+    blk = _eth_get_block(client, bn)
+    ts = _hex_to_int(str(blk.get("timestamp") or "0x0"))
+    cache[bn] = int(ts)
+    return int(ts)
+
+
+def _eth_get_transaction(client: RpcClient, tx_hash: str, cache: Dict[str, Dict[str, Any] | None]) -> Dict[str, Any] | None:
+    txh = str(tx_hash).lower()
+    if txh in cache:
+        return cache[txh]
+    tx = _rpc_with_retries(client, "eth_getTransactionByHash", [txh])
+    if tx is None:
+        cache[txh] = None
+        return None
+    if not isinstance(tx, dict):
+        raise RpcError(f"unexpected eth_getTransactionByHash result: {type(tx)}")
+    cache[txh] = tx
+    return tx
+
+
+def _abi_word_address(addr: str) -> str:
+    a = _normalize_address(addr)
+    return "0" * 24 + a[2:]
+
+
+def _eth_call(client: RpcClient, *, to_addr: str, data: str, block_tag: str = "latest") -> str:
+    res = _rpc_with_retries(client, "eth_call", [{"to": _normalize_address(to_addr), "data": str(data)}, str(block_tag)])
+    return str(res or "")
+
+
+def _eth_call_address(client: RpcClient, *, to_addr: str, data: str, block_tag: str = "latest") -> str:
+    res = _eth_call(client, to_addr=to_addr, data=data, block_tag=block_tag)
+    s = str(res).lower()
+    if not s.startswith("0x") or len(s) < 66:
+        raise RpcError(f"unexpected eth_call address result: {res!r}")
+    return _normalize_address("0x" + s[-40:])
+
+
+def _calculate_arbitrum_l2_token_address(
+    eth: RpcClient,
+    *,
+    l1_gateway_router: str,
+    l1_token: str,
+    cache: Dict[str, str],
+) -> str:
+    """Resolve Arbitrum One L2 token address for a given L1 token via the L1 gateway router."""
+
+    l1 = _normalize_address(l1_token)
+    if l1 in cache:
+        return cache[l1]
+
+    call_data = SEL_CALCULATE_L2_TOKEN_ADDRESS + _abi_word_address(l1)
+    l2 = _eth_call_address(eth, to_addr=_normalize_address(l1_gateway_router), data=call_data)
+    cache[l1] = l2
+    return l2
+
+
+def _arbitrum_l1_gateway_for_token(
+    eth: RpcClient,
+    *,
+    l1_gateway_router: str,
+    l1_token: str,
+    cache: Dict[str, str],
+) -> str:
+    """Resolve the Arbitrum One L1 gateway contract used for a given L1 ERC20 token."""
+
+    l1 = _normalize_address(l1_token)
+    if l1 in cache:
+        return cache[l1]
+
+    call_data = SEL_GET_GATEWAY + _abi_word_address(l1)
+    gw = _eth_call_address(eth, to_addr=_normalize_address(l1_gateway_router), data=call_data)
+    cache[l1] = gw
+    return gw
+
+
+def _decode_outbound_transfer(calldata_hex: str) -> Dict[str, Any]:
+    """
+    Decode `outboundTransfer(address,address,uint256,bytes)` call data.
+
+    ABI layout:
+    - 4 bytes selector
+    - 4 x 32-byte words: token, to, amount, offset(data)
+    - dynamic bytes tail: len, data
+    """
+
+    if not calldata_hex or not calldata_hex.startswith("0x"):
+        raise ValueError("calldata must be 0x-prefixed")
+    if len(calldata_hex) < 10:
+        raise ValueError("calldata too short")
+
+    selector = "0x" + calldata_hex[2:10].lower()
+    if selector != SELECTOR_OUTBOUND_TRANSFER:
+        raise ValueError(f"unexpected selector: {selector}")
+
+    args_hex = calldata_hex[10:]
+    if len(args_hex) < 64 * 4:
+        raise ValueError("calldata args too short")
+
+    def word(i: int) -> str:
+        return args_hex[i * 64 : (i + 1) * 64]
+
+    token_word = word(0)
+    to_word = word(1)
+    amount_word = word(2)
+    offset_word = word(3)
+
+    token = _normalize_address("0x" + token_word[-40:])
+    to = _normalize_address("0x" + to_word[-40:])
+    amount = int(amount_word, 16)
+    offset = int(offset_word, 16)
+
+    data_offset_hex = offset * 2
+    if data_offset_hex + 64 > len(args_hex):
+        raise ValueError("data offset out of bounds")
+    data_len = int(args_hex[data_offset_hex : data_offset_hex + 64], 16)
+    data_start = data_offset_hex + 64
+    data_end = data_start + (data_len * 2)
+    if data_end > len(args_hex):
+        raise ValueError("data length out of bounds")
+    data = "0x" + args_hex[data_start:data_end]
+
+    return {
+        "selector": selector,
+        "token": token,
+        "to": to,
+        "amount": int(amount),
+        "data": data,
+    }
+
+
+def _find_block_at_or_after_timestamp(
+    client: RpcClient,
+    *,
+    target_ts: int,
+    low_block: int,
+    high_block: int,
+    ts_cache: Dict[int, int],
+) -> int:
+    """
+    Binary-search the first block whose timestamp >= target_ts.
+
+    Uses eth_getBlockByNumber; caches block->timestamp in ts_cache.
+    """
+
+    low = int(max(0, low_block))
+    high = int(max(low, high_block))
+    target = int(target_ts)
+
+    while low < high:
+        mid = (low + high) // 2
+        mid_ts = _eth_block_timestamp(client, mid, ts_cache)
+        if mid_ts < target:
+            low = mid + 1
+        else:
+            high = mid
+    return int(low)
+
+
 def _load_json(path: str) -> Any:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -309,6 +492,16 @@ class OutgoingTransfer:
     block_number: int
     tx_hash: str
     to_addr: str
+    amount_wei: int
+
+
+@dataclass(frozen=True)
+class ArbitrumBridgeDeposit:
+    """Best-effort Arbitrum One bridge deposit detected via L1 gateway router outboundTransfer()."""
+
+    block_number: int
+    tx_hash: str
+    l2_to: str
     amount_wei: int
 
 
@@ -393,6 +586,91 @@ def _scan_exchange_transfers_from(
     return out
 
 
+def _scan_arbitrum_bridge_deposits(
+    eth: RpcClient,
+    *,
+    outgoing_transfers: List[OutgoingTransfer],
+    l1_token_addr: str,
+    l1_token_gateway: str | None,
+    l1_gateway_router: str,
+    tx_cache: Dict[str, Dict[str, Any] | None],
+) -> List[ArbitrumBridgeDeposit]:
+    """
+    Detect Arbitrum deposits for this token by inspecting tx calldata.
+
+    We use outgoing token Transfer logs (from sender) and then check whether the tx is a call to the
+    Arbitrum L1 gateway router with selector outboundTransfer(address,address,uint256,bytes).
+
+    This catches deposits *initiated by the sender address*. It does not catch "sender -> contract -> bridge"
+    patterns where a contract bridges on the sender's behalf.
+    """
+
+    deposits: List[ArbitrumBridgeDeposit] = []
+    seen_tx: set[str] = set()
+    token_norm = _normalize_address(l1_token_addr)
+    router_norm = _normalize_address(l1_gateway_router)
+    gateway_norm: str | None = None
+    if l1_token_gateway:
+        try:
+            gateway_norm = _normalize_address(str(l1_token_gateway))
+        except Exception:
+            gateway_norm = None
+    allowed_call_targets = {router_norm}
+    if gateway_norm:
+        allowed_call_targets.add(gateway_norm)
+
+    for t in outgoing_transfers:
+        if gateway_norm:
+            try:
+                if _normalize_address(str(t.to_addr)) != gateway_norm:
+                    continue
+            except Exception:
+                continue
+
+        txh = str(t.tx_hash).lower()
+        if not txh or txh in seen_tx:
+            continue
+        seen_tx.add(txh)
+
+        tx = _eth_get_transaction(eth, txh, tx_cache)
+        if not tx:
+            continue
+
+        to_addr = tx.get("to")
+        if not to_addr:
+            continue
+        try:
+            if _normalize_address(str(to_addr)) not in allowed_call_targets:
+                continue
+        except Exception:
+            continue
+
+        input_data = str(tx.get("input") or "").lower()
+        if not input_data.startswith(SELECTOR_OUTBOUND_TRANSFER):
+            continue
+
+        try:
+            decoded = _decode_outbound_transfer(input_data)
+        except Exception:
+            continue
+
+        try:
+            if _normalize_address(str(decoded.get("token") or "")) != token_norm:
+                continue
+            l2_to = _normalize_address(str(decoded.get("to") or "0x0000000000000000000000000000000000000000"))
+            amount_wei = int(decoded.get("amount") or 0)
+        except Exception:
+            continue
+
+        if amount_wei <= 0:
+            continue
+
+        deposits.append(ArbitrumBridgeDeposit(block_number=int(t.block_number), tx_hash=txh, l2_to=l2_to, amount_wei=int(amount_wei)))
+
+    deposits.sort(key=lambda x: (x.block_number, x.tx_hash))
+    return deposits
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--eth-rpc", default=os.environ.get("ETH_RPC_URL") or ETHEREUM_RPC_DEFAULT)
@@ -429,6 +707,24 @@ def main() -> int:
     parser.add_argument("--include-third-hop", action="store_true", help="Search third hop: recipient → inter1 → inter2 → exchange.")
     parser.add_argument("--classify-first-hop-dests", action="store_true", help="Classify first hop destination as EOA vs contract.")
     parser.add_argument("--classify-intermediates", action="store_true", help="For hop paths, classify intermediates as EOA vs contract.")
+    parser.add_argument(
+        "--include-arbitrum-followup",
+        action="store_true",
+        help="Detect Arbitrum L1 gateway deposits after exits (outboundTransfer) and follow token transfers on Arbitrum (best-effort).",
+    )
+    parser.add_argument("--arbitrum-rpc", default=os.environ.get("ARBITRUM_RPC_URL") or ARBITRUM_RPC_DEFAULT)
+    parser.add_argument("--arbitrum-l1-gateway-router", default=ARBITRUM_L1_GATEWAY_ROUTER_DEFAULT)
+    parser.add_argument(
+        "--arbitrum-followup-window-days",
+        type=int,
+        default=7,
+        help="After a detected Arbitrum deposit, how long to watch Arbitrum transfers for exchange routing (days, by timestamp).",
+    )
+    parser.add_argument(
+        "--arbitrum-include-second-hop",
+        action="store_true",
+        help="Arbitrum follow-up: also check one intermediate hop before reaching an exchange (recipient → intermediate → exchange).",
+    )
 
     parser.add_argument(
         "--max-first-hops-per-exit", type=int, default=6, help="Second hop: max first-hop transfers to consider per exit."
@@ -511,6 +807,38 @@ def main() -> int:
     from_block = max(0, to_block - int(args.days) * int(args.blocks_per_day))
     window_blocks = int(args.window_days) * int(args.blocks_per_day)
 
+    tx_cache: Dict[str, Dict[str, Any] | None] = {}
+    eth_block_ts_cache: Dict[int, int] = {}
+
+    include_arbitrum_followup = bool(args.include_arbitrum_followup)
+    arbitrum_followup_window_days = int(args.arbitrum_followup_window_days)
+    arb_l1_gateway_router = _normalize_address(str(args.arbitrum_l1_gateway_router))
+    arb: RpcClient | None = None
+    arb_latest_block: int | None = None
+    arb_latest_ts: int | None = None
+    arb_block_ts_cache: Dict[int, int] = {}
+    arb_l2_token_addr: str | None = None
+    arb_l2_token_cache: Dict[str, str] = {}
+    arb_l1_token_gateway: str | None = None
+    arb_gateway_cache: Dict[str, str] = {}
+
+    if include_arbitrum_followup:
+        arb = RpcClient(str(args.arbitrum_rpc), user_agent="livepeer-delegation-research/erc20-exit-routing-arbitrum")
+        arb_latest_block = _eth_block_number(arb)
+        arb_latest_ts = _eth_block_timestamp(arb, int(arb_latest_block), arb_block_ts_cache)
+        arb_l1_token_gateway = _arbitrum_l1_gateway_for_token(
+            eth,
+            l1_gateway_router=arb_l1_gateway_router,
+            l1_token=token_addr,
+            cache=arb_gateway_cache,
+        )
+        arb_l2_token_addr = _calculate_arbitrum_l2_token_address(
+            eth,
+            l1_gateway_router=arb_l1_gateway_router,
+            l1_token=token_addr,
+            cache=arb_l2_token_cache,
+        )
+
     print(f"scan exit events: contract={exit_contract} topic0={topic0_exit} range {from_block:,}..{to_block:,}")
     exit_logs = _get_logs_chunked(
         eth,
@@ -579,6 +907,7 @@ def main() -> int:
 
     transfer_to_exchange_by_recipient: Dict[str, List[ExchangeTransfer]] = {}
     outgoing_transfers_by_recipient: Dict[str, List[OutgoingTransfer]] = {}
+    arb_deposits_by_recipient: Dict[str, List[ArbitrumBridgeDeposit]] = {}
 
     for addr_norm in sorted(top_set):
         print(f"scan transfers: recipient={addr_norm} to exchanges (range {transfer_from_block:,}..{transfer_to_block:,})")
@@ -591,7 +920,7 @@ def main() -> int:
             exchange_topics=exchange_topics,
             chunk_size=int(args.log_chunk_size),
         )
-        if args.include_second_hop or args.include_third_hop or args.classify_first_hop_dests:
+        if include_arbitrum_followup or args.include_second_hop or args.include_third_hop or args.classify_first_hop_dests:
             print(f"scan outgoing: recipient={addr_norm} (range {transfer_from_block:,}..{transfer_to_block:,})")
             outgoing_transfers_by_recipient[addr_norm] = _scan_outgoing_transfers(
                 eth,
@@ -601,9 +930,24 @@ def main() -> int:
                 to_block=transfer_to_block,
                 chunk_size=int(args.log_chunk_size),
             )
+        if include_arbitrum_followup:
+            outgoing_for_addr = outgoing_transfers_by_recipient.get(addr_norm) or []
+            if outgoing_for_addr:
+                print(f"scan Arbitrum deposits: sender={addr_norm}")
+                arb_deposits_by_recipient[addr_norm] = _scan_arbitrum_bridge_deposits(
+                    eth,
+                    outgoing_transfers=outgoing_for_addr,
+                    l1_token_addr=token_addr,
+                    l1_token_gateway=arb_l1_token_gateway,
+                    l1_gateway_router=arb_l1_gateway_router,
+                    tx_cache=tx_cache,
+                )
 
     banned_intermediates = {token_addr, exit_contract, _normalize_address("0x0000000000000000000000000000000000000000")}
     banned_intermediates.update(labeled_non_exchange_addrs)
+    arb_banned_intermediates: set[str] = set(banned_intermediates)
+    if include_arbitrum_followup and arb_l2_token_addr:
+        arb_banned_intermediates.add(_normalize_address(str(arb_l2_token_addr)))
 
     classify_first_hop_dests = bool(args.classify_first_hop_dests)
     intermediate_code_cache: Dict[str, bool] = {}
@@ -649,6 +993,19 @@ def main() -> int:
 
     exchange_transfers_from_cache: Dict[str, Dict[str, Any]] = {}
     outgoing_transfers_from_cache: Dict[str, Dict[str, Any]] = {}
+
+    # Cross-chain follow-up (Ethereum -> Arbitrum bridge deposit -> exchange routing on Arbitrum).
+    arb_bridge_deposit_event_count = 0
+    arb_bridge_deposit_exit_wei = 0
+    arb_bridge_deposit_token_wei = 0
+    arb_matched_exchange_event_count = 0
+    arb_matched_exchange_exit_wei = 0
+    arb_matched_exchange_token_wei = 0
+    arb_exchange_counter: Counter[str] = Counter()
+    arb_bridge_examples: List[Dict[str, Any]] = []
+    arb_matched_exchange_examples: List[Dict[str, Any]] = []
+    arb_exchange_transfers_from_cache: Dict[str, Dict[str, Any]] = {}
+    arb_outgoing_transfers_from_cache: Dict[str, Dict[str, Any]] = {}
 
     # Process chronologically so caches tend to extend forward only.
     for e in considered_exits:
@@ -702,6 +1059,327 @@ def main() -> int:
                 "first_hop_amount": str(_wei_to_token(firsthop_amount_wei)) if firsthop_amount_wei is not None else None,
             },
         )
+
+        # Optional follow-up: detect Arbitrum bridge deposits after exit and check if the bridged tokens
+        # route into labeled exchange endpoints on Arbitrum (best-effort lower bound).
+        if include_arbitrum_followup and arb is not None and arb_latest_block is not None and arb_latest_ts is not None and arb_l2_token_addr is not None:
+            deposits = arb_deposits_by_recipient.get(recipient_norm) or []
+            deposit: ArbitrumBridgeDeposit | None = None
+            for d in deposits:
+                if int(d.block_number) <= int(e.block_number):
+                    continue
+                if int(d.block_number) > int(end_block):
+                    break
+                deposit = d
+                break
+
+            if deposit is not None:
+                arb_bridge_deposit_event_count += 1
+                arb_bridge_deposit_exit_wei += int(e.amount_wei)
+                arb_bridge_deposit_token_wei += int(deposit.amount_wei)
+
+                deposit_ts = _eth_block_timestamp(eth, int(deposit.block_number), eth_block_ts_cache)
+                if len(arb_bridge_examples) < 25:
+                    arb_bridge_examples.append(
+                        {
+                            "exit_block": int(e.block_number),
+                            "exit_tx": str(e.tx_hash),
+                            "recipient": str(e.recipient),
+                            "exit_amount": str(_wei_to_token(e.amount_wei)),
+                            "l1_deposit_block": int(deposit.block_number),
+                            "l1_deposit_tx": str(deposit.tx_hash),
+                            "l2_recipient": str(deposit.l2_to),
+                            "deposit_amount": str(_wei_to_token(deposit.amount_wei)),
+                            "deposit_block_timestamp": int(deposit_ts),
+                        }
+                    )
+
+                # Map L1 deposit timestamp into an Arbitrum block range, then look for transfers into labeled exchanges.
+                try:
+                    arb_start_block = _find_block_at_or_after_timestamp(
+                        arb,
+                        target_ts=int(deposit_ts),
+                        low_block=0,
+                        high_block=int(arb_latest_block),
+                        ts_cache=arb_block_ts_cache,
+                    )
+                except Exception:
+                    arb_start_block = 0
+
+                followup_end_ts = int(deposit_ts + arbitrum_followup_window_days * 86400)
+                if followup_end_ts >= int(arb_latest_ts):
+                    arb_end_block = int(arb_latest_block)
+                else:
+                    try:
+                        arb_end_block = _find_block_at_or_after_timestamp(
+                            arb,
+                            target_ts=followup_end_ts,
+                            low_block=int(arb_start_block),
+                            high_block=int(arb_latest_block),
+                            ts_cache=arb_block_ts_cache,
+                        )
+                    except Exception:
+                        arb_end_block = int(arb_latest_block)
+
+                if arb_start_block <= arb_end_block:
+                    # Direct: L2 recipient -> labeled exchange
+                    l2_sender = _normalize_address(str(deposit.l2_to))
+                    cache = arb_exchange_transfers_from_cache.get(l2_sender)
+                    if cache is None:
+                        try:
+                            fetched = _scan_exchange_transfers_from(
+                                arb,
+                                token_addr=str(arb_l2_token_addr),
+                                from_addr=l2_sender,
+                                from_block=int(arb_start_block),
+                                to_block=int(arb_end_block),
+                                exchange_topics=exchange_topics,
+                                chunk_size=int(args.log_chunk_size),
+                            )
+                        except Exception:
+                            fetched = []
+                        cache = {"from_block": int(arb_start_block), "to_block": int(arb_end_block), "transfers": fetched}
+                        arb_exchange_transfers_from_cache[l2_sender] = cache
+                    else:
+                        cached_from = int(cache.get("from_block") or 0)
+                        cached_to = int(cache.get("to_block") or 0)
+                        if int(arb_start_block) < cached_from:
+                            try:
+                                extra = _scan_exchange_transfers_from(
+                                    arb,
+                                    token_addr=str(arb_l2_token_addr),
+                                    from_addr=l2_sender,
+                                    from_block=int(arb_start_block),
+                                    to_block=int(cached_from - 1),
+                                    exchange_topics=exchange_topics,
+                                    chunk_size=int(args.log_chunk_size),
+                                )
+                            except Exception:
+                                extra = []
+                            cache["from_block"] = int(arb_start_block)
+                            cache["transfers"] = list(extra) + list(cache.get("transfers") or [])
+                        if int(arb_end_block) > cached_to:
+                            try:
+                                extra = _scan_exchange_transfers_from(
+                                    arb,
+                                    token_addr=str(arb_l2_token_addr),
+                                    from_addr=l2_sender,
+                                    from_block=int(cached_to + 1),
+                                    to_block=int(arb_end_block),
+                                    exchange_topics=exchange_topics,
+                                    chunk_size=int(args.log_chunk_size),
+                                )
+                            except Exception:
+                                extra = []
+                            cache["to_block"] = int(arb_end_block)
+                            cache["transfers"] = list(cache.get("transfers") or []) + list(extra)
+
+                    arb_direct = [
+                        t
+                        for t in (cache.get("transfers") or [])
+                        if int(t.block_number) >= int(arb_start_block) and int(t.block_number) <= int(arb_end_block)
+                    ]
+                    direct_best = arb_direct[0] if arb_direct else None
+                    if direct_best is not None:
+                        arb_matched_exchange_event_count += 1
+                        arb_matched_exchange_exit_wei += int(e.amount_wei)
+                        arb_matched_exchange_token_wei += int(direct_best.amount_wei)
+                        arb_exchange_counter[_normalize_address(direct_best.to_addr)] += 1
+                        if len(arb_matched_exchange_examples) < 25:
+                            arb_matched_exchange_examples.append(
+                                {
+                                    "exit_block": int(e.block_number),
+                                    "exit_tx": str(e.tx_hash),
+                                    "recipient": str(e.recipient),
+                                    "exit_amount": str(_wei_to_token(e.amount_wei)),
+                                    "l1_deposit_tx": str(deposit.tx_hash),
+                                    "l2_recipient": str(deposit.l2_to),
+                                    "arbitrum_start_block": int(arb_start_block),
+                                    "arbitrum_end_block": int(arb_end_block),
+                                    "exchange_to": str(direct_best.to_addr),
+                                    "exchange_label": exchange_labels.get(_normalize_address(direct_best.to_addr), {}).get("name"),
+                                    "exchange_tx": str(direct_best.tx_hash),
+                                    "exchange_block": int(direct_best.block_number),
+                                    "exchange_transfer_amount": str(_wei_to_token(direct_best.amount_wei)),
+                                }
+                            )
+                    elif bool(args.arbitrum_include_second_hop):
+                        # Second hop: L2 recipient -> intermediate -> labeled exchange (best-effort).
+                        min_first_hop_fraction = Decimal(args.min_first_hop_fraction)
+                        min_first_hop_wei_arb = max(
+                            int((Decimal(args.min_first_hop_token) * scale).to_integral_value(rounding="ROUND_FLOOR")),
+                            int((Decimal(int(deposit.amount_wei)) * min_first_hop_fraction).to_integral_value(rounding="ROUND_FLOOR")),
+                        )
+
+                        out_cache = arb_outgoing_transfers_from_cache.get(l2_sender)
+                        if out_cache is None:
+                            try:
+                                fetched_out = _scan_outgoing_transfers(
+                                    arb,
+                                    token_addr=str(arb_l2_token_addr),
+                                    from_addr=l2_sender,
+                                    from_block=int(arb_start_block),
+                                    to_block=int(arb_end_block),
+                                    chunk_size=int(args.log_chunk_size),
+                                )
+                            except Exception:
+                                fetched_out = []
+                            out_cache = {"from_block": int(arb_start_block), "to_block": int(arb_end_block), "transfers": fetched_out}
+                            arb_outgoing_transfers_from_cache[l2_sender] = out_cache
+                        else:
+                            cached_from = int(out_cache.get("from_block") or 0)
+                            cached_to = int(out_cache.get("to_block") or 0)
+                            if int(arb_start_block) < cached_from:
+                                try:
+                                    extra_out = _scan_outgoing_transfers(
+                                        arb,
+                                        token_addr=str(arb_l2_token_addr),
+                                        from_addr=l2_sender,
+                                        from_block=int(arb_start_block),
+                                        to_block=int(cached_from - 1),
+                                        chunk_size=int(args.log_chunk_size),
+                                    )
+                                except Exception:
+                                    extra_out = []
+                                out_cache["from_block"] = int(arb_start_block)
+                                out_cache["transfers"] = list(extra_out) + list(out_cache.get("transfers") or [])
+                            if int(arb_end_block) > cached_to:
+                                try:
+                                    extra_out = _scan_outgoing_transfers(
+                                        arb,
+                                        token_addr=str(arb_l2_token_addr),
+                                        from_addr=l2_sender,
+                                        from_block=int(cached_to + 1),
+                                        to_block=int(arb_end_block),
+                                        chunk_size=int(args.log_chunk_size),
+                                    )
+                                except Exception:
+                                    extra_out = []
+                                out_cache["to_block"] = int(arb_end_block)
+                                out_cache["transfers"] = list(out_cache.get("transfers") or []) + list(extra_out)
+
+                        arb_outgoing = [
+                            t
+                            for t in (out_cache.get("transfers") or [])
+                            if int(t.block_number) >= int(arb_start_block) and int(t.block_number) <= int(arb_end_block)
+                        ]
+
+                        candidates: List[OutgoingTransfer] = []
+                        for t in arb_outgoing:
+                            to_norm = _normalize_address(t.to_addr)
+                            if to_norm in arb_banned_intermediates or to_norm == _normalize_address(str(deposit.l2_to)):
+                                continue
+                            if to_norm in exchange_labels:
+                                continue
+                            if int(t.amount_wei) < int(min_first_hop_wei_arb):
+                                continue
+                            candidates.append(t)
+
+                        candidates.sort(key=lambda x: (-int(x.amount_wei), int(x.block_number), x.tx_hash))
+                        candidates = candidates[: max(0, int(args.max_first_hops_per_exit))]
+
+                        best_second: Dict[str, Any] | None = None
+                        for first in candidates:
+                            intermediate = _normalize_address(first.to_addr)
+                            if intermediate in arb_banned_intermediates:
+                                continue
+
+                            query_from = int(first.block_number + 1)
+                            query_to = int(arb_end_block)
+                            if query_from > query_to:
+                                continue
+
+                            cache2 = arb_exchange_transfers_from_cache.get(intermediate)
+                            if cache2 is None:
+                                try:
+                                    fetched2 = _scan_exchange_transfers_from(
+                                        arb,
+                                        token_addr=str(arb_l2_token_addr),
+                                        from_addr=intermediate,
+                                        from_block=query_from,
+                                        to_block=query_to,
+                                        exchange_topics=exchange_topics,
+                                        chunk_size=int(args.log_chunk_size),
+                                    )
+                                except Exception:
+                                    fetched2 = []
+                                cache2 = {"from_block": int(query_from), "to_block": int(query_to), "transfers": fetched2}
+                                arb_exchange_transfers_from_cache[intermediate] = cache2
+                            else:
+                                cached_from = int(cache2.get("from_block") or 0)
+                                cached_to = int(cache2.get("to_block") or 0)
+                                if query_from < cached_from:
+                                    try:
+                                        extra = _scan_exchange_transfers_from(
+                                            arb,
+                                            token_addr=str(arb_l2_token_addr),
+                                            from_addr=intermediate,
+                                            from_block=int(query_from),
+                                            to_block=int(cached_from - 1),
+                                            exchange_topics=exchange_topics,
+                                            chunk_size=int(args.log_chunk_size),
+                                        )
+                                    except Exception:
+                                        extra = []
+                                    cache2["from_block"] = int(query_from)
+                                    cache2["transfers"] = list(extra) + list(cache2.get("transfers") or [])
+                                if query_to > cached_to:
+                                    try:
+                                        extra = _scan_exchange_transfers_from(
+                                            arb,
+                                            token_addr=str(arb_l2_token_addr),
+                                            from_addr=intermediate,
+                                            from_block=int(cached_to + 1),
+                                            to_block=int(query_to),
+                                            exchange_topics=exchange_topics,
+                                            chunk_size=int(args.log_chunk_size),
+                                        )
+                                    except Exception:
+                                        extra = []
+                                    cache2["to_block"] = int(query_to)
+                                    cache2["transfers"] = list(cache2.get("transfers") or []) + list(extra)
+
+                            t2_list = [t for t in (cache2.get("transfers") or []) if int(t.block_number) >= query_from and int(t.block_number) <= query_to]
+
+                            if not t2_list:
+                                continue
+                            second = t2_list[0]
+                            candidate_second: Dict[str, Any] = {
+                                "exit_block": int(e.block_number),
+                                "exit_tx": str(e.tx_hash),
+                                "recipient": str(e.recipient),
+                                "exit_amount": str(_wei_to_token(e.amount_wei)),
+                                "l1_deposit_tx": str(deposit.tx_hash),
+                                "l2_recipient": str(deposit.l2_to),
+                                "first_hop_to": intermediate,
+                                "first_hop_tx": str(first.tx_hash),
+                                "first_hop_block": int(first.block_number),
+                                "first_hop_amount": str(_wei_to_token(first.amount_wei)),
+                                "second_hop_exchange_to": str(second.to_addr),
+                                "second_hop_exchange_label": exchange_labels.get(_normalize_address(second.to_addr), {}).get("name"),
+                                "second_hop_tx": str(second.tx_hash),
+                                "second_hop_block": int(second.block_number),
+                                "second_hop_exchange_amount_wei": int(second.amount_wei),
+                                "second_hop_exchange_amount": str(_wei_to_token(second.amount_wei)),
+                            }
+
+                            if best_second is None:
+                                best_second = candidate_second
+                            else:
+                                if int(candidate_second["second_hop_block"]) < int(best_second["second_hop_block"]):
+                                    best_second = candidate_second
+                                elif int(candidate_second["second_hop_block"]) == int(best_second["second_hop_block"]):
+                                    if Decimal(candidate_second["first_hop_amount"]) > Decimal(best_second["first_hop_amount"]):
+                                        best_second = candidate_second
+
+                        if best_second is not None:
+                            arb_matched_exchange_event_count += 1
+                            arb_matched_exchange_exit_wei += int(e.amount_wei)
+                            arb_matched_exchange_token_wei += int(best_second.get("second_hop_exchange_amount_wei") or 0)
+                            exchange_to = _normalize_address(str(best_second["second_hop_exchange_to"]))
+                            arb_exchange_counter[exchange_to] += 1
+                            if len(arb_matched_exchange_examples) < 25:
+                                arb_matched_exchange_examples.append(best_second)
 
         # Direct: recipient -> labeled exchange
         transfers = transfer_to_exchange_by_recipient.get(recipient_norm) or []
@@ -1083,6 +1761,15 @@ def main() -> int:
             "include_third_hop": bool(args.include_third_hop),
             "classify_first_hop_dests": bool(args.classify_first_hop_dests),
             "classify_intermediates": bool(args.classify_intermediates),
+            "arbitrum_followup": {
+                "enabled": bool(include_arbitrum_followup),
+                "rpc": str(args.arbitrum_rpc) if include_arbitrum_followup else None,
+                "l1_gateway_router": str(arb_l1_gateway_router) if include_arbitrum_followup else None,
+                "l1_token_gateway": str(arb_l1_token_gateway) if include_arbitrum_followup and arb_l1_token_gateway else None,
+                "l2_token_address": str(arb_l2_token_addr) if include_arbitrum_followup and arb_l2_token_addr else None,
+                "followup_window_days": int(arbitrum_followup_window_days) if include_arbitrum_followup else None,
+                "include_second_hop": bool(args.arbitrum_include_second_hop) if include_arbitrum_followup else None,
+            },
             "thresholds": {
                 "max_first_hops_per_exit": int(args.max_first_hops_per_exit),
                 "min_first_hop_token": str(Decimal(args.min_first_hop_token)),
@@ -1113,6 +1800,21 @@ def main() -> int:
             "matched_third_hop_to_exchange_within_window_amount": str(_wei_to_token(matched_third_exit_wei)),
             "matched_total_to_exchange_within_window_events": int(matched_total_event_count),
             "matched_total_to_exchange_within_window_amount": str(_wei_to_token(matched_total_exit_wei)),
+            "arbitrum_followup": {
+                "enabled": bool(include_arbitrum_followup),
+                "bridge_deposit_events": int(arb_bridge_deposit_event_count),
+                "bridge_deposit_exit_amount": str(_wei_to_token(arb_bridge_deposit_exit_wei)),
+                "bridge_deposit_token_amount": str(_wei_to_token(arb_bridge_deposit_token_wei)),
+                "matched_to_exchange_events": int(arb_matched_exchange_event_count),
+                "matched_to_exchange_exit_amount": str(_wei_to_token(arb_matched_exchange_exit_wei)),
+                "matched_to_exchange_token_amount": str(_wei_to_token(arb_matched_exchange_token_wei)),
+                "top_exchange_endpoints_by_count": [
+                    {"address": str(a), "label": exchange_labels.get(a, {}).get("name"), "count": int(c)}
+                    for a, c in arb_exchange_counter.most_common(10)
+                ],
+                "examples_bridge_deposit": arb_bridge_examples,
+                "examples_matched_to_exchange": arb_matched_exchange_examples,
+            },
             "first_hop_breakdown": first_hop_breakdown,
             "top_exchange_endpoints_by_count": [
                 {
@@ -1129,6 +1831,7 @@ def main() -> int:
         "notes": [
             "Exchange routing is a LOWER BOUND: labels are incomplete and hop/window limits miss many paths.",
             "Matched amounts are summed by exit event amount (not the exchange transfer amount).",
+            "Arbitrum follow-up (when enabled) is best-effort: it only detects deposits via the Arbitrum L1 gateway router outboundTransfer() and only counts transfers into labeled exchanges on Arbitrum.",
         ],
     }
 
@@ -1174,6 +1877,37 @@ def main() -> int:
     lines.append(f"- Third hop matched amount (lower bound): **{_format_token(_wei_to_token(matched_third_exit_wei))} {args.token_symbol}**")
     lines.append(f"- Total matched (events): **{matched_total_event_count}**")
     lines.append(f"- Total matched amount (lower bound): **{_format_token(_wei_to_token(matched_total_exit_wei))} {args.token_symbol}**")
+
+    if include_arbitrum_followup:
+        lines.append("")
+        lines.append("## Arbitrum follow-up (L1 bridge deposit → exchange routing; best-effort)")
+        lines.append("")
+        lines.append(f"- Arbitrum RPC: `{args.arbitrum_rpc}`")
+        lines.append(f"- L1 gateway router: `{arb_l1_gateway_router}`")
+        lines.append(f"- L1 token gateway: `{arb_l1_token_gateway}`")
+        lines.append(f"- L2 token address: `{arb_l2_token_addr}`")
+        lines.append(f"- Follow-up window after deposit: **{int(arbitrum_followup_window_days)} days**")
+        lines.append(f"- Exit events with detected Arbitrum deposit: **{arb_bridge_deposit_event_count}**")
+        lines.append(
+            f"- Exit amount (events) with deposit: **{_format_token(_wei_to_token(arb_bridge_deposit_exit_wei))} {args.token_symbol}**"
+        )
+        lines.append(
+            f"- Bridged token amount (outboundTransfer sum): **{_format_token(_wei_to_token(arb_bridge_deposit_token_wei))} {args.token_symbol}**"
+        )
+        lines.append(f"- Of those, matched to labeled exchange on Arbitrum (events): **{arb_matched_exchange_event_count}**")
+        lines.append(
+            f"- Matched exit amount (events): **{_format_token(_wei_to_token(arb_matched_exchange_exit_wei))} {args.token_symbol}**"
+        )
+        lines.append(
+            f"- Matched token amount to exchanges on Arbitrum: **{_format_token(_wei_to_token(arb_matched_exchange_token_wei))} {args.token_symbol}**"
+        )
+        if arb_exchange_counter:
+            lines.append("")
+            lines.append("Top exchange endpoints on Arbitrum (by matched count):")
+            lines.append("")
+            for a, c in arb_exchange_counter.most_common(10):
+                label = exchange_labels.get(a, {}).get("name") or a
+                lines.append(f"- {label}: **{int(c)}**")
 
     if first_hop_breakdown is not None:
         lines.append("")

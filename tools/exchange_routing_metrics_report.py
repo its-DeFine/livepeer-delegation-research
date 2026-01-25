@@ -224,6 +224,7 @@ def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
     proto = data.get("protocol") if isinstance(data, dict) else {}
     tok = data.get("token") if isinstance(data, dict) else {}
     res = data.get("routing_results_top_recipients") if isinstance(data, dict) else {}
+    arb = (res or {}).get("arbitrum_followup") if isinstance(res, dict) else None
 
     protocol_name = str((proto or {}).get("name") or "unknown")
     chain = str((proto or {}).get("chain") or "ethereum")
@@ -268,6 +269,30 @@ def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
             "category_exit_share_percent": shares,
         }
 
+    arbitrum_followup: dict[str, Any] | None = None
+    if isinstance(arb, dict) and bool(arb.get("enabled")):
+        deposit_events = int(arb.get("bridge_deposit_events") or 0)
+        deposit_exit_amount = _d(arb.get("bridge_deposit_exit_amount"))
+        deposit_token_amount = _d(arb.get("bridge_deposit_token_amount"))
+
+        matched_events = int(arb.get("matched_to_exchange_events") or 0)
+        matched_exit_amount = _d(arb.get("matched_to_exchange_exit_amount"))
+        matched_token_amount = _d(arb.get("matched_to_exchange_token_amount"))
+
+        arbitrum_followup = {
+            "enabled": True,
+            "deposit_events": deposit_events,
+            "deposit_exit_amount": str(deposit_exit_amount),
+            "deposit_token_amount": str(deposit_token_amount),
+            "matched_to_exchange_events": matched_events,
+            "matched_to_exchange_exit_amount": str(matched_exit_amount),
+            "matched_to_exchange_token_amount": str(matched_token_amount),
+            "matched_exit_share_of_total_exited_percent": str(_pct(matched_exit_amount, exited)),
+            "matched_exit_share_of_deposit_exit_amount_percent": str(_pct(matched_exit_amount, deposit_exit_amount)),
+            "matched_event_share_of_total_events_percent": str(_pct(Decimal(matched_events), Decimal(exit_events))),
+            "top_exchange_endpoints_by_count": arb.get("top_exchange_endpoints_by_count") if isinstance(arb.get("top_exchange_endpoints_by_count"), list) else [],
+        }
+
     return {
         "source_json": path,
         "chain": chain,
@@ -290,6 +315,7 @@ def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
         "selection": {"window_days": window_days, "top_n_recipients": top_n},
         "labels": {"exchange_label_count": exchange_labels},
         "first_hop_destinations": first_hop_destinations,
+        "arbitrum_followup": arbitrum_followup,
         "notes": [
             "This is a LOWER BOUND: it counts only transfers to a small curated set of labeled exchange hot wallets.",
             "Routing is checked within a fixed post-exit window and limited hops; more complex paths will be missed.",

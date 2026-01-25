@@ -5,7 +5,7 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 # Curve (veCRV): exit → exchange routing (on-chain)
 
-- Generated: `2026-01-24T22:27:02.928099+00:00`
+- Generated: `2026-01-25T01:04:48.048977+00:00`
 - Ethereum RPC: `https://ethereum.publicnode.com`
 - Exit contract: `0x5f3b5dfeb7b28cdbd7faba78963ee202a494e2a2`
 - Exit event: `Withdraw(address,uint256,uint256)` (topic0 `0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568`)
@@ -13,10 +13,10 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 ## Exit events (observed)
 
-- Range scanned: `23,659,582..24,307,582` (~90d)
-- Exit events: **371**
-- Unique recipients: **367**
-- Total exited (events): **9,569,501.111 CRV**
+- Range scanned: `23,660,381..24,308,381` (~90d)
+- Exit events: **372**
+- Unique recipients: **368**
+- Total exited (events): **9,572,426.728 CRV**
 
 ## Tight-window routing to labeled exchanges (top recipients)
 
@@ -34,6 +34,20 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 - Third hop matched amount (lower bound): **0.000 CRV**
 - Total matched (events): **4**
 - Total matched amount (lower bound): **475,975.996 CRV**
+
+## Arbitrum follow-up (L1 bridge deposit → exchange routing; best-effort)
+
+- Arbitrum RPC: `https://arb1.arbitrum.io/rpc`
+- L1 gateway router: `0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef`
+- L1 token gateway: `0xa3a7b6f88361f48403514059f1f16c8e78d60eec`
+- L2 token address: `0x11cdb42b0eb46d95f990bedd4695a6e3fa034978`
+- Follow-up window after deposit: **7 days**
+- Exit events with detected Arbitrum deposit: **0**
+- Exit amount (events) with deposit: **0.000 CRV**
+- Bridged token amount (outboundTransfer sum): **0.000 CRV**
+- Of those, matched to labeled exchange on Arbitrum (events): **0**
+- Matched exit amount (events): **0.000 CRV**
+- Matched token amount to exchanges on Arbitrum: **0.000 CRV**
 
 ## First hop destinations (top recipients; within window)
 

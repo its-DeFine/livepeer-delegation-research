@@ -53,7 +53,7 @@
       "token": "FIL"
     }
   },
-  "generated_at_utc": "2026-01-24T22:57:22.741619+00:00",
+  "generated_at_utc": "2026-01-25T01:12:26.674787+00:00",
   "labels": {
     "exchange_label_count": 37,
     "labels_json": "data/labels.json",
@@ -63,6 +63,19 @@
   },
   "metrics": {
     "aave_stkaave_redeem_exit_routing": {
+      "arbitrum_followup": {
+        "deposit_events": 0,
+        "deposit_exit_amount": "0",
+        "deposit_token_amount": "0",
+        "enabled": true,
+        "matched_event_share_of_total_events_percent": "0",
+        "matched_exit_share_of_deposit_exit_amount_percent": "0",
+        "matched_exit_share_of_total_exited_percent": "0E+18",
+        "matched_to_exchange_events": 0,
+        "matched_to_exchange_exit_amount": "0",
+        "matched_to_exchange_token_amount": "0",
+        "top_exchange_endpoints_by_count": []
+      },
       "breakdown": {
         "direct": {
           "amount": "0",
@@ -72,7 +85,7 @@
         "second_hop": {
           "amount": "22268.405045647303924773",
           "events": 9,
-          "share_percent": "4.6976864093964937759782497903665121514368031473517802863021330117897070476627195"
+          "share_percent": "4.6948151513433427437661563961036852497187552667117842657220955377997232271602515"
         },
         "third_hop": {
           "amount": "0",
@@ -82,28 +95,28 @@
       },
       "chain": "ethereum",
       "denominator": {
-        "amount": "474029.194479758805721102",
+        "amount": "474319.101557716765306523",
         "basis": "exited AAVE (top recipients considered)",
         "events": 79
       },
       "first_hop_destinations": {
         "category_counts": {
-          "no_first_hop_meeting_threshold": 17,
-          "unknown_contract": 25,
+          "no_first_hop_meeting_threshold": 18,
+          "unknown_contract": 24,
           "unknown_eoa": 37
         },
         "category_exit_amount": {
-          "no_first_hop_meeting_threshold": "295875.898612762306577404",
-          "unknown_contract": "118921.23806053719555765",
+          "no_first_hop_meeting_threshold": "296887.545984220779849045",
+          "unknown_contract": "118199.49776703668187143",
           "unknown_eoa": "59232.057806459303586048"
         },
         "category_exit_share_percent": {
-          "no_first_hop_meeting_threshold": "62.417231271479482604435503479457295379361329990620729675651419358962199364494921",
-          "unknown_contract": "25.087323617494021134692544043084796585778863615269483613454454617290836644657337",
-          "unknown_eoa": "12.495445111026496260871952477457908034859806394109786710894126023746963990847743"
+          "no_first_hop_meeting_threshold": "62.592365563437990935938423756431003961840236030485686653479145449901185562063741",
+          "unknown_contract": "24.919826627023108413085625194787584968576519876607292212205051404543811916268137",
+          "unknown_eoa": "12.487807809538900650975951048781411069583244092907021134315803145555002521668123"
         },
         "category_first_hop_amount": {
-          "unknown_contract": "92954.097941339619016398",
+          "unknown_contract": "92230.278007844801692894",
           "unknown_eoa": "51064.672831089170409208"
         },
         "method": "Earliest outgoing transfer >= max(min_first_hop_token, min_first_hop_fraction*exit) within window; destination classified via labels and (optionally) eth_getCode."
@@ -127,11 +140,24 @@
         "window_days": 30
       },
       "share_events_matched_percent": "11.392405063291139240506329113924050632911392405063291139240506329113924050632911",
-      "share_to_exchanges_lower_bound_percent": "4.6976864093964937759782497903665121514368031473517802863021330117897070476627195",
+      "share_to_exchanges_lower_bound_percent": "4.6948151513433427437661563961036852497187552667117842657220955377997232271602515",
       "source_json": "research/aave-stkaave-redeem-exit-routing.json",
       "token": "AAVE"
     },
     "curve_vecrv_exit_routing": {
+      "arbitrum_followup": {
+        "deposit_events": 0,
+        "deposit_exit_amount": "0",
+        "deposit_token_amount": "0",
+        "enabled": true,
+        "matched_event_share_of_total_events_percent": "0",
+        "matched_exit_share_of_deposit_exit_amount_percent": "0",
+        "matched_exit_share_of_total_exited_percent": "0E+18",
+        "matched_to_exchange_events": 0,
+        "matched_to_exchange_exit_amount": "0",
+        "matched_to_exchange_token_amount": "0",
+        "top_exchange_endpoints_by_count": []
+      },
       "breakdown": {
         "direct": {
           "amount": "0",
@@ -201,6 +227,19 @@
       "token": "CRV"
     },
     "frax_vefxs_exit_routing": {
+      "arbitrum_followup": {
+        "deposit_events": 0,
+        "deposit_exit_amount": "0",
+        "deposit_token_amount": "0",
+        "enabled": true,
+        "matched_event_share_of_total_events_percent": "0",
+        "matched_exit_share_of_deposit_exit_amount_percent": "0",
+        "matched_exit_share_of_total_exited_percent": "0E+18",
+        "matched_to_exchange_events": 0,
+        "matched_to_exchange_exit_amount": "0",
+        "matched_to_exchange_token_amount": "0",
+        "top_exchange_endpoints_by_count": []
+      },
       "breakdown": {
         "direct": {
           "amount": "0",

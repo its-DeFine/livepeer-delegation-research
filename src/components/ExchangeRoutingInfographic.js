@@ -51,6 +51,27 @@ export default function ExchangeRoutingInfographic() {
     }
   ];
 
+  const arbItems = [
+    {
+      label: 'Curve (CRV) - bridged to Arbitrum -> exchange',
+      valuePct: toPct(cv?.arbitrum_followup?.matched_exit_share_of_total_exited_percent),
+      href: '/research/curve-vecrv-exit-routing',
+      enabled: Boolean(cv?.arbitrum_followup?.enabled)
+    },
+    {
+      label: 'Frax (FXS) - bridged to Arbitrum -> exchange',
+      valuePct: toPct(fx?.arbitrum_followup?.matched_exit_share_of_total_exited_percent),
+      href: '/research/frax-vefxs-exit-routing',
+      enabled: Boolean(fx?.arbitrum_followup?.enabled)
+    },
+    {
+      label: 'Aave (AAVE) - bridged to Arbitrum -> exchange',
+      valuePct: toPct(av?.arbitrum_followup?.matched_exit_share_of_total_exited_percent),
+      href: '/research/aave-stkaave-redeem-exit-routing',
+      enabled: Boolean(av?.arbitrum_followup?.enabled)
+    }
+  ].filter((x) => x.enabled);
+
   const labelCount = routing?.labels?.exchange_label_count ?? null;
   const generatedAt = routing?.generated_at_utc ?? null;
 
@@ -69,10 +90,16 @@ export default function ExchangeRoutingInfographic() {
         }
         items={items}
       />
+      {arbItems.length > 0 ? (
+        <BarList
+          title="Arbitrum follow-up (lower bound)"
+          subtitle="After exit: detect canonical Arbitrum bridge deposits on L1, then check Arbitrum transfers into labeled exchanges."
+          items={arbItems}
+        />
+      ) : null}
       <div className="lp-infographic__note">
         Lower bound: label set is intentionally incomplete; hop/window constraints miss some paths.
       </div>
     </div>
   );
 }
-

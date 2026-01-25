@@ -1,5 +1,14 @@
 {
   "analysis": {
+    "arbitrum_followup": {
+      "enabled": true,
+      "followup_window_days": 7,
+      "include_second_hop": true,
+      "l1_gateway_router": "0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef",
+      "l1_token_gateway": "0xa3a7b6f88361f48403514059f1f16c8e78d60eec",
+      "l2_token_address": "0xba5ddd1f9d7f570dc94a51479a000e3bce967196",
+      "rpc": "https://arb1.arbitrum.io/rpc"
+    },
     "blocks_per_day": 7200,
     "classify_first_hop_dests": true,
     "classify_intermediates": true,
@@ -26,7 +35,7 @@
     "signature": "Redeem(address,address,uint256,uint256)",
     "topic0": "0x3f693fff038bb8a046aa76d9516190ac7444f7d69cf952c4cbdc086fdef2d6fc"
   },
-  "generated_at_utc": "2026-01-24T22:55:04.715745+00:00",
+  "generated_at_utc": "2026-01-25T00:56:46.997763+00:00",
   "matched_examples_direct": [],
   "matched_examples_second_hop": [
     {
@@ -204,7 +213,8 @@
   "matched_examples_third_hop": [],
   "notes": [
     "Exchange routing is a LOWER BOUND: labels are incomplete and hop/window limits miss many paths.",
-    "Matched amounts are summed by exit event amount (not the exchange transfer amount)."
+    "Matched amounts are summed by exit event amount (not the exchange transfer amount).",
+    "Arbitrum follow-up (when enabled) is best-effort: it only detects deposits via the Arbitrum L1 gateway router outboundTransfer() and only counts transfers into labeled exchanges on Arbitrum."
   ],
   "protocol": {
     "chain": "ethereum",
@@ -212,25 +222,37 @@
   },
   "range": {
     "days_approx": 90,
-    "from_block": 23659693,
-    "to_block": 24307693
+    "from_block": 23660299,
+    "to_block": 24308299
   },
   "routing_results_top_recipients": {
-    "exit_amount_considered": "474029.194479758805721102",
+    "arbitrum_followup": {
+      "bridge_deposit_events": 0,
+      "bridge_deposit_exit_amount": "0",
+      "bridge_deposit_token_amount": "0",
+      "enabled": true,
+      "examples_bridge_deposit": [],
+      "examples_matched_to_exchange": [],
+      "matched_to_exchange_events": 0,
+      "matched_to_exchange_exit_amount": "0",
+      "matched_to_exchange_token_amount": "0",
+      "top_exchange_endpoints_by_count": []
+    },
+    "exit_amount_considered": "474319.101557716765306523",
     "exit_events_considered": 79,
     "first_hop_breakdown": {
       "category_counts": {
-        "no_first_hop_meeting_threshold": 17,
-        "unknown_contract": 25,
+        "no_first_hop_meeting_threshold": 18,
+        "unknown_contract": 24,
         "unknown_eoa": 37
       },
       "category_exit_amount": {
-        "no_first_hop_meeting_threshold": "295875.898612762306577404",
-        "unknown_contract": "118921.23806053719555765",
+        "no_first_hop_meeting_threshold": "296887.545984220779849045",
+        "unknown_contract": "118199.49776703668187143",
         "unknown_eoa": "59232.057806459303586048"
       },
       "category_first_hop_amount": {
-        "unknown_contract": "92954.097941339619016398",
+        "unknown_contract": "92230.278007844801692894",
         "unknown_eoa": "51064.672831089170409208"
       },
       "examples": {
@@ -296,6 +318,18 @@
             "recipient": "0x0acf1ddf025f5a35f4819f4c0123e05e6525ad69"
           },
           {
+            "exit_amount": "1011.647371458473271641",
+            "exit_block": 23913092,
+            "exit_tx": "0xa44cb22a2575295181a7eddca4f784591c997d4244014f72c33be5da7f65cd3a",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0xc2254d8eac6720579a50bc3b4ae7cc5c30802b9c"
+          },
+          {
             "exit_amount": "965.371086431826908757",
             "exit_block": 23922527,
             "exit_tx": "0xf7713ad339cb6d8d5bf8aa077e18f808ea4d9691bea7b69c31642896ea70d03c",
@@ -342,18 +376,6 @@
             "first_hop_to": null,
             "first_hop_tx": null,
             "recipient": "0xb17ffec7d9df05aba9132c1b20f0a50af1d75811"
-          },
-          {
-            "exit_amount": "230192.282900199001845282",
-            "exit_block": 24063643,
-            "exit_tx": "0x1afc30211d919e7e55c6afd8ea4efd65b3f656899ae6361be44bb3b8ee9f17fc",
-            "first_hop_amount": null,
-            "first_hop_block": null,
-            "first_hop_is_contract": null,
-            "first_hop_label": null,
-            "first_hop_to": null,
-            "first_hop_tx": null,
-            "recipient": "0xa923b13270f8622b5d5960634200dc4302b7611e"
           }
         ],
         "unknown_contract": [
@@ -430,18 +452,6 @@
             "recipient": "0xa54f59fbc7626a25e54a910f9323d87681890f31"
           },
           {
-            "exit_amount": "721.74029350051368622",
-            "exit_block": 23840915,
-            "exit_tx": "0xa8eae0e65655ab312511ce2eb92dde0cc20ca8c2e21c5c91422f318013ffdb74",
-            "first_hop_amount": "723.819933494817323504",
-            "first_hop_block": 23841051,
-            "first_hop_is_contract": true,
-            "first_hop_label": null,
-            "first_hop_to": "0xa700b4eb416be35b2911fd5dee80678ff64ff6c9",
-            "first_hop_tx": "0x64f8790b5e5623d93b418c99909618b022a0ff6e21ce9266cdaad782c22e9475",
-            "recipient": "0x61e9bf7e1f8431734457a1f2d709e6e9e2418b93"
-          },
-          {
             "exit_amount": "39572.621188163658072578",
             "exit_block": 23846314,
             "exit_tx": "0x5bab5e4c6f86c422a93f974927d1c01d9fb6e6ae972c95312bf605fd4ef674f8",
@@ -475,6 +485,18 @@
             "first_hop_label": null,
             "first_hop_to": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
             "first_hop_tx": "0xb38fbd7750306996f9b3728538f08b52a747b2dd8c3849756981bf805fbc8ce0",
+            "recipient": "0xaaabbbc86a0a8358d73302abcd6777c059bc2335"
+          },
+          {
+            "exit_amount": "711.084824765272975846",
+            "exit_block": 23932455,
+            "exit_tx": "0x66202348ccd90ce721f5e05639affc3b08e1b04832c6d483bdb15fcfa61c32b4",
+            "first_hop_amount": "132",
+            "first_hop_block": 23964286,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x1a76f6b9b3d9c532e0b56990944a31a705933fbd",
+            "first_hop_tx": "0xe91435b6569f4d0139ee751161482036561143bc5fe9c41a11465ece66f1bfee",
             "recipient": "0xaaabbbc86a0a8358d73302abcd6777c059bc2335"
           }
         ],
@@ -858,6 +880,12 @@
       "exit_events": 1
     },
     {
+      "address": "0xc2254d8eac6720579a50bc3b4ae7cc5c30802b9c",
+      "exit_amount": "1011.647371458473271641",
+      "exit_amount_wei": 1011647371458473271641,
+      "exit_events": 1
+    },
+    {
       "address": "0x16a457645d6f3e5ea23b25a076f1b5a8fc143ca7",
       "exit_amount": "1011.0166",
       "exit_amount_wei": 1011016600000000000000,
@@ -928,21 +956,15 @@
       "exit_amount": "800",
       "exit_amount_wei": 800000000000000000000,
       "exit_events": 1
-    },
-    {
-      "address": "0x61e9bf7e1f8431734457a1f2d709e6e9e2418b93",
-      "exit_amount": "721.74029350051368622",
-      "exit_amount_wei": 721740293500513686220,
-      "exit_events": 1
     }
   ],
   "totals": {
-    "exit_amount_considered_top_n": "474029.194479758805721102",
-    "exit_amount_considered_top_n_wei": 474029194479758805721102,
-    "exit_amount_total": "519261.812476308091551151",
-    "exit_amount_total_wei": 519261812476308091551151,
+    "exit_amount_considered_top_n": "474319.101557716765306523",
+    "exit_amount_considered_top_n_wei": 474319101557716765306523,
+    "exit_amount_total": "520834.892662884278145874",
+    "exit_amount_total_wei": 520834892662884278145874,
     "exit_events_considered_top_n": 79,
-    "exit_events_total": 930,
-    "unique_recipients": 842
+    "exit_events_total": 945,
+    "unique_recipients": 856
   }
 }

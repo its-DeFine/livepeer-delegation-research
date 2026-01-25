@@ -6,15 +6,13 @@ sidebar_label: "Exchange routing metrics"
 
 # Exchange routing metrics (best-effort, on-chain)
 
-- Generated: `2026-01-24T22:57:22.741619+00:00`
+- Generated: `2026-01-25T01:12:26.674787+00:00`
 - Exchange label set size (EVM): **37** (`data/labels.json`)
 
 These metrics formalize the “X% goes to exchanges” claim as:
 - **numerator**: amount routed to a curated set of labeled exchange endpoints,
 - **denominator**: a clearly-defined post-exit flow basis (varies by report),
 - treated as a **LOWER BOUND** (labels + hop/window limits miss many paths).
-
-<ExchangeRoutingInfographic />
 
 ## Summary
 
@@ -25,7 +23,7 @@ These metrics formalize the “X% goes to exchanges” claim as:
 | The Graph (GRT) | withdrawals (top delegators) | 30d window | ≤3 | 1278394.414 GRT | 10491820.509 GRT | 12.18% |
 | Curve (CRV) | veCRV withdraws (top recipients) | 30d window | ≤3 | 475975.996 CRV | 9132045.199 CRV | 5.21% |
 | Frax (FXS) | veFXS withdraws (top recipients) | 30d window | ≤3 | 75711.591 FXS | 1073411.321 FXS | 7.05% |
-| Aave (AAVE) | stkAAVE redeem (top recipients) | 30d window | ≤3 | 22268.405 AAVE | 474029.194 AAVE | 4.70% |
+| Aave (AAVE) | stkAAVE redeem (top recipients) | 30d window | ≤3 | 22268.405 AAVE | 474319.102 AAVE | 4.69% |
 
 ## First hop destinations (where available)
 
@@ -40,7 +38,7 @@ They are useful to quantify “self-custody / unknown EOA” vs known endpoints,
 | The Graph (GRT) | 1st hop after withdrawal (thresholded) | 92.68% | 1.86% | 5.46% |
 | Curve (CRV) | 1st hop after veCRV withdraw (thresholded) | 41.25% | 12.07% | 46.67% |
 | Frax (FXS) | 1st hop after veFXS withdraw (thresholded) | 17.61% | 65.44% | 16.94% |
-| Aave (AAVE) | 1st hop after stkAAVE redeem (thresholded) | 12.50% | 25.09% | 62.42% |
+| Aave (AAVE) | 1st hop after stkAAVE redeem (thresholded) | 12.49% | 24.92% | 62.59% |
 
 ## Notes (how to interpret)
 

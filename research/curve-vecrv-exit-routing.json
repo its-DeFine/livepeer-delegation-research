@@ -1,5 +1,14 @@
 {
   "analysis": {
+    "arbitrum_followup": {
+      "enabled": true,
+      "followup_window_days": 7,
+      "include_second_hop": true,
+      "l1_gateway_router": "0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef",
+      "l1_token_gateway": "0xa3a7b6f88361f48403514059f1f16c8e78d60eec",
+      "l2_token_address": "0x11cdb42b0eb46d95f990bedd4695a6e3fa034978",
+      "rpc": "https://arb1.arbitrum.io/rpc"
+    },
     "blocks_per_day": 7200,
     "classify_first_hop_dests": true,
     "classify_intermediates": true,
@@ -26,7 +35,7 @@
     "signature": "Withdraw(address,uint256,uint256)",
     "topic0": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568"
   },
-  "generated_at_utc": "2026-01-24T22:27:02.928099+00:00",
+  "generated_at_utc": "2026-01-25T01:04:48.048977+00:00",
   "matched_examples_direct": [],
   "matched_examples_second_hop": [
     {
@@ -109,7 +118,8 @@
   "matched_examples_third_hop": [],
   "notes": [
     "Exchange routing is a LOWER BOUND: labels are incomplete and hop/window limits miss many paths.",
-    "Matched amounts are summed by exit event amount (not the exchange transfer amount)."
+    "Matched amounts are summed by exit event amount (not the exchange transfer amount).",
+    "Arbitrum follow-up (when enabled) is best-effort: it only detects deposits via the Arbitrum L1 gateway router outboundTransfer() and only counts transfers into labeled exchanges on Arbitrum."
   ],
   "protocol": {
     "chain": "ethereum",
@@ -117,10 +127,22 @@
   },
   "range": {
     "days_approx": 90,
-    "from_block": 23659582,
-    "to_block": 24307582
+    "from_block": 23660381,
+    "to_block": 24308381
   },
   "routing_results_top_recipients": {
+    "arbitrum_followup": {
+      "bridge_deposit_events": 0,
+      "bridge_deposit_exit_amount": "0",
+      "bridge_deposit_token_amount": "0",
+      "enabled": true,
+      "examples_bridge_deposit": [],
+      "examples_matched_to_exchange": [],
+      "matched_to_exchange_events": 0,
+      "matched_to_exchange_exit_amount": "0",
+      "matched_to_exchange_token_amount": "0",
+      "top_exchange_endpoints_by_count": []
+    },
     "exit_amount_considered": "9132045.199265583595810206",
     "exit_events_considered": 50,
     "first_hop_breakdown": {
@@ -839,10 +861,10 @@
   "totals": {
     "exit_amount_considered_top_n": "9132045.199265583595810206",
     "exit_amount_considered_top_n_wei": 9132045199265583595810206,
-    "exit_amount_total": "9569501.111035097635147185",
-    "exit_amount_total_wei": 9569501111035097635147185,
+    "exit_amount_total": "9572426.728080097635147185",
+    "exit_amount_total_wei": 9572426728080097635147185,
     "exit_events_considered_top_n": 50,
-    "exit_events_total": 371,
-    "unique_recipients": 367
+    "exit_events_total": 372,
+    "unique_recipients": 368
   }
 }
