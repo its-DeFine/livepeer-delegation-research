@@ -45,6 +45,22 @@ ARBITRUM_L1_GATEWAY_ROUTER_DEFAULT = "0x72Ce9c846789fdB6fC1f34aC4AD25Dd9ef7031ef
 # ERC20 Transfer(address,address,uint256)
 TOPIC0_TRANSFER = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
 
+# Common DEX swap event topics (topic0). These are chain-agnostic and can be detected from tx receipts.
+# Computed via `cast sig-event ...`.
+TOPIC0_UNISWAP_V2_SWAP = "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822"
+TOPIC0_UNISWAP_V3_SWAP = "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67"
+TOPIC0_CURVE_TOKEN_EXCHANGE = "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140"
+TOPIC0_CURVE_TOKEN_EXCHANGE_UNDERLYING = "0xd013ca23e77a65003c2c659c5442c00c805371b7fc1ebd4c206c41d1536bd90b"
+TOPIC0_BALANCER_V2_SWAP = "0x2170c741c41531aec20e7c107c24eecfdd15e69c9bb0a8dd37b1840b9e0b207b"
+
+DEX_SWAP_TOPIC0: set[str] = {
+    TOPIC0_UNISWAP_V2_SWAP,
+    TOPIC0_UNISWAP_V3_SWAP,
+    TOPIC0_CURVE_TOKEN_EXCHANGE,
+    TOPIC0_CURVE_TOKEN_EXCHANGE_UNDERLYING,
+    TOPIC0_BALANCER_V2_SWAP,
+}
+
 # Arbitrum L1 gateway router deposit selector (also used in existing Arbitrum bridge-out tooling).
 # cast sig "outboundTransfer(address,address,uint256,bytes)" -> 0x7b3a3c8b
 SELECTOR_OUTBOUND_TRANSFER = "0x7b3a3c8b"
@@ -308,6 +324,44 @@ def _eth_get_transaction(client: RpcClient, tx_hash: str, cache: Dict[str, Dict[
         raise RpcError(f"unexpected eth_getTransactionByHash result: {type(tx)}")
     cache[txh] = tx
     return tx
+
+
+def _eth_get_transaction_receipt(client: RpcClient, tx_hash: str, cache: Dict[str, Dict[str, Any] | None]) -> Dict[str, Any] | None:
+    txh = str(tx_hash).lower()
+    if txh in cache:
+        return cache[txh]
+    rcpt = _rpc_with_retries(client, "eth_getTransactionReceipt", [txh])
+    if rcpt is None:
+        cache[txh] = None
+        return None
+    if not isinstance(rcpt, dict):
+        raise RpcError(f"unexpected eth_getTransactionReceipt result: {type(rcpt)}")
+    cache[txh] = rcpt
+    return rcpt
+
+
+def _tx_selector(input_hex: str | None) -> str | None:
+    s = str(input_hex or "").lower()
+    if not s.startswith("0x") or len(s) < 10:
+        return None
+    return "0x" + s[2:10]
+
+
+def _receipt_topic0_hits(receipt: Dict[str, Any] | None, topic0_set: set[str]) -> List[str]:
+    if not receipt or not isinstance(receipt, dict):
+        return []
+    logs = receipt.get("logs") or []
+    hits: set[str] = set()
+    for log in logs:
+        if not isinstance(log, dict):
+            continue
+        topics = log.get("topics") or []
+        if not topics:
+            continue
+        t0 = str(topics[0] or "").lower()
+        if t0 in topic0_set:
+            hits.add(t0)
+    return sorted(hits)
 
 
 def _abi_word_address(addr: str) -> str:
@@ -708,6 +762,17 @@ def main() -> int:
     parser.add_argument("--classify-first-hop-dests", action="store_true", help="Classify first hop destination as EOA vs contract.")
     parser.add_argument("--classify-intermediates", action="store_true", help="For hop paths, classify intermediates as EOA vs contract.")
     parser.add_argument(
+        "--classify-unknown-eoa-behavior",
+        action="store_true",
+        help="Heuristic: for unlabeled EOAs (recipients), classify post-exit behavior as bridger/exchange-depositor/dex-trader/self-custody (best-effort).",
+    )
+    parser.add_argument(
+        "--heuristic-max-txs-per-exit",
+        type=int,
+        default=3,
+        help="When classifying unknown EOAs, max outgoing-token txs per exit event to inspect via eth_getTransactionReceipt (tradeoff: recall vs RPC load).",
+    )
+    parser.add_argument(
         "--include-arbitrum-followup",
         action="store_true",
         help="Detect Arbitrum L1 gateway deposits after exits (outboundTransfer) and follow token transfers on Arbitrum (best-effort).",
@@ -788,6 +853,8 @@ def main() -> int:
 
     exchange_labels: Dict[str, Dict[str, Any]] = {}
     labeled_non_exchange_addrs: set[str] = set()
+    dex_router_addrs: set[str] = set()
+    bridge_addrs: set[str] = set()
     for addr, meta in labels.items():
         try:
             a = _normalize_address(addr)
@@ -797,6 +864,10 @@ def main() -> int:
             exchange_labels[a] = meta
         else:
             labeled_non_exchange_addrs.add(a)
+            if isinstance(meta, dict) and str(meta.get("category") or "") == "dex_router":
+                dex_router_addrs.add(a)
+            if isinstance(meta, dict) and str(meta.get("category") or "") == "bridge":
+                bridge_addrs.add(a)
 
     exchange_addrs = sorted(exchange_labels.keys())
     exchange_topics = [_pad_topic_address(a) for a in exchange_addrs]
@@ -808,7 +879,11 @@ def main() -> int:
     window_blocks = int(args.window_days) * int(args.blocks_per_day)
 
     tx_cache: Dict[str, Dict[str, Any] | None] = {}
+    receipt_cache: Dict[str, Dict[str, Any] | None] = {}
     eth_block_ts_cache: Dict[int, int] = {}
+
+    classify_unknown_eoa_behavior = bool(args.classify_unknown_eoa_behavior)
+    heuristic_max_txs_per_exit = max(0, int(args.heuristic_max_txs_per_exit))
 
     include_arbitrum_followup = bool(args.include_arbitrum_followup)
     arbitrum_followup_window_days = int(args.arbitrum_followup_window_days)
@@ -822,16 +897,23 @@ def main() -> int:
     arb_l1_token_gateway: str | None = None
     arb_gateway_cache: Dict[str, str] = {}
 
+    need_arbitrum_bridge_detection = bool(include_arbitrum_followup or classify_unknown_eoa_behavior)
+
+    if need_arbitrum_bridge_detection:
+        try:
+            arb_l1_token_gateway = _arbitrum_l1_gateway_for_token(
+                eth,
+                l1_gateway_router=arb_l1_gateway_router,
+                l1_token=token_addr,
+                cache=arb_gateway_cache,
+            )
+        except Exception:
+            arb_l1_token_gateway = None
+
     if include_arbitrum_followup:
         arb = RpcClient(str(args.arbitrum_rpc), user_agent="livepeer-delegation-research/erc20-exit-routing-arbitrum")
         arb_latest_block = _eth_block_number(arb)
         arb_latest_ts = _eth_block_timestamp(arb, int(arb_latest_block), arb_block_ts_cache)
-        arb_l1_token_gateway = _arbitrum_l1_gateway_for_token(
-            eth,
-            l1_gateway_router=arb_l1_gateway_router,
-            l1_token=token_addr,
-            cache=arb_gateway_cache,
-        )
         arb_l2_token_addr = _calculate_arbitrum_l2_token_address(
             eth,
             l1_gateway_router=arb_l1_gateway_router,
@@ -920,7 +1002,7 @@ def main() -> int:
             exchange_topics=exchange_topics,
             chunk_size=int(args.log_chunk_size),
         )
-        if include_arbitrum_followup or args.include_second_hop or args.include_third_hop or args.classify_first_hop_dests:
+        if need_arbitrum_bridge_detection or args.include_second_hop or args.include_third_hop or args.classify_first_hop_dests or classify_unknown_eoa_behavior:
             print(f"scan outgoing: recipient={addr_norm} (range {transfer_from_block:,}..{transfer_to_block:,})")
             outgoing_transfers_by_recipient[addr_norm] = _scan_outgoing_transfers(
                 eth,
@@ -930,7 +1012,7 @@ def main() -> int:
                 to_block=transfer_to_block,
                 chunk_size=int(args.log_chunk_size),
             )
-        if include_arbitrum_followup:
+        if need_arbitrum_bridge_detection:
             outgoing_for_addr = outgoing_transfers_by_recipient.get(addr_norm) or []
             if outgoing_for_addr:
                 print(f"scan Arbitrum deposits: sender={addr_norm}")
@@ -978,6 +1060,143 @@ def main() -> int:
         if len(first_hop_category_examples[category]) < 10:
             first_hop_category_examples[category].append(example)
 
+    unknown_eoa_behavior: Dict[str, Any] | None = None
+    unknown_eoa_behavior_counts: Counter[str] = Counter()
+    unknown_eoa_behavior_exit_wei: Dict[str, int] = defaultdict(int)
+    unknown_eoa_behavior_examples: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    unknown_eoa_behavior_total_events = 0
+    unknown_eoa_behavior_total_exit_wei = 0
+
+    def _is_unknown_eoa(addr: str) -> bool:
+        a = _normalize_address(addr)
+        if a in exchange_labels or a in labeled_non_exchange_addrs:
+            return False
+        return not _is_contract_address(eth, a, intermediate_code_cache)
+
+    def _record_unknown_eoa_behavior(kind: str, confidence: str, *, exit_wei: int, example: Dict[str, Any]) -> None:
+        nonlocal unknown_eoa_behavior_total_events, unknown_eoa_behavior_total_exit_wei
+        key = f"{kind}:{confidence}"
+        unknown_eoa_behavior_counts[key] += 1
+        unknown_eoa_behavior_exit_wei[key] += int(exit_wei)
+        unknown_eoa_behavior_total_events += 1
+        unknown_eoa_behavior_total_exit_wei += int(exit_wei)
+        if len(unknown_eoa_behavior_examples[kind]) < 25:
+            unknown_eoa_behavior_examples[kind].append(example)
+
+    def _classify_unknown_eoa_non_exchange(
+        *,
+        e: ExitEvent,
+        recipient_norm: str,
+        end_block: int,
+        outgoing_all: List[OutgoingTransfer],
+        deposit: ArbitrumBridgeDeposit | None,
+        dex_router_interaction: bool,
+        dex_router_to: str | None,
+        dex_router_label: str | None,
+        dex_router_tx: str | None,
+    ) -> tuple[str, str, Dict[str, Any]]:
+        # Bridger: decoded Arbitrum outboundTransfer() deposit (highest-confidence bridge signal in this tool).
+        if deposit is not None:
+            return (
+                "bridger",
+                "high",
+                {
+                    "bridge": "arbitrum",
+                    "deposit_tx": str(deposit.tx_hash),
+                    "deposit_block": int(deposit.block_number),
+                    "l2_to": str(deposit.l2_to),
+                    "deposit_token_amount": str(_wei_to_token(deposit.amount_wei)),
+                },
+            )
+
+        # DEX trader: detect swap topics in tx receipts for a small number of token-moving txs (best-effort).
+        hits_best: List[str] = []
+        hits_tx: str | None = None
+        tx_to: str | None = None
+        tx_selector: str | None = None
+
+        if heuristic_max_txs_per_exit > 0 and outgoing_all:
+            candidates = [t for t in outgoing_all if int(t.block_number) > int(e.block_number) and int(t.block_number) <= int(end_block)]
+            # Prefer the largest token-moving txs in-window; this catches swaps even if the first outflow is small/noisy.
+            candidates.sort(key=lambda x: (-int(x.amount_wei), int(x.block_number), x.tx_hash))
+            candidates = candidates[: int(heuristic_max_txs_per_exit)]
+            for t in candidates:
+                txh = str(t.tx_hash)
+                rcpt = _eth_get_transaction_receipt(eth, txh, receipt_cache)
+                hits = _receipt_topic0_hits(rcpt, DEX_SWAP_TOPIC0)
+                if hits:
+                    hits_best = hits
+                    hits_tx = txh
+                    tx = _eth_get_transaction(eth, txh, tx_cache) or {}
+                    try:
+                        if tx.get("to"):
+                            tx_to = _normalize_address(str(tx.get("to")))
+                    except Exception:
+                        tx_to = None
+                    tx_selector = _tx_selector(tx.get("input"))
+                    break
+
+        if hits_best:
+            return (
+                "dex_trader",
+                "high",
+                {
+                    "swap_topic0_hits": hits_best,
+                    "tx": str(hits_tx),
+                    "tx_to": tx_to,
+                    "tx_selector": tx_selector,
+                },
+            )
+
+        if dex_router_interaction:
+            return (
+                "dex_trader",
+                "medium",
+                {
+                    "method": "tx.to in labels[dex_router]",
+                    "dex_router_to": dex_router_to,
+                    "dex_router_label": dex_router_label,
+                    "dex_router_tx": dex_router_tx,
+                },
+            )
+
+        # Self-custody: no observed token outflows within window (strongest "held" signal).
+        if not outgoing_all:
+            return ("self_custody", "high", {"method": "no ERC20 Transfer(from=recipient) observed in scanned range"})
+
+        out_in_window = [t for t in outgoing_all if int(t.block_number) > int(e.block_number) and int(t.block_number) <= int(end_block)]
+        if not out_in_window:
+            return ("self_custody", "high", {"method": "no token outflows within window"})
+
+        # Weak self-custody signal: first token outflow goes to an EOA (wallet re-org / OTC / unlabeled CEX all possible).
+        first = out_in_window[0]
+        to_addr = _normalize_address(str(first.to_addr))
+        to_is_contract = _is_contract_address(eth, to_addr, intermediate_code_cache)
+        if not to_is_contract:
+            return (
+                "self_custody",
+                "low",
+                {
+                    "method": "first token outflow destination is EOA",
+                    "first_outflow_tx": str(first.tx_hash),
+                    "first_outflow_block": int(first.block_number),
+                    "first_outflow_to": to_addr,
+                    "first_outflow_amount": str(_wei_to_token(first.amount_wei)),
+                },
+            )
+
+        return (
+            "self_custody",
+            "low",
+            {
+                "method": "no exchange/bridge/dex signal; first token outflow goes to contract",
+                "first_outflow_tx": str(first.tx_hash),
+                "first_outflow_block": int(first.block_number),
+                "first_outflow_to": to_addr,
+                "first_outflow_amount": str(_wei_to_token(first.amount_wei)),
+            },
+        )
+
     matched_direct_exit_wei = 0
     matched_second_exit_wei = 0
     matched_third_exit_wei = 0
@@ -1007,10 +1226,23 @@ def main() -> int:
     arb_exchange_transfers_from_cache: Dict[str, Dict[str, Any]] = {}
     arb_outgoing_transfers_from_cache: Dict[str, Dict[str, Any]] = {}
 
+    # Post-exit "role" classification (heuristic; complements strict exchange routing).
+    role_counter_events: Counter[str] = Counter()
+    role_counter_exit_wei: Dict[str, int] = defaultdict(int)
+    role_examples: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+
+    # Addresses that appear as intermediates on paths that end at labeled exchanges.
+    exchange_intermediate_counter: Counter[str] = Counter()
+    exchange_intermediate_exit_wei: Dict[str, int] = defaultdict(int)
+    exchange_intermediate_is_contract: Dict[str, bool] = {}
+    exchange_intermediate_example: Dict[str, Dict[str, Any]] = {}
+
     # Process chronologically so caches tend to extend forward only.
     for e in considered_exits:
         end_block = int(e.block_number + window_blocks)
         recipient_norm = _normalize_address(e.recipient)
+        classify_this_unknown_eoa = bool(classify_unknown_eoa_behavior) and _is_unknown_eoa(recipient_norm)
+        unknown_eoa_behavior_recorded = False
 
         # First-hop breakdown (thresholded earliest outgoing transfer).
         firsthop_category = "no_first_hop_meeting_threshold"
@@ -1060,11 +1292,9 @@ def main() -> int:
             },
         )
 
-        # Optional follow-up: detect Arbitrum bridge deposits after exit and check if the bridged tokens
-        # route into labeled exchange endpoints on Arbitrum (best-effort lower bound).
-        if include_arbitrum_followup and arb is not None and arb_latest_block is not None and arb_latest_ts is not None and arb_l2_token_addr is not None:
+        deposit: ArbitrumBridgeDeposit | None = None
+        if need_arbitrum_bridge_detection:
             deposits = arb_deposits_by_recipient.get(recipient_norm) or []
-            deposit: ArbitrumBridgeDeposit | None = None
             for d in deposits:
                 if int(d.block_number) <= int(e.block_number):
                     continue
@@ -1073,6 +1303,67 @@ def main() -> int:
                 deposit = d
                 break
 
+        # Heuristic: detect whether the recipient interacted with a labeled DEX router in a tx that also moved tokens.
+        dex_router_interaction = False
+        dex_router_to: str | None = None
+        dex_router_label: str | None = None
+        dex_router_tx: str | None = None
+        if outgoing_all and threshold_wei > 0 and dex_router_addrs:
+            for t in outgoing_all:
+                if t.block_number <= e.block_number:
+                    continue
+                if t.block_number > end_block:
+                    break
+                if int(t.amount_wei) < int(threshold_wei):
+                    continue
+                tx = _eth_get_transaction(eth, str(t.tx_hash), tx_cache)
+                if not tx:
+                    continue
+                to_addr = tx.get("to")
+                if not to_addr:
+                    continue
+                try:
+                    to_norm = _normalize_address(str(to_addr))
+                except Exception:
+                    continue
+                if to_norm in dex_router_addrs:
+                    dex_router_interaction = True
+                    dex_router_to = to_norm
+                    dex_router_label = str(labels.get(to_norm, {}).get("name") or "") if isinstance(labels, dict) else None
+                    dex_router_tx = str(t.tx_hash)
+                    break
+
+        role_recorded = False
+
+        def _record_role(role: str) -> None:
+            nonlocal role_recorded
+            if role_recorded:
+                return
+            role_norm = str(role or "unknown")
+            role_counter_events[role_norm] += 1
+            role_counter_exit_wei[role_norm] += int(e.amount_wei)
+            if len(role_examples[role_norm]) < 15:
+                role_examples[role_norm].append(
+                    {
+                        "exit_block": int(e.block_number),
+                        "exit_tx": str(e.tx_hash),
+                        "recipient": str(e.recipient),
+                        "exit_amount": str(_wei_to_token(e.amount_wei)),
+                        "first_hop_category": str(firsthop_category),
+                        "first_hop_to": firsthop_to,
+                        "first_hop_is_contract": firsthop_is_contract,
+                        "arbitrum_bridge_deposit_detected": bool(deposit is not None),
+                        "dex_router_interaction": bool(dex_router_interaction),
+                        "dex_router_to": dex_router_to,
+                        "dex_router_label": dex_router_label,
+                        "dex_router_tx": dex_router_tx,
+                    }
+                )
+            role_recorded = True
+
+        # Optional follow-up: detect Arbitrum bridge deposits after exit and check if the bridged tokens
+        # route into labeled exchange endpoints on Arbitrum (best-effort lower bound).
+        if include_arbitrum_followup and arb is not None and arb_latest_block is not None and arb_latest_ts is not None and arb_l2_token_addr is not None:
             if deposit is not None:
                 arb_bridge_deposit_event_count += 1
                 arb_bridge_deposit_exit_wei += int(e.amount_wei)
@@ -1393,6 +1684,28 @@ def main() -> int:
             break
 
         if direct_best is not None:
+            _record_role("exchange_strict")
+            if classify_this_unknown_eoa and not unknown_eoa_behavior_recorded:
+                _record_unknown_eoa_behavior(
+                    "exchange_depositor",
+                    "high",
+                    exit_wei=int(e.amount_wei),
+                    example={
+                        "exit_block": int(e.block_number),
+                        "exit_tx": str(e.tx_hash),
+                        "recipient": str(e.recipient),
+                        "exit_amount": str(_wei_to_token(e.amount_wei)),
+                        "evidence": {
+                            "hop": 1,
+                            "exchange_to": str(direct_best.to_addr),
+                            "exchange_label": exchange_labels.get(_normalize_address(direct_best.to_addr), {}).get("name"),
+                            "exchange_tx": str(direct_best.tx_hash),
+                            "exchange_block": int(direct_best.block_number),
+                            "exchange_transfer_amount": str(_wei_to_token(direct_best.amount_wei)),
+                        },
+                    },
+                )
+                unknown_eoa_behavior_recorded = True
             matched_direct_exit_wei += int(e.amount_wei)
             matched_direct_event_count += 1
             exchange_counter_direct[_normalize_address(direct_best.to_addr)] += 1
@@ -1414,6 +1727,41 @@ def main() -> int:
             continue
 
         if not bool(args.include_second_hop) and not bool(args.include_third_hop):
+            if deposit is not None:
+                _record_role("bridge_deposit")
+            elif dex_router_interaction:
+                _record_role("dex_router_interaction")
+            elif firsthop_category == "no_first_hop_meeting_threshold":
+                _record_role("hold_no_first_hop")
+            else:
+                _record_role(firsthop_category)
+            if classify_this_unknown_eoa and not unknown_eoa_behavior_recorded:
+                kind, confidence, evidence = _classify_unknown_eoa_non_exchange(
+                    e=e,
+                    recipient_norm=recipient_norm,
+                    end_block=end_block,
+                    outgoing_all=outgoing_all,
+                    deposit=deposit,
+                    dex_router_interaction=dex_router_interaction,
+                    dex_router_to=dex_router_to,
+                    dex_router_label=dex_router_label,
+                    dex_router_tx=dex_router_tx,
+                )
+                _record_unknown_eoa_behavior(
+                    kind,
+                    confidence,
+                    exit_wei=int(e.amount_wei),
+                    example={
+                        "exit_block": int(e.block_number),
+                        "exit_tx": str(e.tx_hash),
+                        "recipient": str(e.recipient),
+                        "exit_amount": str(_wei_to_token(e.amount_wei)),
+                        "first_hop_to": firsthop_to,
+                        "first_hop_is_contract": firsthop_is_contract,
+                        "evidence": evidence,
+                    },
+                )
+                unknown_eoa_behavior_recorded = True
             continue
 
         # Second hop: recipient -> intermediate -> labeled exchange
@@ -1706,19 +2054,140 @@ def main() -> int:
                             best_third = candidate_third
 
         if best_second is not None:
+            _record_role("exchange_strict")
+            if classify_this_unknown_eoa and not unknown_eoa_behavior_recorded:
+                _record_unknown_eoa_behavior(
+                    "exchange_depositor",
+                    "medium",
+                    exit_wei=int(e.amount_wei),
+                    example={
+                        "exit_block": int(e.block_number),
+                        "exit_tx": str(e.tx_hash),
+                        "recipient": str(e.recipient),
+                        "exit_amount": str(_wei_to_token(e.amount_wei)),
+                        "evidence": {
+                            "hop": 2,
+                            "first_hop_to": str(best_second.get("first_hop_to")),
+                            "first_hop_tx": str(best_second.get("first_hop_tx")),
+                            "second_hop_exchange_to": str(best_second.get("second_hop_exchange_to")),
+                            "second_hop_exchange_label": str(best_second.get("second_hop_exchange_label")),
+                            "second_hop_tx": str(best_second.get("second_hop_tx")),
+                            "second_hop_block": int(best_second.get("second_hop_block") or 0),
+                        },
+                    },
+                )
+                unknown_eoa_behavior_recorded = True
             matched_second_exit_wei += int(e.amount_wei)
             matched_second_event_count += 1
             exchange_counter_second[_normalize_address(str(best_second["second_hop_exchange_to"]))] += 1
             if len(matched_second_events) < 25:
                 matched_second_events.append(best_second)
+            try:
+                inter = _normalize_address(str(best_second.get("first_hop_to") or ""))
+                exchange_intermediate_counter[inter] += 1
+                exchange_intermediate_exit_wei[inter] += int(e.amount_wei)
+                if bool(args.classify_intermediates) and best_second.get("first_hop_intermediate_is_contract") is not None:
+                    exchange_intermediate_is_contract[inter] = bool(best_second.get("first_hop_intermediate_is_contract"))
+                if inter not in exchange_intermediate_example:
+                    exchange_intermediate_example[inter] = {
+                        "first_hop_to": inter,
+                        "first_hop_intermediate_is_contract": exchange_intermediate_is_contract.get(inter),
+                        "example_exit_tx": str(best_second.get("exit_tx") or ""),
+                        "example_first_hop_tx": str(best_second.get("first_hop_tx") or ""),
+                        "example_exchange_to": str(best_second.get("second_hop_exchange_to") or ""),
+                        "example_exchange_label": str(best_second.get("second_hop_exchange_label") or ""),
+                    }
+            except Exception:
+                pass
             continue
 
         if best_third is not None:
+            _record_role("exchange_strict")
+            if classify_this_unknown_eoa and not unknown_eoa_behavior_recorded:
+                _record_unknown_eoa_behavior(
+                    "exchange_depositor",
+                    "low",
+                    exit_wei=int(e.amount_wei),
+                    example={
+                        "exit_block": int(e.block_number),
+                        "exit_tx": str(e.tx_hash),
+                        "recipient": str(e.recipient),
+                        "exit_amount": str(_wei_to_token(e.amount_wei)),
+                        "evidence": {
+                            "hop": 3,
+                            "first_hop_to": str(best_third.get("first_hop_to")),
+                            "first_hop_tx": str(best_third.get("first_hop_tx")),
+                            "second_hop_to": str(best_third.get("second_hop_to")),
+                            "second_hop_tx": str(best_third.get("second_hop_tx")),
+                            "third_hop_exchange_to": str(best_third.get("third_hop_exchange_to")),
+                            "third_hop_exchange_label": str(best_third.get("third_hop_exchange_label")),
+                            "third_hop_tx": str(best_third.get("third_hop_tx")),
+                            "third_hop_block": int(best_third.get("third_hop_block") or 0),
+                        },
+                    },
+                )
+                unknown_eoa_behavior_recorded = True
             matched_third_exit_wei += int(e.amount_wei)
             matched_third_event_count += 1
             exchange_counter_third[_normalize_address(str(best_third["third_hop_exchange_to"]))] += 1
             if len(matched_third_events) < 25:
                 matched_third_events.append(best_third)
+            # Third-hop intermediates are noisier; we only track hop-1 for now.
+            try:
+                inter = _normalize_address(str(best_third.get("first_hop_to") or ""))
+                exchange_intermediate_counter[inter] += 1
+                exchange_intermediate_exit_wei[inter] += int(e.amount_wei)
+                if bool(args.classify_intermediates) and best_third.get("first_hop_intermediate_is_contract") is not None:
+                    exchange_intermediate_is_contract[inter] = bool(best_third.get("first_hop_intermediate_is_contract"))
+                if inter not in exchange_intermediate_example:
+                    exchange_intermediate_example[inter] = {
+                        "first_hop_to": inter,
+                        "first_hop_intermediate_is_contract": exchange_intermediate_is_contract.get(inter),
+                        "example_exit_tx": str(best_third.get("exit_tx") or ""),
+                        "example_first_hop_tx": str(best_third.get("first_hop_tx") or ""),
+                        "example_exchange_to": str(best_third.get("third_hop_exchange_to") or ""),
+                        "example_exchange_label": str(best_third.get("third_hop_exchange_label") or ""),
+                    }
+            except Exception:
+                pass
+
+        if not role_recorded:
+            if deposit is not None:
+                _record_role("bridge_deposit")
+            elif dex_router_interaction:
+                _record_role("dex_router_interaction")
+            elif firsthop_category == "no_first_hop_meeting_threshold":
+                _record_role("hold_no_first_hop")
+            else:
+                _record_role(firsthop_category)
+
+        if classify_this_unknown_eoa and not unknown_eoa_behavior_recorded:
+            kind, confidence, evidence = _classify_unknown_eoa_non_exchange(
+                e=e,
+                recipient_norm=recipient_norm,
+                end_block=end_block,
+                outgoing_all=outgoing_all,
+                deposit=deposit,
+                dex_router_interaction=dex_router_interaction,
+                dex_router_to=dex_router_to,
+                dex_router_label=dex_router_label,
+                dex_router_tx=dex_router_tx,
+            )
+            _record_unknown_eoa_behavior(
+                kind,
+                confidence,
+                exit_wei=int(e.amount_wei),
+                example={
+                    "exit_block": int(e.block_number),
+                    "exit_tx": str(e.tx_hash),
+                    "recipient": str(e.recipient),
+                    "exit_amount": str(_wei_to_token(e.amount_wei)),
+                    "first_hop_to": firsthop_to,
+                    "first_hop_is_contract": firsthop_is_contract,
+                    "evidence": evidence,
+                },
+            )
+            unknown_eoa_behavior_recorded = True
 
     matched_total_exit_wei = matched_direct_exit_wei + matched_second_exit_wei + matched_third_exit_wei
     matched_total_event_count = matched_direct_event_count + matched_second_event_count + matched_third_event_count
@@ -1737,6 +2206,37 @@ def main() -> int:
         }
 
     generated_at = datetime.now(timezone.utc).isoformat()
+
+    role_exit_amount = {k: str(_wei_to_token(v)) for k, v in role_counter_exit_wei.items()}
+    denom_considered = _wei_to_token(considered_exit_wei)
+    role_exit_share_percent: Dict[str, str] = {}
+    for k, v in role_counter_exit_wei.items():
+        amt = _wei_to_token(v)
+        role_exit_share_percent[str(k)] = str((amt / denom_considered) * Decimal(100)) if denom_considered > 0 else str(Decimal(0))
+
+    if bool(classify_unknown_eoa_behavior):
+        kind_counts: Counter[str] = Counter()
+        kind_exit_wei: Dict[str, int] = defaultdict(int)
+        for k, c in unknown_eoa_behavior_counts.items():
+            kind = str(k).split(":", 1)[0]
+            kind_counts[kind] += int(c)
+            kind_exit_wei[kind] += int(unknown_eoa_behavior_exit_wei.get(k) or 0)
+        unknown_eoa_behavior = {
+            "method": "Applies only to exit recipients that are unlabeled EOAs. Classification uses (a) strict labeled-exchange matches (0-3 hops), (b) decoded Arbitrum outboundTransfer() deposits, (c) swap event topics in tx receipts, (d) fallback 'self_custody' when no token outflows are observed.",
+            "confidence_buckets": ["high", "medium", "low"],
+            "heuristic_max_txs_per_exit": int(heuristic_max_txs_per_exit),
+            "dex_swap_topic0_set": sorted(DEX_SWAP_TOPIC0),
+            "totals": {
+                "unknown_eoa_exit_events": int(unknown_eoa_behavior_total_events),
+                "unknown_eoa_exit_amount": str(_wei_to_token(unknown_eoa_behavior_total_exit_wei)),
+                "unknown_eoa_exit_amount_wei": int(unknown_eoa_behavior_total_exit_wei),
+            },
+            "counts_by_kind": dict(kind_counts),
+            "exit_amount_by_kind": {k: str(_wei_to_token(v)) for k, v in kind_exit_wei.items()},
+            "counts_by_kind_and_confidence": dict(unknown_eoa_behavior_counts),
+            "exit_amount_by_kind_and_confidence": {k: str(_wei_to_token(v)) for k, v in unknown_eoa_behavior_exit_wei.items()},
+            "examples": unknown_eoa_behavior_examples,
+        }
 
     out: Dict[str, Any] = {
         "generated_at_utc": generated_at,
@@ -1761,6 +2261,8 @@ def main() -> int:
             "include_third_hop": bool(args.include_third_hop),
             "classify_first_hop_dests": bool(args.classify_first_hop_dests),
             "classify_intermediates": bool(args.classify_intermediates),
+            "classify_unknown_eoa_behavior": bool(args.classify_unknown_eoa_behavior),
+            "heuristic_max_txs_per_exit": int(heuristic_max_txs_per_exit) if bool(args.classify_unknown_eoa_behavior) else None,
             "arbitrum_followup": {
                 "enabled": bool(include_arbitrum_followup),
                 "rpc": str(args.arbitrum_rpc) if include_arbitrum_followup else None,
@@ -1815,6 +2317,23 @@ def main() -> int:
                 "examples_bridge_deposit": arb_bridge_examples,
                 "examples_matched_to_exchange": arb_matched_exchange_examples,
             },
+            "post_exit_roles": {
+                "method": "Heuristic per-exit categorization: exchange_strict if it reaches a labeled exchange (0-3 hops). Else bridge_deposit if a canonical Arbitrum deposit call is detected. Else dex_router_interaction if a labeled router is the tx.to for a transfer. Else hold/unknown categories.",
+                "role_counts": dict(role_counter_events),
+                "role_exit_amount": role_exit_amount,
+                "role_exit_share_percent": role_exit_share_percent,
+                "examples": role_examples,
+            },
+            "top_exchange_intermediates_by_count": [
+                {
+                    "address": str(a),
+                    "count": int(c),
+                    "exit_amount": str(_wei_to_token(exchange_intermediate_exit_wei.get(a) or 0)),
+                    "is_contract": exchange_intermediate_is_contract.get(a),
+                    "example": exchange_intermediate_example.get(a),
+                }
+                for a, c in exchange_intermediate_counter.most_common(15)
+            ],
             "first_hop_breakdown": first_hop_breakdown,
             "top_exchange_endpoints_by_count": [
                 {
@@ -1834,6 +2353,9 @@ def main() -> int:
             "Arbitrum follow-up (when enabled) is best-effort: it only detects deposits via the Arbitrum L1 gateway router outboundTransfer() and only counts transfers into labeled exchanges on Arbitrum.",
         ],
     }
+
+    if unknown_eoa_behavior is not None:
+        out["routing_results_top_recipients"]["unknown_eoa_post_exit_heuristics"] = unknown_eoa_behavior
 
     _write_json(str(out_json), out)
 
@@ -1908,6 +2430,50 @@ def main() -> int:
             for a, c in arb_exchange_counter.most_common(10):
                 label = exchange_labels.get(a, {}).get("name") or a
                 lines.append(f"- {label}: **{int(c)}**")
+
+    if role_counter_events:
+        lines.append("")
+        lines.append("## Post-exit roles (heuristic; top recipients)")
+        lines.append("")
+        lines.append(
+            "These roles are a *best-effort* way to explain what “unknown EOAs / contracts” are doing after exit. They do **not** replace strict exchange routing."
+        )
+        lines.append("")
+        denom = _wei_to_token(considered_exit_wei)
+        for role, c in sorted(role_counter_events.items(), key=lambda kv: (-int(kv[1]), str(kv[0]))):
+            amt = _wei_to_token(role_counter_exit_wei.get(role) or 0)
+            pct = (amt / denom) * Decimal(100) if denom > 0 else Decimal(0)
+            lines.append(f"- {role}: **{int(c)}** events; **{_format_token(amt)} {args.token_symbol}** ({pct.quantize(Decimal('0.01'))}%)")
+
+        if exchange_intermediate_counter:
+            lines.append("")
+            lines.append("Top intermediates on paths that end at labeled exchanges (by count):")
+            lines.append("")
+            for a, c in exchange_intermediate_counter.most_common(10):
+                meta = exchange_intermediate_example.get(a) or {}
+                hint = meta.get("example_exchange_label") or meta.get("example_exchange_to") or ""
+                lines.append(f"- {a}: **{int(c)}** (example downstream: {hint})")
+
+    if unknown_eoa_behavior is not None:
+        totals = unknown_eoa_behavior.get("totals") if isinstance(unknown_eoa_behavior, dict) else {}
+        lines.append("")
+        lines.append("## Unknown EOA post-exit behavior (heuristic; optional)")
+        lines.append("")
+        lines.append(
+            "This applies only to exit recipients that are **unlabeled EOAs**. It uses strict exchange matches (when enabled), decoded Arbitrum deposits, and swap event topics to bucket behavior; remaining cases fall back to self_custody."
+        )
+        lines.append("")
+        lines.append(f"- Unknown EOA exit events: **{int((totals or {}).get('unknown_eoa_exit_events') or 0)}**")
+        lines.append(
+            f"- Unknown EOA exit amount: **{_format_token(_wei_to_token(int((totals or {}).get('unknown_eoa_exit_amount_wei') or 0)))} {args.token_symbol}**"
+        )
+        lines.append("")
+        by_kind = unknown_eoa_behavior.get("counts_by_kind") if isinstance(unknown_eoa_behavior, dict) else {}
+        by_kind_amt = unknown_eoa_behavior.get("exit_amount_by_kind") if isinstance(unknown_eoa_behavior, dict) else {}
+        if isinstance(by_kind, dict):
+            for k, c in sorted(by_kind.items(), key=lambda kv: (-int(kv[1]), str(kv[0]))):
+                amt = Decimal(str((by_kind_amt or {}).get(k) or "0"))
+                lines.append(f"- {k}: **{int(c)}** events; **{_format_token(amt)} {args.token_symbol}**")
 
     if first_hop_breakdown is not None:
         lines.append("")

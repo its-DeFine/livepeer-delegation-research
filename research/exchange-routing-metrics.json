@@ -53,7 +53,7 @@
       "token": "FIL"
     }
   },
-  "generated_at_utc": "2026-01-25T01:12:26.674787+00:00",
+  "generated_at_utc": "2026-01-25T12:12:59.682674+00:00",
   "labels": {
     "exchange_label_count": 37,
     "labels_json": "data/labels.json",
@@ -134,6 +134,22 @@
         "basis": "exited AAVE that reaches labeled exchange endpoints within window (any hop)",
         "events": 9
       },
+      "post_exit_roles": {
+        "role_counts": {
+          "dex_router_interaction": 11,
+          "exchange_strict": 9,
+          "hold_no_first_hop": 9,
+          "unknown_contract": 22,
+          "unknown_eoa": 28
+        },
+        "role_exit_share_percent": {
+          "dex_router_interaction": "59.4492839527907243668432227422699836515942266398442145531720",
+          "exchange_strict": "4.69481515134334274376615639610368524971875526671178426572210",
+          "hold_no_first_hop": "6.96486945042579016340079409736109960988598449807360882810654",
+          "unknown_contract": "21.0980387872445848187800321115875056689365447691751554844057",
+          "unknown_eoa": "7.79299265819555790720979465267772581986448882619523686859371"
+        }
+      },
       "protocol": "Aave (stkAAVE Redeem)",
       "selection": {
         "top_n_recipients": 50,
@@ -141,6 +157,7 @@
       },
       "share_events_matched_percent": "11.392405063291139240506329113924050632911392405063291139240506329113924050632911",
       "share_to_exchanges_lower_bound_percent": "4.6948151513433427437661563961036852497187552667117842657220955377997232271602515",
+      "share_to_exchanges_or_bridges_heuristic_percent": "4.6948151513433427437661563961036852497187552667117842657220955377997232271602515",
       "source_json": "research/aave-stkaave-redeem-exit-routing.json",
       "token": "AAVE"
     },
@@ -216,6 +233,22 @@
         "basis": "exited CRV that reaches labeled exchange endpoints within window (any hop)",
         "events": 4
       },
+      "post_exit_roles": {
+        "role_counts": {
+          "dex_router_interaction": 7,
+          "exchange_strict": 4,
+          "hold_no_first_hop": 16,
+          "unknown_contract": 15,
+          "unknown_eoa": 8
+        },
+        "role_exit_share_percent": {
+          "dex_router_interaction": "10.4356907532660519940192955518387116193804516380913318774453",
+          "exchange_strict": "5.21215111949513410934942872355248632647543100074747512416673",
+          "hold_no_first_hop": "38.5367957033937096122604727595288814862132441090161195050274",
+          "unknown_contract": "9.77603103746248692934163542798367240043514414596418770665621",
+          "unknown_eoa": "36.0393313863826173550291675370962481674957291061808857867043"
+        }
+      },
       "protocol": "Curve (veCRV)",
       "selection": {
         "top_n_recipients": 50,
@@ -223,6 +256,7 @@
       },
       "share_events_matched_percent": "8.00",
       "share_to_exchanges_lower_bound_percent": "5.2121511194951341093494287235524863264754310007474751241667266325100807827380424",
+      "share_to_exchanges_or_bridges_heuristic_percent": "5.2121511194951341093494287235524863264754310007474751241667266325100807827380424",
       "source_json": "research/curve-vecrv-exit-routing.json",
       "token": "CRV"
     },
@@ -298,6 +332,22 @@
         "basis": "exited FXS that reaches labeled exchange endpoints within window (any hop)",
         "events": 4
       },
+      "post_exit_roles": {
+        "role_counts": {
+          "dex_router_interaction": 10,
+          "exchange_strict": 4,
+          "hold_no_first_hop": 8,
+          "unknown_contract": 25,
+          "unknown_eoa": 4
+        },
+        "role_exit_share_percent": {
+          "dex_router_interaction": "13.1418531300121528730634292749404762623382449560179372992939",
+          "exchange_strict": "7.05336243437846940665425842463373588136053344636781095626388",
+          "hold_no_first_hop": "4.19895323624045015305829185948148371404765472185073339860840",
+          "unknown_contract": "65.0482753272265290072333117638825821194838966695865713616149",
+          "unknown_eoa": "10.5575558721423985599907086770617220227696702061769469842189"
+        }
+      },
       "protocol": "Frax (veFXS)",
       "selection": {
         "top_n_recipients": 50,
@@ -305,6 +355,7 @@
       },
       "share_events_matched_percent": "7.8431372549019607843137254901960784313725490196078431372549019607843137254901961",
       "share_to_exchanges_lower_bound_percent": "7.0533624343784694066542584246337358813605334463678109562638774965568985177492749",
+      "share_to_exchanges_or_bridges_heuristic_percent": "7.0533624343784694066542584246337358813605334463678109562638774965568985177492749",
       "source_json": "research/frax-vefxs-exit-routing.json",
       "token": "FXS"
     },

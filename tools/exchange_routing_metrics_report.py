@@ -225,6 +225,7 @@ def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
     tok = data.get("token") if isinstance(data, dict) else {}
     res = data.get("routing_results_top_recipients") if isinstance(data, dict) else {}
     arb = (res or {}).get("arbitrum_followup") if isinstance(res, dict) else None
+    roles = (res or {}).get("post_exit_roles") if isinstance(res, dict) else None
 
     protocol_name = str((proto or {}).get("name") or "unknown")
     chain = str((proto or {}).get("chain") or "ethereum")
@@ -293,6 +294,24 @@ def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
             "top_exchange_endpoints_by_count": arb.get("top_exchange_endpoints_by_count") if isinstance(arb.get("top_exchange_endpoints_by_count"), list) else [],
         }
 
+    post_exit_roles: dict[str, Any] | None = None
+    if isinstance(roles, dict):
+        role_counts = roles.get("role_counts") if isinstance(roles.get("role_counts"), dict) else {}
+        role_exit_share = roles.get("role_exit_share_percent") if isinstance(roles.get("role_exit_share_percent"), dict) else {}
+        post_exit_roles = {
+            "role_counts": role_counts,
+            "role_exit_share_percent": role_exit_share,
+        }
+
+    # "Expanded heuristic" = strict exchange share + (non-exchange) bridge deposit share (when available).
+    exchange_share = _pct(matched_total, exited)
+    bridge_share = Decimal(0)
+    if isinstance(post_exit_roles, dict):
+        try:
+            bridge_share = _d((post_exit_roles.get("role_exit_share_percent") or {}).get("bridge_deposit"))
+        except Exception:
+            bridge_share = Decimal(0)
+
     return {
         "source_json": path,
         "chain": chain,
@@ -306,6 +325,7 @@ def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
             "events": matched_total_events,
         },
         "share_to_exchanges_lower_bound_percent": str(_pct(matched_total, exited)),
+        "share_to_exchanges_or_bridges_heuristic_percent": str(exchange_share + bridge_share),
         "share_events_matched_percent": str(_pct(Decimal(matched_total_events), Decimal(exit_events))),
         "breakdown": {
             "direct": {"events": matched_direct_events, "amount": str(matched_direct), "share_percent": str(_pct(matched_direct, exited))},
@@ -316,6 +336,7 @@ def _erc20_exit_routing_metrics(path: str) -> dict[str, Any]:
         "labels": {"exchange_label_count": exchange_labels},
         "first_hop_destinations": first_hop_destinations,
         "arbitrum_followup": arbitrum_followup,
+        "post_exit_roles": post_exit_roles,
         "notes": [
             "This is a LOWER BOUND: it counts only transfers to a small curated set of labeled exchange hot wallets.",
             "Routing is checked within a fixed post-exit window and limited hops; more complex paths will be missed.",

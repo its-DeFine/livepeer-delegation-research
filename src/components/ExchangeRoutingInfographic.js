@@ -8,6 +8,14 @@ function toPct(x) {
   return Number.isFinite(n) ? n : 0;
 }
 
+function toPctHeuristic(m) {
+  if (!m) return 0;
+  const v =
+    m.share_to_exchanges_or_bridges_heuristic_percent ??
+    m.share_to_exchanges_lower_bound_percent;
+  return toPct(v);
+}
+
 export default function ExchangeRoutingInfographic() {
   const metrics = routing?.metrics ?? {};
 
@@ -51,6 +59,39 @@ export default function ExchangeRoutingInfographic() {
     }
   ];
 
+  const heuristicItems = [
+    {
+      label: 'Livepeer (LPT) - L1 2nd hop follow-up',
+      valuePct: toPctHeuristic(lp2),
+      href: '/research/l1-bridge-recipient-second-hop'
+    },
+    {
+      label: 'Livepeer (LPT) - traced bridge-outs -> exchange',
+      valuePct: toPctHeuristic(lpt),
+      href: '/research/extraction-timing-traces'
+    },
+    {
+      label: 'The Graph (GRT) - withdrawals -> exchange',
+      valuePct: toPctHeuristic(tg),
+      href: '/research/thegraph-delegation-withdrawal-routing'
+    },
+    {
+      label: 'Curve (CRV) - veCRV withdraws -> exchange/bridge',
+      valuePct: toPctHeuristic(cv),
+      href: '/research/curve-vecrv-exit-routing'
+    },
+    {
+      label: 'Frax (FXS) - veFXS withdraws -> exchange/bridge',
+      valuePct: toPctHeuristic(fx),
+      href: '/research/frax-vefxs-exit-routing'
+    },
+    {
+      label: 'Aave (AAVE) - stkAAVE redeem -> exchange/bridge',
+      valuePct: toPctHeuristic(av),
+      href: '/research/aave-stkaave-redeem-exit-routing'
+    }
+  ];
+
   const arbItems = [
     {
       label: 'Curve (CRV) - bridged to Arbitrum -> exchange',
@@ -89,6 +130,11 @@ export default function ExchangeRoutingInfographic() {
                 : null
         }
         items={items}
+      />
+      <BarList
+        title="Exchange or bridge (heuristic)"
+        subtitle="Strict exchange routing + (non-exchange) bridge deposits when detectable; still a lower bound."
+        items={heuristicItems}
       />
       {arbItems.length > 0 ? (
         <BarList

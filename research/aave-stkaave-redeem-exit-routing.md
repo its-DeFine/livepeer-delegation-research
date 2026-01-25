@@ -5,7 +5,7 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 # Aave (stkAAVE Redeem): exit → exchange routing (on-chain)
 
-- Generated: `2026-01-25T00:56:46.997763+00:00`
+- Generated: `2026-01-25T12:12:46.962180+00:00`
 - Ethereum RPC: `https://ethereum.publicnode.com`
 - Exit contract: `0x4da27a545c0c5b758a6ba100e3a049001de870f5`
 - Exit event: `Redeem(address,address,uint256,uint256)` (topic0 `0x3f693fff038bb8a046aa76d9516190ac7444f7d69cf952c4cbdc086fdef2d6fc`)
@@ -13,10 +13,10 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 ## Exit events (observed)
 
-- Range scanned: `23,660,299..24,308,299` (~90d)
-- Exit events: **945**
-- Unique recipients: **856**
-- Total exited (events): **520,834.893 AAVE**
+- Range scanned: `23,663,650..24,311,650` (~90d)
+- Exit events: **940**
+- Unique recipients: **852**
+- Total exited (events): **521,138.655 AAVE**
 
 ## Tight-window routing to labeled exchanges (top recipients)
 
@@ -48,6 +48,27 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 - Of those, matched to labeled exchange on Arbitrum (events): **0**
 - Matched exit amount (events): **0.000 AAVE**
 - Matched token amount to exchanges on Arbitrum: **0.000 AAVE**
+
+## Post-exit roles (heuristic; top recipients)
+
+These roles are a *best-effort* way to explain what “unknown EOAs / contracts” are doing after exit. They do **not** replace strict exchange routing.
+
+- unknown_eoa: **28** events; **36,963.653 AAVE** (7.79%)
+- unknown_contract: **22** events; **100,072.028 AAVE** (21.10%)
+- dex_router_interaction: **11** events; **281,979.310 AAVE** (59.45%)
+- exchange_strict: **9** events; **22,268.405 AAVE** (4.69%)
+- hold_no_first_hop: **9** events; **33,035.706 AAVE** (6.96%)
+
+Top intermediates on paths that end at labeled exchanges (by count):
+
+- 0xa16a27cff6bd4f2dc3e6ca2cab3b244df543e27b: **2** (example downstream: Binance 14)
+- 0xd6a39edecfeb4bf6271691de406a279c53065d0e: **1** (example downstream: Binance 14)
+- 0x2ca4d4b110a54e1428318fb2f77c5c46c15c7a2b: **1** (example downstream: Binance 14)
+- 0x892e81ef9c30bfe4ff81c3ff03a474d8ea8a38c4: **1** (example downstream: Coinbase 10)
+- 0x4cfdd9ebf908cb9ca39afae40a0f0acfd5a28be4: **1** (example downstream: Binance 14)
+- 0x04e804c048f4b589befdc9ecfffefe5d187c9b71: **1** (example downstream: Binance 14)
+- 0x8a5247e382f9e516bab014103b8c16b07b840d92: **1** (example downstream: Binance 14)
+- 0x41a8e187f9be0d83fe963bb56a44c10b3b92becb: **1** (example downstream: Gate.io 1)
 
 ## First hop destinations (top recipients; within window)
 

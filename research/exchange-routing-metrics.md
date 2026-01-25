@@ -6,7 +6,7 @@ sidebar_label: "Exchange routing metrics"
 
 # Exchange routing metrics (best-effort, on-chain)
 
-- Generated: `2026-01-25T01:12:26.674787+00:00`
+- Generated: `2026-01-25T12:12:59.682674+00:00`
 - Exchange label set size (EVM): **37** (`data/labels.json`)
 
 These metrics formalize the “X% goes to exchanges” claim as:
