@@ -763,7 +763,7 @@ def main() -> int:
     lines.append(f"- DePIN exit-friction snapshot JSON: `{args.depin_liquidity_primitives_snapshot_json}`")
     lines.append(f"- Theta liquidity primitives JSON: `{args.theta_liquidity_primitives_json}`")
     lines.append("")
-    lines.append("Raw output: see `research/exchange-routing-metrics.json`.")
+    lines.append(f"Raw output: see `{args.out_json}`.")
 
     _write_text(str(args.out_md), "\n".join(lines) + "\n")
 
