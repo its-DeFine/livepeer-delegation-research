@@ -201,6 +201,11 @@ export default function LivepeerVsPeersComparison() {
   const transferValidation = transferBond?.receipt_validation ?? {};
   const buyTotals = buyPressure?.selection_totals ?? {};
   const buyScan = buyPressure?.scan_totals ?? {};
+  const buyExchangeWalletsScanned = Array.isArray(buyPressure?.exchange_wallets_scanned)
+    ? buyPressure.exchange_wallets_scanned.length
+    : typeof buyPressure?.exchange_wallets_scanned === 'number'
+      ? buyPressure.exchange_wallets_scanned
+      : null;
 
   return (
     <>
@@ -472,7 +477,7 @@ export default function LivepeerVsPeersComparison() {
       </p>
       <ul>
         <li>
-          Labeled exchange wallets scanned: <strong>{buyPressure?.exchange_wallets_scanned ? fmtInt(buyPressure.exchange_wallets_scanned) : '—'}</strong>
+          Labeled exchange wallets scanned: <strong>{buyExchangeWalletsScanned !== null ? fmtInt(buyExchangeWalletsScanned) : '—'}</strong>
         </li>
         <li>
           Unique unlabeled recipients (any size): <strong>{buyScan?.unique_unlabeled_recipients ? fmtInt(buyScan.unique_unlabeled_recipients) : '—'}</strong>
@@ -498,4 +503,3 @@ export default function LivepeerVsPeersComparison() {
     </>
   );
 }
-

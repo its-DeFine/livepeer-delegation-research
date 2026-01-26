@@ -4,6 +4,9 @@ description: Side-by-side comparison of Livepeer exit flows vs peers using the e
 sidebar_label: Livepeer vs peers
 ---
 
+> Note: This page uses **MDX + React components** and will look mostly empty in plain Markdown previews (GitHub/VS Code).
+> View it via the site at `/research/livepeer-vs-peers` (run `npm run start`) or open `build/research/livepeer-vs-peers.html` after `npm run build`.
+
 import LivepeerVsPeersComparison from '@site/src/components/LivepeerVsPeersComparison';
 
 # Livepeer vs peer protocols (on-chain comparison)
