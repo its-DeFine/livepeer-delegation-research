@@ -5,7 +5,7 @@ description: "Evidence pack: delegator withdrawals from The Graph staking contra
 
 # The Graph: delegation withdrawals → exchange routing (on-chain)
 
-- Generated: `2026-01-24T21:23:11.883584+00:00`
+- Generated: `2026-01-26T14:22:47.509615+00:00`
 - Ethereum RPC: `https://ethereum.publicnode.com`
 - Staking contract: `0xF55041E37E12cD407ad00CE2910B8269B01263b9`
 - GRT token: `0xc944e90c64b2c07662a292be6244bdf05cda44a7`
@@ -17,15 +17,15 @@ description: "Evidence pack: delegator withdrawals from The Graph staking contra
 
 ## Delegation withdrawals (events)
 
-- Range scanned: `23,011,284..24,307,284` (~180d)
-- `StakeDelegatedWithdrawn` events: **165**
-- Unique delegators: **144**
-- Total withdrawn (delegators): **10,660,312.761 GRT**
+- Range scanned: `23,023,551..24,319,551` (~180d)
+- `StakeDelegatedWithdrawn` events: **166**
+- Unique delegators: **145**
+- Total withdrawn (delegators): **10,667,088.264 GRT**
 
 ## Tight-window routing to labeled exchanges (top delegators)
 
 - Window: **30 days** (~216,000 blocks)
-- Exchange label set size: **37** addresses (`data/labels.json`)
+- Exchange label set size: **105** addresses (`data/labels.json`)
 - Top delegators analyzed: **50**
 
 - Withdraw events considered (top delegators): **60**

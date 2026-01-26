@@ -5,7 +5,7 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 # Aave (stkAAVE Redeem): exit → exchange routing (on-chain)
 
-- Generated: `2026-01-25T12:12:46.962180+00:00`
+- Generated: `2026-01-26T15:11:48.870852+00:00`
 - Ethereum RPC: `https://ethereum.publicnode.com`
 - Exit contract: `0x4da27a545c0c5b758a6ba100e3a049001de870f5`
 - Exit event: `Redeem(address,address,uint256,uint256)` (topic0 `0x3f693fff038bb8a046aa76d9516190ac7444f7d69cf952c4cbdc086fdef2d6fc`)
@@ -13,19 +13,19 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 ## Exit events (observed)
 
-- Range scanned: `23,663,650..24,311,650` (~90d)
-- Exit events: **940**
-- Unique recipients: **852**
-- Total exited (events): **521,138.655 AAVE**
+- Range scanned: `23,671,733..24,319,733` (~90d)
+- Exit events: **937**
+- Unique recipients: **848**
+- Total exited (events): **517,784.594 AAVE**
 
 ## Tight-window routing to labeled exchanges (top recipients)
 
 - Window: **30 days** (~216,000 blocks)
-- Exchange label set size: **37** addresses (`data/labels.json`)
+- Exchange label set size: **105** addresses (`data/labels.json`)
 - Top recipients analyzed: **50**
 
-- Exit events considered (top recipients): **79**
-- Exit amount considered: **474,319.102 AAVE**
+- Exit events considered (top recipients): **81**
+- Exit amount considered: **472,247.006 AAVE**
 - Direct matched within window (events): **0**
 - Direct matched amount (lower bound): **0.000 AAVE**
 - Second hop matched within window (events): **9**
@@ -53,11 +53,11 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 These roles are a *best-effort* way to explain what “unknown EOAs / contracts” are doing after exit. They do **not** replace strict exchange routing.
 
-- unknown_eoa: **28** events; **36,963.653 AAVE** (7.79%)
-- unknown_contract: **22** events; **100,072.028 AAVE** (21.10%)
-- dex_router_interaction: **11** events; **281,979.310 AAVE** (59.45%)
-- exchange_strict: **9** events; **22,268.405 AAVE** (4.69%)
-- hold_no_first_hop: **9** events; **33,035.706 AAVE** (6.96%)
+- unknown_eoa: **26** events; **33,349.848 AAVE** (7.06%)
+- unknown_contract: **25** events; **100,872.813 AAVE** (21.36%)
+- dex_router_interaction: **11** events; **281,979.310 AAVE** (59.71%)
+- hold_no_first_hop: **10** events; **33,776.630 AAVE** (7.15%)
+- exchange_strict: **9** events; **22,268.405 AAVE** (4.72%)
 
 Top intermediates on paths that end at labeled exchanges (by count):
 
@@ -74,9 +74,9 @@ Top intermediates on paths that end at labeled exchanges (by count):
 
 This categorizes the *first meaningful* outgoing token transfer after each exit (>= max(min_first_hop_token, min_first_hop_fraction*exit)) as a proxy for where the exit goes. It can miss split flows or transfers below threshold.
 
-- unknown_eoa: **37** events; **59,232.058 AAVE** exited
-- unknown_contract: **24** events; **118,199.498 AAVE** exited
-- no_first_hop_meeting_threshold: **18** events; **296,887.546 AAVE** exited
+- unknown_eoa: **35** events; **55,618.253 AAVE** exited
+- unknown_contract: **27** events; **119,000.283 AAVE** exited
+- no_first_hop_meeting_threshold: **19** events; **297,628.470 AAVE** exited
 
 Top exchange endpoints (by matched count):
 

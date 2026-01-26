@@ -5,7 +5,7 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 # Frax (veFXS): exit → exchange routing (on-chain)
 
-- Generated: `2026-01-25T11:53:02.300761+00:00`
+- Generated: `2026-01-26T14:48:07.419543+00:00`
 - Ethereum RPC: `https://ethereum.publicnode.com`
 - Exit contract: `0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0`
 - Exit event: `Withdraw(address,uint256,uint256)` (topic0 `0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568`)
@@ -13,19 +13,19 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 ## Exit events (observed)
 
-- Range scanned: `23,663,601..24,311,601` (~90d)
-- Exit events: **129**
-- Unique recipients: **128**
-- Total exited (events): **1,101,085.109 FXS**
+- Range scanned: `23,671,662..24,319,662` (~90d)
+- Exit events: **128**
+- Unique recipients: **127**
+- Total exited (events): **1,083,978.109 FXS**
 
 ## Tight-window routing to labeled exchanges (top recipients)
 
 - Window: **30 days** (~216,000 blocks)
-- Exchange label set size: **37** addresses (`data/labels.json`)
+- Exchange label set size: **105** addresses (`data/labels.json`)
 - Top recipients analyzed: **50**
 
 - Exit events considered (top recipients): **51**
-- Exit amount considered: **1,073,411.321 FXS**
+- Exit amount considered: **1,057,345.321 FXS**
 - Direct matched within window (events): **0**
 - Direct matched amount (lower bound): **0.000 FXS**
 - Second hop matched within window (events): **4**
@@ -53,11 +53,11 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 These roles are a *best-effort* way to explain what “unknown EOAs / contracts” are doing after exit. They do **not** replace strict exchange routing.
 
-- unknown_contract: **25** events; **698,235.552 FXS** (65.05%)
-- dex_router_interaction: **10** events; **141,066.139 FXS** (13.14%)
-- hold_no_first_hop: **8** events; **45,072.039 FXS** (4.20%)
-- exchange_strict: **4** events; **75,711.591 FXS** (7.05%)
-- unknown_eoa: **4** events; **113,326.000 FXS** (10.56%)
+- unknown_contract: **24** events; **696,998.552 FXS** (65.92%)
+- dex_router_interaction: **10** events; **141,066.139 FXS** (13.34%)
+- hold_no_first_hop: **9** events; **30,243.039 FXS** (2.86%)
+- exchange_strict: **4** events; **75,711.591 FXS** (7.16%)
+- unknown_eoa: **4** events; **113,326.000 FXS** (10.72%)
 
 Top intermediates on paths that end at labeled exchanges (by count):
 
@@ -70,8 +70,8 @@ Top intermediates on paths that end at labeled exchanges (by count):
 
 This categorizes the *first meaningful* outgoing token transfer after each exit (>= max(min_first_hop_token, min_first_hop_fraction*exit)) as a proxy for where the exit goes. It can miss split flows or transfers below threshold.
 
-- unknown_contract: **26** events; **702,485.552 FXS** exited
-- no_first_hop_meeting_threshold: **17** events; **181,888.179 FXS** exited
+- unknown_contract: **25** events; **701,248.552 FXS** exited
+- no_first_hop_meeting_threshold: **18** events; **167,059.179 FXS** exited
 - unknown_eoa: **8** events; **189,037.591 FXS** exited
 
 Top exchange endpoints (by matched count):

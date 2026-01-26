@@ -5,7 +5,7 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 # Curve (veCRV): exit → exchange routing (on-chain)
 
-- Generated: `2026-01-25T11:43:19.987532+00:00`
+- Generated: `2026-01-26T14:33:13.481979+00:00`
 - Ethereum RPC: `https://ethereum.publicnode.com`
 - Exit contract: `0x5f3b5dfeb7b28cdbd7faba78963ee202a494e2a2`
 - Exit event: `Withdraw(address,uint256,uint256)` (topic0 `0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568`)
@@ -13,19 +13,19 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 ## Exit events (observed)
 
-- Range scanned: `23,663,551..24,311,551` (~90d)
-- Exit events: **370**
-- Unique recipients: **366**
-- Total exited (events): **9,574,338.572 CRV**
+- Range scanned: `23,671,586..24,319,586` (~90d)
+- Exit events: **369**
+- Unique recipients: **365**
+- Total exited (events): **9,595,950.987 CRV**
 
 ## Tight-window routing to labeled exchanges (top recipients)
 
 - Window: **30 days** (~216,000 blocks)
-- Exchange label set size: **37** addresses (`data/labels.json`)
+- Exchange label set size: **105** addresses (`data/labels.json`)
 - Top recipients analyzed: **50**
 
 - Exit events considered (top recipients): **50**
-- Exit amount considered: **9,132,045.199 CRV**
+- Exit amount considered: **9,149,435.266 CRV**
 - Direct matched within window (events): **0**
 - Direct matched amount (lower bound): **0.000 CRV**
 - Second hop matched within window (events): **4**
@@ -53,11 +53,11 @@ description: "Evidence pack: on-chain exit events and tight-window routing into 
 
 These roles are a *best-effort* way to explain what “unknown EOAs / contracts” are doing after exit. They do **not** replace strict exchange routing.
 
-- hold_no_first_hop: **16** events; **3,519,197.602 CRV** (38.54%)
-- unknown_contract: **15** events; **892,751.573 CRV** (9.78%)
-- unknown_eoa: **8** events; **3,291,128.032 CRV** (36.04%)
-- dex_router_interaction: **7** events; **952,991.996 CRV** (10.44%)
-- exchange_strict: **4** events; **475,975.996 CRV** (5.21%)
+- hold_no_first_hop: **17** events; **3,550,880.262 CRV** (38.81%)
+- unknown_contract: **14** events; **878,458.980 CRV** (9.60%)
+- unknown_eoa: **8** events; **3,291,128.032 CRV** (35.97%)
+- dex_router_interaction: **7** events; **952,991.996 CRV** (10.42%)
+- exchange_strict: **4** events; **475,975.996 CRV** (5.20%)
 
 Top intermediates on paths that end at labeled exchanges (by count):
 
@@ -70,8 +70,8 @@ Top intermediates on paths that end at labeled exchanges (by count):
 
 This categorizes the *first meaningful* outgoing token transfer after each exit (>= max(min_first_hop_token, min_first_hop_fraction*exit)) as a proxy for where the exit goes. It can miss split flows or transfers below threshold.
 
-- no_first_hop_meeting_threshold: **21** events; **4,262,270.499 CRV** exited
-- unknown_contract: **17** events; **1,102,670.672 CRV** exited
+- no_first_hop_meeting_threshold: **22** events; **4,293,953.159 CRV** exited
+- unknown_contract: **16** events; **1,088,378.079 CRV** exited
 - unknown_eoa: **12** events; **3,767,104.028 CRV** exited
 
 Top exchange endpoints (by matched count):

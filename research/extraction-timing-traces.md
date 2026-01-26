@@ -17,19 +17,19 @@ This is still **not proof of delta-neutral hedging** (the hedge is mostly off-ch
 
 ## Summary
 
-- Generated: `2026-01-22T00:46:05.137369+00:00`
+- Generated: `2026-01-26T14:18:21.842598+00:00`
 - Arbitrum RPC: `https://arb1.arbitrum.io/rpc`
 - Ethereum RPC: `https://rpc.flashbots.net`
 - L1 token: `0x58b6a8a3302369daec383334672404ee733ab239`
 - L1 escrow: `0x6a23f4940bd5ba117da261f98aae51a8bffa210a`
-- L2 window: `5856381` → `423863641`
-- L1 window: `14600000` → `24286807`
+- L2 window: `5856381` → `425439720`
+- L1 window: `14600000` → `24319524`
 
 - Senders analyzed: **10**
 - Burn (bridge-out) events: **85**
 - Matched `WithdrawStake`→burn (≤ 72.0h): **75**
-- Matched burn→L1 escrow receipt (≤ 60.0d): **84**
-- Matched L1 receipt→labeled exchange (≤ 72.0h forward, then ≤ 72.0h to exchange): **68**
+- Matched burn→L1 escrow receipt (≤ 60.0d): **85**
+- Matched L1 receipt→labeled exchange (≤ 72.0h forward, then ≤ 72.0h to exchange): **69**
 
 ## Sender table
 
@@ -38,7 +38,7 @@ Columns: Arbitrum bonded stake **now** (snapshot), number of bridge-outs, and ho
 | Sender (L2) | Bonded now (LPT) | Burns | Matched withdraw→burn | Matched burn→L1 receipt | Matched receipt→exchange | Median burn→receipt (d) | Median receipt→exchange (h) |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | `0x3d6182c59dbbbbc648570762da316ac8404816ae` | 0.000 | 16 | 16 | 16 | 11 | 8.08 | 0.19 |
-| `0xc5519fd1129d6d22744e0ac491401fff45d26528` | 2,322,141.979 | 18 | 16 | 17 | 16 | 7.34 | 2.85 |
+| `0xc5519fd1129d6d22744e0ac491401fff45d26528` | 2,322,141.979 | 18 | 16 | 18 | 17 | 7.48 | 2.66 |
 | `0x962b029508b1054e2af4184bbaeb5d0c796f7526` | 0.000 | 1 | 1 | 1 | 0 |  |  |
 | `0x60b8eb0947d25194afa248b81a087214beec5cfe` | 0.000 | 2 | 0 | 2 | 2 | 7.01 | 0.18 |
 | `0xef83273cbd014c4ae7998467c422275a8b37827e` | 0.000 | 1 | 1 | 1 | 0 |  |  |

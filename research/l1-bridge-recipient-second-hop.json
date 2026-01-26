@@ -14,7 +14,7 @@
         {
           "amount_lpt": "1990712.703428244695996",
           "category": "exchange",
-          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "label": "Coinbase Prime",
           "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
           "tx_count": 65
         }
@@ -109,7 +109,7 @@
         {
           "amount_lpt": "1625016",
           "category": "exchange",
-          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "label": "Coinbase Prime",
           "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
           "tx_count": 3
         }
@@ -164,7 +164,7 @@
         {
           "amount_lpt": "526141.28910206425421109",
           "category": "exchange",
-          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "label": "Coinbase Prime",
           "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
           "tx_count": 19
         }
@@ -184,7 +184,7 @@
         {
           "amount_lpt": "667914.346781",
           "category": "exchange",
-          "label": "Binance 14 (public label; best-effort)",
+          "label": "Binance 14",
           "to": "0x28c6c06298d514db089934071355e5743bf21d60",
           "tx_count": 1
         }
@@ -231,7 +231,7 @@
         {
           "amount_lpt": "699785.971513614695995978",
           "category": "exchange",
-          "label": "Coinbase Prime 2 (public label; best-effort)",
+          "label": "Coinbase Prime",
           "to": "0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea",
           "tx_count": 16
         }
@@ -244,7 +244,7 @@
     "unknown_eoa": "5294063.797503110182967815"
   },
   "eth_rpc": "https://rpc.flashbots.net",
-  "generated_at_utc": "2026-01-20T23:35:24.169614+00:00",
+  "generated_at_utc": "2026-01-26T14:12:59.272614+00:00",
   "inputs": {
     "in_json": "research/l1-bridge-recipient-followup.json",
     "labels_json": "data/labels.json"

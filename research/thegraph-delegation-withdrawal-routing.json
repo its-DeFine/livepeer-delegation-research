@@ -3,7 +3,7 @@
     "first_hop_classify_destinations": true,
     "include_second_hop": true,
     "include_third_hop": true,
-    "labels_exchange_count": 37,
+    "labels_exchange_count": 105,
     "second_hop_classify_intermediates": false,
     "second_hop_max_first_hops_per_withdrawal": 6,
     "second_hop_min_first_hop_fraction": "0.02",
@@ -16,7 +16,7 @@
     "window_days": 30
   },
   "eth_rpc": "https://ethereum.publicnode.com",
-  "generated_at_utc": "2026-01-24T21:23:11.883584+00:00",
+  "generated_at_utc": "2026-01-26T14:22:47.509615+00:00",
   "grt_token": "0xc944e90c64b2c07662a292be6244bdf05cda44a7",
   "matched_examples_direct": [],
   "matched_examples_second_hop": [
@@ -328,8 +328,8 @@
   },
   "range": {
     "days_approx": 180,
-    "from_block": 23011284,
-    "to_block": 24307284
+    "from_block": 23023551,
+    "to_block": 24319551
   },
   "routing_results_top_delegators": {
     "exchange_transfer_count_by_to_direct": {},
@@ -972,9 +972,9 @@
     }
   ],
   "totals": {
-    "delegation_withdraw_events": 165,
-    "unique_delegators": 144,
-    "unique_indexers": 53,
-    "withdrawn_grt_total": "10660312.760929356257234037"
+    "delegation_withdraw_events": 166,
+    "unique_delegators": 145,
+    "unique_indexers": 52,
+    "withdrawn_grt_total": "10667088.263826485645390976"
   }
 }

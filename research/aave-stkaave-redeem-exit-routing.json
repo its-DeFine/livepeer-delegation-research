@@ -3,7 +3,7 @@
     "arbitrum_followup": {
       "enabled": true,
       "followup_window_days": 7,
-      "include_second_hop": true,
+      "include_second_hop": false,
       "l1_gateway_router": "0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef",
       "l1_token_gateway": "0xa3a7b6f88361f48403514059f1f16c8e78d60eec",
       "l2_token_address": "0xba5ddd1f9d7f570dc94a51479a000e3bce967196",
@@ -16,7 +16,7 @@
     "heuristic_max_txs_per_exit": null,
     "include_second_hop": true,
     "include_third_hop": true,
-    "labels_exchange_count": 37,
+    "labels_exchange_count": 105,
     "labels_json": "data/labels.json",
     "thresholds": {
       "max_first_hops_per_exit": 6,
@@ -37,7 +37,7 @@
     "signature": "Redeem(address,address,uint256,uint256)",
     "topic0": "0x3f693fff038bb8a046aa76d9516190ac7444f7d69cf952c4cbdc086fdef2d6fc"
   },
-  "generated_at_utc": "2026-01-25T12:12:46.962180+00:00",
+  "generated_at_utc": "2026-01-26T15:11:48.870852+00:00",
   "matched_examples_direct": [],
   "matched_examples_second_hop": [
     {
@@ -224,8 +224,8 @@
   },
   "range": {
     "days_approx": 90,
-    "from_block": 23663650,
-    "to_block": 24311650
+    "from_block": 23671733,
+    "to_block": 24319733
   },
   "routing_results_top_recipients": {
     "arbitrum_followup": {
@@ -240,22 +240,22 @@
       "matched_to_exchange_token_amount": "0",
       "top_exchange_endpoints_by_count": []
     },
-    "exit_amount_considered": "474319.101557716765306523",
-    "exit_events_considered": 79,
+    "exit_amount_considered": "472247.006318014938243101",
+    "exit_events_considered": 81,
     "first_hop_breakdown": {
       "category_counts": {
-        "no_first_hop_meeting_threshold": 18,
-        "unknown_contract": 24,
-        "unknown_eoa": 37
+        "no_first_hop_meeting_threshold": 19,
+        "unknown_contract": 27,
+        "unknown_eoa": 35
       },
       "category_exit_amount": {
-        "no_first_hop_meeting_threshold": "296887.545984220779849045",
-        "unknown_contract": "118199.49776703668187143",
-        "unknown_eoa": "59232.057806459303586048"
+        "no_first_hop_meeting_threshold": "297628.470177425624345764",
+        "unknown_contract": "119000.28301895902397045",
+        "unknown_eoa": "55618.253121630289926887"
       },
       "category_first_hop_amount": {
-        "unknown_contract": "92230.278007844801692894",
-        "unknown_eoa": "51064.672831089170409208"
+        "unknown_contract": "93033.142899761447429198",
+        "unknown_eoa": "48096.564600469741411975"
       },
       "examples": {
         "no_first_hop_meeting_threshold": [
@@ -454,6 +454,18 @@
             "recipient": "0xa54f59fbc7626a25e54a910f9323d87681890f31"
           },
           {
+            "exit_amount": "721.74029350051368622",
+            "exit_block": 23840915,
+            "exit_tx": "0xa8eae0e65655ab312511ce2eb92dde0cc20ca8c2e21c5c91422f318013ffdb74",
+            "first_hop_amount": "723.819933494817323504",
+            "first_hop_block": 23841051,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0xa700b4eb416be35b2911fd5dee80678ff64ff6c9",
+            "first_hop_tx": "0x64f8790b5e5623d93b418c99909618b022a0ff6e21ce9266cdaad782c22e9475",
+            "recipient": "0x61e9bf7e1f8431734457a1f2d709e6e9e2418b93"
+          },
+          {
             "exit_amount": "39572.621188163658072578",
             "exit_block": 23846314,
             "exit_tx": "0x5bab5e4c6f86c422a93f974927d1c01d9fb6e6ae972c95312bf605fd4ef674f8",
@@ -488,45 +500,9 @@
             "first_hop_to": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
             "first_hop_tx": "0xb38fbd7750306996f9b3728538f08b52a747b2dd8c3849756981bf805fbc8ce0",
             "recipient": "0xaaabbbc86a0a8358d73302abcd6777c059bc2335"
-          },
-          {
-            "exit_amount": "711.084824765272975846",
-            "exit_block": 23932455,
-            "exit_tx": "0x66202348ccd90ce721f5e05639affc3b08e1b04832c6d483bdb15fcfa61c32b4",
-            "first_hop_amount": "132",
-            "first_hop_block": 23964286,
-            "first_hop_is_contract": true,
-            "first_hop_label": null,
-            "first_hop_to": "0x1a76f6b9b3d9c532e0b56990944a31a705933fbd",
-            "first_hop_tx": "0xe91435b6569f4d0139ee751161482036561143bc5fe9c41a11465ece66f1bfee",
-            "recipient": "0xaaabbbc86a0a8358d73302abcd6777c059bc2335"
           }
         ],
         "unknown_eoa": [
-          {
-            "exit_amount": "1441.20617537",
-            "exit_block": 23667877,
-            "exit_tx": "0x04e417c1db0a9b37980304e4ec025fbfec2ed1ea04cb0e0fce158a1e647a26f0",
-            "first_hop_amount": "1467.963539722930079274",
-            "first_hop_block": 23707103,
-            "first_hop_is_contract": false,
-            "first_hop_label": null,
-            "first_hop_to": "0xa03582240c93188ab90f99ef95560891b743aa8d",
-            "first_hop_tx": "0x461a9a3490785effc8e84d53eb4cbfaa239b3fc7886a2dcc6249e6f123409de7",
-            "recipient": "0x39a581703ddcd0a804aeae8148dd8085a6348acc"
-          },
-          {
-            "exit_amount": "2172.598509459013659161",
-            "exit_block": 23668439,
-            "exit_tx": "0x48552af639c1d00dbe66ad650e15597f8a02d8d89c26c92a7953a97e800ce486",
-            "first_hop_amount": "1500.144690896498917959",
-            "first_hop_block": 23718704,
-            "first_hop_is_contract": false,
-            "first_hop_label": null,
-            "first_hop_to": "0xc996a6525fa23bc41a275159a14cb87d3c3c7c2f",
-            "first_hop_tx": "0xeddd8c5a6ca18a0a91ea9e47cd57965636abfd9d415c1c4af1140a00b36afc1e",
-            "recipient": "0x07ff87d3a7a1ef3e096a05ac498ef45ea6991b78"
-          },
           {
             "exit_amount": "5023.542614063991756539",
             "exit_block": 23675264,
@@ -622,6 +598,30 @@
             "first_hop_to": "0x4cfdd9ebf908cb9ca39afae40a0f0acfd5a28be4",
             "first_hop_tx": "0xd926892a5f2383fe14e2ca8c664f43cad1ec64edcbb403017d6c42dbf496c344",
             "recipient": "0x5aca5d0eee56e37d2d1e2627286cf095624a3bbb"
+          },
+          {
+            "exit_amount": "520",
+            "exit_block": 23729080,
+            "exit_tx": "0x13d510b6bb6f3d3eeb0ca0fdece15a39a8b7c154577e26154a5feab102bb06c1",
+            "first_hop_amount": "520",
+            "first_hop_block": 23729177,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x8431849ae448e0ec537ab18a813158eab23e6912",
+            "first_hop_tx": "0xcaa4845bfb2f35eba4ab1a1915c4e00a36ad18c4ceceaaebf529a5d03ff41eac",
+            "recipient": "0x6a736d2289deebacf3054b712ac76d6f08e54b7e"
+          },
+          {
+            "exit_amount": "5801.3",
+            "exit_block": 23758139,
+            "exit_tx": "0x08195b09ea4dd7d8f976f7da2db4afe5767d779840a75472aba3b919be22ae1d",
+            "first_hop_amount": "3200",
+            "first_hop_block": 23759372,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0xa16a27cff6bd4f2dc3e6ca2cab3b244df543e27b",
+            "first_hop_tx": "0xe3c9d6dc89eb372b609153a865ca152c837a5892bd935093e70f2d50d8307c61",
+            "recipient": "0xf062d1b3f658ad32f7896a76807b05ba7a9e7720"
           }
         ]
       },
@@ -1047,6 +1047,20 @@
             "first_hop_is_contract": null,
             "first_hop_to": null,
             "recipient": "0x7f549b460f665782b14ea83617901b6dd201c3d4"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "740.924193204844496719",
+            "exit_block": 24310013,
+            "exit_tx": "0xb1881cd1db47119380fb7af1ac3a9b2c74181701621313a972f93e71960f6776",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xf929122994e177079c924631ba13fb280f5cd1f9"
           }
         ],
         "unknown_contract": [
@@ -1119,6 +1133,20 @@
             "first_hop_is_contract": true,
             "first_hop_to": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
             "recipient": "0xa54f59fbc7626a25e54a910f9323d87681890f31"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "721.74029350051368622",
+            "exit_block": 23840915,
+            "exit_tx": "0xa8eae0e65655ab312511ce2eb92dde0cc20ca8c2e21c5c91422f318013ffdb74",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0xa700b4eb416be35b2911fd5dee80678ff64ff6c9",
+            "recipient": "0x61e9bf7e1f8431734457a1f2d709e6e9e2418b93"
           },
           {
             "arbitrum_bridge_deposit_detected": false,
@@ -1245,51 +1273,9 @@
             "first_hop_is_contract": true,
             "first_hop_to": "0x00c600b30fb0400701010f4b080409018b9006e0",
             "recipient": "0x923ed3d633bc2418ed0604e962a272b0860e553e"
-          },
-          {
-            "arbitrum_bridge_deposit_detected": false,
-            "dex_router_interaction": false,
-            "dex_router_label": null,
-            "dex_router_to": null,
-            "dex_router_tx": null,
-            "exit_amount": "18640.642843061894220754",
-            "exit_block": 24063986,
-            "exit_tx": "0xf1ce17c69eeb7e6a73c6618953c521a9fc1e11cc0234a23b30046da2390ad2ad",
-            "first_hop_category": "unknown_contract",
-            "first_hop_is_contract": true,
-            "first_hop_to": "0xa700b4eb416be35b2911fd5dee80678ff64ff6c9",
-            "recipient": "0x70fedb8c3cddc74f238dab098abf956a17936f39"
           }
         ],
         "unknown_eoa": [
-          {
-            "arbitrum_bridge_deposit_detected": false,
-            "dex_router_interaction": false,
-            "dex_router_label": null,
-            "dex_router_to": null,
-            "dex_router_tx": null,
-            "exit_amount": "1441.20617537",
-            "exit_block": 23667877,
-            "exit_tx": "0x04e417c1db0a9b37980304e4ec025fbfec2ed1ea04cb0e0fce158a1e647a26f0",
-            "first_hop_category": "unknown_eoa",
-            "first_hop_is_contract": false,
-            "first_hop_to": "0xa03582240c93188ab90f99ef95560891b743aa8d",
-            "recipient": "0x39a581703ddcd0a804aeae8148dd8085a6348acc"
-          },
-          {
-            "arbitrum_bridge_deposit_detected": false,
-            "dex_router_interaction": false,
-            "dex_router_label": null,
-            "dex_router_to": null,
-            "dex_router_tx": null,
-            "exit_amount": "2172.598509459013659161",
-            "exit_block": 23668439,
-            "exit_tx": "0x48552af639c1d00dbe66ad650e15597f8a02d8d89c26c92a7953a97e800ce486",
-            "first_hop_category": "unknown_eoa",
-            "first_hop_is_contract": false,
-            "first_hop_to": "0xc996a6525fa23bc41a275159a14cb87d3c3c7c2f",
-            "recipient": "0x07ff87d3a7a1ef3e096a05ac498ef45ea6991b78"
-          },
           {
             "arbitrum_bridge_deposit_detected": false,
             "dex_router_interaction": false,
@@ -1471,6 +1457,34 @@
             "first_hop_is_contract": false,
             "first_hop_to": "0xbaf6ea722f421f42f85132a9eb5dbdd935618151",
             "recipient": "0x2ad23d7311ea24bfd31d65a8a076f787ebe45fe6"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "92.133567889226622215",
+            "exit_block": 23981465,
+            "exit_tx": "0x3281b73ef934101506a8a8e21131d7d62bb8197f7d4dbf87f8c062c273371ee0",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0x8431849ae448e0ec537ab18a813158eab23e6912",
+            "recipient": "0x6a736d2289deebacf3054b712ac76d6f08e54b7e"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "100",
+            "exit_block": 24020975,
+            "exit_tx": "0x5d8447ac4f9f52d4a6fa605f1937fbb1f3b036d9477f672431e539938b6cfe60",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0x15f4772923e0a943b88f3181b7820c44979d458a",
+            "recipient": "0x71e3d23e762f3feddfff5fe9c047489bdf8a9b20"
           }
         ]
       },
@@ -1478,23 +1492,23 @@
       "role_counts": {
         "dex_router_interaction": 11,
         "exchange_strict": 9,
-        "hold_no_first_hop": 9,
-        "unknown_contract": 22,
-        "unknown_eoa": 28
+        "hold_no_first_hop": 10,
+        "unknown_contract": 25,
+        "unknown_eoa": 26
       },
       "role_exit_amount": {
         "dex_router_interaction": "281979.309527372851687593",
         "exchange_strict": "22268.405045647303924773",
-        "hold_no_first_hop": "33035.706201927493181926",
-        "unknown_contract": "100072.028021957116850956",
-        "unknown_eoa": "36963.652760811999661275"
+        "hold_no_first_hop": "33776.630395132337678645",
+        "unknown_contract": "100872.813273879458949976",
+        "unknown_eoa": "33349.848075982986002114"
       },
       "role_exit_share_percent": {
-        "dex_router_interaction": "59.4492839527907243668432227422699836515942266398442145531720",
-        "exchange_strict": "4.69481515134334274376615639610368524971875526671178426572210",
-        "hold_no_first_hop": "6.96486945042579016340079409736109960988598449807360882810654",
-        "unknown_contract": "21.0980387872445848187800321115875056689365447691751554844057",
-        "unknown_eoa": "7.79299265819555790720979465267772581986448882619523686859371"
+        "dex_router_interaction": "59.7101317223566925410779850996607224693296885976833294863322",
+        "exchange_strict": "4.71541476128523736660083429869738532697748454466964361179533",
+        "hold_no_first_hop": "7.15232281904332130010733435502190610048048764924026973097249",
+        "unknown_contract": "21.3601805674445914665687095329037938570631640604256828867942",
+        "unknown_eoa": "7.06195012987015732564513671371619224614917514798107428410578"
       }
     },
     "top_exchange_endpoints_by_count": [
@@ -1714,16 +1728,16 @@
       "exit_events": 1
     },
     {
+      "address": "0xa54f59fbc7626a25e54a910f9323d87681890f31",
+      "exit_amount": "3409.393604376389326097",
+      "exit_amount_wei": 3409393604376389326097,
+      "exit_events": 8
+    },
+    {
       "address": "0x6a736d2289deebacf3054b712ac76d6f08e54b7e",
       "exit_amount": "3355.966948193759549385",
       "exit_amount_wei": 3355966948193759549385,
       "exit_events": 9
-    },
-    {
-      "address": "0xa54f59fbc7626a25e54a910f9323d87681890f31",
-      "exit_amount": "3330.348645954560913297",
-      "exit_amount_wei": 3330348645954560913297,
-      "exit_events": 6
     },
     {
       "address": "0xd0c417aab37c6b3acf93da6036bfe29963c5b3d9",
@@ -1768,12 +1782,6 @@
       "exit_events": 2
     },
     {
-      "address": "0x07ff87d3a7a1ef3e096a05ac498ef45ea6991b78",
-      "exit_amount": "2172.598509459013659161",
-      "exit_amount_wei": 2172598509459013659161,
-      "exit_events": 1
-    },
-    {
       "address": "0xb126afa1075bbfbbe49e8321c6016f9b7ce5ca13",
       "exit_amount": "2092.056495140691622559",
       "exit_amount_wei": 2092056495140691622559,
@@ -1807,12 +1815,6 @@
       "address": "0x7f549b460f665782b14ea83617901b6dd201c3d4",
       "exit_amount": "1452.763443963212229623",
       "exit_amount_wei": 1452763443963212229623,
-      "exit_events": 1
-    },
-    {
-      "address": "0x39a581703ddcd0a804aeae8148dd8085a6348acc",
-      "exit_amount": "1441.20617537",
-      "exit_amount_wei": 1441206175370000000000,
       "exit_events": 1
     },
     {
@@ -1934,15 +1936,27 @@
       "exit_amount": "800",
       "exit_amount_wei": 800000000000000000000,
       "exit_events": 1
+    },
+    {
+      "address": "0xf929122994e177079c924631ba13fb280f5cd1f9",
+      "exit_amount": "740.924193204844496719",
+      "exit_amount_wei": 740924193204844496719,
+      "exit_events": 1
+    },
+    {
+      "address": "0x61e9bf7e1f8431734457a1f2d709e6e9e2418b93",
+      "exit_amount": "721.74029350051368622",
+      "exit_amount_wei": 721740293500513686220,
+      "exit_events": 1
     }
   ],
   "totals": {
-    "exit_amount_considered_top_n": "474319.101557716765306523",
-    "exit_amount_considered_top_n_wei": 474319101557716765306523,
-    "exit_amount_total": "521138.655203880461952073",
-    "exit_amount_total_wei": 521138655203880461952073,
-    "exit_events_considered_top_n": 79,
-    "exit_events_total": 940,
-    "unique_recipients": 852
+    "exit_amount_considered_top_n": "472247.006318014938243101",
+    "exit_amount_considered_top_n_wei": 472247006318014938243101,
+    "exit_amount_total": "517784.594423015471071795",
+    "exit_amount_total_wei": 517784594423015471071795,
+    "exit_events_considered_top_n": 81,
+    "exit_events_total": 937,
+    "unique_recipients": 848
   }
 }
