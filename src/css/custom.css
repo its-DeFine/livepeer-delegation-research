@@ -190,3 +190,22 @@
 [data-theme='light'] .theme-doc-markdown details[open] {
   background: rgba(0, 231, 171, 0.08);
 }
+
+.lp-compare-table {
+  margin: 16px 0 24px;
+  overflow-x: auto;
+}
+
+.lp-compare-table table {
+  width: 100%;
+  min-width: 760px;
+}
+
+.lp-compare-table td,
+.lp-compare-table th {
+  vertical-align: top;
+}
+
+.lp-compare-table td {
+  font-variant-numeric: tabular-nums;
+}

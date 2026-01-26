@@ -8,6 +8,9 @@ description: Evidence packs and deeper dives used to ground solution reviews in 
 This folder collects deeper dives and working notes used to ground the solution reviews in evidence.
 
 <CardGroup cols={2}>
+  <Card title="Livepeer vs peers (comparison)" href="/research/livepeer-vs-peers">
+    Side-by-side comparison of Livepeer vs peer protocols (exchange routing, post-exit roles, exit friction, and Livepeer-only signals).
+  </Card>
   <Card title="Outflows + retention" href="/research/livepeer-delegator-outflows-research">
     Delegation exits, dormancy proxies, retention curves, and post-withdraw destination classification.
   </Card>
@@ -28,6 +31,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   </Card>
   <Card title="Buy pressure proxies (exchange outflows → bonders)" href="/research/buy-pressure-proxies">
     Buy-side proxy: labeled CEX outflows on L1 and whether recipients bridge + bond on Arbitrum (best-effort).
+  </Card>
+  <Card title="Stake rotation (TransferBond)" href="/research/livepeer-transferbond-rotation">
+    Quantifies stake rotation / wallet rotation via `TransferBond` on Livepeer’s Arbitrum BondingManager (best-effort).
   </Card>
   <Card title="Rewards claimed vs stake withdrawn (time series)" href="/research/rewards-withdraw-timeseries">
     Monthly/yearly totals of LPT rewards claimed vs stake withdrawn via `WithdrawStake`.
