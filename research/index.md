@@ -11,6 +11,9 @@ This folder collects deeper dives and working notes used to ground the solution 
   <Card title="Livepeer vs peers (comparison)" href="/research/livepeer-vs-peers">
     Side-by-side comparison of Livepeer vs peer protocols (exchange routing, post-exit roles, exit friction, and Livepeer-only signals).
   </Card>
+  <Card title="Livepeer vs peers (infographics, static)" href="/research/livepeer-vs-peers-infographics">
+    Markdown-only “one-pager” infographics for GitHub/Mintlify (no React/MDX required).
+  </Card>
   <Card title="Outflows + retention" href="/research/livepeer-delegator-outflows-research">
     Delegation exits, dormancy proxies, retention curves, and post-withdraw destination classification.
   </Card>

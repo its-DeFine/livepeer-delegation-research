@@ -102,6 +102,7 @@
         "group": "Research",
         "pages": [
           "research/index",
+          "research/livepeer-vs-peers-infographics",
           "research/delegation-board",
           "research/delegator-band-timeseries",
           "research/delegator-outflows-by-size-band",
