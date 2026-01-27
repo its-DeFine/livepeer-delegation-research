@@ -1,0 +1,508 @@
+{
+  "arb_rpc": "https://arb1.arbitrum.io/rpc",
+  "bonding_manager": "0x35bcf3c30594191d53231e4ff333e8a770453e40",
+  "generated_at_utc": "2026-01-26T15:37:43.855133+00:00",
+  "largest_events": [
+    {
+      "amount_lpt": "7061.796031904879516513",
+      "amount_wei": 7061796031904879516513,
+      "block_number": 425321381,
+      "new_delegator": "0x708757efe4cdf6766f7a7976b31fa22f83dc41ef",
+      "old_delegator": "0xd00354656922168815fcd1e51cbddb9e359e3c7f",
+      "tx_hash": "0x42cea8a0e781b0b3d328c92a01a83d8dd1d4869f247bf9a19140ee3f300d0375"
+    },
+    {
+      "amount_lpt": "2810",
+      "amount_wei": 2810000000000000000000,
+      "block_number": 423055603,
+      "new_delegator": "0x87861c87d2b8031d1f5028d00e6e37591ff70478",
+      "old_delegator": "0xdb22609515433e664e28067c81704d8266098986",
+      "tx_hash": "0xcab0b89a317bf03cf897c1ad9bd712ac26cb40b52ce614661e74ab9cf71d01d6"
+    },
+    {
+      "amount_lpt": "2000",
+      "amount_wei": 2000000000000000000000,
+      "block_number": 424771465,
+      "new_delegator": "0x70ded5d07299d56a7656b286b4c11bafe839c7de",
+      "old_delegator": "0x104a7ca059a35fd4def5ecb16600b2caa1fe1361",
+      "tx_hash": "0xf2b4a98d14a5515d01f453e3fc7fd64910defebcc82f83a8a2faa459558e80c5"
+    },
+    {
+      "amount_lpt": "1097.428217064384049064",
+      "amount_wei": 1097428217064384049064,
+      "block_number": 423169987,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x5f601efe3ee62a3b9ce407081151b1154828c37ee3d708a808577129fdc0049c"
+    },
+    {
+      "amount_lpt": "1096.558314571441067001",
+      "amount_wei": 1096558314571441067001,
+      "block_number": 422862767,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x2335588a230fe48612e3fe7be72728a4a934380c9ad0b8a30d7b0f7df8852116"
+    },
+    {
+      "amount_lpt": "1074.11064550450511088",
+      "amount_wei": 1074110645504505110880,
+      "block_number": 423478037,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x62e20c26a9dc7d6886b780076c6bfbd15525f154a73ca3939187e0e3f017d8fd"
+    },
+    {
+      "amount_lpt": "1071.216048742955246023",
+      "amount_wei": 1071216048742955246023,
+      "block_number": 423785659,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x2bd6a720a413c5bdc663360dc1f061b0ad980836343caf4e1a1c1afa21d09b8e"
+    },
+    {
+      "amount_lpt": "1071.182092153401842623",
+      "amount_wei": 1071182092153401842623,
+      "block_number": 424093563,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x1bf611340414f7ccb43392cf3f4d28445c930c1736d7169961a06f3d9a74ed43"
+    },
+    {
+      "amount_lpt": "1069.313376834155827802",
+      "amount_wei": 1069313376834155827802,
+      "block_number": 424401398,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x85df6572623b06a4a7b9d51a5e3ddfc5bd166dcae76f1251359138b6af2f1436"
+    },
+    {
+      "amount_lpt": "1062.170630832680596558",
+      "amount_wei": 1062170630832680596558,
+      "block_number": 424708445,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x742b9b565f314163b9024eae3442db6ab3f3ac4fcbbea572abdc50f15aa78b05"
+    },
+    {
+      "amount_lpt": "958.157134762399812025",
+      "amount_wei": 958157134762399812025,
+      "block_number": 425321388,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x0446a1f72cb0adbab80cd4a9d8b9222dedb0d333d1357a4cf17f0d69b15552ca"
+    },
+    {
+      "amount_lpt": "957.235587722989087515",
+      "amount_wei": 957235587722989087515,
+      "block_number": 425014158,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877",
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "tx_hash": "0x51b77b097f786b262697f6237967d915ac9ba4ba00b56caff3c210340a9a27aa"
+    },
+    {
+      "amount_lpt": "814.641282285261",
+      "amount_wei": 814641282285261000000,
+      "block_number": 424403677,
+      "new_delegator": "0x11e6e65625b0722ee136865f2616f3ff73268412",
+      "old_delegator": "0xb1c579757622d8ca7bd42542cb0325de1c8e1f8d",
+      "tx_hash": "0x7e39bedd9cdf309b30d8597e7facb2c6171dc20824412e83f1b5023f1161e09d"
+    },
+    {
+      "amount_lpt": "803.7767266964898",
+      "amount_wei": 803776726696489800000,
+      "block_number": 424093954,
+      "new_delegator": "0x13c4299cc484c9ee85c7315c18860d6c377c03bf",
+      "old_delegator": "0x847791cbf03be716a7fe9dc8c9affe17bd49ae5e",
+      "tx_hash": "0x85979b896b2aa57e3ea7041536747f8b82d4a42d7c2532027e27470f4062bb78"
+    },
+    {
+      "amount_lpt": "800",
+      "amount_wei": 800000000000000000000,
+      "block_number": 423769509,
+      "new_delegator": "0x455a304a1d3342844f4dd36731f8da066efdd30b",
+      "old_delegator": "0x5bdeedca9c6346b0ce6b17ffa8227a4dace37039",
+      "tx_hash": "0xeab1caa25c54013e1c0bef60d5316d7f7ff7f249c236f1afaea0c74329bb6b29"
+    },
+    {
+      "amount_lpt": "613.9717639296889",
+      "amount_wei": 613971763929688900000,
+      "block_number": 422989232,
+      "new_delegator": "0x6a51009ba056b349d7d202c7d132ab1e74ce6eb7",
+      "old_delegator": "0x0d509d8b46b072f8fc330942b2e3cc0ac34d6d8d",
+      "tx_hash": "0x00d43f847e461ded8a8dcb53bbb1ae5a0defdfcc399de60b4fdee3f78560d2f9"
+    },
+    {
+      "amount_lpt": "511.5800317021917",
+      "amount_wei": 511580031702191700000,
+      "block_number": 423787927,
+      "new_delegator": "0xf53a446a8d95da6738e1d6be459cfb5b895a69bc",
+      "old_delegator": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+      "tx_hash": "0x96c73d1ff8fc4fc153e20cdd8ce887d0c15e675c48f7ceb2193b58758f34345b"
+    },
+    {
+      "amount_lpt": "511.1371150133897",
+      "amount_wei": 511137115013389700000,
+      "block_number": 422862858,
+      "new_delegator": "0xf53a446a8d95da6738e1d6be459cfb5b895a69bc",
+      "old_delegator": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+      "tx_hash": "0x961dab53b37107fd76783630da03b3b8c8598cc87f77224a9872143c1bec3fc3"
+    },
+    {
+      "amount_lpt": "507.5963850254843",
+      "amount_wei": 507596385025484300000,
+      "block_number": 424711176,
+      "new_delegator": "0xf53a446a8d95da6738e1d6be459cfb5b895a69bc",
+      "old_delegator": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+      "tx_hash": "0x7954a3280c1156505108187eac9b6008e04aff1520cdc9f9d0cbc28de671f20b"
+    },
+    {
+      "amount_lpt": "439.68994447458454",
+      "amount_wei": 439689944474584540000,
+      "block_number": 422862867,
+      "new_delegator": "0x84edef77bcb20dbf0a373673b550c3eff10dbb5d",
+      "old_delegator": "0xbac7744ada4ab1957cbaafef698b3c068beb4fe0",
+      "tx_hash": "0xff3b4d7075ba4e6dfbb8ab257a95a9e9f9a768f6ea38510ddc7e0d00feef6988"
+    },
+    {
+      "amount_lpt": "416.9877638075575",
+      "amount_wei": 416987763807557500000,
+      "block_number": 424711184,
+      "new_delegator": "0x84edef77bcb20dbf0a373673b550c3eff10dbb5d",
+      "old_delegator": "0xbac7744ada4ab1957cbaafef698b3c068beb4fe0",
+      "tx_hash": "0x012f08a5cf2e06ff945f50ab1eb5c2a1e85059c05bc0a5acbe06f5e16b771759"
+    },
+    {
+      "amount_lpt": "379.6231532189538",
+      "amount_wei": 379623153218953800000,
+      "block_number": 424556516,
+      "new_delegator": "0x6a51009ba056b349d7d202c7d132ab1e74ce6eb7",
+      "old_delegator": "0x0d509d8b46b072f8fc330942b2e3cc0ac34d6d8d",
+      "tx_hash": "0x034e345e226fa8ba02a0a64572e307391156f752c9ad3a131acf0100cf7be20d"
+    },
+    {
+      "amount_lpt": "223.75444767785518",
+      "amount_wei": 223754447677855180000,
+      "block_number": 422864857,
+      "new_delegator": "0x44d37300d1848fb795a94014a152f9e4ee4c6cf7",
+      "old_delegator": "0x4bd850175a4e43afee34ae7b7dcd079a572dd69b",
+      "tx_hash": "0xf8f3a1c4f1f0f41966efbb53c45c914c303a9e0944754ea7d854d31d7e6560ec"
+    },
+    {
+      "amount_lpt": "223.35125776642556",
+      "amount_wei": 223351257766425560000,
+      "block_number": 424708400,
+      "new_delegator": "0x44d37300d1848fb795a94014a152f9e4ee4c6cf7",
+      "old_delegator": "0x4bd850175a4e43afee34ae7b7dcd079a572dd69b",
+      "tx_hash": "0xbbd489f1f5e2a5866475bae3f194f7ab5cd748ff3dfeb8a6ec933c2173bd47db"
+    },
+    {
+      "amount_lpt": "209.95078126474982",
+      "amount_wei": 209950781264749820000,
+      "block_number": 424708405,
+      "new_delegator": "0xb8f7a24efcc859209d6a6086521cf338b875bca1",
+      "old_delegator": "0x72a798ed05f3b445fba4bafdf643028fb5ed03cc",
+      "tx_hash": "0x7292c28b15e99bad1740bc9284e1b9efa1e686cf6602342d1f9595fa28c7fb9e"
+    }
+  ],
+  "notes": [
+    "TransferBond is a stake-rotation primitive: it can move bonded stake between addresses without a fresh Bond event.",
+    "This does NOT imply selling; it is consistent with operational wallet rotation or stake splitting.",
+    "Amounts are denominated in LPT (18 decimals)."
+  ],
+  "range": {
+    "days_approx": 365,
+    "from_block": 422832090,
+    "to_block": 425460090
+  },
+  "receipt_validation": {
+    "enabled": true,
+    "missing_receipt_events": 0,
+    "notes": [
+      "Validation is best-effort: checks whether the tx receipt contains Unbond(old) and Rebond(new) amounts >= TransferBond.amount.",
+      "Multiple TransferBond calls in one tx can make this check conservative."
+    ],
+    "validated_amount_lpt": "33803.585546028339246799",
+    "validated_amount_wei": 33803585546028339246799,
+    "validated_events": 122
+  },
+  "top_by_amount_in": [
+    {
+      "amount_lpt": "9457.372048188912639491",
+      "amount_wei": 9457372048188912639491,
+      "events": 9,
+      "new_delegator": "0xcfe1ed2d133fbb488929edc15eee5812f5dc8877"
+    },
+    {
+      "amount_lpt": "7607.271451388173184017",
+      "amount_wei": 7607271451388173184017,
+      "events": 9,
+      "new_delegator": "0x708757efe4cdf6766f7a7976b31fa22f83dc41ef"
+    },
+    {
+      "amount_lpt": "2810",
+      "amount_wei": 2810000000000000000000,
+      "events": 1,
+      "new_delegator": "0x87861c87d2b8031d1f5028d00e6e37591ff70478"
+    },
+    {
+      "amount_lpt": "2000",
+      "amount_wei": 2000000000000000000000,
+      "events": 1,
+      "new_delegator": "0x70ded5d07299d56a7656b286b4c11bafe839c7de"
+    },
+    {
+      "amount_lpt": "1530.3135317410657",
+      "amount_wei": 1530313531741065700000,
+      "events": 3,
+      "new_delegator": "0xf53a446a8d95da6738e1d6be459cfb5b895a69bc"
+    },
+    {
+      "amount_lpt": "1128.64162239050607",
+      "amount_wei": 1128641622390506070000,
+      "events": 4,
+      "new_delegator": "0x6a51009ba056b349d7d202c7d132ab1e74ce6eb7"
+    },
+    {
+      "amount_lpt": "856.67770828214204",
+      "amount_wei": 856677708282142040000,
+      "events": 2,
+      "new_delegator": "0x84edef77bcb20dbf0a373673b550c3eff10dbb5d"
+    },
+    {
+      "amount_lpt": "814.641282285261",
+      "amount_wei": 814641282285261000000,
+      "events": 1,
+      "new_delegator": "0x11e6e65625b0722ee136865f2616f3ff73268412"
+    },
+    {
+      "amount_lpt": "803.7767266964898",
+      "amount_wei": 803776726696489800000,
+      "events": 1,
+      "new_delegator": "0x13c4299cc484c9ee85c7315c18860d6c377c03bf"
+    },
+    {
+      "amount_lpt": "800",
+      "amount_wei": 800000000000000000000,
+      "events": 1,
+      "new_delegator": "0x455a304a1d3342844f4dd36731f8da066efdd30b"
+    },
+    {
+      "amount_lpt": "722.449772898809796",
+      "amount_wei": 722449772898809796000,
+      "events": 16,
+      "new_delegator": "0x875bc4617dd691c16914e4414360ad428bd069ab"
+    },
+    {
+      "amount_lpt": "660.988135325815462215",
+      "amount_wei": 660988135325815462215,
+      "events": 5,
+      "new_delegator": "0xcf599b29a50d0b111455818c914f274c1bcc90ba"
+    },
+    {
+      "amount_lpt": "626.391600272777836943",
+      "amount_wei": 626391600272777836943,
+      "events": 4,
+      "new_delegator": "0xebb3438c1978e1aa8ff59e89a6e4c3b30b6e765b"
+    },
+    {
+      "amount_lpt": "517.9378685217027",
+      "amount_wei": 517937868521702700000,
+      "events": 4,
+      "new_delegator": "0x5fed4e606b613f55b72cfb33f3c06a87abce8c4d"
+    },
+    {
+      "amount_lpt": "447.10570544428074",
+      "amount_wei": 447105705444280740000,
+      "events": 2,
+      "new_delegator": "0x44d37300d1848fb795a94014a152f9e4ee4c6cf7"
+    }
+  ],
+  "top_by_amount_out": [
+    {
+      "amount_lpt": "9457.372048188912639491",
+      "amount_wei": 9457372048188912639491,
+      "events": 9,
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc"
+    },
+    {
+      "amount_lpt": "7607.271451388173184017",
+      "amount_wei": 7607271451388173184017,
+      "events": 9,
+      "old_delegator": "0xd00354656922168815fcd1e51cbddb9e359e3c7f"
+    },
+    {
+      "amount_lpt": "2810",
+      "amount_wei": 2810000000000000000000,
+      "events": 1,
+      "old_delegator": "0xdb22609515433e664e28067c81704d8266098986"
+    },
+    {
+      "amount_lpt": "2000",
+      "amount_wei": 2000000000000000000000,
+      "events": 1,
+      "old_delegator": "0x104a7ca059a35fd4def5ecb16600b2caa1fe1361"
+    },
+    {
+      "amount_lpt": "1530.3135317410657",
+      "amount_wei": 1530313531741065700000,
+      "events": 3,
+      "old_delegator": "0x525419ff5707190389bfb5c87c375d710f5fcb0e"
+    },
+    {
+      "amount_lpt": "1128.64162239050607",
+      "amount_wei": 1128641622390506070000,
+      "events": 4,
+      "old_delegator": "0x0d509d8b46b072f8fc330942b2e3cc0ac34d6d8d"
+    },
+    {
+      "amount_lpt": "856.67770828214204",
+      "amount_wei": 856677708282142040000,
+      "events": 2,
+      "old_delegator": "0xbac7744ada4ab1957cbaafef698b3c068beb4fe0"
+    },
+    {
+      "amount_lpt": "814.641282285261",
+      "amount_wei": 814641282285261000000,
+      "events": 1,
+      "old_delegator": "0xb1c579757622d8ca7bd42542cb0325de1c8e1f8d"
+    },
+    {
+      "amount_lpt": "803.7767266964898",
+      "amount_wei": 803776726696489800000,
+      "events": 1,
+      "old_delegator": "0x847791cbf03be716a7fe9dc8c9affe17bd49ae5e"
+    },
+    {
+      "amount_lpt": "800",
+      "amount_wei": 800000000000000000000,
+      "events": 1,
+      "old_delegator": "0x5bdeedca9c6346b0ce6b17ffa8227a4dace37039"
+    },
+    {
+      "amount_lpt": "660.988135325815462215",
+      "amount_wei": 660988135325815462215,
+      "events": 5,
+      "old_delegator": "0xbd677e96a755207d348578727aa57a512c2022bd"
+    },
+    {
+      "amount_lpt": "638.3465428802571",
+      "amount_wei": 638346542880257100000,
+      "events": 9,
+      "old_delegator": "0xbe8770603daf200b1fa136ad354ba854928e602b"
+    },
+    {
+      "amount_lpt": "626.391600272777836943",
+      "amount_wei": 626391600272777836943,
+      "events": 4,
+      "old_delegator": "0x3b28a7d785356dc67c7970666747e042305bfb79"
+    },
+    {
+      "amount_lpt": "517.9378685217027",
+      "amount_wei": 517937868521702700000,
+      "events": 4,
+      "old_delegator": "0xdc28f2842810d1a013ad51de174d02eaba192dc7"
+    },
+    {
+      "amount_lpt": "447.10570544428074",
+      "amount_wei": 447105705444280740000,
+      "events": 2,
+      "old_delegator": "0x4bd850175a4e43afee34ae7b7dcd079a572dd69b"
+    }
+  ],
+  "top_by_fanout": [
+    {
+      "events": 8,
+      "old_delegator": "0x66970f8b4a5376ed7961e8633a83809e49ad809d",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 5,
+      "old_delegator": "0xbd677e96a755207d348578727aa57a512c2022bd",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 9,
+      "old_delegator": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 9,
+      "old_delegator": "0x5263e0ce3a97b634d8828ce4337ad0f70b30b077",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 9,
+      "old_delegator": "0xd00354656922168815fcd1e51cbddb9e359e3c7f",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 3,
+      "old_delegator": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 2,
+      "old_delegator": "0xbac7744ada4ab1957cbaafef698b3c068beb4fe0",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 9,
+      "old_delegator": "0xbe8770603daf200b1fa136ad354ba854928e602b",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 9,
+      "old_delegator": "0x5d11abd838073df76e32c495f97fd3239eabb9fb",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 2,
+      "old_delegator": "0x2e3a21ae7cdeb48f57fcad1ce16b258d5502ac05",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 2,
+      "old_delegator": "0x4bd850175a4e43afee34ae7b7dcd079a572dd69b",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 7,
+      "old_delegator": "0x5be44e23041e93cdf9bcd5a0968524e104e38ae1",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 10,
+      "old_delegator": "0xd21ee13175e0cf56876e76b0fa4003cd19e9ad2e",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 2,
+      "old_delegator": "0xd603d6bf88aa061fcab8fa552026694a7fd005ce",
+      "unique_new_delegators": 1
+    },
+    {
+      "events": 2,
+      "old_delegator": "0x733da28b0145ff561868e408d2ac8565ebe73aab",
+      "unique_new_delegators": 1
+    }
+  ],
+  "topic0": {
+    "Rebond": "0x9f5b64cc71e1e26ff178caaa7877a04d8ce66fde989251870e80e6fbee690c17",
+    "TransferBond": "0xf136b986590e86cf1abd7b6600186a7a1178ad3cbbdf0f3312e79f6214a2a567",
+    "Unbond": "0x2d5d98d189bee5496a08db2a5948cb7e5e786f09d17d0c3f228eb41776c24a06"
+  },
+  "totals": {
+    "amount_quantiles_wei": {
+      "0.0": 1200000000000000000,
+      "0.5": 68504350011862435948,
+      "0.9": 814641282285261000000,
+      "0.99": 2810000000000000000000,
+      "1.0": 7061796031904879516513
+    },
+    "total_transferred_lpt": "33803.585546028339246799",
+    "total_transferred_wei": 33803585546028339246799,
+    "transferbond_events": 122,
+    "unique_new_delegators": 28,
+    "unique_old_delegators": 33
+  }
+}

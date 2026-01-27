@@ -1,0 +1,980 @@
+{
+  "analysis": {
+    "first_hop_classify_destinations": true,
+    "include_second_hop": true,
+    "include_third_hop": true,
+    "labels_exchange_count": 105,
+    "second_hop_classify_intermediates": false,
+    "second_hop_max_first_hops_per_withdrawal": 6,
+    "second_hop_min_first_hop_fraction": "0.02",
+    "second_hop_min_first_hop_grt": "1000",
+    "third_hop_max_second_hops_per_first_hop": 4,
+    "third_hop_min_second_hop_fraction_of_first_hop": "0.50",
+    "third_hop_min_second_hop_grt": "1000",
+    "top_n_delegators": 50,
+    "window_blocks_approx": 21600,
+    "window_days": 3
+  },
+  "eth_rpc": "https://ethereum.publicnode.com",
+  "generated_at_utc": "2026-01-26T14:24:13.998391+00:00",
+  "grt_token": "0xc944e90c64b2c07662a292be6244bdf05cda44a7",
+  "matched_examples_direct": [],
+  "matched_examples_second_hop": [
+    {
+      "blocks_after_first_hop": 44,
+      "blocks_after_withdraw_first_hop": 377,
+      "blocks_after_withdraw_total": 421,
+      "delegator": "0x9cf14dd5b4347c55da5b1d2f2393cf54cc457ebe",
+      "first_hop_amount_grt": "173434.513682545372691747",
+      "first_hop_block": 23241221,
+      "first_hop_to": "0x9cd27859b3c88e6ca7f1015882eb052de1ca1dc5",
+      "first_hop_tx": "0x483b10ece3216c6368f5e5ba1e11ad8a98bb2e56d02e0986a858870ad9038507",
+      "indexer": "0x5a8904be09625965d9aec4bffd30d853438a053e",
+      "intermediate_is_contract": false,
+      "second_hop_block": 23241265,
+      "second_hop_exchange_amount_grt": "173434.513682545372691747",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0x89c16b31370e214ade1971f235b894bc47228eb493be44b1be9bc2223a6cda36",
+      "withdraw_block": 23240844,
+      "withdraw_tokens_grt": "173434.513682545372691747",
+      "withdraw_tx": "0x7479ff02ea5066bff7b3ceff822fa40129c1f7855ea376caabe5004826d9b4f2"
+    },
+    {
+      "blocks_after_first_hop": 47,
+      "blocks_after_withdraw_first_hop": 36,
+      "blocks_after_withdraw_total": 83,
+      "delegator": "0x29fc5aacd613410b68c9c08d4e1656e3c890e482",
+      "first_hop_amount_grt": "96440.525603600459779881",
+      "first_hop_block": 24118529,
+      "first_hop_to": "0x7edf25752d63fadfac9fb410133b9bc95052fb1f",
+      "first_hop_tx": "0xa0960edb85a4c795b51f9cdd4edce5affc32f6f645c899dcc9d037000f0b6b81",
+      "indexer": "0xfd12a5a7bc7f2eb4904a8177418dbb0bf094ba16",
+      "intermediate_is_contract": false,
+      "second_hop_block": 24118576,
+      "second_hop_exchange_amount_grt": "96440.525603600459779881",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0xc5efebcc5c4ba2da07b61f32947ac8fc7a222bb05d1cdc56e8da3a450ef5f42a",
+      "withdraw_block": 24118493,
+      "withdraw_tokens_grt": "96440.525603600459779881",
+      "withdraw_tx": "0x96fcf5fcd67a88c42cf202eee6bf7f4c4b4cbf2fe47ba5cc1d0c93ff32469914"
+    },
+    {
+      "blocks_after_first_hop": 18,
+      "blocks_after_withdraw_first_hop": 20,
+      "blocks_after_withdraw_total": 38,
+      "delegator": "0x3c2aa5167342b42c82d45e38ed94d5093243bc26",
+      "first_hop_amount_grt": "61262.360509370615783277",
+      "first_hop_block": 23120443,
+      "first_hop_to": "0x27f7785d7ac9d5487d06d7eda8bf5d595f4b5869",
+      "first_hop_tx": "0x8c4d9fc4b1f3dcd4ee0f4bca79084ab5eefa9b05375a5ce671b54f326766f74c",
+      "indexer": "0x7fd833cf8775e9c3524b8be925723345164964be",
+      "intermediate_is_contract": false,
+      "second_hop_block": 23120461,
+      "second_hop_exchange_amount_grt": "61262.360509370615783277",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0xb2096d88200914b957a4af13ba6b3481f80f1fb83cdace7d60689e581d024199",
+      "withdraw_block": 23120423,
+      "withdraw_tokens_grt": "61262.360509370615783277",
+      "withdraw_tx": "0xd80c4cfe866b67af50e256982571369e0da7f0f44d4f26ec3fc7d2a24ef801fa"
+    },
+    {
+      "blocks_after_first_hop": 31,
+      "blocks_after_withdraw_first_hop": 19,
+      "blocks_after_withdraw_total": 50,
+      "delegator": "0x8f7cae3e51bd832ee0e2cdb73de4723010acff5c",
+      "first_hop_amount_grt": "12521.078666516765133949",
+      "first_hop_block": 23117054,
+      "first_hop_to": "0xd646361c88c08b1fa52e5f4636a012989865fb26",
+      "first_hop_tx": "0xde5835e17bbfa9617a6850fdecb394aea4e62db1064065735f52593a546ac605",
+      "indexer": "0xbe9d7c691792937ca7e2535652886ff390cc5b86",
+      "intermediate_is_contract": false,
+      "second_hop_block": 23117085,
+      "second_hop_exchange_amount_grt": "12521.078666516765133949",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0xc9b2bd6e6e7c51458157e40b354d5b661e1c66c48e43becaece86ab7ab7ef5ad",
+      "withdraw_block": 23117035,
+      "withdraw_tokens_grt": "12521.078666516765133949",
+      "withdraw_tx": "0x29f82a1b515797e389e4f045ae8162e6c91f0efd60cb3bbc0dc2a674dd39ed72"
+    },
+    {
+      "blocks_after_first_hop": 75,
+      "blocks_after_withdraw_first_hop": 4404,
+      "blocks_after_withdraw_total": 4479,
+      "delegator": "0x70643f3e0c2f7bc94aa1fd71f427b890bb15478a",
+      "first_hop_amount_grt": "9452.493339223015879416",
+      "first_hop_block": 23303547,
+      "first_hop_to": "0xeff7f327c2e757b445609b323c5e2d5aa2b2f594",
+      "first_hop_tx": "0xfa65c9faa442856a55536c064854349870183740e079dfc1f2af1eafd8da79a6",
+      "indexer": "0x63c560997b8338f2b033f3ffdcc0f7c680feec45",
+      "intermediate_is_contract": false,
+      "second_hop_block": 23303622,
+      "second_hop_exchange_amount_grt": "9452.493339223015879416",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0x2076dfc4edaadcb4e7e13bdd8031ad4db5e3d782bf142acba8a73e08dcd8cbf0",
+      "withdraw_block": 23299143,
+      "withdraw_tokens_grt": "9452.493339223015879416",
+      "withdraw_tx": "0xb0f8164fcec075334f331cb953792092e4a0b9731390eb31bd8d5b1661ba6a34"
+    }
+  ],
+  "matched_examples_third_hop": [
+    {
+      "blocks_after_first_hop": 1435,
+      "blocks_after_second_hop": 857,
+      "blocks_after_withdraw_first_hop": 24,
+      "blocks_after_withdraw_total": 2316,
+      "delegator": "0x310de0d64b23568dd8a773149c016ddcdbafa2e7",
+      "first_hop_amount_grt": "175000",
+      "first_hop_block": 23310280,
+      "first_hop_to": "0xcbdfa05673237dbd7947ccb97ac8d87ff6d55aec",
+      "first_hop_tx": "0x4d729f41ad548b6c7d2b1a0d5e46c131ce6d768e889a150b8e99e60b8e0c5534",
+      "indexer": "0x5a8904be09625965d9aec4bffd30d853438a053e",
+      "second_hop_amount_grt": "187185",
+      "second_hop_block": 23311715,
+      "second_hop_to": "0xdc716126040b616219d5fd322c4f359e5aca8a43",
+      "second_hop_tx": "0xd510fa58e74a00b7dbca16a57131a6dc7300e05a25f2c3836719733d5b9aaa16",
+      "third_hop_block": 23312572,
+      "third_hop_exchange_amount_grt": "613340.380447762525293999",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x19fa9725f153a0ca4c8bca18000c4395222c061baa2216efb557a21806418cce",
+      "withdraw_block": 23310256,
+      "withdraw_tokens_grt": "219270.619682907077738959",
+      "withdraw_tx": "0x4518ed808e0c08c955b928c7904e4013ab0f34cde755292333ab44107c628226"
+    },
+    {
+      "blocks_after_first_hop": 1417,
+      "blocks_after_second_hop": 839,
+      "blocks_after_withdraw_first_hop": 18,
+      "blocks_after_withdraw_total": 2274,
+      "delegator": "0xeea6303af45655cf91d028dcfe0968daf51d749f",
+      "first_hop_amount_grt": "116666.66375",
+      "first_hop_block": 23310316,
+      "first_hop_to": "0x69ebb9fa085f9ba64de06519dd3670e38957ba16",
+      "first_hop_tx": "0xcbf59131281461d666663d1bb6762f1bb15d50279336280ab17bf043df190760",
+      "indexer": "0x5a8904be09625965d9aec4bffd30d853438a053e",
+      "second_hop_amount_grt": "125684.996875",
+      "second_hop_block": 23311733,
+      "second_hop_to": "0xdc716126040b616219d5fd322c4f359e5aca8a43",
+      "second_hop_tx": "0x679c790b9282288b3e5fbbe40ebf9079cab91a412e1a13297a2a199b2168792a",
+      "third_hop_block": 23312572,
+      "third_hop_exchange_amount_grt": "613340.380447762525293999",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x19fa9725f153a0ca4c8bca18000c4395222c061baa2216efb557a21806418cce",
+      "withdraw_block": 23310298,
+      "withdraw_tokens_grt": "146180.40946742772377752",
+      "withdraw_tx": "0xa816e25fe467b619b169f0cf31a82f3d32e2399f93c167b74f505203e1b66f97"
+    },
+    {
+      "blocks_after_first_hop": 1396,
+      "blocks_after_second_hop": 837,
+      "blocks_after_withdraw_first_hop": 9,
+      "blocks_after_withdraw_total": 2242,
+      "delegator": "0x38bafdd35f9774fb504f2f62ddcd9a87f539ae20",
+      "first_hop_amount_grt": "116666.66375",
+      "first_hop_block": 23310339,
+      "first_hop_to": "0xe49bd0471d4b2faf1df07887b2a2fcb916f6cf22",
+      "first_hop_tx": "0xa052ec1f1a95b6e40e951a67f271f819aad486adb95c90bc575b92d6d66dfe6a",
+      "indexer": "0x5a8904be09625965d9aec4bffd30d853438a053e",
+      "second_hop_amount_grt": "124999.996875",
+      "second_hop_block": 23311735,
+      "second_hop_to": "0xdc716126040b616219d5fd322c4f359e5aca8a43",
+      "second_hop_tx": "0x8e4244a99a507e093bab95d4fb3148b8d99b090d5af4642e62167645999e75be",
+      "third_hop_block": 23312572,
+      "third_hop_exchange_amount_grt": "613340.380447762525293999",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x19fa9725f153a0ca4c8bca18000c4395222c061baa2216efb557a21806418cce",
+      "withdraw_block": 23310330,
+      "withdraw_tokens_grt": "146180.40946742772377752",
+      "withdraw_tx": "0xf2664db245ba5efe130ddcffbb5eb946bfb24aaedc024a0bbf21cfdd82e3cd47"
+    },
+    {
+      "blocks_after_first_hop": 25,
+      "blocks_after_second_hop": 15,
+      "blocks_after_withdraw_first_hop": 44,
+      "blocks_after_withdraw_total": 84,
+      "delegator": "0x90cf222639b8697ec167beb94677daff72a269c6",
+      "first_hop_amount_grt": "91666.997499999999096826",
+      "first_hop_block": 24240080,
+      "first_hop_to": "0x68a335b5ebdcb62567ef548dc08c8e61ac07b153",
+      "first_hop_tx": "0x14763ab32bc5c9a0a7d0c63d69c5f432302cd8e8555b76d79235b7cfeb7cdaa0",
+      "indexer": "0xbe9d7c691792937ca7e2535652886ff390cc5b86",
+      "second_hop_amount_grt": "91659.997499999999096826",
+      "second_hop_block": 24240105,
+      "second_hop_to": "0x736b76e0232b77b12ab80b747ed8e266b9073cbd",
+      "second_hop_tx": "0xe4fd27ccbfde15025036cfd2161e99ad3dcbc1d832e072797fbe13dd59fd0ea4",
+      "third_hop_block": 24240120,
+      "third_hop_exchange_amount_grt": "91666.997500463616396236",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x46bc3db34c27df153a917f70dc0e1b8688ed24ea6d5fd2650cdf6d639f11a15b",
+      "withdraw_block": 24240036,
+      "withdraw_tokens_grt": "110261.25631906741661559",
+      "withdraw_tx": "0x5059db15e63c1f735cf0361d57f674260468adad6f9fb0ffad28309dc744f8c7"
+    },
+    {
+      "blocks_after_first_hop": 2164,
+      "blocks_after_second_hop": 41,
+      "blocks_after_withdraw_first_hop": 1684,
+      "blocks_after_withdraw_total": 3889,
+      "delegator": "0xd2a08929448d9526d2742245f108b8812852a827",
+      "first_hop_amount_grt": "67367.999999999999995412",
+      "first_hop_block": 23087284,
+      "first_hop_to": "0x68a02577e281488b21d147caa1ffdc7c298d7d1c",
+      "first_hop_tx": "0xf109601e241b1fe2b85ed64b432848b561fc5e00e241389b99e3f4c037ea0e13",
+      "indexer": "0x5a8904be09625965d9aec4bffd30d853438a053e",
+      "second_hop_amount_grt": "90488.407284017063666768",
+      "second_hop_block": 23089448,
+      "second_hop_to": "0x22a9d3614902051793338f5f11c95dc42b4ff884",
+      "second_hop_tx": "0x8d7dd37a26721d760ac619c92ba507af7818b277f99d14dd5071154d293c7ad3",
+      "third_hop_block": 23089489,
+      "third_hop_exchange_amount_grt": "90638.407284017063666768",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x3fc4727828649e588b9e58d5604ee147cba2a1db2325478495d65c3b4800a3b4",
+      "withdraw_block": 23085600,
+      "withdraw_tokens_grt": "90000.41040901706366218",
+      "withdraw_tx": "0x68b64cf4bc3b7df5f58bedd2fc2daa3e5bd74edbdbeab7515aa80fe3f44a55d8"
+    },
+    {
+      "blocks_after_first_hop": 27,
+      "blocks_after_second_hop": 53,
+      "blocks_after_withdraw_first_hop": 124,
+      "blocks_after_withdraw_total": 204,
+      "delegator": "0x117eec859b7652680212c97aaa152a57344bd3c3",
+      "first_hop_amount_grt": "166666.67",
+      "first_hop_block": 23521188,
+      "first_hop_to": "0xf4ddc3cfdbd298dd9b9775ae05cff8119a689180",
+      "first_hop_tx": "0x50fce9cbfa21d653c518eae4ca284fff1401a6229faaf226e2060ae862cebedf",
+      "indexer": "0x9238584c74e5fa445a8f72a4d4ef4699dd783852",
+      "second_hop_amount_grt": "213459.67",
+      "second_hop_block": 23521215,
+      "second_hop_to": "0xdc4e258754b4257712edd6a24872312c3fd0628c",
+      "second_hop_tx": "0x71bc2334d371a0dd1a4991bba8df4c0ef75606d924816c2a8373b7a207ee3ba9",
+      "third_hop_block": 23521268,
+      "third_hop_exchange_amount_grt": "213459.67",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x4d5e891c3e0b7b6494725bb0d0d26a5d7dcc8ed0547ac961b189f60945bcfa76",
+      "withdraw_block": 23521064,
+      "withdraw_tokens_grt": "85480.905324555993446649",
+      "withdraw_tx": "0x4f5d4741f47ebd5d457a30c28bb433d9e535f3d1912cc8e79816c8a142fa1f2a"
+    },
+    {
+      "blocks_after_first_hop": 27,
+      "blocks_after_second_hop": 53,
+      "blocks_after_withdraw_first_hop": 103,
+      "blocks_after_withdraw_total": 183,
+      "delegator": "0x117eec859b7652680212c97aaa152a57344bd3c3",
+      "first_hop_amount_grt": "166666.67",
+      "first_hop_block": 23521188,
+      "first_hop_to": "0xf4ddc3cfdbd298dd9b9775ae05cff8119a689180",
+      "first_hop_tx": "0x50fce9cbfa21d653c518eae4ca284fff1401a6229faaf226e2060ae862cebedf",
+      "indexer": "0x5a8904be09625965d9aec4bffd30d853438a053e",
+      "second_hop_amount_grt": "213459.67",
+      "second_hop_block": 23521215,
+      "second_hop_to": "0xdc4e258754b4257712edd6a24872312c3fd0628c",
+      "second_hop_tx": "0x71bc2334d371a0dd1a4991bba8df4c0ef75606d924816c2a8373b7a207ee3ba9",
+      "third_hop_block": 23521268,
+      "third_hop_exchange_amount_grt": "213459.67",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x4d5e891c3e0b7b6494725bb0d0d26a5d7dcc8ed0547ac961b189f60945bcfa76",
+      "withdraw_block": 23521085,
+      "withdraw_tokens_grt": "66111.878515712272250149",
+      "withdraw_tx": "0x1f82d5266a86b80b9b1613feb691a95707dc0d07ab6a46d1f855b657f2f7db83"
+    },
+    {
+      "blocks_after_first_hop": 27,
+      "blocks_after_second_hop": 53,
+      "blocks_after_withdraw_first_hop": 98,
+      "blocks_after_withdraw_total": 178,
+      "delegator": "0x117eec859b7652680212c97aaa152a57344bd3c3",
+      "first_hop_amount_grt": "166666.67",
+      "first_hop_block": 23521188,
+      "first_hop_to": "0xf4ddc3cfdbd298dd9b9775ae05cff8119a689180",
+      "first_hop_tx": "0x50fce9cbfa21d653c518eae4ca284fff1401a6229faaf226e2060ae862cebedf",
+      "indexer": "0x4d6a8776a164776c93618233a0003e8894e7e6c2",
+      "second_hop_amount_grt": "213459.67",
+      "second_hop_block": 23521215,
+      "second_hop_to": "0xdc4e258754b4257712edd6a24872312c3fd0628c",
+      "second_hop_tx": "0x71bc2334d371a0dd1a4991bba8df4c0ef75606d924816c2a8373b7a207ee3ba9",
+      "third_hop_block": 23521268,
+      "third_hop_exchange_amount_grt": "213459.67",
+      "third_hop_exchange_label": "Binance 14",
+      "third_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "third_hop_tx": "0x4d5e891c3e0b7b6494725bb0d0d26a5d7dcc8ed0547ac961b189f60945bcfa76",
+      "withdraw_block": 23521090,
+      "withdraw_tokens_grt": "61797.552700389316056785",
+      "withdraw_tx": "0xab998c3b69e290fa316f044f787a416bded640f8ad732d775940c7405a46dfcf"
+    }
+  ],
+  "notes": [
+    "This is a lower bound: it only counts transfers to a small curated set of labeled exchange addresses (data/labels.json).",
+    "A transfer to an exchange does not prove a market sell, but is a strong proxy for off-protocol exit intent.",
+    "Second hop routing (if enabled) is also a lower bound: it only detects intermediate addresses that sweep into a labeled exchange endpoint within the same window.",
+    "Third hop routing (if enabled) is also a lower bound: it only detects intermediates that route into a labeled exchange endpoint within the same window.",
+    "The Graph delegation unbonding is measured in epochs, while indexer thawing uses Ethereum blocks; this report focuses on withdrawal \u2192 (transfer) routing windows."
+  ],
+  "params": {
+    "delegation_unbonding_period_epochs": 28,
+    "thawing_period_blocks": 201600
+  },
+  "range": {
+    "days_approx": 180,
+    "from_block": 23023573,
+    "to_block": 24319573
+  },
+  "routing_results_top_delegators": {
+    "exchange_transfer_count_by_to_direct": {},
+    "exchange_transfer_count_by_to_second_hop": {
+      "0x28c6c06298d514db089934071355e5743bf21d60": 5
+    },
+    "exchange_transfer_count_by_to_third_hop": {
+      "0x28c6c06298d514db089934071355e5743bf21d60": 8
+    },
+    "exchange_transfer_count_by_to_total": {
+      "0x28c6c06298d514db089934071355e5743bf21d60": 13
+    },
+    "first_hop_breakdown": {
+      "category_counts": {
+        "no_first_hop_meeting_threshold": 14,
+        "unknown_contract": 8,
+        "unknown_eoa": 38
+      },
+      "category_first_hop_grt": {
+        "unknown_contract": "194600.529692379349622785",
+        "unknown_eoa": "7741457.421481097244887847"
+      },
+      "category_withdrawn_grt": {
+        "no_first_hop_meeting_threshold": "1168510.571895168027640908",
+        "unknown_contract": "194905.833570877451496899",
+        "unknown_eoa": "9128404.104000749773558472"
+      },
+      "examples": {
+        "no_first_hop_meeting_threshold": [
+          {
+            "delegator": "0x6abb0d9a7f1b4f0c83bec6135ac86e33ec1d863d",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23038795,
+            "withdraw_tokens_grt": "64937.754212429782359683",
+            "withdraw_tx": "0xfd54f999d6da3dc12f32693c90030007c48f8fc715f2b766574f771adc802fad"
+          },
+          {
+            "delegator": "0x4b28ed11c2009d937d42e1a5ab59f59ffa9874b9",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23090640,
+            "withdraw_tokens_grt": "45319.277757611018468085",
+            "withdraw_tx": "0xfca073f63734dd7ce087d93d368623ef86a2b86e4d0aa1de30fdae23b2b925b7"
+          },
+          {
+            "delegator": "0xf2cfd7bac654986e98e46fd3790156cc3428aa7e",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23111133,
+            "withdraw_tokens_grt": "25923.697808329940245234",
+            "withdraw_tx": "0xf7f6af0df57481f0f6963ad78cd20a611cc8840354e7d1391fbd9c16837e0261"
+          },
+          {
+            "delegator": "0x9dc81f60e18139666b508d02860dd19638d1756e",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23127268,
+            "withdraw_tokens_grt": "66720.587187025584238773",
+            "withdraw_tx": "0xc11e7fdaf0ae0383b8cddaafd8831a090e52a14ed23c6a3b91ee4a2dbc34e230"
+          },
+          {
+            "delegator": "0xca99f42b52cf6bcd11926ca3c1e98c7b114faed3",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23130517,
+            "withdraw_tokens_grt": "51605.164176478151631181",
+            "withdraw_tx": "0x61894d142b441d0c654f62773a726ea31f40a689cac4542b24ffa6eb04b70ca0"
+          },
+          {
+            "delegator": "0x55ef3b92b3498d212563e47fcfa90aae8cc52dad",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23309530,
+            "withdraw_tokens_grt": "258624.305690790175730612",
+            "withdraw_tx": "0x056d5dfa55e1183007d64a5f4d735526f75a01793969b784272b42792a60e7ac"
+          },
+          {
+            "delegator": "0x392d1dba2b796f7787d67bf6ed8d98a0b8c95534",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23342747,
+            "withdraw_tokens_grt": "20275.821734192748728138",
+            "withdraw_tx": "0x706895612db726596777f974f04b7addb27092e75dbce515e5de78df2a3e15f9"
+          },
+          {
+            "delegator": "0xf09ec2813777ef277034865649096e1e215e777a",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23440068,
+            "withdraw_tokens_grt": "30989.901285825707914646",
+            "withdraw_tx": "0x479acd871a43bf6be830cc849810147c1221c9f5d81655e3027e3f58a66a9fc4"
+          },
+          {
+            "delegator": "0x10a48e38ce8b7c02c7c0620c86ebb1ab8fec1531",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23536997,
+            "withdraw_tokens_grt": "146574.967946314762470793",
+            "withdraw_tx": "0xf86a111392df636921199709006c34503dbf0caa3432e8ce3938d64ffd2eb181"
+          },
+          {
+            "delegator": "0xad190a1f93bce1b5da82a05a3849aa56e5fa7457",
+            "first_hop_amount_grt": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "withdraw_block": 23574019,
+            "withdraw_tokens_grt": "60924.70881986538936586",
+            "withdraw_tx": "0xdff100b70ad22d2eba71340bd6237b7f0be1302fdd62220e2ed2938031875162"
+          }
+        ],
+        "unknown_contract": [
+          {
+            "delegator": "0xd23cca1d288eaded8667a7d4765d0033641f4c60",
+            "first_hop_amount_grt": "33306.476409635330186151",
+            "first_hop_block": 23162215,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x36aff7001294dae4c2ed4fdefc478a00de77f090",
+            "first_hop_tx": "0x604301d98964650ce5e42b8a215d88c724cd6b7e67224ea04c0ca737f861dfa1",
+            "withdraw_block": 23162125,
+            "withdraw_tokens_grt": "33306.476409635330186151",
+            "withdraw_tx": "0xc80a49363f2cf05c6ad65d1b22ae58a327755c6828ffc7e2d60a9c81104bd673"
+          },
+          {
+            "delegator": "0x8dd3c3da130ba2c32e8530a687927c316683d943",
+            "first_hop_amount_grt": "14185.6155",
+            "first_hop_block": 23193881,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x36aff7001294dae4c2ed4fdefc478a00de77f090",
+            "first_hop_tx": "0x9a31e5bc7a9206035ec9b321480a9cffc52e32653a65cce171b31aac3bb83292",
+            "withdraw_block": 23193795,
+            "withdraw_tokens_grt": "14185.6155",
+            "withdraw_tx": "0x1d6edf9c593a4333d3632565c233be723fa1de2c8ad4d466b15bfcc28e37cec9"
+          },
+          {
+            "delegator": "0xc6169f1c152fc988a71f19fa13b3498d8723cccb",
+            "first_hop_amount_grt": "20339.725118524533522765",
+            "first_hop_block": 23291904,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0xeff6cb8b614999d130e537751ee99724d01aa167",
+            "first_hop_tx": "0xe59328028be73c536935c9a9ff3e9d86fe8e4fe722466865cc41ac6831c32c12",
+            "withdraw_block": 23291860,
+            "withdraw_tokens_grt": "20339.725118524533522765",
+            "withdraw_tx": "0x1ed1ce699a0f93b3444976e7a07ff6be62715d3d9d2ea7b51c2472efa653b3f1"
+          },
+          {
+            "delegator": "0x065823e171f037b889c4e1029e8aa34d6b134307",
+            "first_hop_amount_grt": "55305.322760529122817589",
+            "first_hop_block": 23466352,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0xf3d5719f7e3b49a4c3797d56bd3fed6d3b80f0f9",
+            "first_hop_tx": "0x97367c1397dfee65d2727e3077f35ac20532dbda52f4fff35419db7b03e03783",
+            "withdraw_block": 23466339,
+            "withdraw_tokens_grt": "55305.322760529122817589",
+            "withdraw_tx": "0x65f5c8ebba5682b064a3c37b0f04d0c048617c095a1e500d902b53b70e4a6eaa"
+          },
+          {
+            "delegator": "0x4ef28c9917fcecd3640bc26354f058b317b4721d",
+            "first_hop_amount_grt": "16896.790195369565627899",
+            "first_hop_block": 23625576,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x36aff7001294dae4c2ed4fdefc478a00de77f090",
+            "first_hop_tx": "0x28f8d6adbe27d8bbd94772f2549ace381c0ab1286fce3e6757154b5665b21c55",
+            "withdraw_block": 23625132,
+            "withdraw_tokens_grt": "16896.790195369565627899",
+            "withdraw_tx": "0xdfef36bb7ef63ffe26a9b291959a9db13850debe84af4449e03f915f2bcab03b"
+          },
+          {
+            "delegator": "0x0dbb0cff7c9515fc56d352ee37aeeefdf43b25fe",
+            "first_hop_amount_grt": "16500",
+            "first_hop_block": 23705082,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0xbee3211ab312a8d065c4fef0247448e17a8da000",
+            "first_hop_tx": "0x87812368845d61c87ff8e11359005c94bbc417ae51b386c381571d792f8183e8",
+            "withdraw_block": 23696531,
+            "withdraw_tokens_grt": "16805.303878498101874114",
+            "withdraw_tx": "0xd90627e70e67075abfc31af05fb2a142feccd346f442b9c2ff7dc3d511ae6528"
+          },
+          {
+            "delegator": "0x44b3e0d239dee0120ebac141408c449a475515e4",
+            "first_hop_amount_grt": "21664.335053126597242256",
+            "first_hop_block": 23705657,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x207e1074858a7e78f17002075739ed2745dbaece",
+            "first_hop_tx": "0xb5b45f137067080be752389ae067ee1fb75fadcb06dbb1c0a688810ad9104414",
+            "withdraw_block": 23705650,
+            "withdraw_tokens_grt": "21664.335053126597242256",
+            "withdraw_tx": "0x8537890a6ad5d40e61de737668916e8d076dce7b5715d041889988093d28a6ee"
+          },
+          {
+            "delegator": "0x9f0330a2de2e89844db157420200327418b556b2",
+            "first_hop_amount_grt": "16402.264655194200226125",
+            "first_hop_block": 23869232,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x00000047bb99ea4d791bb749d970de71ee0b1a34",
+            "first_hop_tx": "0x5ade0926d61718383f0bc45118ae16dd64fd8aa64521c98d4b055453110468a6",
+            "withdraw_block": 23869225,
+            "withdraw_tokens_grt": "16402.264655194200226125",
+            "withdraw_tx": "0xb44cc1587eb2ef79cdd76e270734b29957fb00d64208a7415da83a6c8c1bd5ea"
+          }
+        ],
+        "unknown_eoa": [
+          {
+            "delegator": "0x9a378fd463f3f61f8e99fb10291b1abb5775a55c",
+            "first_hop_amount_grt": "35950.028071945864804704",
+            "first_hop_block": 23060593,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x027e8527ea2423ac6a3e04c3339979123abbaec7",
+            "first_hop_tx": "0x96e404cd56695b7d8e5ad1f335ea614b892f34e037cae21fcb28d69a0a09dfda",
+            "withdraw_block": 23060573,
+            "withdraw_tokens_grt": "35950.028071945864804704",
+            "withdraw_tx": "0x9e08af7dd4327feb42beeb01fb612e22b1201438bf84f18ca0ccfccb600e69cd"
+          },
+          {
+            "delegator": "0xd2a08929448d9526d2742245f108b8812852a827",
+            "first_hop_amount_grt": "67367.999999999999995412",
+            "first_hop_block": 23087284,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x68a02577e281488b21d147caa1ffdc7c298d7d1c",
+            "first_hop_tx": "0xf109601e241b1fe2b85ed64b432848b561fc5e00e241389b99e3f4c037ea0e13",
+            "withdraw_block": 23085600,
+            "withdraw_tokens_grt": "90000.41040901706366218",
+            "withdraw_tx": "0x68b64cf4bc3b7df5f58bedd2fc2daa3e5bd74edbdbeab7515aa80fe3f44a55d8"
+          },
+          {
+            "delegator": "0x1752c30ac34fab8b43f615a5bf87d1cf5c176d98",
+            "first_hop_amount_grt": "13455.053858665666910301",
+            "first_hop_block": 23112834,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x57ea2d63d8ec9ea33cef27f156dafaf24d0c8244",
+            "first_hop_tx": "0x5acf73385b42a2db6b03bdd96f2f7fc285a50752650498b77638668bf00f6a28",
+            "withdraw_block": 23112767,
+            "withdraw_tokens_grt": "13455.053858665666910301",
+            "withdraw_tx": "0x1a38439a9b27a13935087f2c2d23f6ac824f7c39c0b8daeafc494445bfbb780c"
+          },
+          {
+            "delegator": "0x8f7cae3e51bd832ee0e2cdb73de4723010acff5c",
+            "first_hop_amount_grt": "12521.078666516765133949",
+            "first_hop_block": 23117054,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0xd646361c88c08b1fa52e5f4636a012989865fb26",
+            "first_hop_tx": "0xde5835e17bbfa9617a6850fdecb394aea4e62db1064065735f52593a546ac605",
+            "withdraw_block": 23117035,
+            "withdraw_tokens_grt": "12521.078666516765133949",
+            "withdraw_tx": "0x29f82a1b515797e389e4f045ae8162e6c91f0efd60cb3bbc0dc2a674dd39ed72"
+          },
+          {
+            "delegator": "0x3c2aa5167342b42c82d45e38ed94d5093243bc26",
+            "first_hop_amount_grt": "61262.360509370615783277",
+            "first_hop_block": 23120443,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x27f7785d7ac9d5487d06d7eda8bf5d595f4b5869",
+            "first_hop_tx": "0x8c4d9fc4b1f3dcd4ee0f4bca79084ab5eefa9b05375a5ce671b54f326766f74c",
+            "withdraw_block": 23120423,
+            "withdraw_tokens_grt": "61262.360509370615783277",
+            "withdraw_tx": "0xd80c4cfe866b67af50e256982571369e0da7f0f44d4f26ec3fc7d2a24ef801fa"
+          },
+          {
+            "delegator": "0xac6d64c56dd5cd45d08d3b668d4feae9cb9f6961",
+            "first_hop_amount_grt": "53176.947402041530926455",
+            "first_hop_block": 23131424,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x591e9e3e4e8dccc00c0d91d73cc3fa94e72e0579",
+            "first_hop_tx": "0xf28c7bacd037bed756caa4854fccef08913c4526897f846123ac39d53dc218a1",
+            "withdraw_block": 23123100,
+            "withdraw_tokens_grt": "26490.063568564900022315",
+            "withdraw_tx": "0x8624cd8a52fef87bf154f5db1155082ce4ebd312ff9fe042d86ad59dfbd9bd66"
+          },
+          {
+            "delegator": "0xac6d64c56dd5cd45d08d3b668d4feae9cb9f6961",
+            "first_hop_amount_grt": "53176.947402041530926455",
+            "first_hop_block": 23131424,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x591e9e3e4e8dccc00c0d91d73cc3fa94e72e0579",
+            "first_hop_tx": "0xf28c7bacd037bed756caa4854fccef08913c4526897f846123ac39d53dc218a1",
+            "withdraw_block": 23123116,
+            "withdraw_tokens_grt": "26696.88383347663090414",
+            "withdraw_tx": "0xa974c27585e23a67491355114f2d1d8196b73fa81f21dd00f8d16f8ff110fbda"
+          },
+          {
+            "delegator": "0x470400fba2db84f3ddfd1be015deda7f4bf0ae51",
+            "first_hop_amount_grt": "11742.420824262331244215",
+            "first_hop_block": 23127393,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x3328ea541da8fbb2adb22aac694d9371e33c27c4",
+            "first_hop_tx": "0xaed308d061c40b5eecd61ba622facd868353adad90a78d8bb198ec37889a8905",
+            "withdraw_block": 23127387,
+            "withdraw_tokens_grt": "11742.420824262331244215",
+            "withdraw_tx": "0x49108295e2a16e7bb09f23f2e2813e534e6a32b0629e88594457656733a623d9"
+          },
+          {
+            "delegator": "0x4f41b8f207e679ebd989f7bcefebdb74323792ed",
+            "first_hop_amount_grt": "53400",
+            "first_hop_block": 23226667,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x4e32ebe322b4743adc6c27f8b66fcd4d539f2045",
+            "first_hop_tx": "0xc2c55e9591f9e1663f1f74fbf1a69a7248563bf9cc73ee2c3af3be09a2489837",
+            "withdraw_block": 23225714,
+            "withdraw_tokens_grt": "146190.980776545824422429",
+            "withdraw_tx": "0x69ffcd64cc71a24cb4fca31e8d0e8163781dc5deaf79af4e85ffc5a878e9ab84"
+          },
+          {
+            "delegator": "0x4f41b8f207e679ebd989f7bcefebdb74323792ed",
+            "first_hop_amount_grt": "53400",
+            "first_hop_block": 23226667,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x4e32ebe322b4743adc6c27f8b66fcd4d539f2045",
+            "first_hop_tx": "0xc2c55e9591f9e1663f1f74fbf1a69a7248563bf9cc73ee2c3af3be09a2489837",
+            "withdraw_block": 23225721,
+            "withdraw_tokens_grt": "87887.774909610527731223",
+            "withdraw_tx": "0xac6ad1751ef0913aadd94f9001ac24ffceea35ab56b8de4dcc8e28d4c9aaa1b6"
+          }
+        ]
+      },
+      "method": "Earliest outgoing transfer >= max(min_first_hop_grt, min_first_hop_fraction*withdraw) within window; destination classified via labels and (optionally) eth_getCode."
+    },
+    "matched_direct_to_exchange_within_window_events": 0,
+    "matched_direct_to_exchange_within_window_grt": "0",
+    "matched_second_hop_to_exchange_within_window_events": 5,
+    "matched_second_hop_to_exchange_within_window_grt": "353110.97180125622926827",
+    "matched_third_hop_to_exchange_within_window_events": 8,
+    "matched_third_hop_to_exchange_within_window_grt": "925283.441886504587325352",
+    "matched_total_to_exchange_within_window_events": 13,
+    "matched_total_to_exchange_within_window_grt": "1278394.413687760816593622",
+    "unique_second_hop_intermediates": 5,
+    "unique_third_hop_first_intermediates": 6,
+    "unique_third_hop_second_intermediates": 4,
+    "unmatched_events_in_top_delegators": 47,
+    "withdraw_events_considered": 60,
+    "withdrawn_grt_considered": "10491820.509466795252696279"
+  },
+  "staking_contract": "0xF55041E37E12cD407ad00CE2910B8269B01263b9",
+  "top_delegators": [
+    {
+      "delegator": "0x62012ad7a3c8c32a15b5ecb38b588f73936834ab",
+      "withdraw_events": 1,
+      "withdrawn_grt": "6548876.055848550541585054"
+    },
+    {
+      "delegator": "0x62897e744e0c71860ea74bd88858b0f4afbf72dd",
+      "withdraw_events": 2,
+      "withdrawn_grt": "392766.031906223447440583"
+    },
+    {
+      "delegator": "0x050801be60d8535f433d5c15db3129276cc1cc6a",
+      "withdraw_events": 1,
+      "withdrawn_grt": "337299.315284146677863968"
+    },
+    {
+      "delegator": "0x55ef3b92b3498d212563e47fcfa90aae8cc52dad",
+      "withdraw_events": 1,
+      "withdrawn_grt": "258624.305690790175730612"
+    },
+    {
+      "delegator": "0x4f41b8f207e679ebd989f7bcefebdb74323792ed",
+      "withdraw_events": 2,
+      "withdrawn_grt": "234078.755686156352153652"
+    },
+    {
+      "delegator": "0x310de0d64b23568dd8a773149c016ddcdbafa2e7",
+      "withdraw_events": 1,
+      "withdrawn_grt": "219270.619682907077738959"
+    },
+    {
+      "delegator": "0x117eec859b7652680212c97aaa152a57344bd3c3",
+      "withdraw_events": 3,
+      "withdrawn_grt": "213390.336540657581753583"
+    },
+    {
+      "delegator": "0x9cf14dd5b4347c55da5b1d2f2393cf54cc457ebe",
+      "withdraw_events": 1,
+      "withdrawn_grt": "173434.513682545372691747"
+    },
+    {
+      "delegator": "0x10a48e38ce8b7c02c7c0620c86ebb1ab8fec1531",
+      "withdraw_events": 1,
+      "withdrawn_grt": "146574.967946314762470793"
+    },
+    {
+      "delegator": "0xeea6303af45655cf91d028dcfe0968daf51d749f",
+      "withdraw_events": 1,
+      "withdrawn_grt": "146180.40946742772377752"
+    },
+    {
+      "delegator": "0x38bafdd35f9774fb504f2f62ddcd9a87f539ae20",
+      "withdraw_events": 1,
+      "withdrawn_grt": "146180.40946742772377752"
+    },
+    {
+      "delegator": "0x13a6d5ebbbc29182cc80b12d31e67a9df7c93e94",
+      "withdraw_events": 1,
+      "withdrawn_grt": "129312.152845395087865306"
+    },
+    {
+      "delegator": "0x9ba988a90a871de943a63ab416f5d9c89fde58c4",
+      "withdraw_events": 1,
+      "withdrawn_grt": "113002.958532925540952511"
+    },
+    {
+      "delegator": "0x90cf222639b8697ec167beb94677daff72a269c6",
+      "withdraw_events": 1,
+      "withdrawn_grt": "110261.25631906741661559"
+    },
+    {
+      "delegator": "0x33f4ebbfb4948bc8f3a97827467cee2b6e0b317c",
+      "withdraw_events": 3,
+      "withdrawn_grt": "97347.381824392599526217"
+    },
+    {
+      "delegator": "0x29fc5aacd613410b68c9c08d4e1656e3c890e482",
+      "withdraw_events": 1,
+      "withdrawn_grt": "96440.525603600459779881"
+    },
+    {
+      "delegator": "0xd2a08929448d9526d2742245f108b8812852a827",
+      "withdraw_events": 1,
+      "withdrawn_grt": "90000.41040901706366218"
+    },
+    {
+      "delegator": "0x9dc81f60e18139666b508d02860dd19638d1756e",
+      "withdraw_events": 1,
+      "withdrawn_grt": "66720.587187025584238773"
+    },
+    {
+      "delegator": "0x6abb0d9a7f1b4f0c83bec6135ac86e33ec1d863d",
+      "withdraw_events": 1,
+      "withdrawn_grt": "64937.754212429782359683"
+    },
+    {
+      "delegator": "0x3c2aa5167342b42c82d45e38ed94d5093243bc26",
+      "withdraw_events": 1,
+      "withdrawn_grt": "61262.360509370615783277"
+    },
+    {
+      "delegator": "0xad190a1f93bce1b5da82a05a3849aa56e5fa7457",
+      "withdraw_events": 1,
+      "withdrawn_grt": "60924.70881986538936586"
+    },
+    {
+      "delegator": "0x065823e171f037b889c4e1029e8aa34d6b134307",
+      "withdraw_events": 1,
+      "withdrawn_grt": "55305.322760529122817589"
+    },
+    {
+      "delegator": "0xac6d64c56dd5cd45d08d3b668d4feae9cb9f6961",
+      "withdraw_events": 2,
+      "withdrawn_grt": "53186.947402041530926455"
+    },
+    {
+      "delegator": "0x155a17f49964e0b6c21b4dfe01e5f9e895e9e475",
+      "withdraw_events": 1,
+      "withdrawn_grt": "52630.583347002391489483"
+    },
+    {
+      "delegator": "0xca99f42b52cf6bcd11926ca3c1e98c7b114faed3",
+      "withdraw_events": 1,
+      "withdrawn_grt": "51605.164176478151631181"
+    },
+    {
+      "delegator": "0x4b28ed11c2009d937d42e1a5ab59f59ffa9874b9",
+      "withdraw_events": 1,
+      "withdrawn_grt": "45319.277757611018468085"
+    },
+    {
+      "delegator": "0xeadb1edcab527b73813a0aeaf97e4a9929a643ce",
+      "withdraw_events": 1,
+      "withdrawn_grt": "41375.629029931051214982"
+    },
+    {
+      "delegator": "0x0cf6f3d9013e49588882ffab01d008deb5b1f7bc",
+      "withdraw_events": 3,
+      "withdrawn_grt": "41165.072522595586350234"
+    },
+    {
+      "delegator": "0xfb9e30cf996565ac3d9e8d793baffcffe684f13a",
+      "withdraw_events": 1,
+      "withdrawn_grt": "36846.416873692666105894"
+    },
+    {
+      "delegator": "0xe487a866b0f6b1b663b4566ff7e998af6116fba9",
+      "withdraw_events": 1,
+      "withdrawn_grt": "36725.807015232757529111"
+    },
+    {
+      "delegator": "0x9a378fd463f3f61f8e99fb10291b1abb5775a55c",
+      "withdraw_events": 1,
+      "withdrawn_grt": "35950.028071945864804704"
+    },
+    {
+      "delegator": "0xd23cca1d288eaded8667a7d4765d0033641f4c60",
+      "withdraw_events": 1,
+      "withdrawn_grt": "33306.476409635330186151"
+    },
+    {
+      "delegator": "0xf09ec2813777ef277034865649096e1e215e777a",
+      "withdraw_events": 1,
+      "withdrawn_grt": "30989.901285825707914646"
+    },
+    {
+      "delegator": "0xf2cfd7bac654986e98e46fd3790156cc3428aa7e",
+      "withdraw_events": 1,
+      "withdrawn_grt": "25923.697808329940245234"
+    },
+    {
+      "delegator": "0x44b3e0d239dee0120ebac141408c449a475515e4",
+      "withdraw_events": 1,
+      "withdrawn_grt": "21664.335053126597242256"
+    },
+    {
+      "delegator": "0x044cd5f498ddbf0ea854ab4bc96110756b26de97",
+      "withdraw_events": 2,
+      "withdrawn_grt": "21090.27026315760962103"
+    },
+    {
+      "delegator": "0xc6169f1c152fc988a71f19fa13b3498d8723cccb",
+      "withdraw_events": 1,
+      "withdrawn_grt": "20339.725118524533522765"
+    },
+    {
+      "delegator": "0x392d1dba2b796f7787d67bf6ed8d98a0b8c95534",
+      "withdraw_events": 1,
+      "withdrawn_grt": "20275.821734192748728138"
+    },
+    {
+      "delegator": "0x257f6c8a972a74786d365f4a5cb82b24c5b2538e",
+      "withdraw_events": 1,
+      "withdrawn_grt": "17623.05063579496077182"
+    },
+    {
+      "delegator": "0x4ef28c9917fcecd3640bc26354f058b317b4721d",
+      "withdraw_events": 1,
+      "withdrawn_grt": "16896.790195369565627899"
+    },
+    {
+      "delegator": "0x0dbb0cff7c9515fc56d352ee37aeeefdf43b25fe",
+      "withdraw_events": 1,
+      "withdrawn_grt": "16805.303878498101874114"
+    },
+    {
+      "delegator": "0x9f0330a2de2e89844db157420200327418b556b2",
+      "withdraw_events": 1,
+      "withdrawn_grt": "16402.264655194200226125"
+    },
+    {
+      "delegator": "0x8dd3c3da130ba2c32e8530a687927c316683d943",
+      "withdraw_events": 1,
+      "withdrawn_grt": "14185.6155"
+    },
+    {
+      "delegator": "0x1752c30ac34fab8b43f615a5bf87d1cf5c176d98",
+      "withdraw_events": 1,
+      "withdrawn_grt": "13455.053858665666910301"
+    },
+    {
+      "delegator": "0xd4c48ee90f0152fd70bc65df05c365bb45af194f",
+      "withdraw_events": 1,
+      "withdrawn_grt": "13350.489918086356117413"
+    },
+    {
+      "delegator": "0x8f7cae3e51bd832ee0e2cdb73de4723010acff5c",
+      "withdraw_events": 1,
+      "withdrawn_grt": "12521.078666516765133949"
+    },
+    {
+      "delegator": "0x470400fba2db84f3ddfd1be015deda7f4bf0ae51",
+      "withdraw_events": 1,
+      "withdrawn_grt": "11742.420824262331244215"
+    },
+    {
+      "delegator": "0x2d6192c3a48f35069c1d53d5d2ce9bf9b382b7e7",
+      "withdraw_events": 1,
+      "withdrawn_grt": "9560.880840255728002409"
+    },
+    {
+      "delegator": "0x70643f3e0c2f7bc94aa1fd71f427b890bb15478a",
+      "withdraw_events": 1,
+      "withdrawn_grt": "9452.493339223015879416"
+    },
+    {
+      "delegator": "0x50dd68b7a7dbfc4be1c7372cc4f8c11842b95b7d",
+      "withdraw_events": 1,
+      "withdrawn_grt": "9238.773058838974977411"
+    }
+  ],
+  "totals": {
+    "delegation_withdraw_events": 163,
+    "unique_delegators": 142,
+    "unique_indexers": 52,
+    "withdrawn_grt_total": "10657930.222235354159395202"
+  }
+}

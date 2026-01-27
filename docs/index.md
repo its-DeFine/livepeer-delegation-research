@@ -76,3 +76,11 @@ This is a working research repo: we prioritize **verifiable on-chain evidence** 
     Filecoin’s lock/burn primitives (on-chain) contrasted with Livepeer’s extraction proxies.
   </Card>
 </CardGroup>
+
+## Methodology
+
+<CardGroup cols={2}>
+  <Card title="Exchange label sources + caveats" href="/docs/exchange-label-sources">
+    Recommended label datasets, curation rules, and lower-bound disclaimers for exchange routing analyses.
+  </Card>
+</CardGroup>

@@ -1,0 +1,103 @@
+{
+  "generated_at_utc": "2026-01-24T00:44:07.070201+00:00",
+  "notes": [
+    "This evidence pack focuses on on-chain parameters that affect reward/principal liquidity (unbonding delays) and reward distribution (mint allocation).",
+    "It does not attempt to infer POKT selling; exchange address labels are chain-specific and not included here."
+  ],
+  "pocket": {
+    "application_params": {
+      "max_delegated_gateways": "7",
+      "min_stake": {
+        "amount": "1000000000",
+        "denom": "upokt"
+      }
+    },
+    "derived": {
+      "application_min_stake_pokt": "1000",
+      "application_min_stake_upokt": 1000000000,
+      "application_unbonding_period_sessions": 1,
+      "application_unbonding_seconds_estimate": 3661.994106,
+      "block_time_estimate": {
+        "avg_block_time_seconds": 61.0332351,
+        "blocks_delta": 1000,
+        "latest_height": 615338,
+        "latest_time_utc": "2026-01-24T00:43:01.912871461Z",
+        "notes": [
+          "Block time is estimated from on-chain block timestamps over a recent window.",
+          "The REST endpoint may be pruned; if so, the sample window falls back to the lowest available block height."
+        ],
+        "older_height": 614338,
+        "older_time_utc": "2026-01-23T07:45:48.677771407Z",
+        "seconds_delta": 61033.2351
+      },
+      "gateway_min_stake_pokt": "5000",
+      "gateway_min_stake_upokt": 5000000000,
+      "gateway_unbonding_period_sessions": 1,
+      "gateway_unbonding_seconds_estimate": 3661.994106,
+      "num_blocks_per_session": 60,
+      "session_seconds_estimate": 3661.994106,
+      "supplier_min_stake_pokt": "59500",
+      "supplier_min_stake_upokt": 59500000000,
+      "supplier_unbonding_period_blocks": 30240,
+      "supplier_unbonding_period_sessions": 504,
+      "supplier_unbonding_seconds_estimate": 1845645.029424
+    },
+    "endpoints": {
+      "application_params": "/pokt-network/poktroll/application/params",
+      "block_latest": "/cosmos/base/tendermint/v1beta1/blocks/latest",
+      "gateway_params": "/pokt-network/poktroll/gateway/params",
+      "shared_params": "/pokt-network/poktroll/shared/params",
+      "supplier_params": "/pokt-network/poktroll/supplier/params",
+      "tokenomics_params": "/pokt-network/poktroll/tokenomics/params"
+    },
+    "gateway_params": {
+      "min_stake": {
+        "amount": "5000000000",
+        "denom": "upokt"
+      }
+    },
+    "network": "shannon (poktroll)",
+    "rest": "https://shannon-grove-api.mainnet.poktroll.com",
+    "shared_params": {
+      "application_unbonding_period_sessions": "1",
+      "claim_window_close_offset_blocks": "10",
+      "claim_window_open_offset_blocks": "11",
+      "compute_unit_cost_granularity": "1000000",
+      "compute_units_to_tokens_multiplier": "78258",
+      "gateway_unbonding_period_sessions": "1",
+      "grace_period_end_offset_blocks": "10",
+      "num_blocks_per_session": "60",
+      "proof_window_close_offset_blocks": "10",
+      "proof_window_open_offset_blocks": "1",
+      "supplier_unbonding_period_sessions": "504"
+    },
+    "supplier_params": {
+      "min_stake": {
+        "amount": "59500000000",
+        "denom": "upokt"
+      },
+      "staking_fee": {
+        "amount": "1",
+        "denom": "upokt"
+      }
+    },
+    "tokenomics_params": {
+      "dao_reward_address": "pokt1dr5jtqaaz4wk8wevl33e7vkxsjlphljnjhyq2l",
+      "global_inflation_per_claim": 1e-06,
+      "mint_allocation_percentages": {
+        "application": 0,
+        "dao": 0.1,
+        "proposer": 0,
+        "source_owner": 0.1,
+        "supplier": 0.8
+      },
+      "mint_equals_burn_claim_distribution": {
+        "application": 0,
+        "dao": 0.05,
+        "proposer": 0.14,
+        "source_owner": 0.03,
+        "supplier": 0.78
+      }
+    }
+  }
+}

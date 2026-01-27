@@ -1,0 +1,1525 @@
+{
+  "analysis": {
+    "arbitrum_followup": {
+      "enabled": true,
+      "followup_window_days": 7,
+      "include_second_hop": false,
+      "l1_gateway_router": "0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef",
+      "l1_token_gateway": "0xa3a7b6f88361f48403514059f1f16c8e78d60eec",
+      "l2_token_address": "0xd9f9d2ee2d3efe420699079f16d9e924afffdea4",
+      "rpc": "https://arb1.arbitrum.io/rpc"
+    },
+    "blocks_per_day": 7200,
+    "classify_first_hop_dests": true,
+    "classify_intermediates": true,
+    "classify_unknown_eoa_behavior": false,
+    "heuristic_max_txs_per_exit": null,
+    "include_second_hop": true,
+    "include_third_hop": true,
+    "labels_exchange_count": 105,
+    "labels_json": "data/labels.json",
+    "thresholds": {
+      "max_first_hops_per_exit": 6,
+      "max_second_hops_per_first_hop": 4,
+      "min_first_hop_fraction": "0.02",
+      "min_first_hop_token": "1000",
+      "min_second_hop_fraction_of_first_hop": "0.50",
+      "min_second_hop_token": "1000"
+    },
+    "top_n": 50,
+    "window_days": 30
+  },
+  "eth_rpc": "https://ethereum.publicnode.com",
+  "exit_event": {
+    "amount_data_index": 0,
+    "contract": "0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0",
+    "recipient_topic_index": 1,
+    "signature": "Withdraw(address,uint256,uint256)",
+    "topic0": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568"
+  },
+  "generated_at_utc": "2026-01-26T14:48:07.419543+00:00",
+  "matched_examples_direct": [],
+  "matched_examples_second_hop": [
+    {
+      "blocks_after_exit_first_hop": 17,
+      "blocks_after_exit_total": 31,
+      "blocks_after_first_hop": 14,
+      "exit_amount": "3450",
+      "exit_block": 23839797,
+      "exit_tx": "0x09a3b64f7b14b74c252ebe8798b10ce79994be3f8663210f602ab7b6760acd52",
+      "first_hop_amount": "4375.769999999999934464",
+      "first_hop_block": 23839814,
+      "first_hop_intermediate_is_contract": false,
+      "first_hop_to": "0xb9af2530513f4db691c2abbb23d4257fc7414040",
+      "first_hop_tx": "0xd37f8686f52df579de60bc04457bd90e860f7d181a47cd1a3ae0921e27b25353",
+      "recipient": "0xac6ad36dfe3b4a04a6f0fbd7d0feab6208be93fb",
+      "second_hop_block": 23839828,
+      "second_hop_exchange_amount": "4375.769999999999934464",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0xb0c92ab4c77b072b3f3d17d8ea6d2d30eafb0da69b7fd8e2802eb4355d968998"
+    },
+    {
+      "blocks_after_exit_first_hop": 11,
+      "blocks_after_exit_total": 45,
+      "blocks_after_first_hop": 34,
+      "exit_amount": "2783.590913529309187615",
+      "exit_block": 23936321,
+      "exit_tx": "0xac34706dd51015fb437c7d24d29a240570d91ac037669460ba3a38136c6d453c",
+      "first_hop_amount": "2783.591012576865268804",
+      "first_hop_block": 23936332,
+      "first_hop_intermediate_is_contract": false,
+      "first_hop_to": "0x2f2e15f6c036b69505e8777f5c6f156046f99b56",
+      "first_hop_tx": "0x7c8bfc9e4e7f300ab4e89c30b56f80a75ee4f14798b13f975f730c6593f340b3",
+      "recipient": "0x4f6798d42feb2a9169f4fbe0f986d005e1b76180",
+      "second_hop_block": 23936366,
+      "second_hop_exchange_amount": "2783.591012576865268804",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0xf8bedd8cea9b7883475ef7df400d04e30012908cd9cccf6e54e5e69b42d3aa8d"
+    },
+    {
+      "blocks_after_exit_first_hop": 30,
+      "blocks_after_exit_total": 34,
+      "blocks_after_first_hop": 4,
+      "exit_amount": "67467",
+      "exit_block": 24036930,
+      "exit_tx": "0x3a0e436ecb8e26dcbb9dd7ab8c1e0dfb394f091e35a76bd19a06c5e45238a26d",
+      "first_hop_amount": "67485",
+      "first_hop_block": 24036960,
+      "first_hop_intermediate_is_contract": false,
+      "first_hop_to": "0xdf9aadc9e85008944443968254d7359f9ec84b1a",
+      "first_hop_tx": "0xb9d5fc55db2ffb6bca008e90cfb71c415fdd3e436d9c9efcc0b6a074291cbbf4",
+      "recipient": "0x4f86b0a49575140c02bbc7cd79881de01d2e8df7",
+      "second_hop_block": 24036964,
+      "second_hop_exchange_amount": "67485",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0x10daa8d52ed1bdc813c1209c83e2b4104c39b4e592c35694952f57c78326d9cc"
+    },
+    {
+      "blocks_after_exit_first_hop": 4,
+      "blocks_after_exit_total": 33,
+      "blocks_after_first_hop": 29,
+      "exit_amount": "2011",
+      "exit_block": 24146450,
+      "exit_tx": "0x26a7bd412d23f2ef75ff58f1dcea6850c4c94a889c159c3f4782f385b187b1fd",
+      "first_hop_amount": "2011",
+      "first_hop_block": 24146454,
+      "first_hop_intermediate_is_contract": false,
+      "first_hop_to": "0xcd6f58a2923487299679b594fe200a25c99627e4",
+      "first_hop_tx": "0x2939aa513ff94886b5d4b8dec1638c2bfa485acf6c5f9054ea849ea3ba8bcad1",
+      "recipient": "0xe18d3b075a241379d77fffe01ed1317dda0e8bac",
+      "second_hop_block": 24146483,
+      "second_hop_exchange_amount": "2011",
+      "second_hop_exchange_label": "Binance 14",
+      "second_hop_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+      "second_hop_tx": "0x38bf98ac47e4b28ec4ae7fc72aa079dfe5c19a20151cdb72410a99739df58a5f"
+    }
+  ],
+  "matched_examples_third_hop": [],
+  "notes": [
+    "Exchange routing is a LOWER BOUND: labels are incomplete and hop/window limits miss many paths.",
+    "Matched amounts are summed by exit event amount (not the exchange transfer amount).",
+    "Arbitrum follow-up (when enabled) is best-effort: it only detects deposits via the Arbitrum L1 gateway router outboundTransfer() and only counts transfers into labeled exchanges on Arbitrum."
+  ],
+  "protocol": {
+    "chain": "ethereum",
+    "name": "Frax (veFXS)"
+  },
+  "range": {
+    "days_approx": 90,
+    "from_block": 23671662,
+    "to_block": 24319662
+  },
+  "routing_results_top_recipients": {
+    "arbitrum_followup": {
+      "bridge_deposit_events": 0,
+      "bridge_deposit_exit_amount": "0",
+      "bridge_deposit_token_amount": "0",
+      "enabled": true,
+      "examples_bridge_deposit": [],
+      "examples_matched_to_exchange": [],
+      "matched_to_exchange_events": 0,
+      "matched_to_exchange_exit_amount": "0",
+      "matched_to_exchange_token_amount": "0",
+      "top_exchange_endpoints_by_count": []
+    },
+    "exit_amount_considered": "1057345.321450134568944271",
+    "exit_events_considered": 51,
+    "first_hop_breakdown": {
+      "category_counts": {
+        "no_first_hop_meeting_threshold": 18,
+        "unknown_contract": 25,
+        "unknown_eoa": 8
+      },
+      "category_exit_amount": {
+        "no_first_hop_meeting_threshold": "167059.178766101128327771",
+        "unknown_contract": "701248.551770504131428885",
+        "unknown_eoa": "189037.590913529309187615"
+      },
+      "category_first_hop_amount": {
+        "unknown_contract": "348513.834417450427953648",
+        "unknown_eoa": "173809.925151842530326241"
+      },
+      "examples": {
+        "no_first_hop_meeting_threshold": [
+          {
+            "exit_amount": "2002",
+            "exit_block": 23674270,
+            "exit_tx": "0xfed6078211e2c8d73e7198664ba0b9c5d287e77c69b5aaec9d506f92d213446c",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0x4515957daf1c5a1cd2e24d000e909a0ff6be1975"
+          },
+          {
+            "exit_amount": "4212",
+            "exit_block": 23675781,
+            "exit_tx": "0x12e2218cbf856515ba3a5d846926ae1b3b20e2e13fbc9380f72dc05acefb1746",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0xccf6c29d87eb2c0bafede74f5df35f84541f4549"
+          },
+          {
+            "exit_amount": "1116",
+            "exit_block": 23694932,
+            "exit_tx": "0x5adc97bcaa128e79e579fa7a90b771f77e02b74a14b071434ebbb18698803c6d",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0xe495d8c21bb0c4ab9a627627a4016df40c6daa74"
+          },
+          {
+            "exit_amount": "6904",
+            "exit_block": 23770649,
+            "exit_tx": "0xf0551c981cddd74192a219c3d51d4cf1c8716335686768ac5a1aa6770139cedc",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0x815612815d7fb01b1e8a97fe4a0996e77245a3aa"
+          },
+          {
+            "exit_amount": "1566",
+            "exit_block": 23786582,
+            "exit_tx": "0x16cd896ce4ee4bbe477efd9551262b217721de52c079de60c0ff0dd3eff595a6",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0xb6af7c04f67b5eb61f0dc7ac4a760888ec3e3887"
+          },
+          {
+            "exit_amount": "4000",
+            "exit_block": 23822458,
+            "exit_tx": "0x5c1176765f251dc6f6d4e56357807128b99a8fa242527a148c1da30db6f5180d",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0xfd82a5b995fff8fb85a01f4498994541a1d8ee60"
+          },
+          {
+            "exit_amount": "2497",
+            "exit_block": 23951384,
+            "exit_tx": "0x87b8d5d86be3d8216474c86b986645b5f7e407e89fbfa536d2da421e1e49c3f8",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0x5b21175a82f112c88e306a546166037d238de684"
+          },
+          {
+            "exit_amount": "1041",
+            "exit_block": 23958416,
+            "exit_tx": "0xaf6a7ff84fd296ee80cb3d31e17ffc5b48c000c725076b6dfaa1dbef666de03e",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0x3bd04a7ffc87c27d136e9fbbd2dd08758f8ea2f5"
+          },
+          {
+            "exit_amount": "1328",
+            "exit_block": 23996445,
+            "exit_tx": "0x4baca1d7db740857566be26a179219105df0d1aed5eb8a034a638a41b157d9c1",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0xaa4f982c1bee0cb94e9125eaa96ca87611874fb9"
+          },
+          {
+            "exit_amount": "3170",
+            "exit_block": 24050098,
+            "exit_tx": "0xc445c1847a5fb3efec824a85116ce8bce6a029b9ac01c69531c05f1d10482d46",
+            "first_hop_amount": null,
+            "first_hop_block": null,
+            "first_hop_is_contract": null,
+            "first_hop_label": null,
+            "first_hop_to": null,
+            "first_hop_tx": null,
+            "recipient": "0x5e91d547a6f279e6d59086e30e25c964efe4b463"
+          }
+        ],
+        "unknown_contract": [
+          {
+            "exit_amount": "4250",
+            "exit_block": 23689258,
+            "exit_tx": "0xa43b7775af7ae5847442e6ff5e5e880d6039517f66ed9efcb248e11dbd4db38a",
+            "first_hop_amount": "4251.156756483230203074",
+            "first_hop_block": 23689278,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x8c864d0c8e476bf9eb9d620c10e1296fb0e2f940",
+            "first_hop_tx": "0xfe7374eb01a86201bc10dc3301c0691a628a7b9df826854b707eaa8345a3837c",
+            "recipient": "0x2861d9c348c3cdb5123bc7ba7cec09ac47d0cb8a"
+          },
+          {
+            "exit_amount": "19277.060179865395987223",
+            "exit_block": 23697025,
+            "exit_tx": "0x8a7a9bd51e3224ea2e7b85d077929a9078f146865cbf0b0bb2240b17d11f82dd",
+            "first_hop_amount": "19277.110338735103894553",
+            "first_hop_block": 23697313,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x36cb65c1967a0fb0eee11569c51c2f2aa1ca6f6d",
+            "first_hop_tx": "0x3cb009c2836105fd6830d7391019579a69e906b7023c5438a3300151ec3b710e",
+            "recipient": "0x9e0ee8cad01a4dfc4167d077b0e5227e0090141b"
+          },
+          {
+            "exit_amount": "322914",
+            "exit_block": 23735876,
+            "exit_tx": "0xed796caabc8ed715904d4f3f438899d15df0f647fde8f6248b64f70beb491947",
+            "first_hop_amount": "30000",
+            "first_hop_block": 23735895,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+            "first_hop_tx": "0x1dd3702130858e1df51e7a9cb1e92573bf5203e674b30d2fc95e9b5281c5c1e0",
+            "recipient": "0x8b93743303d939eae77cd70d3ebd9450092a7369"
+          },
+          {
+            "exit_amount": "1716",
+            "exit_block": 23736546,
+            "exit_tx": "0x6b7f331880c203d4b9838b9ad730b6d3d8f8eeeff0e397cc69ae63bc753b079a",
+            "first_hop_amount": "1711.71",
+            "first_hop_block": 23736562,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0xa6e941eab67569ca4522f70d343714ff51d571c4",
+            "first_hop_tx": "0x072a8230394cac37821864541b4f5c5529fe9ae4e11bef1ac9784e303c7a75fe",
+            "recipient": "0x23258dc08cee2ffd225f33c9af9f59c3b4abf549"
+          },
+          {
+            "exit_amount": "1337.025117367753593088",
+            "exit_block": 23739976,
+            "exit_tx": "0x20aa620ae19d1dace00070b208d13738dbe95a564cb1840dd1b3f5a4d9c69712",
+            "first_hop_amount": "1337.025117367753593088",
+            "first_hop_block": 23739997,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x03b59bd1c8b9f6c265ba0c3421923b93f15036fa",
+            "first_hop_tx": "0x25d14709fbd114a60df74368e20b2731ad66314276e9861f32a01d19d87f6518",
+            "recipient": "0xc49b59301be4d9660961f62fbeea0e234e3a53b5"
+          },
+          {
+            "exit_amount": "2615",
+            "exit_block": 23789630,
+            "exit_tx": "0x6606c16efc07d6c260bd7c8ec89dddab22e0e754be29cb82248ec7fd1db15d7d",
+            "first_hop_amount": "2608.4625",
+            "first_hop_block": 23789696,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x03b59bd1c8b9f6c265ba0c3421923b93f15036fa",
+            "first_hop_tx": "0x12b5e64d53e1e2d1a5418fe87b6f0035ced7f18e8c53ea6c696d87e228c2dd5a",
+            "recipient": "0xf0dd673bd6f8d87d66b0f78a8a0ddb14baa51efa"
+          },
+          {
+            "exit_amount": "1057",
+            "exit_block": 23810352,
+            "exit_tx": "0xd0ad17cb898924f84bf23085cd4c9e66d8f4a630c87da08266af4a20c4b726ef",
+            "first_hop_amount": "1075.052273252299451427",
+            "first_hop_block": 23810368,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x25233ddd68dac9ac40e1e8d80c58d36b524032b2",
+            "first_hop_tx": "0x24d7512f757e3dedae3cc34c82eaf6f74a82fc39eb7469aef264089e1a8f1d09",
+            "recipient": "0x671dd102d1b9adfd54fd365769afc37705a3ce68"
+          },
+          {
+            "exit_amount": "1540.000086060265092664",
+            "exit_block": 23890836,
+            "exit_tx": "0x683b42915981bc0cb18b06f999657f7e50a9ea16c2ec119ca145e6cfdf8a8894",
+            "first_hop_amount": "1541.048872824891293584",
+            "first_hop_block": 23890880,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+            "first_hop_tx": "0xffdef5ee4bfc3cb28239f3feed5c5610566ccf16267fdec9e92aea9bc8c72877",
+            "recipient": "0xc746722c4c72f998726049e84d73db44dae07233"
+          },
+          {
+            "exit_amount": "2000",
+            "exit_block": 23897269,
+            "exit_tx": "0x2eefbaa8dc1a0a19bbd0a62d7fbf32ffec6c31aff7171e104f0b306c2b8f1933",
+            "first_hop_amount": "2105.129058515338887308",
+            "first_hop_block": 23897281,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x207e1074858a7e78f17002075739ed2745dbaece",
+            "first_hop_tx": "0xa2e2f6b89d1cf2f4a50e3ef0a78f152222b861c969dbfc1ae9b4775e85f1254e",
+            "recipient": "0x7c3b3a1e1d5b8a35064688d7c36e5561bbfc6780"
+          },
+          {
+            "exit_amount": "2612",
+            "exit_block": 23936455,
+            "exit_tx": "0x892c405bcd3767ea60e2c0a333f462abb7657ef13a732880fdc7ef1f83a525ec",
+            "first_hop_amount": "2612",
+            "first_hop_block": 23936474,
+            "first_hop_is_contract": true,
+            "first_hop_label": null,
+            "first_hop_to": "0x70bf6634ee8cb27d04478f184b9b8bb13e5f4710",
+            "first_hop_tx": "0x5639bcdfabd9bbc2a5081bf698c503b1cd20c40fae270b4dd2c3ae88967e8208",
+            "recipient": "0x9ef247b506993fb0c5a46011f30f7412a5f2d2c8"
+          }
+        ],
+        "unknown_eoa": [
+          {
+            "exit_amount": "100000",
+            "exit_block": 23684249,
+            "exit_tx": "0x8169b3b6ec048789a7298c7576f0137850bb308e4f296cbf2de9c62bea9120c0",
+            "first_hop_amount": "83680",
+            "first_hop_block": 23697080,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x27b615d2ad2bf0f477ae9ad78f3746e90ff06434",
+            "first_hop_tx": "0xce194c5682c556b7fd951c1ad5e0680f27477f13185b94db36283247be1f8336",
+            "recipient": "0x484b4fda86b95d1c1e99f84669e9aa1bd84b974f"
+          },
+          {
+            "exit_amount": "1110",
+            "exit_block": 23811709,
+            "exit_tx": "0xf786164ed56945fa2f408c0298f0b38357ad8bad6469a0e901431c54934aea02",
+            "first_hop_amount": "1118.73240843538600282",
+            "first_hop_block": 23811731,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x62d3c6c91b08419685fd9c0634b289531f9bb87f",
+            "first_hop_tx": "0xf4316a557c407a109a4818780d0703725255e0020c24cf826085f28e931e7170",
+            "recipient": "0x8d7408f3feae8d218d4126ad3b71e46a979e7091"
+          },
+          {
+            "exit_amount": "3450",
+            "exit_block": 23839797,
+            "exit_tx": "0x09a3b64f7b14b74c252ebe8798b10ce79994be3f8663210f602ab7b6760acd52",
+            "first_hop_amount": "4375.769999999999934464",
+            "first_hop_block": 23839814,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0xb9af2530513f4db691c2abbb23d4257fc7414040",
+            "first_hop_tx": "0xd37f8686f52df579de60bc04457bd90e860f7d181a47cd1a3ae0921e27b25353",
+            "recipient": "0xac6ad36dfe3b4a04a6f0fbd7d0feab6208be93fb"
+          },
+          {
+            "exit_amount": "10965",
+            "exit_block": 23859773,
+            "exit_tx": "0x6d71323f3e2475c479366c6e4ca8f9d0346f796874bac14fa50db89ec61083f3",
+            "first_hop_amount": "11104.60984502828543082",
+            "first_hop_block": 23859813,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0xaf0942eab1299d1cc329d55486536b92c41d304b",
+            "first_hop_tx": "0x2dbe01a5d3d516c022115f995a238076a983ff5116377ab6d83f2c99a832f648",
+            "recipient": "0x0159dfc1c745dc4b10d42d2592335120f1f2d778"
+          },
+          {
+            "exit_amount": "2783.590913529309187615",
+            "exit_block": 23936321,
+            "exit_tx": "0xac34706dd51015fb437c7d24d29a240570d91ac037669460ba3a38136c6d453c",
+            "first_hop_amount": "2783.591012576865268804",
+            "first_hop_block": 23936332,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x2f2e15f6c036b69505e8777f5c6f156046f99b56",
+            "first_hop_tx": "0x7c8bfc9e4e7f300ab4e89c30b56f80a75ee4f14798b13f975f730c6593f340b3",
+            "recipient": "0x4f6798d42feb2a9169f4fbe0f986d005e1b76180"
+          },
+          {
+            "exit_amount": "1251",
+            "exit_block": 23969104,
+            "exit_tx": "0x0be5c13263a13fb4dcf2c94166419fb09cc01d782579df5261e74b4bb5408e02",
+            "first_hop_amount": "1251.221885801993689333",
+            "first_hop_block": 23969238,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0x23f1045ca09e9c3206851336a2a05d35bbc812d3",
+            "first_hop_tx": "0x2a3a3f4a30e6f3267b6173247564cc01bbd59d3a8febd42ea42b03b4f78fb7bf",
+            "recipient": "0xc88c60312bc47633de7b10998e5ae62bf173cd49"
+          },
+          {
+            "exit_amount": "67467",
+            "exit_block": 24036930,
+            "exit_tx": "0x3a0e436ecb8e26dcbb9dd7ab8c1e0dfb394f091e35a76bd19a06c5e45238a26d",
+            "first_hop_amount": "67485",
+            "first_hop_block": 24036960,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0xdf9aadc9e85008944443968254d7359f9ec84b1a",
+            "first_hop_tx": "0xb9d5fc55db2ffb6bca008e90cfb71c415fdd3e436d9c9efcc0b6a074291cbbf4",
+            "recipient": "0x4f86b0a49575140c02bbc7cd79881de01d2e8df7"
+          },
+          {
+            "exit_amount": "2011",
+            "exit_block": 24146450,
+            "exit_tx": "0x26a7bd412d23f2ef75ff58f1dcea6850c4c94a889c159c3f4782f385b187b1fd",
+            "first_hop_amount": "2011",
+            "first_hop_block": 24146454,
+            "first_hop_is_contract": false,
+            "first_hop_label": null,
+            "first_hop_to": "0xcd6f58a2923487299679b594fe200a25c99627e4",
+            "first_hop_tx": "0x2939aa513ff94886b5d4b8dec1638c2bfa485acf6c5f9054ea849ea3ba8bcad1",
+            "recipient": "0xe18d3b075a241379d77fffe01ed1317dda0e8bac"
+          }
+        ]
+      },
+      "method": "Earliest outgoing transfer >= max(min_first_hop_token, min_first_hop_fraction*exit) within window; destination classified via labels and (optionally) eth_getCode."
+    },
+    "matched_direct_to_exchange_within_window_amount": "0",
+    "matched_direct_to_exchange_within_window_events": 0,
+    "matched_second_hop_to_exchange_within_window_amount": "75711.590913529309187615",
+    "matched_second_hop_to_exchange_within_window_events": 4,
+    "matched_third_hop_to_exchange_within_window_amount": "0",
+    "matched_third_hop_to_exchange_within_window_events": 0,
+    "matched_total_to_exchange_within_window_amount": "75711.590913529309187615",
+    "matched_total_to_exchange_within_window_events": 4,
+    "post_exit_roles": {
+      "examples": {
+        "dex_router_interaction": [
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0x37577a23b3c53a980f6fac9cef93c1bd1049944600a3ed58b00f249e12aec50c",
+            "exit_amount": "2002",
+            "exit_block": 23674270,
+            "exit_tx": "0xfed6078211e2c8d73e7198664ba0b9c5d287e77c69b5aaec9d506f92d213446c",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x4515957daf1c5a1cd2e24d000e909a0ff6be1975"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "1inch V6 Aggregation Router",
+            "dex_router_to": "0x111111125421ca6dc452d289314280a0f8842a65",
+            "dex_router_tx": "0xfe7374eb01a86201bc10dc3301c0691a628a7b9df826854b707eaa8345a3837c",
+            "exit_amount": "4250",
+            "exit_block": 23689258,
+            "exit_tx": "0xa43b7775af7ae5847442e6ff5e5e880d6039517f66ed9efcb248e11dbd4db38a",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x8c864d0c8e476bf9eb9d620c10e1296fb0e2f940",
+            "recipient": "0x2861d9c348c3cdb5123bc7ba7cec09ac47d0cb8a"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0xf45ed2e9d41609bb2209a9be03d9765b3dee632bb9225cdac58a054a87e663e1",
+            "exit_amount": "1116",
+            "exit_block": 23694932,
+            "exit_tx": "0x5adc97bcaa128e79e579fa7a90b771f77e02b74a14b071434ebbb18698803c6d",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xe495d8c21bb0c4ab9a627627a4016df40c6daa74"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0x138ae37a020583e0a3a31c757af1ec81631bb38154982a8eeb76405b4f5df400",
+            "exit_amount": "1566",
+            "exit_block": 23786582,
+            "exit_tx": "0x16cd896ce4ee4bbe477efd9551262b217721de52c079de60c0ff0dd3eff595a6",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xb6af7c04f67b5eb61f0dc7ac4a760888ec3e3887"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0xf97e18ca55697417a7af57d03eb2795c64f8e428f892a3a5927d5542320f7645",
+            "exit_amount": "4000",
+            "exit_block": 23822458,
+            "exit_tx": "0x5c1176765f251dc6f6d4e56357807128b99a8fa242527a148c1da30db6f5180d",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xfd82a5b995fff8fb85a01f4498994541a1d8ee60"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0xae3b3c1362087f751ad3155bd09937918c0012aa666367cdfd84407050b537a7",
+            "exit_amount": "2497",
+            "exit_block": 23951384,
+            "exit_tx": "0x87b8d5d86be3d8216474c86b986645b5f7e407e89fbfa536d2da421e1e49c3f8",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x5b21175a82f112c88e306a546166037d238de684"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0xdb5fca6939ed6d5905b3b0bb2fc2623343418cfa655bd48442f8f2f0405112d5",
+            "exit_amount": "37460",
+            "exit_block": 24096153,
+            "exit_tx": "0x35dec5949edf42be46cb7461b9d26b652cdcc9e506e54dfb11004200b3a5627d",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xffd70ed81bd9eefe8d0ef4cbbfafb40c234ff957"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0x323bb4ee2d814f45cc9f16ddb8e30b1ff39c1cfd72be019005e8412a1cdb2968",
+            "exit_amount": "13000",
+            "exit_block": 24120045,
+            "exit_tx": "0x949c096d9b626d2085f1224390ec0b3f8a85276f9bc70271142dea37440efc13",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x6c9e18c33fc404255b06d6d543f7cc530a631b95"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0x613bc2b1508f73da4b56bddb72679852afa63062791fb1165134b2b978f176a7",
+            "exit_amount": "3910.139345899321553359",
+            "exit_block": 24136564,
+            "exit_tx": "0xd06fe206d0e7cc003f1a9b972957a5a9997947eda1b48016d0ec11e5cac4f802",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xeb5a0960c713b2727927db26a84c79dda89d9e21"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": true,
+            "dex_router_label": "CoW Protocol Settlement",
+            "dex_router_to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "dex_router_tx": "0xfc5705f28dafedfcb5134164b2255b7d067a3a50111d43bbc588c2b53eb50b4a",
+            "exit_amount": "71265",
+            "exit_block": 24264977,
+            "exit_tx": "0xdf36c76dc11c5025ee667e0d46eeca58efabfa7d43a667658fe2b2a7a726c607",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x68e912af6176bb1639aca936eb58d71cc2558b66"
+          }
+        ],
+        "exchange_strict": [
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "3450",
+            "exit_block": 23839797,
+            "exit_tx": "0x09a3b64f7b14b74c252ebe8798b10ce79994be3f8663210f602ab7b6760acd52",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0xb9af2530513f4db691c2abbb23d4257fc7414040",
+            "recipient": "0xac6ad36dfe3b4a04a6f0fbd7d0feab6208be93fb"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "2783.590913529309187615",
+            "exit_block": 23936321,
+            "exit_tx": "0xac34706dd51015fb437c7d24d29a240570d91ac037669460ba3a38136c6d453c",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0x2f2e15f6c036b69505e8777f5c6f156046f99b56",
+            "recipient": "0x4f6798d42feb2a9169f4fbe0f986d005e1b76180"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "67467",
+            "exit_block": 24036930,
+            "exit_tx": "0x3a0e436ecb8e26dcbb9dd7ab8c1e0dfb394f091e35a76bd19a06c5e45238a26d",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0xdf9aadc9e85008944443968254d7359f9ec84b1a",
+            "recipient": "0x4f86b0a49575140c02bbc7cd79881de01d2e8df7"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "2011",
+            "exit_block": 24146450,
+            "exit_tx": "0x26a7bd412d23f2ef75ff58f1dcea6850c4c94a889c159c3f4782f385b187b1fd",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0xcd6f58a2923487299679b594fe200a25c99627e4",
+            "recipient": "0xe18d3b075a241379d77fffe01ed1317dda0e8bac"
+          }
+        ],
+        "hold_no_first_hop": [
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "4212",
+            "exit_block": 23675781,
+            "exit_tx": "0x12e2218cbf856515ba3a5d846926ae1b3b20e2e13fbc9380f72dc05acefb1746",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xccf6c29d87eb2c0bafede74f5df35f84541f4549"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "6904",
+            "exit_block": 23770649,
+            "exit_tx": "0xf0551c981cddd74192a219c3d51d4cf1c8716335686768ac5a1aa6770139cedc",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x815612815d7fb01b1e8a97fe4a0996e77245a3aa"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1041",
+            "exit_block": 23958416,
+            "exit_tx": "0xaf6a7ff84fd296ee80cb3d31e17ffc5b48c000c725076b6dfaa1dbef666de03e",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x3bd04a7ffc87c27d136e9fbbd2dd08758f8ea2f5"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1328",
+            "exit_block": 23996445,
+            "exit_tx": "0x4baca1d7db740857566be26a179219105df0d1aed5eb8a034a638a41b157d9c1",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xaa4f982c1bee0cb94e9125eaa96ca87611874fb9"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "3170",
+            "exit_block": 24050098,
+            "exit_tx": "0xc445c1847a5fb3efec824a85116ce8bce6a029b9ac01c69531c05f1d10482d46",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x5e91d547a6f279e6d59086e30e25c964efe4b463"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1237",
+            "exit_block": 24188670,
+            "exit_tx": "0xf3198a8e71b8906a11ddc06c38ac450b197ad48838b5e4bc627bdd85bfa12c06",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x693363c0c82c3a188f09cc56f6d2d02acc40398e"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "3996.667659461939229815",
+            "exit_block": 24221915,
+            "exit_tx": "0xa85fa2019e34f86ad6116855b39aa793535f6c1cde37401fe86dfc17c7f03be4",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x5b63b4929094c6a68c39f787939b5b318c47272c"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "2110",
+            "exit_block": 24258910,
+            "exit_tx": "0xc6603d18742bb526182a65f08bb899b382747578b5ea8bae73359586fb2cf020",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0xe4bf6e1967d7bc0bd5e2c767c3a2ccadf23446df"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "6244.371760739867544597",
+            "exit_block": 24269862,
+            "exit_tx": "0x605bc3cbc365fd22c75605ae3d467b75cd50a166cc6e5fbaead7d87c19238302",
+            "first_hop_category": "no_first_hop_meeting_threshold",
+            "first_hop_is_contract": null,
+            "first_hop_to": null,
+            "recipient": "0x5efa253bfa8c626000393c6c654611267261d942"
+          }
+        ],
+        "unknown_contract": [
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "19277.060179865395987223",
+            "exit_block": 23697025,
+            "exit_tx": "0x8a7a9bd51e3224ea2e7b85d077929a9078f146865cbf0b0bb2240b17d11f82dd",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x36cb65c1967a0fb0eee11569c51c2f2aa1ca6f6d",
+            "recipient": "0x9e0ee8cad01a4dfc4167d077b0e5227e0090141b"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "322914",
+            "exit_block": 23735876,
+            "exit_tx": "0xed796caabc8ed715904d4f3f438899d15df0f647fde8f6248b64f70beb491947",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+            "recipient": "0x8b93743303d939eae77cd70d3ebd9450092a7369"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1716",
+            "exit_block": 23736546,
+            "exit_tx": "0x6b7f331880c203d4b9838b9ad730b6d3d8f8eeeff0e397cc69ae63bc753b079a",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0xa6e941eab67569ca4522f70d343714ff51d571c4",
+            "recipient": "0x23258dc08cee2ffd225f33c9af9f59c3b4abf549"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1337.025117367753593088",
+            "exit_block": 23739976,
+            "exit_tx": "0x20aa620ae19d1dace00070b208d13738dbe95a564cb1840dd1b3f5a4d9c69712",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x03b59bd1c8b9f6c265ba0c3421923b93f15036fa",
+            "recipient": "0xc49b59301be4d9660961f62fbeea0e234e3a53b5"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "2615",
+            "exit_block": 23789630,
+            "exit_tx": "0x6606c16efc07d6c260bd7c8ec89dddab22e0e754be29cb82248ec7fd1db15d7d",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x03b59bd1c8b9f6c265ba0c3421923b93f15036fa",
+            "recipient": "0xf0dd673bd6f8d87d66b0f78a8a0ddb14baa51efa"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1057",
+            "exit_block": 23810352,
+            "exit_tx": "0xd0ad17cb898924f84bf23085cd4c9e66d8f4a630c87da08266af4a20c4b726ef",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x25233ddd68dac9ac40e1e8d80c58d36b524032b2",
+            "recipient": "0x671dd102d1b9adfd54fd365769afc37705a3ce68"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1540.000086060265092664",
+            "exit_block": 23890836,
+            "exit_tx": "0x683b42915981bc0cb18b06f999657f7e50a9ea16c2ec119ca145e6cfdf8a8894",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+            "recipient": "0xc746722c4c72f998726049e84d73db44dae07233"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "2000",
+            "exit_block": 23897269,
+            "exit_tx": "0x2eefbaa8dc1a0a19bbd0a62d7fbf32ffec6c31aff7171e104f0b306c2b8f1933",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x207e1074858a7e78f17002075739ed2745dbaece",
+            "recipient": "0x7c3b3a1e1d5b8a35064688d7c36e5561bbfc6780"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "2612",
+            "exit_block": 23936455,
+            "exit_tx": "0x892c405bcd3767ea60e2c0a333f462abb7657ef13a732880fdc7ef1f83a525ec",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x70bf6634ee8cb27d04478f184b9b8bb13e5f4710",
+            "recipient": "0x9ef247b506993fb0c5a46011f30f7412a5f2d2c8"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "30000",
+            "exit_block": 23938348,
+            "exit_tx": "0xd56d6aaf81761e47f7f57af54c7464fce443540617c4d6013bafe6229353790a",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0xad3b67bca8935cb510c8d18bd45f0b94f54a968f",
+            "recipient": "0xeaad3ef8c606e4e82d65d3001286ca24566db8a6"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1256",
+            "exit_block": 23947940,
+            "exit_tx": "0xb2f381b0faaf3a64e9b757d90fe477597cf8ac31da8b77249195e2e7bf53e839",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x03b59bd1c8b9f6c265ba0c3421923b93f15036fa",
+            "recipient": "0x0726cab2f7ae98ebf42f5e199cc98b16b183a9fa"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "4566",
+            "exit_block": 23982375,
+            "exit_tx": "0x574ed576d2a16e87ed93542d3d725c8a0ee3b2b9f59458b75376354c33bc6269",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x00000688768803bbd44095770895ad27ad6b0d95",
+            "recipient": "0xdc3b2dce95ebd1e7c18eaa37780d10d240146660"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "4661",
+            "exit_block": 23996528,
+            "exit_tx": "0xa5816f5294584d4245fc1f853a93c074673b113952e9c08091ed198c07f06a31",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251",
+            "recipient": "0xc92980d19e7399911f595053894408ad24380324"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "29060",
+            "exit_block": 24017764,
+            "exit_tx": "0x84217c48a37b732af1ed92ad1e5c3cc36f1a4cbc98f822a07c724da2af01dc16",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+            "recipient": "0x562872f91edf291e75cbab35273aeeacffe693fe"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "183737",
+            "exit_block": 24041946,
+            "exit_tx": "0x4dc6e7485e3d6eabfcdb7c19c7ae1da79dc29f7bb4e4851dc3b2969fc48c23b7",
+            "first_hop_category": "unknown_contract",
+            "first_hop_is_contract": true,
+            "first_hop_to": "0x365084b05fa7d5028346bd21d842ed0601bab5b8",
+            "recipient": "0x8b93743303d939eae77cd70d3ebd9450092a7369"
+          }
+        ],
+        "unknown_eoa": [
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "100000",
+            "exit_block": 23684249,
+            "exit_tx": "0x8169b3b6ec048789a7298c7576f0137850bb308e4f296cbf2de9c62bea9120c0",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0x27b615d2ad2bf0f477ae9ad78f3746e90ff06434",
+            "recipient": "0x484b4fda86b95d1c1e99f84669e9aa1bd84b974f"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1110",
+            "exit_block": 23811709,
+            "exit_tx": "0xf786164ed56945fa2f408c0298f0b38357ad8bad6469a0e901431c54934aea02",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0x62d3c6c91b08419685fd9c0634b289531f9bb87f",
+            "recipient": "0x8d7408f3feae8d218d4126ad3b71e46a979e7091"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "10965",
+            "exit_block": 23859773,
+            "exit_tx": "0x6d71323f3e2475c479366c6e4ca8f9d0346f796874bac14fa50db89ec61083f3",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0xaf0942eab1299d1cc329d55486536b92c41d304b",
+            "recipient": "0x0159dfc1c745dc4b10d42d2592335120f1f2d778"
+          },
+          {
+            "arbitrum_bridge_deposit_detected": false,
+            "dex_router_interaction": false,
+            "dex_router_label": null,
+            "dex_router_to": null,
+            "dex_router_tx": null,
+            "exit_amount": "1251",
+            "exit_block": 23969104,
+            "exit_tx": "0x0be5c13263a13fb4dcf2c94166419fb09cc01d782579df5261e74b4bb5408e02",
+            "first_hop_category": "unknown_eoa",
+            "first_hop_is_contract": false,
+            "first_hop_to": "0x23f1045ca09e9c3206851336a2a05d35bbc812d3",
+            "recipient": "0xc88c60312bc47633de7b10998e5ae62bf173cd49"
+          }
+        ]
+      },
+      "method": "Heuristic per-exit categorization: exchange_strict if it reaches a labeled exchange (0-3 hops). Else bridge_deposit if a canonical Arbitrum deposit call is detected. Else dex_router_interaction if a labeled router is the tx.to for a transfer. Else hold/unknown categories.",
+      "role_counts": {
+        "dex_router_interaction": 10,
+        "exchange_strict": 4,
+        "hold_no_first_hop": 9,
+        "unknown_contract": 24,
+        "unknown_eoa": 4
+      },
+      "role_exit_amount": {
+        "dex_router_interaction": "141066.139345899321553359",
+        "exchange_strict": "75711.590913529309187615",
+        "hold_no_first_hop": "30243.039420201806774412",
+        "unknown_contract": "696998.551770504131428885",
+        "unknown_eoa": "113326"
+      },
+      "role_exit_share_percent": {
+        "dex_router_interaction": "13.3415390870060361380776328742724531577494600855325365519297",
+        "exchange_strict": "7.16053586066772427293867921241698186442915376934188222442168",
+        "hold_no_first_hop": "2.86028025155716337571678273227840774310717087614305932316469",
+        "unknown_contract": "65.9196704832987015080766169246291442736687122882969410960771",
+        "unknown_eoa": "10.7179743174703747051902882564030129610455029806855808044068"
+      }
+    },
+    "top_exchange_endpoints_by_count": [
+      {
+        "address": "0x28c6c06298d514db089934071355e5743bf21d60",
+        "count": 4,
+        "label": "Binance 14"
+      }
+    ],
+    "top_exchange_intermediates_by_count": [
+      {
+        "address": "0xb9af2530513f4db691c2abbb23d4257fc7414040",
+        "count": 1,
+        "example": {
+          "example_exchange_label": "Binance 14",
+          "example_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+          "example_exit_tx": "0x09a3b64f7b14b74c252ebe8798b10ce79994be3f8663210f602ab7b6760acd52",
+          "example_first_hop_tx": "0xd37f8686f52df579de60bc04457bd90e860f7d181a47cd1a3ae0921e27b25353",
+          "first_hop_intermediate_is_contract": false,
+          "first_hop_to": "0xb9af2530513f4db691c2abbb23d4257fc7414040"
+        },
+        "exit_amount": "3450",
+        "is_contract": false
+      },
+      {
+        "address": "0x2f2e15f6c036b69505e8777f5c6f156046f99b56",
+        "count": 1,
+        "example": {
+          "example_exchange_label": "Binance 14",
+          "example_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+          "example_exit_tx": "0xac34706dd51015fb437c7d24d29a240570d91ac037669460ba3a38136c6d453c",
+          "example_first_hop_tx": "0x7c8bfc9e4e7f300ab4e89c30b56f80a75ee4f14798b13f975f730c6593f340b3",
+          "first_hop_intermediate_is_contract": false,
+          "first_hop_to": "0x2f2e15f6c036b69505e8777f5c6f156046f99b56"
+        },
+        "exit_amount": "2783.590913529309187615",
+        "is_contract": false
+      },
+      {
+        "address": "0xdf9aadc9e85008944443968254d7359f9ec84b1a",
+        "count": 1,
+        "example": {
+          "example_exchange_label": "Binance 14",
+          "example_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+          "example_exit_tx": "0x3a0e436ecb8e26dcbb9dd7ab8c1e0dfb394f091e35a76bd19a06c5e45238a26d",
+          "example_first_hop_tx": "0xb9d5fc55db2ffb6bca008e90cfb71c415fdd3e436d9c9efcc0b6a074291cbbf4",
+          "first_hop_intermediate_is_contract": false,
+          "first_hop_to": "0xdf9aadc9e85008944443968254d7359f9ec84b1a"
+        },
+        "exit_amount": "67467",
+        "is_contract": false
+      },
+      {
+        "address": "0xcd6f58a2923487299679b594fe200a25c99627e4",
+        "count": 1,
+        "example": {
+          "example_exchange_label": "Binance 14",
+          "example_exchange_to": "0x28c6c06298d514db089934071355e5743bf21d60",
+          "example_exit_tx": "0x26a7bd412d23f2ef75ff58f1dcea6850c4c94a889c159c3f4782f385b187b1fd",
+          "example_first_hop_tx": "0x2939aa513ff94886b5d4b8dec1638c2bfa485acf6c5f9054ea849ea3ba8bcad1",
+          "first_hop_intermediate_is_contract": false,
+          "first_hop_to": "0xcd6f58a2923487299679b594fe200a25c99627e4"
+        },
+        "exit_amount": "2011",
+        "is_contract": false
+      }
+    ]
+  },
+  "token": {
+    "address": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0",
+    "decimals": 18,
+    "symbol": "FXS"
+  },
+  "top_recipients": [
+    {
+      "address": "0x8b93743303d939eae77cd70d3ebd9450092a7369",
+      "exit_amount": "506651",
+      "exit_amount_wei": 506651000000000000000000,
+      "exit_events": 2
+    },
+    {
+      "address": "0x484b4fda86b95d1c1e99f84669e9aa1bd84b974f",
+      "exit_amount": "100000",
+      "exit_amount_wei": 100000000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x68e912af6176bb1639aca936eb58d71cc2558b66",
+      "exit_amount": "71265",
+      "exit_amount_wei": 71265000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x4f86b0a49575140c02bbc7cd79881de01d2e8df7",
+      "exit_amount": "67467",
+      "exit_amount_wei": 67467000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x8faf97b6692f3058f36d99373407ad9e573a774c",
+      "exit_amount": "48233",
+      "exit_amount_wei": 48233000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xffd70ed81bd9eefe8d0ef4cbbfafb40c234ff957",
+      "exit_amount": "37460",
+      "exit_amount_wei": 37460000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xeaad3ef8c606e4e82d65d3001286ca24566db8a6",
+      "exit_amount": "30000",
+      "exit_amount_wei": 30000000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x562872f91edf291e75cbab35273aeeacffe693fe",
+      "exit_amount": "29060",
+      "exit_amount_wei": 29060000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x9e0ee8cad01a4dfc4167d077b0e5227e0090141b",
+      "exit_amount": "19277.060179865395987223",
+      "exit_amount_wei": 19277060179865395987223,
+      "exit_events": 1
+    },
+    {
+      "address": "0x6c9e18c33fc404255b06d6d543f7cc530a631b95",
+      "exit_amount": "13000",
+      "exit_amount_wei": 13000000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x0159dfc1c745dc4b10d42d2592335120f1f2d778",
+      "exit_amount": "10965",
+      "exit_amount_wei": 10965000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xddb50ffdba4d89354e1088e4ea402de895562173",
+      "exit_amount": "10343",
+      "exit_amount_wei": 10343000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x1cb4831b6df1d9cb07279b93a0e101db9b2295d0",
+      "exit_amount": "9169",
+      "exit_amount_wei": 9169000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x815612815d7fb01b1e8a97fe4a0996e77245a3aa",
+      "exit_amount": "6904",
+      "exit_amount_wei": 6904000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x5efa253bfa8c626000393c6c654611267261d942",
+      "exit_amount": "6244.371760739867544597",
+      "exit_amount_wei": 6244371760739867544597,
+      "exit_events": 1
+    },
+    {
+      "address": "0x244291d3f74380d7cd10b861622aff1216fc2697",
+      "exit_amount": "5501",
+      "exit_amount_wei": 5501000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xb7587737c30004d146b86d9808ebea32209dff50",
+      "exit_amount": "4866",
+      "exit_amount_wei": 4866000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xc92980d19e7399911f595053894408ad24380324",
+      "exit_amount": "4661",
+      "exit_amount_wei": 4661000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xdc3b2dce95ebd1e7c18eaa37780d10d240146660",
+      "exit_amount": "4566",
+      "exit_amount_wei": 4566000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x2861d9c348c3cdb5123bc7ba7cec09ac47d0cb8a",
+      "exit_amount": "4250",
+      "exit_amount_wei": 4250000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xccf6c29d87eb2c0bafede74f5df35f84541f4549",
+      "exit_amount": "4212",
+      "exit_amount_wei": 4212000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x14b1b3ff91525dd00e8fb8ce000097ce7d1cb251",
+      "exit_amount": "4153",
+      "exit_amount_wei": 4153000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xfd82a5b995fff8fb85a01f4498994541a1d8ee60",
+      "exit_amount": "4000",
+      "exit_amount_wei": 4000000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x5b63b4929094c6a68c39f787939b5b318c47272c",
+      "exit_amount": "3996.667659461939229815",
+      "exit_amount_wei": 3996667659461939229815,
+      "exit_events": 1
+    },
+    {
+      "address": "0xeb5a0960c713b2727927db26a84c79dda89d9e21",
+      "exit_amount": "3910.139345899321553359",
+      "exit_amount_wei": 3910139345899321553359,
+      "exit_events": 1
+    },
+    {
+      "address": "0xac6ad36dfe3b4a04a6f0fbd7d0feab6208be93fb",
+      "exit_amount": "3450",
+      "exit_amount_wei": 3450000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x2ef0782745b9890c2d1047cbd33be98e22ec35a2",
+      "exit_amount": "3379.46638721071675591",
+      "exit_amount_wei": 3379466387210716755910,
+      "exit_events": 1
+    },
+    {
+      "address": "0x5e91d547a6f279e6d59086e30e25c964efe4b463",
+      "exit_amount": "3170",
+      "exit_amount_wei": 3170000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x4f6798d42feb2a9169f4fbe0f986d005e1b76180",
+      "exit_amount": "2783.590913529309187615",
+      "exit_amount_wei": 2783590913529309187615,
+      "exit_events": 1
+    },
+    {
+      "address": "0xf0dd673bd6f8d87d66b0f78a8a0ddb14baa51efa",
+      "exit_amount": "2615",
+      "exit_amount_wei": 2615000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x9ef247b506993fb0c5a46011f30f7412a5f2d2c8",
+      "exit_amount": "2612",
+      "exit_amount_wei": 2612000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x5b21175a82f112c88e306a546166037d238de684",
+      "exit_amount": "2497",
+      "exit_amount_wei": 2497000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xe4bf6e1967d7bc0bd5e2c767c3a2ccadf23446df",
+      "exit_amount": "2110",
+      "exit_amount_wei": 2110000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xe18d3b075a241379d77fffe01ed1317dda0e8bac",
+      "exit_amount": "2011",
+      "exit_amount_wei": 2011000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x4515957daf1c5a1cd2e24d000e909a0ff6be1975",
+      "exit_amount": "2002",
+      "exit_amount_wei": 2002000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x7c3b3a1e1d5b8a35064688d7c36e5561bbfc6780",
+      "exit_amount": "2000",
+      "exit_amount_wei": 2000000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x7e3de32b65ccae9233ad666f5f7b2872ef37fa09",
+      "exit_amount": "1947",
+      "exit_amount_wei": 1947000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x23258dc08cee2ffd225f33c9af9f59c3b4abf549",
+      "exit_amount": "1716",
+      "exit_amount_wei": 1716000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xb6af7c04f67b5eb61f0dc7ac4a760888ec3e3887",
+      "exit_amount": "1566",
+      "exit_amount_wei": 1566000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xc746722c4c72f998726049e84d73db44dae07233",
+      "exit_amount": "1540.000086060265092664",
+      "exit_amount_wei": 1540000086060265092664,
+      "exit_events": 1
+    },
+    {
+      "address": "0xc49b59301be4d9660961f62fbeea0e234e3a53b5",
+      "exit_amount": "1337.025117367753593088",
+      "exit_amount_wei": 1337025117367753593088,
+      "exit_events": 1
+    },
+    {
+      "address": "0xaa4f982c1bee0cb94e9125eaa96ca87611874fb9",
+      "exit_amount": "1328",
+      "exit_amount_wei": 1328000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x0726cab2f7ae98ebf42f5e199cc98b16b183a9fa",
+      "exit_amount": "1256",
+      "exit_amount_wei": 1256000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xc88c60312bc47633de7b10998e5ae62bf173cd49",
+      "exit_amount": "1251",
+      "exit_amount_wei": 1251000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x693363c0c82c3a188f09cc56f6d2d02acc40398e",
+      "exit_amount": "1237",
+      "exit_amount_wei": 1237000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xe495d8c21bb0c4ab9a627627a4016df40c6daa74",
+      "exit_amount": "1116",
+      "exit_amount_wei": 1116000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x8d7408f3feae8d218d4126ad3b71e46a979e7091",
+      "exit_amount": "1110",
+      "exit_amount_wei": 1110000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0xea7fe608e6a55e791c34afe178e3f34deeb17fc4",
+      "exit_amount": "1059",
+      "exit_amount_wei": 1059000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x671dd102d1b9adfd54fd365769afc37705a3ce68",
+      "exit_amount": "1057",
+      "exit_amount_wei": 1057000000000000000000,
+      "exit_events": 1
+    },
+    {
+      "address": "0x3bd04a7ffc87c27d136e9fbbd2dd08758f8ea2f5",
+      "exit_amount": "1041",
+      "exit_amount_wei": 1041000000000000000000,
+      "exit_events": 1
+    }
+  ],
+  "totals": {
+    "exit_amount_considered_top_n": "1057345.321450134568944271",
+    "exit_amount_considered_top_n_wei": 1057345321450134568944271,
+    "exit_amount_total": "1083978.109249046579577584",
+    "exit_amount_total_wei": 1083978109249046579577584,
+    "exit_events_considered_top_n": 51,
+    "exit_events_total": 128,
+    "unique_recipients": 127
+  }
+}

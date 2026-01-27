@@ -6,7 +6,7 @@ sidebar_label: L1 second hop (exchange routing)
 
 # L1 second hop (exchange routing)
 
-- Generated: `2026-01-20T23:35:24.169614+00:00`
+- Generated: `2026-01-26T14:12:59.272614+00:00`
 - Input: `research/l1-bridge-recipient-followup.json`
 - L1 RPC: `https://rpc.flashbots.net`
 - L1 token: `0x58b6a8a3302369daec383334672404ee733ab239`
@@ -27,8 +27,8 @@ sidebar_label: L1 second hop (exchange routing)
 - Outgoing to labeled DEX routers: **0.000 LPT**
 
 Top labeled exchange destinations:
-- `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` (Coinbase Prime 2 (public label; best-effort)): **4,841,655.964 LPT**
-- `0x28c6c06298d514db089934071355e5743bf21d60` (Binance 14 (public label; best-effort)): **667,914.347 LPT**
+- `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` (Coinbase Prime): **4,841,655.964 LPT**
+- `0x28c6c06298d514db089934071355e5743bf21d60` (Binance 14): **667,914.347 LPT**
 
 Interpretation: unlike the first hop (bridge recipients → EOAs), the second hop surfaces a material route into labeled exchange hot wallets (e.g., Coinbase Prime, Binance). This suggests that a portion of the bridge-outs are consistent with eventual exchange deposit flows.
 
@@ -67,7 +67,7 @@ Tip: expand only the wallets you care about.
 
 | Destination | Label | Category | Outgoing (LPT) | Txs |
 |---|---|---|---:|---:|
-| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime 2 (public label; best-effort) | exchange | 1,990,712.703 | 65 |
+| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime | exchange | 1,990,712.703 | 65 |
 
 </details>
 
@@ -111,7 +111,7 @@ Tip: expand only the wallets you care about.
 
 | Destination | Label | Category | Outgoing (LPT) | Txs |
 |---|---|---|---:|---:|
-| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime 2 (public label; best-effort) | exchange | 1,625,016.000 | 3 |
+| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime | exchange | 1,625,016.000 | 3 |
 
 </details>
 
@@ -139,7 +139,7 @@ Tip: expand only the wallets you care about.
 
 | Destination | Label | Category | Outgoing (LPT) | Txs |
 |---|---|---|---:|---:|
-| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime 2 (public label; best-effort) | exchange | 526,141.289 | 19 |
+| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime | exchange | 526,141.289 | 19 |
 
 </details>
 
@@ -152,7 +152,7 @@ Tip: expand only the wallets you care about.
 
 | Destination | Label | Category | Outgoing (LPT) | Txs |
 |---|---|---|---:|---:|
-| `0x28c6c06298d514db089934071355e5743bf21d60` | Binance 14 (public label; best-effort) | exchange | 667,914.347 | 1 |
+| `0x28c6c06298d514db089934071355e5743bf21d60` | Binance 14 | exchange | 667,914.347 | 1 |
 
 </details>
 
@@ -179,6 +179,6 @@ Tip: expand only the wallets you care about.
 
 | Destination | Label | Category | Outgoing (LPT) | Txs |
 |---|---|---|---:|---:|
-| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime 2 (public label; best-effort) | exchange | 699,785.972 | 16 |
+| `0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea` | Coinbase Prime | exchange | 699,785.972 | 16 |
 
 </details>
